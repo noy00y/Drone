@@ -5991,6 +5991,12 @@
 		(uuid "c402a8bf-f484-4e16-82db-cb2f26e63edf")
 	)
 	(junction
+		(at 184.15 73.66)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c5739003-72b1-47d5-ae6b-99a8a67f1112")
+	)
+	(junction
 		(at 135.89 86.36)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -6964,6 +6970,16 @@
 	)
 	(wire
 		(pts
+			(xy 184.15 71.12) (xy 184.15 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "533e71d7-a356-4a0c-83d3-62ed0c94a648")
+	)
+	(wire
+		(pts
 			(xy 240.03 149.86) (xy 243.84 149.86)
 		)
 		(stroke
@@ -7904,6 +7920,16 @@
 	)
 	(wire
 		(pts
+			(xy 184.15 73.66) (xy 194.31 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cf4d7c14-e862-400c-ac15-1a9a447a81bb")
+	)
+	(wire
+		(pts
 			(xy 247.65 73.66) (xy 247.65 77.47)
 		)
 		(stroke
@@ -8214,7 +8240,7 @@
 	)
 	(wire
 		(pts
-			(xy 180.34 73.66) (xy 194.31 73.66)
+			(xy 180.34 73.66) (xy 184.15 73.66)
 		)
 		(stroke
 			(width 0)
@@ -10262,6 +10288,71 @@
 			(project "drone"
 				(path "/bfc8e452-ea96-4fb3-a8d4-30d5739a61c9"
 					(reference "#PWR023")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 184.15 71.12 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5f77d69f-6556-40ec-897f-59af179fc598")
+		(property "Reference" "#FLG02"
+			(at 184.15 69.215 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 178.816 67.564 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 184.15 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 184.15 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 184.15 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d3414b93-3b55-4708-919e-e1b2ff7ceff8")
+		)
+		(instances
+			(project "drone"
+				(path "/bfc8e452-ea96-4fb3-a8d4-30d5739a61c9"
+					(reference "#FLG02")
 					(unit 1)
 				)
 			)

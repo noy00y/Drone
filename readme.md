@@ -6,7 +6,7 @@ Self Built Drone Project including the following components
 - Programmed via USB B
 
 ## Todo:
-
+- Sensor Fushion Algo to mesh together sensor data and estimate the drone’s orientation (roll, pitch, yaw) and position.
 
 ## Flight Controller Schematic (Updated Aug 16th):
 ![alt text](image.png)

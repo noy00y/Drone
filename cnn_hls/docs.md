@@ -1,7 +1,7 @@
 # HLS Synthesis:
 ```bash
 source /tools/Xilinx/2025.1/Vitis/settings64.sh
-source /tools/Xilinx/2025.1/Vitis/settings64.sh
+source /tools/Xilinx/2025.1/Vivado/settings64.sh
 
 # 2) Compile your HLS files
 g++ -I${XILINX_VITIS}/hls/include \

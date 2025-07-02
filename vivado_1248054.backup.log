@@ -1,0 +1,83 @@
+#-----------------------------------------------------------
+# Vivado v2025.1 (64-bit)
+# SW Build 6140274 on Wed May 21 22:58:25 MDT 2025
+# IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+# SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+# Start of session at: Wed Jul  2 01:20:42 2025
+# Process ID         : 1248054
+# Current directory  : /home/noy00y/Documents/Github/Drone
+# Command line       : vivado -mode batch -source /tools/Xilinx/2025.1/Vitis/scripts/vitis_hls/hls.tcl -tclargs -f hls_run.tcl
+# Log file           : /home/noy00y/Documents/Github/Drone/vivado.log
+# Journal file       : /home/noy00y/Documents/Github/Drone/vivado.jou
+# Running On         : noy00y
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 24.04.2 LTS
+# Processor Detail   : 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
+# CPU Frequency      : 3154.893 MHz
+# CPU Physical cores : 4
+# CPU Logical cores  : 8
+# Host memory        : 16450 MB
+# Swap memory        : 4294 MB
+# Total Virtual      : 20745 MB
+# Available Virtual  : 11132 MB
+#-----------------------------------------------------------
+source /tools/Xilinx/2025.1/Vitis/scripts/vitis_hls/hls.tcl
+# foreach relpath {../../data/hls/scripts ../../common/scripts .} {
+#   set scriptfile [file join [file dir [info script]] $relpath hls_startup.tcl]
+#   if { [file exists $scriptfile] } {
+#     source $scriptfile
+#     break
+#   }
+# }
+## common::load_feature base
+## if { [string match -nocase "window*" $::tcl_platform(os)] && [llength [glob -nocomplain $::env(HDI_APPROOT)/lib/win*/xv_hlstasks.dll]] } {
+##   rdi::load_library "vitis_hls" xv_hlstasks
+## } elseif { [llength [glob -nocomplain $::env(HDI_APPROOT)/lib/lnx*/libxv_hlstasks*]] } {
+##   rdi::load_library "vitis_hls" libxv_hlstasks
+## } else {
+##   rdi::load_library "vitis_hls" librdi_hlstasks
+## }
+## common::set_param tcl.notrace 1
+## common::set_param tcl.nosigint 1
+## common::set_param messaging.defaultLimit 1000000
+## namespace import -force common::version
+## namespace import -force common::set_param
+## namespace import -force common::get_param
+## proc hls_proc {name args} {
+##   set ::argv0 $name
+##   #puts "DBG:TCL-STARTUP: running hls_proc $name args=$args ::argv0=$::argv0 argv=$::argv"
+##   set args [lindex $args 0]
+##   set newargs [list]
+##   foreach arg $args { 
+##     # Handle args with spaces
+##     if { [string first {"} $arg] == -1 && [regexp {[[:space:]]} $arg] } { 
+##       set arg "\"$arg\"" 
+##     } 
+##     lappend newargs $arg 
+##   }
+##   if { $name eq "apcc" } {
+##     uplevel 1 hls::apcc {*}$newargs
+##   } else {
+##     uplevel 1 hls::main {*}$newargs; # See hls.cxx (this is also where tcl file arg is sourced)
+##   }
+## }
+# if { ![file exists $scriptfile] } { error "Cannot find script file: $scriptfile" }
+# if [catch {hls_proc [info nameofexecutable] $::argv} result options] {
+#   puts $::errorInfo
+#   return -code [dict get $options -code]
+# }
+
+    while executing
+"hls::main -f hls_run.tcl"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel 1 hls::main {*}$newargs"
+    invoked from within
+"if { $name eq "apcc" } {
+    uplevel 1 hls::apcc {*}$newargs
+  } else {
+    uplevel 1 hls::main {*}$newargs; # See hls.cxx (this is also where tcl fil..."
+    (procedure "hls_proc" line 13)
+    invoked from within
+"hls_proc [info nameofexecutable] $::argv"
+INFO: [HLS 200-112] Total CPU user time: 0.03 seconds. Total CPU system time: 0 seconds. Total elapsed time: 0.02 seconds; peak allocated memory: 0.004 MB.

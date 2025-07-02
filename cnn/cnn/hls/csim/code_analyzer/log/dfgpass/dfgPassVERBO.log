@@ -1,0 +1,253 @@
+dfgPass::INFOR: DFG Pass going to run on Module: C:\Users\ozair\Documents\Code_Drive\Drone\cnn\cnn\hls\csim\code_analyzer\.internal\instrument\app_0\project.symbols.bc
+dfgPass::INFOR:     Parsing the provided input trace files...
+dfgPass::INFOR:     Initializing InstructionCounter...
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:       - BEFORE BREAK
+dfgPass::VERBO:       - for.cond56
+dfgPass::VERBO:         - memlocal of :i:0
+dfgPass::VERBO:         - LCV conditional branch 6:48
+dfgPass::VERBO:       - AFTER BREAK
+dfgPass::VERBO:       - for.body58
+dfgPass::VERBO:         - memlocal of :i:0
+dfgPass::VERBO:       - AFTER BREAK
+dfgPass::VERBO:       - for.inc61
+dfgPass::VERBO:         - memlocal of :i:0
+dfgPass::VERBO:         - memlocal of :i:1
+dfgPass::VERBO:       - AFTER BREAK
+dfgPass::VERBO:       - BEFORE BREAK
+dfgPass::VERBO:       - for.cond47
+dfgPass::VERBO:         - memlocal of :i:0
+dfgPass::VERBO:         - LCV conditional branch 6:48
+dfgPass::VERBO:       - AFTER BREAK
+dfgPass::VERBO:       - for.body49
+dfgPass::VERBO:         - memlocal of :i:0
+dfgPass::VERBO:       - AFTER BREAK
+dfgPass::VERBO:       - for.inc52
+dfgPass::VERBO:         - memlocal of :i:0
+dfgPass::VERBO:         - memlocal of :i:1
+dfgPass::VERBO:       - AFTER BREAK
+dfgPass::VERBO:       - BEFORE BREAK
+dfgPass::VERBO:       - for.cond38
+dfgPass::VERBO:         - memlocal of :i:0
+dfgPass::VERBO:         - LCV conditional branch 6:48
+dfgPass::VERBO:       - AFTER BREAK
+dfgPass::VERBO:       - for.body40
+dfgPass::VERBO:         - memlocal of :i:0
+dfgPass::VERBO:       - AFTER BREAK
+dfgPass::VERBO:       - for.inc43
+dfgPass::VERBO:         - memlocal of :i:0
+dfgPass::VERBO:         - memlocal of :i:1
+dfgPass::VERBO:       - AFTER BREAK
+dfgPass::VERBO:       - BEFORE BREAK
+dfgPass::VERBO:       - for.cond29
+dfgPass::VERBO:         - memlocal of :i:0
+dfgPass::VERBO:         - LCV conditional branch 6:48
+dfgPass::VERBO:       - AFTER BREAK
+dfgPass::VERBO:       - for.body31
+dfgPass::VERBO:         - memlocal of :i:0
+dfgPass::VERBO:       - AFTER BREAK
+dfgPass::VERBO:       - for.inc34
+dfgPass::VERBO:         - memlocal of :i:0
+dfgPass::VERBO:         - memlocal of :i:1
+dfgPass::VERBO:       - AFTER BREAK
+dfgPass::VERBO:       - BEFORE BREAK
+dfgPass::VERBO:       - for.cond20
+dfgPass::VERBO:         - memlocal of :i:0
+dfgPass::VERBO:         - LCV conditional branch 6:48
+dfgPass::VERBO:       - AFTER BREAK
+dfgPass::VERBO:       - for.body22
+dfgPass::VERBO:         - memlocal of :i:0
+dfgPass::VERBO:       - AFTER BREAK
+dfgPass::VERBO:       - for.inc25
+dfgPass::VERBO:         - memlocal of :i:0
+dfgPass::VERBO:         - memlocal of :i:1
+dfgPass::VERBO:       - AFTER BREAK
+dfgPass::VERBO:       - BEFORE BREAK
+dfgPass::VERBO:       - for.cond11
+dfgPass::VERBO:         - memlocal of :i:0
+dfgPass::VERBO:         - LCV conditional branch 6:48
+dfgPass::VERBO:       - AFTER BREAK
+dfgPass::VERBO:       - for.body13
+dfgPass::VERBO:         - memlocal of :i:0
+dfgPass::VERBO:       - AFTER BREAK
+dfgPass::VERBO:       - for.inc16
+dfgPass::VERBO:         - memlocal of :i:0
+dfgPass::VERBO:         - memlocal of :i:1
+dfgPass::VERBO:       - AFTER BREAK
+dfgPass::VERBO:       - BEFORE BREAK
+dfgPass::VERBO:       - for.cond2
+dfgPass::VERBO:         - memlocal of :i:0
+dfgPass::VERBO:         - LCV conditional branch 6:48
+dfgPass::VERBO:       - AFTER BREAK
+dfgPass::VERBO:       - for.body4
+dfgPass::VERBO:         - memlocal of :i:0
+dfgPass::VERBO:       - AFTER BREAK
+dfgPass::VERBO:       - for.inc7
+dfgPass::VERBO:         - memlocal of :i:0
+dfgPass::VERBO:         - memlocal of :i:1
+dfgPass::VERBO:       - AFTER BREAK
+dfgPass::VERBO:       - BEFORE BREAK
+dfgPass::VERBO:       - for.cond
+dfgPass::VERBO:         - memlocal of :i:0
+dfgPass::VERBO:         - LCV conditional branch 6:48
+dfgPass::VERBO:       - AFTER BREAK
+dfgPass::VERBO:       - for.body
+dfgPass::VERBO:         - memlocal of :i:0
+dfgPass::VERBO:       - AFTER BREAK
+dfgPass::VERBO:       - for.inc
+dfgPass::VERBO:         - memlocal of :i:0
+dfgPass::VERBO:         - memlocal of :i:1
+dfgPass::VERBO:       - AFTER BREAK
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:       - BEFORE BREAK
+dfgPass::VERBO:       - for.cond382
+dfgPass::VERBO:         - memlocal of :i:0
+dfgPass::VERBO:         - LCV conditional branch 6:48
+dfgPass::VERBO:       - AFTER BREAK
+dfgPass::VERBO:       - for.body384
+dfgPass::VERBO:         - memlocal of :i:0
+dfgPass::VERBO:         - memlocal of :FC2_W:0
+dfgPass::VERBO:         - memlocal of :i:0
+dfgPass::VERBO:         - memlocal of :acc2:0
+dfgPass::VERBO:         - memlocal of :acc2:1
+dfgPass::VERBO:       - AFTER BREAK
+dfgPass::VERBO:       - for.inc391
+dfgPass::VERBO:         - memlocal of :i:0
+dfgPass::VERBO:         - memlocal of :i:1
+dfgPass::VERBO:       - AFTER BREAK
+dfgPass::VERBO:     +2 is not an innermost loop
+dfgPass::VERBO:       - BEFORE BREAK
+dfgPass::VERBO:       - for.cond361
+dfgPass::VERBO:         - memlocal of :i:0
+dfgPass::VERBO:         - memlocal of :cnt:0
+dfgPass::VERBO:       - AFTER BREAK
+dfgPass::VERBO:       - for.body363
+dfgPass::VERBO:         - memlocal of :i:0
+dfgPass::VERBO:         - memlocal of :FC1_W:0
+dfgPass::VERBO:         - memlocal of :o:0
+dfgPass::VERBO:         - memlocal of :cnt:0
+dfgPass::VERBO:         - memlocal of :i:0
+dfgPass::VERBO:         - memlocal of :acc:0
+dfgPass::VERBO:         - memlocal of :acc:1
+dfgPass::VERBO:       - AFTER BREAK
+dfgPass::VERBO:       - for.inc372
+dfgPass::VERBO:         - memlocal of :i:0
+dfgPass::VERBO:         - memlocal of :i:1
+dfgPass::VERBO:       - AFTER BREAK
+dfgPass::VERBO:     +4 is not an innermost loop
+dfgPass::VERBO:     +5 is not an innermost loop
+dfgPass::VERBO:       - BEFORE BREAK
+dfgPass::VERBO:       - for.cond333
+dfgPass::VERBO:         - memlocal of :m:0
+dfgPass::VERBO:         - LCV conditional branch 6:48
+dfgPass::VERBO:       - AFTER BREAK
+dfgPass::VERBO:       - for.body335
+dfgPass::VERBO:         - memlocal of :i:0
+dfgPass::VERBO:         - memlocal of :j:0
+dfgPass::VERBO:         - memlocal of :m:0
+dfgPass::VERBO:         - memlocal of :cnt:0
+dfgPass::VERBO:         - memlocal of :cnt:1
+dfgPass::VERBO:       - AFTER BREAK
+dfgPass::VERBO:       - for.inc345
+dfgPass::VERBO:         - memlocal of :m:0
+dfgPass::VERBO:         - memlocal of :m:1
+dfgPass::VERBO:       - AFTER BREAK
+dfgPass::VERBO:     +7 is not an innermost loop
+dfgPass::VERBO:     +8 is not an innermost loop
+dfgPass::VERBO:     +9 fails R.hasBlockSchema
+dfgPass::VERBO:     +10 is not an innermost loop
+dfgPass::VERBO:     +11 is not an innermost loop
+dfgPass::VERBO:     +12 is not an innermost loop
+dfgPass::VERBO:     +13 is not an innermost loop
+dfgPass::VERBO:     +14 is not an innermost loop
+dfgPass::VERBO:       - BEFORE BREAK
+dfgPass::VERBO:       - for.cond189
+dfgPass::VERBO:         - memlocal of :c:0
+dfgPass::VERBO:         - LCV conditional branch 6:48
+dfgPass::VERBO:       - AFTER BREAK
+dfgPass::VERBO:       - for.body191
+dfgPass::VERBO:         - memlocal of :m:0
+dfgPass::VERBO:         - memlocal of :c:0
+dfgPass::VERBO:         - memlocal of :p:0
+dfgPass::VERBO:         - memlocal of :q:0
+dfgPass::VERBO:         - memlocal of :widx:1
+dfgPass::VERBO:         - memlocal of :i:0
+dfgPass::VERBO:         - memlocal of :p:0
+dfgPass::VERBO:         - memlocal of :j:0
+dfgPass::VERBO:         - memlocal of :q:0
+dfgPass::VERBO:         - memlocal of :c:0
+dfgPass::VERBO:         - memlocal of :weights2:0
+dfgPass::VERBO:         - memlocal of :widx:0
+dfgPass::VERBO:         - memlocal of :acc:0
+dfgPass::VERBO:         - memlocal of :acc:1
+dfgPass::VERBO:       - AFTER BREAK
+dfgPass::VERBO:       - for.inc211
+dfgPass::VERBO:         - memlocal of :c:0
+dfgPass::VERBO:         - memlocal of :c:1
+dfgPass::VERBO:       - AFTER BREAK
+dfgPass::VERBO:     +16 is not an innermost loop
+dfgPass::VERBO:     +17 is not an innermost loop
+dfgPass::VERBO:     +18 fails R.hasBlockSchema
+dfgPass::VERBO:     +19 is not an innermost loop
+dfgPass::VERBO:     +20 is not an innermost loop
+dfgPass::VERBO:     +21 is not an innermost loop
+dfgPass::VERBO:     +22 is not an innermost loop
+dfgPass::VERBO:     +23 is not an innermost loop
+dfgPass::VERBO:       - BEFORE BREAK
+dfgPass::VERBO:       - for.cond41
+dfgPass::VERBO:         - memlocal of :c:0
+dfgPass::VERBO:         - LCV conditional branch 6:48
+dfgPass::VERBO:       - AFTER BREAK
+dfgPass::VERBO:       - for.body43
+dfgPass::VERBO:         - memlocal of :m:0
+dfgPass::VERBO:         - memlocal of :c:0
+dfgPass::VERBO:         - memlocal of :p:0
+dfgPass::VERBO:         - memlocal of :q:0
+dfgPass::VERBO:         - memlocal of :widx:1
+dfgPass::VERBO:         - memlocal of :i:0
+dfgPass::VERBO:         - memlocal of :p:0
+dfgPass::VERBO:         - memlocal of :j:0
+dfgPass::VERBO:         - memlocal of :q:0
+dfgPass::VERBO:         - memlocal of :c:0
+dfgPass::VERBO:         - memlocal of :weights1:0
+dfgPass::VERBO:         - memlocal of :widx:0
+dfgPass::VERBO:         - memlocal of :acc:0
+dfgPass::VERBO:         - memlocal of :acc:1
+dfgPass::VERBO:       - AFTER BREAK
+dfgPass::VERBO:       - for.inc62
+dfgPass::VERBO:         - memlocal of :c:0
+dfgPass::VERBO:         - memlocal of :c:1
+dfgPass::VERBO:       - AFTER BREAK
+dfgPass::VERBO:     +25 is not an innermost loop
+dfgPass::VERBO:     +26 is not an innermost loop
+dfgPass::VERBO:       - BEFORE BREAK
+dfgPass::VERBO:       - for.cond4
+dfgPass::VERBO:         - memlocal of :c:0
+dfgPass::VERBO:         - LCV conditional branch 6:48
+dfgPass::VERBO:       - AFTER BREAK
+dfgPass::VERBO:       - for.body6
+dfgPass::VERBO:         - memlocal of :i:0
+dfgPass::VERBO:         - memlocal of :j:0
+dfgPass::VERBO:         - memlocal of :c:0
+dfgPass::VERBO:         - memlocal of :idx:1
+dfgPass::VERBO:         - memlocal of :img_in:0
+dfgPass::VERBO:         - memlocal of :idx:0
+dfgPass::VERBO:         - memlocal of :i:0
+dfgPass::VERBO:         - memlocal of :j:0
+dfgPass::VERBO:         - memlocal of :c:0
+dfgPass::VERBO:       - AFTER BREAK
+dfgPass::VERBO:       - for.inc
+dfgPass::VERBO:         - memlocal of :c:0
+dfgPass::VERBO:         - memlocal of :c:1
+dfgPass::VERBO:       - AFTER BREAK
+dfgPass::INFOR:     Parsing trace...
+dfgPass::INFOR:     End of the trace parse

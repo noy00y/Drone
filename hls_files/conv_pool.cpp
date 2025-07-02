@@ -29,19 +29,18 @@ typedef unsigned char flag_t;
 extern "C" {
 void cnn_accel(
     // DDR interfaces
-    const data_t *img_in,     // H*W*C0
-    const data_t *weights1,         // M1*C0*K*K
-    const data_t *bias1,         // M1
-    const data_t *weights2,         // M2*M1*K*K
-    const data_t *bias2,         // M2
-    const data_t *FC1_W,      // N2*(M2*H4*W4)
-    const data_t *FC1_B,      // N2
-    const data_t *FC2_W,      // 1*N2
-    const data_t *FC2_B,      // 1
-    flag_t       *flag_out,   // 1
+    const data_t *img_in,   // H*W*C0
+    const data_t *weights1, // M1*C0*K*K
+    const data_t *bias1,    // M1
+    const data_t *weights2, // M2*M1*K*K
+    const data_t *bias2,    // M2
+    const data_t *FC1_W,    // N2*(M2*H4*W4)
+    const data_t *FC1_B,    // N2
+    const data_t *FC2_W,    // 1*N2
+    const data_t *FC2_B,    // 1
+    flag_t *flag_out,       // 1
     // Control interface
-    int ctrl) 
-{
+    int ctrl) {
 #pragma HLS INTERFACE m_axi port=img_in  offset=slave bundle=gmem
 #pragma HLS INTERFACE m_axi port=weights1      offset=slave bundle=gmem
 #pragma HLS INTERFACE m_axi port=bias1      offset=slave bundle=gmem
@@ -221,5 +220,5 @@ void cnn_accel(
 
     // 10) Write out
     flag_out[0] = flag;
-}
+    }
 }

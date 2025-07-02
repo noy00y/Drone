@@ -1,0 +1,291 @@
+{
+    "top_level_hw_fn_id": 217,
+    "functions": {
+        "200": {
+            "fn_id": 200,
+            "mangled_name": "_GLOBAL__sub_I_testbench.cpp",
+            "fully_qualified_name": "_GLOBAL__sub_I_testbench",
+            "is_sys": true,
+            "is_declaration": false,
+            "supports_dataflow": false,
+            "src_loc": {
+                "file": "C:\\Users\\ozair\\Documents\\Code_Drive\\Drone\\hls_files\\testbench.cpp",
+                "line": 0,
+                "column": 0
+            }
+        },
+        "201": {
+            "fn_id": 201,
+            "mangled_name": "__cxx_global_var_init",
+            "fully_qualified_name": "__cxx_global_var_init",
+            "is_sys": true,
+            "is_declaration": false,
+            "supports_dataflow": false,
+            "src_loc": {
+                "file": "C:\\Users\\ozair\\Documents\\Code_Drive\\Drone\\hls_files\\testbench.cpp",
+                "line": 0,
+                "column": 0
+            }
+        },
+        "203": {
+            "fn_id": 203,
+            "mangled_name": "__dtor__ZStL8__ioinit",
+            "fully_qualified_name": "__dtor__ZStL8__ioinit",
+            "is_sys": true,
+            "is_declaration": false,
+            "supports_dataflow": false,
+            "src_loc": {
+                "file": "C:\\Xilinx\\2025.1\\tps\\mingw\\10.0.0\\win64.o\\nt\\include\\c++\\9.5.0\\iostream",
+                "line": 74,
+                "column": 0
+            }
+        },
+        "211": {
+            "fn_id": 211,
+            "mangled_name": "_GLOBAL__sub_I_conv_pool.cpp",
+            "fully_qualified_name": "_GLOBAL__sub_I_conv_pool",
+            "is_sys": true,
+            "is_declaration": false,
+            "supports_dataflow": false,
+            "src_loc": {
+                "file": "C:\\Users\\ozair\\Documents\\Code_Drive\\Drone\\hls_files\\conv_pool.cpp",
+                "line": 0,
+                "column": 0
+            }
+        },
+        "212": {
+            "fn_id": 212,
+            "mangled_name": "__cxx_global_var_init.2",
+            "fully_qualified_name": "__cxx_global_var_init",
+            "is_sys": true,
+            "is_declaration": false,
+            "supports_dataflow": false,
+            "src_loc": {
+                "file": "C:\\Users\\ozair\\Documents\\Code_Drive\\Drone\\hls_files\\conv_pool.cpp",
+                "line": 0,
+                "column": 0
+            }
+        },
+        "213": {
+            "fn_id": 213,
+            "mangled_name": "__dtor__ZStL8__ioinit.4",
+            "fully_qualified_name": "__dtor__ZStL8__ioinit",
+            "is_sys": true,
+            "is_declaration": false,
+            "supports_dataflow": false,
+            "src_loc": {
+                "file": "C:\\Xilinx\\2025.1\\tps\\mingw\\10.0.0\\win64.o\\nt\\include\\c++\\9.5.0\\iostream",
+                "line": 74,
+                "column": 0
+            }
+        },
+        "214": {
+            "fn_id": 214,
+            "mangled_name": "_GLOBAL__sub_I_conv_pool.cpp.6",
+            "fully_qualified_name": "_GLOBAL__sub_I_conv_pool",
+            "is_sys": true,
+            "is_declaration": false,
+            "supports_dataflow": false,
+            "src_loc": {
+                "file": "C:\\Users\\ozair\\Documents\\Code_Drive\\Drone\\hls_files\\conv_pool.cpp",
+                "line": 0,
+                "column": 0
+            }
+        },
+        "215": {
+            "fn_id": 215,
+            "mangled_name": "__cxx_global_var_init.7",
+            "fully_qualified_name": "__cxx_global_var_init",
+            "is_sys": true,
+            "is_declaration": false,
+            "supports_dataflow": false,
+            "src_loc": {
+                "file": "C:\\Users\\ozair\\Documents\\Code_Drive\\Drone\\hls_files\\conv_pool.cpp",
+                "line": 0,
+                "column": 0
+            }
+        },
+        "216": {
+            "fn_id": 216,
+            "mangled_name": "__dtor__ZStL8__ioinit.9",
+            "fully_qualified_name": "__dtor__ZStL8__ioinit",
+            "is_sys": true,
+            "is_declaration": false,
+            "supports_dataflow": false,
+            "src_loc": {
+                "file": "C:\\Xilinx\\2025.1\\tps\\mingw\\10.0.0\\win64.o\\nt\\include\\c++\\9.5.0\\iostream",
+                "line": 74,
+                "column": 0
+            }
+        },
+        "217": {
+            "fn_id": 217,
+            "mangled_name": "cnn_accel",
+            "fully_qualified_name": "cnn_accel",
+            "is_sys": false,
+            "is_declaration": false,
+            "supports_dataflow": true,
+            "src_loc": {
+                "file": "C:\\Users\\ozair\\Documents\\Code_Drive\\Drone\\hls_files\\conv_pool.cpp",
+                "line": 30,
+                "column": 1
+            }
+        }
+    },
+    "loops": {
+        "9": {
+            "fn_id": 217,
+            "lp_id": 9,
+            "label": "FC2_LOOP"
+        },
+        "10": {
+            "fn_id": 217,
+            "lp_id": 10,
+            "label": "FC1_OUT"
+        },
+        "11": {
+            "fn_id": 217,
+            "lp_id": 11
+        },
+        "12": {
+            "fn_id": 217,
+            "lp_id": 12,
+            "label": "FLATTEN"
+        },
+        "13": {
+            "fn_id": 217,
+            "lp_id": 13
+        },
+        "14": {
+            "fn_id": 217,
+            "lp_id": 14
+        },
+        "15": {
+            "fn_id": 217,
+            "lp_id": 15,
+            "label": "POOL2_ROW"
+        },
+        "16": {
+            "fn_id": 217,
+            "lp_id": 16,
+            "label": "POOL2_COL"
+        },
+        "17": {
+            "fn_id": 217,
+            "lp_id": 17,
+            "label": "POOL2_CH"
+        },
+        "18": {
+            "fn_id": 217,
+            "lp_id": 18,
+            "label": "CONV2_ROW"
+        },
+        "19": {
+            "fn_id": 217,
+            "lp_id": 19,
+            "label": "CONV2_COL"
+        },
+        "20": {
+            "fn_id": 217,
+            "lp_id": 20,
+            "label": "CONV2_FIL"
+        },
+        "21": {
+            "fn_id": 217,
+            "lp_id": 21,
+            "label": "CONV2_KR"
+        },
+        "22": {
+            "fn_id": 217,
+            "lp_id": 22,
+            "label": "CONV2_KC"
+        },
+        "23": {
+            "fn_id": 217,
+            "lp_id": 23,
+            "label": "CONV2_CH"
+        },
+        "24": {
+            "fn_id": 217,
+            "lp_id": 24,
+            "label": "POOL1_ROW"
+        },
+        "25": {
+            "fn_id": 217,
+            "lp_id": 25,
+            "label": "POOL1_COL"
+        },
+        "26": {
+            "fn_id": 217,
+            "lp_id": 26,
+            "label": "POOL1_CH"
+        },
+        "27": {
+            "fn_id": 217,
+            "lp_id": 27,
+            "label": "CONV1_ROW"
+        },
+        "28": {
+            "fn_id": 217,
+            "lp_id": 28,
+            "label": "CONV1_COL"
+        },
+        "29": {
+            "fn_id": 217,
+            "lp_id": 29,
+            "label": "CONV1_FIL"
+        },
+        "30": {
+            "fn_id": 217,
+            "lp_id": 30,
+            "label": "CONV1_KR"
+        },
+        "31": {
+            "fn_id": 217,
+            "lp_id": 31,
+            "label": "CONV1_KC"
+        },
+        "32": {
+            "fn_id": 217,
+            "lp_id": 32,
+            "label": "CONV1_CH"
+        },
+        "33": {
+            "fn_id": 217,
+            "lp_id": 33,
+            "label": "LOAD_IMG_ROWS"
+        },
+        "34": {
+            "fn_id": 217,
+            "lp_id": 34,
+            "label": "LOAD_IMG_COLS"
+        },
+        "35": {
+            "fn_id": 217,
+            "lp_id": 35,
+            "label": "LOAD_IMG_CH"
+        }
+    },
+    "used_types": [
+        {
+            "type_name": "Init",
+            "dwarf_tag": "class",
+            "count": 3
+        },
+        {
+            "type_name": "float",
+            "dwarf_tag": "base",
+            "count": 24
+        },
+        {
+            "type_name": "int",
+            "dwarf_tag": "base",
+            "count": 31
+        },
+        {
+            "type_name": "unsigned char",
+            "dwarf_tag": "base",
+            "count": 1
+        }
+    ]
+}

@@ -1,0 +1,80 @@
+<ENTRY>
+{
+ "thisFile": "C:/Users\\ozair\\Documents\\Code_Drive\\Drone\\cnn\\cnn\\hls\\csim\\code_analyzer\\app.csim_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Wed Jul  2 15:31:31 2025",
+ "timestampMillis": "1751484691809",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_C_SIM",
+  "kernels": [],
+  "toolVersion": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Wed Jul  2 15:31:31 2025",
+ "timestampMillis": "1751484691810",
+ "buildStep": {
+  "cmdId": "285a8145-577b-11f0-8c71-0433c2229f97",
+  "name": "vitis_c++",
+  "logFile": "",
+  "commandLine": "vitis_c++ code_analyzer",
+  "args": [
+   "code_analyzer"
+  ],
+  "iniFiles": [],
+  "cwd": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Jul  2 15:31:31 2025",
+ "timestampMillis": "1751484691810",
+ "status": {
+  "cmdId": "285a8145-577b-11f0-8c71-0433c2229f97",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Jul  2 15:32:25 2025",
+ "timestampMillis": "1751484745448",
+ "status": {
+  "cmdId": "285a8145-577b-11f0-8c71-0433c2229f97",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Jul  2 15:32:25 2025",
+ "timestampMillis": "1751484745448",
+ "report": {
+  "path": "C:\\Users\\ozair\\Documents\\Code_Drive\\Drone\\cnn",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "VCXX_CODE_ANALYZER",
+  "cmdId": "285a8145-577b-11f0-8c71-0433c2229f97"
+ }
+}
+</ENTRY>

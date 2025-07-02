@@ -30,10 +30,10 @@ extern "C" {
 void cnn_accel(
     // DDR interfaces
     const data_t *img_in,     // H*W*C0
-    const data_t *W1,         // M1*C0*K*K
-    const data_t *B1,         // M1
-    const data_t *W2,         // M2*M1*K*K
-    const data_t *B2,         // M2
+    const data_t *weights1,         // M1*C0*K*K
+    const data_t *bias1,         // M1
+    const data_t *weights2,         // M2*M1*K*K
+    const data_t *bias2,         // M2
     const data_t *FC1_W,      // N2*(M2*H4*W4)
     const data_t *FC1_B,      // N2
     const data_t *FC2_W,      // 1*N2
@@ -43,10 +43,10 @@ void cnn_accel(
     int ctrl) 
 {
 #pragma HLS INTERFACE m_axi port=img_in  offset=slave bundle=gmem
-#pragma HLS INTERFACE m_axi port=W1      offset=slave bundle=gmem
-#pragma HLS INTERFACE m_axi port=B1      offset=slave bundle=gmem
-#pragma HLS INTERFACE m_axi port=W2      offset=slave bundle=gmem
-#pragma HLS INTERFACE m_axi port=B2      offset=slave bundle=gmem
+#pragma HLS INTERFACE m_axi port=weights1      offset=slave bundle=gmem
+#pragma HLS INTERFACE m_axi port=bias1      offset=slave bundle=gmem
+#pragma HLS INTERFACE m_axi port=weights2      offset=slave bundle=gmem
+#pragma HLS INTERFACE m_axi port=bias2      offset=slave bundle=gmem
 #pragma HLS INTERFACE m_axi port=FC1_W   offset=slave bundle=gmem
 #pragma HLS INTERFACE m_axi port=FC1_B   offset=slave bundle=gmem
 #pragma HLS INTERFACE m_axi port=FC2_W   offset=slave bundle=gmem
@@ -54,10 +54,10 @@ void cnn_accel(
 #pragma HLS INTERFACE m_axi port=flag_out offset=slave bundle=gmem
 
 #pragma HLS INTERFACE s_axilite port=img_in  bundle=control
-#pragma HLS INTERFACE s_axilite port=W1      bundle=control
-#pragma HLS INTERFACE s_axilite port=B1      bundle=control
-#pragma HLS INTERFACE s_axilite port=W2      bundle=control
-#pragma HLS INTERFACE s_axilite port=B2      bundle=control
+#pragma HLS INTERFACE s_axilite port=weights1      bundle=control
+#pragma HLS INTERFACE s_axilite port=bias1      bundle=control
+#pragma HLS INTERFACE s_axilite port=weights2      bundle=control
+#pragma HLS INTERFACE s_axilite port=bias2      bundle=control
 #pragma HLS INTERFACE s_axilite port=FC1_W   bundle=control
 #pragma HLS INTERFACE s_axilite port=FC1_B   bundle=control
 #pragma HLS INTERFACE s_axilite port=FC2_W   bundle=control
@@ -103,7 +103,7 @@ void cnn_accel(
         CONV1_FIL:
         for(int m=0;m<M1;m++){
 #pragma HLS PIPELINE II=1
-          data_t acc = B1[m];
+          data_t acc = bias1[m];
           CONV1_KR:
           for(int p=0;p<K;p++){
             CONV1_KC:
@@ -111,7 +111,7 @@ void cnn_accel(
               CONV1_CH:
               for(int c=0;c<C0;c++){
                 int widx = ((m*C0 + c)*K + p)*K + q;
-                acc += local_img[i+p][j+q][c] * W1[widx];
+                acc += local_img[i+p][j+q][c] * weights1[widx];
               }
             }
           }
@@ -147,7 +147,7 @@ void cnn_accel(
         CONV2_FIL:
         for(int m=0;m<M2;m++){
 #pragma HLS PIPELINE II=1
-          data_t acc = B2[m];
+          data_t acc = bias2[m];
           CONV2_KR:
           for(int p=0;p<K;p++){
             CONV2_KC:
@@ -155,7 +155,7 @@ void cnn_accel(
               CONV2_CH:
               for(int c=0;c<M1;c++){
                 int widx = ((m*M1 + c)*K + p)*K + q;
-                acc += feat1_p[i+p][j+q][c] * W2[widx];
+                acc += feat1_p[i+p][j+q][c] * weights2[widx];
               }
             }
           }

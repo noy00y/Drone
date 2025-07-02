@@ -1,0 +1,3 @@
+relativeroot=C:/Users/ozair/Documents/Code_Drive/Drone/cnn
+original_argv=--mode hls --csim --config C:\Users\ozair\Documents\Code_Drive\Drone\cnn\..\hls_files\hls_run.tcl --work_dir cnn 
+

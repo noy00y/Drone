@@ -1,0 +1,9 @@
+{
+  "name": "cnn",
+  "type": "HLS",
+  "configuration": {
+    "componentType": "HLS",
+    "configFiles": ["..\/..\/hls_files\/hls_run.tcl"],
+    "work_dir": "."
+  }
+}

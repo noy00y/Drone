@@ -1,0 +1,25 @@
+07/02/25 14:12:23: Running xcd server. This server was built by gradle.
+07/02/25 14:12:23: Server was asked to start on port: '64005'
+07/02/25 14:12:23: Server is using token UUID: 'dcc07737-18f0-4aad-8d23-7da2d63eb48e'
+07/02/25 14:12:23: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+07/02/25 14:12:23: Attempting to start server on port '64005'
+07/02/25 14:12:23: Running Dispatch Server
+07/02/25 14:12:23: Version 2.2.0
+07/02/25 14:12:26: Dispatch Server: Accepted socket connection from client
+07/02/25 14:12:26: Starting Socket connection
+07/02/25 14:12:26: EXCHANGE_TOKEN received, server token: dcc07737-18f0-4aad-8d23-7da2d63eb48e, passed token: dcc07737-18f0-4aad-8d23-7da2d63eb48e
+07/02/25 14:12:26: DISPATCH_HANDLER: Adding handler from function makeHandler in library xv_system_diagram
+07/02/25 14:12:26: SESSION_MGR: creating session with session uuid: 'f36fe679-d6d0-4980-b064-1877a239b998' and name 'vitis-run_compile_cnn'
+07/02/25 14:12:26: KERNEL_SVC: creating session with uuid: 'f36fe679-d6d0-4980-b064-1877a239b998' and name 'vitis-run_compile_cnn'
+07/02/25 14:12:26: GUIDANCE_SMGR: creating guidance session with uuid: 'f36fe679-d6d0-4980-b064-1877a239b998' and name 'vitis-run_compile_cnn'
+07/02/25 14:12:26: SYSTEM_DIAGRAM: creating session with uuid: 'f36fe679-d6d0-4980-b064-1877a239b998' and name 'vitis-run_compile_cnn'
+07/02/25 14:12:30: Dispatch Server: Accepted socket connection from client
+07/02/25 14:12:30: Starting Socket connection
+07/02/25 14:12:42: SESSION_MGR: closing session for UUID 'f36fe679-d6d0-4980-b064-1877a239b998' with name 'vitis-run_compile_cnn'
+07/02/25 14:12:42: KERNEL_SVC: closing session for UUID 'f36fe679-d6d0-4980-b064-1877a239b998' with name 'vitis-run_compile_cnn'
+07/02/25 14:12:42: GUIDANCE_SMGR: closing session for UUID 'f36fe679-d6d0-4980-b064-1877a239b998' with name 'vitis-run_compile_cnn'
+07/02/25 14:12:42: SYSTEM_DIAGRAM: closing session for UUID 'f36fe679-d6d0-4980-b064-1877a239b998' with name 'vitis-run_compile_cnn'
+07/02/25 14:12:42: STOP_SERVER received, server token: dcc07737-18f0-4aad-8d23-7da2d63eb48e, passed token: dcc07737-18f0-4aad-8d23-7da2d63eb48e
+07/02/25 14:12:42: Socket received request to stop server.
+07/02/25 14:12:42: Dispatch Server: do_await_stop
+07/02/25 14:12:42: SERVER: destructor for server bound to port 64005

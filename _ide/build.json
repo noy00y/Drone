@@ -1,0 +1,10 @@
+{
+	"configurations": [
+		{
+			"name": "new_config",
+			"build_command": "",
+			"clean_command": "",
+			"cwd": "${workspaceFolder}"
+		}
+	]
+}

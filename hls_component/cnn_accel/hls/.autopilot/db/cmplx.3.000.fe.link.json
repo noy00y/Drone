@@ -1,0 +1,413 @@
+{
+  "0": {
+    "basicblocks": 187,
+    "calls": "29 6",
+    "control_depth": 2,
+    "def_use_depth": 8,
+    "file": "conv_pool.cpp",
+    "fileloc": 30,
+    "instructions": 538,
+    "loads": {
+      "G": 13,
+      "T": 9
+    },
+    "memory_accesses": 22,
+    "name": "cnn_accel",
+    "stores": {
+      "G": 7,
+      "T": 1
+    },
+    "total_instructions": 14779
+  },
+  "1": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 2,
+    "file": "x_hls_utils.h",
+    "fileloc": 283,
+    "instructions": 55,
+    "loads": {
+      "L": 1
+    },
+    "memory_accesses": 0,
+    "name": "fp_struct",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 318
+  },
+  "10": {
+    "basicblocks": 1,
+    "calls": "9 14 19 24 22",
+    "control_depth": 0,
+    "def_use_depth": 0,
+    "file": "hls_exp_tables.pp.cpp",
+    "fileloc": 0,
+    "instructions": 6,
+    "memory_accesses": 0,
+    "name": "",
+    "total_instructions": 14699
+  },
+  "11": {
+    "basicblocks": 24,
+    "calls": "1 28 5 26",
+    "control_depth": 0,
+    "def_use_depth": 2,
+    "file": "hls_tanh.h",
+    "fileloc": 28,
+    "instructions": 77,
+    "memory_accesses": 0,
+    "name": "generic_tanh<float>",
+    "total_instructions": 14235
+  },
+  "12": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 0,
+    "file": "x_hls_utils.h",
+    "fileloc": 454,
+    "instructions": 4,
+    "memory_accesses": 0,
+    "name": "fp_struct",
+    "total_instructions": 4
+  },
+  "13": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 2,
+    "file": "x_hls_utils.h",
+    "fileloc": 475,
+    "instructions": 32,
+    "memory_accesses": 0,
+    "name": "data",
+    "total_instructions": 279
+  },
+  "14": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 0,
+    "file": "hls_exp_tables.cpp",
+    "fileloc": 1330,
+    "instructions": 33,
+    "memory_accesses": 0,
+    "name": "__cxx_global_var_init.770",
+    "total_instructions": 545
+  },
+  "15": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 2,
+    "file": "x_hls_utils.h",
+    "fileloc": 485,
+    "instructions": 8,
+    "memory_accesses": 0,
+    "name": "expv",
+    "total_instructions": 109
+  },
+  "16": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 0,
+    "file": "x_hls_utils.h",
+    "fileloc": 281,
+    "instructions": 4,
+    "memory_accesses": 0,
+    "name": "fp_struct",
+    "total_instructions": 4
+  },
+  "17": {
+    "basicblocks": 1,
+    "calls": "18",
+    "control_depth": 0,
+    "def_use_depth": 2,
+    "file": "x_hls_utils.h",
+    "fileloc": 322,
+    "instructions": 18,
+    "loads": {
+      "L": 1
+    },
+    "memory_accesses": 0,
+    "name": "to_float",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 301
+  },
+  "18": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 2,
+    "file": "x_hls_utils.h",
+    "fileloc": 309,
+    "instructions": 32,
+    "memory_accesses": 0,
+    "name": "data",
+    "total_instructions": 279
+  },
+  "19": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 0,
+    "file": "hls_exp_tables.cpp",
+    "fileloc": 1366,
+    "instructions": 257,
+    "memory_accesses": 0,
+    "name": "__cxx_global_var_init.803",
+    "total_instructions": 4353
+  },
+  "2": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 2,
+    "file": "x_hls_utils.h",
+    "fileloc": 456,
+    "instructions": 55,
+    "loads": {
+      "L": 1
+    },
+    "memory_accesses": 0,
+    "name": "fp_struct",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 319
+  },
+  "20": {
+    "basicblocks": 1,
+    "calls": "1 1 25",
+    "control_depth": 0,
+    "def_use_depth": 2,
+    "file": "hls_copysign.h",
+    "fileloc": 10,
+    "instructions": 18,
+    "loads": {
+      "L": 1
+    },
+    "memory_accesses": 0,
+    "name": "generic_copysign<float>",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 957
+  },
+  "21": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 3,
+    "file": "hls_exp_.h",
+    "fileloc": 90,
+    "instructions": 224,
+    "memory_accesses": 0,
+    "name": "exp_Z1P_m_1",
+    "total_instructions": 2725
+  },
+  "22": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 0,
+    "file": "hls_exp_tables.cpp",
+    "fileloc": 2100,
+    "instructions": 65,
+    "memory_accesses": 0,
+    "name": "__cxx_global_var_init.1382",
+    "total_instructions": 1089
+  },
+  "23": {
+    "basicblocks": 3,
+    "calls": "2",
+    "control_depth": 0,
+    "def_use_depth": 2,
+    "file": "hls_isinf.h",
+    "fileloc": 16,
+    "instructions": 18,
+    "memory_accesses": 0,
+    "name": "generic_isinf<double>",
+    "total_instructions": 389
+  },
+  "24": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 0,
+    "file": "hls_exp_tables.cpp",
+    "fileloc": 1628,
+    "instructions": 257,
+    "memory_accesses": 0,
+    "name": "__cxx_global_var_init.1059",
+    "total_instructions": 4353
+  },
+  "25": {
+    "basicblocks": 1,
+    "calls": "17",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "x_hls_utils.h",
+    "fileloc": 346,
+    "instructions": 2,
+    "memory_accesses": 0,
+    "name": "to_ieee",
+    "total_instructions": 303
+  },
+  "26": {
+    "basicblocks": 1,
+    "calls": "16 25",
+    "control_depth": 0,
+    "def_use_depth": 2,
+    "file": "hls_nan.h",
+    "fileloc": 10,
+    "instructions": 35,
+    "loads": {
+      "L": 3
+    },
+    "memory_accesses": 0,
+    "name": "generic_nan<float>",
+    "stores": {
+      "L": 3
+    },
+    "total_instructions": 393
+  },
+  "27": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "hls_exp_float.cpp",
+    "fileloc": 15,
+    "instructions": 2,
+    "memory_accesses": 0,
+    "name": "exp",
+    "total_instructions": 2
+  },
+  "28": {
+    "basicblocks": 1,
+    "calls": "20",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "hls_fabs.h",
+    "fileloc": 12,
+    "instructions": 2,
+    "memory_accesses": 0,
+    "name": "generic_fabs<float>",
+    "total_instructions": 959
+  },
+  "29": {
+    "basicblocks": 1,
+    "calls": "11",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "tanhfloat.cpp",
+    "fileloc": 6,
+    "instructions": 2,
+    "memory_accesses": 0,
+    "name": "tanh",
+    "total_instructions": 14237
+  },
+  "3": {
+    "basicblocks": 1,
+    "calls": "13",
+    "control_depth": 0,
+    "def_use_depth": 2,
+    "file": "x_hls_utils.h",
+    "fileloc": 494,
+    "instructions": 18,
+    "loads": {
+      "L": 1
+    },
+    "memory_accesses": 0,
+    "name": "to_double",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 301
+  },
+  "4": {
+    "basicblocks": 25,
+    "calls": "2 12 8 23 15 21 7 7 7 7 7 7 7",
+    "control_depth": 7,
+    "def_use_depth": 4,
+    "file": "hls_exp_.h",
+    "fileloc": 156,
+    "instructions": 565,
+    "loads": {
+      "G": 1,
+      "L": 15
+    },
+    "memory_accesses": 133,
+    "name": "exp_generic<double>",
+    "stores": {
+      "L": 16
+    },
+    "total_instructions": 11898
+  },
+  "5": {
+    "basicblocks": 6,
+    "calls": "1 4",
+    "control_depth": 0,
+    "def_use_depth": 2,
+    "file": "hls_exp_float.cpp",
+    "fileloc": 7,
+    "instructions": 23,
+    "memory_accesses": 0,
+    "name": "expm1",
+    "total_instructions": 12291
+  },
+  "6": {
+    "basicblocks": 1,
+    "calls": "27",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "expfloat.cpp",
+    "fileloc": 15,
+    "instructions": 2,
+    "memory_accesses": 0,
+    "name": "exp",
+    "total_instructions": 4
+  },
+  "7": {
+    "basicblocks": 1,
+    "calls": "3",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "x_hls_utils.h",
+    "fileloc": 509,
+    "instructions": 2,
+    "memory_accesses": 0,
+    "name": "to_ieee",
+    "total_instructions": 303
+  },
+  "8": {
+    "basicblocks": 3,
+    "calls": "2",
+    "control_depth": 0,
+    "def_use_depth": 2,
+    "file": "hls_isnan.h",
+    "fileloc": 16,
+    "instructions": 18,
+    "memory_accesses": 0,
+    "name": "generic_isnan<double>",
+    "total_instructions": 390
+  },
+  "9": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 0,
+    "file": "hls_exp_tables.cpp",
+    "fileloc": 1068,
+    "instructions": 257,
+    "memory_accesses": 0,
+    "name": "__cxx_global_var_init.513",
+    "total_instructions": 4353
+  }
+}

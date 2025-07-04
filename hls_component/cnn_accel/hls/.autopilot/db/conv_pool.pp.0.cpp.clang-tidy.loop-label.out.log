@@ -1,0 +1,743 @@
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:2255:5: warning: Added loop label VITIS_LOOP_676_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high+1; ++i) {
+    ^~~
+    VITIS_LOOP_676_1: 
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:2255:5: note: FIX-IT applied suggested code changes
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:2269:5: warning: Added loop label VITIS_LOOP_690_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high+1; ++i) {
+    ^~~
+    VITIS_LOOP_690_1: 
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:2269:5: note: FIX-IT applied suggested code changes
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:2283:5: warning: Added loop label VITIS_LOOP_704_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high+1; ++i) {
+    ^~~
+    VITIS_LOOP_704_1: 
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:2283:5: note: FIX-IT applied suggested code changes
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:4251:7: warning: Added loop label VITIS_LOOP_1248_1:   [xilinx-label-all-loops]
+      for (i = 0; i < __N - 1; ++i) {
+      ^~~
+      VITIS_LOOP_1248_1: 
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:4251:7: note: FIX-IT applied suggested code changes
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:16129:72: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::sin_cos_K0 type=ROM_1P impl=LUTRAM
+                                                                       ^
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:16130:72: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::sin_cos_K1 type=ROM_1P impl=LUTRAM
+                                                                       ^
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:16131:72: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::sin_cos_K2 type=ROM_1P impl=LUTRAM
+                                                                       ^
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:16132:72: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::sin_cos_K3 type=ROM_1P impl=LUTRAM
+                                                                       ^
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:16133:72: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::sin_cos_K4 type=ROM_1P impl=LUTRAM
+                                                                       ^
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:16163:68: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::cos_K0 type=ROM_1P impl=LUTRAM
+                                                                   ^
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:16164:68: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::cos_K1 type=ROM_1P impl=LUTRAM
+                                                                   ^
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:16165:68: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::cos_K2 type=ROM_1P impl=LUTRAM
+                                                                   ^
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:16166:68: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::cos_K3 type=ROM_1P impl=LUTRAM
+                                                                   ^
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:16167:68: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::cos_K4 type=ROM_1P impl=LUTRAM
+                                                                   ^
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:16168:68: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::sin_K0 type=ROM_1P impl=LUTRAM
+                                                                   ^
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:16169:68: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::sin_K1 type=ROM_1P impl=LUTRAM
+                                                                   ^
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:16170:68: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::sin_K2 type=ROM_1P impl=LUTRAM
+                                                                   ^
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:16171:68: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::sin_K3 type=ROM_1P impl=LUTRAM
+                                                                   ^
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:16172:68: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::sin_K4 type=ROM_1P impl=LUTRAM
+                                                                   ^
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:16222:71: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=second_order_float::sin_cos_K0 type=ROM_1P impl=LUTRAM
+                                                                      ^
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:16223:71: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=second_order_float::sin_cos_K1 type=ROM_1P impl=LUTRAM
+                                                                      ^
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:16224:71: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=second_order_float::sin_cos_K2 type=ROM_1P impl=LUTRAM
+                                                                      ^
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:16251:67: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=second_order_float::cos_K0 type=ROM_1P impl=LUTRAM
+                                                                  ^
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:16252:67: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=second_order_float::cos_K1 type=ROM_1P impl=LUTRAM
+                                                                  ^
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:16253:67: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=second_order_float::cos_K2 type=ROM_1P impl=LUTRAM
+                                                                  ^
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:16254:67: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=second_order_float::sin_K0 type=ROM_1P impl=LUTRAM
+                                                                  ^
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:16255:67: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=second_order_float::sin_K1 type=ROM_1P impl=LUTRAM
+                                                                  ^
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:16256:67: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=second_order_float::sin_K2 type=ROM_1P impl=LUTRAM
+                                                                  ^
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:16292:73: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=first_order_fixed_16::sin_cos_K0 type=ROM_1P impl=LUTRAM
+                                                                        ^
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:16293:73: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=first_order_fixed_16::sin_cos_K1 type=ROM_1P impl=LUTRAM
+                                                                        ^
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:16567:5: warning: Added loop label VITIS_LOOP_61_1:   [xilinx-label-all-loops]
+    for (int n=0; n<Nmax; n++){
+    ^~~
+    VITIS_LOOP_61_1: 
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:16567:5: note: FIX-IT applied suggested code changes
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:16613:5: warning: Added loop label VITIS_LOOP_117_1:   [xilinx-label-all-loops]
+    for (int n=0; n<Nmax; n++){
+    ^~~
+    VITIS_LOOP_117_1: 
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:16613:5: note: FIX-IT applied suggested code changes
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:16776:9: warning: Added loop label VITIS_LOOP_289_1:   [xilinx-label-all-loops]
+        for(int i=0;i<W-1;i++){
+        ^~~
+        VITIS_LOOP_289_1: 
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:16776:9: note: FIX-IT applied suggested code changes
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:16928:9: warning: Added loop label VITIS_LOOP_449_1:   [xilinx-label-all-loops]
+        for(int i=0;i<W-1;i++){
+        ^~~
+        VITIS_LOOP_449_1: 
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:16928:9: note: FIX-IT applied suggested code changes
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:17108:5: warning: Added loop label VITIS_LOOP_629_1:   [xilinx-label-all-loops]
+    for(int i=0;i<W+1;i++){
+    ^~~
+    VITIS_LOOP_629_1: 
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:17108:5: note: FIX-IT applied suggested code changes
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:17112:5: warning: Added loop label VITIS_LOOP_633_2:   [xilinx-label-all-loops]
+    for(int i=0;i<W+1;i++){
+    ^~~
+    VITIS_LOOP_633_2: 
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:17112:5: note: FIX-IT applied suggested code changes
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:17222:5: warning: Added loop label VITIS_LOOP_743_1:   [xilinx-label-all-loops]
+    for (int n=0; n<Nmax; n++){
+    ^~~
+    VITIS_LOOP_743_1: 
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:17222:5: note: FIX-IT applied suggested code changes
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:17312:7: warning: Added loop label VITIS_LOOP_840_1:   [xilinx-label-all-loops]
+      for(int i=0;i<W-1;i++){
+      ^~~
+      VITIS_LOOP_840_1: 
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:17312:7: note: FIX-IT applied suggested code changes
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:17331:7: warning: Added loop label VITIS_LOOP_859_2:   [xilinx-label-all-loops]
+      for(int i=0;i<W-1;i++){
+      ^~~
+      VITIS_LOOP_859_2: 
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:17331:7: note: FIX-IT applied suggested code changes
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:17621:5: warning: Added loop label VITIS_LOOP_1173_1:   [xilinx-label-all-loops]
+    for(int i=0; i<Nmax; i++) {
+    ^~~
+    VITIS_LOOP_1173_1: 
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:17621:5: note: FIX-IT applied suggested code changes
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:17704:5: warning: Added loop label VITIS_LOOP_1256_1:   [xilinx-label-all-loops]
+    for(int i=0; i<Nmax; i++) {
+    ^~~
+    VITIS_LOOP_1256_1: 
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:17704:5: note: FIX-IT applied suggested code changes
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:18110:13: warning: Added loop label VITIS_LOOP_68_1:   [xilinx-label-all-loops]
+            for (int j = 3; j >= I_+1; j--) {
+            ^~~
+            VITIS_LOOP_68_1: 
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:18110:13: note: FIX-IT applied suggested code changes
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:18116:17: warning: Added loop label VITIS_LOOP_74_2:   [xilinx-label-all-loops]
+                for (int j = 3; j >= I_+1; j--){
+                ^~~
+                VITIS_LOOP_74_2: 
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:18116:17: note: FIX-IT applied suggested code changes
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:18120:17: warning: Added loop label VITIS_LOOP_78_3:   [xilinx-label-all-loops]
+                for (int j = I_; j >= 0; j--){
+                ^~~
+                VITIS_LOOP_78_3: 
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:18120:17: note: FIX-IT applied suggested code changes
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:18167:13: warning: Added loop label VITIS_LOOP_145_4:   [xilinx-label-all-loops]
+            for (int j = 9; j >= I_+4; j--) {
+            ^~~
+            VITIS_LOOP_145_4: 
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:18167:13: note: FIX-IT applied suggested code changes
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:18173:17: warning: Added loop label VITIS_LOOP_151_5:   [xilinx-label-all-loops]
+                for (int j = 9; j >= I_+4; j--){
+                ^~~
+                VITIS_LOOP_151_5: 
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:18173:17: note: FIX-IT applied suggested code changes
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:18177:17: warning: Added loop label VITIS_LOOP_155_6:   [xilinx-label-all-loops]
+                for (int j = I_+3; j >= 0; j--){
+                ^~~
+                VITIS_LOOP_155_6: 
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:18177:17: note: FIX-IT applied suggested code changes
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:18192:9: warning: Added loop label VITIS_LOOP_170_7:   [xilinx-label-all-loops]
+        for (int j = 14; j < 22; j++){
+        ^~~
+        VITIS_LOOP_170_7: 
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:18192:9: note: FIX-IT applied suggested code changes
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:18200:17: warning: Added loop label VITIS_LOOP_178_8:   [xilinx-label-all-loops]
+                for (int j = 0; j < 22; j++){
+                ^~~
+                VITIS_LOOP_178_8: 
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:18200:17: note: FIX-IT applied suggested code changes
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:18265:13: warning: Added loop label VITIS_LOOP_243_9:   [xilinx-label-all-loops]
+            for (int j = 21; j >= I_+10; j--) {
+            ^~~
+            VITIS_LOOP_243_9: 
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:18265:13: note: FIX-IT applied suggested code changes
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:18271:17: warning: Added loop label VITIS_LOOP_249_10:   [xilinx-label-all-loops]
+                for (int j = 21; j >= I_+10; j--) {
+                ^~~
+                VITIS_LOOP_249_10: 
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:18271:17: note: FIX-IT applied suggested code changes
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:18275:17: warning: Added loop label VITIS_LOOP_253_11:   [xilinx-label-all-loops]
+                for (int j = I_+9; j >= 0; j--) {
+                ^~~
+                VITIS_LOOP_253_11: 
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:18275:17: note: FIX-IT applied suggested code changes
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:18290:9: warning: Added loop label VITIS_LOOP_268_12:   [xilinx-label-all-loops]
+        for (int j = 27; j < 46; j++){
+        ^~~
+        VITIS_LOOP_268_12: 
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:18290:9: note: FIX-IT applied suggested code changes
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:18298:17: warning: Added loop label VITIS_LOOP_276_13:   [xilinx-label-all-loops]
+                for (int j = 0; j < 46; j++) {
+                ^~~
+                VITIS_LOOP_276_13: 
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:18298:17: note: FIX-IT applied suggested code changes
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:18527:13: warning: Added loop label VITIS_LOOP_505_14:   [xilinx-label-all-loops]
+            for (int j = 45; j >= I_+22; j--) {
+            ^~~
+            VITIS_LOOP_505_14: 
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:18527:13: note: FIX-IT applied suggested code changes
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:18533:17: warning: Added loop label VITIS_LOOP_511_15:   [xilinx-label-all-loops]
+                for (int j = 45; j >= I_+22; j--){
+                ^~~
+                VITIS_LOOP_511_15: 
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:18533:17: note: FIX-IT applied suggested code changes
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:18537:17: warning: Added loop label VITIS_LOOP_515_16:   [xilinx-label-all-loops]
+                for (int j = I_+21; j >= 0; j--) {
+                ^~~
+                VITIS_LOOP_515_16: 
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:18537:17: note: FIX-IT applied suggested code changes
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:18547:9: warning: Added loop label VITIS_LOOP_525_17:   [xilinx-label-all-loops]
+        for (int j = 32-F_; j < 32+I_; j++){
+        ^~~
+        VITIS_LOOP_525_17: 
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:18547:9: note: FIX-IT applied suggested code changes
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:18551:9: warning: Added loop label VITIS_LOOP_529_18:   [xilinx-label-all-loops]
+        for (int j = 32+I_; j <= 64; j++){
+        ^~~
+        VITIS_LOOP_529_18: 
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:18551:9: note: FIX-IT applied suggested code changes
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:18561:9: warning: Added loop label VITIS_LOOP_539_19:   [xilinx-label-all-loops]
+        for (int j = 37; j < 64; j++) {
+        ^~~
+        VITIS_LOOP_539_19: 
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:18561:9: note: FIX-IT applied suggested code changes
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:18569:17: warning: Added loop label VITIS_LOOP_547_20:   [xilinx-label-all-loops]
+                for (int j = 0; j < 64; j++){
+                ^~~
+                VITIS_LOOP_547_20: 
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:18569:17: note: FIX-IT applied suggested code changes
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:18930:13: warning: Added loop label VITIS_LOOP_908_21:   [xilinx-label-all-loops]
+            for (int j = 63; j >= I_+31; j--) {
+            ^~~
+            VITIS_LOOP_908_21: 
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:18930:13: note: FIX-IT applied suggested code changes
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:18936:17: warning: Added loop label VITIS_LOOP_914_22:   [xilinx-label-all-loops]
+                for (int j = 63; j >= I_+31; j--) {
+                ^~~
+                VITIS_LOOP_914_22: 
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:18936:17: note: FIX-IT applied suggested code changes
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:18940:17: warning: Added loop label VITIS_LOOP_918_23:   [xilinx-label-all-loops]
+                for (int j = I_+30; j >= 0; j--) {
+                ^~~
+                VITIS_LOOP_918_23: 
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:18940:17: note: FIX-IT applied suggested code changes
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:19056:13: warning: Added loop label VITIS_LOOP_1034_1:   [xilinx-label-all-loops]
+            for (int j = 4; j >= I_+1; j--) {
+            ^~~
+            VITIS_LOOP_1034_1: 
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:19056:13: note: FIX-IT applied suggested code changes
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:19062:17: warning: Added loop label VITIS_LOOP_1040_2:   [xilinx-label-all-loops]
+                for (int j = 4; j >= I_+1; j--) {
+                ^~~
+                VITIS_LOOP_1040_2: 
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:19062:17: note: FIX-IT applied suggested code changes
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:19066:17: warning: Added loop label VITIS_LOOP_1044_3:   [xilinx-label-all-loops]
+                for (int j = I_; j >= 0; j--) {
+                ^~~
+                VITIS_LOOP_1044_3: 
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:19066:17: note: FIX-IT applied suggested code changes
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:19153:13: warning: Added loop label VITIS_LOOP_1131_4:   [xilinx-label-all-loops]
+            for (int j = 10; j >= I_+4; j--) {
+            ^~~
+            VITIS_LOOP_1131_4: 
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:19153:13: note: FIX-IT applied suggested code changes
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:19159:17: warning: Added loop label VITIS_LOOP_1137_5:   [xilinx-label-all-loops]
+                for (int j = 10; j >= I_+4; j--) {
+                ^~~
+                VITIS_LOOP_1137_5: 
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:19159:17: note: FIX-IT applied suggested code changes
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:19163:17: warning: Added loop label VITIS_LOOP_1141_6:   [xilinx-label-all-loops]
+                for (int j = I_+3; j >= 0; j--) {
+                ^~~
+                VITIS_LOOP_1141_6: 
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:19163:17: note: FIX-IT applied suggested code changes
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:19182:9: warning: Added loop label VITIS_LOOP_1160_7:   [xilinx-label-all-loops]
+        for (int j = wf+3; j < w-1; j++) {
+        ^~~
+        VITIS_LOOP_1160_7: 
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:19182:9: note: FIX-IT applied suggested code changes
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:19189:17: warning: Added loop label VITIS_LOOP_1167_8:   [xilinx-label-all-loops]
+                for (int j = 0; j < 22; j++) {
+                ^~~
+                VITIS_LOOP_1167_8: 
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:19189:17: note: FIX-IT applied suggested code changes
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:19305:13: warning: Added loop label VITIS_LOOP_1283_9:   [xilinx-label-all-loops]
+            for (int j = 22; j >= I_+10; j--) {
+            ^~~
+            VITIS_LOOP_1283_9: 
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:19305:13: note: FIX-IT applied suggested code changes
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:19311:17: warning: Added loop label VITIS_LOOP_1289_10:   [xilinx-label-all-loops]
+                for (int j = 22; j >= I_+10; j--){
+                ^~~
+                VITIS_LOOP_1289_10: 
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:19311:17: note: FIX-IT applied suggested code changes
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:19315:17: warning: Added loop label VITIS_LOOP_1293_11:   [xilinx-label-all-loops]
+                for (int j = I_+9; j >= 0; j--) {
+                ^~~
+                VITIS_LOOP_1293_11: 
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:19315:17: note: FIX-IT applied suggested code changes
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:19335:9: warning: Added loop label VITIS_LOOP_1313_12:   [xilinx-label-all-loops]
+        for (int j = wf+4; j < w-1; j++){
+        ^~~
+        VITIS_LOOP_1313_12: 
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:19335:9: note: FIX-IT applied suggested code changes
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:19342:17: warning: Added loop label VITIS_LOOP_1320_13:   [xilinx-label-all-loops]
+                for (int j = 0; j < 46; j++) {
+                ^~~
+                VITIS_LOOP_1320_13: 
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:19342:17: note: FIX-IT applied suggested code changes
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:19604:13: warning: Added loop label VITIS_LOOP_1582_14:   [xilinx-label-all-loops]
+            for (int j = 46; j >= I_+22; j--) {
+            ^~~
+            VITIS_LOOP_1582_14: 
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:19604:13: note: FIX-IT applied suggested code changes
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:19610:17: warning: Added loop label VITIS_LOOP_1588_15:   [xilinx-label-all-loops]
+                for (int j = 46; j >= I_+22; j--) {
+                ^~~
+                VITIS_LOOP_1588_15: 
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:19610:17: note: FIX-IT applied suggested code changes
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:19614:17: warning: Added loop label VITIS_LOOP_1592_16:   [xilinx-label-all-loops]
+                for (int j = I_+21; j >= 0; j--) {
+                ^~~
+                VITIS_LOOP_1592_16: 
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:19614:17: note: FIX-IT applied suggested code changes
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:19638:9: warning: Added loop label VITIS_LOOP_1616_17:   [xilinx-label-all-loops]
+        for (int j = wf+5; j < w-1; j++){
+        ^~~
+        VITIS_LOOP_1616_17: 
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:19638:9: note: FIX-IT applied suggested code changes
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:19645:17: warning: Added loop label VITIS_LOOP_1623_18:   [xilinx-label-all-loops]
+                for (int j = 0; j < 64; j++) {
+                ^~~
+                VITIS_LOOP_1623_18: 
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:19645:17: note: FIX-IT applied suggested code changes
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:20075:13: warning: Added loop label VITIS_LOOP_2053_19:   [xilinx-label-all-loops]
+            for (int j = 64; j >= I_+31; j--) {
+            ^~~
+            VITIS_LOOP_2053_19: 
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:20075:13: note: FIX-IT applied suggested code changes
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:20081:17: warning: Added loop label VITIS_LOOP_2059_20:   [xilinx-label-all-loops]
+                for (int j = 64; j >= I_+31; j--) {
+                ^~~
+                VITIS_LOOP_2059_20: 
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:20081:17: note: FIX-IT applied suggested code changes
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:20085:17: warning: Added loop label VITIS_LOOP_2063_21:   [xilinx-label-all-loops]
+                for (int j = I_+30; j >= 0; j--) {
+                ^~~
+                VITIS_LOOP_2063_21: 
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:20085:17: note: FIX-IT applied suggested code changes
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:20214:13: warning: Added loop label VITIS_LOOP_2192_1:   [xilinx-label-all-loops]
+            for(int j=3; j>=I+1; j--) {
+            ^~~
+            VITIS_LOOP_2192_1: 
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:20214:13: note: FIX-IT applied suggested code changes
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:20221:17: warning: Added loop label VITIS_LOOP_2199_2:   [xilinx-label-all-loops]
+                for(int j=3; j>=I+1; j--) {
+                ^~~
+                VITIS_LOOP_2199_2: 
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:20221:17: note: FIX-IT applied suggested code changes
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:20225:17: warning: Added loop label VITIS_LOOP_2203_3:   [xilinx-label-all-loops]
+                for(int j=I; j>=0; j--) {
+                ^~~
+                VITIS_LOOP_2203_3: 
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:20225:17: note: FIX-IT applied suggested code changes
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:20272:13: warning: Added loop label VITIS_LOOP_2250_4:   [xilinx-label-all-loops]
+            for(int j=7; j>=3+I; j--) {
+            ^~~
+            VITIS_LOOP_2250_4: 
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:20272:13: note: FIX-IT applied suggested code changes
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:20279:17: warning: Added loop label VITIS_LOOP_2257_5:   [xilinx-label-all-loops]
+                for(int j=7; j>=3+I; j--) {
+                ^~~
+                VITIS_LOOP_2257_5: 
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:20279:17: note: FIX-IT applied suggested code changes
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:20283:17: warning: Added loop label VITIS_LOOP_2261_6:   [xilinx-label-all-loops]
+                for(int j=I+2; j>=0; j--) {
+                ^~~
+                VITIS_LOOP_2261_6: 
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:20283:17: note: FIX-IT applied suggested code changes
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:20301:9: warning: Added loop label VITIS_LOOP_2279_7:   [xilinx-label-all-loops]
+        for(int j=11; j<16; j++) {
+        ^~~
+        VITIS_LOOP_2279_7: 
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:20301:9: note: FIX-IT applied suggested code changes
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:20356:13: warning: Added loop label VITIS_LOOP_2334_8:   [xilinx-label-all-loops]
+            for(int j=15; j>=7+I; j--) {
+            ^~~
+            VITIS_LOOP_2334_8: 
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:20356:13: note: FIX-IT applied suggested code changes
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:20363:17: warning: Added loop label VITIS_LOOP_2341_9:   [xilinx-label-all-loops]
+                for(int j=15; j>=7+I; j--) {
+                ^~~
+                VITIS_LOOP_2341_9: 
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:20363:17: note: FIX-IT applied suggested code changes
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:20367:17: warning: Added loop label VITIS_LOOP_2345_10:   [xilinx-label-all-loops]
+                for(int j=6+I; j>=0; j--) {
+                ^~~
+                VITIS_LOOP_2345_10: 
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:20367:17: note: FIX-IT applied suggested code changes
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:20385:9: warning: Added loop label VITIS_LOOP_2363_11:   [xilinx-label-all-loops]
+        for(int j=20; j<32; j++) {
+        ^~~
+        VITIS_LOOP_2363_11: 
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:20385:9: note: FIX-IT applied suggested code changes
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:20474:13: warning: Added loop label VITIS_LOOP_2452_12:   [xilinx-label-all-loops]
+            for(int j=31; j>=I+15; j--) {
+            ^~~
+            VITIS_LOOP_2452_12: 
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:20474:13: note: FIX-IT applied suggested code changes
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:20481:17: warning: Added loop label VITIS_LOOP_2459_13:   [xilinx-label-all-loops]
+                for(int j=31; j>=I+15; j--) {
+                ^~~
+                VITIS_LOOP_2459_13: 
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:20481:17: note: FIX-IT applied suggested code changes
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:20485:17: warning: Added loop label VITIS_LOOP_2463_14:   [xilinx-label-all-loops]
+                for(int j=I+14; j>=0; j--) {
+                ^~~
+                VITIS_LOOP_2463_14: 
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:20485:17: note: FIX-IT applied suggested code changes
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:20495:9: warning: Added loop label VITIS_LOOP_2473_15:   [xilinx-label-all-loops]
+        for(int j=32-F; j<32+I; j++) {
+        ^~~
+        VITIS_LOOP_2473_15: 
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:20495:9: note: FIX-IT applied suggested code changes
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:20499:9: warning: Added loop label VITIS_LOOP_2477_16:   [xilinx-label-all-loops]
+        for(int j=32+I; j<=64; j++) {
+        ^~~
+        VITIS_LOOP_2477_16: 
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:20499:9: note: FIX-IT applied suggested code changes
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:20510:9: warning: Added loop label VITIS_LOOP_2488_17:   [xilinx-label-all-loops]
+        for(int j=37; j<64; j++) {
+        ^~~
+        VITIS_LOOP_2488_17: 
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:20510:9: note: FIX-IT applied suggested code changes
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:20518:17: warning: Added loop label VITIS_LOOP_2496_18:   [xilinx-label-all-loops]
+                for(int j=0; j<64; j++) {
+                ^~~
+                VITIS_LOOP_2496_18: 
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:20518:17: note: FIX-IT applied suggested code changes
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:20843:13: warning: Added loop label VITIS_LOOP_2821_19:   [xilinx-label-all-loops]
+            for(int j=63; j>=I+31; j--) {
+            ^~~
+            VITIS_LOOP_2821_19: 
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:20843:13: note: FIX-IT applied suggested code changes
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:20850:17: warning: Added loop label VITIS_LOOP_2828_20:   [xilinx-label-all-loops]
+                for(int j=63; j>=I+31; j--) {
+                ^~~
+                VITIS_LOOP_2828_20: 
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:20850:17: note: FIX-IT applied suggested code changes
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:20854:17: warning: Added loop label VITIS_LOOP_2832_21:   [xilinx-label-all-loops]
+                for(int j=I+30; j>=0; j--) {
+                ^~~
+                VITIS_LOOP_2832_21: 
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:20854:17: note: FIX-IT applied suggested code changes
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:20942:4: warning: Added loop label VITIS_LOOP_2920_1:   [xilinx-label-all-loops]
+   for(int j = 5; j>=I_+2; j--) {
+   ^~~
+   VITIS_LOOP_2920_1: 
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:20942:4: note: FIX-IT applied suggested code changes
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:20949:5: warning: Added loop label VITIS_LOOP_2927_2:   [xilinx-label-all-loops]
+    for(int j = 5; j>=I_+2; j--) {
+    ^~~
+    VITIS_LOOP_2927_2: 
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:20949:5: note: FIX-IT applied suggested code changes
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:20953:5: warning: Added loop label VITIS_LOOP_2931_3:   [xilinx-label-all-loops]
+    for(int j = I_+1; j>=0; j--) {
+    ^~~
+    VITIS_LOOP_2931_3: 
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:20953:5: note: FIX-IT applied suggested code changes
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:20968:3: warning: Added loop label VITIS_LOOP_2946_4:   [xilinx-label-all-loops]
+  for(int j = 11; j >=7; j--) {
+  ^~~
+  VITIS_LOOP_2946_4: 
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:20968:3: note: FIX-IT applied suggested code changes
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:21000:4: warning: Added loop label VITIS_LOOP_2978_5:   [xilinx-label-all-loops]
+   for(int j = 11; j >= I_+5; j--) {
+   ^~~
+   VITIS_LOOP_2978_5: 
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:21000:4: note: FIX-IT applied suggested code changes
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:21007:5: warning: Added loop label VITIS_LOOP_2985_6:   [xilinx-label-all-loops]
+    for(int j = 11; j>= I_+5; j--) {
+    ^~~
+    VITIS_LOOP_2985_6: 
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:21007:5: note: FIX-IT applied suggested code changes
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:21011:5: warning: Added loop label VITIS_LOOP_2989_7:   [xilinx-label-all-loops]
+    for(int j = I_+4; j>=0; j--) {
+    ^~~
+    VITIS_LOOP_2989_7: 
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:21011:5: note: FIX-IT applied suggested code changes
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:21026:3: warning: Added loop label VITIS_LOOP_3004_8:   [xilinx-label-all-loops]
+  for(int j = 25; j>=15; j--) {
+  ^~~
+  VITIS_LOOP_3004_8: 
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:21026:3: note: FIX-IT applied suggested code changes
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:21076:4: warning: Added loop label VITIS_LOOP_3054_9:   [xilinx-label-all-loops]
+   for(int j = 25; j>= I_+12; j--) {
+   ^~~
+   VITIS_LOOP_3054_9: 
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:21076:4: note: FIX-IT applied suggested code changes
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:21083:5: warning: Added loop label VITIS_LOOP_3061_10:   [xilinx-label-all-loops]
+    for(int j = 25; j>=I_+12; j--) {
+    ^~~
+    VITIS_LOOP_3061_10: 
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:21083:5: note: FIX-IT applied suggested code changes
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:21087:5: warning: Added loop label VITIS_LOOP_3065_11:   [xilinx-label-all-loops]
+    for(int j = I_+11; j>=0; j--) {
+    ^~~
+    VITIS_LOOP_3065_11: 
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:21087:5: note: FIX-IT applied suggested code changes
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:21102:3: warning: Added loop label VITIS_LOOP_3080_12:   [xilinx-label-all-loops]
+  for(int j = 51; j >= 29; j--) {
+  ^~~
+  VITIS_LOOP_3080_12: 
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:21102:3: note: FIX-IT applied suggested code changes
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:21239:4: warning: Added loop label VITIS_LOOP_3217_13:   [xilinx-label-all-loops]
+   for(int j = 51; j >= 25 + I_; j--) {
+   ^~~
+   VITIS_LOOP_3217_13: 
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:21239:4: note: FIX-IT applied suggested code changes
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:21246:5: warning: Added loop label VITIS_LOOP_3224_14:   [xilinx-label-all-loops]
+    for(int j = 51; j>=25 + I_; j--) {
+    ^~~
+    VITIS_LOOP_3224_14: 
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:21246:5: note: FIX-IT applied suggested code changes
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:21250:5: warning: Added loop label VITIS_LOOP_3228_15:   [xilinx-label-all-loops]
+    for(int j = 24 + I_; j >= 0; j--) {
+    ^~~
+    VITIS_LOOP_3228_15: 
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:21250:5: note: FIX-IT applied suggested code changes
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:21265:3: warning: Added loop label VITIS_LOOP_3243_16:   [xilinx-label-all-loops]
+  for(int j = 63; j >= 36; j--) {
+  ^~~
+  VITIS_LOOP_3243_16: 
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:21265:3: note: FIX-IT applied suggested code changes
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:21425:4: warning: Added loop label VITIS_LOOP_3403_17:   [xilinx-label-all-loops]
+   for(int j = 63; j >= 31 + I_; j--) {
+   ^~~
+   VITIS_LOOP_3403_17: 
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:21425:4: note: FIX-IT applied suggested code changes
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:21432:5: warning: Added loop label VITIS_LOOP_3410_18:   [xilinx-label-all-loops]
+    for(int j = 63; j >= 31 + I_; j--) {
+    ^~~
+    VITIS_LOOP_3410_18: 
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:21432:5: note: FIX-IT applied suggested code changes
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:21436:5: warning: Added loop label VITIS_LOOP_3414_19:   [xilinx-label-all-loops]
+    for(int j = 30 + I_; j >= 0; j--) {
+    ^~~
+    VITIS_LOOP_3414_19: 
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:21436:5: note: FIX-IT applied suggested code changes
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:22151:13: warning: Added loop label VITIS_LOOP_703_1:   [xilinx-label-all-loops]
+            for (b_exp = I_-1; b_exp >= -F_; b_exp--) {
+            ^~~
+            VITIS_LOOP_703_1: 
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:22151:13: note: FIX-IT applied suggested code changes
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:22369:13: warning: Added loop label VITIS_LOOP_921_1:   [xilinx-label-all-loops]
+            for (b_exp = I_-1; b_exp >= -F_; b_exp--) {
+            ^~~
+            VITIS_LOOP_921_1: 
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:22369:13: note: FIX-IT applied suggested code changes
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:22786:13: warning: Added loop label VITIS_LOOP_1345_1:   [xilinx-label-all-loops]
+            for (b_exp = I_-1; b_exp >= -F_; b_exp--) {
+            ^~~
+            VITIS_LOOP_1345_1: 
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:22786:13: note: FIX-IT applied suggested code changes
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:23109:9: warning: Added loop label VITIS_LOOP_243_1:   [xilinx-label-all-loops]
+        for ( int pos = msbr-1; pos >= 0; pos-- ) {
+        ^~~
+        VITIS_LOOP_243_1: 
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:23109:9: note: FIX-IT applied suggested code changes
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:23137:9: warning: Added loop label VITIS_LOOP_271_2:   [xilinx-label-all-loops]
+        for ( int pos = -1; pos >= -F_-1; pos-- ) {
+        ^~~
+        VITIS_LOOP_271_2: 
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:23137:9: note: FIX-IT applied suggested code changes
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:23841:13: warning: Added loop label VITIS_LOOP_48_1:   [xilinx-label-all-loops]
+            for (int j = 0; j < W_-1; j++){
+            ^~~
+            VITIS_LOOP_48_1: 
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:23841:13: note: FIX-IT applied suggested code changes
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:23894:5: warning: Added loop label VITIS_LOOP_109_2:   [xilinx-label-all-loops]
+    for (int j = F_l+F_+I_m-1; j < F_l+W_+5; j++){
+    ^~~
+    VITIS_LOOP_109_2: 
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:23894:5: note: FIX-IT applied suggested code changes
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:23908:13: warning: Added loop label VITIS_LOOP_123_3:   [xilinx-label-all-loops]
+            for (int j = WO_m-1; j >= W_-1; j--) {
+            ^~~
+            VITIS_LOOP_123_3: 
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:23908:13: note: FIX-IT applied suggested code changes
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:23938:13: warning: Added loop label VITIS_LOOP_153_4:   [xilinx-label-all-loops]
+            for (int j = W_-2; j >= 0; j--){
+            ^~~
+            VITIS_LOOP_153_4: 
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:23938:13: note: FIX-IT applied suggested code changes
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:24023:12: warning: Added loop label VITIS_LOOP_281_1:   [xilinx-label-all-loops]
+           for(int i = wf_log+we_log-2; i > WI_e - 2; --i) {
+           ^~~
+           VITIS_LOOP_281_1: 
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:24023:12: note: FIX-IT applied suggested code changes
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:24043:16: warning: Added loop label VITIS_LOOP_301_2:   [xilinx-label-all-loops]
+               for (int j = WO_e-1; j >= W_-1; j--) {
+               ^~~
+               VITIS_LOOP_301_2: 
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:24043:16: note: FIX-IT applied suggested code changes
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:24057:20: warning: Added loop label VITIS_LOOP_315_3:   [xilinx-label-all-loops]
+                   for(int i = 0; i < W_-1; ++i) {
+                   ^~~
+                   VITIS_LOOP_315_3: 
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:24057:20: note: FIX-IT applied suggested code changes
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:24150:12: warning: Added loop label VITIS_LOOP_433_1:   [xilinx-label-all-loops]
+           for (int j =WO_d-1; j >= W_-1; j--) {
+           ^~~
+           VITIS_LOOP_433_1: 
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:24150:12: note: FIX-IT applied suggested code changes
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:24164:15: warning: Added loop label VITIS_LOOP_447_2:   [xilinx-label-all-loops]
+              for(int i = 0; i < W_-1; ++i) {
+              ^~~
+              VITIS_LOOP_447_2: 
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:24164:15: note: FIX-IT applied suggested code changes
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:24284:13: warning: Added loop label VITIS_LOOP_33_1:   [xilinx-label-all-loops]
+            for (int i = 0; i < W_-1; i++){
+            ^~~
+            VITIS_LOOP_33_1: 
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:24284:13: note: FIX-IT applied suggested code changes
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:24408:13: warning: Added loop label VITIS_LOOP_183_1:   [xilinx-label-all-loops]
+            for (int i = 0; i < W_-1; i++){
+            ^~~
+            VITIS_LOOP_183_1: 
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:24408:13: note: FIX-IT applied suggested code changes
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:24463:13: warning: Added loop label VITIS_LOOP_248_1:   [xilinx-label-all-loops]
+            for (int i = 0; i < W_-1; i++){
+            ^~~
+            VITIS_LOOP_248_1: 
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:24463:13: note: FIX-IT applied suggested code changes
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:24730:5: warning: Added loop label VITIS_LOOP_44_1:   [xilinx-label-all-loops]
+    for(int l = loop_nm; l > 0; --l){
+    ^~~
+    VITIS_LOOP_44_1: 
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:24730:5: note: FIX-IT applied suggested code changes
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:24981:2: warning: Added loop label VITIS_LOOP_16_1:   [xilinx-label-all-loops]
+ for (int i=0; i<W_;i++)
+ ^~~
+ VITIS_LOOP_16_1: 
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:24981:2: note: FIX-IT applied suggested code changes
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:24992:2: warning: Added loop label VITIS_LOOP_27_1:   [xilinx-label-all-loops]
+ for (int i=0; i<W_;i++)
+ ^~~
+ VITIS_LOOP_27_1: 
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:24992:2: note: FIX-IT applied suggested code changes
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:25003:2: warning: Added loop label VITIS_LOOP_38_1:   [xilinx-label-all-loops]
+ for (int i=0; i<I_;i++)
+ ^~~
+ VITIS_LOOP_38_1: 
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:25003:2: note: FIX-IT applied suggested code changes
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:25014:2: warning: Added loop label VITIS_LOOP_49_1:   [xilinx-label-all-loops]
+ for (int i=0; i<I_;i++)
+ ^~~
+ VITIS_LOOP_49_1: 
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:25014:2: note: FIX-IT applied suggested code changes
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:25025:2: warning: Added loop label VITIS_LOOP_60_1:   [xilinx-label-all-loops]
+ for (int i=0; i<W_;i++)
+ ^~~
+ VITIS_LOOP_60_1: 
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:25025:2: note: FIX-IT applied suggested code changes
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:25036:2: warning: Added loop label VITIS_LOOP_71_1:   [xilinx-label-all-loops]
+ for (int i=0; i<W_;i++)
+ ^~~
+ VITIS_LOOP_71_1: 
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:25036:2: note: FIX-IT applied suggested code changes
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:25047:2: warning: Added loop label VITIS_LOOP_82_1:   [xilinx-label-all-loops]
+ for (int i=0; i<I_;i++)
+ ^~~
+ VITIS_LOOP_82_1: 
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:25047:2: note: FIX-IT applied suggested code changes
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:25058:2: warning: Added loop label VITIS_LOOP_93_1:   [xilinx-label-all-loops]
+ for (int i=0; i<I_;i++)
+ ^~~
+ VITIS_LOOP_93_1: 
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:25058:2: note: FIX-IT applied suggested code changes
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:27417:12: warning: Added loop label VITIS_LOOP_26_1:   [xilinx-label-all-loops]
+           for(int i = 0; i < W_-1; ++i) {
+           ^~~
+           VITIS_LOOP_26_1: 
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:27417:12: note: FIX-IT applied suggested code changes
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:27481:7: warning: Added loop label VITIS_LOOP_40_1:   [xilinx-label-all-loops]
+      for(int pos = msbr - 1 ; pos >= -F-1; pos--) {
+      ^~~
+      VITIS_LOOP_40_1: 
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:27481:7: note: FIX-IT applied suggested code changes
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:27598:9: warning: Added loop label VITIS_LOOP_49_1:   [xilinx-label-all-loops]
+        for(int pos = msbr - 1; pos >= 0; pos--) {
+        ^~~
+        VITIS_LOOP_49_1: 
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:27598:9: note: FIX-IT applied suggested code changes
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:27623:5: warning: Added loop label VITIS_LOOP_81_2:   [xilinx-label-all-loops]
+    for(int pos = -1; pos >= -F-1; pos--) {
+    ^~~
+    VITIS_LOOP_81_2: 
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:27623:5: note: FIX-IT applied suggested code changes
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:27693:8: warning: Added loop label VITIS_LOOP_169_3:   [xilinx-label-all-loops]
+       for(int i = 0; i < W - 1; ++i) {
+       ^~~
+       VITIS_LOOP_169_3: 
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:27693:8: note: FIX-IT applied suggested code changes
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:30083:7: warning: Added loop label VITIS_LOOP_189_1:   [xilinx-label-all-loops]
+      for(int j=0;j<((((320 -3 +1)/2)-3 +1)/2);j++){
+      ^~~
+      VITIS_LOOP_189_1: 
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:30083:7: note: FIX-IT applied suggested code changes
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:30084:9: warning: Added loop label VITIS_LOOP_190_2:   [xilinx-label-all-loops]
+        for(int m=0;m<16;m++){
+        ^~~
+        VITIS_LOOP_190_2: 
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:30084:9: note: FIX-IT applied suggested code changes
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:30096:7: warning: Added loop label VITIS_LOOP_202_3:   [xilinx-label-all-loops]
+      for(int i=0;i<cnt;i++){
+      ^~~
+      VITIS_LOOP_202_3: 
+C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp:30096:7: note: FIX-IT applied suggested code changes

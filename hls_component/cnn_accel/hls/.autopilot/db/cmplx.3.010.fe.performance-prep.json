@@ -1,0 +1,49 @@
+{
+  "0": {
+    "basicblocks": 111,
+    "calls": "2",
+    "control_depth": 2,
+    "def_use_depth": 8,
+    "file": "conv_pool.cpp",
+    "fileloc": 30,
+    "instructions": 902,
+    "loads": {
+      "G": 125,
+      "T": 3
+    },
+    "memory_accesses": 38,
+    "name": "cnn_accel",
+    "stores": {
+      "G": 53,
+      "T": 1
+    },
+    "total_instructions": 1134
+  },
+  "1": {
+    "basicblocks": 10,
+    "calls": "",
+    "control_depth": 4,
+    "def_use_depth": 42,
+    "file": "hls_exp_.h",
+    "fileloc": 156,
+    "instructions": 178,
+    "loads": {
+      "G": 4
+    },
+    "memory_accesses": 4,
+    "name": "exp_generic<double>",
+    "total_instructions": 178
+  },
+  "2": {
+    "basicblocks": 13,
+    "calls": "1",
+    "control_depth": 0,
+    "def_use_depth": 5,
+    "file": "hls_tanh.h",
+    "fileloc": 28,
+    "instructions": 54,
+    "memory_accesses": 0,
+    "name": "generic_tanh<float>",
+    "total_instructions": 232
+  }
+}

@@ -1,0 +1,23 @@
+<dict>
+  <key>main-file</key>
+  <string>../hls_files/conv_pool.cpp</string>
+  <key>diagnostics</key>
+  <array>
+    <dict>
+      <key>level</key>
+      <string>warning</string>
+      <key>filename</key>
+      <string>C:/Xilinx/2025.1/Vitis/common/technology/autopilot/etc/hls_sqrt_apfixed.h</string>
+      <key>line</key>
+      <integer>16</integer>
+      <key>column</key>
+      <integer>34</integer>
+      <key>message</key>
+      <string>unknown warning group &apos;-Wmisleading-indentation&apos;, ignored</string>
+      <key>ID</key>
+      <integer>1016</integer>
+      <key>WarningOption</key>
+      <string>unknown-warning-option</string>
+    </dict>
+  </array>
+</dict>

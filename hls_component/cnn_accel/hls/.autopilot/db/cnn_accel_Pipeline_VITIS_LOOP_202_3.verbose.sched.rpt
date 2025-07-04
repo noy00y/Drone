@@ -1,0 +1,287 @@
+
+
+================================================================
+== Vitis HLS Report for 'cnn_accel_Pipeline_VITIS_LOOP_202_3'
+================================================================
+* Date:           Fri Jul  4 17:05:21 2025
+
+* Version:        2025.1 (Build 6135595 on May 21 2025)
+* Project:        cnn_accel
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: artix7
+* Target device:  xc7a100t-fgg484-2L
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+-----------+------------+
+    |  Clock |  Target  | Estimated | Uncertainty|
+    +--------+----------+-----------+------------+
+    |ap_clk  |  20.00 ns|  14.600 ns|     5.40 ns|
+    +--------+----------+-----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+--------+--------+------------------------------------------------+
+    |  Latency (cycles) |  Latency (absolute) |     Interval    |                    Pipeline                    |
+    |   min   |   max   |    min   |    max   |   min  |   max  |                      Type                      |
+    +---------+---------+----------+----------+--------+--------+------------------------------------------------+
+    |   289549|   289549|  5.791 ms|  5.791 ms|  289540|  289540|  loop auto-rewind stp (delay=0 clock cycles(s))|
+    +---------+---------+----------+----------+--------+--------+------------------------------------------------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +--------------------+---------+---------+----------+-----------+-----------+-------+----------+
+        |                    |  Latency (cycles) | Iteration|  Initiation Interval  |  Trip |          |
+        |      Loop Name     |   min   |   max   |  Latency |  achieved |   target  | Count | Pipelined|
+        +--------------------+---------+---------+----------+-----------+-----------+-------+----------+
+        |- VITIS_LOOP_202_3  |   289547|   289547|        16|          4|          1|  72384|       yes|
+        +--------------------+---------+---------+----------+-----------+-----------+-------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 4, depth = 16
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 16
+* Pipeline : 1
+  Pipeline-0 : II = 4, D = 16, States = { 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 7 
+7 --> 8 
+8 --> 9 
+9 --> 10 
+10 --> 11 
+11 --> 12 
+12 --> 13 
+13 --> 14 
+14 --> 15 
+15 --> 16 
+16 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 5.81>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%acc = alloca i32 1" [../hls_files/conv_pool.cpp:201]   --->   Operation 19 'alloca' 'acc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%i = alloca i32 1" [../hls_files/conv_pool.cpp:202]   --->   Operation 20 'alloca' 'i' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%zext_ln201_read = read i22 @_ssdm_op_Read.ap_auto.i22, i22 %zext_ln201"   --->   Operation 21 'read' 'zext_ln201_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%sext_ln199_read = read i62 @_ssdm_op_Read.ap_auto.i62, i62 %sext_ln199"   --->   Operation 22 'read' 'sext_ln199_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%acc_33_read = read i32 @_ssdm_op_Read.ap_auto.float, i32 %acc_33"   --->   Operation 23 'read' 'acc_33_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 24 [1/1] (0.00ns)   --->   "%zext_ln201_cast = zext i22 %zext_ln201_read"   --->   Operation 24 'zext' 'zext_ln201_cast' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 25 [1/1] (0.00ns)   --->   "%sext_ln199_cast = sext i62 %sext_ln199_read"   --->   Operation 25 'sext' 'sext_ln199_cast' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 26 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %gmem, void @empty_24, i32 0, i32 0, void @empty_23, i32 0, i32 0, void @empty_22, void @empty_21, void @empty_23, i32 16, i32 16, i32 16, i32 16, void @empty_23, void @empty_23, i32 4294967295, i32 0, i32 0"   --->   Operation 26 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 27 [1/1] (1.32ns)   --->   "%store_ln202 = store i17 0, i17 %i" [../hls_files/conv_pool.cpp:202]   --->   Operation 27 'store' 'store_ln202' <Predicate = true> <Delay = 1.32>
+ST_1 : Operation 28 [1/1] (1.32ns)   --->   "%store_ln201 = store i32 %acc_33_read, i32 %acc" [../hls_files/conv_pool.cpp:201]   --->   Operation 28 'store' 'store_ln201' <Predicate = true> <Delay = 1.32>
+ST_1 : Operation 29 [1/1] (0.00ns)   --->   "%br_ln0 = br void %for.inc397"   --->   Operation 29 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 30 [1/1] (0.00ns)   --->   "%i_1 = load i17 %i" [../hls_files/conv_pool.cpp:202]   --->   Operation 30 'load' 'i_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 31 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %gmem"   --->   Operation 31 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 32 [1/1] (1.86ns)   --->   "%icmp_ln202 = icmp_eq  i17 %i_1, i17 72384" [../hls_files/conv_pool.cpp:202]   --->   Operation 32 'icmp' 'icmp_ln202' <Predicate = true> <Delay = 1.86> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.86> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 33 [1/1] (0.00ns)   --->   "%speclooptripcount_ln0 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 72384, i64 72384, i64 72384"   --->   Operation 33 'speclooptripcount' 'speclooptripcount_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 34 [1/1] (1.86ns)   --->   "%add_ln202 = add i17 %i_1, i17 1" [../hls_files/conv_pool.cpp:202]   --->   Operation 34 'add' 'add_ln202' <Predicate = true> <Delay = 1.86> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.86> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 35 [1/1] (0.00ns)   --->   "%br_ln202 = br i1 %icmp_ln202, void %for.inc397.split, void %for.inc402.exitStub" [../hls_files/conv_pool.cpp:202]   --->   Operation 35 'br' 'br_ln202' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 36 [1/1] (0.00ns)   --->   "%zext_ln202_1 = zext i17 %i_1" [../hls_files/conv_pool.cpp:202]   --->   Operation 36 'zext' 'zext_ln202_1' <Predicate = (!icmp_ln202)> <Delay = 0.00>
+ST_1 : Operation 37 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%add_ln203 = add i63 %zext_ln202_1, i63 %sext_ln199_cast" [../hls_files/conv_pool.cpp:203]   --->   Operation 37 'add' 'add_ln203' <Predicate = (!icmp_ln202)> <Delay = 0.00> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 2.24> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_1 : Operation 38 [1/1] (4.49ns) (root node of TernaryAdder)   --->   "%add_ln203_1 = add i63 %add_ln203, i63 %zext_ln201_cast" [../hls_files/conv_pool.cpp:203]   --->   Operation 38 'add' 'add_ln203_1' <Predicate = (!icmp_ln202)> <Delay = 4.49> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 2.24> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_1 : Operation 39 [1/1] (0.00ns)   --->   "%sext_ln203 = sext i63 %add_ln203_1" [../hls_files/conv_pool.cpp:203]   --->   Operation 39 'sext' 'sext_ln203' <Predicate = (!icmp_ln202)> <Delay = 0.00>
+ST_1 : Operation 40 [1/1] (0.00ns)   --->   "%gmem_addr = getelementptr i32 %gmem, i64 %sext_ln203" [../hls_files/conv_pool.cpp:203]   --->   Operation 40 'getelementptr' 'gmem_addr' <Predicate = (!icmp_ln202)> <Delay = 0.00>
+ST_1 : Operation 41 [1/1] (1.32ns)   --->   "%store_ln202 = store i17 %add_ln202, i17 %i" [../hls_files/conv_pool.cpp:202]   --->   Operation 41 'store' 'store_ln202' <Predicate = (!icmp_ln202)> <Delay = 1.32>
+
+State 2 <SV = 1> <Delay = 14.6>
+ST_2 : Operation 42 [8/8] (14.6ns)   --->   "%gmem_load_31_req = readreq i1 @_ssdm_op_ReadReq.m_axi.i32P1A, i32 %gmem_addr, i64 1" [../hls_files/conv_pool.cpp:203]   --->   Operation 42 'readreq' 'gmem_load_31_req' <Predicate = (!icmp_ln202)> <Delay = 14.6> <CoreInst = "m_axi">   --->   Core 111 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 3 <SV = 2> <Delay = 14.6>
+ST_3 : Operation 43 [7/8] (14.6ns)   --->   "%gmem_load_31_req = readreq i1 @_ssdm_op_ReadReq.m_axi.i32P1A, i32 %gmem_addr, i64 1" [../hls_files/conv_pool.cpp:203]   --->   Operation 43 'readreq' 'gmem_load_31_req' <Predicate = (!icmp_ln202)> <Delay = 14.6> <CoreInst = "m_axi">   --->   Core 111 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 4 <SV = 3> <Delay = 14.6>
+ST_4 : Operation 44 [6/8] (14.6ns)   --->   "%gmem_load_31_req = readreq i1 @_ssdm_op_ReadReq.m_axi.i32P1A, i32 %gmem_addr, i64 1" [../hls_files/conv_pool.cpp:203]   --->   Operation 44 'readreq' 'gmem_load_31_req' <Predicate = (!icmp_ln202)> <Delay = 14.6> <CoreInst = "m_axi">   --->   Core 111 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 5 <SV = 4> <Delay = 14.6>
+ST_5 : Operation 45 [5/8] (14.6ns)   --->   "%gmem_load_31_req = readreq i1 @_ssdm_op_ReadReq.m_axi.i32P1A, i32 %gmem_addr, i64 1" [../hls_files/conv_pool.cpp:203]   --->   Operation 45 'readreq' 'gmem_load_31_req' <Predicate = true> <Delay = 14.6> <CoreInst = "m_axi">   --->   Core 111 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 6 <SV = 5> <Delay = 14.6>
+ST_6 : Operation 46 [4/8] (14.6ns)   --->   "%gmem_load_31_req = readreq i1 @_ssdm_op_ReadReq.m_axi.i32P1A, i32 %gmem_addr, i64 1" [../hls_files/conv_pool.cpp:203]   --->   Operation 46 'readreq' 'gmem_load_31_req' <Predicate = true> <Delay = 14.6> <CoreInst = "m_axi">   --->   Core 111 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 7 <SV = 6> <Delay = 14.6>
+ST_7 : Operation 47 [3/8] (14.6ns)   --->   "%gmem_load_31_req = readreq i1 @_ssdm_op_ReadReq.m_axi.i32P1A, i32 %gmem_addr, i64 1" [../hls_files/conv_pool.cpp:203]   --->   Operation 47 'readreq' 'gmem_load_31_req' <Predicate = true> <Delay = 14.6> <CoreInst = "m_axi">   --->   Core 111 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 8 <SV = 7> <Delay = 14.6>
+ST_8 : Operation 48 [2/8] (14.6ns)   --->   "%gmem_load_31_req = readreq i1 @_ssdm_op_ReadReq.m_axi.i32P1A, i32 %gmem_addr, i64 1" [../hls_files/conv_pool.cpp:203]   --->   Operation 48 'readreq' 'gmem_load_31_req' <Predicate = true> <Delay = 14.6> <CoreInst = "m_axi">   --->   Core 111 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 9 <SV = 8> <Delay = 14.6>
+ST_9 : Operation 49 [1/1] (0.00ns)   --->   "%zext_ln202 = zext i17 %i_1" [../hls_files/conv_pool.cpp:202]   --->   Operation 49 'zext' 'zext_ln202' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 50 [1/1] (0.00ns)   --->   "%vec1_addr = getelementptr i32 %vec1, i64 0, i64 %zext_ln202" [../hls_files/conv_pool.cpp:203]   --->   Operation 50 'getelementptr' 'vec1_addr' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 51 [2/2] (2.77ns)   --->   "%vec1_load = load i17 %vec1_addr" [../hls_files/conv_pool.cpp:203]   --->   Operation 51 'load' 'vec1_load' <Predicate = true> <Delay = 2.77> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 72384> <RAM>
+ST_9 : Operation 52 [1/8] (14.6ns)   --->   "%gmem_load_31_req = readreq i1 @_ssdm_op_ReadReq.m_axi.i32P1A, i32 %gmem_addr, i64 1" [../hls_files/conv_pool.cpp:203]   --->   Operation 52 'readreq' 'gmem_load_31_req' <Predicate = true> <Delay = 14.6> <CoreInst = "m_axi">   --->   Core 111 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 10 <SV = 9> <Delay = 14.6>
+ST_10 : Operation 53 [1/2] ( I:2.77ns O:2.77ns )   --->   "%vec1_load = load i17 %vec1_addr" [../hls_files/conv_pool.cpp:203]   --->   Operation 53 'load' 'vec1_load' <Predicate = true> <Delay = 2.77> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 72384> <RAM>
+ST_10 : Operation 54 [1/1] (14.6ns)   --->   "%gmem_addr_read = read i32 @_ssdm_op_Read.m_axi.i32P1A, i32 %gmem_addr" [../hls_files/conv_pool.cpp:203]   --->   Operation 54 'read' 'gmem_addr_read' <Predicate = true> <Delay = 14.6> <CoreInst = "m_axi">   --->   Core 111 'm_axi' <Latency = 3> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 11 <SV = 10> <Delay = 10.2>
+ST_11 : Operation 55 [1/1] (0.00ns)   --->   "%bitcast_ln203 = bitcast i32 %gmem_addr_read" [../hls_files/conv_pool.cpp:203]   --->   Operation 55 'bitcast' 'bitcast_ln203' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 56 [2/2] (10.2ns)   --->   "%mul2 = fmul i32 %vec1_load, i32 %bitcast_ln203" [../hls_files/conv_pool.cpp:203]   --->   Operation 56 'fmul' 'mul2' <Predicate = true> <Delay = 10.2> <CoreInst = "FMul_maxdsp">   --->   Core 30 'FMul_maxdsp' <Latency = 1> <II = 1> <Delay = 10.2> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+
+State 12 <SV = 11> <Delay = 10.2>
+ST_12 : Operation 57 [1/2] (10.2ns)   --->   "%mul2 = fmul i32 %vec1_load, i32 %bitcast_ln203" [../hls_files/conv_pool.cpp:203]   --->   Operation 57 'fmul' 'mul2' <Predicate = true> <Delay = 10.2> <CoreInst = "FMul_maxdsp">   --->   Core 30 'FMul_maxdsp' <Latency = 1> <II = 1> <Delay = 10.2> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+ST_12 : Operation 66 [1/1] (0.00ns)   --->   "%acc_load = load i32 %acc"   --->   Operation 66 'load' 'acc_load' <Predicate = (icmp_ln202)> <Delay = 0.00>
+ST_12 : Operation 67 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.floatP0A, i32 %acc_31_out, i32 %acc_load"   --->   Operation 67 'write' 'write_ln0' <Predicate = (icmp_ln202)> <Delay = 0.00>
+ST_12 : Operation 68 [1/1] (1.32ns)   --->   "%ret_ln0 = ret"   --->   Operation 68 'ret' 'ret_ln0' <Predicate = (icmp_ln202)> <Delay = 1.32>
+
+State 13 <SV = 12> <Delay = 14.5>
+ST_13 : Operation 58 [1/1] (0.00ns)   --->   "%acc_load_1 = load i32 %acc" [../hls_files/conv_pool.cpp:203]   --->   Operation 58 'load' 'acc_load_1' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 59 [3/3] (14.5ns)   --->   "%acc_1 = fadd i32 %acc_load_1, i32 %mul2" [../hls_files/conv_pool.cpp:203]   --->   Operation 59 'fadd' 'acc_1' <Predicate = true> <Delay = 14.5> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 2> <II = 1> <Delay = 14.5> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 14 <SV = 13> <Delay = 14.5>
+ST_14 : Operation 60 [2/3] (14.5ns)   --->   "%acc_1 = fadd i32 %acc_load_1, i32 %mul2" [../hls_files/conv_pool.cpp:203]   --->   Operation 60 'fadd' 'acc_1' <Predicate = true> <Delay = 14.5> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 2> <II = 1> <Delay = 14.5> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 15 <SV = 14> <Delay = 14.5>
+ST_15 : Operation 61 [1/3] (14.5ns)   --->   "%acc_1 = fadd i32 %acc_load_1, i32 %mul2" [../hls_files/conv_pool.cpp:203]   --->   Operation 61 'fadd' 'acc_1' <Predicate = true> <Delay = 14.5> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 2> <II = 1> <Delay = 14.5> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 16 <SV = 15> <Delay = 1.32>
+ST_16 : Operation 62 [1/1] (0.00ns)   --->   "%specpipeline_ln201 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_23" [../hls_files/conv_pool.cpp:201]   --->   Operation 62 'specpipeline' 'specpipeline_ln201' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 63 [1/1] (0.00ns)   --->   "%specloopname_ln202 = specloopname void @_ssdm_op_SpecLoopName, void @empty_2" [../hls_files/conv_pool.cpp:202]   --->   Operation 63 'specloopname' 'specloopname_ln202' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 64 [1/1] (1.32ns)   --->   "%store_ln201 = store i32 %acc_1, i32 %acc" [../hls_files/conv_pool.cpp:201]   --->   Operation 64 'store' 'store_ln201' <Predicate = true> <Delay = 1.32>
+ST_16 : Operation 65 [1/1] (0.00ns)   --->   "%br_ln202 = br void %for.inc397" [../hls_files/conv_pool.cpp:202]   --->   Operation 65 'br' 'br_ln202' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 20.000ns, clock uncertainty: 5.400ns.
+
+ <State 1>: 5.819ns
+The critical path consists of the following:
+	'store' operation 0 bit ('store_ln202', ../hls_files/conv_pool.cpp:202) of constant 0 on local variable 'i', ../hls_files/conv_pool.cpp:202 [15]  (1.324 ns)
+	'load' operation 17 bit ('i', ../hls_files/conv_pool.cpp:202) on local variable 'i', ../hls_files/conv_pool.cpp:202 [19]  (0.000 ns)
+	'add' operation 63 bit ('add_ln203', ../hls_files/conv_pool.cpp:203) [33]  (0.000 ns)
+	'add' operation 63 bit ('add_ln203_1', ../hls_files/conv_pool.cpp:203) [34]  (4.495 ns)
+
+ <State 2>: 14.600ns
+The critical path consists of the following:
+	bus request operation ('gmem_load_31_req', ../hls_files/conv_pool.cpp:203) on port 'gmem' (../hls_files/conv_pool.cpp:203) [37]  (14.600 ns)
+
+ <State 3>: 14.600ns
+The critical path consists of the following:
+	bus request operation ('gmem_load_31_req', ../hls_files/conv_pool.cpp:203) on port 'gmem' (../hls_files/conv_pool.cpp:203) [37]  (14.600 ns)
+
+ <State 4>: 14.600ns
+The critical path consists of the following:
+	bus request operation ('gmem_load_31_req', ../hls_files/conv_pool.cpp:203) on port 'gmem' (../hls_files/conv_pool.cpp:203) [37]  (14.600 ns)
+
+ <State 5>: 14.600ns
+The critical path consists of the following:
+	bus request operation ('gmem_load_31_req', ../hls_files/conv_pool.cpp:203) on port 'gmem' (../hls_files/conv_pool.cpp:203) [37]  (14.600 ns)
+
+ <State 6>: 14.600ns
+The critical path consists of the following:
+	bus request operation ('gmem_load_31_req', ../hls_files/conv_pool.cpp:203) on port 'gmem' (../hls_files/conv_pool.cpp:203) [37]  (14.600 ns)
+
+ <State 7>: 14.600ns
+The critical path consists of the following:
+	bus request operation ('gmem_load_31_req', ../hls_files/conv_pool.cpp:203) on port 'gmem' (../hls_files/conv_pool.cpp:203) [37]  (14.600 ns)
+
+ <State 8>: 14.600ns
+The critical path consists of the following:
+	bus request operation ('gmem_load_31_req', ../hls_files/conv_pool.cpp:203) on port 'gmem' (../hls_files/conv_pool.cpp:203) [37]  (14.600 ns)
+
+ <State 9>: 14.600ns
+The critical path consists of the following:
+	bus request operation ('gmem_load_31_req', ../hls_files/conv_pool.cpp:203) on port 'gmem' (../hls_files/conv_pool.cpp:203) [37]  (14.600 ns)
+
+ <State 10>: 14.600ns
+The critical path consists of the following:
+	bus read operation ('gmem_addr_read', ../hls_files/conv_pool.cpp:203) on port 'gmem' (../hls_files/conv_pool.cpp:203) [38]  (14.600 ns)
+
+ <State 11>: 10.252ns
+The critical path consists of the following:
+	'fmul' operation 32 bit ('mul2', ../hls_files/conv_pool.cpp:203) [40]  (10.252 ns)
+
+ <State 12>: 10.252ns
+The critical path consists of the following:
+	'fmul' operation 32 bit ('mul2', ../hls_files/conv_pool.cpp:203) [40]  (10.252 ns)
+
+ <State 13>: 14.527ns
+The critical path consists of the following:
+	'load' operation 32 bit ('acc_load_1', ../hls_files/conv_pool.cpp:203) on local variable 'acc', ../hls_files/conv_pool.cpp:201 [26]  (0.000 ns)
+	'fadd' operation 32 bit ('acc', ../hls_files/conv_pool.cpp:203) [41]  (14.527 ns)
+
+ <State 14>: 14.527ns
+The critical path consists of the following:
+	'fadd' operation 32 bit ('acc', ../hls_files/conv_pool.cpp:203) [41]  (14.527 ns)
+
+ <State 15>: 14.527ns
+The critical path consists of the following:
+	'fadd' operation 32 bit ('acc', ../hls_files/conv_pool.cpp:203) [41]  (14.527 ns)
+
+ <State 16>: 1.324ns
+The critical path consists of the following:
+	'store' operation 0 bit ('store_ln201', ../hls_files/conv_pool.cpp:201) of variable 'acc', ../hls_files/conv_pool.cpp:203 on local variable 'acc', ../hls_files/conv_pool.cpp:201 [43]  (1.324 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+	State 12
+	State 13
+	State 14
+	State 15
+	State 16
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

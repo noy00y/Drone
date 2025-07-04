@@ -1,0 +1,2366 @@
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\build\hls_clib\win64\hlsmath_csyn_common\objs\src\common\hls_exp_tables.pp.cpp', 
+                   Line: 0, Column: 0 }
+Function:        _GLOBAL__sub_I_hls_exp_tables.pp.cpp
+Args:            
+  - Callee:          __cxx_global_var_init.513
+    DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib\hlsmath\src\common\hls_exp_tables.cpp', 
+                       Line: 1068, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          _GLOBAL__sub_I_hls_exp_tables.pp.cpp
+    DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\build\hls_clib\win64\hlsmath_csyn_common\objs\src\common\hls_exp_tables.pp.cpp', 
+                       Line: 0, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\build\hls_clib\win64\hlsmath_csyn_common\objs\src\common\hls_exp_tables.pp.cpp', 
+                   Line: 0, Column: 0 }
+Function:        _GLOBAL__sub_I_hls_exp_tables.pp.cpp
+Args:            
+  - Callee:          __cxx_global_var_init.770
+    DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib\hlsmath\src\common\hls_exp_tables.cpp', 
+                       Line: 1330, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          _GLOBAL__sub_I_hls_exp_tables.pp.cpp
+    DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\build\hls_clib\win64\hlsmath_csyn_common\objs\src\common\hls_exp_tables.pp.cpp', 
+                       Line: 0, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\build\hls_clib\win64\hlsmath_csyn_common\objs\src\common\hls_exp_tables.pp.cpp', 
+                   Line: 0, Column: 0 }
+Function:        _GLOBAL__sub_I_hls_exp_tables.pp.cpp
+Args:            
+  - Callee:          __cxx_global_var_init.803
+    DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib\hlsmath\src\common\hls_exp_tables.cpp', 
+                       Line: 1366, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          _GLOBAL__sub_I_hls_exp_tables.pp.cpp
+    DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\build\hls_clib\win64\hlsmath_csyn_common\objs\src\common\hls_exp_tables.pp.cpp', 
+                       Line: 0, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\build\hls_clib\win64\hlsmath_csyn_common\objs\src\common\hls_exp_tables.pp.cpp', 
+                   Line: 0, Column: 0 }
+Function:        _GLOBAL__sub_I_hls_exp_tables.pp.cpp
+Args:            
+  - Callee:          __cxx_global_var_init.1059.48417
+    DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib\hlsmath\src\common\hls_exp_tables.cpp', 
+                       Line: 1628, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          _GLOBAL__sub_I_hls_exp_tables.pp.cpp
+    DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\build\hls_clib\win64\hlsmath_csyn_common\objs\src\common\hls_exp_tables.pp.cpp', 
+                       Line: 0, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\build\hls_clib\win64\hlsmath_csyn_common\objs\src\common\hls_exp_tables.pp.cpp', 
+                   Line: 0, Column: 0 }
+Function:        _GLOBAL__sub_I_hls_exp_tables.pp.cpp
+Args:            
+  - Callee:          __cxx_global_var_init.1382
+    DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib\hlsmath\src\common\hls_exp_tables.cpp', 
+                       Line: 2100, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          _GLOBAL__sub_I_hls_exp_tables.pp.cpp
+    DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\build\hls_clib\win64\hlsmath_csyn_common\objs\src\common\hls_exp_tables.pp.cpp', 
+                       Line: 0, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h', 
+                   Line: 326, Column: 17 }
+Function:        _ZNK9fp_structIfE8to_floatEv
+Args:            
+  - Callee:          'fp_struct<float>::data() const'
+    DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h', 
+                       Line: 309, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'fp_struct<float>::to_float() const'
+    DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h', 
+                       Line: 322, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h', 
+                   Line: 347, Column: 16 }
+Function:        _ZNK9fp_structIfE7to_ieeeEv
+Args:            
+  - Callee:          'fp_struct<float>::to_float() const'
+    DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h', 
+                       Line: 322, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'fp_struct<float>::to_ieee() const'
+    DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h', 
+                       Line: 346, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_copysign.h', 
+                   Line: 12, Column: 16 }
+Function:        _Z16generic_copysignIfET_S0_S0_
+Args:            
+  - Callee:          'fp_struct<float>::fp_struct(float)'
+    DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h', 
+                       Line: 283, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'float generic_copysign<float>(float, float)'
+    DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_copysign.h', 
+                       Line: 10, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_copysign.h', 
+                   Line: 14, Column: 13 }
+Function:        _Z16generic_copysignIfET_S0_S0_
+Args:            
+  - Callee:          'fp_struct<float>::to_ieee() const'
+    DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h', 
+                       Line: 346, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'float generic_copysign<float>(float, float)'
+    DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_copysign.h', 
+                       Line: 10, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_fabs.h', 
+                   Line: 13, Column: 10 }
+Function:        _Z12generic_fabsIfET_S0_
+Args:            
+  - Callee:          'float generic_copysign<float>(float, float)'
+    DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_copysign.h', 
+                       Line: 10, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'float generic_fabs<float>(float)'
+    DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_fabs.h', 
+                       Line: 12, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_nan.h', 
+                   Line: 15, Column: 14 }
+Function:        _Z11generic_nanIfET_PKc
+Args:            
+  - Callee:          'fp_struct<float>::to_ieee() const'
+    DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h', 
+                       Line: 346, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'float generic_nan<float>(char const*)'
+    DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_nan.h', 
+                       Line: 10, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_isnan.h', 
+                   Line: 17, Column: 21 }
+Function:        _Z13generic_isnanIdEiT_
+Args:            
+  - Callee:          'fp_struct<double>::fp_struct(double)'
+    DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h', 
+                       Line: 456, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'int generic_isnan<double>(double)'
+    DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_isnan.h', 
+                       Line: 16, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_isinf.h', 
+                   Line: 17, Column: 21 }
+Function:        _Z13generic_isinfIdEiT_
+Args:            
+  - Callee:          'fp_struct<double>::fp_struct(double)'
+    DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h', 
+                       Line: 456, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'int generic_isinf<double>(double)'
+    DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_isinf.h', 
+                       Line: 16, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h', 
+                   Line: 496, Column: 17 }
+Function:        _ZNK9fp_structIdE9to_doubleEv
+Args:            
+  - Callee:          'fp_struct<double>::data() const'
+    DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h', 
+                       Line: 475, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'fp_struct<double>::to_double() const'
+    DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h', 
+                       Line: 494, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h', 
+                   Line: 510, Column: 16 }
+Function:        _ZNK9fp_structIdE7to_ieeeEv
+Args:            
+  - Callee:          'fp_struct<double>::to_double() const'
+    DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h', 
+                       Line: 494, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'fp_struct<double>::to_ieee() const'
+    DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h', 
+                       Line: 509, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h', 
+                   Line: 160, Column: 15 }
+Function:        _ZN11exp_reduce_11exp_genericIdEET_S1_
+Args:            
+  - Callee:          'fp_struct<double>::fp_struct(double)'
+    DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h', 
+                       Line: 456, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'double exp_reduce_::exp_generic<double>(double)'
+    DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h', 
+                       Line: 157, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h', 
+                   Line: 337, Column: 16 }
+Function:        _ZN11exp_reduce_11exp_genericIdEET_S1_
+Args:            
+  - Callee:          'fp_struct<double>::to_ieee() const'
+    DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h', 
+                       Line: 509, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'double exp_reduce_::exp_generic<double>(double)'
+    DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h', 
+                       Line: 157, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h', 
+                   Line: 180, Column: 10 }
+Function:        _ZN11exp_reduce_11exp_genericIdEET_S1_
+Args:            
+  - Callee:          'int generic_isnan<double>(double)'
+    DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_isnan.h', 
+                       Line: 16, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'double exp_reduce_::exp_generic<double>(double)'
+    DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h', 
+                       Line: 157, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h', 
+                   Line: 181, Column: 10 }
+Function:        _ZN11exp_reduce_11exp_genericIdEET_S1_
+Args:            
+  - Callee:          'int generic_isinf<double>(double)'
+    DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_isinf.h', 
+                       Line: 16, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'double exp_reduce_::exp_generic<double>(double)'
+    DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h', 
+                       Line: 157, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h', 
+                   Line: 293, Column: 58 }
+Function:        _ZN11exp_reduce_11exp_genericIdEET_S1_
+Args:            
+  - Callee:          'exp_reduce_::exp_traits<double>::exp_Z1P_m_1(ap_ufixed<51, -8, (ap_q_mode)5, (ap_o_mode)3, 0>)'
+    DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h', 
+                       Line: 90, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'double exp_reduce_::exp_generic<double>(double)'
+    DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h', 
+                       Line: 157, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h', 
+                   Line: 208, Column: 20 }
+Function:        _ZN11exp_reduce_11exp_genericIdEET_S1_
+Args:            
+  - Callee:          'fp_struct<double>::expv() const'
+    DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h', 
+                       Line: 485, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'double exp_reduce_::exp_generic<double>(double)'
+    DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h', 
+                       Line: 157, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib\hlsmath\src\common\hls_exp_float.cpp', 
+                   Line: 8, Column: 22 }
+Function:        _ZN11exp_reduce_5expm1Ef
+Args:            
+  - Callee:          'fp_struct<float>::fp_struct(float)'
+    DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h', 
+                       Line: 283, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'exp_reduce_::expm1(float)'
+    DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib\hlsmath\src\common\hls_exp_float.cpp', 
+                       Line: 7, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib\hlsmath\src\common\hls_exp_float.cpp', 
+                   Line: 12, Column: 12 }
+Function:        _ZN11exp_reduce_5expm1Ef
+Args:            
+  - Callee:          'double exp_reduce_::exp_generic<double>(double)'
+    DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h', 
+                       Line: 157, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'exp_reduce_::expm1(float)'
+    DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib\hlsmath\src\common\hls_exp_float.cpp', 
+                       Line: 7, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h', 
+                   Line: 32, Column: 18 }
+Function:        _ZN12explog_based12generic_tanhIfEET_S1_
+Args:            
+  - Callee:          'fp_struct<float>::fp_struct(float)'
+    DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h', 
+                       Line: 283, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'float explog_based::generic_tanh<float>(float)'
+    DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h', 
+                       Line: 28, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h', 
+                   Line: 33, Column: 17 }
+Function:        _ZN12explog_based12generic_tanhIfEET_S1_
+Args:            
+  - Callee:          'float generic_fabs<float>(float)'
+    DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_fabs.h', 
+                       Line: 12, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'float explog_based::generic_tanh<float>(float)'
+    DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h', 
+                       Line: 28, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h', 
+                   Line: 61, Column: 16 }
+Function:        _ZN12explog_based12generic_tanhIfEET_S1_
+Args:            
+  - Callee:          'exp_reduce_::expm1(float)'
+    DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib\hlsmath\src\common\hls_exp_float.cpp', 
+                       Line: 7, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'float explog_based::generic_tanh<float>(float)'
+    DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h', 
+                       Line: 28, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h', 
+                   Line: 39, Column: 13 }
+Function:        _ZN12explog_based12generic_tanhIfEET_S1_
+Args:            
+  - Callee:          'float generic_nan<float>(char const*)'
+    DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_nan.h', 
+                       Line: 10, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'float explog_based::generic_tanh<float>(float)'
+    DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h', 
+                       Line: 28, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib\hlsmath\src\c++\tanhfloat.cpp', 
+                   Line: 7, Column: 9 }
+Function:        _ZN3hls4tanhEf
+Args:            
+  - Callee:          'float explog_based::generic_tanh<float>(float)'
+    DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h', 
+                       Line: 28, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'hls::tanh(float)'
+    DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib\hlsmath\src\c++\tanhfloat.cpp', 
+                       Line: 6, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib\hlsmath\src\c++\expfloat.cpp', 
+                   Line: 17, Column: 9 }
+Function:        _ZN3hls3expEf
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'exp_reduce_::exp(float)'
+    DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib\hlsmath\src\common\hls_exp_float.cpp', 
+                       Line: 15, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'hls::exp(float)'
+    DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib\hlsmath\src\c++\expfloat.cpp', 
+                       Line: 15, Column: 0 }
+  - String:          ''''
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 206, Column: 17 }
+Function:        cnn_accel
+Args:            
+  - Callee:          'hls::tanh(float)'
+    DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib\hlsmath\src\c++\tanhfloat.cpp', 
+                       Line: 6, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          cnn_accel
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 43, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 216, Column: 34 }
+Function:        cnn_accel
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'hls::exp(float)'
+    DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib\hlsmath\src\c++\expfloat.cpp', 
+                       Line: 15, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          cnn_accel
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 43, Column: 0 }
+  - String:          ''''
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h', 
+                   Line: 326, Column: 17 }
+Function:        _ZNK9fp_structIfE8to_floatEv.32.42.51.62
+Args:            
+  - Callee:          'fp_struct<float>::data() const (.35.45.54.65)'
+    DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h', 
+                       Line: 309, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'fp_struct<float>::to_float() const (.32.42.51.62)'
+    DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h', 
+                       Line: 322, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h', 
+                   Line: 347, Column: 16 }
+Function:        _ZNK9fp_structIfE7to_ieeeEv
+Args:            
+  - Callee:          'fp_struct<float>::to_float() const (.32.42.51.62)'
+    DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h', 
+                       Line: 322, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'fp_struct<float>::to_ieee() const'
+    DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h', 
+                       Line: 346, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_copysign.h', 
+                   Line: 12, Column: 16 }
+Function:        _Z16generic_copysignIfET_S0_S0_
+Args:            
+  - Callee:          'fp_struct<float>::fp_struct(float)'
+    DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h', 
+                       Line: 283, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'float generic_copysign<float>(float, float)'
+    DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_copysign.h', 
+                       Line: 10, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_copysign.h', 
+                   Line: 14, Column: 13 }
+Function:        _Z16generic_copysignIfET_S0_S0_
+Args:            
+  - Callee:          'fp_struct<float>::to_ieee() const'
+    DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h', 
+                       Line: 346, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'float generic_copysign<float>(float, float)'
+    DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_copysign.h', 
+                       Line: 10, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_fabs.h', 
+                   Line: 13, Column: 10 }
+Function:        _Z12generic_fabsIfET_S0_
+Args:            
+  - Callee:          'float generic_copysign<float>(float, float)'
+    DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_copysign.h', 
+                       Line: 10, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'float generic_fabs<float>(float)'
+    DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_fabs.h', 
+                       Line: 12, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_nan.h', 
+                   Line: 15, Column: 14 }
+Function:        _Z11generic_nanIfET_PKc
+Args:            
+  - Callee:          'fp_struct<float>::to_ieee() const'
+    DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h', 
+                       Line: 346, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'float generic_nan<float>(char const*)'
+    DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_nan.h', 
+                       Line: 10, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_isnan.h', 
+                   Line: 17, Column: 21 }
+Function:        _Z13generic_isnanIdEiT_
+Args:            
+  - Callee:          'fp_struct<double>::fp_struct(double)'
+    DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h', 
+                       Line: 456, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'int generic_isnan<double>(double)'
+    DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_isnan.h', 
+                       Line: 16, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_isinf.h', 
+                   Line: 17, Column: 21 }
+Function:        _Z13generic_isinfIdEiT_
+Args:            
+  - Callee:          'fp_struct<double>::fp_struct(double)'
+    DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h', 
+                       Line: 456, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'int generic_isinf<double>(double)'
+    DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_isinf.h', 
+                       Line: 16, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h', 
+                   Line: 496, Column: 17 }
+Function:        _ZNK9fp_structIdE9to_doubleEv.93.103.113.131
+Args:            
+  - Callee:          'fp_struct<double>::data() const (.96.106.116.134)'
+    DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h', 
+                       Line: 475, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'fp_struct<double>::to_double() const (.93.103.113.131)'
+    DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h', 
+                       Line: 494, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h', 
+                   Line: 510, Column: 16 }
+Function:        _ZNK9fp_structIdE7to_ieeeEv
+Args:            
+  - Callee:          'fp_struct<double>::to_double() const (.93.103.113.131)'
+    DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h', 
+                       Line: 494, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'fp_struct<double>::to_ieee() const'
+    DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h', 
+                       Line: 509, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h', 
+                   Line: 160, Column: 15 }
+Function:        _ZN11exp_reduce_11exp_genericIdEET_S1_
+Args:            
+  - Callee:          'fp_struct<double>::fp_struct(double)'
+    DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h', 
+                       Line: 456, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'double exp_reduce_::exp_generic<double>(double)'
+    DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h', 
+                       Line: 157, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h', 
+                   Line: 180, Column: 10 }
+Function:        _ZN11exp_reduce_11exp_genericIdEET_S1_
+Args:            
+  - Callee:          'int generic_isnan<double>(double)'
+    DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_isnan.h', 
+                       Line: 16, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'double exp_reduce_::exp_generic<double>(double)'
+    DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h', 
+                       Line: 157, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h', 
+                   Line: 181, Column: 10 }
+Function:        _ZN11exp_reduce_11exp_genericIdEET_S1_
+Args:            
+  - Callee:          'int generic_isinf<double>(double)'
+    DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_isinf.h', 
+                       Line: 16, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'double exp_reduce_::exp_generic<double>(double)'
+    DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h', 
+                       Line: 157, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h', 
+                   Line: 190, Column: 15 }
+Function:        _ZN11exp_reduce_11exp_genericIdEET_S1_
+Args:            
+  - Callee:          'fp_struct<double>::to_ieee() const'
+    DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h', 
+                       Line: 509, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'double exp_reduce_::exp_generic<double>(double)'
+    DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h', 
+                       Line: 157, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h', 
+                   Line: 208, Column: 20 }
+Function:        _ZN11exp_reduce_11exp_genericIdEET_S1_
+Args:            
+  - Callee:          'fp_struct<double>::expv() const'
+    DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h', 
+                       Line: 485, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'double exp_reduce_::exp_generic<double>(double)'
+    DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h', 
+                       Line: 157, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h', 
+                   Line: 293, Column: 58 }
+Function:        _ZN11exp_reduce_11exp_genericIdEET_S1_
+Args:            
+  - Callee:          'exp_reduce_::exp_traits<double>::exp_Z1P_m_1(ap_ufixed<51, -8, (ap_q_mode)5, (ap_o_mode)3, 0>)'
+    DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h', 
+                       Line: 90, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'double exp_reduce_::exp_generic<double>(double)'
+    DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h', 
+                       Line: 157, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib\hlsmath\src\common\hls_exp_float.cpp', 
+                   Line: 8, Column: 22 }
+Function:        _ZN11exp_reduce_5expm1Ef
+Args:            
+  - Callee:          'fp_struct<float>::fp_struct(float)'
+    DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h', 
+                       Line: 283, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'exp_reduce_::expm1(float)'
+    DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib\hlsmath\src\common\hls_exp_float.cpp', 
+                       Line: 7, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib\hlsmath\src\common\hls_exp_float.cpp', 
+                   Line: 12, Column: 12 }
+Function:        _ZN11exp_reduce_5expm1Ef
+Args:            
+  - Callee:          'double exp_reduce_::exp_generic<double>(double)'
+    DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h', 
+                       Line: 157, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'exp_reduce_::expm1(float)'
+    DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib\hlsmath\src\common\hls_exp_float.cpp', 
+                       Line: 7, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h', 
+                   Line: 32, Column: 18 }
+Function:        _ZN12explog_based12generic_tanhIfEET_S1_
+Args:            
+  - Callee:          'fp_struct<float>::fp_struct(float)'
+    DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h', 
+                       Line: 283, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'float explog_based::generic_tanh<float>(float)'
+    DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h', 
+                       Line: 28, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h', 
+                   Line: 33, Column: 17 }
+Function:        _ZN12explog_based12generic_tanhIfEET_S1_
+Args:            
+  - Callee:          'float generic_fabs<float>(float)'
+    DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_fabs.h', 
+                       Line: 12, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'float explog_based::generic_tanh<float>(float)'
+    DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h', 
+                       Line: 28, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h', 
+                   Line: 39, Column: 13 }
+Function:        _ZN12explog_based12generic_tanhIfEET_S1_
+Args:            
+  - Callee:          'float generic_nan<float>(char const*)'
+    DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_nan.h', 
+                       Line: 10, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'float explog_based::generic_tanh<float>(float)'
+    DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h', 
+                       Line: 28, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h', 
+                   Line: 61, Column: 16 }
+Function:        _ZN12explog_based12generic_tanhIfEET_S1_
+Args:            
+  - Callee:          'exp_reduce_::expm1(float)'
+    DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib\hlsmath\src\common\hls_exp_float.cpp', 
+                       Line: 7, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'float explog_based::generic_tanh<float>(float)'
+    DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h', 
+                       Line: 28, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib\hlsmath\src\c++\tanhfloat.cpp', 
+                   Line: 7, Column: 9 }
+Function:        _ZN3hls4tanhEf
+Args:            
+  - Callee:          'float explog_based::generic_tanh<float>(float)'
+    DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h', 
+                       Line: 28, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'hls::tanh(float)'
+    DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib\hlsmath\src\c++\tanhfloat.cpp', 
+                       Line: 6, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 206, Column: 17 }
+Function:        cnn_accel
+Args:            
+  - Callee:          'hls::tanh(float)'
+    DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib\hlsmath\src\c++\tanhfloat.cpp', 
+                       Line: 6, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          cnn_accel
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 43, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+Function:        apatb_cnn_accel_ir
+Args:            
+  - Callee:          cnn_accel
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 43, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          apatb_cnn_accel_ir
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h', 
+                   Line: 322, Column: 0 }
+Function:        _ZNK9fp_structIfE8to_floatEv.32.42.51.62
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'fp_struct<float>::data() const (.35.45.54.65)'
+    DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h', 
+                       Line: 309, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'fp_struct<float>::to_float() const (.32.42.51.62)'
+    DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h', 
+                       Line: 322, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h', 
+                   Line: 346, Column: 0 }
+Function:        _ZNK9fp_structIfE7to_ieeeEv
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'fp_struct<float>::to_float() const (.32.42.51.62)'
+    DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h', 
+                       Line: 322, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'fp_struct<float>::to_ieee() const'
+    DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h', 
+                       Line: 346, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_copysign.h', 
+                   Line: 10, Column: 0 }
+Function:        _Z16generic_copysignIfET_S0_S0_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'fp_struct<float>::fp_struct(float)'
+    DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h', 
+                       Line: 283, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'float generic_copysign<float>(float, float)'
+    DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_copysign.h', 
+                       Line: 10, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_copysign.h', 
+                   Line: 10, Column: 0 }
+Function:        _Z16generic_copysignIfET_S0_S0_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'fp_struct<float>::to_ieee() const'
+    DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h', 
+                       Line: 346, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'float generic_copysign<float>(float, float)'
+    DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_copysign.h', 
+                       Line: 10, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_fabs.h', 
+                   Line: 12, Column: 0 }
+Function:        _Z12generic_fabsIfET_S0_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'float generic_copysign<float>(float, float)'
+    DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_copysign.h', 
+                       Line: 10, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'float generic_fabs<float>(float)'
+    DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_fabs.h', 
+                       Line: 12, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_nan.h', 
+                   Line: 10, Column: 0 }
+Function:        _Z11generic_nanIfET_PKc
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'fp_struct<float>::to_ieee() const'
+    DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h', 
+                       Line: 346, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'float generic_nan<float>(char const*)'
+    DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_nan.h', 
+                       Line: 10, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_isnan.h', 
+                   Line: 16, Column: 0 }
+Function:        _Z13generic_isnanIdEiT_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'fp_struct<double>::fp_struct(double)'
+    DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h', 
+                       Line: 456, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'int generic_isnan<double>(double)'
+    DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_isnan.h', 
+                       Line: 16, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_isinf.h', 
+                   Line: 16, Column: 0 }
+Function:        _Z13generic_isinfIdEiT_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'fp_struct<double>::fp_struct(double)'
+    DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h', 
+                       Line: 456, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'int generic_isinf<double>(double)'
+    DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_isinf.h', 
+                       Line: 16, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h', 
+                   Line: 494, Column: 0 }
+Function:        _ZNK9fp_structIdE9to_doubleEv.93.103.113.131
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'fp_struct<double>::data() const (.96.106.116.134)'
+    DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h', 
+                       Line: 475, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'fp_struct<double>::to_double() const (.93.103.113.131)'
+    DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h', 
+                       Line: 494, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h', 
+                   Line: 509, Column: 0 }
+Function:        _ZNK9fp_structIdE7to_ieeeEv
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'fp_struct<double>::to_double() const (.93.103.113.131)'
+    DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h', 
+                       Line: 494, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'fp_struct<double>::to_ieee() const'
+    DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h', 
+                       Line: 509, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h', 
+                   Line: 157, Column: 0 }
+Function:        _ZN11exp_reduce_11exp_genericIdEET_S1_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'fp_struct<double>::fp_struct(double)'
+    DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h', 
+                       Line: 456, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'double exp_reduce_::exp_generic<double>(double)'
+    DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h', 
+                       Line: 157, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h', 
+                   Line: 157, Column: 0 }
+Function:        _ZN11exp_reduce_11exp_genericIdEET_S1_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'int generic_isnan<double>(double)'
+    DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_isnan.h', 
+                       Line: 16, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'double exp_reduce_::exp_generic<double>(double)'
+    DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h', 
+                       Line: 157, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h', 
+                   Line: 157, Column: 0 }
+Function:        _ZN11exp_reduce_11exp_genericIdEET_S1_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'int generic_isinf<double>(double)'
+    DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_isinf.h', 
+                       Line: 16, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'double exp_reduce_::exp_generic<double>(double)'
+    DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h', 
+                       Line: 157, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h', 
+                   Line: 157, Column: 0 }
+Function:        _ZN11exp_reduce_11exp_genericIdEET_S1_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'fp_struct<double>::to_ieee() const'
+    DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h', 
+                       Line: 509, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'double exp_reduce_::exp_generic<double>(double)'
+    DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h', 
+                       Line: 157, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h', 
+                   Line: 157, Column: 0 }
+Function:        _ZN11exp_reduce_11exp_genericIdEET_S1_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'fp_struct<double>::expv() const'
+    DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h', 
+                       Line: 485, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'double exp_reduce_::exp_generic<double>(double)'
+    DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h', 
+                       Line: 157, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h', 
+                   Line: 157, Column: 0 }
+Function:        _ZN11exp_reduce_11exp_genericIdEET_S1_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'exp_reduce_::exp_traits<double>::exp_Z1P_m_1(ap_ufixed<51, -8, (ap_q_mode)5, (ap_o_mode)3, 0>)'
+    DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h', 
+                       Line: 90, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'double exp_reduce_::exp_generic<double>(double)'
+    DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h', 
+                       Line: 157, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib\hlsmath\src\common\hls_exp_float.cpp', 
+                   Line: 7, Column: 0 }
+Function:        _ZN11exp_reduce_5expm1Ef
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'fp_struct<float>::fp_struct(float)'
+    DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h', 
+                       Line: 283, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'exp_reduce_::expm1(float)'
+    DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib\hlsmath\src\common\hls_exp_float.cpp', 
+                       Line: 7, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h', 
+                   Line: 28, Column: 0 }
+Function:        _ZN12explog_based12generic_tanhIfEET_S1_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'fp_struct<float>::fp_struct(float)'
+    DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h', 
+                       Line: 283, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'float explog_based::generic_tanh<float>(float)'
+    DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h', 
+                       Line: 28, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h', 
+                   Line: 28, Column: 0 }
+Function:        _ZN12explog_based12generic_tanhIfEET_S1_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'float generic_fabs<float>(float)'
+    DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_fabs.h', 
+                       Line: 12, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'float explog_based::generic_tanh<float>(float)'
+    DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h', 
+                       Line: 28, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h', 
+                   Line: 28, Column: 0 }
+Function:        _ZN12explog_based12generic_tanhIfEET_S1_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'float generic_nan<float>(char const*)'
+    DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_nan.h', 
+                       Line: 10, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'float explog_based::generic_tanh<float>(float)'
+    DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h', 
+                       Line: 28, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h', 
+                   Line: 28, Column: 0 }
+Function:        _ZN12explog_based12generic_tanhIfEET_S1_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'exp_reduce_::expm1(float)'
+    DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib\hlsmath\src\common\hls_exp_float.cpp', 
+                       Line: 7, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'float explog_based::generic_tanh<float>(float)'
+    DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h', 
+                       Line: 28, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 43, Column: 0 }
+Function:        cnn_accel
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'hls::tanh(float)'
+    DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib\hlsmath\src\c++\tanhfloat.cpp', 
+                       Line: 6, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          cnn_accel
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 43, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 73, Column: 0 }
+Function:        cnn_accel
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          _ZZ9cnn_accelE7feat2_p
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '3'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 72, Column: 0 }
+Function:        cnn_accel
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          _ZZ9cnn_accelE5feat2
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '3'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 71, Column: 0 }
+Function:        cnn_accel
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          _ZZ9cnn_accelE7feat1_p
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '3'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 70, Column: 0 }
+Function:        cnn_accel
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          _ZZ9cnn_accelE5feat1
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '3'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 69, Column: 0 }
+Function:        cnn_accel
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          _ZZ9cnn_accelE9local_img
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '3'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 85, Column: 5 }
+Function:        cnn_accel
+Args:            
+  - String:          'Sequential '
+  - Direction:       read
+  - String:          ' of length '
+  - Length:          '230400'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        img_inseq
+  - ArrayName:       img_in
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        LOAD_IMG_ROWS
+  - String:          ' '
+  - LoopLoc:         '../hls_files/conv_pool.cpp:85:5'
+  - String:          ' '
+  - Function:        cnn_accel
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 43, Column: 0 }
+  - String:          ' '
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 92, Column: 32 }
+  - OrigDirection:   read
+  - OrigID:          for.inc.load.9
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 103, Column: 9 }
+Function:        cnn_accel
+Args:            
+  - String:          'Sequential '
+  - Direction:       read
+  - String:          ' of length '
+  - Length:          '8'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        bias1seq
+  - ArrayName:       bias1
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        CONV1_FIL
+  - String:          ' '
+  - LoopLoc:         '../hls_files/conv_pool.cpp:103:9'
+  - String:          ' '
+  - Function:        cnn_accel
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 43, Column: 0 }
+  - String:          ' '
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 105, Column: 24 }
+  - OrigDirection:   read
+  - OrigID:          CONV1_KR.load.12
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 147, Column: 9 }
+Function:        cnn_accel
+Args:            
+  - String:          'Sequential '
+  - Direction:       read
+  - String:          ' of length '
+  - Length:          '16'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        bias2seq
+  - ArrayName:       bias2
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        CONV2_FIL
+  - String:          ' '
+  - LoopLoc:         '../hls_files/conv_pool.cpp:147:9'
+  - String:          ' '
+  - Function:        cnn_accel
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 43, Column: 0 }
+  - String:          ' '
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 149, Column: 24 }
+  - OrigDirection:   read
+  - OrigID:          CONV2_KR.load.20
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 199, Column: 5 }
+Function:        cnn_accel
+Args:            
+  - String:          'Sequential '
+  - Direction:       read
+  - String:          ' of length '
+  - Length:          '2316288'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        FC1_Wseq
+  - ArrayName:       FC1_W
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        FC1_OUT
+  - String:          ' '
+  - LoopLoc:         '../hls_files/conv_pool.cpp:199:5'
+  - String:          ' '
+  - Function:        cnn_accel
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 43, Column: 0 }
+  - String:          ' '
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 203, Column: 26 }
+  - OrigDirection:   read
+  - OrigID:          for.inc397.load.10
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 199, Column: 5 }
+Function:        cnn_accel
+Args:            
+  - String:          'Sequential '
+  - Direction:       read
+  - String:          ' of length '
+  - Length:          '32'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        FC1_Bseq
+  - ArrayName:       FC1_B
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        FC1_OUT
+  - String:          ' '
+  - LoopLoc:         '../hls_files/conv_pool.cpp:199:5'
+  - String:          ' '
+  - Function:        cnn_accel
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 43, Column: 0 }
+  - String:          ' '
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 201, Column: 20 }
+  - OrigDirection:   read
+  - OrigID:          VITIS_LOOP_202_3.load.5
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 212, Column: 5 }
+Function:        cnn_accel
+Args:            
+  - String:          'Sequential '
+  - Direction:       read
+  - String:          ' of length '
+  - Length:          '32'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        FC2_Wseq
+  - ArrayName:       FC2_W
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        FC2_LOOP
+  - String:          ' '
+  - LoopLoc:         '../hls_files/conv_pool.cpp:212:5'
+  - String:          ' '
+  - Function:        cnn_accel
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 43, Column: 0 }
+  - String:          ' '
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 214, Column: 25 }
+  - OrigDirection:   read
+  - OrigID:          for.inc417.load.8
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            IncompatibleStride
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 113, Column: 49 }
+Function:        cnn_accel
+Args:            
+  - String:          Stride is incompatible
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 113, Column: 49 }
+  - OrigDirection:   read
+  - OrigID:          for.inc70.load.17
+  - ArrayName:       weights1
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        CONV1_CH
+  - String:          ' '
+  - LoopLoc:         '../hls_files/conv_pool.cpp:111:15'
+  - String:          ' '
+  - Function:        cnn_accel
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 43, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 103, Column: 9 }
+Function:        cnn_accel
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 103, Column: 9 }
+  - OrigDirection:   read
+  - OrigID:          bias1seq
+  - ArrayName:       bias1
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        CONV1_COL
+  - String:          ' '
+  - LoopLoc:         '../hls_files/conv_pool.cpp:101:7'
+  - String:          ' '
+  - Function:        cnn_accel
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 43, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            IncompatibleStride
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 157, Column: 47 }
+Function:        cnn_accel
+Args:            
+  - String:          Stride is incompatible
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 157, Column: 47 }
+  - OrigDirection:   read
+  - OrigID:          for.inc228.load.27
+  - ArrayName:       weights2
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        CONV2_CH
+  - String:          ' '
+  - LoopLoc:         '../hls_files/conv_pool.cpp:155:15'
+  - String:          ' '
+  - Function:        cnn_accel
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 43, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 147, Column: 9 }
+Function:        cnn_accel
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 147, Column: 9 }
+  - OrigDirection:   read
+  - OrigID:          bias2seq
+  - ArrayName:       bias2
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        CONV2_COL
+  - String:          ' '
+  - LoopLoc:         '../hls_files/conv_pool.cpp:145:7'
+  - String:          ' '
+  - Function:        cnn_accel
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 43, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualThreshold
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 212, Column: 5 }
+Function:        cnn_accel
+Args:            
+  - String:          'Could not widen since type '
+  - Type:            float
+  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
+  - Threshold:       '0'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 212, Column: 5 }
+  - OrigDirection:   read
+  - OrigID:          FC2_Wseq
+  - ArrayName:       FC2_W
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        FC2_LOOP
+  - String:          ' '
+  - LoopLoc:         '../hls_files/conv_pool.cpp:212:5'
+  - String:          ' '
+  - Function:        cnn_accel
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 43, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualThreshold
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 199, Column: 5 }
+Function:        cnn_accel
+Args:            
+  - String:          'Could not widen since type '
+  - Type:            float
+  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
+  - Threshold:       '0'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 199, Column: 5 }
+  - OrigDirection:   read
+  - OrigID:          FC1_Wseq
+  - ArrayName:       FC1_W
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_202_3
+  - String:          ' '
+  - LoopLoc:         '../hls_files/conv_pool.cpp:202:25'
+  - String:          ' '
+  - Function:        cnn_accel
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 43, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualThreshold
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 199, Column: 5 }
+Function:        cnn_accel
+Args:            
+  - String:          'Could not widen since type '
+  - Type:            float
+  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
+  - Threshold:       '0'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 199, Column: 5 }
+  - OrigDirection:   read
+  - OrigID:          FC1_Bseq
+  - ArrayName:       FC1_B
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        FC1_OUT
+  - String:          ' '
+  - LoopLoc:         '../hls_files/conv_pool.cpp:199:5'
+  - String:          ' '
+  - Function:        cnn_accel
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 43, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualThreshold
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 147, Column: 9 }
+Function:        cnn_accel
+Args:            
+  - String:          'Could not widen since type '
+  - Type:            float
+  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
+  - Threshold:       '0'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 147, Column: 9 }
+  - OrigDirection:   read
+  - OrigID:          bias2seq
+  - ArrayName:       bias2
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        CONV2_FIL
+  - String:          ' '
+  - LoopLoc:         '../hls_files/conv_pool.cpp:147:9'
+  - String:          ' '
+  - Function:        cnn_accel
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 43, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualThreshold
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 103, Column: 9 }
+Function:        cnn_accel
+Args:            
+  - String:          'Could not widen since type '
+  - Type:            float
+  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
+  - Threshold:       '0'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 103, Column: 9 }
+  - OrigDirection:   read
+  - OrigID:          bias1seq
+  - ArrayName:       bias1
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        CONV1_FIL
+  - String:          ' '
+  - LoopLoc:         '../hls_files/conv_pool.cpp:103:9'
+  - String:          ' '
+  - Function:        cnn_accel
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 43, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualThreshold
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 85, Column: 5 }
+Function:        cnn_accel
+Args:            
+  - String:          'Could not widen since type '
+  - Type:            float
+  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
+  - Threshold:       '0'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 85, Column: 5 }
+  - OrigDirection:   read
+  - OrigID:          img_inseq
+  - ArrayName:       img_in
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        LOAD_IMG_CH
+  - String:          ' '
+  - LoopLoc:         '../hls_files/conv_pool.cpp:89:9'
+  - String:          ' '
+  - Function:        cnn_accel
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 43, Column: 0 }
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        LOAD_IMG_CH
+  - String:          '> at '
+  - LoopLoc:         '../hls_files/conv_pool.cpp:89:9'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        CONV1_FIL
+  - String:          '> at '
+  - LoopLoc:         '../hls_files/conv_pool.cpp:103:9'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        POOL1_CH
+  - String:          '> at '
+  - LoopLoc:         '../hls_files/conv_pool.cpp:128:9'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        CONV2_CH
+  - String:          '> at '
+  - LoopLoc:         '../hls_files/conv_pool.cpp:155:15'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        POOL2_CH
+  - String:          '> at '
+  - LoopLoc:         '../hls_files/conv_pool.cpp:172:9'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_190_2
+  - String:          '> at '
+  - LoopLoc:         '../hls_files/conv_pool.cpp:190:27'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_202_3
+  - String:          '> at '
+  - LoopLoc:         '../hls_files/conv_pool.cpp:202:25'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        FC2_LOOP
+  - String:          '> at '
+  - LoopLoc:         '../hls_files/conv_pool.cpp:212:5'
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 107, Column: 11 }
+Function:        cnn_accel
+Args:            
+  - String:          'Loop '''
+  - LoopName:        CONV1_KR
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 109, Column: 13 }
+Function:        cnn_accel
+Args:            
+  - String:          'Loop '''
+  - LoopName:        CONV1_KC
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 111, Column: 15 }
+Function:        cnn_accel
+Args:            
+  - String:          'Loop '''
+  - LoopName:        CONV1_CH
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 43, Column: 0 }
+Function:        cnn_accel
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        CONV1_KR
+  - String:          ''' ('
+  - LoopLoc:         '../hls_files/conv_pool.cpp:107:11'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          cnn_accel
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 43, Column: 0 }
+Function:        cnn_accel
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        CONV1_KC
+  - String:          ''' ('
+  - LoopLoc:         '../hls_files/conv_pool.cpp:109:13'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          cnn_accel
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 43, Column: 0 }
+Function:        cnn_accel
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        CONV1_CH
+  - String:          ''' ('
+  - LoopLoc:         '../hls_files/conv_pool.cpp:111:15'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          cnn_accel
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 43, Column: 0 }
+Function:        cnn_accel
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        CONV1_CH
+  - String:          ''' ('
+  - LoopLoc:         '../hls_files/conv_pool.cpp:111:15'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          cnn_accel
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 43, Column: 0 }
+Function:        cnn_accel
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        CONV1_CH
+  - String:          ''' ('
+  - LoopLoc:         '../hls_files/conv_pool.cpp:111:15'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          cnn_accel
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 43, Column: 0 }
+Function:        cnn_accel
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        CONV1_KC
+  - String:          ''' ('
+  - LoopLoc:         '../hls_files/conv_pool.cpp:109:13'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          cnn_accel
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 43, Column: 0 }
+Function:        cnn_accel
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        CONV1_CH
+  - String:          ''' ('
+  - LoopLoc:         '../hls_files/conv_pool.cpp:111:15'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          cnn_accel
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 43, Column: 0 }
+Function:        cnn_accel
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        CONV1_CH
+  - String:          ''' ('
+  - LoopLoc:         '../hls_files/conv_pool.cpp:111:15'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          cnn_accel
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 43, Column: 0 }
+Function:        cnn_accel
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        CONV1_CH
+  - String:          ''' ('
+  - LoopLoc:         '../hls_files/conv_pool.cpp:111:15'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          cnn_accel
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 43, Column: 0 }
+Function:        cnn_accel
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        CONV1_KC
+  - String:          ''' ('
+  - LoopLoc:         '../hls_files/conv_pool.cpp:109:13'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          cnn_accel
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 43, Column: 0 }
+Function:        cnn_accel
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        CONV1_CH
+  - String:          ''' ('
+  - LoopLoc:         '../hls_files/conv_pool.cpp:111:15'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          cnn_accel
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 43, Column: 0 }
+Function:        cnn_accel
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        CONV1_CH
+  - String:          ''' ('
+  - LoopLoc:         '../hls_files/conv_pool.cpp:111:15'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          cnn_accel
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 43, Column: 0 }
+Function:        cnn_accel
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        CONV1_CH
+  - String:          ''' ('
+  - LoopLoc:         '../hls_files/conv_pool.cpp:111:15'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          cnn_accel
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-loop-flatten-cost-model
+Name:            FlattenOffInference
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 199, Column: 5 }
+Function:        cnn_accel
+Args:            
+  - String:          'Automatically disabling loop flattening for loop '''
+  - LoopName:        FC1_OUT
+  - String:          '''.'
+...
+--- !Passed
+Pass:            reflow-loop-flatten-cost-model
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 199, Column: 5 }
+Function:        cnn_accel
+Args:            
+  - PragmaType:      loop_flatten
+  - String:          ' '
+  - PragmaOptions:   off
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  cnn_accel
+  - String:          ' '
+  - PragmaSrcLoc:    '../hls_files/conv_pool.cpp:199:5'
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 199, Column: 5 }
+  - LoopName:        FC1_OUT
+  - String:          ' '
+  - LoopLoc:         '../hls_files/conv_pool.cpp:199:5'
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 199, Column: 5 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-loop-flatten-cost-model
+Name:            FlattenOffInference
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 147, Column: 9 }
+Function:        cnn_accel
+Args:            
+  - String:          'Automatically disabling loop flattening for loop '''
+  - LoopName:        CONV2_FIL
+  - String:          '''.'
+...
+--- !Passed
+Pass:            reflow-loop-flatten-cost-model
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 147, Column: 9 }
+Function:        cnn_accel
+Args:            
+  - PragmaType:      loop_flatten
+  - String:          ' '
+  - PragmaOptions:   off
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  cnn_accel
+  - String:          ' '
+  - PragmaSrcLoc:    '../hls_files/conv_pool.cpp:147:9'
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 147, Column: 9 }
+  - LoopName:        CONV2_FIL
+  - String:          ' '
+  - LoopLoc:         '../hls_files/conv_pool.cpp:147:9'
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 147, Column: 9 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            BurstConflict
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 103, Column: 9 }
+Function:        cnn_accel
+Args:            
+  - String:          'Could not burst due to multiple potential '
+  - Direction:       reads
+  - String:          ' to the same bundle in the same region.'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 103, Column: 9 }
+  - OrigDirection:   read
+  - OrigID:          seq1
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - Function:        cnn_accel
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 43, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            BurstConflict
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 147, Column: 9 }
+Function:        cnn_accel
+Args:            
+  - String:          'Could not burst due to multiple potential '
+  - Direction:       reads
+  - String:          ' to the same bundle in the same region.'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 147, Column: 9 }
+  - OrigDirection:   read
+  - OrigID:          seq2
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - Function:        cnn_accel
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 43, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            BurstConflict
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 199, Column: 5 }
+Function:        cnn_accel
+Args:            
+  - String:          'Could not burst due to multiple potential '
+  - Direction:       reads
+  - String:          ' to the same bundle in the same region.'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 199, Column: 5 }
+  - OrigDirection:   read
+  - OrigID:          seq3
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - Function:        cnn_accel
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 43, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredVerboseSummary
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 85, Column: 5 }
+Function:        cnn_accel
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '230400'
+  - String:          ' and bit width '
+  - Width:           '32'
+  - String:          ' has been inferred.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        LOAD_IMG_ROWS
+  - String:          ' '
+  - LoopLoc:         '../hls_files/conv_pool.cpp:85:5'
+  - String:          ' '
+  - Function:        cnn_accel
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 43, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredSummary
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 85, Column: 5 }
+Function:        cnn_accel
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '230400'
+  - String:          ' and bit width '
+  - Width:           '32'
+  - String:          ' in loop '''
+  - LoopName:        LOAD_IMG_ROWS
+  - String:          '''('
+  - LoopLoc:         '../hls_files/conv_pool.cpp:85:5'
+  - String:          ')'
+  - String:          ' has been inferred on bundle '''
+  - BundleName:      gmem
+  - String:          '''.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredVerboseSummary
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 212, Column: 5 }
+Function:        cnn_accel
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '32'
+  - String:          ' and bit width '
+  - Width:           '32'
+  - String:          ' has been inferred.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq5
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        FC2_LOOP
+  - String:          ' '
+  - LoopLoc:         '../hls_files/conv_pool.cpp:212:5'
+  - String:          ' '
+  - Function:        cnn_accel
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 43, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredSummary
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 212, Column: 5 }
+Function:        cnn_accel
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '32'
+  - String:          ' and bit width '
+  - Width:           '32'
+  - String:          ' in loop '''
+  - LoopName:        FC2_LOOP
+  - String:          '''('
+  - LoopLoc:         '../hls_files/conv_pool.cpp:212:5'
+  - String:          ')'
+  - String:          ' has been inferred on bundle '''
+  - BundleName:      gmem
+  - String:          '''.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib\hlsmath\src\common\hls_exp_float.cpp', 
+                   Line: 12, Column: 12 }
+Function:        _ZN12explog_based12generic_tanhIfEET_S1_
+Args:            
+  - Callee:          'double exp_reduce_::exp_generic<double>(double)'
+    DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h', 
+                       Line: 157, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'float explog_based::generic_tanh<float>(float)'
+    DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h', 
+                       Line: 28, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib\hlsmath\src\c++\tanhfloat.cpp', 
+                   Line: 7, Column: 9 }
+Function:        cnn_accel
+Args:            
+  - Callee:          'float explog_based::generic_tanh<float>(float)'
+    DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h', 
+                       Line: 28, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          cnn_accel
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 43, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...

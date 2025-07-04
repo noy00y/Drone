@@ -1,0 +1,45 @@
+<ENTRY>
+{
+ "thisFile": "C:/Users\\ozair\\Documents\\Code_Drive\\Drone\\hls_component\\cnn_accel\\cnn_accel.hlsrun_csim_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "07/04/25 17:32:01",
+ "timestampMillis": "1751664721518",
+ "buildStep": {
+  "cmdId": "2afae2be-4062-429a-a954-4c54f64791e9",
+  "name": "vitis-run",
+  "logFile": "C:/Users\\ozair\\Documents\\Code_Drive\\Drone\\hls_component\\cnn_accel\\logs\\cnn_accel.steps.log",
+  "commandLine": "C:/Xilinx/2025.1/Vitis/bin/unwrapped/win64.o/vitis-run.exe  --mode hls --csim --config C:\\Users\\ozair\\Documents\\Code_Drive\\Drone\\hls_component\\cnn_accel\\hls-debug.cfg --config C:\\Users\\ozair\\Documents\\Code_Drive\\Drone\\hls_component\\hls_config.cfg --work_dir cnn_accel ",
+  "args": [
+   "--mode",
+   "hls",
+   "--csim",
+   "--config",
+   "C:\\Users\\ozair\\Documents\\Code_Drive\\Drone\\hls_component\\cnn_accel\\hls-debug.cfg",
+   "--config",
+   "C:\\Users\\ozair\\Documents\\Code_Drive\\Drone\\hls_component\\hls_config.cfg",
+   "--work_dir",
+   "cnn_accel"
+  ],
+  "iniFiles": [],
+  "cwd": "C:\\Users\\ozair\\Documents\\Code_Drive\\Drone\\hls_component"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "07/04/25 17:32:01",
+ "timestampMillis": "1751664721519",
+ "status": {
+  "cmdId": "2afae2be-4062-429a-a954-4c54f64791e9",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>

@@ -1,0 +1,51 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'cnn_accel'" level="0">
+<item name = "Date">Fri Jul  4 17:05:25 2025
+</item>
+<item name = "Version">2025.1 (Build 6135595 on May 21 2025)</item>
+<item name = "Project">cnn_accel</item>
+<item name = "Solution">hls (Vivado IP Flow Target)</item>
+<item name = "Product family">artix7</item>
+<item name = "Target device">xc7a100t-fgg484-2L</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">20.00 ns, 16.146 ns, 5.40 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">125926547, 125927699, 2.519 sec, 2.519 sec, 125926548, 125927700, no</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- CONV1_ROW">22705437, 22705437, 95401, -, -, 238, no</column>
+<column name=" + CONV1_COL">95399, 95399, 300, -, -, 318, no</column>
+<column name="- CONV2_ROW">93204540, 93204540, 796620, -, -, 117, no</column>
+<column name=" + CONV2_COL">796618, 796618, 5074, -, -, 157, no</column>
+<column name="  ++ CONV2_FIL">5072, 5072, 317, -, -, 16, no</column>
+<column name="- FC1_OUT">9266080, 9267232, 289565 ~ 289601, -, -, 32, no</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>

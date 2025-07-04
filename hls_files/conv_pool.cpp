@@ -87,7 +87,7 @@ void cnn_accel(
       for(int j=0;j<W;j++){
         LOAD_IMG_CH:
         for(int c=0;c<C0;c++){
-#pragma HLS PIPELINE II=1
+// #pragma HLS PIPELINE II=1
           int idx = (i*W + j)*C0 + c;
           local_img[i][j][c] = img_in[idx];
         }
@@ -101,7 +101,7 @@ void cnn_accel(
       for(int j=0;j<W1;j++){
         CONV1_FIL:
         for(int m=0;m<M1;m++){
-#pragma HLS PIPELINE II=1
+// #pragma HLS PIPELINE II=1
           data_t acc = bias1[m];
           CONV1_KR:
           for(int p=0;p<K;p++){
@@ -126,7 +126,7 @@ void cnn_accel(
       for(int j=0;j<W2;j++){
         POOL1_CH:
         for(int m=0;m<M1;m++){
-#pragma HLS PIPELINE II=1
+// #pragma HLS PIPELINE II=1
           data_t m0 = feat1[2*i   ][2*j   ][m];
           data_t m1 = feat1[2*i+1 ][2*j   ][m];
           data_t m2 = feat1[2*i   ][2*j+1 ][m];
@@ -145,7 +145,7 @@ void cnn_accel(
       for(int j=0;j<W3;j++){
         CONV2_FIL:
         for(int m=0;m<M2;m++){
-#pragma HLS PIPELINE II=1
+// #pragma HLS PIPELINE II=1
           data_t acc = bias2[m];
           CONV2_KR:
           for(int p=0;p<K;p++){
@@ -170,7 +170,7 @@ void cnn_accel(
       for(int j=0;j<W4;j++){
         POOL2_CH:
         for(int m=0;m<M2;m++){
-#pragma HLS PIPELINE II=1
+// #pragma HLS PIPELINE II=1
           data_t m0 = feat2[2*i   ][2*j   ][m];
           data_t m1 = feat2[2*i+1 ][2*j   ][m];
           data_t m2 = feat2[2*i   ][2*j+1 ][m];
@@ -188,7 +188,7 @@ void cnn_accel(
     for(int i=0;i<H4;i++){
       for(int j=0;j<W4;j++){
         for(int m=0;m<M2;m++){
-#pragma HLS PIPELINE II=1
+// #pragma HLS PIPELINE II=1
           vec1[cnt++] = feat2_p[i][j][m];
         }
       }
@@ -197,7 +197,7 @@ void cnn_accel(
     // 7) FC1 + Tanh
     FC1_OUT:
     for(int o=0;o<N2;o++){
-#pragma HLS PIPELINE II=1
+// #pragma HLS PIPELINE II=1
       data_t acc = FC1_B[o];
       for(int i=0;i<cnt;i++){
         acc += vec1[i] * FC1_W[o*cnt + i];
@@ -210,7 +210,7 @@ void cnn_accel(
     data_t acc2 = FC2_B[0];
     FC2_LOOP:
     for(int i=0;i<N2;i++){
-#pragma HLS PIPELINE II=1
+// #pragma HLS PIPELINE II=1
       acc2 += vec2[i] * FC2_W[i];
     }
     data_t prob = 1.0f / (1.0f + hls::exp(-acc2));

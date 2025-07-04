@@ -1,0 +1,60 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'cnn_accel'" level="0">
+<item name = "Date">Fri Jul  4 17:05:25 2025
+</item>
+<item name = "Version">2025.1 (Build 6135595 on May 21 2025)</item>
+<item name = "Project">cnn_accel</item>
+<item name = "Solution">hls (Vivado IP Flow Target)</item>
+<item name = "Product family">artix7</item>
+<item name = "Target device">xc7a100t-fgg484-2L</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">20.00 ns, 16.146 ns, 5.40 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">125926547, 125927699, 2.519 sec, 2.519 sec, 125926548, 125927700, no</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="grp_cnn_accel_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_991">cnn_accel_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH, 230403, 230403, 4.608 ms, 4.608 ms, 230401, 230401, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_cnn_accel_Pipeline_CONV1_FIL_fu_1004">cnn_accel_Pipeline_CONV1_FIL, 293, 293, 5.860 us, 5.860 us, 252, 252, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_cnn_accel_Pipeline_POOL1_ROW_POOL1_COL_POOL1_CH_fu_1062">cnn_accel_Pipeline_POOL1_ROW_POOL1_COL_POOL1_CH, 302740, 302740, 6.055 ms, 6.055 ms, 302738, 302738, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_cnn_accel_Pipeline_POOL2_ROW_POOL2_COL_POOL2_CH_fu_1098">cnn_accel_Pipeline_POOL2_ROW_POOL2_COL_POOL2_CH, 144772, 144772, 2.895 ms, 2.895 ms, 144770, 144770, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_cnn_accel_Pipeline_CONV2_KR_CONV2_KC_CONV2_CH_fu_1166">cnn_accel_Pipeline_CONV2_KR_CONV2_KC_CONV2_CH, 302, 302, 6.040 us, 6.040 us, 292, 292, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_cnn_accel_Pipeline_FLATTEN_VITIS_LOOP_189_1_VITIS_LOOP_190_2_fu_1195">cnn_accel_Pipeline_FLATTEN_VITIS_LOOP_189_1_VITIS_LOOP_190_2, 72389, 72389, 1.448 ms, 1.448 ms, 72385, 72385, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_cnn_accel_Pipeline_VITIS_LOOP_202_3_fu_1233">cnn_accel_Pipeline_VITIS_LOOP_202_3, 289549, 289549, 5.791 ms, 5.791 ms, 289540, 289540, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_generic_tanh_float_s_fu_1245">generic_tanh_float_s, 2, 38, 40.000 ns, 0.760 us, 2, 38, no</column>
+<column name="grp_cnn_accel_Pipeline_FC2_LOOP_fu_1257">cnn_accel_Pipeline_FC2_LOOP, 133, 133, 2.660 us, 2.660 us, 132, 132, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- CONV1_ROW">22705437, 22705437, 95401, -, -, 238, no</column>
+<column name=" + CONV1_COL">95399, 95399, 300, -, -, 318, no</column>
+<column name="- CONV2_ROW">93204540, 93204540, 796620, -, -, 117, no</column>
+<column name=" + CONV2_COL">796618, 796618, 5074, -, -, 157, no</column>
+<column name="  ++ CONV2_FIL">5072, 5072, 317, -, -, 16, no</column>
+<column name="- FC1_OUT">9266080, 9267232, 289565 ~ 289601, -, -, 32, no</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>

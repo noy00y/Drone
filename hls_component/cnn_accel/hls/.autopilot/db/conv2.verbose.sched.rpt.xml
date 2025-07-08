@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'conv2'" level="0">
-<item name = "Date">Tue Jul  8 00:39:55 2025
+<item name = "Date">Tue Jul  8 02:25:40 2025
 </item>
 <item name = "Version">2025.1 (Build 6135595 on May 21 2025)</item>
 <item name = "Project">cnn_accel</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00 ns, 7.300 ns, 2.70 ns</column>
+<column name="ap_clk">10.00 ns, 6.990 ns, 2.70 ns</column>
 </table>
 </item>
 </section>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">21161458, 21161458, 0.212 sec, 0.212 sec, 21161088, 21161088, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="">2645498, 2645498, 26.455 ms, 26.455 ms, 2645498, 2645498, no</column>
 </table>
 </item>
 <item name = "Detail">
@@ -35,7 +35,7 @@
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- CONV2_ROW_CONV2_COL_CONV2_FIL">21161456, 21161456, 441, 72, 3, 293904, yes</column>
+<column name="- CONV2_ROW_CONV2_COL_CONV2_FIL">2645496, 2645496, 370, 9, 3, 293904, yes</column>
 </table>
 </item>
 </section>

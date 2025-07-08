@@ -404,3 +404,96 @@
 07/08/25 00:40:17: Socket received request to stop server.
 07/08/25 00:40:17: Dispatch Server: do_await_stop
 07/08/25 00:40:17: SERVER: destructor for server bound to port 51107
+07/08/25 01:17:02: Running xcd server. This server was built by gradle.
+07/08/25 01:17:02: Server was asked to start on port: '51813'
+07/08/25 01:17:02: Server is using token UUID: '0788aa45-7a37-47f6-b28c-70ff89ae701d'
+07/08/25 01:17:02: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+07/08/25 01:17:02: Attempting to start server on port '51813'
+07/08/25 01:17:02: Running Dispatch Server
+07/08/25 01:17:02: Version 2.2.0
+07/08/25 01:17:05: Dispatch Server: Accepted socket connection from client
+07/08/25 01:17:05: Starting Socket connection
+07/08/25 01:17:05: EXCHANGE_TOKEN received, server token: 0788aa45-7a37-47f6-b28c-70ff89ae701d, passed token: 0788aa45-7a37-47f6-b28c-70ff89ae701d
+07/08/25 01:17:05: DISPATCH_HANDLER: Adding handler from function makeHandler in library xv_system_diagram
+07/08/25 01:17:05: SESSION_MGR: creating session with session uuid: 'be6b4050-4786-4fd3-828d-4c29c2c53974' and name 'v++_compile_cnn_accel'
+07/08/25 01:17:05: KERNEL_SVC: creating session with uuid: 'be6b4050-4786-4fd3-828d-4c29c2c53974' and name 'v++_compile_cnn_accel'
+07/08/25 01:17:05: GUIDANCE_SMGR: creating guidance session with uuid: 'be6b4050-4786-4fd3-828d-4c29c2c53974' and name 'v++_compile_cnn_accel'
+07/08/25 01:17:05: SYSTEM_DIAGRAM: creating session with uuid: 'be6b4050-4786-4fd3-828d-4c29c2c53974' and name 'v++_compile_cnn_accel'
+07/08/25 01:17:09: Dispatch Server: Accepted socket connection from client
+07/08/25 01:17:09: Starting Socket connection
+07/08/25 01:35:54: Running xcd server. This server was built by gradle.
+07/08/25 01:35:54: Server was asked to start on port: '52024'
+07/08/25 01:35:54: Server is using token UUID: '5de1edf0-74aa-481f-9f16-bebb4df2a835'
+07/08/25 01:35:54: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+07/08/25 01:35:54: Attempting to start server on port '52024'
+07/08/25 01:35:54: Running Dispatch Server
+07/08/25 01:35:54: Version 2.2.0
+07/08/25 01:35:56: Dispatch Server: Accepted socket connection from client
+07/08/25 01:35:56: Starting Socket connection
+07/08/25 01:35:56: EXCHANGE_TOKEN received, server token: 5de1edf0-74aa-481f-9f16-bebb4df2a835, passed token: 5de1edf0-74aa-481f-9f16-bebb4df2a835
+07/08/25 01:35:56: DISPATCH_HANDLER: Adding handler from function makeHandler in library xv_system_diagram
+07/08/25 01:35:56: SESSION_MGR: creating session with session uuid: 'ae6ff31e-e016-4522-b62c-20d394dfe5e6' and name 'v++_compile_cnn_accel'
+07/08/25 01:35:56: KERNEL_SVC: creating session with uuid: 'ae6ff31e-e016-4522-b62c-20d394dfe5e6' and name 'v++_compile_cnn_accel'
+07/08/25 01:35:56: GUIDANCE_SMGR: creating guidance session with uuid: 'ae6ff31e-e016-4522-b62c-20d394dfe5e6' and name 'v++_compile_cnn_accel'
+07/08/25 01:35:56: SYSTEM_DIAGRAM: creating session with uuid: 'ae6ff31e-e016-4522-b62c-20d394dfe5e6' and name 'v++_compile_cnn_accel'
+07/08/25 01:36:01: Dispatch Server: Accepted socket connection from client
+07/08/25 01:36:01: Starting Socket connection
+07/08/25 01:38:02: Running xcd server. This server was built by gradle.
+07/08/25 01:38:02: Server was asked to start on port: '52042'
+07/08/25 01:38:02: Server is using token UUID: '910bc3df-b88c-4d21-ab1c-ba8c05c1f9c9'
+07/08/25 01:38:02: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+07/08/25 01:38:02: Attempting to start server on port '52042'
+07/08/25 01:38:02: Running Dispatch Server
+07/08/25 01:38:02: Version 2.2.0
+07/08/25 01:38:05: Dispatch Server: Accepted socket connection from client
+07/08/25 01:38:05: Starting Socket connection
+07/08/25 01:38:05: EXCHANGE_TOKEN received, server token: 910bc3df-b88c-4d21-ab1c-ba8c05c1f9c9, passed token: 910bc3df-b88c-4d21-ab1c-ba8c05c1f9c9
+07/08/25 01:38:05: DISPATCH_HANDLER: Adding handler from function makeHandler in library xv_system_diagram
+07/08/25 01:38:05: SESSION_MGR: creating session with session uuid: 'ca3f9b66-0184-4d2a-87c4-12613e11891d' and name 'v++_compile_cnn_accel'
+07/08/25 01:38:05: KERNEL_SVC: creating session with uuid: 'ca3f9b66-0184-4d2a-87c4-12613e11891d' and name 'v++_compile_cnn_accel'
+07/08/25 01:38:05: GUIDANCE_SMGR: creating guidance session with uuid: 'ca3f9b66-0184-4d2a-87c4-12613e11891d' and name 'v++_compile_cnn_accel'
+07/08/25 01:38:05: SYSTEM_DIAGRAM: creating session with uuid: 'ca3f9b66-0184-4d2a-87c4-12613e11891d' and name 'v++_compile_cnn_accel'
+07/08/25 01:38:09: Dispatch Server: Accepted socket connection from client
+07/08/25 01:38:09: Starting Socket connection
+07/08/25 01:43:16: Running xcd server. This server was built by gradle.
+07/08/25 01:43:16: Server was asked to start on port: '52093'
+07/08/25 01:43:16: Server is using token UUID: 'cf0143cc-8db7-4538-91b8-a23e87f1feef'
+07/08/25 01:43:16: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+07/08/25 01:43:16: Attempting to start server on port '52093'
+07/08/25 01:43:16: Running Dispatch Server
+07/08/25 01:43:16: Version 2.2.0
+07/08/25 01:43:18: Dispatch Server: Accepted socket connection from client
+07/08/25 01:43:18: Starting Socket connection
+07/08/25 01:43:18: EXCHANGE_TOKEN received, server token: cf0143cc-8db7-4538-91b8-a23e87f1feef, passed token: cf0143cc-8db7-4538-91b8-a23e87f1feef
+07/08/25 01:43:19: DISPATCH_HANDLER: Adding handler from function makeHandler in library xv_system_diagram
+07/08/25 01:43:19: SESSION_MGR: creating session with session uuid: '73079245-3da2-4c41-80e5-4dbf0fe3479f' and name 'v++_compile_cnn_accel'
+07/08/25 01:43:19: KERNEL_SVC: creating session with uuid: '73079245-3da2-4c41-80e5-4dbf0fe3479f' and name 'v++_compile_cnn_accel'
+07/08/25 01:43:19: GUIDANCE_SMGR: creating guidance session with uuid: '73079245-3da2-4c41-80e5-4dbf0fe3479f' and name 'v++_compile_cnn_accel'
+07/08/25 01:43:19: SYSTEM_DIAGRAM: creating session with uuid: '73079245-3da2-4c41-80e5-4dbf0fe3479f' and name 'v++_compile_cnn_accel'
+07/08/25 01:43:23: Dispatch Server: Accepted socket connection from client
+07/08/25 01:43:23: Starting Socket connection
+07/08/25 02:08:46: Running xcd server. This server was built by gradle.
+07/08/25 02:08:46: Server was asked to start on port: '52330'
+07/08/25 02:08:46: Server is using token UUID: '0416a305-eb41-4c13-92af-60755d4266ef'
+07/08/25 02:08:46: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+07/08/25 02:08:46: Attempting to start server on port '52330'
+07/08/25 02:08:46: Running Dispatch Server
+07/08/25 02:08:46: Version 2.2.0
+07/08/25 02:08:49: Dispatch Server: Accepted socket connection from client
+07/08/25 02:08:49: Starting Socket connection
+07/08/25 02:08:49: EXCHANGE_TOKEN received, server token: 0416a305-eb41-4c13-92af-60755d4266ef, passed token: 0416a305-eb41-4c13-92af-60755d4266ef
+07/08/25 02:08:49: DISPATCH_HANDLER: Adding handler from function makeHandler in library xv_system_diagram
+07/08/25 02:08:49: SESSION_MGR: creating session with session uuid: '6349306c-eaf4-4ec5-886b-97ebcc5c2771' and name 'v++_compile_cnn_accel'
+07/08/25 02:08:49: KERNEL_SVC: creating session with uuid: '6349306c-eaf4-4ec5-886b-97ebcc5c2771' and name 'v++_compile_cnn_accel'
+07/08/25 02:08:49: GUIDANCE_SMGR: creating guidance session with uuid: '6349306c-eaf4-4ec5-886b-97ebcc5c2771' and name 'v++_compile_cnn_accel'
+07/08/25 02:08:49: SYSTEM_DIAGRAM: creating session with uuid: '6349306c-eaf4-4ec5-886b-97ebcc5c2771' and name 'v++_compile_cnn_accel'
+07/08/25 02:08:53: Dispatch Server: Accepted socket connection from client
+07/08/25 02:08:53: Starting Socket connection
+07/08/25 02:27:04: SESSION_MGR: closing session for UUID '6349306c-eaf4-4ec5-886b-97ebcc5c2771' with name 'v++_compile_cnn_accel'
+07/08/25 02:27:04: KERNEL_SVC: closing session for UUID '6349306c-eaf4-4ec5-886b-97ebcc5c2771' with name 'v++_compile_cnn_accel'
+07/08/25 02:27:04: GUIDANCE_SMGR: closing session for UUID '6349306c-eaf4-4ec5-886b-97ebcc5c2771' with name 'v++_compile_cnn_accel'
+07/08/25 02:27:04: SYSTEM_DIAGRAM: closing session for UUID '6349306c-eaf4-4ec5-886b-97ebcc5c2771' with name 'v++_compile_cnn_accel'
+07/08/25 02:27:04: STOP_SERVER received, server token: 0416a305-eb41-4c13-92af-60755d4266ef, passed token: 0416a305-eb41-4c13-92af-60755d4266ef
+07/08/25 02:27:04: Socket received request to stop server.
+07/08/25 02:27:04: Dispatch Server: do_await_stop
+07/08/25 02:27:04: SERVER: destructor for server bound to port 52330

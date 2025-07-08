@@ -1458,10 +1458,10 @@ if.end4.i:0 %xd = fpext i32 %x_3
 
 <Node id="46" bw="64" op_0_bw="64" op_1_bw="64" op_2_bw="58" op_3_bw="26" op_4_bw="42">
 <![CDATA[
-if.end4.i:1 %tmp_4 = call i64 @exp_generic<double>, i64 %xd, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array
+if.end4.i:1 %tmp_6 = call i64 @exp_generic<double>, i64 %xd, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array
 
 ]]></Node>
-<StgValue><ssdm name="tmp_4"/></StgValue>
+<StgValue><ssdm name="tmp_6"/></StgValue>
 </operation>
 
 <operation id="122" st_id="9" stage="1" lat="4">
@@ -1501,10 +1501,10 @@ if.then12:1 %resultf = fmul i32 %abst_in, i32 %add
 
 <Node id="46" bw="64" op_0_bw="64" op_1_bw="64" op_2_bw="58" op_3_bw="26" op_4_bw="42">
 <![CDATA[
-if.end4.i:1 %tmp_4 = call i64 @exp_generic<double>, i64 %xd, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array
+if.end4.i:1 %tmp_6 = call i64 @exp_generic<double>, i64 %xd, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array
 
 ]]></Node>
-<StgValue><ssdm name="tmp_4"/></StgValue>
+<StgValue><ssdm name="tmp_6"/></StgValue>
 </operation>
 </state>
 
@@ -1525,10 +1525,10 @@ if.end4.i:1 %tmp_4 = call i64 @exp_generic<double>, i64 %xd, i58 %table_exp_Z1_a
 
 <Node id="46" bw="64" op_0_bw="64" op_1_bw="64" op_2_bw="58" op_3_bw="26" op_4_bw="42">
 <![CDATA[
-if.end4.i:1 %tmp_4 = call i64 @exp_generic<double>, i64 %xd, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array
+if.end4.i:1 %tmp_6 = call i64 @exp_generic<double>, i64 %xd, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array
 
 ]]></Node>
-<StgValue><ssdm name="tmp_4"/></StgValue>
+<StgValue><ssdm name="tmp_6"/></StgValue>
 </operation>
 </state>
 
@@ -1549,10 +1549,10 @@ if.end4.i:1 %tmp_4 = call i64 @exp_generic<double>, i64 %xd, i58 %table_exp_Z1_a
 
 <Node id="46" bw="64" op_0_bw="64" op_1_bw="64" op_2_bw="58" op_3_bw="26" op_4_bw="42">
 <![CDATA[
-if.end4.i:1 %tmp_4 = call i64 @exp_generic<double>, i64 %xd, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array
+if.end4.i:1 %tmp_6 = call i64 @exp_generic<double>, i64 %xd, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array
 
 ]]></Node>
-<StgValue><ssdm name="tmp_4"/></StgValue>
+<StgValue><ssdm name="tmp_6"/></StgValue>
 </operation>
 </state>
 
@@ -1573,10 +1573,10 @@ if.end4.i:1 %tmp_4 = call i64 @exp_generic<double>, i64 %xd, i58 %table_exp_Z1_a
 
 <Node id="46" bw="64" op_0_bw="64" op_1_bw="64" op_2_bw="58" op_3_bw="26" op_4_bw="42">
 <![CDATA[
-if.end4.i:1 %tmp_4 = call i64 @exp_generic<double>, i64 %xd, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array
+if.end4.i:1 %tmp_6 = call i64 @exp_generic<double>, i64 %xd, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array
 
 ]]></Node>
-<StgValue><ssdm name="tmp_4"/></StgValue>
+<StgValue><ssdm name="tmp_6"/></StgValue>
 </operation>
 </state>
 
@@ -1597,10 +1597,10 @@ if.end4.i:1 %tmp_4 = call i64 @exp_generic<double>, i64 %xd, i58 %table_exp_Z1_a
 
 <Node id="46" bw="64" op_0_bw="64" op_1_bw="64" op_2_bw="58" op_3_bw="26" op_4_bw="42">
 <![CDATA[
-if.end4.i:1 %tmp_4 = call i64 @exp_generic<double>, i64 %xd, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array
+if.end4.i:1 %tmp_6 = call i64 @exp_generic<double>, i64 %xd, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array
 
 ]]></Node>
-<StgValue><ssdm name="tmp_4"/></StgValue>
+<StgValue><ssdm name="tmp_6"/></StgValue>
 </operation>
 </state>
 
@@ -1621,10 +1621,10 @@ if.end4.i:1 %tmp_4 = call i64 @exp_generic<double>, i64 %xd, i58 %table_exp_Z1_a
 
 <Node id="46" bw="64" op_0_bw="64" op_1_bw="64" op_2_bw="58" op_3_bw="26" op_4_bw="42">
 <![CDATA[
-if.end4.i:1 %tmp_4 = call i64 @exp_generic<double>, i64 %xd, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array
+if.end4.i:1 %tmp_6 = call i64 @exp_generic<double>, i64 %xd, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array
 
 ]]></Node>
-<StgValue><ssdm name="tmp_4"/></StgValue>
+<StgValue><ssdm name="tmp_6"/></StgValue>
 </operation>
 </state>
 
@@ -1645,10 +1645,10 @@ if.end4.i:1 %tmp_4 = call i64 @exp_generic<double>, i64 %xd, i58 %table_exp_Z1_a
 
 <Node id="46" bw="64" op_0_bw="64" op_1_bw="64" op_2_bw="58" op_3_bw="26" op_4_bw="42">
 <![CDATA[
-if.end4.i:1 %tmp_4 = call i64 @exp_generic<double>, i64 %xd, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array
+if.end4.i:1 %tmp_6 = call i64 @exp_generic<double>, i64 %xd, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array
 
 ]]></Node>
-<StgValue><ssdm name="tmp_4"/></StgValue>
+<StgValue><ssdm name="tmp_6"/></StgValue>
 </operation>
 </state>
 
@@ -1669,10 +1669,10 @@ if.end4.i:1 %tmp_4 = call i64 @exp_generic<double>, i64 %xd, i58 %table_exp_Z1_a
 
 <Node id="46" bw="64" op_0_bw="64" op_1_bw="64" op_2_bw="58" op_3_bw="26" op_4_bw="42">
 <![CDATA[
-if.end4.i:1 %tmp_4 = call i64 @exp_generic<double>, i64 %xd, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array
+if.end4.i:1 %tmp_6 = call i64 @exp_generic<double>, i64 %xd, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array
 
 ]]></Node>
-<StgValue><ssdm name="tmp_4"/></StgValue>
+<StgValue><ssdm name="tmp_6"/></StgValue>
 </operation>
 </state>
 
@@ -1693,10 +1693,10 @@ if.end4.i:1 %tmp_4 = call i64 @exp_generic<double>, i64 %xd, i58 %table_exp_Z1_a
 
 <Node id="46" bw="64" op_0_bw="64" op_1_bw="64" op_2_bw="58" op_3_bw="26" op_4_bw="42">
 <![CDATA[
-if.end4.i:1 %tmp_4 = call i64 @exp_generic<double>, i64 %xd, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array
+if.end4.i:1 %tmp_6 = call i64 @exp_generic<double>, i64 %xd, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array
 
 ]]></Node>
-<StgValue><ssdm name="tmp_4"/></StgValue>
+<StgValue><ssdm name="tmp_6"/></StgValue>
 </operation>
 </state>
 
@@ -1717,10 +1717,10 @@ if.end4.i:1 %tmp_4 = call i64 @exp_generic<double>, i64 %xd, i58 %table_exp_Z1_a
 
 <Node id="46" bw="64" op_0_bw="64" op_1_bw="64" op_2_bw="58" op_3_bw="26" op_4_bw="42">
 <![CDATA[
-if.end4.i:1 %tmp_4 = call i64 @exp_generic<double>, i64 %xd, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array
+if.end4.i:1 %tmp_6 = call i64 @exp_generic<double>, i64 %xd, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array
 
 ]]></Node>
-<StgValue><ssdm name="tmp_4"/></StgValue>
+<StgValue><ssdm name="tmp_6"/></StgValue>
 </operation>
 </state>
 
@@ -1741,10 +1741,10 @@ if.end4.i:1 %tmp_4 = call i64 @exp_generic<double>, i64 %xd, i58 %table_exp_Z1_a
 
 <Node id="46" bw="64" op_0_bw="64" op_1_bw="64" op_2_bw="58" op_3_bw="26" op_4_bw="42">
 <![CDATA[
-if.end4.i:1 %tmp_4 = call i64 @exp_generic<double>, i64 %xd, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array
+if.end4.i:1 %tmp_6 = call i64 @exp_generic<double>, i64 %xd, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array
 
 ]]></Node>
-<StgValue><ssdm name="tmp_4"/></StgValue>
+<StgValue><ssdm name="tmp_6"/></StgValue>
 </operation>
 </state>
 
@@ -1765,10 +1765,10 @@ if.end4.i:1 %tmp_4 = call i64 @exp_generic<double>, i64 %xd, i58 %table_exp_Z1_a
 
 <Node id="46" bw="64" op_0_bw="64" op_1_bw="64" op_2_bw="58" op_3_bw="26" op_4_bw="42">
 <![CDATA[
-if.end4.i:1 %tmp_4 = call i64 @exp_generic<double>, i64 %xd, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array
+if.end4.i:1 %tmp_6 = call i64 @exp_generic<double>, i64 %xd, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array
 
 ]]></Node>
-<StgValue><ssdm name="tmp_4"/></StgValue>
+<StgValue><ssdm name="tmp_6"/></StgValue>
 </operation>
 </state>
 
@@ -1789,10 +1789,10 @@ if.end4.i:1 %tmp_4 = call i64 @exp_generic<double>, i64 %xd, i58 %table_exp_Z1_a
 
 <Node id="46" bw="64" op_0_bw="64" op_1_bw="64" op_2_bw="58" op_3_bw="26" op_4_bw="42">
 <![CDATA[
-if.end4.i:1 %tmp_4 = call i64 @exp_generic<double>, i64 %xd, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array
+if.end4.i:1 %tmp_6 = call i64 @exp_generic<double>, i64 %xd, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array
 
 ]]></Node>
-<StgValue><ssdm name="tmp_4"/></StgValue>
+<StgValue><ssdm name="tmp_6"/></StgValue>
 </operation>
 </state>
 
@@ -1813,10 +1813,10 @@ if.end4.i:1 %tmp_4 = call i64 @exp_generic<double>, i64 %xd, i58 %table_exp_Z1_a
 
 <Node id="46" bw="64" op_0_bw="64" op_1_bw="64" op_2_bw="58" op_3_bw="26" op_4_bw="42">
 <![CDATA[
-if.end4.i:1 %tmp_4 = call i64 @exp_generic<double>, i64 %xd, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array
+if.end4.i:1 %tmp_6 = call i64 @exp_generic<double>, i64 %xd, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array
 
 ]]></Node>
-<StgValue><ssdm name="tmp_4"/></StgValue>
+<StgValue><ssdm name="tmp_6"/></StgValue>
 </operation>
 </state>
 
@@ -1837,10 +1837,10 @@ if.end4.i:1 %tmp_4 = call i64 @exp_generic<double>, i64 %xd, i58 %table_exp_Z1_a
 
 <Node id="46" bw="64" op_0_bw="64" op_1_bw="64" op_2_bw="58" op_3_bw="26" op_4_bw="42">
 <![CDATA[
-if.end4.i:1 %tmp_4 = call i64 @exp_generic<double>, i64 %xd, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array
+if.end4.i:1 %tmp_6 = call i64 @exp_generic<double>, i64 %xd, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array
 
 ]]></Node>
-<StgValue><ssdm name="tmp_4"/></StgValue>
+<StgValue><ssdm name="tmp_6"/></StgValue>
 </operation>
 </state>
 
@@ -1861,10 +1861,10 @@ if.end4.i:1 %tmp_4 = call i64 @exp_generic<double>, i64 %xd, i58 %table_exp_Z1_a
 
 <Node id="46" bw="64" op_0_bw="64" op_1_bw="64" op_2_bw="58" op_3_bw="26" op_4_bw="42">
 <![CDATA[
-if.end4.i:1 %tmp_4 = call i64 @exp_generic<double>, i64 %xd, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array
+if.end4.i:1 %tmp_6 = call i64 @exp_generic<double>, i64 %xd, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array
 
 ]]></Node>
-<StgValue><ssdm name="tmp_4"/></StgValue>
+<StgValue><ssdm name="tmp_6"/></StgValue>
 </operation>
 </state>
 
@@ -1885,10 +1885,10 @@ if.end4.i:1 %tmp_4 = call i64 @exp_generic<double>, i64 %xd, i58 %table_exp_Z1_a
 
 <Node id="46" bw="64" op_0_bw="64" op_1_bw="64" op_2_bw="58" op_3_bw="26" op_4_bw="42">
 <![CDATA[
-if.end4.i:1 %tmp_4 = call i64 @exp_generic<double>, i64 %xd, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array
+if.end4.i:1 %tmp_6 = call i64 @exp_generic<double>, i64 %xd, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array
 
 ]]></Node>
-<StgValue><ssdm name="tmp_4"/></StgValue>
+<StgValue><ssdm name="tmp_6"/></StgValue>
 </operation>
 </state>
 
@@ -1909,10 +1909,10 @@ if.end4.i:1 %tmp_4 = call i64 @exp_generic<double>, i64 %xd, i58 %table_exp_Z1_a
 
 <Node id="46" bw="64" op_0_bw="64" op_1_bw="64" op_2_bw="58" op_3_bw="26" op_4_bw="42">
 <![CDATA[
-if.end4.i:1 %tmp_4 = call i64 @exp_generic<double>, i64 %xd, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array
+if.end4.i:1 %tmp_6 = call i64 @exp_generic<double>, i64 %xd, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array
 
 ]]></Node>
-<StgValue><ssdm name="tmp_4"/></StgValue>
+<StgValue><ssdm name="tmp_6"/></StgValue>
 </operation>
 </state>
 
@@ -1933,10 +1933,10 @@ if.end4.i:1 %tmp_4 = call i64 @exp_generic<double>, i64 %xd, i58 %table_exp_Z1_a
 
 <Node id="46" bw="64" op_0_bw="64" op_1_bw="64" op_2_bw="58" op_3_bw="26" op_4_bw="42">
 <![CDATA[
-if.end4.i:1 %tmp_4 = call i64 @exp_generic<double>, i64 %xd, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array
+if.end4.i:1 %tmp_6 = call i64 @exp_generic<double>, i64 %xd, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array
 
 ]]></Node>
-<StgValue><ssdm name="tmp_4"/></StgValue>
+<StgValue><ssdm name="tmp_6"/></StgValue>
 </operation>
 </state>
 
@@ -1957,10 +1957,10 @@ if.end4.i:1 %tmp_4 = call i64 @exp_generic<double>, i64 %xd, i58 %table_exp_Z1_a
 
 <Node id="46" bw="64" op_0_bw="64" op_1_bw="64" op_2_bw="58" op_3_bw="26" op_4_bw="42">
 <![CDATA[
-if.end4.i:1 %tmp_4 = call i64 @exp_generic<double>, i64 %xd, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array
+if.end4.i:1 %tmp_6 = call i64 @exp_generic<double>, i64 %xd, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array
 
 ]]></Node>
-<StgValue><ssdm name="tmp_4"/></StgValue>
+<StgValue><ssdm name="tmp_6"/></StgValue>
 </operation>
 </state>
 
@@ -1981,10 +1981,10 @@ if.end4.i:1 %tmp_4 = call i64 @exp_generic<double>, i64 %xd, i58 %table_exp_Z1_a
 
 <Node id="46" bw="64" op_0_bw="64" op_1_bw="64" op_2_bw="58" op_3_bw="26" op_4_bw="42">
 <![CDATA[
-if.end4.i:1 %tmp_4 = call i64 @exp_generic<double>, i64 %xd, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array
+if.end4.i:1 %tmp_6 = call i64 @exp_generic<double>, i64 %xd, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array
 
 ]]></Node>
-<StgValue><ssdm name="tmp_4"/></StgValue>
+<StgValue><ssdm name="tmp_6"/></StgValue>
 </operation>
 </state>
 
@@ -2005,10 +2005,10 @@ if.end4.i:1 %tmp_4 = call i64 @exp_generic<double>, i64 %xd, i58 %table_exp_Z1_a
 
 <Node id="46" bw="64" op_0_bw="64" op_1_bw="64" op_2_bw="58" op_3_bw="26" op_4_bw="42">
 <![CDATA[
-if.end4.i:1 %tmp_4 = call i64 @exp_generic<double>, i64 %xd, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array
+if.end4.i:1 %tmp_6 = call i64 @exp_generic<double>, i64 %xd, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array
 
 ]]></Node>
-<StgValue><ssdm name="tmp_4"/></StgValue>
+<StgValue><ssdm name="tmp_6"/></StgValue>
 </operation>
 </state>
 
@@ -2029,7 +2029,7 @@ if.end4.i:1 %tmp_4 = call i64 @exp_generic<double>, i64 %xd, i58 %table_exp_Z1_a
 
 <Node id="47" bw="64" op_0_bw="64" op_1_bw="64">
 <![CDATA[
-if.end4.i:2 %sub_i = dadd i64 %tmp_4, i64 -1
+if.end4.i:2 %sub_i = dadd i64 %tmp_6, i64 -1
 
 ]]></Node>
 <StgValue><ssdm name="sub_i"/></StgValue>
@@ -2053,7 +2053,7 @@ if.end4.i:2 %sub_i = dadd i64 %tmp_4, i64 -1
 
 <Node id="47" bw="64" op_0_bw="64" op_1_bw="64">
 <![CDATA[
-if.end4.i:2 %sub_i = dadd i64 %tmp_4, i64 -1
+if.end4.i:2 %sub_i = dadd i64 %tmp_6, i64 -1
 
 ]]></Node>
 <StgValue><ssdm name="sub_i"/></StgValue>
@@ -2077,7 +2077,7 @@ if.end4.i:2 %sub_i = dadd i64 %tmp_4, i64 -1
 
 <Node id="47" bw="64" op_0_bw="64" op_1_bw="64">
 <![CDATA[
-if.end4.i:2 %sub_i = dadd i64 %tmp_4, i64 -1
+if.end4.i:2 %sub_i = dadd i64 %tmp_6, i64 -1
 
 ]]></Node>
 <StgValue><ssdm name="sub_i"/></StgValue>
@@ -2101,7 +2101,7 @@ if.end4.i:2 %sub_i = dadd i64 %tmp_4, i64 -1
 
 <Node id="47" bw="64" op_0_bw="64" op_1_bw="64">
 <![CDATA[
-if.end4.i:2 %sub_i = dadd i64 %tmp_4, i64 -1
+if.end4.i:2 %sub_i = dadd i64 %tmp_6, i64 -1
 
 ]]></Node>
 <StgValue><ssdm name="sub_i"/></StgValue>
@@ -2125,7 +2125,7 @@ if.end4.i:2 %sub_i = dadd i64 %tmp_4, i64 -1
 
 <Node id="47" bw="64" op_0_bw="64" op_1_bw="64">
 <![CDATA[
-if.end4.i:2 %sub_i = dadd i64 %tmp_4, i64 -1
+if.end4.i:2 %sub_i = dadd i64 %tmp_6, i64 -1
 
 ]]></Node>
 <StgValue><ssdm name="sub_i"/></StgValue>

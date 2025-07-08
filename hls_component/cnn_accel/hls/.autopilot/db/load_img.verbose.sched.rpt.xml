@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'load_img'" level="0">
-<item name = "Date">Tue Jul  8 00:39:48 2025
+<item name = "Date">Tue Jul  8 02:25:35 2025
 </item>
 <item name = "Version">2025.1 (Build 6135595 on May 21 2025)</item>
 <item name = "Project">cnn_accel</item>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">691209, 691209, 6.912 ms, 6.912 ms, 691208, 691208, loop auto-rewind stp (delay=8 clock cycles(s))</column>
+<column name="">691211, 691211, 6.912 ms, 6.912 ms, 691211, 691211, no</column>
 </table>
 </item>
 <item name = "Detail">
@@ -35,7 +35,6 @@
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH">691207, 691207, 11, 3, 3, 230400, yes</column>
 </table>
 </item>
 </section>

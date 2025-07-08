@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'exp_generic_double_s'" level="0">
-<item name = "Date">Tue Jul  8 00:40:06 2025
+<item name = "Date">Tue Jul  8 02:26:09 2025
 </item>
 <item name = "Version">2025.1 (Build 6135595 on May 21 2025)</item>
 <item name = "Project">cnn_accel</item>
@@ -61,16 +61,16 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
-<column name="mul_13s_71s_71_5_0_U84">mul_13s_71s_71_5_0, 0, 4, 441, 256, 0</column>
-<column name="mul_43ns_36ns_79_2_0_U85">mul_43ns_36ns_79_2_0, 0, 6, 219, 155, 0</column>
-<column name="mul_49ns_44ns_93_2_0_U86">mul_49ns_44ns_93_2_0, 0, 9, 233, 85, 0</column>
-<column name="mul_50ns_50ns_99_2_0_U87">mul_50ns_50ns_99_2_0, 0, 9, 237, 87, 0</column>
-<column name="sparsemux_9_3_64_1_0_U88">sparsemux_9_3_64_1_0, 0, 0, 0, 13, 0</column>
+<column name="mul_13s_71s_71_5_0_U1588">mul_13s_71s_71_5_0, 0, 4, 441, 256, 0</column>
+<column name="mul_43ns_36ns_79_2_0_U1589">mul_43ns_36ns_79_2_0, 0, 6, 219, 155, 0</column>
+<column name="mul_49ns_44ns_93_2_0_U1590">mul_49ns_44ns_93_2_0, 0, 9, 233, 85, 0</column>
+<column name="mul_50ns_50ns_99_2_0_U1591">mul_50ns_50ns_99_2_0, 0, 9, 237, 87, 0</column>
+<column name="sparsemux_9_3_64_1_0_U1592">sparsemux_9_3_64_1_0, 0, 0, 0, 13, 0</column>
 </table>
 </item>
 <item name = "DSP"><table name="" hasTotal="0">
 <keys size="3">Instance, Module, Expression</keys>
-<column name="mac_muladd_16s_15ns_19s_31_4_0_U89">mac_muladd_16s_15ns_19s_31_4_0, i0 * i1 + i2</column>
+<column name="mac_muladd_16s_15ns_19s_31_4_0_U1593">mac_muladd_16s_15ns_19s_31_4_0, i0 * i1 + i2</column>
 </table>
 </item>
 <item name = "Memory"><table name="" hasTotal="1">
@@ -182,15 +182,15 @@
 <column name="select_ln303_reg_1363">52, 0, 52, 0</column>
 <column name="sext_ln227_reg_1153">64, 0, 71, 7</column>
 <column name="sext_ln229_1_reg_1158">32, 0, 32, 0</column>
-<column name="tmp_26_reg_1269">20, 0, 20, 0</column>
-<column name="tmp_27_reg_1285">40, 0, 40, 0</column>
-<column name="tmp_28_reg_1306">36, 0, 36, 0</column>
+<column name="tmp_26_reg_1206">58, 0, 58, 0</column>
+<column name="tmp_27_reg_1269">20, 0, 20, 0</column>
+<column name="tmp_28_reg_1285">40, 0, 40, 0</column>
+<column name="tmp_29_reg_1306">36, 0, 36, 0</column>
 <column name="tmp_30_reg_1169">1, 0, 1, 0</column>
 <column name="tmp_30_reg_1169_pp0_iter2_reg">1, 0, 1, 0</column>
 <column name="tmp_34_reg_1148">1, 0, 1, 0</column>
 <column name="tmp_reg_1129">1, 0, 1, 0</column>
 <column name="tmp_reg_1129_pp0_iter1_reg">1, 0, 1, 0</column>
-<column name="tmp_s_reg_1206">58, 0, 58, 0</column>
 <column name="trunc_ln255_reg_1179">59, 0, 59, 0</column>
 <column name="trunc_ln336_reg_1358">11, 0, 11, 0</column>
 <column name="x_int_reg">64, 0, 64, 0</column>
@@ -204,7 +204,7 @@
 <column name="icmp_ln309_reg_1140">64, 32, 1, 0</column>
 <column name="m_diff_hi_reg_1211">64, 32, 8, 0</column>
 <column name="r_exp_reg_1194">64, 32, 13, 0</column>
-<column name="tmp_27_reg_1285">64, 32, 40, 0</column>
+<column name="tmp_28_reg_1285">64, 32, 40, 0</column>
 <column name="tmp_34_reg_1148">64, 32, 1, 0</column>
 <column name="trunc_ln255_reg_1179">64, 32, 59, 0</column>
 <column name="x_is_NaN_reg_1111">64, 32, 1, 0</column>

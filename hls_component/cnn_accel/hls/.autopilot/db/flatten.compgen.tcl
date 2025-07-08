@@ -11,7 +11,7 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 79 \
+    id 1583 \
     name feat2_p \
     reset_level 1 \
     sync_rst true \
@@ -30,17 +30,17 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 80 \
-    name feat2_p_11 \
+    id 1584 \
+    name feat2_p_70 \
     reset_level 1 \
     sync_rst true \
     dir I \
-    corename feat2_p_11 \
+    corename feat2_p_70 \
     op interface \
-    ports { feat2_p_11_address0 { O 15 vector } feat2_p_11_ce0 { O 1 bit } feat2_p_11_q0 { I 32 vector } } \
+    ports { feat2_p_70_address0 { O 15 vector } feat2_p_70_ce0 { O 1 bit } feat2_p_70_q0 { I 32 vector } } \
 } "
 } else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'feat2_p_11'"
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'feat2_p_70'"
 }
 }
 
@@ -49,17 +49,17 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 81 \
-    name feat2_p_12 \
+    id 1585 \
+    name feat2_p_71 \
     reset_level 1 \
     sync_rst true \
     dir I \
-    corename feat2_p_12 \
+    corename feat2_p_71 \
     op interface \
-    ports { feat2_p_12_address0 { O 15 vector } feat2_p_12_ce0 { O 1 bit } feat2_p_12_q0 { I 32 vector } } \
+    ports { feat2_p_71_address0 { O 15 vector } feat2_p_71_ce0 { O 1 bit } feat2_p_71_q0 { I 32 vector } } \
 } "
 } else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'feat2_p_12'"
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'feat2_p_71'"
 }
 }
 
@@ -68,17 +68,17 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 82 \
-    name feat2_p_13 \
+    id 1586 \
+    name feat2_p_72 \
     reset_level 1 \
     sync_rst true \
     dir I \
-    corename feat2_p_13 \
+    corename feat2_p_72 \
     op interface \
-    ports { feat2_p_13_address0 { O 15 vector } feat2_p_13_ce0 { O 1 bit } feat2_p_13_q0 { I 32 vector } } \
+    ports { feat2_p_72_address0 { O 15 vector } feat2_p_72_ce0 { O 1 bit } feat2_p_72_q0 { I 32 vector } } \
 } "
 } else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'feat2_p_13'"
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'feat2_p_72'"
 }
 }
 
@@ -87,7 +87,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 83 \
+    id 1587 \
     name vec1 \
     reset_level 1 \
     sync_rst true \
@@ -112,7 +112,7 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename ap_ctrl \
     op interface \
-    ports { ap_start { I 1 bit } ap_ready { O 1 bit } ap_done { O 1 bit } ap_idle { O 1 bit } ap_continue { I 1 bit } } \
+    ports { ap_start { I 1 bit } ap_ready { O 1 bit } ap_done { O 1 bit } ap_idle { O 1 bit } } \
 } "
 }
 
@@ -167,9 +167,9 @@ if {${::AESL::PGuard_autoexp_gen}} {
 
 
 # flow_control definition:
-set InstName cnn_accel_flow_control_loop_delay_pipe_U
-set CompName cnn_accel_flow_control_loop_delay_pipe
-set name flow_control_loop_delay_pipe
+set InstName cnn_accel_flow_control_loop_pipe_sequential_init_U
+set CompName cnn_accel_flow_control_loop_pipe_sequential_init
+set name flow_control_loop_pipe_sequential_init
 if {${::AESL::PGuard_autocg_gen} && ${::AESL::PGuard_autocg_ipmgen}} {
 if {[info proc ::AESL_LIB_VIRTEX::xil_gen_UPC_flow_control] == "::AESL_LIB_VIRTEX::xil_gen_UPC_flow_control"} {
 eval "::AESL_LIB_VIRTEX::xil_gen_UPC_flow_control { \

@@ -18,34 +18,39 @@
 <PipelineType>dataflow</PipelineType>
 <SummaryOfTimingAnalysis>
 <unit>ns</unit>
-<EstimatedClockPeriod>8.133</EstimatedClockPeriod>
+<EstimatedClockPeriod>7.838</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
-<Best-caseLatency>64570463</Best-caseLatency>
-<Average-caseLatency>64570463</Average-caseLatency>
-<Worst-caseLatency>64570463</Worst-caseLatency>
-<Best-caseRealTimeLatency>0.646 sec</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>0.646 sec</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>0.646 sec</Worst-caseRealTimeLatency>
-<DataflowPipelineThroughput>25481290</DataflowPipelineThroughput>
-<Interval-min>25481290</Interval-min>
-<Interval-max>25481290</Interval-max>
+<Best-caseLatency>6951794</Best-caseLatency>
+<Average-caseLatency>21053862</Average-caseLatency>
+<Worst-caseLatency>35155930</Worst-caseLatency>
+<Best-caseRealTimeLatency>69.518 ms</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>0.211 sec</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>0.352 sec</Worst-caseRealTimeLatency>
+<DataflowPipelineThroughput>
+<range>
+<min>6951795</min>
+<max>35155931</max>
+</range>
+</DataflowPipelineThroughput>
+<Interval-min>6951795</Interval-min>
+<Interval-max>35155931</Interval-max>
 <PerformancePragma>-</PerformancePragma>
 </SummaryOfOverallLatency>
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>../hls_files/conv_pool.cpp:108</SourceLocation>
+<SourceLocation>../hls_files/conv_pool.cpp:165</SourceLocation>
 </SummaryOfViolations>
 </PerformanceEstimates>
 
 <AreaEstimates>
 <Resources>
-<BRAM_18K>10265</BRAM_18K>
-<DSP>66</DSP>
-<FF>30599</FF>
-<LUT>26957</LUT>
+<BRAM_18K>13336</BRAM_18K>
+<DSP>84</DSP>
+<FF>81866</FF>
+<LUT>37521</LUT>
 <URAM>0</URAM>
 </Resources>
 <AvailableResources>

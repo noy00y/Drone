@@ -37,164 +37,308 @@
          <obj_property name="Render_Data">/apatb_cnn_accel_top/AESL_inst_cnn_accel//AESL_inst_cnn_accel_activity.dataflowTxWaveData.Cycles</obj_property>
          <obj_property name="Value_Data">/apatb_cnn_accel_top/AESL_inst_cnn_accel//AESL_inst_cnn_accel_activity.dataflowTxWaveData.OutStanding</obj_property>
          <obj_property name="Detail_Data">/apatb_cnn_accel_top/AESL_inst_cnn_accel//AESL_inst_cnn_accel_activity.dataflowTxTooltipData</obj_property>
-         <wvobject type="group" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/load_img_U0/load_img_U0_activity">
-            <obj_property name="label">load_img_U0_activity</obj_property>
+         <wvobject type="group" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/Block_entry_proc_U0_activity">
+            <obj_property name="label">Block_entry_proc_U0_activity</obj_property>
             <obj_property name="DisplayName">label</obj_property>
             <obj_property name="UseFullPath">true</obj_property>
-            <obj_property name="ElementShortName">load_img_U0_activity</obj_property>
-            <obj_property name="ObjectShortName">load_img_U0_activity</obj_property>
+            <obj_property name="ElementShortName">Block_entry_proc_U0_activity</obj_property>
+            <obj_property name="ObjectShortName">Block_entry_proc_U0_activity</obj_property>
             <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
             <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
             <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
             <obj_property name="UseCustomSignalColor">true</obj_property>
             <obj_property name="CustomSignalColor">turquoise</obj_property>
             <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
-            <obj_property name="Render_Data">/apatb_cnn_accel_top/AESL_inst_cnn_accel/load_img_U0/load_img_U0_activity.dataflowTxWaveData.Cycles</obj_property>
-            <obj_property name="Value_Data">/apatb_cnn_accel_top/AESL_inst_cnn_accel/load_img_U0/load_img_U0_activity.dataflowTxWaveData.OutStanding</obj_property>
-            <obj_property name="Detail_Data">/apatb_cnn_accel_top/AESL_inst_cnn_accel/load_img_U0/load_img_U0_activity.dataflowTxTooltipData</obj_property>
-         </wvobject>
-         <wvobject type="group" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/conv1_U0/conv1_U0_activity">
-            <obj_property name="label">conv1_U0_activity</obj_property>
-            <obj_property name="DisplayName">label</obj_property>
-            <obj_property name="UseFullPath">true</obj_property>
-            <obj_property name="ElementShortName">conv1_U0_activity</obj_property>
-            <obj_property name="ObjectShortName">conv1_U0_activity</obj_property>
-            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
-            <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
-            <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
-            <obj_property name="UseCustomSignalColor">true</obj_property>
-            <obj_property name="CustomSignalColor">turquoise</obj_property>
-            <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
-            <obj_property name="Render_Data">/apatb_cnn_accel_top/AESL_inst_cnn_accel/conv1_U0/conv1_U0_activity.dataflowTxWaveData.Cycles</obj_property>
-            <obj_property name="Value_Data">/apatb_cnn_accel_top/AESL_inst_cnn_accel/conv1_U0/conv1_U0_activity.dataflowTxWaveData.OutStanding</obj_property>
-            <obj_property name="Detail_Data">/apatb_cnn_accel_top/AESL_inst_cnn_accel/conv1_U0/conv1_U0_activity.dataflowTxTooltipData</obj_property>
-         </wvobject>
-         <wvobject type="group" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/pool1_U0/pool1_U0_activity">
-            <obj_property name="label">pool1_U0_activity</obj_property>
-            <obj_property name="DisplayName">label</obj_property>
-            <obj_property name="UseFullPath">true</obj_property>
-            <obj_property name="ElementShortName">pool1_U0_activity</obj_property>
-            <obj_property name="ObjectShortName">pool1_U0_activity</obj_property>
-            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
-            <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
-            <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
-            <obj_property name="UseCustomSignalColor">true</obj_property>
-            <obj_property name="CustomSignalColor">turquoise</obj_property>
-            <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
-            <obj_property name="Render_Data">/apatb_cnn_accel_top/AESL_inst_cnn_accel/pool1_U0/pool1_U0_activity.dataflowTxWaveData.Cycles</obj_property>
-            <obj_property name="Value_Data">/apatb_cnn_accel_top/AESL_inst_cnn_accel/pool1_U0/pool1_U0_activity.dataflowTxWaveData.OutStanding</obj_property>
-            <obj_property name="Detail_Data">/apatb_cnn_accel_top/AESL_inst_cnn_accel/pool1_U0/pool1_U0_activity.dataflowTxTooltipData</obj_property>
-         </wvobject>
-         <wvobject type="group" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/conv2_U0/conv2_U0_activity">
-            <obj_property name="label">conv2_U0_activity</obj_property>
-            <obj_property name="DisplayName">label</obj_property>
-            <obj_property name="UseFullPath">true</obj_property>
-            <obj_property name="ElementShortName">conv2_U0_activity</obj_property>
-            <obj_property name="ObjectShortName">conv2_U0_activity</obj_property>
-            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
-            <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
-            <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
-            <obj_property name="UseCustomSignalColor">true</obj_property>
-            <obj_property name="CustomSignalColor">turquoise</obj_property>
-            <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
-            <obj_property name="Render_Data">/apatb_cnn_accel_top/AESL_inst_cnn_accel/conv2_U0/conv2_U0_activity.dataflowTxWaveData.Cycles</obj_property>
-            <obj_property name="Value_Data">/apatb_cnn_accel_top/AESL_inst_cnn_accel/conv2_U0/conv2_U0_activity.dataflowTxWaveData.OutStanding</obj_property>
-            <obj_property name="Detail_Data">/apatb_cnn_accel_top/AESL_inst_cnn_accel/conv2_U0/conv2_U0_activity.dataflowTxTooltipData</obj_property>
-         </wvobject>
-         <wvobject type="group" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/pool2_U0/pool2_U0_activity">
-            <obj_property name="label">pool2_U0_activity</obj_property>
-            <obj_property name="DisplayName">label</obj_property>
-            <obj_property name="UseFullPath">true</obj_property>
-            <obj_property name="ElementShortName">pool2_U0_activity</obj_property>
-            <obj_property name="ObjectShortName">pool2_U0_activity</obj_property>
-            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
-            <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
-            <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
-            <obj_property name="UseCustomSignalColor">true</obj_property>
-            <obj_property name="CustomSignalColor">turquoise</obj_property>
-            <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
-            <obj_property name="Render_Data">/apatb_cnn_accel_top/AESL_inst_cnn_accel/pool2_U0/pool2_U0_activity.dataflowTxWaveData.Cycles</obj_property>
-            <obj_property name="Value_Data">/apatb_cnn_accel_top/AESL_inst_cnn_accel/pool2_U0/pool2_U0_activity.dataflowTxWaveData.OutStanding</obj_property>
-            <obj_property name="Detail_Data">/apatb_cnn_accel_top/AESL_inst_cnn_accel/pool2_U0/pool2_U0_activity.dataflowTxTooltipData</obj_property>
-         </wvobject>
-         <wvobject type="group" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/flatten_U0/flatten_U0_activity">
-            <obj_property name="label">flatten_U0_activity</obj_property>
-            <obj_property name="DisplayName">label</obj_property>
-            <obj_property name="UseFullPath">true</obj_property>
-            <obj_property name="ElementShortName">flatten_U0_activity</obj_property>
-            <obj_property name="ObjectShortName">flatten_U0_activity</obj_property>
-            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
-            <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
-            <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
-            <obj_property name="UseCustomSignalColor">true</obj_property>
-            <obj_property name="CustomSignalColor">turquoise</obj_property>
-            <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
-            <obj_property name="Render_Data">/apatb_cnn_accel_top/AESL_inst_cnn_accel/flatten_U0/flatten_U0_activity.dataflowTxWaveData.Cycles</obj_property>
-            <obj_property name="Value_Data">/apatb_cnn_accel_top/AESL_inst_cnn_accel/flatten_U0/flatten_U0_activity.dataflowTxWaveData.OutStanding</obj_property>
-            <obj_property name="Detail_Data">/apatb_cnn_accel_top/AESL_inst_cnn_accel/flatten_U0/flatten_U0_activity.dataflowTxTooltipData</obj_property>
-         </wvobject>
-         <wvobject type="group" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/fc1_U0/fc1_U0_activity">
-            <obj_property name="label">fc1_U0_activity</obj_property>
-            <obj_property name="DisplayName">label</obj_property>
-            <obj_property name="UseFullPath">true</obj_property>
-            <obj_property name="ElementShortName">fc1_U0_activity</obj_property>
-            <obj_property name="ObjectShortName">fc1_U0_activity</obj_property>
-            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
-            <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
-            <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
-            <obj_property name="UseCustomSignalColor">true</obj_property>
-            <obj_property name="CustomSignalColor">turquoise</obj_property>
-            <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
-            <obj_property name="Render_Data">/apatb_cnn_accel_top/AESL_inst_cnn_accel/fc1_U0/fc1_U0_activity.dataflowTxWaveData.Cycles</obj_property>
-            <obj_property name="Value_Data">/apatb_cnn_accel_top/AESL_inst_cnn_accel/fc1_U0/fc1_U0_activity.dataflowTxWaveData.OutStanding</obj_property>
-            <obj_property name="Detail_Data">/apatb_cnn_accel_top/AESL_inst_cnn_accel/fc1_U0/fc1_U0_activity.dataflowTxTooltipData</obj_property>
-            <wvobject type="group" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/fc1_U0/grp_generic_tanh_float_s_fu_175/grp_generic_tanh_float_s_fu_175_activity">
-               <obj_property name="label">grp_generic_tanh_float_s_fu_175_activity</obj_property>
+            <obj_property name="Render_Data">/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/Block_entry_proc_U0_activity.dataflowTxWaveData.Cycles</obj_property>
+            <obj_property name="Value_Data">/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/Block_entry_proc_U0_activity.dataflowTxWaveData.OutStanding</obj_property>
+            <obj_property name="Detail_Data">/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/Block_entry_proc_U0_activity.dataflowTxTooltipData</obj_property>
+            <wvobject type="group" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/grp_load_img_fu_3253/grp_load_img_fu_3253_activity">
+               <obj_property name="label">grp_load_img_fu_3253_activity</obj_property>
                <obj_property name="DisplayName">label</obj_property>
                <obj_property name="UseFullPath">true</obj_property>
-               <obj_property name="ElementShortName">grp_generic_tanh_float_s_fu_175_activity</obj_property>
-               <obj_property name="ObjectShortName">grp_generic_tanh_float_s_fu_175_activity</obj_property>
+               <obj_property name="ElementShortName">grp_load_img_fu_3253_activity</obj_property>
+               <obj_property name="ObjectShortName">grp_load_img_fu_3253_activity</obj_property>
                <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
                <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
                <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
                <obj_property name="UseCustomSignalColor">true</obj_property>
                <obj_property name="CustomSignalColor">turquoise</obj_property>
                <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
-               <obj_property name="Render_Data">/apatb_cnn_accel_top/AESL_inst_cnn_accel/fc1_U0/grp_generic_tanh_float_s_fu_175/grp_generic_tanh_float_s_fu_175_activity.dataflowTxWaveData.Cycles</obj_property>
-               <obj_property name="Value_Data">/apatb_cnn_accel_top/AESL_inst_cnn_accel/fc1_U0/grp_generic_tanh_float_s_fu_175/grp_generic_tanh_float_s_fu_175_activity.dataflowTxWaveData.OutStanding</obj_property>
-               <obj_property name="Detail_Data">/apatb_cnn_accel_top/AESL_inst_cnn_accel/fc1_U0/grp_generic_tanh_float_s_fu_175/grp_generic_tanh_float_s_fu_175_activity.dataflowTxTooltipData</obj_property>
+               <obj_property name="Render_Data">/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/grp_load_img_fu_3253/grp_load_img_fu_3253_activity.dataflowTxWaveData.Cycles</obj_property>
+               <obj_property name="Value_Data">/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/grp_load_img_fu_3253/grp_load_img_fu_3253_activity.dataflowTxWaveData.OutStanding</obj_property>
+               <obj_property name="Detail_Data">/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/grp_load_img_fu_3253/grp_load_img_fu_3253_activity.dataflowTxTooltipData</obj_property>
+               <wvobject type="group" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/grp_load_img_fu_3253/grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_53/grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_53_activity">
+                  <obj_property name="label">grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_53_activity</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <obj_property name="UseFullPath">true</obj_property>
+                  <obj_property name="ElementShortName">grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_53_activity</obj_property>
+                  <obj_property name="ObjectShortName">grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_53_activity</obj_property>
+                  <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+                  <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+                  <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+                  <obj_property name="UseCustomSignalColor">true</obj_property>
+                  <obj_property name="CustomSignalColor">turquoise</obj_property>
+                  <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+                  <obj_property name="Render_Data">/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/grp_load_img_fu_3253/grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_53/grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_53_activity.dataflowTxWaveData.Cycles</obj_property>
+                  <obj_property name="Value_Data">/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/grp_load_img_fu_3253/grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_53/grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_53_activity.dataflowTxWaveData.OutStanding</obj_property>
+                  <obj_property name="Detail_Data">/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/grp_load_img_fu_3253/grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_53/grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_53_activity.dataflowTxTooltipData</obj_property>
+               </wvobject>
             </wvobject>
-         </wvobject>
-         <wvobject type="group" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/fc2_U0/fc2_U0_activity">
-            <obj_property name="label">fc2_U0_activity</obj_property>
-            <obj_property name="DisplayName">label</obj_property>
-            <obj_property name="UseFullPath">true</obj_property>
-            <obj_property name="ElementShortName">fc2_U0_activity</obj_property>
-            <obj_property name="ObjectShortName">fc2_U0_activity</obj_property>
-            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
-            <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
-            <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
-            <obj_property name="UseCustomSignalColor">true</obj_property>
-            <obj_property name="CustomSignalColor">turquoise</obj_property>
-            <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
-            <obj_property name="Render_Data">/apatb_cnn_accel_top/AESL_inst_cnn_accel/fc2_U0/fc2_U0_activity.dataflowTxWaveData.Cycles</obj_property>
-            <obj_property name="Value_Data">/apatb_cnn_accel_top/AESL_inst_cnn_accel/fc2_U0/fc2_U0_activity.dataflowTxWaveData.OutStanding</obj_property>
-            <obj_property name="Detail_Data">/apatb_cnn_accel_top/AESL_inst_cnn_accel/fc2_U0/fc2_U0_activity.dataflowTxTooltipData</obj_property>
-            <wvobject type="group" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/fc2_U0/grp_fc2_Pipeline_FC2_LOOP_fu_149/grp_fc2_Pipeline_FC2_LOOP_fu_149_activity">
-               <obj_property name="label">grp_fc2_Pipeline_FC2_LOOP_fu_149_activity</obj_property>
+            <wvobject type="group" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/grp_conv1_fu_3265/grp_conv1_fu_3265_activity">
+               <obj_property name="label">grp_conv1_fu_3265_activity</obj_property>
                <obj_property name="DisplayName">label</obj_property>
                <obj_property name="UseFullPath">true</obj_property>
-               <obj_property name="ElementShortName">grp_fc2_Pipeline_FC2_LOOP_fu_149_activity</obj_property>
-               <obj_property name="ObjectShortName">grp_fc2_Pipeline_FC2_LOOP_fu_149_activity</obj_property>
+               <obj_property name="ElementShortName">grp_conv1_fu_3265_activity</obj_property>
+               <obj_property name="ObjectShortName">grp_conv1_fu_3265_activity</obj_property>
                <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
                <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
                <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
                <obj_property name="UseCustomSignalColor">true</obj_property>
                <obj_property name="CustomSignalColor">turquoise</obj_property>
                <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
-               <obj_property name="Render_Data">/apatb_cnn_accel_top/AESL_inst_cnn_accel/fc2_U0/grp_fc2_Pipeline_FC2_LOOP_fu_149/grp_fc2_Pipeline_FC2_LOOP_fu_149_activity.dataflowTxWaveData.Cycles</obj_property>
-               <obj_property name="Value_Data">/apatb_cnn_accel_top/AESL_inst_cnn_accel/fc2_U0/grp_fc2_Pipeline_FC2_LOOP_fu_149/grp_fc2_Pipeline_FC2_LOOP_fu_149_activity.dataflowTxWaveData.OutStanding</obj_property>
-               <obj_property name="Detail_Data">/apatb_cnn_accel_top/AESL_inst_cnn_accel/fc2_U0/grp_fc2_Pipeline_FC2_LOOP_fu_149/grp_fc2_Pipeline_FC2_LOOP_fu_149_activity.dataflowTxTooltipData</obj_property>
+               <obj_property name="Render_Data">/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/grp_conv1_fu_3265/grp_conv1_fu_3265_activity.dataflowTxWaveData.Cycles</obj_property>
+               <obj_property name="Value_Data">/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/grp_conv1_fu_3265/grp_conv1_fu_3265_activity.dataflowTxWaveData.OutStanding</obj_property>
+               <obj_property name="Detail_Data">/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/grp_conv1_fu_3265/grp_conv1_fu_3265_activity.dataflowTxTooltipData</obj_property>
+            </wvobject>
+            <wvobject type="group" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/grp_pool1_fu_3729/grp_pool1_fu_3729_activity">
+               <obj_property name="label">grp_pool1_fu_3729_activity</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <obj_property name="UseFullPath">true</obj_property>
+               <obj_property name="ElementShortName">grp_pool1_fu_3729_activity</obj_property>
+               <obj_property name="ObjectShortName">grp_pool1_fu_3729_activity</obj_property>
+               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+               <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+               <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+               <obj_property name="CustomSignalColor">turquoise</obj_property>
+               <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+               <obj_property name="Render_Data">/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/grp_pool1_fu_3729/grp_pool1_fu_3729_activity.dataflowTxWaveData.Cycles</obj_property>
+               <obj_property name="Value_Data">/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/grp_pool1_fu_3729/grp_pool1_fu_3729_activity.dataflowTxWaveData.OutStanding</obj_property>
+               <obj_property name="Detail_Data">/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/grp_pool1_fu_3729/grp_pool1_fu_3729_activity.dataflowTxTooltipData</obj_property>
+            </wvobject>
+            <wvobject type="group" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/grp_conv2_fu_3749/grp_conv2_fu_3749_activity">
+               <obj_property name="label">grp_conv2_fu_3749_activity</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <obj_property name="UseFullPath">true</obj_property>
+               <obj_property name="ElementShortName">grp_conv2_fu_3749_activity</obj_property>
+               <obj_property name="ObjectShortName">grp_conv2_fu_3749_activity</obj_property>
+               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+               <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+               <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+               <obj_property name="CustomSignalColor">turquoise</obj_property>
+               <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+               <obj_property name="Render_Data">/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/grp_conv2_fu_3749/grp_conv2_fu_3749_activity.dataflowTxWaveData.Cycles</obj_property>
+               <obj_property name="Value_Data">/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/grp_conv2_fu_3749/grp_conv2_fu_3749_activity.dataflowTxWaveData.OutStanding</obj_property>
+               <obj_property name="Detail_Data">/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/grp_conv2_fu_3749/grp_conv2_fu_3749_activity.dataflowTxTooltipData</obj_property>
+            </wvobject>
+            <wvobject type="group" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/grp_pool2_fu_6105/grp_pool2_fu_6105_activity">
+               <obj_property name="label">grp_pool2_fu_6105_activity</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <obj_property name="UseFullPath">true</obj_property>
+               <obj_property name="ElementShortName">grp_pool2_fu_6105_activity</obj_property>
+               <obj_property name="ObjectShortName">grp_pool2_fu_6105_activity</obj_property>
+               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+               <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+               <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+               <obj_property name="CustomSignalColor">turquoise</obj_property>
+               <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+               <obj_property name="Render_Data">/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/grp_pool2_fu_6105/grp_pool2_fu_6105_activity.dataflowTxWaveData.Cycles</obj_property>
+               <obj_property name="Value_Data">/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/grp_pool2_fu_6105/grp_pool2_fu_6105_activity.dataflowTxWaveData.OutStanding</obj_property>
+               <obj_property name="Detail_Data">/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/grp_pool2_fu_6105/grp_pool2_fu_6105_activity.dataflowTxTooltipData</obj_property>
+            </wvobject>
+            <wvobject type="group" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/grp_flatten_fu_6125/grp_flatten_fu_6125_activity">
+               <obj_property name="label">grp_flatten_fu_6125_activity</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <obj_property name="UseFullPath">true</obj_property>
+               <obj_property name="ElementShortName">grp_flatten_fu_6125_activity</obj_property>
+               <obj_property name="ObjectShortName">grp_flatten_fu_6125_activity</obj_property>
+               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+               <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+               <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+               <obj_property name="CustomSignalColor">turquoise</obj_property>
+               <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+               <obj_property name="Render_Data">/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/grp_flatten_fu_6125/grp_flatten_fu_6125_activity.dataflowTxWaveData.Cycles</obj_property>
+               <obj_property name="Value_Data">/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/grp_flatten_fu_6125/grp_flatten_fu_6125_activity.dataflowTxWaveData.OutStanding</obj_property>
+               <obj_property name="Detail_Data">/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/grp_flatten_fu_6125/grp_flatten_fu_6125_activity.dataflowTxTooltipData</obj_property>
+            </wvobject>
+            <wvobject type="group" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/grp_fc1_fu_6139/grp_fc1_fu_6139_activity">
+               <obj_property name="label">grp_fc1_fu_6139_activity</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <obj_property name="UseFullPath">true</obj_property>
+               <obj_property name="ElementShortName">grp_fc1_fu_6139_activity</obj_property>
+               <obj_property name="ObjectShortName">grp_fc1_fu_6139_activity</obj_property>
+               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+               <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+               <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+               <obj_property name="CustomSignalColor">turquoise</obj_property>
+               <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+               <obj_property name="Render_Data">/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/grp_fc1_fu_6139/grp_fc1_fu_6139_activity.dataflowTxWaveData.Cycles</obj_property>
+               <obj_property name="Value_Data">/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/grp_fc1_fu_6139/grp_fc1_fu_6139_activity.dataflowTxWaveData.OutStanding</obj_property>
+               <obj_property name="Detail_Data">/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/grp_fc1_fu_6139/grp_fc1_fu_6139_activity.dataflowTxTooltipData</obj_property>
+               <wvobject type="group" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/grp_fc1_fu_6139/grp_generic_tanh_float_s_fu_381/grp_generic_tanh_float_s_fu_381_activity">
+                  <obj_property name="label">grp_generic_tanh_float_s_fu_381_activity</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <obj_property name="UseFullPath">true</obj_property>
+                  <obj_property name="ElementShortName">grp_generic_tanh_float_s_fu_381_activity</obj_property>
+                  <obj_property name="ObjectShortName">grp_generic_tanh_float_s_fu_381_activity</obj_property>
+                  <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+                  <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+                  <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+                  <obj_property name="UseCustomSignalColor">true</obj_property>
+                  <obj_property name="CustomSignalColor">turquoise</obj_property>
+                  <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+                  <obj_property name="Render_Data">/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/grp_fc1_fu_6139/grp_generic_tanh_float_s_fu_381/grp_generic_tanh_float_s_fu_381_activity.dataflowTxWaveData.Cycles</obj_property>
+                  <obj_property name="Value_Data">/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/grp_fc1_fu_6139/grp_generic_tanh_float_s_fu_381/grp_generic_tanh_float_s_fu_381_activity.dataflowTxWaveData.OutStanding</obj_property>
+                  <obj_property name="Detail_Data">/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/grp_fc1_fu_6139/grp_generic_tanh_float_s_fu_381/grp_generic_tanh_float_s_fu_381_activity.dataflowTxTooltipData</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/grp_fc2_fu_6233/grp_fc2_fu_6233_activity">
+               <obj_property name="label">grp_fc2_fu_6233_activity</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <obj_property name="UseFullPath">true</obj_property>
+               <obj_property name="ElementShortName">grp_fc2_fu_6233_activity</obj_property>
+               <obj_property name="ObjectShortName">grp_fc2_fu_6233_activity</obj_property>
+               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+               <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+               <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+               <obj_property name="CustomSignalColor">turquoise</obj_property>
+               <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+               <obj_property name="Render_Data">/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/grp_fc2_fu_6233/grp_fc2_fu_6233_activity.dataflowTxWaveData.Cycles</obj_property>
+               <obj_property name="Value_Data">/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/grp_fc2_fu_6233/grp_fc2_fu_6233_activity.dataflowTxWaveData.OutStanding</obj_property>
+               <obj_property name="Detail_Data">/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/grp_fc2_fu_6233/grp_fc2_fu_6233_activity.dataflowTxTooltipData</obj_property>
+               <wvobject type="group" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/grp_fc2_fu_6233/grp_fc2_Pipeline_FC2_LOOP_fu_156/grp_fc2_Pipeline_FC2_LOOP_fu_156_activity">
+                  <obj_property name="label">grp_fc2_Pipeline_FC2_LOOP_fu_156_activity</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <obj_property name="UseFullPath">true</obj_property>
+                  <obj_property name="ElementShortName">grp_fc2_Pipeline_FC2_LOOP_fu_156_activity</obj_property>
+                  <obj_property name="ObjectShortName">grp_fc2_Pipeline_FC2_LOOP_fu_156_activity</obj_property>
+                  <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+                  <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+                  <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+                  <obj_property name="UseCustomSignalColor">true</obj_property>
+                  <obj_property name="CustomSignalColor">turquoise</obj_property>
+                  <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+                  <obj_property name="Render_Data">/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/grp_fc2_fu_6233/grp_fc2_Pipeline_FC2_LOOP_fu_156/grp_fc2_Pipeline_FC2_LOOP_fu_156_activity.dataflowTxWaveData.Cycles</obj_property>
+                  <obj_property name="Value_Data">/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/grp_fc2_fu_6233/grp_fc2_Pipeline_FC2_LOOP_fu_156/grp_fc2_Pipeline_FC2_LOOP_fu_156_activity.dataflowTxWaveData.OutStanding</obj_property>
+                  <obj_property name="Detail_Data">/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/grp_fc2_fu_6233/grp_fc2_Pipeline_FC2_LOOP_fu_156/grp_fc2_Pipeline_FC2_LOOP_fu_156_activity.dataflowTxTooltipData</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/grp_Block_entry_proc_Pipeline_LOAD_W1_fu_6308/grp_Block_entry_proc_Pipeline_LOAD_W1_fu_6308_activity">
+               <obj_property name="label">grp_Block_entry_proc_Pipeline_LOAD_W1_fu_6308_activity</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <obj_property name="UseFullPath">true</obj_property>
+               <obj_property name="ElementShortName">grp_Block_entry_proc_Pipeline_LOAD_W1_fu_6308_activity</obj_property>
+               <obj_property name="ObjectShortName">grp_Block_entry_proc_Pipeline_LOAD_W1_fu_6308_activity</obj_property>
+               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+               <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+               <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+               <obj_property name="CustomSignalColor">turquoise</obj_property>
+               <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+               <obj_property name="Render_Data">/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/grp_Block_entry_proc_Pipeline_LOAD_W1_fu_6308/grp_Block_entry_proc_Pipeline_LOAD_W1_fu_6308_activity.dataflowTxWaveData.Cycles</obj_property>
+               <obj_property name="Value_Data">/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/grp_Block_entry_proc_Pipeline_LOAD_W1_fu_6308/grp_Block_entry_proc_Pipeline_LOAD_W1_fu_6308_activity.dataflowTxWaveData.OutStanding</obj_property>
+               <obj_property name="Detail_Data">/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/grp_Block_entry_proc_Pipeline_LOAD_W1_fu_6308/grp_Block_entry_proc_Pipeline_LOAD_W1_fu_6308_activity.dataflowTxTooltipData</obj_property>
+            </wvobject>
+            <wvobject type="group" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/grp_Block_entry_proc_Pipeline_LOAD_B1_fu_6747/grp_Block_entry_proc_Pipeline_LOAD_B1_fu_6747_activity">
+               <obj_property name="label">grp_Block_entry_proc_Pipeline_LOAD_B1_fu_6747_activity</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <obj_property name="UseFullPath">true</obj_property>
+               <obj_property name="ElementShortName">grp_Block_entry_proc_Pipeline_LOAD_B1_fu_6747_activity</obj_property>
+               <obj_property name="ObjectShortName">grp_Block_entry_proc_Pipeline_LOAD_B1_fu_6747_activity</obj_property>
+               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+               <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+               <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+               <obj_property name="CustomSignalColor">turquoise</obj_property>
+               <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+               <obj_property name="Render_Data">/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/grp_Block_entry_proc_Pipeline_LOAD_B1_fu_6747/grp_Block_entry_proc_Pipeline_LOAD_B1_fu_6747_activity.dataflowTxWaveData.Cycles</obj_property>
+               <obj_property name="Value_Data">/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/grp_Block_entry_proc_Pipeline_LOAD_B1_fu_6747/grp_Block_entry_proc_Pipeline_LOAD_B1_fu_6747_activity.dataflowTxWaveData.OutStanding</obj_property>
+               <obj_property name="Detail_Data">/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/grp_Block_entry_proc_Pipeline_LOAD_B1_fu_6747/grp_Block_entry_proc_Pipeline_LOAD_B1_fu_6747_activity.dataflowTxTooltipData</obj_property>
+            </wvobject>
+            <wvobject type="group" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/grp_Block_entry_proc_Pipeline_LOAD_W2_fu_6770/grp_Block_entry_proc_Pipeline_LOAD_W2_fu_6770_activity">
+               <obj_property name="label">grp_Block_entry_proc_Pipeline_LOAD_W2_fu_6770_activity</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <obj_property name="UseFullPath">true</obj_property>
+               <obj_property name="ElementShortName">grp_Block_entry_proc_Pipeline_LOAD_W2_fu_6770_activity</obj_property>
+               <obj_property name="ObjectShortName">grp_Block_entry_proc_Pipeline_LOAD_W2_fu_6770_activity</obj_property>
+               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+               <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+               <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+               <obj_property name="CustomSignalColor">turquoise</obj_property>
+               <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+               <obj_property name="Render_Data">/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/grp_Block_entry_proc_Pipeline_LOAD_W2_fu_6770/grp_Block_entry_proc_Pipeline_LOAD_W2_fu_6770_activity.dataflowTxWaveData.Cycles</obj_property>
+               <obj_property name="Value_Data">/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/grp_Block_entry_proc_Pipeline_LOAD_W2_fu_6770/grp_Block_entry_proc_Pipeline_LOAD_W2_fu_6770_activity.dataflowTxWaveData.OutStanding</obj_property>
+               <obj_property name="Detail_Data">/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/grp_Block_entry_proc_Pipeline_LOAD_W2_fu_6770/grp_Block_entry_proc_Pipeline_LOAD_W2_fu_6770_activity.dataflowTxTooltipData</obj_property>
+            </wvobject>
+            <wvobject type="group" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/grp_Block_entry_proc_Pipeline_LOAD_B2_fu_9081/grp_Block_entry_proc_Pipeline_LOAD_B2_fu_9081_activity">
+               <obj_property name="label">grp_Block_entry_proc_Pipeline_LOAD_B2_fu_9081_activity</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <obj_property name="UseFullPath">true</obj_property>
+               <obj_property name="ElementShortName">grp_Block_entry_proc_Pipeline_LOAD_B2_fu_9081_activity</obj_property>
+               <obj_property name="ObjectShortName">grp_Block_entry_proc_Pipeline_LOAD_B2_fu_9081_activity</obj_property>
+               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+               <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+               <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+               <obj_property name="CustomSignalColor">turquoise</obj_property>
+               <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+               <obj_property name="Render_Data">/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/grp_Block_entry_proc_Pipeline_LOAD_B2_fu_9081/grp_Block_entry_proc_Pipeline_LOAD_B2_fu_9081_activity.dataflowTxWaveData.Cycles</obj_property>
+               <obj_property name="Value_Data">/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/grp_Block_entry_proc_Pipeline_LOAD_B2_fu_9081/grp_Block_entry_proc_Pipeline_LOAD_B2_fu_9081_activity.dataflowTxWaveData.OutStanding</obj_property>
+               <obj_property name="Detail_Data">/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/grp_Block_entry_proc_Pipeline_LOAD_B2_fu_9081/grp_Block_entry_proc_Pipeline_LOAD_B2_fu_9081_activity.dataflowTxTooltipData</obj_property>
+            </wvobject>
+            <wvobject type="group" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/grp_Block_entry_proc_Pipeline_LOAD_FC1W_fu_9120/grp_Block_entry_proc_Pipeline_LOAD_FC1W_fu_9120_activity">
+               <obj_property name="label">grp_Block_entry_proc_Pipeline_LOAD_FC1W_fu_9120_activity</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <obj_property name="UseFullPath">true</obj_property>
+               <obj_property name="ElementShortName">grp_Block_entry_proc_Pipeline_LOAD_FC1W_fu_9120_activity</obj_property>
+               <obj_property name="ObjectShortName">grp_Block_entry_proc_Pipeline_LOAD_FC1W_fu_9120_activity</obj_property>
+               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+               <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+               <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+               <obj_property name="CustomSignalColor">turquoise</obj_property>
+               <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+               <obj_property name="Render_Data">/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/grp_Block_entry_proc_Pipeline_LOAD_FC1W_fu_9120/grp_Block_entry_proc_Pipeline_LOAD_FC1W_fu_9120_activity.dataflowTxWaveData.Cycles</obj_property>
+               <obj_property name="Value_Data">/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/grp_Block_entry_proc_Pipeline_LOAD_FC1W_fu_9120/grp_Block_entry_proc_Pipeline_LOAD_FC1W_fu_9120_activity.dataflowTxWaveData.OutStanding</obj_property>
+               <obj_property name="Detail_Data">/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/grp_Block_entry_proc_Pipeline_LOAD_FC1W_fu_9120/grp_Block_entry_proc_Pipeline_LOAD_FC1W_fu_9120_activity.dataflowTxTooltipData</obj_property>
+            </wvobject>
+            <wvobject type="group" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/grp_Block_entry_proc_Pipeline_LOAD_FC1B_fu_9143/grp_Block_entry_proc_Pipeline_LOAD_FC1B_fu_9143_activity">
+               <obj_property name="label">grp_Block_entry_proc_Pipeline_LOAD_FC1B_fu_9143_activity</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <obj_property name="UseFullPath">true</obj_property>
+               <obj_property name="ElementShortName">grp_Block_entry_proc_Pipeline_LOAD_FC1B_fu_9143_activity</obj_property>
+               <obj_property name="ObjectShortName">grp_Block_entry_proc_Pipeline_LOAD_FC1B_fu_9143_activity</obj_property>
+               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+               <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+               <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+               <obj_property name="CustomSignalColor">turquoise</obj_property>
+               <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+               <obj_property name="Render_Data">/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/grp_Block_entry_proc_Pipeline_LOAD_FC1B_fu_9143/grp_Block_entry_proc_Pipeline_LOAD_FC1B_fu_9143_activity.dataflowTxWaveData.Cycles</obj_property>
+               <obj_property name="Value_Data">/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/grp_Block_entry_proc_Pipeline_LOAD_FC1B_fu_9143/grp_Block_entry_proc_Pipeline_LOAD_FC1B_fu_9143_activity.dataflowTxWaveData.OutStanding</obj_property>
+               <obj_property name="Detail_Data">/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/grp_Block_entry_proc_Pipeline_LOAD_FC1B_fu_9143/grp_Block_entry_proc_Pipeline_LOAD_FC1B_fu_9143_activity.dataflowTxTooltipData</obj_property>
+            </wvobject>
+            <wvobject type="group" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/grp_Block_entry_proc_Pipeline_LOAD_FC2W_fu_9214/grp_Block_entry_proc_Pipeline_LOAD_FC2W_fu_9214_activity">
+               <obj_property name="label">grp_Block_entry_proc_Pipeline_LOAD_FC2W_fu_9214_activity</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <obj_property name="UseFullPath">true</obj_property>
+               <obj_property name="ElementShortName">grp_Block_entry_proc_Pipeline_LOAD_FC2W_fu_9214_activity</obj_property>
+               <obj_property name="ObjectShortName">grp_Block_entry_proc_Pipeline_LOAD_FC2W_fu_9214_activity</obj_property>
+               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+               <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+               <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+               <obj_property name="CustomSignalColor">turquoise</obj_property>
+               <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+               <obj_property name="Render_Data">/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/grp_Block_entry_proc_Pipeline_LOAD_FC2W_fu_9214/grp_Block_entry_proc_Pipeline_LOAD_FC2W_fu_9214_activity.dataflowTxWaveData.Cycles</obj_property>
+               <obj_property name="Value_Data">/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/grp_Block_entry_proc_Pipeline_LOAD_FC2W_fu_9214/grp_Block_entry_proc_Pipeline_LOAD_FC2W_fu_9214_activity.dataflowTxWaveData.OutStanding</obj_property>
+               <obj_property name="Detail_Data">/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/grp_Block_entry_proc_Pipeline_LOAD_FC2W_fu_9214/grp_Block_entry_proc_Pipeline_LOAD_FC2W_fu_9214_activity.dataflowTxTooltipData</obj_property>
             </wvobject>
          </wvobject>
       </wvobject>
@@ -206,37 +350,9 @@
    <wvobject type="group" fp_name="AESL_inst_cnn_accel_group">
       <obj_property name="label">AESL_inst_cnn_accel</obj_property>
       <obj_property name="DisplayName">label</obj_property>
-      <wvobject type="protoinst" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/load_img_U0/load_img_U0_activity">
-         <obj_property name="ElementShortName">load_img_U0_activity</obj_property>
-         <obj_property name="ObjectShortName">load_img_U0_activity</obj_property>
-      </wvobject>
-      <wvobject type="protoinst" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/conv1_U0/conv1_U0_activity">
-         <obj_property name="ElementShortName">conv1_U0_activity</obj_property>
-         <obj_property name="ObjectShortName">conv1_U0_activity</obj_property>
-      </wvobject>
-      <wvobject type="protoinst" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/pool1_U0/pool1_U0_activity">
-         <obj_property name="ElementShortName">pool1_U0_activity</obj_property>
-         <obj_property name="ObjectShortName">pool1_U0_activity</obj_property>
-      </wvobject>
-      <wvobject type="protoinst" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/conv2_U0/conv2_U0_activity">
-         <obj_property name="ElementShortName">conv2_U0_activity</obj_property>
-         <obj_property name="ObjectShortName">conv2_U0_activity</obj_property>
-      </wvobject>
-      <wvobject type="protoinst" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/pool2_U0/pool2_U0_activity">
-         <obj_property name="ElementShortName">pool2_U0_activity</obj_property>
-         <obj_property name="ObjectShortName">pool2_U0_activity</obj_property>
-      </wvobject>
-      <wvobject type="protoinst" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/flatten_U0/flatten_U0_activity">
-         <obj_property name="ElementShortName">flatten_U0_activity</obj_property>
-         <obj_property name="ObjectShortName">flatten_U0_activity</obj_property>
-      </wvobject>
-      <wvobject type="protoinst" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/fc1_U0/fc1_U0_activity">
-         <obj_property name="ElementShortName">fc1_U0_activity</obj_property>
-         <obj_property name="ObjectShortName">fc1_U0_activity</obj_property>
-      </wvobject>
-      <wvobject type="protoinst" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/fc2_U0/fc2_U0_activity">
-         <obj_property name="ElementShortName">fc2_U0_activity</obj_property>
-         <obj_property name="ObjectShortName">fc2_U0_activity</obj_property>
+      <wvobject type="protoinst" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/Block_entry_proc_U0_activity">
+         <obj_property name="ElementShortName">Block_entry_proc_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">Block_entry_proc_U0_activity</obj_property>
       </wvobject>
       <wvobject type="group" fp_name="AESL_inst_cnn_accel_Handshake_group">
          <obj_property name="label">Block-level handshake</obj_property>
@@ -254,1094 +370,84 @@
             <obj_property name="ObjectShortName">ap_done</obj_property>
          </wvobject>
       </wvobject>
-      <wvobject type="group" fp_name="load_img_U0_group">
-         <obj_property name="label">load_img_U0</obj_property>
+      <wvobject type="group" fp_name="Block_entry_proc_U0_group">
+         <obj_property name="label">Block_entry_proc_U0</obj_property>
          <obj_property name="DisplayName">label</obj_property>
-         <wvobject type="group" fp_name="load_img_U0_Input_group">
+         <wvobject type="protoinst" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/grp_load_img_fu_3253/grp_load_img_fu_3253_activity">
+            <obj_property name="ElementShortName">grp_load_img_fu_3253_activity</obj_property>
+            <obj_property name="ObjectShortName">grp_load_img_fu_3253_activity</obj_property>
+         </wvobject>
+         <wvobject type="protoinst" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/grp_conv1_fu_3265/grp_conv1_fu_3265_activity">
+            <obj_property name="ElementShortName">grp_conv1_fu_3265_activity</obj_property>
+            <obj_property name="ObjectShortName">grp_conv1_fu_3265_activity</obj_property>
+         </wvobject>
+         <wvobject type="protoinst" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/grp_pool1_fu_3729/grp_pool1_fu_3729_activity">
+            <obj_property name="ElementShortName">grp_pool1_fu_3729_activity</obj_property>
+            <obj_property name="ObjectShortName">grp_pool1_fu_3729_activity</obj_property>
+         </wvobject>
+         <wvobject type="protoinst" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/grp_conv2_fu_3749/grp_conv2_fu_3749_activity">
+            <obj_property name="ElementShortName">grp_conv2_fu_3749_activity</obj_property>
+            <obj_property name="ObjectShortName">grp_conv2_fu_3749_activity</obj_property>
+         </wvobject>
+         <wvobject type="protoinst" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/grp_pool2_fu_6105/grp_pool2_fu_6105_activity">
+            <obj_property name="ElementShortName">grp_pool2_fu_6105_activity</obj_property>
+            <obj_property name="ObjectShortName">grp_pool2_fu_6105_activity</obj_property>
+         </wvobject>
+         <wvobject type="protoinst" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/grp_flatten_fu_6125/grp_flatten_fu_6125_activity">
+            <obj_property name="ElementShortName">grp_flatten_fu_6125_activity</obj_property>
+            <obj_property name="ObjectShortName">grp_flatten_fu_6125_activity</obj_property>
+         </wvobject>
+         <wvobject type="protoinst" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/grp_fc1_fu_6139/grp_fc1_fu_6139_activity">
+            <obj_property name="ElementShortName">grp_fc1_fu_6139_activity</obj_property>
+            <obj_property name="ObjectShortName">grp_fc1_fu_6139_activity</obj_property>
+         </wvobject>
+         <wvobject type="protoinst" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/grp_fc2_fu_6233/grp_fc2_fu_6233_activity">
+            <obj_property name="ElementShortName">grp_fc2_fu_6233_activity</obj_property>
+            <obj_property name="ObjectShortName">grp_fc2_fu_6233_activity</obj_property>
+         </wvobject>
+         <wvobject type="protoinst" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/grp_Block_entry_proc_Pipeline_LOAD_W1_fu_6308/grp_Block_entry_proc_Pipeline_LOAD_W1_fu_6308_activity">
+            <obj_property name="ElementShortName">grp_Block_entry_proc_Pipeline_LOAD_W1_fu_6308_activity</obj_property>
+            <obj_property name="ObjectShortName">grp_Block_entry_proc_Pipeline_LOAD_W1_fu_6308_activity</obj_property>
+         </wvobject>
+         <wvobject type="protoinst" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/grp_Block_entry_proc_Pipeline_LOAD_B1_fu_6747/grp_Block_entry_proc_Pipeline_LOAD_B1_fu_6747_activity">
+            <obj_property name="ElementShortName">grp_Block_entry_proc_Pipeline_LOAD_B1_fu_6747_activity</obj_property>
+            <obj_property name="ObjectShortName">grp_Block_entry_proc_Pipeline_LOAD_B1_fu_6747_activity</obj_property>
+         </wvobject>
+         <wvobject type="protoinst" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/grp_Block_entry_proc_Pipeline_LOAD_W2_fu_6770/grp_Block_entry_proc_Pipeline_LOAD_W2_fu_6770_activity">
+            <obj_property name="ElementShortName">grp_Block_entry_proc_Pipeline_LOAD_W2_fu_6770_activity</obj_property>
+            <obj_property name="ObjectShortName">grp_Block_entry_proc_Pipeline_LOAD_W2_fu_6770_activity</obj_property>
+         </wvobject>
+         <wvobject type="protoinst" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/grp_Block_entry_proc_Pipeline_LOAD_B2_fu_9081/grp_Block_entry_proc_Pipeline_LOAD_B2_fu_9081_activity">
+            <obj_property name="ElementShortName">grp_Block_entry_proc_Pipeline_LOAD_B2_fu_9081_activity</obj_property>
+            <obj_property name="ObjectShortName">grp_Block_entry_proc_Pipeline_LOAD_B2_fu_9081_activity</obj_property>
+         </wvobject>
+         <wvobject type="protoinst" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/grp_Block_entry_proc_Pipeline_LOAD_FC1W_fu_9120/grp_Block_entry_proc_Pipeline_LOAD_FC1W_fu_9120_activity">
+            <obj_property name="ElementShortName">grp_Block_entry_proc_Pipeline_LOAD_FC1W_fu_9120_activity</obj_property>
+            <obj_property name="ObjectShortName">grp_Block_entry_proc_Pipeline_LOAD_FC1W_fu_9120_activity</obj_property>
+         </wvobject>
+         <wvobject type="protoinst" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/grp_Block_entry_proc_Pipeline_LOAD_FC1B_fu_9143/grp_Block_entry_proc_Pipeline_LOAD_FC1B_fu_9143_activity">
+            <obj_property name="ElementShortName">grp_Block_entry_proc_Pipeline_LOAD_FC1B_fu_9143_activity</obj_property>
+            <obj_property name="ObjectShortName">grp_Block_entry_proc_Pipeline_LOAD_FC1B_fu_9143_activity</obj_property>
+         </wvobject>
+         <wvobject type="protoinst" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/grp_Block_entry_proc_Pipeline_LOAD_FC2W_fu_9214/grp_Block_entry_proc_Pipeline_LOAD_FC2W_fu_9214_activity">
+            <obj_property name="ElementShortName">grp_Block_entry_proc_Pipeline_LOAD_FC2W_fu_9214_activity</obj_property>
+            <obj_property name="ObjectShortName">grp_Block_entry_proc_Pipeline_LOAD_FC2W_fu_9214_activity</obj_property>
+         </wvobject>
+         <wvobject type="group" fp_name="Block_entry_proc_U0_Input_group">
             <obj_property name="label">Input Channels</obj_property>
             <obj_property name="DisplayName">label</obj_property>
-         </wvobject>
-         <wvobject type="group" fp_name="load_img_U0_Handshake_group">
-            <obj_property name="label">Block-level handshake</obj_property>
-            <obj_property name="DisplayName">label</obj_property>
-            <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/load_img_U0/ap_start">
-               <obj_property name="ElementShortName">ap_start</obj_property>
-               <obj_property name="ObjectShortName">ap_start</obj_property>
-            </wvobject>
-            <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/load_img_U0/ap_ready">
-               <obj_property name="ElementShortName">ap_ready</obj_property>
-               <obj_property name="ObjectShortName">ap_ready</obj_property>
-            </wvobject>
-            <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/load_img_U0/ap_done">
-               <obj_property name="ElementShortName">ap_done</obj_property>
-               <obj_property name="ObjectShortName">ap_done</obj_property>
-            </wvobject>
-            <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/load_img_U0/ap_continue">
-               <obj_property name="ElementShortName">ap_continue</obj_property>
-               <obj_property name="ObjectShortName">ap_continue</obj_property>
-            </wvobject>
-         </wvobject>
-         <wvobject type="group" fp_name="load_img_U0_Output_group">
-            <obj_property name="label">Output Channels</obj_property>
-            <obj_property name="DisplayName">label</obj_property>
-            <wvobject type="group" fp_name="local_img_group">
-               <obj_property name="label">local_img(local_img_U, PIPO)</obj_property>
-               <obj_property name="DisplayName">label</obj_property>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/load_img_U0/local_img_address0">
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/load_img_U0/local_img_d0">
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/load_img_U0/local_img_ce0">
-                  <obj_property name="ElementShortName">local_img_ce0</obj_property>
-                  <obj_property name="ObjectShortName">local_img_ce0</obj_property>
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/load_img_U0/local_img_we0">
-                  <obj_property name="ElementShortName">local_img_we0</obj_property>
-                  <obj_property name="ObjectShortName">local_img_we0</obj_property>
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/load_img_U0/ap_done">
-                  <obj_property name="ElementShortName">ap_done</obj_property>
-                  <obj_property name="ObjectShortName">ap_done</obj_property>
-                  <obj_property name="label">ap_done(i_write)</obj_property>
-                  <obj_property name="DisplayName">label</obj_property>
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/load_img_U0/ap_continue">
-                  <obj_property name="ElementShortName">ap_continue</obj_property>
-                  <obj_property name="ObjectShortName">ap_continue</obj_property>
-                  <obj_property name="label">ap_continue(i_full_n)</obj_property>
-                  <obj_property name="DisplayName">label</obj_property>
-               </wvobject>
-            </wvobject>
-            <wvobject type="group" fp_name="local_img_1_group">
-               <obj_property name="label">local_img_1(local_img_1_U, PIPO)</obj_property>
-               <obj_property name="DisplayName">label</obj_property>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/load_img_U0/local_img_1_address0">
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/load_img_U0/local_img_1_d0">
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/load_img_U0/local_img_1_ce0">
-                  <obj_property name="ElementShortName">local_img_1_ce0</obj_property>
-                  <obj_property name="ObjectShortName">local_img_1_ce0</obj_property>
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/load_img_U0/local_img_1_we0">
-                  <obj_property name="ElementShortName">local_img_1_we0</obj_property>
-                  <obj_property name="ObjectShortName">local_img_1_we0</obj_property>
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/load_img_U0/ap_done">
-                  <obj_property name="ElementShortName">ap_done</obj_property>
-                  <obj_property name="ObjectShortName">ap_done</obj_property>
-                  <obj_property name="label">ap_done(i_write)</obj_property>
-                  <obj_property name="DisplayName">label</obj_property>
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/load_img_U0/ap_continue">
-                  <obj_property name="ElementShortName">ap_continue</obj_property>
-                  <obj_property name="ObjectShortName">ap_continue</obj_property>
-                  <obj_property name="label">ap_continue(i_full_n)</obj_property>
-                  <obj_property name="DisplayName">label</obj_property>
-               </wvobject>
-            </wvobject>
-         </wvobject>
-      </wvobject>
-      <wvobject type="group" fp_name="conv1_U0_group">
-         <obj_property name="label">conv1_U0</obj_property>
-         <obj_property name="DisplayName">label</obj_property>
-         <wvobject type="group" fp_name="conv1_U0_Input_group">
-            <obj_property name="label">Input Channels</obj_property>
-            <obj_property name="DisplayName">label</obj_property>
-            <wvobject type="group" fp_name="local_img_group">
-               <obj_property name="label">local_img(local_img_U, PIPO)</obj_property>
-               <obj_property name="DisplayName">label</obj_property>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/conv1_U0/local_img_address0">
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/conv1_U0/local_img_q0">
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/conv1_U0/local_img_ce0">
-                  <obj_property name="ElementShortName">local_img_ce0</obj_property>
-                  <obj_property name="ObjectShortName">local_img_ce0</obj_property>
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/conv1_U0/ap_ready">
-                  <obj_property name="ElementShortName">ap_ready</obj_property>
-                  <obj_property name="ObjectShortName">ap_ready</obj_property>
-                  <obj_property name="label">ap_ready(t_read)</obj_property>
-                  <obj_property name="DisplayName">label</obj_property>
-               </wvobject>
-            </wvobject>
-            <wvobject type="group" fp_name="local_img_1_group">
-               <obj_property name="label">local_img_1(local_img_1_U, PIPO)</obj_property>
-               <obj_property name="DisplayName">label</obj_property>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/conv1_U0/local_img_1_address0">
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/conv1_U0/local_img_1_q0">
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/conv1_U0/local_img_1_ce0">
-                  <obj_property name="ElementShortName">local_img_1_ce0</obj_property>
-                  <obj_property name="ObjectShortName">local_img_1_ce0</obj_property>
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/conv1_U0/ap_ready">
-                  <obj_property name="ElementShortName">ap_ready</obj_property>
-                  <obj_property name="ObjectShortName">ap_ready</obj_property>
-                  <obj_property name="label">ap_ready(t_read)</obj_property>
-                  <obj_property name="DisplayName">label</obj_property>
-               </wvobject>
-            </wvobject>
-         </wvobject>
-         <wvobject type="group" fp_name="conv1_U0_Handshake_group">
-            <obj_property name="label">Block-level handshake</obj_property>
-            <obj_property name="DisplayName">label</obj_property>
-            <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/conv1_U0/ap_start">
-               <obj_property name="ElementShortName">ap_start</obj_property>
-               <obj_property name="ObjectShortName">ap_start</obj_property>
-            </wvobject>
-            <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/conv1_U0/ap_ready">
-               <obj_property name="ElementShortName">ap_ready</obj_property>
-               <obj_property name="ObjectShortName">ap_ready</obj_property>
-            </wvobject>
-            <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/conv1_U0/ap_done">
-               <obj_property name="ElementShortName">ap_done</obj_property>
-               <obj_property name="ObjectShortName">ap_done</obj_property>
-            </wvobject>
-            <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/conv1_U0/ap_continue">
-               <obj_property name="ElementShortName">ap_continue</obj_property>
-               <obj_property name="ObjectShortName">ap_continue</obj_property>
-            </wvobject>
-         </wvobject>
-         <wvobject type="group" fp_name="conv1_U0_Output_group">
-            <obj_property name="label">Output Channels</obj_property>
-            <obj_property name="DisplayName">label</obj_property>
-            <wvobject type="group" fp_name="feat1_group">
-               <obj_property name="label">feat1(feat1_U, PIPO)</obj_property>
-               <obj_property name="DisplayName">label</obj_property>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/conv1_U0/feat1_address0">
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/conv1_U0/feat1_d0">
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/conv1_U0/feat1_ce0">
-                  <obj_property name="ElementShortName">feat1_ce0</obj_property>
-                  <obj_property name="ObjectShortName">feat1_ce0</obj_property>
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/conv1_U0/feat1_we0">
-                  <obj_property name="ElementShortName">feat1_we0</obj_property>
-                  <obj_property name="ObjectShortName">feat1_we0</obj_property>
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/conv1_U0/ap_done">
-                  <obj_property name="ElementShortName">ap_done</obj_property>
-                  <obj_property name="ObjectShortName">ap_done</obj_property>
-                  <obj_property name="label">ap_done(i_write)</obj_property>
-                  <obj_property name="DisplayName">label</obj_property>
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/conv1_U0/ap_continue">
-                  <obj_property name="ElementShortName">ap_continue</obj_property>
-                  <obj_property name="ObjectShortName">ap_continue</obj_property>
-                  <obj_property name="label">ap_continue(i_full_n)</obj_property>
-                  <obj_property name="DisplayName">label</obj_property>
-               </wvobject>
-            </wvobject>
-            <wvobject type="group" fp_name="feat1_2_group">
-               <obj_property name="label">feat1_2(feat1_2_U, PIPO)</obj_property>
-               <obj_property name="DisplayName">label</obj_property>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/conv1_U0/feat1_2_address0">
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/conv1_U0/feat1_2_d0">
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/conv1_U0/feat1_2_ce0">
-                  <obj_property name="ElementShortName">feat1_2_ce0</obj_property>
-                  <obj_property name="ObjectShortName">feat1_2_ce0</obj_property>
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/conv1_U0/feat1_2_we0">
-                  <obj_property name="ElementShortName">feat1_2_we0</obj_property>
-                  <obj_property name="ObjectShortName">feat1_2_we0</obj_property>
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/conv1_U0/ap_done">
-                  <obj_property name="ElementShortName">ap_done</obj_property>
-                  <obj_property name="ObjectShortName">ap_done</obj_property>
-                  <obj_property name="label">ap_done(i_write)</obj_property>
-                  <obj_property name="DisplayName">label</obj_property>
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/conv1_U0/ap_continue">
-                  <obj_property name="ElementShortName">ap_continue</obj_property>
-                  <obj_property name="ObjectShortName">ap_continue</obj_property>
-                  <obj_property name="label">ap_continue(i_full_n)</obj_property>
-                  <obj_property name="DisplayName">label</obj_property>
-               </wvobject>
-            </wvobject>
-            <wvobject type="group" fp_name="feat1_3_group">
-               <obj_property name="label">feat1_3(feat1_3_U, PIPO)</obj_property>
-               <obj_property name="DisplayName">label</obj_property>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/conv1_U0/feat1_3_address0">
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/conv1_U0/feat1_3_d0">
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/conv1_U0/feat1_3_ce0">
-                  <obj_property name="ElementShortName">feat1_3_ce0</obj_property>
-                  <obj_property name="ObjectShortName">feat1_3_ce0</obj_property>
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/conv1_U0/feat1_3_we0">
-                  <obj_property name="ElementShortName">feat1_3_we0</obj_property>
-                  <obj_property name="ObjectShortName">feat1_3_we0</obj_property>
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/conv1_U0/ap_done">
-                  <obj_property name="ElementShortName">ap_done</obj_property>
-                  <obj_property name="ObjectShortName">ap_done</obj_property>
-                  <obj_property name="label">ap_done(i_write)</obj_property>
-                  <obj_property name="DisplayName">label</obj_property>
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/conv1_U0/ap_continue">
-                  <obj_property name="ElementShortName">ap_continue</obj_property>
-                  <obj_property name="ObjectShortName">ap_continue</obj_property>
-                  <obj_property name="label">ap_continue(i_full_n)</obj_property>
-                  <obj_property name="DisplayName">label</obj_property>
-               </wvobject>
-            </wvobject>
-            <wvobject type="group" fp_name="feat1_4_group">
-               <obj_property name="label">feat1_4(feat1_4_U, PIPO)</obj_property>
-               <obj_property name="DisplayName">label</obj_property>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/conv1_U0/feat1_4_address0">
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/conv1_U0/feat1_4_d0">
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/conv1_U0/feat1_4_ce0">
-                  <obj_property name="ElementShortName">feat1_4_ce0</obj_property>
-                  <obj_property name="ObjectShortName">feat1_4_ce0</obj_property>
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/conv1_U0/feat1_4_we0">
-                  <obj_property name="ElementShortName">feat1_4_we0</obj_property>
-                  <obj_property name="ObjectShortName">feat1_4_we0</obj_property>
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/conv1_U0/ap_done">
-                  <obj_property name="ElementShortName">ap_done</obj_property>
-                  <obj_property name="ObjectShortName">ap_done</obj_property>
-                  <obj_property name="label">ap_done(i_write)</obj_property>
-                  <obj_property name="DisplayName">label</obj_property>
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/conv1_U0/ap_continue">
-                  <obj_property name="ElementShortName">ap_continue</obj_property>
-                  <obj_property name="ObjectShortName">ap_continue</obj_property>
-                  <obj_property name="label">ap_continue(i_full_n)</obj_property>
-                  <obj_property name="DisplayName">label</obj_property>
-               </wvobject>
-            </wvobject>
-         </wvobject>
-      </wvobject>
-      <wvobject type="group" fp_name="pool1_U0_group">
-         <obj_property name="label">pool1_U0</obj_property>
-         <obj_property name="DisplayName">label</obj_property>
-         <wvobject type="group" fp_name="pool1_U0_Input_group">
-            <obj_property name="label">Input Channels</obj_property>
-            <obj_property name="DisplayName">label</obj_property>
-            <wvobject type="group" fp_name="feat1_group">
-               <obj_property name="label">feat1(feat1_U, PIPO)</obj_property>
-               <obj_property name="DisplayName">label</obj_property>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/pool1_U0/feat1_address0">
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/pool1_U0/feat1_q0">
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/pool1_U0/feat1_ce0">
-                  <obj_property name="ElementShortName">feat1_ce0</obj_property>
-                  <obj_property name="ObjectShortName">feat1_ce0</obj_property>
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/pool1_U0/ap_ready">
-                  <obj_property name="ElementShortName">ap_ready</obj_property>
-                  <obj_property name="ObjectShortName">ap_ready</obj_property>
-                  <obj_property name="label">ap_ready(t_read)</obj_property>
-                  <obj_property name="DisplayName">label</obj_property>
-               </wvobject>
-            </wvobject>
-            <wvobject type="group" fp_name="feat1_2_group">
-               <obj_property name="label">feat1_2(feat1_2_U, PIPO)</obj_property>
-               <obj_property name="DisplayName">label</obj_property>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/pool1_U0/feat1_2_address0">
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/pool1_U0/feat1_2_q0">
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/pool1_U0/feat1_2_ce0">
-                  <obj_property name="ElementShortName">feat1_2_ce0</obj_property>
-                  <obj_property name="ObjectShortName">feat1_2_ce0</obj_property>
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/pool1_U0/ap_ready">
-                  <obj_property name="ElementShortName">ap_ready</obj_property>
-                  <obj_property name="ObjectShortName">ap_ready</obj_property>
-                  <obj_property name="label">ap_ready(t_read)</obj_property>
-                  <obj_property name="DisplayName">label</obj_property>
-               </wvobject>
-            </wvobject>
-            <wvobject type="group" fp_name="feat1_3_group">
-               <obj_property name="label">feat1_3(feat1_3_U, PIPO)</obj_property>
-               <obj_property name="DisplayName">label</obj_property>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/pool1_U0/feat1_3_address0">
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/pool1_U0/feat1_3_q0">
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/pool1_U0/feat1_3_ce0">
-                  <obj_property name="ElementShortName">feat1_3_ce0</obj_property>
-                  <obj_property name="ObjectShortName">feat1_3_ce0</obj_property>
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/pool1_U0/ap_ready">
-                  <obj_property name="ElementShortName">ap_ready</obj_property>
-                  <obj_property name="ObjectShortName">ap_ready</obj_property>
-                  <obj_property name="label">ap_ready(t_read)</obj_property>
-                  <obj_property name="DisplayName">label</obj_property>
-               </wvobject>
-            </wvobject>
-            <wvobject type="group" fp_name="feat1_4_group">
-               <obj_property name="label">feat1_4(feat1_4_U, PIPO)</obj_property>
-               <obj_property name="DisplayName">label</obj_property>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/pool1_U0/feat1_4_address0">
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/pool1_U0/feat1_4_q0">
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/pool1_U0/feat1_4_ce0">
-                  <obj_property name="ElementShortName">feat1_4_ce0</obj_property>
-                  <obj_property name="ObjectShortName">feat1_4_ce0</obj_property>
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/pool1_U0/ap_ready">
-                  <obj_property name="ElementShortName">ap_ready</obj_property>
-                  <obj_property name="ObjectShortName">ap_ready</obj_property>
-                  <obj_property name="label">ap_ready(t_read)</obj_property>
-                  <obj_property name="DisplayName">label</obj_property>
-               </wvobject>
-            </wvobject>
-         </wvobject>
-         <wvobject type="group" fp_name="pool1_U0_Handshake_group">
-            <obj_property name="label">Block-level handshake</obj_property>
-            <obj_property name="DisplayName">label</obj_property>
-            <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/pool1_U0/ap_start">
-               <obj_property name="ElementShortName">ap_start</obj_property>
-               <obj_property name="ObjectShortName">ap_start</obj_property>
-            </wvobject>
-            <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/pool1_U0/ap_ready">
-               <obj_property name="ElementShortName">ap_ready</obj_property>
-               <obj_property name="ObjectShortName">ap_ready</obj_property>
-            </wvobject>
-            <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/pool1_U0/ap_done">
-               <obj_property name="ElementShortName">ap_done</obj_property>
-               <obj_property name="ObjectShortName">ap_done</obj_property>
-            </wvobject>
-            <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/pool1_U0/ap_continue">
-               <obj_property name="ElementShortName">ap_continue</obj_property>
-               <obj_property name="ObjectShortName">ap_continue</obj_property>
-            </wvobject>
-         </wvobject>
-         <wvobject type="group" fp_name="pool1_U0_Output_group">
-            <obj_property name="label">Output Channels</obj_property>
-            <obj_property name="DisplayName">label</obj_property>
-            <wvobject type="group" fp_name="feat1_p_group">
-               <obj_property name="label">feat1_p(feat1_p_U, PIPO)</obj_property>
-               <obj_property name="DisplayName">label</obj_property>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/pool1_U0/feat1_p_address0">
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/pool1_U0/feat1_p_d0">
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/pool1_U0/feat1_p_ce0">
-                  <obj_property name="ElementShortName">feat1_p_ce0</obj_property>
-                  <obj_property name="ObjectShortName">feat1_p_ce0</obj_property>
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/pool1_U0/feat1_p_we0">
-                  <obj_property name="ElementShortName">feat1_p_we0</obj_property>
-                  <obj_property name="ObjectShortName">feat1_p_we0</obj_property>
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/pool1_U0/ap_done">
-                  <obj_property name="ElementShortName">ap_done</obj_property>
-                  <obj_property name="ObjectShortName">ap_done</obj_property>
-                  <obj_property name="label">ap_done(i_write)</obj_property>
-                  <obj_property name="DisplayName">label</obj_property>
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/pool1_U0/ap_continue">
-                  <obj_property name="ElementShortName">ap_continue</obj_property>
-                  <obj_property name="ObjectShortName">ap_continue</obj_property>
-                  <obj_property name="label">ap_continue(i_full_n)</obj_property>
-                  <obj_property name="DisplayName">label</obj_property>
-               </wvobject>
-            </wvobject>
-            <wvobject type="group" fp_name="feat1_p_5_group">
-               <obj_property name="label">feat1_p_5(feat1_p_5_U, PIPO)</obj_property>
-               <obj_property name="DisplayName">label</obj_property>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/pool1_U0/feat1_p_5_address0">
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/pool1_U0/feat1_p_5_d0">
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/pool1_U0/feat1_p_5_ce0">
-                  <obj_property name="ElementShortName">feat1_p_5_ce0</obj_property>
-                  <obj_property name="ObjectShortName">feat1_p_5_ce0</obj_property>
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/pool1_U0/feat1_p_5_we0">
-                  <obj_property name="ElementShortName">feat1_p_5_we0</obj_property>
-                  <obj_property name="ObjectShortName">feat1_p_5_we0</obj_property>
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/pool1_U0/ap_done">
-                  <obj_property name="ElementShortName">ap_done</obj_property>
-                  <obj_property name="ObjectShortName">ap_done</obj_property>
-                  <obj_property name="label">ap_done(i_write)</obj_property>
-                  <obj_property name="DisplayName">label</obj_property>
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/pool1_U0/ap_continue">
-                  <obj_property name="ElementShortName">ap_continue</obj_property>
-                  <obj_property name="ObjectShortName">ap_continue</obj_property>
-                  <obj_property name="label">ap_continue(i_full_n)</obj_property>
-                  <obj_property name="DisplayName">label</obj_property>
-               </wvobject>
-            </wvobject>
-            <wvobject type="group" fp_name="feat1_p_6_group">
-               <obj_property name="label">feat1_p_6(feat1_p_6_U, PIPO)</obj_property>
-               <obj_property name="DisplayName">label</obj_property>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/pool1_U0/feat1_p_6_address0">
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/pool1_U0/feat1_p_6_d0">
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/pool1_U0/feat1_p_6_ce0">
-                  <obj_property name="ElementShortName">feat1_p_6_ce0</obj_property>
-                  <obj_property name="ObjectShortName">feat1_p_6_ce0</obj_property>
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/pool1_U0/feat1_p_6_we0">
-                  <obj_property name="ElementShortName">feat1_p_6_we0</obj_property>
-                  <obj_property name="ObjectShortName">feat1_p_6_we0</obj_property>
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/pool1_U0/ap_done">
-                  <obj_property name="ElementShortName">ap_done</obj_property>
-                  <obj_property name="ObjectShortName">ap_done</obj_property>
-                  <obj_property name="label">ap_done(i_write)</obj_property>
-                  <obj_property name="DisplayName">label</obj_property>
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/pool1_U0/ap_continue">
-                  <obj_property name="ElementShortName">ap_continue</obj_property>
-                  <obj_property name="ObjectShortName">ap_continue</obj_property>
-                  <obj_property name="label">ap_continue(i_full_n)</obj_property>
-                  <obj_property name="DisplayName">label</obj_property>
-               </wvobject>
-            </wvobject>
-            <wvobject type="group" fp_name="feat1_p_7_group">
-               <obj_property name="label">feat1_p_7(feat1_p_7_U, PIPO)</obj_property>
-               <obj_property name="DisplayName">label</obj_property>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/pool1_U0/feat1_p_7_address0">
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/pool1_U0/feat1_p_7_d0">
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/pool1_U0/feat1_p_7_ce0">
-                  <obj_property name="ElementShortName">feat1_p_7_ce0</obj_property>
-                  <obj_property name="ObjectShortName">feat1_p_7_ce0</obj_property>
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/pool1_U0/feat1_p_7_we0">
-                  <obj_property name="ElementShortName">feat1_p_7_we0</obj_property>
-                  <obj_property name="ObjectShortName">feat1_p_7_we0</obj_property>
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/pool1_U0/ap_done">
-                  <obj_property name="ElementShortName">ap_done</obj_property>
-                  <obj_property name="ObjectShortName">ap_done</obj_property>
-                  <obj_property name="label">ap_done(i_write)</obj_property>
-                  <obj_property name="DisplayName">label</obj_property>
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/pool1_U0/ap_continue">
-                  <obj_property name="ElementShortName">ap_continue</obj_property>
-                  <obj_property name="ObjectShortName">ap_continue</obj_property>
-                  <obj_property name="label">ap_continue(i_full_n)</obj_property>
-                  <obj_property name="DisplayName">label</obj_property>
-               </wvobject>
-            </wvobject>
-         </wvobject>
-      </wvobject>
-      <wvobject type="group" fp_name="conv2_U0_group">
-         <obj_property name="label">conv2_U0</obj_property>
-         <obj_property name="DisplayName">label</obj_property>
-         <wvobject type="group" fp_name="conv2_U0_Input_group">
-            <obj_property name="label">Input Channels</obj_property>
-            <obj_property name="DisplayName">label</obj_property>
-            <wvobject type="group" fp_name="feat1_p_group">
-               <obj_property name="label">feat1_p(feat1_p_U, PIPO)</obj_property>
-               <obj_property name="DisplayName">label</obj_property>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/conv2_U0/feat1_p_address0">
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/conv2_U0/feat1_p_q0">
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/conv2_U0/feat1_p_ce0">
-                  <obj_property name="ElementShortName">feat1_p_ce0</obj_property>
-                  <obj_property name="ObjectShortName">feat1_p_ce0</obj_property>
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/conv2_U0/ap_ready">
-                  <obj_property name="ElementShortName">ap_ready</obj_property>
-                  <obj_property name="ObjectShortName">ap_ready</obj_property>
-                  <obj_property name="label">ap_ready(t_read)</obj_property>
-                  <obj_property name="DisplayName">label</obj_property>
-               </wvobject>
-            </wvobject>
-            <wvobject type="group" fp_name="feat1_p_5_group">
-               <obj_property name="label">feat1_p_5(feat1_p_5_U, PIPO)</obj_property>
-               <obj_property name="DisplayName">label</obj_property>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/conv2_U0/feat1_p_5_address0">
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/conv2_U0/feat1_p_5_q0">
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/conv2_U0/feat1_p_5_ce0">
-                  <obj_property name="ElementShortName">feat1_p_5_ce0</obj_property>
-                  <obj_property name="ObjectShortName">feat1_p_5_ce0</obj_property>
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/conv2_U0/ap_ready">
-                  <obj_property name="ElementShortName">ap_ready</obj_property>
-                  <obj_property name="ObjectShortName">ap_ready</obj_property>
-                  <obj_property name="label">ap_ready(t_read)</obj_property>
-                  <obj_property name="DisplayName">label</obj_property>
-               </wvobject>
-            </wvobject>
-            <wvobject type="group" fp_name="feat1_p_6_group">
-               <obj_property name="label">feat1_p_6(feat1_p_6_U, PIPO)</obj_property>
-               <obj_property name="DisplayName">label</obj_property>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/conv2_U0/feat1_p_6_address0">
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/conv2_U0/feat1_p_6_q0">
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/conv2_U0/feat1_p_6_ce0">
-                  <obj_property name="ElementShortName">feat1_p_6_ce0</obj_property>
-                  <obj_property name="ObjectShortName">feat1_p_6_ce0</obj_property>
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/conv2_U0/ap_ready">
-                  <obj_property name="ElementShortName">ap_ready</obj_property>
-                  <obj_property name="ObjectShortName">ap_ready</obj_property>
-                  <obj_property name="label">ap_ready(t_read)</obj_property>
-                  <obj_property name="DisplayName">label</obj_property>
-               </wvobject>
-            </wvobject>
-            <wvobject type="group" fp_name="feat1_p_7_group">
-               <obj_property name="label">feat1_p_7(feat1_p_7_U, PIPO)</obj_property>
-               <obj_property name="DisplayName">label</obj_property>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/conv2_U0/feat1_p_7_address0">
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/conv2_U0/feat1_p_7_q0">
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/conv2_U0/feat1_p_7_ce0">
-                  <obj_property name="ElementShortName">feat1_p_7_ce0</obj_property>
-                  <obj_property name="ObjectShortName">feat1_p_7_ce0</obj_property>
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/conv2_U0/ap_ready">
-                  <obj_property name="ElementShortName">ap_ready</obj_property>
-                  <obj_property name="ObjectShortName">ap_ready</obj_property>
-                  <obj_property name="label">ap_ready(t_read)</obj_property>
-                  <obj_property name="DisplayName">label</obj_property>
-               </wvobject>
-            </wvobject>
-         </wvobject>
-         <wvobject type="group" fp_name="conv2_U0_Handshake_group">
-            <obj_property name="label">Block-level handshake</obj_property>
-            <obj_property name="DisplayName">label</obj_property>
-            <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/conv2_U0/ap_start">
-               <obj_property name="ElementShortName">ap_start</obj_property>
-               <obj_property name="ObjectShortName">ap_start</obj_property>
-            </wvobject>
-            <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/conv2_U0/ap_ready">
-               <obj_property name="ElementShortName">ap_ready</obj_property>
-               <obj_property name="ObjectShortName">ap_ready</obj_property>
-            </wvobject>
-            <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/conv2_U0/ap_done">
-               <obj_property name="ElementShortName">ap_done</obj_property>
-               <obj_property name="ObjectShortName">ap_done</obj_property>
-            </wvobject>
-            <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/conv2_U0/ap_continue">
-               <obj_property name="ElementShortName">ap_continue</obj_property>
-               <obj_property name="ObjectShortName">ap_continue</obj_property>
-            </wvobject>
-         </wvobject>
-         <wvobject type="group" fp_name="conv2_U0_Output_group">
-            <obj_property name="label">Output Channels</obj_property>
-            <obj_property name="DisplayName">label</obj_property>
-            <wvobject type="group" fp_name="feat2_group">
-               <obj_property name="label">feat2(feat2_U, PIPO)</obj_property>
-               <obj_property name="DisplayName">label</obj_property>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/conv2_U0/feat2_address0">
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/conv2_U0/feat2_d0">
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/conv2_U0/feat2_ce0">
-                  <obj_property name="ElementShortName">feat2_ce0</obj_property>
-                  <obj_property name="ObjectShortName">feat2_ce0</obj_property>
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/conv2_U0/feat2_we0">
-                  <obj_property name="ElementShortName">feat2_we0</obj_property>
-                  <obj_property name="ObjectShortName">feat2_we0</obj_property>
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/conv2_U0/ap_done">
-                  <obj_property name="ElementShortName">ap_done</obj_property>
-                  <obj_property name="ObjectShortName">ap_done</obj_property>
-                  <obj_property name="label">ap_done(i_write)</obj_property>
-                  <obj_property name="DisplayName">label</obj_property>
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/conv2_U0/ap_continue">
-                  <obj_property name="ElementShortName">ap_continue</obj_property>
-                  <obj_property name="ObjectShortName">ap_continue</obj_property>
-                  <obj_property name="label">ap_continue(i_full_n)</obj_property>
-                  <obj_property name="DisplayName">label</obj_property>
-               </wvobject>
-            </wvobject>
-            <wvobject type="group" fp_name="feat2_10_group">
-               <obj_property name="label">feat2_10(feat2_10_U, PIPO)</obj_property>
-               <obj_property name="DisplayName">label</obj_property>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/conv2_U0/feat2_10_address0">
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/conv2_U0/feat2_10_d0">
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/conv2_U0/feat2_10_ce0">
-                  <obj_property name="ElementShortName">feat2_10_ce0</obj_property>
-                  <obj_property name="ObjectShortName">feat2_10_ce0</obj_property>
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/conv2_U0/feat2_10_we0">
-                  <obj_property name="ElementShortName">feat2_10_we0</obj_property>
-                  <obj_property name="ObjectShortName">feat2_10_we0</obj_property>
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/conv2_U0/ap_done">
-                  <obj_property name="ElementShortName">ap_done</obj_property>
-                  <obj_property name="ObjectShortName">ap_done</obj_property>
-                  <obj_property name="label">ap_done(i_write)</obj_property>
-                  <obj_property name="DisplayName">label</obj_property>
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/conv2_U0/ap_continue">
-                  <obj_property name="ElementShortName">ap_continue</obj_property>
-                  <obj_property name="ObjectShortName">ap_continue</obj_property>
-                  <obj_property name="label">ap_continue(i_full_n)</obj_property>
-                  <obj_property name="DisplayName">label</obj_property>
-               </wvobject>
-            </wvobject>
-            <wvobject type="group" fp_name="feat2_8_group">
-               <obj_property name="label">feat2_8(feat2_8_U, PIPO)</obj_property>
-               <obj_property name="DisplayName">label</obj_property>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/conv2_U0/feat2_8_address0">
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/conv2_U0/feat2_8_d0">
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/conv2_U0/feat2_8_ce0">
-                  <obj_property name="ElementShortName">feat2_8_ce0</obj_property>
-                  <obj_property name="ObjectShortName">feat2_8_ce0</obj_property>
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/conv2_U0/feat2_8_we0">
-                  <obj_property name="ElementShortName">feat2_8_we0</obj_property>
-                  <obj_property name="ObjectShortName">feat2_8_we0</obj_property>
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/conv2_U0/ap_done">
-                  <obj_property name="ElementShortName">ap_done</obj_property>
-                  <obj_property name="ObjectShortName">ap_done</obj_property>
-                  <obj_property name="label">ap_done(i_write)</obj_property>
-                  <obj_property name="DisplayName">label</obj_property>
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/conv2_U0/ap_continue">
-                  <obj_property name="ElementShortName">ap_continue</obj_property>
-                  <obj_property name="ObjectShortName">ap_continue</obj_property>
-                  <obj_property name="label">ap_continue(i_full_n)</obj_property>
-                  <obj_property name="DisplayName">label</obj_property>
-               </wvobject>
-            </wvobject>
-            <wvobject type="group" fp_name="feat2_9_group">
-               <obj_property name="label">feat2_9(feat2_9_U, PIPO)</obj_property>
-               <obj_property name="DisplayName">label</obj_property>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/conv2_U0/feat2_9_address0">
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/conv2_U0/feat2_9_d0">
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/conv2_U0/feat2_9_ce0">
-                  <obj_property name="ElementShortName">feat2_9_ce0</obj_property>
-                  <obj_property name="ObjectShortName">feat2_9_ce0</obj_property>
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/conv2_U0/feat2_9_we0">
-                  <obj_property name="ElementShortName">feat2_9_we0</obj_property>
-                  <obj_property name="ObjectShortName">feat2_9_we0</obj_property>
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/conv2_U0/ap_done">
-                  <obj_property name="ElementShortName">ap_done</obj_property>
-                  <obj_property name="ObjectShortName">ap_done</obj_property>
-                  <obj_property name="label">ap_done(i_write)</obj_property>
-                  <obj_property name="DisplayName">label</obj_property>
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/conv2_U0/ap_continue">
-                  <obj_property name="ElementShortName">ap_continue</obj_property>
-                  <obj_property name="ObjectShortName">ap_continue</obj_property>
-                  <obj_property name="label">ap_continue(i_full_n)</obj_property>
-                  <obj_property name="DisplayName">label</obj_property>
-               </wvobject>
-            </wvobject>
-         </wvobject>
-      </wvobject>
-      <wvobject type="group" fp_name="pool2_U0_group">
-         <obj_property name="label">pool2_U0</obj_property>
-         <obj_property name="DisplayName">label</obj_property>
-         <wvobject type="group" fp_name="pool2_U0_Input_group">
-            <obj_property name="label">Input Channels</obj_property>
-            <obj_property name="DisplayName">label</obj_property>
-            <wvobject type="group" fp_name="feat2_group">
-               <obj_property name="label">feat2(feat2_U, PIPO)</obj_property>
-               <obj_property name="DisplayName">label</obj_property>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/pool2_U0/feat2_address0">
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/pool2_U0/feat2_q0">
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/pool2_U0/feat2_ce0">
-                  <obj_property name="ElementShortName">feat2_ce0</obj_property>
-                  <obj_property name="ObjectShortName">feat2_ce0</obj_property>
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/pool2_U0/ap_ready">
-                  <obj_property name="ElementShortName">ap_ready</obj_property>
-                  <obj_property name="ObjectShortName">ap_ready</obj_property>
-                  <obj_property name="label">ap_ready(t_read)</obj_property>
-                  <obj_property name="DisplayName">label</obj_property>
-               </wvobject>
-            </wvobject>
-            <wvobject type="group" fp_name="feat2_8_group">
-               <obj_property name="label">feat2_8(feat2_8_U, PIPO)</obj_property>
-               <obj_property name="DisplayName">label</obj_property>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/pool2_U0/feat2_8_address0">
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/pool2_U0/feat2_8_q0">
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/pool2_U0/feat2_8_ce0">
-                  <obj_property name="ElementShortName">feat2_8_ce0</obj_property>
-                  <obj_property name="ObjectShortName">feat2_8_ce0</obj_property>
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/pool2_U0/ap_ready">
-                  <obj_property name="ElementShortName">ap_ready</obj_property>
-                  <obj_property name="ObjectShortName">ap_ready</obj_property>
-                  <obj_property name="label">ap_ready(t_read)</obj_property>
-                  <obj_property name="DisplayName">label</obj_property>
-               </wvobject>
-            </wvobject>
-            <wvobject type="group" fp_name="feat2_9_group">
-               <obj_property name="label">feat2_9(feat2_9_U, PIPO)</obj_property>
-               <obj_property name="DisplayName">label</obj_property>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/pool2_U0/feat2_9_address0">
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/pool2_U0/feat2_9_q0">
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/pool2_U0/feat2_9_ce0">
-                  <obj_property name="ElementShortName">feat2_9_ce0</obj_property>
-                  <obj_property name="ObjectShortName">feat2_9_ce0</obj_property>
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/pool2_U0/ap_ready">
-                  <obj_property name="ElementShortName">ap_ready</obj_property>
-                  <obj_property name="ObjectShortName">ap_ready</obj_property>
-                  <obj_property name="label">ap_ready(t_read)</obj_property>
-                  <obj_property name="DisplayName">label</obj_property>
-               </wvobject>
-            </wvobject>
-            <wvobject type="group" fp_name="feat2_10_group">
-               <obj_property name="label">feat2_10(feat2_10_U, PIPO)</obj_property>
-               <obj_property name="DisplayName">label</obj_property>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/pool2_U0/feat2_10_address0">
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/pool2_U0/feat2_10_q0">
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/pool2_U0/feat2_10_ce0">
-                  <obj_property name="ElementShortName">feat2_10_ce0</obj_property>
-                  <obj_property name="ObjectShortName">feat2_10_ce0</obj_property>
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/pool2_U0/ap_ready">
-                  <obj_property name="ElementShortName">ap_ready</obj_property>
-                  <obj_property name="ObjectShortName">ap_ready</obj_property>
-                  <obj_property name="label">ap_ready(t_read)</obj_property>
-                  <obj_property name="DisplayName">label</obj_property>
-               </wvobject>
-            </wvobject>
-         </wvobject>
-         <wvobject type="group" fp_name="pool2_U0_Handshake_group">
-            <obj_property name="label">Block-level handshake</obj_property>
-            <obj_property name="DisplayName">label</obj_property>
-            <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/pool2_U0/ap_start">
-               <obj_property name="ElementShortName">ap_start</obj_property>
-               <obj_property name="ObjectShortName">ap_start</obj_property>
-            </wvobject>
-            <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/pool2_U0/ap_ready">
-               <obj_property name="ElementShortName">ap_ready</obj_property>
-               <obj_property name="ObjectShortName">ap_ready</obj_property>
-            </wvobject>
-            <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/pool2_U0/ap_done">
-               <obj_property name="ElementShortName">ap_done</obj_property>
-               <obj_property name="ObjectShortName">ap_done</obj_property>
-            </wvobject>
-            <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/pool2_U0/ap_continue">
-               <obj_property name="ElementShortName">ap_continue</obj_property>
-               <obj_property name="ObjectShortName">ap_continue</obj_property>
-            </wvobject>
-         </wvobject>
-         <wvobject type="group" fp_name="pool2_U0_Output_group">
-            <obj_property name="label">Output Channels</obj_property>
-            <obj_property name="DisplayName">label</obj_property>
-            <wvobject type="group" fp_name="feat2_p_group">
-               <obj_property name="label">feat2_p(feat2_p_U, PIPO)</obj_property>
-               <obj_property name="DisplayName">label</obj_property>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/pool2_U0/feat2_p_address0">
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/pool2_U0/feat2_p_d0">
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/pool2_U0/feat2_p_ce0">
-                  <obj_property name="ElementShortName">feat2_p_ce0</obj_property>
-                  <obj_property name="ObjectShortName">feat2_p_ce0</obj_property>
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/pool2_U0/feat2_p_we0">
-                  <obj_property name="ElementShortName">feat2_p_we0</obj_property>
-                  <obj_property name="ObjectShortName">feat2_p_we0</obj_property>
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/pool2_U0/ap_done">
-                  <obj_property name="ElementShortName">ap_done</obj_property>
-                  <obj_property name="ObjectShortName">ap_done</obj_property>
-                  <obj_property name="label">ap_done(i_write)</obj_property>
-                  <obj_property name="DisplayName">label</obj_property>
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/pool2_U0/ap_continue">
-                  <obj_property name="ElementShortName">ap_continue</obj_property>
-                  <obj_property name="ObjectShortName">ap_continue</obj_property>
-                  <obj_property name="label">ap_continue(i_full_n)</obj_property>
-                  <obj_property name="DisplayName">label</obj_property>
-               </wvobject>
-            </wvobject>
-            <wvobject type="group" fp_name="feat2_p_11_group">
-               <obj_property name="label">feat2_p_11(feat2_p_11_U, PIPO)</obj_property>
-               <obj_property name="DisplayName">label</obj_property>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/pool2_U0/feat2_p_11_address0">
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/pool2_U0/feat2_p_11_d0">
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/pool2_U0/feat2_p_11_ce0">
-                  <obj_property name="ElementShortName">feat2_p_11_ce0</obj_property>
-                  <obj_property name="ObjectShortName">feat2_p_11_ce0</obj_property>
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/pool2_U0/feat2_p_11_we0">
-                  <obj_property name="ElementShortName">feat2_p_11_we0</obj_property>
-                  <obj_property name="ObjectShortName">feat2_p_11_we0</obj_property>
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/pool2_U0/ap_done">
-                  <obj_property name="ElementShortName">ap_done</obj_property>
-                  <obj_property name="ObjectShortName">ap_done</obj_property>
-                  <obj_property name="label">ap_done(i_write)</obj_property>
-                  <obj_property name="DisplayName">label</obj_property>
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/pool2_U0/ap_continue">
-                  <obj_property name="ElementShortName">ap_continue</obj_property>
-                  <obj_property name="ObjectShortName">ap_continue</obj_property>
-                  <obj_property name="label">ap_continue(i_full_n)</obj_property>
-                  <obj_property name="DisplayName">label</obj_property>
-               </wvobject>
-            </wvobject>
-            <wvobject type="group" fp_name="feat2_p_12_group">
-               <obj_property name="label">feat2_p_12(feat2_p_12_U, PIPO)</obj_property>
-               <obj_property name="DisplayName">label</obj_property>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/pool2_U0/feat2_p_12_address0">
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/pool2_U0/feat2_p_12_d0">
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/pool2_U0/feat2_p_12_ce0">
-                  <obj_property name="ElementShortName">feat2_p_12_ce0</obj_property>
-                  <obj_property name="ObjectShortName">feat2_p_12_ce0</obj_property>
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/pool2_U0/feat2_p_12_we0">
-                  <obj_property name="ElementShortName">feat2_p_12_we0</obj_property>
-                  <obj_property name="ObjectShortName">feat2_p_12_we0</obj_property>
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/pool2_U0/ap_done">
-                  <obj_property name="ElementShortName">ap_done</obj_property>
-                  <obj_property name="ObjectShortName">ap_done</obj_property>
-                  <obj_property name="label">ap_done(i_write)</obj_property>
-                  <obj_property name="DisplayName">label</obj_property>
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/pool2_U0/ap_continue">
-                  <obj_property name="ElementShortName">ap_continue</obj_property>
-                  <obj_property name="ObjectShortName">ap_continue</obj_property>
-                  <obj_property name="label">ap_continue(i_full_n)</obj_property>
-                  <obj_property name="DisplayName">label</obj_property>
-               </wvobject>
-            </wvobject>
-            <wvobject type="group" fp_name="feat2_p_13_group">
-               <obj_property name="label">feat2_p_13(feat2_p_13_U, PIPO)</obj_property>
-               <obj_property name="DisplayName">label</obj_property>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/pool2_U0/feat2_p_13_address0">
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/pool2_U0/feat2_p_13_d0">
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/pool2_U0/feat2_p_13_ce0">
-                  <obj_property name="ElementShortName">feat2_p_13_ce0</obj_property>
-                  <obj_property name="ObjectShortName">feat2_p_13_ce0</obj_property>
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/pool2_U0/feat2_p_13_we0">
-                  <obj_property name="ElementShortName">feat2_p_13_we0</obj_property>
-                  <obj_property name="ObjectShortName">feat2_p_13_we0</obj_property>
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/pool2_U0/ap_done">
-                  <obj_property name="ElementShortName">ap_done</obj_property>
-                  <obj_property name="ObjectShortName">ap_done</obj_property>
-                  <obj_property name="label">ap_done(i_write)</obj_property>
-                  <obj_property name="DisplayName">label</obj_property>
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/pool2_U0/ap_continue">
-                  <obj_property name="ElementShortName">ap_continue</obj_property>
-                  <obj_property name="ObjectShortName">ap_continue</obj_property>
-                  <obj_property name="label">ap_continue(i_full_n)</obj_property>
-                  <obj_property name="DisplayName">label</obj_property>
-               </wvobject>
-            </wvobject>
-         </wvobject>
-      </wvobject>
-      <wvobject type="group" fp_name="flatten_U0_group">
-         <obj_property name="label">flatten_U0</obj_property>
-         <obj_property name="DisplayName">label</obj_property>
-         <wvobject type="group" fp_name="flatten_U0_Input_group">
-            <obj_property name="label">Input Channels</obj_property>
-            <obj_property name="DisplayName">label</obj_property>
-            <wvobject type="group" fp_name="feat2_p_group">
-               <obj_property name="label">feat2_p(feat2_p_U, PIPO)</obj_property>
-               <obj_property name="DisplayName">label</obj_property>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/flatten_U0/feat2_p_address0">
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/flatten_U0/feat2_p_q0">
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/flatten_U0/feat2_p_ce0">
-                  <obj_property name="ElementShortName">feat2_p_ce0</obj_property>
-                  <obj_property name="ObjectShortName">feat2_p_ce0</obj_property>
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/flatten_U0/ap_ready">
-                  <obj_property name="ElementShortName">ap_ready</obj_property>
-                  <obj_property name="ObjectShortName">ap_ready</obj_property>
-                  <obj_property name="label">ap_ready(t_read)</obj_property>
-                  <obj_property name="DisplayName">label</obj_property>
-               </wvobject>
-            </wvobject>
-            <wvobject type="group" fp_name="feat2_p_11_group">
-               <obj_property name="label">feat2_p_11(feat2_p_11_U, PIPO)</obj_property>
-               <obj_property name="DisplayName">label</obj_property>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/flatten_U0/feat2_p_11_address0">
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/flatten_U0/feat2_p_11_q0">
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/flatten_U0/feat2_p_11_ce0">
-                  <obj_property name="ElementShortName">feat2_p_11_ce0</obj_property>
-                  <obj_property name="ObjectShortName">feat2_p_11_ce0</obj_property>
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/flatten_U0/ap_ready">
-                  <obj_property name="ElementShortName">ap_ready</obj_property>
-                  <obj_property name="ObjectShortName">ap_ready</obj_property>
-                  <obj_property name="label">ap_ready(t_read)</obj_property>
-                  <obj_property name="DisplayName">label</obj_property>
-               </wvobject>
-            </wvobject>
-            <wvobject type="group" fp_name="feat2_p_12_group">
-               <obj_property name="label">feat2_p_12(feat2_p_12_U, PIPO)</obj_property>
-               <obj_property name="DisplayName">label</obj_property>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/flatten_U0/feat2_p_12_address0">
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/flatten_U0/feat2_p_12_q0">
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/flatten_U0/feat2_p_12_ce0">
-                  <obj_property name="ElementShortName">feat2_p_12_ce0</obj_property>
-                  <obj_property name="ObjectShortName">feat2_p_12_ce0</obj_property>
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/flatten_U0/ap_ready">
-                  <obj_property name="ElementShortName">ap_ready</obj_property>
-                  <obj_property name="ObjectShortName">ap_ready</obj_property>
-                  <obj_property name="label">ap_ready(t_read)</obj_property>
-                  <obj_property name="DisplayName">label</obj_property>
-               </wvobject>
-            </wvobject>
-            <wvobject type="group" fp_name="feat2_p_13_group">
-               <obj_property name="label">feat2_p_13(feat2_p_13_U, PIPO)</obj_property>
-               <obj_property name="DisplayName">label</obj_property>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/flatten_U0/feat2_p_13_address0">
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/flatten_U0/feat2_p_13_q0">
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/flatten_U0/feat2_p_13_ce0">
-                  <obj_property name="ElementShortName">feat2_p_13_ce0</obj_property>
-                  <obj_property name="ObjectShortName">feat2_p_13_ce0</obj_property>
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/flatten_U0/ap_ready">
-                  <obj_property name="ElementShortName">ap_ready</obj_property>
-                  <obj_property name="ObjectShortName">ap_ready</obj_property>
-                  <obj_property name="label">ap_ready(t_read)</obj_property>
-                  <obj_property name="DisplayName">label</obj_property>
-               </wvobject>
-            </wvobject>
-         </wvobject>
-         <wvobject type="group" fp_name="flatten_U0_Handshake_group">
-            <obj_property name="label">Block-level handshake</obj_property>
-            <obj_property name="DisplayName">label</obj_property>
-            <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/flatten_U0/ap_start">
-               <obj_property name="ElementShortName">ap_start</obj_property>
-               <obj_property name="ObjectShortName">ap_start</obj_property>
-            </wvobject>
-            <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/flatten_U0/ap_ready">
-               <obj_property name="ElementShortName">ap_ready</obj_property>
-               <obj_property name="ObjectShortName">ap_ready</obj_property>
-            </wvobject>
-            <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/flatten_U0/ap_done">
-               <obj_property name="ElementShortName">ap_done</obj_property>
-               <obj_property name="ObjectShortName">ap_done</obj_property>
-            </wvobject>
-            <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/flatten_U0/ap_continue">
-               <obj_property name="ElementShortName">ap_continue</obj_property>
-               <obj_property name="ObjectShortName">ap_continue</obj_property>
-            </wvobject>
-         </wvobject>
-         <wvobject type="group" fp_name="flatten_U0_Output_group">
-            <obj_property name="label">Output Channels</obj_property>
-            <obj_property name="DisplayName">label</obj_property>
-            <wvobject type="group" fp_name="vec1_group">
-               <obj_property name="label">vec1(vec1_U, PIPO)</obj_property>
-               <obj_property name="DisplayName">label</obj_property>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/flatten_U0/vec1_address0">
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/flatten_U0/vec1_d0">
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/flatten_U0/vec1_ce0">
-                  <obj_property name="ElementShortName">vec1_ce0</obj_property>
-                  <obj_property name="ObjectShortName">vec1_ce0</obj_property>
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/flatten_U0/vec1_we0">
-                  <obj_property name="ElementShortName">vec1_we0</obj_property>
-                  <obj_property name="ObjectShortName">vec1_we0</obj_property>
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/flatten_U0/ap_done">
-                  <obj_property name="ElementShortName">ap_done</obj_property>
-                  <obj_property name="ObjectShortName">ap_done</obj_property>
-                  <obj_property name="label">ap_done(i_write)</obj_property>
-                  <obj_property name="DisplayName">label</obj_property>
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/flatten_U0/ap_continue">
-                  <obj_property name="ElementShortName">ap_continue</obj_property>
-                  <obj_property name="ObjectShortName">ap_continue</obj_property>
-                  <obj_property name="label">ap_continue(i_full_n)</obj_property>
-                  <obj_property name="DisplayName">label</obj_property>
-               </wvobject>
-            </wvobject>
-         </wvobject>
-      </wvobject>
-      <wvobject type="group" fp_name="fc1_U0_group">
-         <obj_property name="label">fc1_U0</obj_property>
-         <obj_property name="DisplayName">label</obj_property>
-         <wvobject type="protoinst" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/fc1_U0/grp_generic_tanh_float_s_fu_175/grp_generic_tanh_float_s_fu_175_activity">
-            <obj_property name="ElementShortName">grp_generic_tanh_float_s_fu_175_activity</obj_property>
-            <obj_property name="ObjectShortName">grp_generic_tanh_float_s_fu_175_activity</obj_property>
-         </wvobject>
-         <wvobject type="group" fp_name="fc1_U0_Input_group">
-            <obj_property name="label">Input Channels</obj_property>
-            <obj_property name="DisplayName">label</obj_property>
-            <wvobject type="group" fp_name="vec1_group">
-               <obj_property name="label">vec1(vec1_U, PIPO)</obj_property>
-               <obj_property name="DisplayName">label</obj_property>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/fc1_U0/vec1_address0">
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/fc1_U0/vec1_q0">
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/fc1_U0/vec1_ce0">
-                  <obj_property name="ElementShortName">vec1_ce0</obj_property>
-                  <obj_property name="ObjectShortName">vec1_ce0</obj_property>
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/fc1_U0/ap_ready">
-                  <obj_property name="ElementShortName">ap_ready</obj_property>
-                  <obj_property name="ObjectShortName">ap_ready</obj_property>
-                  <obj_property name="label">ap_ready(t_read)</obj_property>
-                  <obj_property name="DisplayName">label</obj_property>
-               </wvobject>
-            </wvobject>
             <wvobject type="group" fp_name="table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array_group">
                <obj_property name="label">table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array(PIPO)</obj_property>
                <obj_property name="DisplayName">label</obj_property>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/fc1_U0/table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array_address0">
+               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array_address0">
                </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/fc1_U0/table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array_q0">
+               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array_q0">
                </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/fc1_U0/table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array_ce0">
+               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array_ce0">
                   <obj_property name="ElementShortName">table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array_ce0</obj_property>
                   <obj_property name="ObjectShortName">table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array_ce0</obj_property>
                </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/fc1_U0/ap_ready">
+               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/ap_ready">
                   <obj_property name="ElementShortName">ap_ready</obj_property>
                   <obj_property name="ObjectShortName">ap_ready</obj_property>
                   <obj_property name="label">ap_ready(t_read)</obj_property>
@@ -1351,15 +457,15 @@
             <wvobject type="group" fp_name="table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array_group">
                <obj_property name="label">table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array(PIPO)</obj_property>
                <obj_property name="DisplayName">label</obj_property>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/fc1_U0/table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array_address0">
+               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array_address0">
                </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/fc1_U0/table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array_q0">
+               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array_q0">
                </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/fc1_U0/table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array_ce0">
+               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array_ce0">
                   <obj_property name="ElementShortName">table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array_ce0</obj_property>
                   <obj_property name="ObjectShortName">table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array_ce0</obj_property>
                </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/fc1_U0/ap_ready">
+               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/ap_ready">
                   <obj_property name="ElementShortName">ap_ready</obj_property>
                   <obj_property name="ObjectShortName">ap_ready</obj_property>
                   <obj_property name="label">ap_ready(t_read)</obj_property>
@@ -1369,15 +475,15 @@
             <wvobject type="group" fp_name="table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array_group">
                <obj_property name="label">table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array(PIPO)</obj_property>
                <obj_property name="DisplayName">label</obj_property>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/fc1_U0/table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array_address0">
+               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array_address0">
                </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/fc1_U0/table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array_q0">
+               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array_q0">
                </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/fc1_U0/table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array_ce0">
+               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array_ce0">
                   <obj_property name="ElementShortName">table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array_ce0</obj_property>
                   <obj_property name="ObjectShortName">table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array_ce0</obj_property>
                </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/fc1_U0/ap_ready">
+               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/ap_ready">
                   <obj_property name="ElementShortName">ap_ready</obj_property>
                   <obj_property name="ObjectShortName">ap_ready</obj_property>
                   <obj_property name="label">ap_ready(t_read)</obj_property>
@@ -1385,147 +491,397 @@
                </wvobject>
             </wvobject>
          </wvobject>
-         <wvobject type="group" fp_name="fc1_U0_Handshake_group">
+         <wvobject type="group" fp_name="Block_entry_proc_U0_Handshake_group">
             <obj_property name="label">Block-level handshake</obj_property>
             <obj_property name="DisplayName">label</obj_property>
-            <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/fc1_U0/ap_start">
+            <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/ap_start">
                <obj_property name="ElementShortName">ap_start</obj_property>
                <obj_property name="ObjectShortName">ap_start</obj_property>
             </wvobject>
-            <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/fc1_U0/ap_ready">
+            <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/ap_ready">
                <obj_property name="ElementShortName">ap_ready</obj_property>
                <obj_property name="ObjectShortName">ap_ready</obj_property>
             </wvobject>
-            <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/fc1_U0/ap_done">
+            <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/ap_done">
                <obj_property name="ElementShortName">ap_done</obj_property>
                <obj_property name="ObjectShortName">ap_done</obj_property>
             </wvobject>
-            <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/fc1_U0/ap_continue">
+            <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/ap_continue">
                <obj_property name="ElementShortName">ap_continue</obj_property>
                <obj_property name="ObjectShortName">ap_continue</obj_property>
             </wvobject>
          </wvobject>
-         <wvobject type="group" fp_name="fc1_U0_Output_group">
+         <wvobject type="group" fp_name="Block_entry_proc_U0_Output_group">
             <obj_property name="label">Output Channels</obj_property>
             <obj_property name="DisplayName">label</obj_property>
-            <wvobject type="group" fp_name="vec2_group">
-               <obj_property name="label">vec2(vec2_U, PIPO)</obj_property>
-               <obj_property name="DisplayName">label</obj_property>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/fc1_U0/vec2_address0">
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/fc1_U0/vec2_d0">
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/fc1_U0/vec2_ce0">
-                  <obj_property name="ElementShortName">vec2_ce0</obj_property>
-                  <obj_property name="ObjectShortName">vec2_ce0</obj_property>
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/fc1_U0/vec2_we0">
-                  <obj_property name="ElementShortName">vec2_we0</obj_property>
-                  <obj_property name="ObjectShortName">vec2_we0</obj_property>
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/fc1_U0/ap_done">
-                  <obj_property name="ElementShortName">ap_done</obj_property>
-                  <obj_property name="ObjectShortName">ap_done</obj_property>
-                  <obj_property name="label">ap_done(i_write)</obj_property>
-                  <obj_property name="DisplayName">label</obj_property>
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/fc1_U0/ap_continue">
-                  <obj_property name="ElementShortName">ap_continue</obj_property>
-                  <obj_property name="ObjectShortName">ap_continue</obj_property>
-                  <obj_property name="label">ap_continue(i_full_n)</obj_property>
-                  <obj_property name="DisplayName">label</obj_property>
-               </wvobject>
-            </wvobject>
          </wvobject>
-         <wvobject type="group" fp_name="grp_generic_tanh_float_s_fu_175_group">
-            <obj_property name="label">grp_generic_tanh_float_s_fu_175</obj_property>
+         <wvobject type="group" fp_name="grp_load_img_fu_3253_group">
+            <obj_property name="label">grp_load_img_fu_3253</obj_property>
             <obj_property name="DisplayName">label</obj_property>
-            <wvobject type="group" fp_name="grp_generic_tanh_float_s_fu_175_Handshake_group">
+            <wvobject type="protoinst" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/grp_load_img_fu_3253/grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_53/grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_53_activity">
+               <obj_property name="ElementShortName">grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_53_activity</obj_property>
+               <obj_property name="ObjectShortName">grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_53_activity</obj_property>
+            </wvobject>
+            <wvobject type="group" fp_name="grp_load_img_fu_3253_Handshake_group">
                <obj_property name="label">Block-level handshake</obj_property>
                <obj_property name="DisplayName">label</obj_property>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/fc1_U0/grp_generic_tanh_float_s_fu_175/ap_start">
+               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/grp_load_img_fu_3253/ap_start">
                   <obj_property name="ElementShortName">ap_start</obj_property>
                   <obj_property name="ObjectShortName">ap_start</obj_property>
                </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/fc1_U0/grp_generic_tanh_float_s_fu_175/ap_ready">
+               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/grp_load_img_fu_3253/ap_ready">
                   <obj_property name="ElementShortName">ap_ready</obj_property>
                   <obj_property name="ObjectShortName">ap_ready</obj_property>
                </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/fc1_U0/grp_generic_tanh_float_s_fu_175/ap_done">
+               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/grp_load_img_fu_3253/ap_done">
                   <obj_property name="ElementShortName">ap_done</obj_property>
                   <obj_property name="ObjectShortName">ap_done</obj_property>
                </wvobject>
             </wvobject>
-         </wvobject>
-      </wvobject>
-      <wvobject type="group" fp_name="fc2_U0_group">
-         <obj_property name="label">fc2_U0</obj_property>
-         <obj_property name="DisplayName">label</obj_property>
-         <wvobject type="protoinst" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/fc2_U0/grp_fc2_Pipeline_FC2_LOOP_fu_149/grp_fc2_Pipeline_FC2_LOOP_fu_149_activity">
-            <obj_property name="ElementShortName">grp_fc2_Pipeline_FC2_LOOP_fu_149_activity</obj_property>
-            <obj_property name="ObjectShortName">grp_fc2_Pipeline_FC2_LOOP_fu_149_activity</obj_property>
-         </wvobject>
-         <wvobject type="group" fp_name="fc2_U0_Input_group">
-            <obj_property name="label">Input Channels</obj_property>
-            <obj_property name="DisplayName">label</obj_property>
-            <wvobject type="group" fp_name="vec2_group">
-               <obj_property name="label">vec2(vec2_U, PIPO)</obj_property>
+            <wvobject type="group" fp_name="grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_53_group">
+               <obj_property name="label">grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_53</obj_property>
                <obj_property name="DisplayName">label</obj_property>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/fc2_U0/vec2_address0">
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/fc2_U0/vec2_q0">
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/fc2_U0/vec2_ce0">
-                  <obj_property name="ElementShortName">vec2_ce0</obj_property>
-                  <obj_property name="ObjectShortName">vec2_ce0</obj_property>
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/fc2_U0/ap_ready">
-                  <obj_property name="ElementShortName">ap_ready</obj_property>
-                  <obj_property name="ObjectShortName">ap_ready</obj_property>
-                  <obj_property name="label">ap_ready(t_read)</obj_property>
+               <wvobject type="group" fp_name="grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_53_Handshake_group">
+                  <obj_property name="label">Block-level handshake</obj_property>
                   <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/grp_load_img_fu_3253/grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_53/ap_start">
+                     <obj_property name="ElementShortName">ap_start</obj_property>
+                     <obj_property name="ObjectShortName">ap_start</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/grp_load_img_fu_3253/grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_53/ap_ready">
+                     <obj_property name="ElementShortName">ap_ready</obj_property>
+                     <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/grp_load_img_fu_3253/grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_53/ap_done">
+                     <obj_property name="ElementShortName">ap_done</obj_property>
+                     <obj_property name="ObjectShortName">ap_done</obj_property>
+                  </wvobject>
                </wvobject>
             </wvobject>
          </wvobject>
-         <wvobject type="group" fp_name="fc2_U0_Handshake_group">
-            <obj_property name="label">Block-level handshake</obj_property>
+         <wvobject type="group" fp_name="grp_conv1_fu_3265_group">
+            <obj_property name="label">grp_conv1_fu_3265</obj_property>
             <obj_property name="DisplayName">label</obj_property>
-            <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/fc2_U0/ap_start">
-               <obj_property name="ElementShortName">ap_start</obj_property>
-               <obj_property name="ObjectShortName">ap_start</obj_property>
-            </wvobject>
-            <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/fc2_U0/ap_ready">
-               <obj_property name="ElementShortName">ap_ready</obj_property>
-               <obj_property name="ObjectShortName">ap_ready</obj_property>
-            </wvobject>
-            <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/fc2_U0/ap_done">
-               <obj_property name="ElementShortName">ap_done</obj_property>
-               <obj_property name="ObjectShortName">ap_done</obj_property>
-            </wvobject>
-            <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/fc2_U0/ap_continue">
-               <obj_property name="ElementShortName">ap_continue</obj_property>
-               <obj_property name="ObjectShortName">ap_continue</obj_property>
-            </wvobject>
-         </wvobject>
-         <wvobject type="group" fp_name="fc2_U0_Output_group">
-            <obj_property name="label">Output Channels</obj_property>
-            <obj_property name="DisplayName">label</obj_property>
-         </wvobject>
-         <wvobject type="group" fp_name="grp_fc2_Pipeline_FC2_LOOP_fu_149_group">
-            <obj_property name="label">grp_fc2_Pipeline_FC2_LOOP_fu_149</obj_property>
-            <obj_property name="DisplayName">label</obj_property>
-            <wvobject type="group" fp_name="grp_fc2_Pipeline_FC2_LOOP_fu_149_Handshake_group">
+            <wvobject type="group" fp_name="grp_conv1_fu_3265_Handshake_group">
                <obj_property name="label">Block-level handshake</obj_property>
                <obj_property name="DisplayName">label</obj_property>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/fc2_U0/grp_fc2_Pipeline_FC2_LOOP_fu_149/ap_start">
+               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/grp_conv1_fu_3265/ap_start">
                   <obj_property name="ElementShortName">ap_start</obj_property>
                   <obj_property name="ObjectShortName">ap_start</obj_property>
                </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/fc2_U0/grp_fc2_Pipeline_FC2_LOOP_fu_149/ap_ready">
+               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/grp_conv1_fu_3265/ap_ready">
                   <obj_property name="ElementShortName">ap_ready</obj_property>
                   <obj_property name="ObjectShortName">ap_ready</obj_property>
                </wvobject>
-               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/fc2_U0/grp_fc2_Pipeline_FC2_LOOP_fu_149/ap_done">
+               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/grp_conv1_fu_3265/ap_done">
+                  <obj_property name="ElementShortName">ap_done</obj_property>
+                  <obj_property name="ObjectShortName">ap_done</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="grp_pool1_fu_3729_group">
+            <obj_property name="label">grp_pool1_fu_3729</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="grp_pool1_fu_3729_Handshake_group">
+               <obj_property name="label">Block-level handshake</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/grp_pool1_fu_3729/ap_start">
+                  <obj_property name="ElementShortName">ap_start</obj_property>
+                  <obj_property name="ObjectShortName">ap_start</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/grp_pool1_fu_3729/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/grp_pool1_fu_3729/ap_done">
+                  <obj_property name="ElementShortName">ap_done</obj_property>
+                  <obj_property name="ObjectShortName">ap_done</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="grp_conv2_fu_3749_group">
+            <obj_property name="label">grp_conv2_fu_3749</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="grp_conv2_fu_3749_Handshake_group">
+               <obj_property name="label">Block-level handshake</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/grp_conv2_fu_3749/ap_start">
+                  <obj_property name="ElementShortName">ap_start</obj_property>
+                  <obj_property name="ObjectShortName">ap_start</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/grp_conv2_fu_3749/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/grp_conv2_fu_3749/ap_done">
+                  <obj_property name="ElementShortName">ap_done</obj_property>
+                  <obj_property name="ObjectShortName">ap_done</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="grp_pool2_fu_6105_group">
+            <obj_property name="label">grp_pool2_fu_6105</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="grp_pool2_fu_6105_Handshake_group">
+               <obj_property name="label">Block-level handshake</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/grp_pool2_fu_6105/ap_start">
+                  <obj_property name="ElementShortName">ap_start</obj_property>
+                  <obj_property name="ObjectShortName">ap_start</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/grp_pool2_fu_6105/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/grp_pool2_fu_6105/ap_done">
+                  <obj_property name="ElementShortName">ap_done</obj_property>
+                  <obj_property name="ObjectShortName">ap_done</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="grp_flatten_fu_6125_group">
+            <obj_property name="label">grp_flatten_fu_6125</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="grp_flatten_fu_6125_Handshake_group">
+               <obj_property name="label">Block-level handshake</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/grp_flatten_fu_6125/ap_start">
+                  <obj_property name="ElementShortName">ap_start</obj_property>
+                  <obj_property name="ObjectShortName">ap_start</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/grp_flatten_fu_6125/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/grp_flatten_fu_6125/ap_done">
+                  <obj_property name="ElementShortName">ap_done</obj_property>
+                  <obj_property name="ObjectShortName">ap_done</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="grp_fc1_fu_6139_group">
+            <obj_property name="label">grp_fc1_fu_6139</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="protoinst" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/grp_fc1_fu_6139/grp_generic_tanh_float_s_fu_381/grp_generic_tanh_float_s_fu_381_activity">
+               <obj_property name="ElementShortName">grp_generic_tanh_float_s_fu_381_activity</obj_property>
+               <obj_property name="ObjectShortName">grp_generic_tanh_float_s_fu_381_activity</obj_property>
+            </wvobject>
+            <wvobject type="group" fp_name="grp_fc1_fu_6139_Handshake_group">
+               <obj_property name="label">Block-level handshake</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/grp_fc1_fu_6139/ap_start">
+                  <obj_property name="ElementShortName">ap_start</obj_property>
+                  <obj_property name="ObjectShortName">ap_start</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/grp_fc1_fu_6139/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/grp_fc1_fu_6139/ap_done">
+                  <obj_property name="ElementShortName">ap_done</obj_property>
+                  <obj_property name="ObjectShortName">ap_done</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="grp_generic_tanh_float_s_fu_381_group">
+               <obj_property name="label">grp_generic_tanh_float_s_fu_381</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="group" fp_name="grp_generic_tanh_float_s_fu_381_Handshake_group">
+                  <obj_property name="label">Block-level handshake</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/grp_fc1_fu_6139/grp_generic_tanh_float_s_fu_381/ap_start">
+                     <obj_property name="ElementShortName">ap_start</obj_property>
+                     <obj_property name="ObjectShortName">ap_start</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/grp_fc1_fu_6139/grp_generic_tanh_float_s_fu_381/ap_ready">
+                     <obj_property name="ElementShortName">ap_ready</obj_property>
+                     <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/grp_fc1_fu_6139/grp_generic_tanh_float_s_fu_381/ap_done">
+                     <obj_property name="ElementShortName">ap_done</obj_property>
+                     <obj_property name="ObjectShortName">ap_done</obj_property>
+                  </wvobject>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="grp_fc2_fu_6233_group">
+            <obj_property name="label">grp_fc2_fu_6233</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="protoinst" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/grp_fc2_fu_6233/grp_fc2_Pipeline_FC2_LOOP_fu_156/grp_fc2_Pipeline_FC2_LOOP_fu_156_activity">
+               <obj_property name="ElementShortName">grp_fc2_Pipeline_FC2_LOOP_fu_156_activity</obj_property>
+               <obj_property name="ObjectShortName">grp_fc2_Pipeline_FC2_LOOP_fu_156_activity</obj_property>
+            </wvobject>
+            <wvobject type="group" fp_name="grp_fc2_fu_6233_Handshake_group">
+               <obj_property name="label">Block-level handshake</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/grp_fc2_fu_6233/ap_start">
+                  <obj_property name="ElementShortName">ap_start</obj_property>
+                  <obj_property name="ObjectShortName">ap_start</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/grp_fc2_fu_6233/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/grp_fc2_fu_6233/ap_done">
+                  <obj_property name="ElementShortName">ap_done</obj_property>
+                  <obj_property name="ObjectShortName">ap_done</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="grp_fc2_Pipeline_FC2_LOOP_fu_156_group">
+               <obj_property name="label">grp_fc2_Pipeline_FC2_LOOP_fu_156</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="group" fp_name="grp_fc2_Pipeline_FC2_LOOP_fu_156_Handshake_group">
+                  <obj_property name="label">Block-level handshake</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/grp_fc2_fu_6233/grp_fc2_Pipeline_FC2_LOOP_fu_156/ap_start">
+                     <obj_property name="ElementShortName">ap_start</obj_property>
+                     <obj_property name="ObjectShortName">ap_start</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/grp_fc2_fu_6233/grp_fc2_Pipeline_FC2_LOOP_fu_156/ap_ready">
+                     <obj_property name="ElementShortName">ap_ready</obj_property>
+                     <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/grp_fc2_fu_6233/grp_fc2_Pipeline_FC2_LOOP_fu_156/ap_done">
+                     <obj_property name="ElementShortName">ap_done</obj_property>
+                     <obj_property name="ObjectShortName">ap_done</obj_property>
+                  </wvobject>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="grp_Block_entry_proc_Pipeline_LOAD_W1_fu_6308_group">
+            <obj_property name="label">grp_Block_entry_proc_Pipeline_LOAD_W1_fu_6308</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="grp_Block_entry_proc_Pipeline_LOAD_W1_fu_6308_Handshake_group">
+               <obj_property name="label">Block-level handshake</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/grp_Block_entry_proc_Pipeline_LOAD_W1_fu_6308/ap_start">
+                  <obj_property name="ElementShortName">ap_start</obj_property>
+                  <obj_property name="ObjectShortName">ap_start</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/grp_Block_entry_proc_Pipeline_LOAD_W1_fu_6308/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/grp_Block_entry_proc_Pipeline_LOAD_W1_fu_6308/ap_done">
+                  <obj_property name="ElementShortName">ap_done</obj_property>
+                  <obj_property name="ObjectShortName">ap_done</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="grp_Block_entry_proc_Pipeline_LOAD_B1_fu_6747_group">
+            <obj_property name="label">grp_Block_entry_proc_Pipeline_LOAD_B1_fu_6747</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="grp_Block_entry_proc_Pipeline_LOAD_B1_fu_6747_Handshake_group">
+               <obj_property name="label">Block-level handshake</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/grp_Block_entry_proc_Pipeline_LOAD_B1_fu_6747/ap_start">
+                  <obj_property name="ElementShortName">ap_start</obj_property>
+                  <obj_property name="ObjectShortName">ap_start</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/grp_Block_entry_proc_Pipeline_LOAD_B1_fu_6747/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/grp_Block_entry_proc_Pipeline_LOAD_B1_fu_6747/ap_done">
+                  <obj_property name="ElementShortName">ap_done</obj_property>
+                  <obj_property name="ObjectShortName">ap_done</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="grp_Block_entry_proc_Pipeline_LOAD_W2_fu_6770_group">
+            <obj_property name="label">grp_Block_entry_proc_Pipeline_LOAD_W2_fu_6770</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="grp_Block_entry_proc_Pipeline_LOAD_W2_fu_6770_Handshake_group">
+               <obj_property name="label">Block-level handshake</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/grp_Block_entry_proc_Pipeline_LOAD_W2_fu_6770/ap_start">
+                  <obj_property name="ElementShortName">ap_start</obj_property>
+                  <obj_property name="ObjectShortName">ap_start</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/grp_Block_entry_proc_Pipeline_LOAD_W2_fu_6770/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/grp_Block_entry_proc_Pipeline_LOAD_W2_fu_6770/ap_done">
+                  <obj_property name="ElementShortName">ap_done</obj_property>
+                  <obj_property name="ObjectShortName">ap_done</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="grp_Block_entry_proc_Pipeline_LOAD_B2_fu_9081_group">
+            <obj_property name="label">grp_Block_entry_proc_Pipeline_LOAD_B2_fu_9081</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="grp_Block_entry_proc_Pipeline_LOAD_B2_fu_9081_Handshake_group">
+               <obj_property name="label">Block-level handshake</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/grp_Block_entry_proc_Pipeline_LOAD_B2_fu_9081/ap_start">
+                  <obj_property name="ElementShortName">ap_start</obj_property>
+                  <obj_property name="ObjectShortName">ap_start</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/grp_Block_entry_proc_Pipeline_LOAD_B2_fu_9081/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/grp_Block_entry_proc_Pipeline_LOAD_B2_fu_9081/ap_done">
+                  <obj_property name="ElementShortName">ap_done</obj_property>
+                  <obj_property name="ObjectShortName">ap_done</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="grp_Block_entry_proc_Pipeline_LOAD_FC1W_fu_9120_group">
+            <obj_property name="label">grp_Block_entry_proc_Pipeline_LOAD_FC1W_fu_9120</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="grp_Block_entry_proc_Pipeline_LOAD_FC1W_fu_9120_Handshake_group">
+               <obj_property name="label">Block-level handshake</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/grp_Block_entry_proc_Pipeline_LOAD_FC1W_fu_9120/ap_start">
+                  <obj_property name="ElementShortName">ap_start</obj_property>
+                  <obj_property name="ObjectShortName">ap_start</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/grp_Block_entry_proc_Pipeline_LOAD_FC1W_fu_9120/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/grp_Block_entry_proc_Pipeline_LOAD_FC1W_fu_9120/ap_done">
+                  <obj_property name="ElementShortName">ap_done</obj_property>
+                  <obj_property name="ObjectShortName">ap_done</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="grp_Block_entry_proc_Pipeline_LOAD_FC1B_fu_9143_group">
+            <obj_property name="label">grp_Block_entry_proc_Pipeline_LOAD_FC1B_fu_9143</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="grp_Block_entry_proc_Pipeline_LOAD_FC1B_fu_9143_Handshake_group">
+               <obj_property name="label">Block-level handshake</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/grp_Block_entry_proc_Pipeline_LOAD_FC1B_fu_9143/ap_start">
+                  <obj_property name="ElementShortName">ap_start</obj_property>
+                  <obj_property name="ObjectShortName">ap_start</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/grp_Block_entry_proc_Pipeline_LOAD_FC1B_fu_9143/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/grp_Block_entry_proc_Pipeline_LOAD_FC1B_fu_9143/ap_done">
+                  <obj_property name="ElementShortName">ap_done</obj_property>
+                  <obj_property name="ObjectShortName">ap_done</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="grp_Block_entry_proc_Pipeline_LOAD_FC2W_fu_9214_group">
+            <obj_property name="label">grp_Block_entry_proc_Pipeline_LOAD_FC2W_fu_9214</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="grp_Block_entry_proc_Pipeline_LOAD_FC2W_fu_9214_Handshake_group">
+               <obj_property name="label">Block-level handshake</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/grp_Block_entry_proc_Pipeline_LOAD_FC2W_fu_9214/ap_start">
+                  <obj_property name="ElementShortName">ap_start</obj_property>
+                  <obj_property name="ObjectShortName">ap_start</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/grp_Block_entry_proc_Pipeline_LOAD_FC2W_fu_9214/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_cnn_accel_top/AESL_inst_cnn_accel/Block_entry_proc_U0/grp_Block_entry_proc_Pipeline_LOAD_FC2W_fu_9214/ap_done">
                   <obj_property name="ElementShortName">ap_done</obj_property>
                   <obj_property name="ObjectShortName">ap_done</obj_property>
                </wvobject>

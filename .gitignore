@@ -19,3 +19,4 @@
 
 _ide/logs
 _ide/.wsdata
+*test.cpp

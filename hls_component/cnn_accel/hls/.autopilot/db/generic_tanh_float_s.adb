@@ -604,7 +604,7 @@
                 </item>
               </inlineStackInfo>
               <originalName>abst_in</originalName>
-              <rtlName>grp_fu_129_p0</rtlName>
+              <rtlName>abst_in_fu_177_p1</rtlName>
               <control></control>
               <opType></opType>
               <implIndex></implIndex>
@@ -1292,7 +1292,7 @@
                 </item>
               </inlineStackInfo>
               <originalName></originalName>
-              <rtlName>fcmp_32ns_32ns_1_2_no_dsp_1_U106</rtlName>
+              <rtlName></rtlName>
               <control>auto</control>
               <opType>fcmp</opType>
               <implIndex>auto</implIndex>
@@ -1692,7 +1692,7 @@
                 </item>
               </inlineStackInfo>
               <originalName>x</originalName>
-              <rtlName>faddfsub_32ns_32ns_32_5_full_dsp_1_U101</rtlName>
+              <rtlName></rtlName>
               <control>auto</control>
               <opType>fadd</opType>
               <implIndex>fulldsp</implIndex>
@@ -2214,7 +2214,7 @@
                 </item>
               </inlineStackInfo>
               <originalName>xd</originalName>
-              <rtlName>fpext_32ns_64_2_no_dsp_1_U105</rtlName>
+              <rtlName>fpext_32ns_64_2_no_dsp_1_U1609</rtlName>
               <control>auto</control>
               <opType>fpext</opType>
               <implIndex>auto</implIndex>
@@ -2245,7 +2245,7 @@
             <Obj>
               <type>0</type>
               <id>46</id>
-              <name>tmp_4</name>
+              <name>tmp_6</name>
               <fileName>C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib\hlsmath\src\common\hls_exp_float.cpp</fileName>
               <fileDirectory>../../../../../../../scratch/2025.1/hls_product/640/2025.1/src/shared/hls/clib/hlsmath</fileDirectory>
               <lineNumber>12</lineNumber>
@@ -2344,7 +2344,7 @@
                 </item>
               </inlineStackInfo>
               <originalName></originalName>
-              <rtlName>dadd_64ns_64ns_64_5_full_dsp_1_U107</rtlName>
+              <rtlName>dadd_64ns_64ns_64_5_full_dsp_1_U1611</rtlName>
               <control>auto</control>
               <opType>dadd</opType>
               <implIndex>fulldsp</implIndex>
@@ -2408,7 +2408,7 @@
                 </item>
               </inlineStackInfo>
               <originalName></originalName>
-              <rtlName>fptrunc_64ns_32_2_no_dsp_1_U104</rtlName>
+              <rtlName>fptrunc_64ns_32_2_no_dsp_1_U1608</rtlName>
               <control>auto</control>
               <opType>fptrunc</opType>
               <implIndex>auto</implIndex>
@@ -2668,7 +2668,7 @@
                 </item>
               </inlineStackInfo>
               <originalName></originalName>
-              <rtlName>fdiv_32ns_32ns_32_12_no_dsp_1_U103</rtlName>
+              <rtlName></rtlName>
               <control>auto</control>
               <opType>fdiv</opType>
               <implIndex>fabric</implIndex>
@@ -2725,7 +2725,7 @@
                 </item>
               </inlineStackInfo>
               <originalName>resultf</originalName>
-              <rtlName>faddfsub_32ns_32ns_32_5_full_dsp_1_U101</rtlName>
+              <rtlName></rtlName>
               <control>auto</control>
               <opType>fadd</opType>
               <implIndex>fulldsp</implIndex>
@@ -3165,7 +3165,7 @@
                 </item>
               </inlineStackInfo>
               <originalName>resultf</originalName>
-              <rtlName>fdiv_32ns_32ns_32_12_no_dsp_1_U103</rtlName>
+              <rtlName></rtlName>
               <control>auto</control>
               <opType>fdiv</opType>
               <implIndex>fabric</implIndex>
@@ -8317,10 +8317,10 @@
     </fsm>
     <res class_id="34" tracking_level="1" version="0" object_id="_526">
       <dp_component_resource class_id="35" tracking_level="0" version="0">
-        <count>7</count>
+        <count>4</count>
         <item_version>0</item_version>
         <item class_id="36" tracking_level="0" version="0">
-          <first>dadd_64ns_64ns_64_5_full_dsp_1_U107 (dadd_64ns_64ns_64_5_full_dsp_1)</first>
+          <first>dadd_64ns_64ns_64_5_full_dsp_1_U1611 (dadd_64ns_64ns_64_5_full_dsp_1)</first>
           <second class_id="37" tracking_level="0" version="0">
             <count>3</count>
             <item_version>0</item_version>
@@ -8339,47 +8339,14 @@
           </second>
         </item>
         <item>
-          <first>faddfsub_32ns_32ns_32_5_full_dsp_1_U101 (faddfsub_32ns_32ns_32_5_full_dsp_1)</first>
-          <second>
-            <count>3</count>
-            <item_version>0</item_version>
-            <item>
-              <first>DSP</first>
-              <second>2</second>
-            </item>
-            <item>
-              <first>FF</first>
-              <second>205</second>
-            </item>
-            <item>
-              <first>LUT</first>
-              <second>203</second>
-            </item>
-          </second>
-        </item>
-        <item>
-          <first>fcmp_32ns_32ns_1_2_no_dsp_1_U106 (fcmp_32ns_32ns_1_2_no_dsp_1)</first>
+          <first>fpext_32ns_64_2_no_dsp_1_U1609 (fpext_32ns_64_2_no_dsp_1)</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
           </second>
         </item>
         <item>
-          <first>fdiv_32ns_32ns_32_12_no_dsp_1_U103 (fdiv_32ns_32ns_32_12_no_dsp_1)</first>
-          <second>
-            <count>0</count>
-            <item_version>0</item_version>
-          </second>
-        </item>
-        <item>
-          <first>fpext_32ns_64_2_no_dsp_1_U105 (fpext_32ns_64_2_no_dsp_1)</first>
-          <second>
-            <count>0</count>
-            <item_version>0</item_version>
-          </second>
-        </item>
-        <item>
-          <first>fptrunc_64ns_32_2_no_dsp_1_U104 (fptrunc_64ns_32_2_no_dsp_1)</first>
+          <first>fptrunc_64ns_32_2_no_dsp_1_U1608 (fptrunc_64ns_32_2_no_dsp_1)</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
@@ -11033,7 +11000,7 @@
           </second>
         </item>
         <item>
-          <first>tmp_4_reg_470</first>
+          <first>tmp_6_reg_470</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -11110,45 +11077,24 @@
         </item>
       </dp_register_resource>
       <dp_dsp_resource>
-        <count>7</count>
+        <count>4</count>
         <item_version>0</item_version>
         <item>
-          <first>dadd_64ns_64ns_64_5_full_dsp_1_U107</first>
+          <first>dadd_64ns_64ns_64_5_full_dsp_1_U1611</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
           </second>
         </item>
         <item>
-          <first>faddfsub_32ns_32ns_32_5_full_dsp_1_U101</first>
+          <first>fpext_32ns_64_2_no_dsp_1_U1609</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
           </second>
         </item>
         <item>
-          <first>fcmp_32ns_32ns_1_2_no_dsp_1_U106</first>
-          <second>
-            <count>0</count>
-            <item_version>0</item_version>
-          </second>
-        </item>
-        <item>
-          <first>fdiv_32ns_32ns_32_12_no_dsp_1_U103</first>
-          <second>
-            <count>0</count>
-            <item_version>0</item_version>
-          </second>
-        </item>
-        <item>
-          <first>fpext_32ns_64_2_no_dsp_1_U105</first>
-          <second>
-            <count>0</count>
-            <item_version>0</item_version>
-          </second>
-        </item>
-        <item>
-          <first>fptrunc_64ns_32_2_no_dsp_1_U104</first>
+          <first>fptrunc_64ns_32_2_no_dsp_1_U1608</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
@@ -11163,10 +11109,10 @@
         </item>
       </dp_dsp_resource>
       <dp_component_map class_id="39" tracking_level="0" version="0">
-        <count>7</count>
+        <count>4</count>
         <item_version>0</item_version>
         <item class_id="40" tracking_level="0" version="0">
-          <first>dadd_64ns_64ns_64_5_full_dsp_1_U107 (dadd_64ns_64ns_64_5_full_dsp_1)</first>
+          <first>dadd_64ns_64ns_64_5_full_dsp_1_U1611 (dadd_64ns_64ns_64_5_full_dsp_1)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -11174,33 +11120,7 @@
           </second>
         </item>
         <item>
-          <first>faddfsub_32ns_32ns_32_5_full_dsp_1_U101 (faddfsub_32ns_32ns_32_5_full_dsp_1)</first>
-          <second>
-            <count>2</count>
-            <item_version>0</item_version>
-            <item>35</item>
-            <item>56</item>
-          </second>
-        </item>
-        <item>
-          <first>fcmp_32ns_32ns_1_2_no_dsp_1_U106 (fcmp_32ns_32ns_1_2_no_dsp_1)</first>
-          <second>
-            <count>1</count>
-            <item_version>0</item_version>
-            <item>27</item>
-          </second>
-        </item>
-        <item>
-          <first>fdiv_32ns_32ns_32_12_no_dsp_1_U103 (fdiv_32ns_32ns_32_12_no_dsp_1)</first>
-          <second>
-            <count>2</count>
-            <item_version>0</item_version>
-            <item>55</item>
-            <item>65</item>
-          </second>
-        </item>
-        <item>
-          <first>fpext_32ns_64_2_no_dsp_1_U105 (fpext_32ns_64_2_no_dsp_1)</first>
+          <first>fpext_32ns_64_2_no_dsp_1_U1609 (fpext_32ns_64_2_no_dsp_1)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -11208,7 +11128,7 @@
           </second>
         </item>
         <item>
-          <first>fptrunc_64ns_32_2_no_dsp_1_U104 (fptrunc_64ns_32_2_no_dsp_1)</first>
+          <first>fptrunc_64ns_32_2_no_dsp_1_U1608 (fptrunc_64ns_32_2_no_dsp_1)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -13455,7 +13375,7 @@
         </second>
       </item>
       <item>
-        <first>tmp_4_reg_470</first>
+        <first>tmp_6_reg_470</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>

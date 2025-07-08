@@ -15,56 +15,34 @@
 </UserAssignments>
 
 <PerformanceEstimates>
-<PipelineType>loop auto-rewind stp (delay=8 cycles)</PipelineType>
+<PipelineType>no</PipelineType>
 <SummaryOfTimingAnalysis>
 <unit>ns</unit>
 <EstimatedClockPeriod>7.300</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
-<Best-caseLatency>691209</Best-caseLatency>
-<Average-caseLatency>691209</Average-caseLatency>
-<Worst-caseLatency>691209</Worst-caseLatency>
+<Best-caseLatency>691211</Best-caseLatency>
+<Average-caseLatency>691211</Average-caseLatency>
+<Worst-caseLatency>691211</Worst-caseLatency>
 <Best-caseRealTimeLatency>6.912 ms</Best-caseRealTimeLatency>
 <Average-caseRealTimeLatency>6.912 ms</Average-caseRealTimeLatency>
 <Worst-caseRealTimeLatency>6.912 ms</Worst-caseRealTimeLatency>
-<Interval-min>691208</Interval-min>
-<Interval-max>691208</Interval-max>
+<Interval-min>691211</Interval-min>
+<Interval-max>691211</Interval-max>
 <PerformancePragma>-</PerformancePragma>
 </SummaryOfOverallLatency>
-<SummaryOfLoopLatency>
-<LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH>
-<Slack>7.30</Slack>
-<TripCount>230400</TripCount>
-<isPerfectNested>0</isPerfectNested>
-<Latency>691207</Latency>
-<AbsoluteTimeLatency>6912070</AbsoluteTimeLatency>
-<PipelineII>3</PipelineII>
-<PipelineDepth>11</PipelineDepth>
-<PerformancePragma>-</PerformancePragma>
-<InstanceList>
-</InstanceList>
-</LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH>
-</SummaryOfLoopLatency>
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>../hls_files/conv_pool.cpp:138</SourceLocation>
-<SummaryOfLoopViolations>
-<LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH>
-<Name>LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH</Name>
-<IssueType>-</IssueType>
-<ViolationType>-</ViolationType>
-<SourceLocation>../hls_files/conv_pool.cpp:140</SourceLocation>
-</LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH>
-</SummaryOfLoopViolations>
+<SourceLocation>../hls_files/conv_pool.cpp:195</SourceLocation>
 </SummaryOfViolations>
 </PerformanceEstimates>
 
 <AreaEstimates>
 <Resources>
-<FF>251</FF>
-<LUT>463</LUT>
+<FF>207</FF>
+<LUT>497</LUT>
 <BRAM_18K>0</BRAM_18K>
 <DSP>0</DSP>
 <URAM>0</URAM>
@@ -120,17 +98,6 @@
 <IOProtocol>ap_ctrl_hs</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>out</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>ap_continue</name>
-<Object>load_img</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
 <Bits>1</Bits>
 <Attribute>control</Attribute>
 </RtlPorts>
@@ -718,8 +685,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>local_img_1_address0</name>
-<Object>local_img_1</Object>
+<name>local_img_60_address0</name>
+<Object>local_img_60</Object>
 <Type>array</Type>
 <Scope>global</Scope>
 <IOProtocol>ap_memory</IOProtocol>
@@ -729,8 +696,8 @@
 <Attribute>address</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>local_img_1_ce0</name>
-<Object>local_img_1</Object>
+<name>local_img_60_ce0</name>
+<Object>local_img_60</Object>
 <Type>array</Type>
 <Scope>global</Scope>
 <IOProtocol>ap_memory</IOProtocol>
@@ -740,8 +707,8 @@
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>local_img_1_we0</name>
-<Object>local_img_1</Object>
+<name>local_img_60_we0</name>
+<Object>local_img_60</Object>
 <Type>array</Type>
 <Scope>global</Scope>
 <IOProtocol>ap_memory</IOProtocol>
@@ -751,8 +718,8 @@
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>local_img_1_d0</name>
-<Object>local_img_1</Object>
+<name>local_img_60_d0</name>
+<Object>local_img_60</Object>
 <Type>array</Type>
 <Scope>global</Scope>
 <IOProtocol>ap_memory</IOProtocol>

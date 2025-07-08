@@ -29910,7 +29910,227 @@ namespace hls {
 
 };
 # 5 "../hls_files/conv_pool.cpp" 2
-# 24 "../hls_files/conv_pool.cpp"
+# 1 "C:/Xilinx/2025.1/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\cstring" 1 3
+# 40 "C:/Xilinx/2025.1/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\cstring" 3
+
+
+# 1 "C:/Xilinx/2025.1/Vitis/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\string.h" 1 3
+# 21 "C:/Xilinx/2025.1/Vitis/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\string.h" 3
+extern "C" {
+# 45 "C:/Xilinx/2025.1/Vitis/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\string.h" 3
+  __attribute__ ((__dllimport__)) void *__attribute__((__cdecl__)) _memccpy(void *_Dst,const void *_Src,int _Val,size_t _MaxCount);
+                void *__attribute__((__cdecl__)) memchr(const void *_Buf ,int _Val,size_t _MaxCount);
+  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _memicmp(const void *_Buf1,const void *_Buf2,size_t _Size);
+  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _memicmp_l(const void *_Buf1,const void *_Buf2,size_t _Size,_locale_t _Locale);
+  int __attribute__((__cdecl__)) memcmp(const void *_Buf1,const void *_Buf2,size_t _Size);
+  void * __attribute__((__cdecl__)) memcpy(void * __restrict__ _Dst,const void * __restrict__ _Src,size_t _Size) ;
+  __attribute__((dllimport)) errno_t __attribute__((__cdecl__)) memcpy_s (void *_dest,size_t _numberOfElements,const void *_src,size_t _count);
+  void * __attribute__((__cdecl__)) mempcpy (void *_Dst, const void *_Src, size_t _Size);
+  void * __attribute__((__cdecl__)) memset(void *_Dst,int _Val,size_t _Size);
+
+  void * __attribute__((__cdecl__)) memccpy(void *_Dst,const void *_Src,int _Val,size_t _Size) ;
+  int __attribute__((__cdecl__)) memicmp(const void *_Buf1,const void *_Buf2,size_t _Size) ;
+
+
+  char * __attribute__((__cdecl__)) _strset(char *_Str,int _Val) ;
+  char * __attribute__((__cdecl__)) _strset_l(char *_Str,int _Val,_locale_t _Locale) ;
+  char * __attribute__((__cdecl__)) strcpy(char * __restrict__ _Dest,const char * __restrict__ _Source);
+  char * __attribute__((__cdecl__)) strcat(char * __restrict__ _Dest,const char * __restrict__ _Source);
+  int __attribute__((__cdecl__)) strcmp(const char *_Str1,const char *_Str2);
+  size_t __attribute__((__cdecl__)) strlen(const char *_Str);
+  size_t __attribute__((__cdecl__)) strnlen(const char *_Str,size_t _MaxCount);
+  void *__attribute__((__cdecl__)) memmove(void *_Dst,const void *_Src,size_t _Size) ;
+  __attribute__ ((__dllimport__)) char *__attribute__((__cdecl__)) _strdup(const char *_Src);
+                char *__attribute__((__cdecl__)) strchr(const char *_Str,int _Val);
+  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _stricmp(const char *_Str1,const char *_Str2);
+  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _strcmpi(const char *_Str1,const char *_Str2);
+  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _stricmp_l(const char *_Str1,const char *_Str2,_locale_t _Locale);
+  int __attribute__((__cdecl__)) strcoll(const char *_Str1,const char *_Str2);
+  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _strcoll_l(const char *_Str1,const char *_Str2,_locale_t _Locale);
+  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _stricoll(const char *_Str1,const char *_Str2);
+  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _stricoll_l(const char *_Str1,const char *_Str2,_locale_t _Locale);
+  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _strncoll (const char *_Str1,const char *_Str2,size_t _MaxCount);
+  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _strncoll_l(const char *_Str1,const char *_Str2,size_t _MaxCount,_locale_t _Locale);
+  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _strnicoll (const char *_Str1,const char *_Str2,size_t _MaxCount);
+  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _strnicoll_l(const char *_Str1,const char *_Str2,size_t _MaxCount,_locale_t _Locale);
+  size_t __attribute__((__cdecl__)) strcspn(const char *_Str,const char *_Control);
+  __attribute__ ((__dllimport__)) char *__attribute__((__cdecl__)) _strerror(const char *_ErrMsg) ;
+  char *__attribute__((__cdecl__)) strerror(int) ;
+  __attribute__ ((__dllimport__)) char *__attribute__((__cdecl__)) _strlwr(char *_String) ;
+  char *strlwr_l(char *_String,_locale_t _Locale) ;
+  char *__attribute__((__cdecl__)) strncat(char * __restrict__ _Dest,const char * __restrict__ _Source,size_t _Count) ;
+  int __attribute__((__cdecl__)) strncmp(const char *_Str1,const char *_Str2,size_t _MaxCount);
+  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _strnicmp(const char *_Str1,const char *_Str2,size_t _MaxCount);
+  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _strnicmp_l(const char *_Str1,const char *_Str2,size_t _MaxCount,_locale_t _Locale);
+  char *strncpy(char * __restrict__ _Dest,const char * __restrict__ _Source,size_t _Count) ;
+  __attribute__ ((__dllimport__)) char *__attribute__((__cdecl__)) _strnset(char *_Str,int _Val,size_t _MaxCount) ;
+  __attribute__ ((__dllimport__)) char *__attribute__((__cdecl__)) _strnset_l(char *str,int c,size_t count,_locale_t _Locale) ;
+                char *__attribute__((__cdecl__)) strpbrk(const char *_Str,const char *_Control);
+                char *__attribute__((__cdecl__)) strrchr(const char *_Str,int _Ch);
+  __attribute__ ((__dllimport__)) char *__attribute__((__cdecl__)) _strrev(char *_Str);
+  size_t __attribute__((__cdecl__)) strspn(const char *_Str,const char *_Control);
+                char *__attribute__((__cdecl__)) strstr(const char *_Str,const char *_SubStr);
+  char *__attribute__((__cdecl__)) strtok(char * __restrict__ _Str,const char * __restrict__ _Delim) ;
+
+
+  char *strtok_r(char * __restrict__ _Str, const char * __restrict__ _Delim, char ** __restrict__ __last);
+
+  __attribute__ ((__dllimport__)) char *__attribute__((__cdecl__)) _strupr(char *_String) ;
+  __attribute__ ((__dllimport__)) char *_strupr_l(char *_String,_locale_t _Locale) ;
+  size_t __attribute__((__cdecl__)) strxfrm(char * __restrict__ _Dst,const char * __restrict__ _Src,size_t _MaxCount);
+  __attribute__ ((__dllimport__)) size_t __attribute__((__cdecl__)) _strxfrm_l(char * __restrict__ _Dst,const char * __restrict__ _Src,size_t _MaxCount,_locale_t _Locale);
+
+
+  char *__attribute__((__cdecl__)) strdup(const char *_Src) ;
+  int __attribute__((__cdecl__)) strcmpi(const char *_Str1,const char *_Str2) ;
+  int __attribute__((__cdecl__)) stricmp(const char *_Str1,const char *_Str2) ;
+  char *__attribute__((__cdecl__)) strlwr(char *_Str) ;
+  int __attribute__((__cdecl__)) strnicmp(const char *_Str1,const char *_Str,size_t _MaxCount) ;
+  int __attribute__((__cdecl__)) strncasecmp (const char *, const char *, size_t);
+  int __attribute__((__cdecl__)) strcasecmp (const char *, const char *);
+
+
+
+
+
+
+
+  char *__attribute__((__cdecl__)) strnset(char *_Str,int _Val,size_t _MaxCount) ;
+  char *__attribute__((__cdecl__)) strrev(char *_Str) ;
+  char *__attribute__((__cdecl__)) strset(char *_Str,int _Val) ;
+  char *__attribute__((__cdecl__)) strupr(char *_Str) ;
+
+
+
+
+
+  __attribute__ ((__dllimport__)) wchar_t *__attribute__((__cdecl__)) _wcsdup(const wchar_t *_Str);
+  wchar_t *__attribute__((__cdecl__)) wcscat(wchar_t * __restrict__ _Dest,const wchar_t * __restrict__ _Source) ;
+                wchar_t *__attribute__((__cdecl__)) wcschr(const wchar_t *_Str,wchar_t _Ch);
+  int __attribute__((__cdecl__)) wcscmp(const wchar_t *_Str1,const wchar_t *_Str2);
+  wchar_t *__attribute__((__cdecl__)) wcscpy(wchar_t * __restrict__ _Dest,const wchar_t * __restrict__ _Source) ;
+  size_t __attribute__((__cdecl__)) wcscspn(const wchar_t *_Str,const wchar_t *_Control);
+  size_t __attribute__((__cdecl__)) wcslen(const wchar_t *_Str);
+  size_t __attribute__((__cdecl__)) wcsnlen(const wchar_t *_Src,size_t _MaxCount);
+  wchar_t *wcsncat(wchar_t * __restrict__ _Dest,const wchar_t * __restrict__ _Source,size_t _Count) ;
+  int __attribute__((__cdecl__)) wcsncmp(const wchar_t *_Str1,const wchar_t *_Str2,size_t _MaxCount);
+  wchar_t *wcsncpy(wchar_t * __restrict__ _Dest,const wchar_t * __restrict__ _Source,size_t _Count) ;
+  wchar_t *__attribute__((__cdecl__)) _wcsncpy_l(wchar_t * __restrict__ _Dest,const wchar_t * __restrict__ _Source,size_t _Count,_locale_t _Locale) ;
+                wchar_t *__attribute__((__cdecl__)) wcspbrk(const wchar_t *_Str,const wchar_t *_Control);
+                wchar_t *__attribute__((__cdecl__)) wcsrchr(const wchar_t *_Str,wchar_t _Ch);
+  size_t __attribute__((__cdecl__)) wcsspn(const wchar_t *_Str,const wchar_t *_Control);
+                wchar_t *__attribute__((__cdecl__)) wcsstr(const wchar_t *_Str,const wchar_t *_SubStr);
+  wchar_t *__attribute__((__cdecl__)) wcstok(wchar_t * __restrict__ _Str,const wchar_t * __restrict__ _Delim) ;
+  __attribute__ ((__dllimport__)) wchar_t *__attribute__((__cdecl__)) _wcserror(int _ErrNum) ;
+  __attribute__ ((__dllimport__)) wchar_t *__attribute__((__cdecl__)) __wcserror(const wchar_t *_Str) ;
+  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _wcsicmp(const wchar_t *_Str1,const wchar_t *_Str2);
+  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _wcsicmp_l(const wchar_t *_Str1,const wchar_t *_Str2,_locale_t _Locale);
+  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _wcsnicmp(const wchar_t *_Str1,const wchar_t *_Str2,size_t _MaxCount);
+  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _wcsnicmp_l(const wchar_t *_Str1,const wchar_t *_Str2,size_t _MaxCount,_locale_t _Locale);
+  __attribute__ ((__dllimport__)) wchar_t *__attribute__((__cdecl__)) _wcsnset(wchar_t *_Str,wchar_t _Val,size_t _MaxCount) ;
+  __attribute__ ((__dllimport__)) wchar_t *__attribute__((__cdecl__)) _wcsrev(wchar_t *_Str);
+  __attribute__ ((__dllimport__)) wchar_t *__attribute__((__cdecl__)) _wcsset(wchar_t *_Str,wchar_t _Val) ;
+  __attribute__ ((__dllimport__)) wchar_t *__attribute__((__cdecl__)) _wcslwr(wchar_t *_String) ;
+  __attribute__ ((__dllimport__)) wchar_t *_wcslwr_l(wchar_t *_String,_locale_t _Locale) ;
+  __attribute__ ((__dllimport__)) wchar_t *__attribute__((__cdecl__)) _wcsupr(wchar_t *_String) ;
+  __attribute__ ((__dllimport__)) wchar_t *_wcsupr_l(wchar_t *_String,_locale_t _Locale) ;
+  size_t __attribute__((__cdecl__)) wcsxfrm(wchar_t * __restrict__ _Dst,const wchar_t * __restrict__ _Src,size_t _MaxCount);
+  __attribute__ ((__dllimport__)) size_t __attribute__((__cdecl__)) _wcsxfrm_l(wchar_t * __restrict__ _Dst,const wchar_t * __restrict__ _Src,size_t _MaxCount,_locale_t _Locale);
+  int __attribute__((__cdecl__)) wcscoll(const wchar_t *_Str1,const wchar_t *_Str2);
+  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _wcscoll_l(const wchar_t *_Str1,const wchar_t *_Str2,_locale_t _Locale);
+  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _wcsicoll(const wchar_t *_Str1,const wchar_t *_Str2);
+  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _wcsicoll_l(const wchar_t *_Str1,const wchar_t *_Str2,_locale_t _Locale);
+  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _wcsncoll(const wchar_t *_Str1,const wchar_t *_Str2,size_t _MaxCount);
+  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _wcsncoll_l(const wchar_t *_Str1,const wchar_t *_Str2,size_t _MaxCount,_locale_t _Locale);
+  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _wcsnicoll(const wchar_t *_Str1,const wchar_t *_Str2,size_t _MaxCount);
+  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _wcsnicoll_l(const wchar_t *_Str1,const wchar_t *_Str2,size_t _MaxCount,_locale_t _Locale);
+
+
+  wchar_t *__attribute__((__cdecl__)) wcsdup(const wchar_t *_Str) ;
+
+  int __attribute__((__cdecl__)) wcsicmp(const wchar_t *_Str1,const wchar_t *_Str2) ;
+  int __attribute__((__cdecl__)) wcsnicmp(const wchar_t *_Str1,const wchar_t *_Str2,size_t _MaxCount) ;
+  wchar_t *__attribute__((__cdecl__)) wcsnset(wchar_t *_Str,wchar_t _Val,size_t _MaxCount) ;
+  wchar_t *__attribute__((__cdecl__)) wcsrev(wchar_t *_Str) ;
+  wchar_t *__attribute__((__cdecl__)) wcsset(wchar_t *_Str,wchar_t _Val) ;
+  wchar_t *__attribute__((__cdecl__)) wcslwr(wchar_t *_Str) ;
+  wchar_t *__attribute__((__cdecl__)) wcsupr(wchar_t *_Str) ;
+  int __attribute__((__cdecl__)) wcsicoll(const wchar_t *_Str1,const wchar_t *_Str2) ;
+
+
+
+
+}
+
+
+
+# 1 "C:/Xilinx/2025.1/Vitis/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\sec_api/string_s.h" 1 3
+
+
+
+
+
+
+
+
+# 1 "C:/Xilinx/2025.1/Vitis/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\string.h" 1 3
+# 10 "C:/Xilinx/2025.1/Vitis/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\sec_api/string_s.h" 2 3
+# 191 "C:/Xilinx/2025.1/Vitis/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\string.h" 2 3
+# 43 "C:/Xilinx/2025.1/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\cstring" 2 3
+# 71 "C:/Xilinx/2025.1/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\cstring" 3
+namespace std
+{
+
+
+  using ::memchr;
+  using ::memcmp;
+  using ::memcpy;
+  using ::memmove;
+  using ::memset;
+  using ::strcat;
+  using ::strcmp;
+  using ::strcoll;
+  using ::strcpy;
+  using ::strcspn;
+  using ::strerror;
+  using ::strlen;
+  using ::strncat;
+  using ::strncmp;
+  using ::strncpy;
+  using ::strspn;
+  using ::strtok;
+  using ::strxfrm;
+  using ::strchr;
+  using ::strpbrk;
+  using ::strrchr;
+  using ::strstr;
+
+
+  inline void*
+  memchr(void* __s, int __c, size_t __n)
+  { return __builtin_memchr(__s, __c, __n); }
+
+  inline char*
+  strchr(char* __s, int __n)
+  { return __builtin_strchr(__s, __n); }
+
+  inline char*
+  strpbrk(char* __s1, const char* __s2)
+  { return __builtin_strpbrk(__s1, __s2); }
+
+  inline char*
+  strrchr(char* __s, int __n)
+  { return __builtin_strrchr(__s, __n); }
+
+  inline char*
+  strstr(char* __s1, const char* __s2)
+  { return __builtin_strstr(__s1, __s2); }
+
+
+
+}
+# 6 "../hls_files/conv_pool.cpp" 2
+# 25 "../hls_files/conv_pool.cpp"
 typedef float data_t;
 typedef unsigned char flag_t;
 
@@ -29918,22 +30138,22 @@ typedef unsigned char flag_t;
 
 void load_img(const data_t *img_in, data_t local_img[240][320][3]);
 void conv1(const data_t local_img[240][320][3],
-           const data_t *weights1, const data_t *bias1,
+           const data_t *w1_local, const data_t *b1_local,
            data_t feat1[(240 -3 +1)][(320 -3 +1)][8]);
 void pool1(const data_t feat1[(240 -3 +1)][(320 -3 +1)][8],
            data_t feat1_p[((240 -3 +1)/2)][((320 -3 +1)/2)][8]);
 void conv2(const data_t feat1_p[((240 -3 +1)/2)][((320 -3 +1)/2)][8],
-           const data_t *weights2, const data_t *bias2,
+           const data_t *w2_local, const data_t *b2_local,
            data_t feat2[(((240 -3 +1)/2)-3 +1)][(((320 -3 +1)/2)-3 +1)][16]);
 void pool2(const data_t feat2[(((240 -3 +1)/2)-3 +1)][(((320 -3 +1)/2)-3 +1)][16],
            data_t feat2_p[((((240 -3 +1)/2)-3 +1)/2)][((((320 -3 +1)/2)-3 +1)/2)][16]);
 void flatten(const data_t feat2_p[((((240 -3 +1)/2)-3 +1)/2)][((((320 -3 +1)/2)-3 +1)/2)][16],
              data_t vec1[16 * ((((240 -3 +1)/2)-3 +1)/2) * ((((320 -3 +1)/2)-3 +1)/2)], int &cnt);
 void fc1(const data_t vec1[16 * ((((240 -3 +1)/2)-3 +1)/2) * ((((320 -3 +1)/2)-3 +1)/2)], int cnt,
-         const data_t *FC1_W, const data_t *FC1_B,
+         const data_t *fc1_w_local, const data_t *fc1_b_local,
          data_t vec2[32]);
 void fc2(const data_t vec2[32],
-         const data_t *FC2_W, const data_t *FC2_B,
+         const data_t *fc2_w_local, const data_t *fc2_b_local,
          flag_t *flag_out);
 
 
@@ -29956,7 +30176,7 @@ __attribute__((sdx_kernel("cnn_accel", 0))) void cnn_accel(
 {
 #line 1 "directive"
 #pragma HLSDIRECTIVE TOP name=cnn_accel
-# 66 "../hls_files/conv_pool.cpp"
+# 67 "../hls_files/conv_pool.cpp"
 
 #pragma HLS INTERFACE m_axi port=img_in offset=slave bundle=IMGmem depth=240*320*3
 #pragma HLS INTERFACE m_axi port=weights1 offset=slave bundle=W1mem depth=8*3*3*3
@@ -29993,6 +30213,62 @@ __attribute__((sdx_kernel("cnn_accel", 0))) void cnn_accel(
     int cnt;
 
 
+    static data_t w1_local[8*3*3*3];
+    static data_t b1_local[8];
+    static data_t w2_local[16*8*3*3];
+    static data_t b2_local[16];
+    static data_t fc1_w_local[32*(16*((((240 -3 +1)/2)-3 +1)/2)*((((320 -3 +1)/2)-3 +1)/2))];
+    static data_t fc1_b_local[32];
+    static data_t fc2_w_local[32];
+    static data_t fc2_b_local[1];
+
+
+#pragma HLS ARRAY_PARTITION variable=w1_local complete dim=1
+#pragma HLS ARRAY_PARTITION variable=b1_local complete dim=1
+#pragma HLS ARRAY_PARTITION variable=w2_local complete dim=1
+#pragma HLS ARRAY_PARTITION variable=b2_local complete dim=1
+#pragma HLS ARRAY_PARTITION variable=fc1_w_local cyclic factor=8 dim=1
+#pragma HLS ARRAY_PARTITION variable=fc1_b_local complete dim=1
+#pragma HLS ARRAY_PARTITION variable=fc2_w_local complete dim=1
+#pragma HLS ARRAY_PARTITION variable=fc2_b_local complete dim=1
+
+
+ if (ctrl == 1) {
+      LOAD_W1: for (int i = 0; i < 8*3*3*3; i++) {
+#pragma HLS PIPELINE II=3
+ w1_local[i] = weights1[i];
+          }
+      LOAD_B1: for (int i = 0; i < 8; i++) {
+#pragma HLS PIPELINE II=3
+ b1_local[i] = bias1[i];
+      }
+      LOAD_W2: for (int i = 0; i < 16*8*3*3; i++) {
+#pragma HLS PIPELINE II=3
+ w2_local[i] = weights2[i];
+      }
+      LOAD_B2: for (int i = 0; i < 16; i++) {
+#pragma HLS PIPELINE II=3
+ b2_local[i] = bias2[i];
+      }
+      LOAD_FC1W: for (int i = 0; i < 32*(16*((((240 -3 +1)/2)-3 +1)/2)*((((320 -3 +1)/2)-3 +1)/2)); i++) {
+#pragma HLS PIPELINE II=3
+ fc1_w_local[i] = FC1_W[i];
+      }
+      LOAD_FC1B: for (int i = 0; i < 32; i++) {
+#pragma HLS PIPELINE II=3
+ fc1_b_local[i] = FC1_B[i];
+      }
+      LOAD_FC2W: for (int i = 0; i < 32; i++) {
+#pragma HLS PIPELINE II=3
+ fc2_w_local[i] = FC2_W[i];
+      }
+      LOAD_FC2B: for (int i = 0; i < 1; i++) {
+#pragma HLS PIPELINE II=3
+ fc2_b_local[i] = FC2_B[i];
+      }
+      return;
+    }
+
 #pragma HLS ARRAY_PARTITION variable=local_img block factor=2 dim=3
 #pragma HLS ARRAY_PARTITION variable=feat1 block factor=4 dim=3
 #pragma HLS ARRAY_PARTITION variable=feat1_p block factor=4 dim=3
@@ -30005,13 +30281,13 @@ __attribute__((sdx_kernel("cnn_accel", 0))) void cnn_accel(
  load_img(img_in, local_img);
 
 
-    conv1(local_img, weights1, bias1, feat1);
+    conv1(local_img, w1_local, b1_local, feat1);
 
 
     pool1(feat1, feat1_p);
 
 
-    conv2(feat1_p, weights2, bias2, feat2);
+    conv2(feat1_p, w2_local, b2_local, feat2);
 
 
     pool2(feat2, feat2_p);
@@ -30020,10 +30296,10 @@ __attribute__((sdx_kernel("cnn_accel", 0))) void cnn_accel(
     flatten(feat2_p, vec1, cnt);
 
 
-    fc1(vec1, cnt, FC1_W, FC1_B, vec2);
+    fc1(vec1, cnt, fc1_w_local, fc1_b_local, vec2);
 
 
-    fc2(vec2, FC2_W, FC2_B, flag_out);
+    fc2(vec2, fc2_w_local, fc2_b_local, flag_out);
 }
 }
 
@@ -30143,8 +30419,8 @@ void flatten(const data_t feat2_p[((((240 -3 +1)/2)-3 +1)/2)][((((320 -3 +1)/2)-
 {
     cnt = 0;
     FLATTEN: for(int i = 0; i < ((((240 -3 +1)/2)-3 +1)/2); i++){
-        VITIS_LOOP_252_1: for(int j = 0; j < ((((320 -3 +1)/2)-3 +1)/2); j++){
-            VITIS_LOOP_253_2: for(int m = 0; m < 16; m++){
+        VITIS_LOOP_309_1: for(int j = 0; j < ((((320 -3 +1)/2)-3 +1)/2); j++){
+            VITIS_LOOP_310_2: for(int m = 0; m < 16; m++){
 #pragma HLS PIPELINE II=3
  vec1[cnt++] = feat2_p[i][j][m];
             }
@@ -30161,7 +30437,7 @@ void fc1(const data_t vec1[16 * ((((240 -3 +1)/2)-3 +1)/2) * ((((320 -3 +1)/2)-3
     FC1_OUT: for(int o = 0; o < 32; o++){
 #pragma HLS PIPELINE II=3
  data_t acc = FC1_B[o];
-        VITIS_LOOP_270_1: for(int i = 0; i < cnt; i++){
+        VITIS_LOOP_327_1: for(int i = 0; i < cnt; i++){
 #pragma HLS UNROLL factor=2
  acc += vec1[i] * FC1_W[o * cnt + i];
         }

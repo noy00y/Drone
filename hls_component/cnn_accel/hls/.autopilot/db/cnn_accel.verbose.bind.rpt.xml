@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'cnn_accel'" level="0">
-<item name = "Date">Tue Jul  8 00:40:00 2025
+<item name = "Date">Tue Jul  8 02:26:02 2025
 </item>
 <item name = "Version">2025.1 (Build 6135595 on May 21 2025)</item>
 <item name = "Project">cnn_accel</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00 ns, 8.133 ns, 2.70 ns</column>
+<column name="ap_clk">10.00 ns, 7.838 ns, 2.70 ns</column>
 </table>
 </item>
 </section>
@@ -24,21 +24,14 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">64570463, 64570463, 0.646 sec, 0.646 sec, 25481290, 25481290, dataflow</column>
+<column name="">6951794, 35155930, 69.518 ms, 0.352 sec, 6951795, 35155931, dataflow</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_load_img_fu_254">load_img, 691209, 691209, 6.912 ms, 6.912 ms, 691208, 691208, loop auto-rewind stp (delay=8 clock cycles(s))</column>
-<column name="grp_conv1_fu_266">conv1, 16347889, 16347889, 0.163 sec, 0.163 sec, 16347744, 16347744, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="grp_pool1_fu_288">pool1, 454115, 454115, 4.541 ms, 4.541 ms, 454109, 454109, loop auto-rewind stp (delay=5 clock cycles(s))</column>
-<column name="grp_conv2_fu_308">conv2, 21161458, 21161458, 0.212 sec, 0.212 sec, 21161088, 21161088, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="grp_pool2_fu_334">pool2, 217162, 217162, 2.172 ms, 2.172 ms, 217152, 217152, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="grp_flatten_fu_354">flatten, 217155, 217155, 2.172 ms, 2.172 ms, 217156, 217156, loop auto-rewind stp (delay=4 clock cycles(s))</column>
-<column name="grp_fc1_fu_368">fc1, 25481289, 25481289, 0.255 sec, 0.255 sec, 25481289, 25481289, no</column>
-<column name="grp_fc2_fu_388">fc2, 179, 179, 1.790 us, 1.790 us, 179, 179, no</column>
+<column name="grp_Block_entry_proc_fu_3178">Block_entry_proc, 6951794, 35155930, 69.518 ms, 0.352 sec, 6951794, 35155930, no</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">

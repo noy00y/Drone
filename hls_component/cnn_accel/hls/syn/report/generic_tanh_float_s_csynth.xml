@@ -45,9 +45,9 @@
 <AreaEstimates>
 <Resources>
 <BRAM_18K>5</BRAM_18K>
-<DSP>34</DSP>
-<FF>5978</FF>
-<LUT>5048</LUT>
+<DSP>32</DSP>
+<FF>5773</FF>
+<LUT>4845</LUT>
 <URAM>0</URAM>
 </Resources>
 <AvailableResources>
@@ -138,7 +138,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_188_p_din0</name>
+<name>grp_fu_394_p_din0</name>
 <Object>generic_tanh&lt;float&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -149,7 +149,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_188_p_din1</name>
+<name>grp_fu_394_p_din1</name>
 <Object>generic_tanh&lt;float&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -160,7 +160,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_188_p_opcode</name>
+<name>grp_fu_394_p_opcode</name>
 <Object>generic_tanh&lt;float&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -171,7 +171,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_188_p_dout0</name>
+<name>grp_fu_394_p_dout0</name>
 <Object>generic_tanh&lt;float&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -182,7 +182,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_188_p_ce</name>
+<name>grp_fu_394_p_ce</name>
 <Object>generic_tanh&lt;float&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -193,7 +193,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_193_p_din0</name>
+<name>grp_fu_990_p_din0</name>
 <Object>generic_tanh&lt;float&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -204,7 +204,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_193_p_din1</name>
+<name>grp_fu_990_p_din1</name>
 <Object>generic_tanh&lt;float&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -215,7 +215,18 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_193_p_dout0</name>
+<name>grp_fu_990_p_opcode</name>
+<Object>generic_tanh&lt;float&gt;</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>2</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>grp_fu_990_p_dout0</name>
 <Object>generic_tanh&lt;float&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -226,7 +237,150 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_193_p_ce</name>
+<name>grp_fu_990_p_ce</name>
+<Object>generic_tanh&lt;float&gt;</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>1</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>grp_fu_399_p_din0</name>
+<Object>generic_tanh&lt;float&gt;</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>32</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>grp_fu_399_p_din1</name>
+<Object>generic_tanh&lt;float&gt;</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>32</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>grp_fu_399_p_dout0</name>
+<Object>generic_tanh&lt;float&gt;</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>32</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>grp_fu_399_p_ce</name>
+<Object>generic_tanh&lt;float&gt;</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>1</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>grp_fu_994_p_din0</name>
+<Object>generic_tanh&lt;float&gt;</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>32</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>grp_fu_994_p_din1</name>
+<Object>generic_tanh&lt;float&gt;</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>32</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>grp_fu_994_p_dout0</name>
+<Object>generic_tanh&lt;float&gt;</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>32</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>grp_fu_994_p_ce</name>
+<Object>generic_tanh&lt;float&gt;</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>1</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>grp_fu_998_p_din0</name>
+<Object>generic_tanh&lt;float&gt;</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>32</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>grp_fu_998_p_din1</name>
+<Object>generic_tanh&lt;float&gt;</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>32</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>grp_fu_998_p_opcode</name>
+<Object>generic_tanh&lt;float&gt;</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>5</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>grp_fu_998_p_dout0</name>
+<Object>generic_tanh&lt;float&gt;</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>1</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>grp_fu_998_p_ce</name>
 <Object>generic_tanh&lt;float&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>

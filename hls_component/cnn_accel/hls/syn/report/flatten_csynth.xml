@@ -15,7 +15,7 @@
 </UserAssignments>
 
 <PerformanceEstimates>
-<PipelineType>loop auto-rewind stp (delay=4 cycles)</PipelineType>
+<PipelineType>loop auto-rewind stp (delay=0 cycles)</PipelineType>
 <SummaryOfTimingAnalysis>
 <unit>ns</unit>
 <EstimatedClockPeriod>6.918</EstimatedClockPeriod>
@@ -28,12 +28,12 @@
 <Best-caseRealTimeLatency>2.172 ms</Best-caseRealTimeLatency>
 <Average-caseRealTimeLatency>2.172 ms</Average-caseRealTimeLatency>
 <Worst-caseRealTimeLatency>2.172 ms</Worst-caseRealTimeLatency>
-<Interval-min>217156</Interval-min>
-<Interval-max>217156</Interval-max>
+<Interval-min>217154</Interval-min>
+<Interval-max>217154</Interval-max>
 <PerformancePragma>-</PerformancePragma>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
-<FLATTEN_VITIS_LOOP_252_1_VITIS_LOOP_253_2>
+<FLATTEN_VITIS_LOOP_309_1_VITIS_LOOP_310_2>
 <Slack>7.30</Slack>
 <TripCount>72384</TripCount>
 <isPerfectNested>0</isPerfectNested>
@@ -44,19 +44,19 @@
 <PerformancePragma>-</PerformancePragma>
 <InstanceList>
 </InstanceList>
-</FLATTEN_VITIS_LOOP_252_1_VITIS_LOOP_253_2>
+</FLATTEN_VITIS_LOOP_309_1_VITIS_LOOP_310_2>
 </SummaryOfLoopLatency>
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>../hls_files/conv_pool.cpp:252</SourceLocation>
+<SourceLocation>../hls_files/conv_pool.cpp:310</SourceLocation>
 <SummaryOfLoopViolations>
-<FLATTEN_VITIS_LOOP_252_1_VITIS_LOOP_253_2>
-<Name>FLATTEN_VITIS_LOOP_252_1_VITIS_LOOP_253_2</Name>
+<FLATTEN_VITIS_LOOP_309_1_VITIS_LOOP_310_2>
+<Name>FLATTEN_VITIS_LOOP_309_1_VITIS_LOOP_310_2</Name>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>../hls_files/conv_pool.cpp:252</SourceLocation>
-</FLATTEN_VITIS_LOOP_252_1_VITIS_LOOP_253_2>
+<SourceLocation>../hls_files/conv_pool.cpp:308</SourceLocation>
+</FLATTEN_VITIS_LOOP_309_1_VITIS_LOOP_310_2>
 </SummaryOfLoopViolations>
 </SummaryOfViolations>
 </PerformanceEstimates>
@@ -64,8 +64,8 @@
 <AreaEstimates>
 <Resources>
 <DSP>1</DSP>
-<FF>148</FF>
-<LUT>540</LUT>
+<FF>146</FF>
+<LUT>476</LUT>
 <BRAM_18K>0</BRAM_18K>
 <URAM>0</URAM>
 </Resources>
@@ -120,17 +120,6 @@
 <IOProtocol>ap_ctrl_hs</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>out</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>ap_continue</name>
-<Object>flatten</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
 <Bits>1</Bits>
 <Attribute>control</Attribute>
 </RtlPorts>
@@ -190,8 +179,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>feat2_p_11_address0</name>
-<Object>feat2_p_11</Object>
+<name>feat2_p_70_address0</name>
+<Object>feat2_p_70</Object>
 <Type>array</Type>
 <Scope></Scope>
 <IOProtocol>ap_memory</IOProtocol>
@@ -201,8 +190,8 @@
 <Attribute>address</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>feat2_p_11_ce0</name>
-<Object>feat2_p_11</Object>
+<name>feat2_p_70_ce0</name>
+<Object>feat2_p_70</Object>
 <Type>array</Type>
 <Scope></Scope>
 <IOProtocol>ap_memory</IOProtocol>
@@ -212,8 +201,8 @@
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>feat2_p_11_q0</name>
-<Object>feat2_p_11</Object>
+<name>feat2_p_70_q0</name>
+<Object>feat2_p_70</Object>
 <Type>array</Type>
 <Scope></Scope>
 <IOProtocol>ap_memory</IOProtocol>
@@ -223,8 +212,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>feat2_p_12_address0</name>
-<Object>feat2_p_12</Object>
+<name>feat2_p_71_address0</name>
+<Object>feat2_p_71</Object>
 <Type>array</Type>
 <Scope></Scope>
 <IOProtocol>ap_memory</IOProtocol>
@@ -234,8 +223,8 @@
 <Attribute>address</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>feat2_p_12_ce0</name>
-<Object>feat2_p_12</Object>
+<name>feat2_p_71_ce0</name>
+<Object>feat2_p_71</Object>
 <Type>array</Type>
 <Scope></Scope>
 <IOProtocol>ap_memory</IOProtocol>
@@ -245,8 +234,8 @@
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>feat2_p_12_q0</name>
-<Object>feat2_p_12</Object>
+<name>feat2_p_71_q0</name>
+<Object>feat2_p_71</Object>
 <Type>array</Type>
 <Scope></Scope>
 <IOProtocol>ap_memory</IOProtocol>
@@ -256,8 +245,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>feat2_p_13_address0</name>
-<Object>feat2_p_13</Object>
+<name>feat2_p_72_address0</name>
+<Object>feat2_p_72</Object>
 <Type>array</Type>
 <Scope></Scope>
 <IOProtocol>ap_memory</IOProtocol>
@@ -267,8 +256,8 @@
 <Attribute>address</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>feat2_p_13_ce0</name>
-<Object>feat2_p_13</Object>
+<name>feat2_p_72_ce0</name>
+<Object>feat2_p_72</Object>
 <Type>array</Type>
 <Scope></Scope>
 <IOProtocol>ap_memory</IOProtocol>
@@ -278,8 +267,8 @@
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>feat2_p_13_q0</name>
-<Object>feat2_p_13</Object>
+<name>feat2_p_72_q0</name>
+<Object>feat2_p_72</Object>
 <Type>array</Type>
 <Scope></Scope>
 <IOProtocol>ap_memory</IOProtocol>

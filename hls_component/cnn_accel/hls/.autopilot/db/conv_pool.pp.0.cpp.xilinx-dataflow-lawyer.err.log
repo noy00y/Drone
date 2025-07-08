@@ -5,4 +5,13 @@ Static scalars and arrays declared inside a dataflow region will be treated like
 Static scalars and arrays declared inside a dataflow region will be treated like local variables
 Static scalars and arrays declared inside a dataflow region will be treated like local variables
 Static scalars and arrays declared inside a dataflow region will be treated like local variables
-7 warnings generated.
+Static scalars and arrays declared inside a dataflow region will be treated like local variables
+Static scalars and arrays declared inside a dataflow region will be treated like local variables
+Static scalars and arrays declared inside a dataflow region will be treated like local variables
+Static scalars and arrays declared inside a dataflow region will be treated like local variables
+Static scalars and arrays declared inside a dataflow region will be treated like local variables
+Static scalars and arrays declared inside a dataflow region will be treated like local variables
+Static scalars and arrays declared inside a dataflow region will be treated like local variables
+Static scalars and arrays declared inside a dataflow region will be treated like local variables
+Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region
+16 warnings generated.

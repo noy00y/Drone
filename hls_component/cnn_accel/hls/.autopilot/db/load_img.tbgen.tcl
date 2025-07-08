@@ -2,9 +2,9 @@ set moduleName load_img
 set isTopModule 0
 set isCombinational 0
 set isDatapathOnly 0
-set isPipelined 1
-set isPipelined_legacy 1
-set pipeline_type loop_auto_rewind
+set isPipelined 0
+set isPipelined_legacy 0
+set pipeline_type none
 set FunctionProtocol ap_ctrl_hs
 set isOneStateSeq 0
 set ProfileFlag 0
@@ -14,17 +14,17 @@ set hasInterrupt 0
 set DLRegFirstOffset 0
 set DLRegItemOffset 0
 set svuvm_can_support 1
-set cdfgNum 14
+set cdfgNum 23
 set C_modelName {load_img}
 set C_modelType { void 0 }
 set ap_memory_interface_dict [dict create]
-dict set ap_memory_interface_dict local_img { MEM_WIDTH 32 MEM_SIZE 614400 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 0 }
-dict set ap_memory_interface_dict local_img_1 { MEM_WIDTH 32 MEM_SIZE 614400 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 0 }
+dict set ap_memory_interface_dict local_img { MEM_WIDTH 32 MEM_SIZE 614400 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 1 }
+dict set ap_memory_interface_dict local_img_60 { MEM_WIDTH 32 MEM_SIZE 614400 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 1 }
 set C_modelArgList {
 	{ IMGmem int 32 regular {axi_master 0}  }
 	{ img_in int 64 regular  }
 	{ local_img float 32 regular {array 153600 { 0 3 } 0 1 } {global 1}  }
-	{ local_img_1 float 32 regular {array 153600 { 0 3 } 0 1 } {global 1}  }
+	{ local_img_60 float 32 regular {array 153600 { 0 3 } 0 1 } {global 1}  }
 }
 set hasAXIMCache 0
 set l_AXIML2Cache [list]
@@ -33,15 +33,14 @@ set C_modelArgMapList {[
 	{ "Name" : "IMGmem", "interface" : "axi_master", "bitwidth" : 32, "direction" : "READONLY", "bitSlice":[ {"cElement": [{"cName": "img_in","offset": { "type": "dynamic","port_name": "img_in","bundle": "control"},"direction": "READONLY"}]}]} , 
  	{ "Name" : "img_in", "interface" : "wire", "bitwidth" : 64, "direction" : "READONLY"} , 
  	{ "Name" : "local_img", "interface" : "memory", "bitwidth" : 32, "direction" : "WRITEONLY", "extern" : 0} , 
- 	{ "Name" : "local_img_1", "interface" : "memory", "bitwidth" : 32, "direction" : "WRITEONLY", "extern" : 0} ]}
+ 	{ "Name" : "local_img_60", "interface" : "memory", "bitwidth" : 32, "direction" : "WRITEONLY", "extern" : 0} ]}
 # RTL Port declarations: 
-set portNum 62
+set portNum 61
 set portList { 
 	{ ap_clk sc_in sc_logic 1 clock -1 } 
 	{ ap_rst sc_in sc_logic 1 reset -1 active_high_sync } 
 	{ ap_start sc_in sc_logic 1 start -1 } 
 	{ ap_done sc_out sc_logic 1 predone -1 } 
-	{ ap_continue sc_in sc_logic 1 continue -1 } 
 	{ ap_idle sc_out sc_logic 1 done -1 } 
 	{ ap_ready sc_out sc_logic 1 ready -1 } 
 	{ m_axi_IMGmem_0_AWVALID sc_out sc_logic 1 signal 0 } 
@@ -95,17 +94,16 @@ set portList {
 	{ local_img_ce0 sc_out sc_logic 1 signal 2 } 
 	{ local_img_we0 sc_out sc_logic 1 signal 2 } 
 	{ local_img_d0 sc_out sc_lv 32 signal 2 } 
-	{ local_img_1_address0 sc_out sc_lv 18 signal 3 } 
-	{ local_img_1_ce0 sc_out sc_logic 1 signal 3 } 
-	{ local_img_1_we0 sc_out sc_logic 1 signal 3 } 
-	{ local_img_1_d0 sc_out sc_lv 32 signal 3 } 
+	{ local_img_60_address0 sc_out sc_lv 18 signal 3 } 
+	{ local_img_60_ce0 sc_out sc_logic 1 signal 3 } 
+	{ local_img_60_we0 sc_out sc_logic 1 signal 3 } 
+	{ local_img_60_d0 sc_out sc_lv 32 signal 3 } 
 }
 set NewPortList {[ 
 	{ "name": "ap_clk", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "clock", "bundle":{"name": "ap_clk", "role": "default" }} , 
  	{ "name": "ap_rst", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "reset", "bundle":{"name": "ap_rst", "role": "default" }} , 
  	{ "name": "ap_start", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "start", "bundle":{"name": "ap_start", "role": "default" }} , 
  	{ "name": "ap_done", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "predone", "bundle":{"name": "ap_done", "role": "default" }} , 
- 	{ "name": "ap_continue", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "continue", "bundle":{"name": "ap_continue", "role": "default" }} , 
  	{ "name": "ap_idle", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "done", "bundle":{"name": "ap_idle", "role": "default" }} , 
  	{ "name": "ap_ready", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "ready", "bundle":{"name": "ap_ready", "role": "default" }} , 
  	{ "name": "m_axi_IMGmem_0_AWVALID", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "IMGmem", "role": "0_AWVALID" }} , 
@@ -159,32 +157,36 @@ set NewPortList {[
  	{ "name": "local_img_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "local_img", "role": "ce0" }} , 
  	{ "name": "local_img_we0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "local_img", "role": "we0" }} , 
  	{ "name": "local_img_d0", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "local_img", "role": "d0" }} , 
- 	{ "name": "local_img_1_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":18, "type": "signal", "bundle":{"name": "local_img_1", "role": "address0" }} , 
- 	{ "name": "local_img_1_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "local_img_1", "role": "ce0" }} , 
- 	{ "name": "local_img_1_we0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "local_img_1", "role": "we0" }} , 
- 	{ "name": "local_img_1_d0", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "local_img_1", "role": "d0" }}  ]}
+ 	{ "name": "local_img_60_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":18, "type": "signal", "bundle":{"name": "local_img_60", "role": "address0" }} , 
+ 	{ "name": "local_img_60_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "local_img_60", "role": "ce0" }} , 
+ 	{ "name": "local_img_60_we0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "local_img_60", "role": "we0" }} , 
+ 	{ "name": "local_img_60_d0", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "local_img_60", "role": "d0" }}  ]}
 
 set ArgLastReadFirstWriteLatency {
 	load_img {
-		IMGmem {Type I LastRead 9 FirstWrite -1}
+		IMGmem {Type I LastRead 1 FirstWrite -1}
 		img_in {Type I LastRead 0 FirstWrite -1}
-		local_img {Type O LastRead -1 FirstWrite 10}
-		local_img_1 {Type O LastRead -1 FirstWrite 10}}}
+		local_img {Type O LastRead -1 FirstWrite 2}
+		local_img_60 {Type O LastRead -1 FirstWrite 2}}
+	load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH {
+		IMGmem {Type I LastRead 1 FirstWrite -1}
+		sext_ln196 {Type I LastRead 0 FirstWrite -1}
+		local_img {Type O LastRead -1 FirstWrite 2}
+		local_img_60 {Type O LastRead -1 FirstWrite 2}}}
 
 set hasDtUnsupportedChannel 0
 
 set PerformanceInfo {[
-	{"Name" : "Latency", "Min" : "691209", "Max" : "691209"}
-	, {"Name" : "Interval", "Min" : "691209", "Max" : "691209"}
+	{"Name" : "Latency", "Min" : "691211", "Max" : "691211"}
+	, {"Name" : "Interval", "Min" : "691211", "Max" : "691211"}
 ]}
 
 set PipelineEnableSignalInfo {[
-	{"Pipeline" : "0", "EnableSignal" : "ap_enable_pp0"}
 ]}
 
 set Spec2ImplPortList { 
 	 { m_axi {  { m_axi_IMGmem_0_AWVALID VALID 1 1 }  { m_axi_IMGmem_0_AWREADY READY 0 1 }  { m_axi_IMGmem_0_AWADDR ADDR 1 64 }  { m_axi_IMGmem_0_AWID ID 1 1 }  { m_axi_IMGmem_0_AWLEN SIZE 1 32 }  { m_axi_IMGmem_0_AWSIZE BURST 1 3 }  { m_axi_IMGmem_0_AWBURST LOCK 1 2 }  { m_axi_IMGmem_0_AWLOCK CACHE 1 2 }  { m_axi_IMGmem_0_AWCACHE PROT 1 4 }  { m_axi_IMGmem_0_AWPROT QOS 1 3 }  { m_axi_IMGmem_0_AWQOS REGION 1 4 }  { m_axi_IMGmem_0_AWREGION USER 1 4 }  { m_axi_IMGmem_0_AWUSER DATA 1 1 }  { m_axi_IMGmem_0_WVALID VALID 1 1 }  { m_axi_IMGmem_0_WREADY READY 0 1 }  { m_axi_IMGmem_0_WDATA FIFONUM 1 32 }  { m_axi_IMGmem_0_WSTRB STRB 1 4 }  { m_axi_IMGmem_0_WLAST LAST 1 1 }  { m_axi_IMGmem_0_WID ID 1 1 }  { m_axi_IMGmem_0_WUSER DATA 1 1 }  { m_axi_IMGmem_0_ARVALID VALID 1 1 }  { m_axi_IMGmem_0_ARREADY READY 0 1 }  { m_axi_IMGmem_0_ARADDR ADDR 1 64 }  { m_axi_IMGmem_0_ARID ID 1 1 }  { m_axi_IMGmem_0_ARLEN SIZE 1 32 }  { m_axi_IMGmem_0_ARSIZE BURST 1 3 }  { m_axi_IMGmem_0_ARBURST LOCK 1 2 }  { m_axi_IMGmem_0_ARLOCK CACHE 1 2 }  { m_axi_IMGmem_0_ARCACHE PROT 1 4 }  { m_axi_IMGmem_0_ARPROT QOS 1 3 }  { m_axi_IMGmem_0_ARQOS REGION 1 4 }  { m_axi_IMGmem_0_ARREGION USER 1 4 }  { m_axi_IMGmem_0_ARUSER DATA 1 1 }  { m_axi_IMGmem_0_RVALID VALID 0 1 }  { m_axi_IMGmem_0_RREADY READY 1 1 }  { m_axi_IMGmem_0_RDATA FIFONUM 0 32 }  { m_axi_IMGmem_0_RLAST LAST 0 1 }  { m_axi_IMGmem_0_RID ID 0 1 }  { m_axi_IMGmem_0_RFIFONUM LEN 0 9 }  { m_axi_IMGmem_0_RUSER DATA 0 1 }  { m_axi_IMGmem_0_RRESP RESP 0 2 }  { m_axi_IMGmem_0_BVALID VALID 0 1 }  { m_axi_IMGmem_0_BREADY READY 1 1 }  { m_axi_IMGmem_0_BRESP RESP 0 2 }  { m_axi_IMGmem_0_BID ID 0 1 }  { m_axi_IMGmem_0_BUSER DATA 0 1 } } }
 	img_in { ap_none {  { img_in in_data 0 64 } } }
 	local_img { ap_memory {  { local_img_address0 mem_address 1 18 }  { local_img_ce0 mem_ce 1 1 }  { local_img_we0 mem_we 1 1 }  { local_img_d0 mem_din 1 32 } } }
-	local_img_1 { ap_memory {  { local_img_1_address0 mem_address 1 18 }  { local_img_1_ce0 mem_ce 1 1 }  { local_img_1_we0 mem_we 1 1 }  { local_img_1_d0 mem_din 1 32 } } }
+	local_img_60 { ap_memory {  { local_img_60_address0 mem_address 1 18 }  { local_img_60_ce0 mem_ce 1 1 }  { local_img_60_we0 mem_we 1 1 }  { local_img_60_d0 mem_din 1 32 } } }
 }

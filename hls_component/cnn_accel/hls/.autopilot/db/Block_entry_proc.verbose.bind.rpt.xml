@@ -1,0 +1,60 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'Block_entry_proc'" level="0">
+<item name = "Date">Tue Jul  8 02:26:01 2025
+</item>
+<item name = "Version">2025.1 (Build 6135595 on May 21 2025)</item>
+<item name = "Project">cnn_accel</item>
+<item name = "Solution">hls (Vivado IP Flow Target)</item>
+<item name = "Product family">artix7</item>
+<item name = "Target device">xc7a100t-fgg484-2L</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00 ns, 7.838 ns, 2.70 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">6951794, 35155930, 69.518 ms, 0.352 sec, 6951794, 35155930, no</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="grp_load_img_fu_3253">load_img, 691211, 691211, 6.912 ms, 6.912 ms, 691211, 691211, no</column>
+<column name="grp_conv1_fu_3265">conv1, 5449385, 5449385, 54.494 ms, 54.494 ms, 5449385, 5449385, no</column>
+<column name="grp_pool1_fu_3729">pool1, 454115, 454115, 4.541 ms, 4.541 ms, 454107, 454107, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_conv2_fu_3749">conv2, 2645498, 2645498, 26.455 ms, 26.455 ms, 2645498, 2645498, no</column>
+<column name="grp_pool2_fu_6105">pool2, 217162, 217162, 2.172 ms, 2.172 ms, 217155, 217155, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_flatten_fu_6125">flatten, 217155, 217155, 2.172 ms, 2.172 ms, 217154, 217154, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_fc1_fu_6139">fc1, 25481217, 25481217, 0.255 sec, 0.255 sec, 25481217, 25481217, no</column>
+<column name="grp_fc2_fu_6233">fc2, 170, 170, 1.700 us, 1.700 us, 170, 170, no</column>
+<column name="grp_Block_entry_proc_Pipeline_LOAD_W1_fu_6308">Block_entry_proc_Pipeline_LOAD_W1, 434, 434, 4.340 us, 4.340 us, 433, 433, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_Block_entry_proc_Pipeline_LOAD_B1_fu_6747">Block_entry_proc_Pipeline_LOAD_B1, 18, 18, 0.180 us, 0.180 us, 17, 17, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_Block_entry_proc_Pipeline_LOAD_W2_fu_6770">Block_entry_proc_Pipeline_LOAD_W2, 2306, 2306, 23.060 us, 23.060 us, 2305, 2305, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_Block_entry_proc_Pipeline_LOAD_B2_fu_9081">Block_entry_proc_Pipeline_LOAD_B2, 34, 34, 0.340 us, 0.340 us, 33, 33, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_Block_entry_proc_Pipeline_LOAD_FC1W_fu_9120">Block_entry_proc_Pipeline_LOAD_FC1W, 6948867, 6948867, 69.489 ms, 69.489 ms, 6948866, 6948866, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_Block_entry_proc_Pipeline_LOAD_FC1B_fu_9143">Block_entry_proc_Pipeline_LOAD_FC1B, 66, 66, 0.660 us, 0.660 us, 65, 65, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_Block_entry_proc_Pipeline_LOAD_FC2W_fu_9214">Block_entry_proc_Pipeline_LOAD_FC2W, 66, 66, 0.660 us, 0.660 us, 65, 65, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>

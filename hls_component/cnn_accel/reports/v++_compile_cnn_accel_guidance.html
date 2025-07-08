@@ -3407,7 +3407,7 @@ window.onload = function () { addSorting(); }
 <center><h1>Design Guidance Report</h1></center><center><table class="header" border="0">
 <tr><td><b>Copyright</b></td><td>Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.</td></tr>
 <tr><td><b>Tool Version</b></td><td>xcd v.2025.1 (win64) Build 0 </td></tr>
-<tr><td><b>Date</b></td><td>Tue Jul  8 00:40:17 2025</td></tr>
+<tr><td><b>Date</b></td><td>Tue Jul  8 02:27:04 2025</td></tr>
 <tr><td><b>Host</b></td><td>DESKTOP-H5HAFIG running 64-bit major release  (build 9200)</td></tr>
 <tr><td><b>Command</b></td><td>C:/Xilinx/2025.1/Vitis/bin/unwrapped/win64.o/v++.exe  -c --mode hls --config C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\hls_config.cfg --work_dir cnn_accel </td></tr>
 </table></center><br>
@@ -3416,7 +3416,7 @@ window.onload = function () { addSorting(); }
 <tr><td><a href="#VIOLATION DETAILS">2 VIOLATION DETAILS</a></tr></td>
 </table>
 <a name="REPORT SUMMARY"></a><h1>1 REPORT SUMMARY</h1>
-<pre>Violations found: 45
+<pre>Violations found: 59
 </pre>
 <pre>Rule Specs Violated: 3
 </pre>
@@ -3434,106 +3434,40 @@ window.onload = function () { addSorting(); }
 <th align="left" width="380">Resolution</th>
 </tr>
 <tr>
-<td align="left">24</td>
+<td align="left">14</td>
 <td align="left">Throughput</td>
 <td align="left">WARNING</td>
 <td align="left"><undefined></td>
 <td align="left">HLS Throughput Related</td>
 <td align="left">Accelerator.cnn_accel.Throughput</td>
-<td align="left">The II Violation in module 'conv1' (loop 'CONV1_ROW_CONV1_COL_CONV1_FIL'): Unable to enforce a carried dependence constraint (II = 26, distance = 1, offset = 1) between bus read operation ('W1mem_addr_read_26', <a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=166">conv_pool.cpp</a>) on port 'W1mem' (<a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=166">conv_pool.cpp</a>) and bus read operation ('W1mem_addr_read', <a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=166">conv_pool.cpp</a>) on port 'W1mem' (<a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=166">conv_pool.cpp</a>).
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">7</td>
-<td align="left">Throughput</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Throughput Related</td>
-<td align="left">Accelerator.cnn_accel.Throughput</td>
-<td align="left">Static scalars and arrays declared inside a dataflow region will be treated like local variables (<a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=98">conv_pool.cpp</a>)
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">17</td>
-<td align="left">Throughput</td>
-<td align="left">ADVISORY</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Throughput Related</td>
-<td align="left">Accelerator.cnn_accel.Throughput</td>
-<td align="left">Pipelining result : Target II = 3, Final II = 3, Depth = 11, loop 'LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH'
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">19</td>
-<td align="left">Throughput</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Throughput Related</td>
-<td align="left">Accelerator.cnn_accel.Throughput</td>
-<td align="left">The II Violation in module 'conv1' (loop 'CONV1_ROW_CONV1_COL_CONV1_FIL'): Unable to enforce a carried dependence constraint (II = 4, distance = 1, offset = 1) between bus read operation ('W1mem_addr_read_26', <a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=166">conv_pool.cpp</a>) on port 'W1mem' (<a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=166">conv_pool.cpp</a>) and bus read operation ('W1mem_addr_read', <a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=166">conv_pool.cpp</a>) on port 'W1mem' (<a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=166">conv_pool.cpp</a>).
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">44</td>
-<td align="left">Kernel</td>
-<td align="left">ADVISORY</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Kernel Related</td>
-<td align="left">Accelerator.cnn_accel.Kernel</td>
-<td align="left">**** Loop Constraint Status: All loop constraints were NOT satisfied.
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">12</td>
-<td align="left">Interface</td>
-<td align="left">ADVISORY</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Interface Related</td>
-<td align="left">Accelerator.cnn_accel.Interface</td>
-<td align="left">Multiple burst reads of length 1152 and bit width 32 in loop 'CONV2_FIL'(<a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=206">conv_pool.cpp</a>) has been inferred on bundle 'W2mem'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (<a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=206">conv_pool.cpp</a>)
+<td align="left">Static scalars and arrays declared inside a dataflow region will be treated like local variables (<a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=109">conv_pool.cpp</a>)
 </td>
 <td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
 </tr>
 <tr>
 <td align="left">9</td>
-<td align="left">Interface</td>
-<td align="left">ADVISORY</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Interface Related</td>
-<td align="left">Accelerator.cnn_accel.Interface</td>
-<td align="left">Multiple burst reads of length 230400 and bit width 32 in loop 'LOAD_IMG_ROWS'(<a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=139">conv_pool.cpp</a>) has been inferred on bundle 'IMGmem'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (<a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=139">conv_pool.cpp</a>)
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">37</td>
-<td align="left">Throughput</td>
-<td align="left">ADVISORY</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Throughput Related</td>
-<td align="left">Accelerator.cnn_accel.Throughput</td>
-<td align="left">Pipelining result : Target II = 3, Final II = 3, Depth = 62, function 'generic_tanh<float>'
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">2</td>
 <td align="left">Throughput</td>
 <td align="left">WARNING</td>
 <td align="left"><undefined></td>
 <td align="left">HLS Throughput Related</td>
 <td align="left">Accelerator.cnn_accel.Throughput</td>
-<td align="left">Static scalars and arrays declared inside a dataflow region will be treated like local variables (<a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=93">conv_pool.cpp</a>)
+<td align="left">Static scalars and arrays declared inside a dataflow region will be treated like local variables (<a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=104">conv_pool.cpp</a>)
 </td>
 <td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
 </tr>
 <tr>
-<td align="left">41</td>
+<td align="left">11</td>
+<td align="left">Throughput</td>
+<td align="left">WARNING</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Throughput Related</td>
+<td align="left">Accelerator.cnn_accel.Throughput</td>
+<td align="left">Static scalars and arrays declared inside a dataflow region will be treated like local variables (<a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=106">conv_pool.cpp</a>)
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">49</td>
 <td align="left">Kernel</td>
 <td align="left">WARNING</td>
 <td align="left"><undefined></td>
@@ -3544,211 +3478,24 @@ window.onload = function () { addSorting(); }
 <td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
 </tr>
 <tr>
-<td align="left">14</td>
-<td align="left">Interface</td>
-<td align="left">ADVISORY</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Interface Related</td>
-<td align="left">Accelerator.cnn_accel.Interface</td>
-<td align="left">Multiple burst reads of variable length and bit width 32 has been inferred on bundle 'W3mem'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (<a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=267">conv_pool.cpp</a>)
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">1</td>
+<td align="left">46</td>
 <td align="left">Throughput</td>
 <td align="left">WARNING</td>
 <td align="left"><undefined></td>
 <td align="left">HLS Throughput Related</td>
 <td align="left">Accelerator.cnn_accel.Throughput</td>
-<td align="left">Static scalars and arrays declared inside a dataflow region will be treated like local variables (<a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=92">conv_pool.cpp</a>)
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">6</td>
-<td align="left">Throughput</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Throughput Related</td>
-<td align="left">Accelerator.cnn_accel.Throughput</td>
-<td align="left">Static scalars and arrays declared inside a dataflow region will be treated like local variables (<a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=97">conv_pool.cpp</a>)
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">28</td>
-<td align="left">Throughput</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Throughput Related</td>
-<td align="left">Accelerator.cnn_accel.Throughput</td>
-<td align="left">The II Violation in module 'conv2' (loop 'CONV2_ROW_CONV2_COL_CONV2_FIL'): Unable to enforce a carried dependence constraint (II = 4, distance = 1, offset = 1) between bus read operation ('W2mem_addr_read_71', <a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=214">conv_pool.cpp</a>) on port 'W2mem' (<a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=214">conv_pool.cpp</a>) and bus read operation ('W2mem_addr_read', <a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=214">conv_pool.cpp</a>) on port 'W2mem' (<a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=214">conv_pool.cpp</a>).
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">8</td>
-<td align="left">Throughput</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Throughput Related</td>
-<td align="left">Accelerator.cnn_accel.Throughput</td>
-<td align="left">Dataflow form checks found 7 issue(s) in file ../hls_files/conv_pool.cpp
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">15</td>
-<td align="left">Interface</td>
-<td align="left">ADVISORY</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Interface Related</td>
-<td align="left">Accelerator.cnn_accel.Interface</td>
-<td align="left">Multiple burst reads of length 32 and bit width 32 in loop 'FC1_OUT'(<a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=267">conv_pool.cpp</a>) has been inferred on bundle 'B3mem'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (<a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=267">conv_pool.cpp</a>)
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">33</td>
-<td align="left">Throughput</td>
-<td align="left">ADVISORY</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Throughput Related</td>
-<td align="left">Accelerator.cnn_accel.Throughput</td>
-<td align="left">Pipelining result : Target II = 3, Final II = 72, Depth = 441, loop 'CONV2_ROW_CONV2_COL_CONV2_FIL'
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">11</td>
-<td align="left">Interface</td>
-<td align="left">ADVISORY</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Interface Related</td>
-<td align="left">Accelerator.cnn_accel.Interface</td>
-<td align="left">Multiple burst reads of length 8 and bit width 32 in loop 'CONV1_FIL'(<a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=158">conv_pool.cpp</a>) has been inferred on bundle 'B1mem'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (<a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=158">conv_pool.cpp</a>)
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">38</td>
-<td align="left">Throughput</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Throughput Related</td>
-<td align="left">Accelerator.cnn_accel.Throughput</td>
-<td align="left">The II Violation in module 'fc2_Pipeline_FC2_LOOP' (loop 'FC2_LOOP'): Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 0) between 'store' operation 0 bit ('acc2_113_write_ln288', <a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=288">conv_pool.cpp</a>-><a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=132">conv_pool.cpp</a>) of variable 'acc2_1', <a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=288">conv_pool.cpp</a>-><a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=132">conv_pool.cpp</a> on local variable 'acc2_113' and 'load' operation 32 bit ('acc2_113_load', <a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=288">conv_pool.cpp</a>-><a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=132">conv_pool.cpp</a>) on local variable 'acc2_113'.
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">18</td>
-<td align="left">Throughput</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Throughput Related</td>
-<td align="left">Accelerator.cnn_accel.Throughput</td>
-<td align="left">The II Violation in module 'conv1' (loop 'CONV1_ROW_CONV1_COL_CONV1_FIL'): Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 1) between bus read operation ('W1mem_addr_read_26', <a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=166">conv_pool.cpp</a>) on port 'W1mem' (<a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=166">conv_pool.cpp</a>) and bus read operation ('W1mem_addr_read', <a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=166">conv_pool.cpp</a>) on port 'W1mem' (<a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=166">conv_pool.cpp</a>).
+<td align="left">The II Violation in module 'fc2_Pipeline_FC2_LOOP' (loop 'FC2_LOOP'): Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 0) between 'store' operation 0 bit ('acc2_1_write_ln342', <a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=342">conv_pool.cpp</a>) of variable 'acc2', <a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=345">conv_pool.cpp</a> on local variable 'acc2', <a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=342">conv_pool.cpp</a> and 'load' operation 32 bit ('acc2_1_load', <a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=345">conv_pool.cpp</a>) on local variable 'acc2', <a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=342">conv_pool.cpp</a>.
 </td>
 <td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
 </tr>
 <tr>
 <td align="left">22</td>
-<td align="left">Throughput</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Throughput Related</td>
-<td align="left">Accelerator.cnn_accel.Throughput</td>
-<td align="left">The II Violation in module 'conv1' (loop 'CONV1_ROW_CONV1_COL_CONV1_FIL'): Unable to enforce a carried dependence constraint (II = 21, distance = 1, offset = 1) between bus read operation ('W1mem_addr_read_26', <a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=166">conv_pool.cpp</a>) on port 'W1mem' (<a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=166">conv_pool.cpp</a>) and bus read operation ('W1mem_addr_read', <a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=166">conv_pool.cpp</a>) on port 'W1mem' (<a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=166">conv_pool.cpp</a>).
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">34</td>
-<td align="left">Throughput</td>
-<td align="left">ADVISORY</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Throughput Related</td>
-<td align="left">Accelerator.cnn_accel.Throughput</td>
-<td align="left">Pipelining result : Target II = 3, Final II = 3, Depth = 12, loop 'POOL2_ROW_POOL2_COL_POOL2_CH'
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">29</td>
-<td align="left">Throughput</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Throughput Related</td>
-<td align="left">Accelerator.cnn_accel.Throughput</td>
-<td align="left">The II Violation in module 'conv2' (loop 'CONV2_ROW_CONV2_COL_CONV2_FIL'): Unable to enforce a carried dependence constraint (II = 5, distance = 1, offset = 1) between bus read operation ('W2mem_addr_read_71', <a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=214">conv_pool.cpp</a>) on port 'W2mem' (<a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=214">conv_pool.cpp</a>) and bus read operation ('W2mem_addr_read', <a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=214">conv_pool.cpp</a>) on port 'W2mem' (<a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=214">conv_pool.cpp</a>).
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">4</td>
-<td align="left">Throughput</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Throughput Related</td>
-<td align="left">Accelerator.cnn_accel.Throughput</td>
-<td align="left">Static scalars and arrays declared inside a dataflow region will be treated like local variables (<a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=95">conv_pool.cpp</a>)
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">10</td>
 <td align="left">Interface</td>
 <td align="left">ADVISORY</td>
 <td align="left"><undefined></td>
 <td align="left">HLS Interface Related</td>
 <td align="left">Accelerator.cnn_accel.Interface</td>
-<td align="left">Multiple burst reads of length 216 and bit width 32 in loop 'CONV1_FIL'(<a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=158">conv_pool.cpp</a>) has been inferred on bundle 'W1mem'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (<a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=158">conv_pool.cpp</a>)
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">36</td>
-<td align="left">Throughput</td>
-<td align="left">ADVISORY</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Throughput Related</td>
-<td align="left">Accelerator.cnn_accel.Throughput</td>
-<td align="left">Pipelining result : Target II = 3, Final II = 1, Depth = 22, function 'exp_generic<double>'
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">21</td>
-<td align="left">Throughput</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Throughput Related</td>
-<td align="left">Accelerator.cnn_accel.Throughput</td>
-<td align="left">The II Violation in module 'conv1' (loop 'CONV1_ROW_CONV1_COL_CONV1_FIL'): Unable to enforce a carried dependence constraint (II = 6, distance = 1, offset = 1) between bus read operation ('W1mem_addr_read_26', <a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=166">conv_pool.cpp</a>) on port 'W1mem' (<a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=166">conv_pool.cpp</a>) and bus read operation ('W1mem_addr_read', <a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=166">conv_pool.cpp</a>) on port 'W1mem' (<a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=166">conv_pool.cpp</a>).
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">31</td>
-<td align="left">Throughput</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Throughput Related</td>
-<td align="left">Accelerator.cnn_accel.Throughput</td>
-<td align="left">The II Violation in module 'conv2' (loop 'CONV2_ROW_CONV2_COL_CONV2_FIL'): Unable to enforce a carried dependence constraint (II = 68, distance = 1, offset = 1) between bus read operation ('W2mem_addr_read_71', <a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=214">conv_pool.cpp</a>) on port 'W2mem' (<a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=214">conv_pool.cpp</a>) and bus read operation ('W2mem_addr_read', <a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=214">conv_pool.cpp</a>) on port 'W2mem' (<a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=214">conv_pool.cpp</a>).
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">25</td>
-<td align="left">Throughput</td>
-<td align="left">ADVISORY</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Throughput Related</td>
-<td align="left">Accelerator.cnn_accel.Throughput</td>
-<td align="left">Pipelining result : Target II = 3, Final II = 27, Depth = 171, loop 'CONV1_ROW_CONV1_COL_CONV1_FIL'
+<td align="left">Multiple burst reads of length 16 and bit width 32 in loop 'LOAD_B2'(<a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=136">conv_pool.cpp</a>) has been inferred on bundle 'B2mem'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (<a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=136">conv_pool.cpp</a>)
 </td>
 <td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
 </tr>
@@ -3759,142 +3506,106 @@ window.onload = function () { addSorting(); }
 <td align="left"><undefined></td>
 <td align="left">HLS Throughput Related</td>
 <td align="left">Accelerator.cnn_accel.Throughput</td>
-<td align="left">Static scalars and arrays declared inside a dataflow region will be treated like local variables (<a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=94">conv_pool.cpp</a>)
+<td align="left">Static scalars and arrays declared inside a dataflow region will be treated like local variables (<a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=95">conv_pool.cpp</a>)
 </td>
 <td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
 </tr>
 <tr>
-<td align="left">23</td>
-<td align="left">Throughput</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Throughput Related</td>
-<td align="left">Accelerator.cnn_accel.Throughput</td>
-<td align="left">The II Violation in module 'conv1' (loop 'CONV1_ROW_CONV1_COL_CONV1_FIL'): Unable to enforce a carried dependence constraint (II = 25, distance = 1, offset = 1) between bus read operation ('W1mem_addr_read_26', <a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=166">conv_pool.cpp</a>) on port 'W1mem' (<a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=166">conv_pool.cpp</a>) and bus read operation ('W1mem_addr_read', <a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=166">conv_pool.cpp</a>) on port 'W1mem' (<a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=166">conv_pool.cpp</a>).
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">35</td>
+<td align="left">44</td>
 <td align="left">Throughput</td>
 <td align="left">ADVISORY</td>
 <td align="left"><undefined></td>
 <td align="left">HLS Throughput Related</td>
 <td align="left">Accelerator.cnn_accel.Throughput</td>
-<td align="left">Pipelining result : Target II = 3, Final II = 3, Depth = 5, loop 'FLATTEN_VITIS_LOOP_252_1_VITIS_LOOP_253_2'
+<td align="left">Pipelining result : Target II = 3, Final II = 1, Depth = 22, function 'exp_generic<double>'
 </td>
 <td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
 </tr>
 <tr>
-<td align="left">26</td>
-<td align="left">Throughput</td>
-<td align="left">ADVISORY</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Throughput Related</td>
-<td align="left">Accelerator.cnn_accel.Throughput</td>
-<td align="left">Pipelining result : Target II = 3, Final II = 3, Depth = 13, loop 'POOL1_ROW_POOL1_COL_POOL1_CH'
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">40</td>
-<td align="left">Throughput</td>
-<td align="left">ADVISORY</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Throughput Related</td>
-<td align="left">Accelerator.cnn_accel.Throughput</td>
-<td align="left">Pipelining result : Target II = 3, Final II = 4, Depth = 10, loop 'FC2_LOOP'
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">42</td>
+<td align="left">59</td>
 <td align="left">Kernel</td>
-<td align="left">WARNING</td>
+<td align="left">ADVISORY</td>
 <td align="left"><undefined></td>
 <td align="left">HLS Kernel Related</td>
 <td align="left">Accelerator.cnn_accel.Kernel</td>
-<td align="left">The critical path in module 'fc2_Pipeline_FC2_LOOP' consists of the following:
-	'fadd' operation 32 bit ('acc2_1', <a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=288">conv_pool.cpp</a>-><a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=132">conv_pool.cpp</a>) [28]  (6.514 ns)
-	'store' operation 0 bit ('acc2_113_write_ln288', <a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=288">conv_pool.cpp</a>-><a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=132">conv_pool.cpp</a>) of variable 'acc2_1', <a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=288">conv_pool.cpp</a>-><a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=132">conv_pool.cpp</a> on local variable 'acc2_113' [31]  (1.324 ns)
-
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">43</td>
-<td align="left">Interface</td>
-<td align="left">ADVISORY</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Interface Related</td>
-<td align="left">Accelerator.cnn_accel.Interface</td>
-<td align="left">Design has inferred MAXI bursts and missed bursts, see Vitis HLS GUI synthesis summary report for detailed information.
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">27</td>
-<td align="left">Throughput</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Throughput Related</td>
-<td align="left">Accelerator.cnn_accel.Throughput</td>
-<td align="left">The II Violation in module 'conv2' (loop 'CONV2_ROW_CONV2_COL_CONV2_FIL'): Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 1) between bus read operation ('W2mem_addr_read_71', <a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=214">conv_pool.cpp</a>) on port 'W2mem' (<a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=214">conv_pool.cpp</a>) and bus read operation ('W2mem_addr_read', <a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=214">conv_pool.cpp</a>) on port 'W2mem' (<a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=214">conv_pool.cpp</a>).
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">30</td>
-<td align="left">Throughput</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Throughput Related</td>
-<td align="left">Accelerator.cnn_accel.Throughput</td>
-<td align="left">The II Violation in module 'conv2' (loop 'CONV2_ROW_CONV2_COL_CONV2_FIL'): Unable to enforce a carried dependence constraint (II = 6, distance = 1, offset = 1) between bus read operation ('W2mem_addr_read_71', <a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=214">conv_pool.cpp</a>) on port 'W2mem' (<a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=214">conv_pool.cpp</a>) and bus read operation ('W2mem_addr_read', <a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=214">conv_pool.cpp</a>) on port 'W2mem' (<a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=214">conv_pool.cpp</a>).
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">39</td>
-<td align="left">Kernel</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Kernel Related</td>
-<td align="left">Accelerator.cnn_accel.Kernel</td>
-<td align="left">Cannot meet target clock period from 'fadd' operation 32 bit ('acc2_1', <a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=288">conv_pool.cpp</a>-><a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=132">conv_pool.cpp</a>) to 'store' operation 0 bit ('acc2_113_write_ln288', <a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=288">conv_pool.cpp</a>-><a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=132">conv_pool.cpp</a>) of variable 'acc2_1', <a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=288">conv_pool.cpp</a>-><a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=132">conv_pool.cpp</a> on local variable 'acc2_113' (combination delay: 7.838 ns) to honor II or Latency constraint in region 'FC2_LOOP'.
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">13</td>
-<td align="left">Interface</td>
-<td align="left">ADVISORY</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Interface Related</td>
-<td align="left">Accelerator.cnn_accel.Interface</td>
-<td align="left">Multiple burst reads of length 16 and bit width 32 in loop 'CONV2_FIL'(<a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=206">conv_pool.cpp</a>) has been inferred on bundle 'B2mem'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (<a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=206">conv_pool.cpp</a>)
+<td align="left">**** Estimated Fmax: 127.58 MHz
 </td>
 <td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
 </tr>
 <tr>
 <td align="left">32</td>
+<td align="left">Kernel</td>
+<td align="left">WARNING</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Kernel Related</td>
+<td align="left">Accelerator.cnn_accel.Kernel</td>
+<td align="left">The II Violation in module 'conv1' (loop 'CONV1_ROW_CONV1_COL_CONV1_FIL'): Unable to schedule 'load' operation 32 bit ('local_img_load_15', <a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=213">conv_pool.cpp</a>) on array 'local_img' due to limited memory ports (II = 8). Please consider using a memory core with more ports or partitioning the array 'local_img'.
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">18</td>
+<td align="left">Interface</td>
+<td align="left">ADVISORY</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Interface Related</td>
+<td align="left">Accelerator.cnn_accel.Interface</td>
+<td align="left">Multiple burst reads of length 230400 and bit width 32 in loop 'LOAD_IMG_ROWS'(<a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=196">conv_pool.cpp</a>) has been inferred on bundle 'IMGmem'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (<a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=196">conv_pool.cpp</a>)
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">30</td>
+<td align="left">Kernel</td>
+<td align="left">WARNING</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Kernel Related</td>
+<td align="left">Accelerator.cnn_accel.Kernel</td>
+<td align="left">The II Violation in module 'conv1' (loop 'CONV1_ROW_CONV1_COL_CONV1_FIL'): Unable to schedule 'load' operation 32 bit ('local_img_load_11', <a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=213">conv_pool.cpp</a>) on array 'local_img' due to limited memory ports (II = 6). Please consider using a memory core with more ports or partitioning the array 'local_img'.
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">6</td>
 <td align="left">Throughput</td>
 <td align="left">WARNING</td>
 <td align="left"><undefined></td>
 <td align="left">HLS Throughput Related</td>
 <td align="left">Accelerator.cnn_accel.Throughput</td>
-<td align="left">The II Violation in module 'conv2' (loop 'CONV2_ROW_CONV2_COL_CONV2_FIL'): Unable to enforce a carried dependence constraint (II = 71, distance = 1, offset = 1) between bus read operation ('W2mem_addr_read_71', <a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=214">conv_pool.cpp</a>) on port 'W2mem' (<a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=214">conv_pool.cpp</a>) and bus read operation ('W2mem_addr_read', <a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=214">conv_pool.cpp</a>) on port 'W2mem' (<a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=214">conv_pool.cpp</a>).
+<td align="left">Static scalars and arrays declared inside a dataflow region will be treated like local variables (<a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=98">conv_pool.cpp</a>)
 </td>
 <td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
 </tr>
 <tr>
 <td align="left">45</td>
-<td align="left">Kernel</td>
+<td align="left">Throughput</td>
 <td align="left">ADVISORY</td>
 <td align="left"><undefined></td>
-<td align="left">HLS Kernel Related</td>
-<td align="left">Accelerator.cnn_accel.Kernel</td>
-<td align="left">**** Estimated Fmax: 122.95 MHz
+<td align="left">HLS Throughput Related</td>
+<td align="left">Accelerator.cnn_accel.Throughput</td>
+<td align="left">Pipelining result : Target II = 3, Final II = 3, Depth = 62, function 'generic_tanh<float>'
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">57</td>
+<td align="left">Throughput</td>
+<td align="left">ADVISORY</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Throughput Related</td>
+<td align="left">Accelerator.cnn_accel.Throughput</td>
+<td align="left">Pipelining result : Target II = 3, Final II = 2, Depth = 2, loop 'LOAD_FC2W'
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">13</td>
+<td align="left">Throughput</td>
+<td align="left">WARNING</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Throughput Related</td>
+<td align="left">Accelerator.cnn_accel.Throughput</td>
+<td align="left">Static scalars and arrays declared inside a dataflow region will be treated like local variables (<a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=108">conv_pool.cpp</a>)
 </td>
 <td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
 </tr>
@@ -3905,29 +3616,472 @@ window.onload = function () { addSorting(); }
 <td align="left"><undefined></td>
 <td align="left">HLS Throughput Related</td>
 <td align="left">Accelerator.cnn_accel.Throughput</td>
-<td align="left">Static scalars and arrays declared inside a dataflow region will be treated like local variables (<a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=96">conv_pool.cpp</a>)
+<td align="left">Static scalars and arrays declared inside a dataflow region will be treated like local variables (<a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=97">conv_pool.cpp</a>)
 </td>
 <td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
 </tr>
 <tr>
-<td align="left">20</td>
-<td align="left">Throughput</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Throughput Related</td>
-<td align="left">Accelerator.cnn_accel.Throughput</td>
-<td align="left">The II Violation in module 'conv1' (loop 'CONV1_ROW_CONV1_COL_CONV1_FIL'): Unable to enforce a carried dependence constraint (II = 5, distance = 1, offset = 1) between bus read operation ('W1mem_addr_read_26', <a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=166">conv_pool.cpp</a>) on port 'W1mem' (<a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=166">conv_pool.cpp</a>) and bus read operation ('W1mem_addr_read', <a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=166">conv_pool.cpp</a>) on port 'W1mem' (<a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=166">conv_pool.cpp</a>).
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">16</td>
+<td align="left">24</td>
 <td align="left">Interface</td>
 <td align="left">ADVISORY</td>
 <td align="left"><undefined></td>
 <td align="left">HLS Interface Related</td>
 <td align="left">Accelerator.cnn_accel.Interface</td>
-<td align="left">Multiple burst reads of length 32 and bit width 32 in loop 'FC2_LOOP'(<a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=286">conv_pool.cpp</a>) has been inferred on bundle 'W4mem'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (<a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=286">conv_pool.cpp</a>)
+<td align="left">Multiple burst reads of length 32 and bit width 32 in loop 'LOAD_FC1B'(<a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=144">conv_pool.cpp</a>) has been inferred on bundle 'B3mem'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (<a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=144">conv_pool.cpp</a>)
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">10</td>
+<td align="left">Throughput</td>
+<td align="left">WARNING</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Throughput Related</td>
+<td align="left">Accelerator.cnn_accel.Throughput</td>
+<td align="left">Static scalars and arrays declared inside a dataflow region will be treated like local variables (<a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=105">conv_pool.cpp</a>)
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">33</td>
+<td align="left">Throughput</td>
+<td align="left">ADVISORY</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Throughput Related</td>
+<td align="left">Accelerator.cnn_accel.Throughput</td>
+<td align="left">Pipelining result : Target II = 3, Final II = 9, Depth = 145, loop 'CONV1_ROW_CONV1_COL_CONV1_FIL'
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">55</td>
+<td align="left">Throughput</td>
+<td align="left">ADVISORY</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Throughput Related</td>
+<td align="left">Accelerator.cnn_accel.Throughput</td>
+<td align="left">Pipelining result : Target II = 3, Final II = 3, Depth = 3, loop 'LOAD_FC1W'
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">16</td>
+<td align="left">Throughput</td>
+<td align="left">WARNING</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Throughput Related</td>
+<td align="left">Accelerator.cnn_accel.Throughput</td>
+<td align="left">Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region (<a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=165">conv_pool.cpp</a>)
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">27</td>
+<td align="left">Kernel</td>
+<td align="left">WARNING</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Kernel Related</td>
+<td align="left">Accelerator.cnn_accel.Kernel</td>
+<td align="left">The II Violation in module 'conv1' (loop 'CONV1_ROW_CONV1_COL_CONV1_FIL'): Unable to schedule 'load' operation 32 bit ('local_img_load_5', <a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=213">conv_pool.cpp</a>) on array 'local_img' due to limited memory ports (II = 3). Please consider using a memory core with more ports or partitioning the array 'local_img'.
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">56</td>
+<td align="left">Throughput</td>
+<td align="left">ADVISORY</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Throughput Related</td>
+<td align="left">Accelerator.cnn_accel.Throughput</td>
+<td align="left">Pipelining result : Target II = 3, Final II = 2, Depth = 2, loop 'LOAD_FC1B'
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">48</td>
+<td align="left">Throughput</td>
+<td align="left">ADVISORY</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Throughput Related</td>
+<td align="left">Accelerator.cnn_accel.Throughput</td>
+<td align="left">Pipelining result : Target II = 3, Final II = 4, Depth = 10, loop 'FC2_LOOP'
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">37</td>
+<td align="left">Kernel</td>
+<td align="left">WARNING</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Kernel Related</td>
+<td align="left">Accelerator.cnn_accel.Kernel</td>
+<td align="left">The II Violation in module 'conv2' (loop 'CONV2_ROW_CONV2_COL_CONV2_FIL'): Unable to schedule 'load' operation 32 bit ('feat1_p_load_9', <a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=261">conv_pool.cpp</a>) on array 'feat1_p' due to limited memory ports (II = 5). Please consider using a memory core with more ports or partitioning the array 'feat1_p'.
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">2</td>
+<td align="left">Throughput</td>
+<td align="left">WARNING</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Throughput Related</td>
+<td align="left">Accelerator.cnn_accel.Throughput</td>
+<td align="left">Static scalars and arrays declared inside a dataflow region will be treated like local variables (<a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=94">conv_pool.cpp</a>)
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">26</td>
+<td align="left">Throughput</td>
+<td align="left">ADVISORY</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Throughput Related</td>
+<td align="left">Accelerator.cnn_accel.Throughput</td>
+<td align="left">Pipelining result : Target II = 3, Final II = 3, Depth = 3, loop 'LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH'
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">47</td>
+<td align="left">Kernel</td>
+<td align="left">WARNING</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Kernel Related</td>
+<td align="left">Accelerator.cnn_accel.Kernel</td>
+<td align="left">Cannot meet target clock period from 'fadd' operation 32 bit ('acc2', <a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=345">conv_pool.cpp</a>) to 'store' operation 0 bit ('acc2_1_write_ln342', <a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=342">conv_pool.cpp</a>) of variable 'acc2', <a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=345">conv_pool.cpp</a> on local variable 'acc2', <a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=342">conv_pool.cpp</a> (combination delay: 7.838 ns) to honor II or Latency constraint in region 'FC2_LOOP'.
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">40</td>
+<td align="left">Kernel</td>
+<td align="left">WARNING</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Kernel Related</td>
+<td align="left">Accelerator.cnn_accel.Kernel</td>
+<td align="left">The II Violation in module 'conv2' (loop 'CONV2_ROW_CONV2_COL_CONV2_FIL'): Unable to schedule 'load' operation 32 bit ('feat1_p_load_15', <a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=261">conv_pool.cpp</a>) on array 'feat1_p' due to limited memory ports (II = 8). Please consider using a memory core with more ports or partitioning the array 'feat1_p'.
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">8</td>
+<td align="left">Throughput</td>
+<td align="left">WARNING</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Throughput Related</td>
+<td align="left">Accelerator.cnn_accel.Throughput</td>
+<td align="left">Static scalars and arrays declared inside a dataflow region will be treated like local variables (<a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=103">conv_pool.cpp</a>)
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">4</td>
+<td align="left">Throughput</td>
+<td align="left">WARNING</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Throughput Related</td>
+<td align="left">Accelerator.cnn_accel.Throughput</td>
+<td align="left">Static scalars and arrays declared inside a dataflow region will be treated like local variables (<a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=96">conv_pool.cpp</a>)
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">42</td>
+<td align="left">Throughput</td>
+<td align="left">ADVISORY</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Throughput Related</td>
+<td align="left">Accelerator.cnn_accel.Throughput</td>
+<td align="left">Pipelining result : Target II = 3, Final II = 3, Depth = 13, loop 'POOL2_ROW_POOL2_COL_POOL2_CH'
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">38</td>
+<td align="left">Kernel</td>
+<td align="left">WARNING</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Kernel Related</td>
+<td align="left">Accelerator.cnn_accel.Kernel</td>
+<td align="left">The II Violation in module 'conv2' (loop 'CONV2_ROW_CONV2_COL_CONV2_FIL'): Unable to schedule 'load' operation 32 bit ('feat1_p_load_11', <a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=261">conv_pool.cpp</a>) on array 'feat1_p' due to limited memory ports (II = 6). Please consider using a memory core with more ports or partitioning the array 'feat1_p'.
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">19</td>
+<td align="left">Interface</td>
+<td align="left">ADVISORY</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Interface Related</td>
+<td align="left">Accelerator.cnn_accel.Interface</td>
+<td align="left">Multiple burst reads of length 216 and bit width 32 in loop 'LOAD_W1'(<a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=124">conv_pool.cpp</a>) has been inferred on bundle 'W1mem'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (<a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=124">conv_pool.cpp</a>)
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">15</td>
+<td align="left">Throughput</td>
+<td align="left">WARNING</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Throughput Related</td>
+<td align="left">Accelerator.cnn_accel.Throughput</td>
+<td align="left">Static scalars and arrays declared inside a dataflow region will be treated like local variables (<a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=110">conv_pool.cpp</a>)
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">31</td>
+<td align="left">Kernel</td>
+<td align="left">WARNING</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Kernel Related</td>
+<td align="left">Accelerator.cnn_accel.Kernel</td>
+<td align="left">The II Violation in module 'conv1' (loop 'CONV1_ROW_CONV1_COL_CONV1_FIL'): Unable to schedule 'load' operation 32 bit ('local_img_load_13', <a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=213">conv_pool.cpp</a>) on array 'local_img' due to limited memory ports (II = 7). Please consider using a memory core with more ports or partitioning the array 'local_img'.
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">25</td>
+<td align="left">Interface</td>
+<td align="left">ADVISORY</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Interface Related</td>
+<td align="left">Accelerator.cnn_accel.Interface</td>
+<td align="left">Multiple burst reads of length 32 and bit width 32 in loop 'LOAD_FC2W'(<a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=148">conv_pool.cpp</a>) has been inferred on bundle 'W4mem'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (<a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=148">conv_pool.cpp</a>)
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">54</td>
+<td align="left">Throughput</td>
+<td align="left">ADVISORY</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Throughput Related</td>
+<td align="left">Accelerator.cnn_accel.Throughput</td>
+<td align="left">Pipelining result : Target II = 3, Final II = 2, Depth = 2, loop 'LOAD_B2'
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">23</td>
+<td align="left">Interface</td>
+<td align="left">ADVISORY</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Interface Related</td>
+<td align="left">Accelerator.cnn_accel.Interface</td>
+<td align="left">Multiple burst reads of length 2316288 and bit width 32 in loop 'LOAD_FC1W'(<a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=140">conv_pool.cpp</a>) has been inferred on bundle 'W3mem'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (<a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=140">conv_pool.cpp</a>)
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">51</td>
+<td align="left">Throughput</td>
+<td align="left">ADVISORY</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Throughput Related</td>
+<td align="left">Accelerator.cnn_accel.Throughput</td>
+<td align="left">Pipelining result : Target II = 3, Final II = 2, Depth = 2, loop 'LOAD_W1'
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">43</td>
+<td align="left">Throughput</td>
+<td align="left">ADVISORY</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Throughput Related</td>
+<td align="left">Accelerator.cnn_accel.Throughput</td>
+<td align="left">Pipelining result : Target II = 3, Final II = 3, Depth = 6, loop 'FLATTEN_VITIS_LOOP_309_1_VITIS_LOOP_310_2'
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">35</td>
+<td align="left">Kernel</td>
+<td align="left">WARNING</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Kernel Related</td>
+<td align="left">Accelerator.cnn_accel.Kernel</td>
+<td align="left">The II Violation in module 'conv2' (loop 'CONV2_ROW_CONV2_COL_CONV2_FIL'): Unable to schedule 'load' operation 32 bit ('feat1_p_load_5', <a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=261">conv_pool.cpp</a>) on array 'feat1_p' due to limited memory ports (II = 3). Please consider using a memory core with more ports or partitioning the array 'feat1_p'.
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">28</td>
+<td align="left">Kernel</td>
+<td align="left">WARNING</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Kernel Related</td>
+<td align="left">Accelerator.cnn_accel.Kernel</td>
+<td align="left">The II Violation in module 'conv1' (loop 'CONV1_ROW_CONV1_COL_CONV1_FIL'): Unable to schedule 'load' operation 32 bit ('local_img_load_7', <a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=213">conv_pool.cpp</a>) on array 'local_img' due to limited memory ports (II = 4). Please consider using a memory core with more ports or partitioning the array 'local_img'.
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">58</td>
+<td align="left">Interface</td>
+<td align="left">ADVISORY</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Interface Related</td>
+<td align="left">Accelerator.cnn_accel.Interface</td>
+<td align="left">Design has inferred MAXI bursts and missed bursts, see Vitis HLS GUI synthesis summary report for detailed information.
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">53</td>
+<td align="left">Throughput</td>
+<td align="left">ADVISORY</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Throughput Related</td>
+<td align="left">Accelerator.cnn_accel.Throughput</td>
+<td align="left">Pipelining result : Target II = 3, Final II = 2, Depth = 2, loop 'LOAD_W2'
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">17</td>
+<td align="left">Throughput</td>
+<td align="left">WARNING</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Throughput Related</td>
+<td align="left">Accelerator.cnn_accel.Throughput</td>
+<td align="left">Dataflow form checks found 16 issue(s) in file ../hls_files/conv_pool.cpp
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">12</td>
+<td align="left">Throughput</td>
+<td align="left">WARNING</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Throughput Related</td>
+<td align="left">Accelerator.cnn_accel.Throughput</td>
+<td align="left">Static scalars and arrays declared inside a dataflow region will be treated like local variables (<a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=107">conv_pool.cpp</a>)
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">39</td>
+<td align="left">Kernel</td>
+<td align="left">WARNING</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Kernel Related</td>
+<td align="left">Accelerator.cnn_accel.Kernel</td>
+<td align="left">The II Violation in module 'conv2' (loop 'CONV2_ROW_CONV2_COL_CONV2_FIL'): Unable to schedule 'load' operation 32 bit ('feat1_p_load_13', <a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=261">conv_pool.cpp</a>) on array 'feat1_p' due to limited memory ports (II = 7). Please consider using a memory core with more ports or partitioning the array 'feat1_p'.
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">52</td>
+<td align="left">Throughput</td>
+<td align="left">ADVISORY</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Throughput Related</td>
+<td align="left">Accelerator.cnn_accel.Throughput</td>
+<td align="left">Pipelining result : Target II = 3, Final II = 2, Depth = 2, loop 'LOAD_B1'
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">20</td>
+<td align="left">Interface</td>
+<td align="left">ADVISORY</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Interface Related</td>
+<td align="left">Accelerator.cnn_accel.Interface</td>
+<td align="left">Multiple burst reads of length 8 and bit width 32 in loop 'LOAD_B1'(<a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=128">conv_pool.cpp</a>) has been inferred on bundle 'B1mem'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (<a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=128">conv_pool.cpp</a>)
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">7</td>
+<td align="left">Throughput</td>
+<td align="left">WARNING</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Throughput Related</td>
+<td align="left">Accelerator.cnn_accel.Throughput</td>
+<td align="left">Static scalars and arrays declared inside a dataflow region will be treated like local variables (<a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=99">conv_pool.cpp</a>)
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">34</td>
+<td align="left">Throughput</td>
+<td align="left">ADVISORY</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Throughput Related</td>
+<td align="left">Accelerator.cnn_accel.Throughput</td>
+<td align="left">Pipelining result : Target II = 3, Final II = 3, Depth = 13, loop 'POOL1_ROW_POOL1_COL_POOL1_CH'
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">41</td>
+<td align="left">Throughput</td>
+<td align="left">ADVISORY</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Throughput Related</td>
+<td align="left">Accelerator.cnn_accel.Throughput</td>
+<td align="left">Pipelining result : Target II = 3, Final II = 9, Depth = 370, loop 'CONV2_ROW_CONV2_COL_CONV2_FIL'
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">36</td>
+<td align="left">Kernel</td>
+<td align="left">WARNING</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Kernel Related</td>
+<td align="left">Accelerator.cnn_accel.Kernel</td>
+<td align="left">The II Violation in module 'conv2' (loop 'CONV2_ROW_CONV2_COL_CONV2_FIL'): Unable to schedule 'load' operation 32 bit ('feat1_p_load_7', <a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=261">conv_pool.cpp</a>) on array 'feat1_p' due to limited memory ports (II = 4). Please consider using a memory core with more ports or partitioning the array 'feat1_p'.
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">50</td>
+<td align="left">Kernel</td>
+<td align="left">WARNING</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Kernel Related</td>
+<td align="left">Accelerator.cnn_accel.Kernel</td>
+<td align="left">The critical path in module 'fc2_Pipeline_FC2_LOOP' consists of the following:
+	'fadd' operation 32 bit ('acc2', <a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=345">conv_pool.cpp</a>) [90]  (6.514 ns)
+	'store' operation 0 bit ('acc2_1_write_ln342', <a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=342">conv_pool.cpp</a>) of variable 'acc2', <a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=345">conv_pool.cpp</a> on local variable 'acc2', <a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=342">conv_pool.cpp</a> [92]  (1.324 ns)
+
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">29</td>
+<td align="left">Kernel</td>
+<td align="left">WARNING</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Kernel Related</td>
+<td align="left">Accelerator.cnn_accel.Kernel</td>
+<td align="left">The II Violation in module 'conv1' (loop 'CONV1_ROW_CONV1_COL_CONV1_FIL'): Unable to schedule 'load' operation 32 bit ('local_img_load_9', <a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=213">conv_pool.cpp</a>) on array 'local_img' due to limited memory ports (II = 5). Please consider using a memory core with more ports or partitioning the array 'local_img'.
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">21</td>
+<td align="left">Interface</td>
+<td align="left">ADVISORY</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Interface Related</td>
+<td align="left">Accelerator.cnn_accel.Interface</td>
+<td align="left">Multiple burst reads of length 1152 and bit width 32 in loop 'LOAD_W2'(<a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=132">conv_pool.cpp</a>) has been inferred on bundle 'W2mem'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (<a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=132">conv_pool.cpp</a>)
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">1</td>
+<td align="left">Throughput</td>
+<td align="left">WARNING</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Throughput Related</td>
+<td align="left">Accelerator.cnn_accel.Throughput</td>
+<td align="left">Static scalars and arrays declared inside a dataflow region will be treated like local variables (<a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=93">conv_pool.cpp</a>)
 </td>
 <td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
 </tr>

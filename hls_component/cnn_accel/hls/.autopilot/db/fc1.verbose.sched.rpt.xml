@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'fc1'" level="0">
-<item name = "Date">Tue Jul  8 00:39:56 2025
+<item name = "Date">Tue Jul  8 02:25:43 2025
 </item>
 <item name = "Version">2025.1 (Build 6135595 on May 21 2025)</item>
 <item name = "Project">cnn_accel</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00 ns, 7.300 ns, 2.70 ns</column>
+<column name="ap_clk">10.00 ns, 7.287 ns, 2.70 ns</column>
 </table>
 </item>
 </section>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">25481289, 25481289, 0.255 sec, 0.255 sec, 25481289, 25481289, no</column>
+<column name="">25481217, 25481217, 0.255 sec, 0.255 sec, 25481217, 25481217, no</column>
 </table>
 </item>
 <item name = "Detail">
@@ -35,8 +35,8 @@
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- FC1_OUT">25481281, 25481281, 796290, -, -, 32, no</column>
-<column name=" + VITIS_LOOP_270_1">796224, 796224, 11, -, -, 72384, no</column>
+<column name="- FC1_OUT">25481216, 25481216, 796288, -, -, 32, no</column>
+<column name=" + VITIS_LOOP_327_1">796224, 796224, 11, -, -, 72384, no</column>
 </table>
 </item>
 </section>

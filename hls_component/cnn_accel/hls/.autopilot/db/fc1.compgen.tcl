@@ -1,8 +1,7 @@
 # This script segment is generated automatically by AutoPilot
 
-set name cnn_accel_faddfsub_32ns_32ns_32_5_full_dsp_1
 if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler $name BINDTYPE {op} TYPE {fadd} IMPL {fulldsp} LATENCY 4 ALLOW_PRAGMA 1
+	::AP::rtl_comp_handler cnn_accel_sparsemux_65_5_32_1_1 BINDTYPE {op} TYPE {sparsemux} IMPL {compactencoding_dontcare}
 }
 
 
@@ -17,7 +16,159 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 121 \
+    id 1624 \
+    name fc1_w_local \
+    reset_level 1 \
+    sync_rst true \
+    dir I \
+    corename fc1_w_local \
+    op interface \
+    ports { fc1_w_local_address0 { O 19 vector } fc1_w_local_ce0 { O 1 bit } fc1_w_local_q0 { I 32 vector } } \
+} "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'fc1_w_local'"
+}
+}
+
+
+# XIL_BRAM:
+if {${::AESL::PGuard_autoexp_gen}} {
+if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
+eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
+    id 1625 \
+    name fc1_w_local_35 \
+    reset_level 1 \
+    sync_rst true \
+    dir I \
+    corename fc1_w_local_35 \
+    op interface \
+    ports { fc1_w_local_35_address0 { O 19 vector } fc1_w_local_35_ce0 { O 1 bit } fc1_w_local_35_q0 { I 32 vector } } \
+} "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'fc1_w_local_35'"
+}
+}
+
+
+# XIL_BRAM:
+if {${::AESL::PGuard_autoexp_gen}} {
+if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
+eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
+    id 1626 \
+    name fc1_w_local_36 \
+    reset_level 1 \
+    sync_rst true \
+    dir I \
+    corename fc1_w_local_36 \
+    op interface \
+    ports { fc1_w_local_36_address0 { O 19 vector } fc1_w_local_36_ce0 { O 1 bit } fc1_w_local_36_q0 { I 32 vector } } \
+} "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'fc1_w_local_36'"
+}
+}
+
+
+# XIL_BRAM:
+if {${::AESL::PGuard_autoexp_gen}} {
+if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
+eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
+    id 1627 \
+    name fc1_w_local_37 \
+    reset_level 1 \
+    sync_rst true \
+    dir I \
+    corename fc1_w_local_37 \
+    op interface \
+    ports { fc1_w_local_37_address0 { O 19 vector } fc1_w_local_37_ce0 { O 1 bit } fc1_w_local_37_q0 { I 32 vector } } \
+} "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'fc1_w_local_37'"
+}
+}
+
+
+# XIL_BRAM:
+if {${::AESL::PGuard_autoexp_gen}} {
+if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
+eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
+    id 1628 \
+    name fc1_w_local_38 \
+    reset_level 1 \
+    sync_rst true \
+    dir I \
+    corename fc1_w_local_38 \
+    op interface \
+    ports { fc1_w_local_38_address0 { O 19 vector } fc1_w_local_38_ce0 { O 1 bit } fc1_w_local_38_q0 { I 32 vector } } \
+} "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'fc1_w_local_38'"
+}
+}
+
+
+# XIL_BRAM:
+if {${::AESL::PGuard_autoexp_gen}} {
+if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
+eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
+    id 1629 \
+    name fc1_w_local_39 \
+    reset_level 1 \
+    sync_rst true \
+    dir I \
+    corename fc1_w_local_39 \
+    op interface \
+    ports { fc1_w_local_39_address0 { O 19 vector } fc1_w_local_39_ce0 { O 1 bit } fc1_w_local_39_q0 { I 32 vector } } \
+} "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'fc1_w_local_39'"
+}
+}
+
+
+# XIL_BRAM:
+if {${::AESL::PGuard_autoexp_gen}} {
+if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
+eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
+    id 1630 \
+    name fc1_w_local_40 \
+    reset_level 1 \
+    sync_rst true \
+    dir I \
+    corename fc1_w_local_40 \
+    op interface \
+    ports { fc1_w_local_40_address0 { O 19 vector } fc1_w_local_40_ce0 { O 1 bit } fc1_w_local_40_q0 { I 32 vector } } \
+} "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'fc1_w_local_40'"
+}
+}
+
+
+# XIL_BRAM:
+if {${::AESL::PGuard_autoexp_gen}} {
+if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
+eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
+    id 1631 \
+    name fc1_w_local_41 \
+    reset_level 1 \
+    sync_rst true \
+    dir I \
+    corename fc1_w_local_41 \
+    op interface \
+    ports { fc1_w_local_41_address0 { O 19 vector } fc1_w_local_41_ce0 { O 1 bit } fc1_w_local_41_q0 { I 32 vector } } \
+} "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'fc1_w_local_41'"
+}
+}
+
+
+# XIL_BRAM:
+if {${::AESL::PGuard_autoexp_gen}} {
+if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
+eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
+    id 1632 \
     name vec1 \
     reset_level 1 \
     sync_rst true \
@@ -36,7 +187,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 122 \
+    id 1633 \
     name vec2 \
     reset_level 1 \
     sync_rst true \
@@ -54,60 +205,480 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 117 \
-    name W3mem \
+    id 1634 \
+    name fc1_b_local \
     type other \
     dir I \
     reset_level 1 \
     sync_rst true \
-    corename dc_W3mem \
+    corename dc_fc1_b_local \
     op interface \
-    ports { m_axi_W3mem_0_AWVALID { O 1 bit } m_axi_W3mem_0_AWREADY { I 1 bit } m_axi_W3mem_0_AWADDR { O 64 vector } m_axi_W3mem_0_AWID { O 1 vector } m_axi_W3mem_0_AWLEN { O 32 vector } m_axi_W3mem_0_AWSIZE { O 3 vector } m_axi_W3mem_0_AWBURST { O 2 vector } m_axi_W3mem_0_AWLOCK { O 2 vector } m_axi_W3mem_0_AWCACHE { O 4 vector } m_axi_W3mem_0_AWPROT { O 3 vector } m_axi_W3mem_0_AWQOS { O 4 vector } m_axi_W3mem_0_AWREGION { O 4 vector } m_axi_W3mem_0_AWUSER { O 1 vector } m_axi_W3mem_0_WVALID { O 1 bit } m_axi_W3mem_0_WREADY { I 1 bit } m_axi_W3mem_0_WDATA { O 32 vector } m_axi_W3mem_0_WSTRB { O 4 vector } m_axi_W3mem_0_WLAST { O 1 bit } m_axi_W3mem_0_WID { O 1 vector } m_axi_W3mem_0_WUSER { O 1 vector } m_axi_W3mem_0_ARVALID { O 1 bit } m_axi_W3mem_0_ARREADY { I 1 bit } m_axi_W3mem_0_ARADDR { O 64 vector } m_axi_W3mem_0_ARID { O 1 vector } m_axi_W3mem_0_ARLEN { O 32 vector } m_axi_W3mem_0_ARSIZE { O 3 vector } m_axi_W3mem_0_ARBURST { O 2 vector } m_axi_W3mem_0_ARLOCK { O 2 vector } m_axi_W3mem_0_ARCACHE { O 4 vector } m_axi_W3mem_0_ARPROT { O 3 vector } m_axi_W3mem_0_ARQOS { O 4 vector } m_axi_W3mem_0_ARREGION { O 4 vector } m_axi_W3mem_0_ARUSER { O 1 vector } m_axi_W3mem_0_RVALID { I 1 bit } m_axi_W3mem_0_RREADY { O 1 bit } m_axi_W3mem_0_RDATA { I 32 vector } m_axi_W3mem_0_RLAST { I 1 bit } m_axi_W3mem_0_RID { I 1 vector } m_axi_W3mem_0_RFIFONUM { I 9 vector } m_axi_W3mem_0_RUSER { I 1 vector } m_axi_W3mem_0_RRESP { I 2 vector } m_axi_W3mem_0_BVALID { I 1 bit } m_axi_W3mem_0_BREADY { O 1 bit } m_axi_W3mem_0_BRESP { I 2 vector } m_axi_W3mem_0_BID { I 1 vector } m_axi_W3mem_0_BUSER { I 1 vector } } \
+    ports { fc1_b_local { I 32 vector } } \
 } "
 }
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 118 \
-    name FC1_W \
+    id 1635 \
+    name fc1_b_local_42 \
     type other \
     dir I \
     reset_level 1 \
     sync_rst true \
-    corename dc_FC1_W \
+    corename dc_fc1_b_local_42 \
     op interface \
-    ports { FC1_W { I 64 vector } } \
+    ports { fc1_b_local_42 { I 32 vector } } \
 } "
 }
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 119 \
-    name B3mem \
+    id 1636 \
+    name fc1_b_local_43 \
     type other \
     dir I \
     reset_level 1 \
     sync_rst true \
-    corename dc_B3mem \
+    corename dc_fc1_b_local_43 \
     op interface \
-    ports { m_axi_B3mem_0_AWVALID { O 1 bit } m_axi_B3mem_0_AWREADY { I 1 bit } m_axi_B3mem_0_AWADDR { O 64 vector } m_axi_B3mem_0_AWID { O 1 vector } m_axi_B3mem_0_AWLEN { O 32 vector } m_axi_B3mem_0_AWSIZE { O 3 vector } m_axi_B3mem_0_AWBURST { O 2 vector } m_axi_B3mem_0_AWLOCK { O 2 vector } m_axi_B3mem_0_AWCACHE { O 4 vector } m_axi_B3mem_0_AWPROT { O 3 vector } m_axi_B3mem_0_AWQOS { O 4 vector } m_axi_B3mem_0_AWREGION { O 4 vector } m_axi_B3mem_0_AWUSER { O 1 vector } m_axi_B3mem_0_WVALID { O 1 bit } m_axi_B3mem_0_WREADY { I 1 bit } m_axi_B3mem_0_WDATA { O 32 vector } m_axi_B3mem_0_WSTRB { O 4 vector } m_axi_B3mem_0_WLAST { O 1 bit } m_axi_B3mem_0_WID { O 1 vector } m_axi_B3mem_0_WUSER { O 1 vector } m_axi_B3mem_0_ARVALID { O 1 bit } m_axi_B3mem_0_ARREADY { I 1 bit } m_axi_B3mem_0_ARADDR { O 64 vector } m_axi_B3mem_0_ARID { O 1 vector } m_axi_B3mem_0_ARLEN { O 32 vector } m_axi_B3mem_0_ARSIZE { O 3 vector } m_axi_B3mem_0_ARBURST { O 2 vector } m_axi_B3mem_0_ARLOCK { O 2 vector } m_axi_B3mem_0_ARCACHE { O 4 vector } m_axi_B3mem_0_ARPROT { O 3 vector } m_axi_B3mem_0_ARQOS { O 4 vector } m_axi_B3mem_0_ARREGION { O 4 vector } m_axi_B3mem_0_ARUSER { O 1 vector } m_axi_B3mem_0_RVALID { I 1 bit } m_axi_B3mem_0_RREADY { O 1 bit } m_axi_B3mem_0_RDATA { I 32 vector } m_axi_B3mem_0_RLAST { I 1 bit } m_axi_B3mem_0_RID { I 1 vector } m_axi_B3mem_0_RFIFONUM { I 9 vector } m_axi_B3mem_0_RUSER { I 1 vector } m_axi_B3mem_0_RRESP { I 2 vector } m_axi_B3mem_0_BVALID { I 1 bit } m_axi_B3mem_0_BREADY { O 1 bit } m_axi_B3mem_0_BRESP { I 2 vector } m_axi_B3mem_0_BID { I 1 vector } m_axi_B3mem_0_BUSER { I 1 vector } } \
+    ports { fc1_b_local_43 { I 32 vector } } \
 } "
 }
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 120 \
-    name FC1_B \
+    id 1637 \
+    name fc1_b_local_44 \
     type other \
     dir I \
     reset_level 1 \
     sync_rst true \
-    corename dc_FC1_B \
+    corename dc_fc1_b_local_44 \
     op interface \
-    ports { FC1_B { I 64 vector } } \
+    ports { fc1_b_local_44 { I 32 vector } } \
+} "
+}
+
+# Direct connection:
+if {${::AESL::PGuard_autoexp_gen}} {
+eval "cg_default_interface_gen_dc { \
+    id 1638 \
+    name fc1_b_local_45 \
+    type other \
+    dir I \
+    reset_level 1 \
+    sync_rst true \
+    corename dc_fc1_b_local_45 \
+    op interface \
+    ports { fc1_b_local_45 { I 32 vector } } \
+} "
+}
+
+# Direct connection:
+if {${::AESL::PGuard_autoexp_gen}} {
+eval "cg_default_interface_gen_dc { \
+    id 1639 \
+    name fc1_b_local_46 \
+    type other \
+    dir I \
+    reset_level 1 \
+    sync_rst true \
+    corename dc_fc1_b_local_46 \
+    op interface \
+    ports { fc1_b_local_46 { I 32 vector } } \
+} "
+}
+
+# Direct connection:
+if {${::AESL::PGuard_autoexp_gen}} {
+eval "cg_default_interface_gen_dc { \
+    id 1640 \
+    name fc1_b_local_47 \
+    type other \
+    dir I \
+    reset_level 1 \
+    sync_rst true \
+    corename dc_fc1_b_local_47 \
+    op interface \
+    ports { fc1_b_local_47 { I 32 vector } } \
+} "
+}
+
+# Direct connection:
+if {${::AESL::PGuard_autoexp_gen}} {
+eval "cg_default_interface_gen_dc { \
+    id 1641 \
+    name fc1_b_local_48 \
+    type other \
+    dir I \
+    reset_level 1 \
+    sync_rst true \
+    corename dc_fc1_b_local_48 \
+    op interface \
+    ports { fc1_b_local_48 { I 32 vector } } \
+} "
+}
+
+# Direct connection:
+if {${::AESL::PGuard_autoexp_gen}} {
+eval "cg_default_interface_gen_dc { \
+    id 1642 \
+    name fc1_b_local_49 \
+    type other \
+    dir I \
+    reset_level 1 \
+    sync_rst true \
+    corename dc_fc1_b_local_49 \
+    op interface \
+    ports { fc1_b_local_49 { I 32 vector } } \
+} "
+}
+
+# Direct connection:
+if {${::AESL::PGuard_autoexp_gen}} {
+eval "cg_default_interface_gen_dc { \
+    id 1643 \
+    name fc1_b_local_50 \
+    type other \
+    dir I \
+    reset_level 1 \
+    sync_rst true \
+    corename dc_fc1_b_local_50 \
+    op interface \
+    ports { fc1_b_local_50 { I 32 vector } } \
+} "
+}
+
+# Direct connection:
+if {${::AESL::PGuard_autoexp_gen}} {
+eval "cg_default_interface_gen_dc { \
+    id 1644 \
+    name p_ZZ9cnn_accelE11fc1_b_local_10 \
+    type other \
+    dir I \
+    reset_level 1 \
+    sync_rst true \
+    corename dc_p_ZZ9cnn_accelE11fc1_b_local_10 \
+    op interface \
+    ports { p_ZZ9cnn_accelE11fc1_b_local_10 { I 32 vector } } \
+} "
+}
+
+# Direct connection:
+if {${::AESL::PGuard_autoexp_gen}} {
+eval "cg_default_interface_gen_dc { \
+    id 1645 \
+    name p_ZZ9cnn_accelE11fc1_b_local_11 \
+    type other \
+    dir I \
+    reset_level 1 \
+    sync_rst true \
+    corename dc_p_ZZ9cnn_accelE11fc1_b_local_11 \
+    op interface \
+    ports { p_ZZ9cnn_accelE11fc1_b_local_11 { I 32 vector } } \
+} "
+}
+
+# Direct connection:
+if {${::AESL::PGuard_autoexp_gen}} {
+eval "cg_default_interface_gen_dc { \
+    id 1646 \
+    name p_ZZ9cnn_accelE11fc1_b_local_12 \
+    type other \
+    dir I \
+    reset_level 1 \
+    sync_rst true \
+    corename dc_p_ZZ9cnn_accelE11fc1_b_local_12 \
+    op interface \
+    ports { p_ZZ9cnn_accelE11fc1_b_local_12 { I 32 vector } } \
+} "
+}
+
+# Direct connection:
+if {${::AESL::PGuard_autoexp_gen}} {
+eval "cg_default_interface_gen_dc { \
+    id 1647 \
+    name p_ZZ9cnn_accelE11fc1_b_local_13 \
+    type other \
+    dir I \
+    reset_level 1 \
+    sync_rst true \
+    corename dc_p_ZZ9cnn_accelE11fc1_b_local_13 \
+    op interface \
+    ports { p_ZZ9cnn_accelE11fc1_b_local_13 { I 32 vector } } \
+} "
+}
+
+# Direct connection:
+if {${::AESL::PGuard_autoexp_gen}} {
+eval "cg_default_interface_gen_dc { \
+    id 1648 \
+    name p_ZZ9cnn_accelE11fc1_b_local_14 \
+    type other \
+    dir I \
+    reset_level 1 \
+    sync_rst true \
+    corename dc_p_ZZ9cnn_accelE11fc1_b_local_14 \
+    op interface \
+    ports { p_ZZ9cnn_accelE11fc1_b_local_14 { I 32 vector } } \
+} "
+}
+
+# Direct connection:
+if {${::AESL::PGuard_autoexp_gen}} {
+eval "cg_default_interface_gen_dc { \
+    id 1649 \
+    name p_ZZ9cnn_accelE11fc1_b_local_15 \
+    type other \
+    dir I \
+    reset_level 1 \
+    sync_rst true \
+    corename dc_p_ZZ9cnn_accelE11fc1_b_local_15 \
+    op interface \
+    ports { p_ZZ9cnn_accelE11fc1_b_local_15 { I 32 vector } } \
+} "
+}
+
+# Direct connection:
+if {${::AESL::PGuard_autoexp_gen}} {
+eval "cg_default_interface_gen_dc { \
+    id 1650 \
+    name p_ZZ9cnn_accelE11fc1_b_local_16 \
+    type other \
+    dir I \
+    reset_level 1 \
+    sync_rst true \
+    corename dc_p_ZZ9cnn_accelE11fc1_b_local_16 \
+    op interface \
+    ports { p_ZZ9cnn_accelE11fc1_b_local_16 { I 32 vector } } \
+} "
+}
+
+# Direct connection:
+if {${::AESL::PGuard_autoexp_gen}} {
+eval "cg_default_interface_gen_dc { \
+    id 1651 \
+    name p_ZZ9cnn_accelE11fc1_b_local_17 \
+    type other \
+    dir I \
+    reset_level 1 \
+    sync_rst true \
+    corename dc_p_ZZ9cnn_accelE11fc1_b_local_17 \
+    op interface \
+    ports { p_ZZ9cnn_accelE11fc1_b_local_17 { I 32 vector } } \
+} "
+}
+
+# Direct connection:
+if {${::AESL::PGuard_autoexp_gen}} {
+eval "cg_default_interface_gen_dc { \
+    id 1652 \
+    name p_ZZ9cnn_accelE11fc1_b_local_18 \
+    type other \
+    dir I \
+    reset_level 1 \
+    sync_rst true \
+    corename dc_p_ZZ9cnn_accelE11fc1_b_local_18 \
+    op interface \
+    ports { p_ZZ9cnn_accelE11fc1_b_local_18 { I 32 vector } } \
+} "
+}
+
+# Direct connection:
+if {${::AESL::PGuard_autoexp_gen}} {
+eval "cg_default_interface_gen_dc { \
+    id 1653 \
+    name p_ZZ9cnn_accelE11fc1_b_local_19 \
+    type other \
+    dir I \
+    reset_level 1 \
+    sync_rst true \
+    corename dc_p_ZZ9cnn_accelE11fc1_b_local_19 \
+    op interface \
+    ports { p_ZZ9cnn_accelE11fc1_b_local_19 { I 32 vector } } \
+} "
+}
+
+# Direct connection:
+if {${::AESL::PGuard_autoexp_gen}} {
+eval "cg_default_interface_gen_dc { \
+    id 1654 \
+    name p_ZZ9cnn_accelE11fc1_b_local_20 \
+    type other \
+    dir I \
+    reset_level 1 \
+    sync_rst true \
+    corename dc_p_ZZ9cnn_accelE11fc1_b_local_20 \
+    op interface \
+    ports { p_ZZ9cnn_accelE11fc1_b_local_20 { I 32 vector } } \
+} "
+}
+
+# Direct connection:
+if {${::AESL::PGuard_autoexp_gen}} {
+eval "cg_default_interface_gen_dc { \
+    id 1655 \
+    name p_ZZ9cnn_accelE11fc1_b_local_21 \
+    type other \
+    dir I \
+    reset_level 1 \
+    sync_rst true \
+    corename dc_p_ZZ9cnn_accelE11fc1_b_local_21 \
+    op interface \
+    ports { p_ZZ9cnn_accelE11fc1_b_local_21 { I 32 vector } } \
+} "
+}
+
+# Direct connection:
+if {${::AESL::PGuard_autoexp_gen}} {
+eval "cg_default_interface_gen_dc { \
+    id 1656 \
+    name p_ZZ9cnn_accelE11fc1_b_local_22 \
+    type other \
+    dir I \
+    reset_level 1 \
+    sync_rst true \
+    corename dc_p_ZZ9cnn_accelE11fc1_b_local_22 \
+    op interface \
+    ports { p_ZZ9cnn_accelE11fc1_b_local_22 { I 32 vector } } \
+} "
+}
+
+# Direct connection:
+if {${::AESL::PGuard_autoexp_gen}} {
+eval "cg_default_interface_gen_dc { \
+    id 1657 \
+    name p_ZZ9cnn_accelE11fc1_b_local_23 \
+    type other \
+    dir I \
+    reset_level 1 \
+    sync_rst true \
+    corename dc_p_ZZ9cnn_accelE11fc1_b_local_23 \
+    op interface \
+    ports { p_ZZ9cnn_accelE11fc1_b_local_23 { I 32 vector } } \
+} "
+}
+
+# Direct connection:
+if {${::AESL::PGuard_autoexp_gen}} {
+eval "cg_default_interface_gen_dc { \
+    id 1658 \
+    name p_ZZ9cnn_accelE11fc1_b_local_24 \
+    type other \
+    dir I \
+    reset_level 1 \
+    sync_rst true \
+    corename dc_p_ZZ9cnn_accelE11fc1_b_local_24 \
+    op interface \
+    ports { p_ZZ9cnn_accelE11fc1_b_local_24 { I 32 vector } } \
+} "
+}
+
+# Direct connection:
+if {${::AESL::PGuard_autoexp_gen}} {
+eval "cg_default_interface_gen_dc { \
+    id 1659 \
+    name p_ZZ9cnn_accelE11fc1_b_local_25 \
+    type other \
+    dir I \
+    reset_level 1 \
+    sync_rst true \
+    corename dc_p_ZZ9cnn_accelE11fc1_b_local_25 \
+    op interface \
+    ports { p_ZZ9cnn_accelE11fc1_b_local_25 { I 32 vector } } \
+} "
+}
+
+# Direct connection:
+if {${::AESL::PGuard_autoexp_gen}} {
+eval "cg_default_interface_gen_dc { \
+    id 1660 \
+    name p_ZZ9cnn_accelE11fc1_b_local_26 \
+    type other \
+    dir I \
+    reset_level 1 \
+    sync_rst true \
+    corename dc_p_ZZ9cnn_accelE11fc1_b_local_26 \
+    op interface \
+    ports { p_ZZ9cnn_accelE11fc1_b_local_26 { I 32 vector } } \
+} "
+}
+
+# Direct connection:
+if {${::AESL::PGuard_autoexp_gen}} {
+eval "cg_default_interface_gen_dc { \
+    id 1661 \
+    name p_ZZ9cnn_accelE11fc1_b_local_27 \
+    type other \
+    dir I \
+    reset_level 1 \
+    sync_rst true \
+    corename dc_p_ZZ9cnn_accelE11fc1_b_local_27 \
+    op interface \
+    ports { p_ZZ9cnn_accelE11fc1_b_local_27 { I 32 vector } } \
+} "
+}
+
+# Direct connection:
+if {${::AESL::PGuard_autoexp_gen}} {
+eval "cg_default_interface_gen_dc { \
+    id 1662 \
+    name p_ZZ9cnn_accelE11fc1_b_local_28 \
+    type other \
+    dir I \
+    reset_level 1 \
+    sync_rst true \
+    corename dc_p_ZZ9cnn_accelE11fc1_b_local_28 \
+    op interface \
+    ports { p_ZZ9cnn_accelE11fc1_b_local_28 { I 32 vector } } \
+} "
+}
+
+# Direct connection:
+if {${::AESL::PGuard_autoexp_gen}} {
+eval "cg_default_interface_gen_dc { \
+    id 1663 \
+    name p_ZZ9cnn_accelE11fc1_b_local_29 \
+    type other \
+    dir I \
+    reset_level 1 \
+    sync_rst true \
+    corename dc_p_ZZ9cnn_accelE11fc1_b_local_29 \
+    op interface \
+    ports { p_ZZ9cnn_accelE11fc1_b_local_29 { I 32 vector } } \
+} "
+}
+
+# Direct connection:
+if {${::AESL::PGuard_autoexp_gen}} {
+eval "cg_default_interface_gen_dc { \
+    id 1664 \
+    name p_ZZ9cnn_accelE11fc1_b_local_30 \
+    type other \
+    dir I \
+    reset_level 1 \
+    sync_rst true \
+    corename dc_p_ZZ9cnn_accelE11fc1_b_local_30 \
+    op interface \
+    ports { p_ZZ9cnn_accelE11fc1_b_local_30 { I 32 vector } } \
+} "
+}
+
+# Direct connection:
+if {${::AESL::PGuard_autoexp_gen}} {
+eval "cg_default_interface_gen_dc { \
+    id 1665 \
+    name p_ZZ9cnn_accelE11fc1_b_local_31 \
+    type other \
+    dir I \
+    reset_level 1 \
+    sync_rst true \
+    corename dc_p_ZZ9cnn_accelE11fc1_b_local_31 \
+    op interface \
+    ports { p_ZZ9cnn_accelE11fc1_b_local_31 { I 32 vector } } \
 } "
 }
 
@@ -121,7 +692,7 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename ap_ctrl \
     op interface \
-    ports { ap_start { I 1 bit } ap_ready { O 1 bit } ap_done { O 1 bit } ap_idle { O 1 bit } ap_continue { I 1 bit } } \
+    ports { ap_start { I 1 bit } ap_ready { O 1 bit } ap_done { O 1 bit } ap_idle { O 1 bit } } \
 } "
 }
 

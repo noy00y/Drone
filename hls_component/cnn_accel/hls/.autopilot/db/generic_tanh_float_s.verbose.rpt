@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'generic_tanh_float_s'
 ================================================================
-* Date:           Tue Jul  8 00:40:06 2025
+* Date:           Tue Jul  8 02:26:11 2025
 
 * Version:        2025.1 (Build 6135595 on May 21 2025)
 * Project:        cnn_accel
@@ -56,33 +56,30 @@
 |DSP              |        -|    -|       -|      -|    -|
 |Expression       |        -|    -|       0|    294|    -|
 |FIFO             |        -|    -|       -|      -|    -|
-|Instance         |        5|   34|    3882|   4247|    -|
+|Instance         |        5|   32|    3677|   4044|    -|
 |Memory           |        -|    -|       -|      -|    -|
 |Multiplexer      |        -|    -|       0|    187|    -|
 |Register         |        -|    -|    2096|    320|    -|
 +-----------------+---------+-----+--------+-------+-----+
-|Total            |        5|   34|    5978|   5048|    0|
+|Total            |        5|   32|    5773|   4845|    0|
 +-----------------+---------+-----+--------+-------+-----+
 |Available        |      270|  240|  126800|  63400|    0|
 +-----------------+---------+-----+--------+-------+-----+
-|Utilization (%)  |        1|   14|       4|      7|    0|
+|Utilization (%)  |        1|   13|       4|      7|    0|
 +-----------------+---------+-----+--------+-------+-----+
 
 + Detail: 
     * Instance: 
-    +-----------------------------------------+------------------------------------+---------+----+------+------+-----+
-    |                 Instance                |               Module               | BRAM_18K| DSP|  FF  |  LUT | URAM|
-    +-----------------------------------------+------------------------------------+---------+----+------+------+-----+
-    |dadd_64ns_64ns_64_5_full_dsp_1_U107      |dadd_64ns_64ns_64_5_full_dsp_1      |        0|   3|   445|   788|    0|
-    |grp_exp_generic_double_s_fu_89           |exp_generic_double_s                |        5|  29|  3232|  3256|    0|
-    |faddfsub_32ns_32ns_32_5_full_dsp_1_U101  |faddfsub_32ns_32ns_32_5_full_dsp_1  |        0|   2|   205|   203|    0|
-    |fcmp_32ns_32ns_1_2_no_dsp_1_U106         |fcmp_32ns_32ns_1_2_no_dsp_1         |        0|   0|     0|     0|    0|
-    |fdiv_32ns_32ns_32_12_no_dsp_1_U103       |fdiv_32ns_32ns_32_12_no_dsp_1       |        0|   0|     0|     0|    0|
-    |fpext_32ns_64_2_no_dsp_1_U105            |fpext_32ns_64_2_no_dsp_1            |        0|   0|     0|     0|    0|
-    |fptrunc_64ns_32_2_no_dsp_1_U104          |fptrunc_64ns_32_2_no_dsp_1          |        0|   0|     0|     0|    0|
-    +-----------------------------------------+------------------------------------+---------+----+------+------+-----+
-    |Total                                    |                                    |        5|  34|  3882|  4247|    0|
-    +-----------------------------------------+------------------------------------+---------+----+------+------+-----+
+    +--------------------------------------+--------------------------------+---------+----+------+------+-----+
+    |               Instance               |             Module             | BRAM_18K| DSP|  FF  |  LUT | URAM|
+    +--------------------------------------+--------------------------------+---------+----+------+------+-----+
+    |dadd_64ns_64ns_64_5_full_dsp_1_U1611  |dadd_64ns_64ns_64_5_full_dsp_1  |        0|   3|   445|   788|    0|
+    |grp_exp_generic_double_s_fu_89        |exp_generic_double_s            |        5|  29|  3232|  3256|    0|
+    |fpext_32ns_64_2_no_dsp_1_U1609        |fpext_32ns_64_2_no_dsp_1        |        0|   0|     0|     0|    0|
+    |fptrunc_64ns_32_2_no_dsp_1_U1608      |fptrunc_64ns_32_2_no_dsp_1      |        0|   0|     0|     0|    0|
+    +--------------------------------------+--------------------------------+---------+----+------+------+-----+
+    |Total                                 |                                |        5|  32|  3677|  4044|    0|
+    +--------------------------------------+--------------------------------+---------+----+------+------+-----+
 
     * DSP: 
     N/A
@@ -237,7 +234,7 @@
     |resultf_2_reg_500                       |  32|   0|   32|          0|
     |sub_i_reg_475                           |  64|   0|   64|          0|
     |t_reg_384                               |  31|   0|   31|          0|
-    |tmp_4_reg_470                           |  64|   0|   64|          0|
+    |tmp_6_reg_470                           |  64|   0|   64|          0|
     |trunc_ln66_reg_490                      |  31|   0|   31|          0|
     |x_3_reg_445                             |  32|   0|   32|          0|
     |xor_ln66_reg_485                        |   1|   0|    1|          0|
@@ -271,15 +268,29 @@
 |ap_idle              |  out|    1|  ap_ctrl_hs|  generic_tanh<float>|  return value|
 |ap_ready             |  out|    1|  ap_ctrl_hs|  generic_tanh<float>|  return value|
 |ap_return            |  out|   32|  ap_ctrl_hs|  generic_tanh<float>|  return value|
-|grp_fu_188_p_din0    |  out|   32|  ap_ctrl_hs|  generic_tanh<float>|  return value|
-|grp_fu_188_p_din1    |  out|   32|  ap_ctrl_hs|  generic_tanh<float>|  return value|
-|grp_fu_188_p_opcode  |  out|    2|  ap_ctrl_hs|  generic_tanh<float>|  return value|
-|grp_fu_188_p_dout0   |   in|   32|  ap_ctrl_hs|  generic_tanh<float>|  return value|
-|grp_fu_188_p_ce      |  out|    1|  ap_ctrl_hs|  generic_tanh<float>|  return value|
-|grp_fu_193_p_din0    |  out|   32|  ap_ctrl_hs|  generic_tanh<float>|  return value|
-|grp_fu_193_p_din1    |  out|   32|  ap_ctrl_hs|  generic_tanh<float>|  return value|
-|grp_fu_193_p_dout0   |   in|   32|  ap_ctrl_hs|  generic_tanh<float>|  return value|
-|grp_fu_193_p_ce      |  out|    1|  ap_ctrl_hs|  generic_tanh<float>|  return value|
+|grp_fu_394_p_din0    |  out|   32|  ap_ctrl_hs|  generic_tanh<float>|  return value|
+|grp_fu_394_p_din1    |  out|   32|  ap_ctrl_hs|  generic_tanh<float>|  return value|
+|grp_fu_394_p_opcode  |  out|    2|  ap_ctrl_hs|  generic_tanh<float>|  return value|
+|grp_fu_394_p_dout0   |   in|   32|  ap_ctrl_hs|  generic_tanh<float>|  return value|
+|grp_fu_394_p_ce      |  out|    1|  ap_ctrl_hs|  generic_tanh<float>|  return value|
+|grp_fu_990_p_din0    |  out|   32|  ap_ctrl_hs|  generic_tanh<float>|  return value|
+|grp_fu_990_p_din1    |  out|   32|  ap_ctrl_hs|  generic_tanh<float>|  return value|
+|grp_fu_990_p_opcode  |  out|    2|  ap_ctrl_hs|  generic_tanh<float>|  return value|
+|grp_fu_990_p_dout0   |   in|   32|  ap_ctrl_hs|  generic_tanh<float>|  return value|
+|grp_fu_990_p_ce      |  out|    1|  ap_ctrl_hs|  generic_tanh<float>|  return value|
+|grp_fu_399_p_din0    |  out|   32|  ap_ctrl_hs|  generic_tanh<float>|  return value|
+|grp_fu_399_p_din1    |  out|   32|  ap_ctrl_hs|  generic_tanh<float>|  return value|
+|grp_fu_399_p_dout0   |   in|   32|  ap_ctrl_hs|  generic_tanh<float>|  return value|
+|grp_fu_399_p_ce      |  out|    1|  ap_ctrl_hs|  generic_tanh<float>|  return value|
+|grp_fu_994_p_din0    |  out|   32|  ap_ctrl_hs|  generic_tanh<float>|  return value|
+|grp_fu_994_p_din1    |  out|   32|  ap_ctrl_hs|  generic_tanh<float>|  return value|
+|grp_fu_994_p_dout0   |   in|   32|  ap_ctrl_hs|  generic_tanh<float>|  return value|
+|grp_fu_994_p_ce      |  out|    1|  ap_ctrl_hs|  generic_tanh<float>|  return value|
+|grp_fu_998_p_din0    |  out|   32|  ap_ctrl_hs|  generic_tanh<float>|  return value|
+|grp_fu_998_p_din1    |  out|   32|  ap_ctrl_hs|  generic_tanh<float>|  return value|
+|grp_fu_998_p_opcode  |  out|    5|  ap_ctrl_hs|  generic_tanh<float>|  return value|
+|grp_fu_998_p_dout0   |   in|    1|  ap_ctrl_hs|  generic_tanh<float>|  return value|
+|grp_fu_998_p_ce      |  out|    1|  ap_ctrl_hs|  generic_tanh<float>|  return value|
 |t_in                 |   in|   32|     ap_none|                 t_in|        scalar|
 +---------------------+-----+-----+------------+---------------------+--------------+
 
@@ -458,89 +469,89 @@ ST_8 : Operation 119 [2/4] (5.00ns)   --->   "%resultf = fmul i32 %abst_in, i32 
 
 State 9 <SV = 8> <Delay = 7.00>
 ST_9 : Operation 120 [1/2] (3.46ns)   --->   "%xd = fpext i32 %x_3" [C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib\hlsmath\src\common\hls_exp_float.cpp:11->C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h:61]   --->   Operation 120 'fpext' 'xd' <Predicate = (!icmp_ln36 & !icmp_ln45 & !and_ln46 & and_ln51 & !icmp_ln9 & !icmp_ln10)> <Delay = 3.46> <CoreInst = "Float2Double">   --->   Core 64 'Float2Double' <Latency = 1> <II = 1> <Delay = 3.46> <FuncUnit> <Opcode : 'fpext'> <InPorts = 1> <OutPorts = 1>
-ST_9 : Operation 121 [23/23] (3.54ns)   --->   "%tmp_4 = call i64 @exp_generic<double>, i64 %xd, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib\hlsmath\src\common\hls_exp_float.cpp:12->C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h:61]   --->   Operation 121 'call' 'tmp_4' <Predicate = (!icmp_ln36 & !icmp_ln45 & !and_ln46 & and_ln51 & !icmp_ln9 & !icmp_ln10)> <Delay = 3.54> <CoreType = "Generic">   --->   Generic Core
+ST_9 : Operation 121 [23/23] (3.54ns)   --->   "%tmp_6 = call i64 @exp_generic<double>, i64 %xd, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib\hlsmath\src\common\hls_exp_float.cpp:12->C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h:61]   --->   Operation 121 'call' 'tmp_6' <Predicate = (!icmp_ln36 & !icmp_ln45 & !and_ln46 & and_ln51 & !icmp_ln9 & !icmp_ln10)> <Delay = 3.54> <CoreType = "Generic">   --->   Generic Core
 ST_9 : Operation 122 [1/4] (5.00ns)   --->   "%resultf = fmul i32 %abst_in, i32 %add" [C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h:49]   --->   Operation 122 'fmul' 'resultf' <Predicate = (!icmp_ln36 & and_ln46) | (!icmp_ln36 & icmp_ln45)> <Delay = 5.00> <CoreInst = "FMul_maxdsp">   --->   Core 30 'FMul_maxdsp' <Latency = 3> <II = 1> <Delay = 5.00> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
 
 State 10 <SV = 9> <Delay = 7.17>
-ST_10 : Operation 123 [22/23] (7.17ns)   --->   "%tmp_4 = call i64 @exp_generic<double>, i64 %xd, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib\hlsmath\src\common\hls_exp_float.cpp:12->C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h:61]   --->   Operation 123 'call' 'tmp_4' <Predicate = (!icmp_ln36 & !icmp_ln45 & !and_ln46 & and_ln51 & !icmp_ln9 & !icmp_ln10)> <Delay = 7.17> <CoreType = "Generic">   --->   Generic Core
+ST_10 : Operation 123 [22/23] (7.17ns)   --->   "%tmp_6 = call i64 @exp_generic<double>, i64 %xd, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib\hlsmath\src\common\hls_exp_float.cpp:12->C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h:61]   --->   Operation 123 'call' 'tmp_6' <Predicate = (!icmp_ln36 & !icmp_ln45 & !and_ln46 & and_ln51 & !icmp_ln9 & !icmp_ln10)> <Delay = 7.17> <CoreType = "Generic">   --->   Generic Core
 
 State 11 <SV = 10> <Delay = 7.17>
-ST_11 : Operation 124 [21/23] (7.17ns)   --->   "%tmp_4 = call i64 @exp_generic<double>, i64 %xd, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib\hlsmath\src\common\hls_exp_float.cpp:12->C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h:61]   --->   Operation 124 'call' 'tmp_4' <Predicate = (!icmp_ln36 & !icmp_ln45 & !and_ln46 & and_ln51 & !icmp_ln9 & !icmp_ln10)> <Delay = 7.17> <CoreType = "Generic">   --->   Generic Core
+ST_11 : Operation 124 [21/23] (7.17ns)   --->   "%tmp_6 = call i64 @exp_generic<double>, i64 %xd, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib\hlsmath\src\common\hls_exp_float.cpp:12->C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h:61]   --->   Operation 124 'call' 'tmp_6' <Predicate = (!icmp_ln36 & !icmp_ln45 & !and_ln46 & and_ln51 & !icmp_ln9 & !icmp_ln10)> <Delay = 7.17> <CoreType = "Generic">   --->   Generic Core
 
 State 12 <SV = 11> <Delay = 7.17>
-ST_12 : Operation 125 [20/23] (7.17ns)   --->   "%tmp_4 = call i64 @exp_generic<double>, i64 %xd, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib\hlsmath\src\common\hls_exp_float.cpp:12->C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h:61]   --->   Operation 125 'call' 'tmp_4' <Predicate = (!icmp_ln36 & !icmp_ln45 & !and_ln46 & and_ln51 & !icmp_ln9 & !icmp_ln10)> <Delay = 7.17> <CoreType = "Generic">   --->   Generic Core
+ST_12 : Operation 125 [20/23] (7.17ns)   --->   "%tmp_6 = call i64 @exp_generic<double>, i64 %xd, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib\hlsmath\src\common\hls_exp_float.cpp:12->C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h:61]   --->   Operation 125 'call' 'tmp_6' <Predicate = (!icmp_ln36 & !icmp_ln45 & !and_ln46 & and_ln51 & !icmp_ln9 & !icmp_ln10)> <Delay = 7.17> <CoreType = "Generic">   --->   Generic Core
 
 State 13 <SV = 12> <Delay = 7.17>
-ST_13 : Operation 126 [19/23] (7.17ns)   --->   "%tmp_4 = call i64 @exp_generic<double>, i64 %xd, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib\hlsmath\src\common\hls_exp_float.cpp:12->C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h:61]   --->   Operation 126 'call' 'tmp_4' <Predicate = (!icmp_ln36 & !icmp_ln45 & !and_ln46 & and_ln51 & !icmp_ln9 & !icmp_ln10)> <Delay = 7.17> <CoreType = "Generic">   --->   Generic Core
+ST_13 : Operation 126 [19/23] (7.17ns)   --->   "%tmp_6 = call i64 @exp_generic<double>, i64 %xd, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib\hlsmath\src\common\hls_exp_float.cpp:12->C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h:61]   --->   Operation 126 'call' 'tmp_6' <Predicate = (!icmp_ln36 & !icmp_ln45 & !and_ln46 & and_ln51 & !icmp_ln9 & !icmp_ln10)> <Delay = 7.17> <CoreType = "Generic">   --->   Generic Core
 
 State 14 <SV = 13> <Delay = 7.17>
-ST_14 : Operation 127 [18/23] (7.17ns)   --->   "%tmp_4 = call i64 @exp_generic<double>, i64 %xd, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib\hlsmath\src\common\hls_exp_float.cpp:12->C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h:61]   --->   Operation 127 'call' 'tmp_4' <Predicate = (!icmp_ln36 & !icmp_ln45 & !and_ln46 & and_ln51 & !icmp_ln9 & !icmp_ln10)> <Delay = 7.17> <CoreType = "Generic">   --->   Generic Core
+ST_14 : Operation 127 [18/23] (7.17ns)   --->   "%tmp_6 = call i64 @exp_generic<double>, i64 %xd, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib\hlsmath\src\common\hls_exp_float.cpp:12->C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h:61]   --->   Operation 127 'call' 'tmp_6' <Predicate = (!icmp_ln36 & !icmp_ln45 & !and_ln46 & and_ln51 & !icmp_ln9 & !icmp_ln10)> <Delay = 7.17> <CoreType = "Generic">   --->   Generic Core
 
 State 15 <SV = 14> <Delay = 7.17>
-ST_15 : Operation 128 [17/23] (7.17ns)   --->   "%tmp_4 = call i64 @exp_generic<double>, i64 %xd, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib\hlsmath\src\common\hls_exp_float.cpp:12->C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h:61]   --->   Operation 128 'call' 'tmp_4' <Predicate = (!icmp_ln36 & !icmp_ln45 & !and_ln46 & and_ln51 & !icmp_ln9 & !icmp_ln10)> <Delay = 7.17> <CoreType = "Generic">   --->   Generic Core
+ST_15 : Operation 128 [17/23] (7.17ns)   --->   "%tmp_6 = call i64 @exp_generic<double>, i64 %xd, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib\hlsmath\src\common\hls_exp_float.cpp:12->C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h:61]   --->   Operation 128 'call' 'tmp_6' <Predicate = (!icmp_ln36 & !icmp_ln45 & !and_ln46 & and_ln51 & !icmp_ln9 & !icmp_ln10)> <Delay = 7.17> <CoreType = "Generic">   --->   Generic Core
 
 State 16 <SV = 15> <Delay = 7.17>
-ST_16 : Operation 129 [16/23] (7.17ns)   --->   "%tmp_4 = call i64 @exp_generic<double>, i64 %xd, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib\hlsmath\src\common\hls_exp_float.cpp:12->C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h:61]   --->   Operation 129 'call' 'tmp_4' <Predicate = (!icmp_ln36 & !icmp_ln45 & !and_ln46 & and_ln51 & !icmp_ln9 & !icmp_ln10)> <Delay = 7.17> <CoreType = "Generic">   --->   Generic Core
+ST_16 : Operation 129 [16/23] (7.17ns)   --->   "%tmp_6 = call i64 @exp_generic<double>, i64 %xd, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib\hlsmath\src\common\hls_exp_float.cpp:12->C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h:61]   --->   Operation 129 'call' 'tmp_6' <Predicate = (!icmp_ln36 & !icmp_ln45 & !and_ln46 & and_ln51 & !icmp_ln9 & !icmp_ln10)> <Delay = 7.17> <CoreType = "Generic">   --->   Generic Core
 
 State 17 <SV = 16> <Delay = 7.17>
-ST_17 : Operation 130 [15/23] (7.17ns)   --->   "%tmp_4 = call i64 @exp_generic<double>, i64 %xd, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib\hlsmath\src\common\hls_exp_float.cpp:12->C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h:61]   --->   Operation 130 'call' 'tmp_4' <Predicate = (!icmp_ln36 & !icmp_ln45 & !and_ln46 & and_ln51 & !icmp_ln9 & !icmp_ln10)> <Delay = 7.17> <CoreType = "Generic">   --->   Generic Core
+ST_17 : Operation 130 [15/23] (7.17ns)   --->   "%tmp_6 = call i64 @exp_generic<double>, i64 %xd, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib\hlsmath\src\common\hls_exp_float.cpp:12->C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h:61]   --->   Operation 130 'call' 'tmp_6' <Predicate = (!icmp_ln36 & !icmp_ln45 & !and_ln46 & and_ln51 & !icmp_ln9 & !icmp_ln10)> <Delay = 7.17> <CoreType = "Generic">   --->   Generic Core
 
 State 18 <SV = 17> <Delay = 7.17>
-ST_18 : Operation 131 [14/23] (7.17ns)   --->   "%tmp_4 = call i64 @exp_generic<double>, i64 %xd, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib\hlsmath\src\common\hls_exp_float.cpp:12->C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h:61]   --->   Operation 131 'call' 'tmp_4' <Predicate = (!icmp_ln36 & !icmp_ln45 & !and_ln46 & and_ln51 & !icmp_ln9 & !icmp_ln10)> <Delay = 7.17> <CoreType = "Generic">   --->   Generic Core
+ST_18 : Operation 131 [14/23] (7.17ns)   --->   "%tmp_6 = call i64 @exp_generic<double>, i64 %xd, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib\hlsmath\src\common\hls_exp_float.cpp:12->C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h:61]   --->   Operation 131 'call' 'tmp_6' <Predicate = (!icmp_ln36 & !icmp_ln45 & !and_ln46 & and_ln51 & !icmp_ln9 & !icmp_ln10)> <Delay = 7.17> <CoreType = "Generic">   --->   Generic Core
 
 State 19 <SV = 18> <Delay = 7.17>
-ST_19 : Operation 132 [13/23] (7.17ns)   --->   "%tmp_4 = call i64 @exp_generic<double>, i64 %xd, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib\hlsmath\src\common\hls_exp_float.cpp:12->C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h:61]   --->   Operation 132 'call' 'tmp_4' <Predicate = (!icmp_ln36 & !icmp_ln45 & !and_ln46 & and_ln51 & !icmp_ln9 & !icmp_ln10)> <Delay = 7.17> <CoreType = "Generic">   --->   Generic Core
+ST_19 : Operation 132 [13/23] (7.17ns)   --->   "%tmp_6 = call i64 @exp_generic<double>, i64 %xd, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib\hlsmath\src\common\hls_exp_float.cpp:12->C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h:61]   --->   Operation 132 'call' 'tmp_6' <Predicate = (!icmp_ln36 & !icmp_ln45 & !and_ln46 & and_ln51 & !icmp_ln9 & !icmp_ln10)> <Delay = 7.17> <CoreType = "Generic">   --->   Generic Core
 
 State 20 <SV = 19> <Delay = 7.17>
-ST_20 : Operation 133 [12/23] (7.17ns)   --->   "%tmp_4 = call i64 @exp_generic<double>, i64 %xd, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib\hlsmath\src\common\hls_exp_float.cpp:12->C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h:61]   --->   Operation 133 'call' 'tmp_4' <Predicate = (!icmp_ln36 & !icmp_ln45 & !and_ln46 & and_ln51 & !icmp_ln9 & !icmp_ln10)> <Delay = 7.17> <CoreType = "Generic">   --->   Generic Core
+ST_20 : Operation 133 [12/23] (7.17ns)   --->   "%tmp_6 = call i64 @exp_generic<double>, i64 %xd, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib\hlsmath\src\common\hls_exp_float.cpp:12->C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h:61]   --->   Operation 133 'call' 'tmp_6' <Predicate = (!icmp_ln36 & !icmp_ln45 & !and_ln46 & and_ln51 & !icmp_ln9 & !icmp_ln10)> <Delay = 7.17> <CoreType = "Generic">   --->   Generic Core
 
 State 21 <SV = 20> <Delay = 7.17>
-ST_21 : Operation 134 [11/23] (7.17ns)   --->   "%tmp_4 = call i64 @exp_generic<double>, i64 %xd, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib\hlsmath\src\common\hls_exp_float.cpp:12->C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h:61]   --->   Operation 134 'call' 'tmp_4' <Predicate = (!icmp_ln36 & !icmp_ln45 & !and_ln46 & and_ln51 & !icmp_ln9 & !icmp_ln10)> <Delay = 7.17> <CoreType = "Generic">   --->   Generic Core
+ST_21 : Operation 134 [11/23] (7.17ns)   --->   "%tmp_6 = call i64 @exp_generic<double>, i64 %xd, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib\hlsmath\src\common\hls_exp_float.cpp:12->C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h:61]   --->   Operation 134 'call' 'tmp_6' <Predicate = (!icmp_ln36 & !icmp_ln45 & !and_ln46 & and_ln51 & !icmp_ln9 & !icmp_ln10)> <Delay = 7.17> <CoreType = "Generic">   --->   Generic Core
 
 State 22 <SV = 21> <Delay = 7.17>
-ST_22 : Operation 135 [10/23] (7.17ns)   --->   "%tmp_4 = call i64 @exp_generic<double>, i64 %xd, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib\hlsmath\src\common\hls_exp_float.cpp:12->C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h:61]   --->   Operation 135 'call' 'tmp_4' <Predicate = (!icmp_ln36 & !icmp_ln45 & !and_ln46 & and_ln51 & !icmp_ln9 & !icmp_ln10)> <Delay = 7.17> <CoreType = "Generic">   --->   Generic Core
+ST_22 : Operation 135 [10/23] (7.17ns)   --->   "%tmp_6 = call i64 @exp_generic<double>, i64 %xd, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib\hlsmath\src\common\hls_exp_float.cpp:12->C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h:61]   --->   Operation 135 'call' 'tmp_6' <Predicate = (!icmp_ln36 & !icmp_ln45 & !and_ln46 & and_ln51 & !icmp_ln9 & !icmp_ln10)> <Delay = 7.17> <CoreType = "Generic">   --->   Generic Core
 
 State 23 <SV = 22> <Delay = 7.17>
-ST_23 : Operation 136 [9/23] (7.17ns)   --->   "%tmp_4 = call i64 @exp_generic<double>, i64 %xd, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib\hlsmath\src\common\hls_exp_float.cpp:12->C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h:61]   --->   Operation 136 'call' 'tmp_4' <Predicate = (!icmp_ln36 & !icmp_ln45 & !and_ln46 & and_ln51 & !icmp_ln9 & !icmp_ln10)> <Delay = 7.17> <CoreType = "Generic">   --->   Generic Core
+ST_23 : Operation 136 [9/23] (7.17ns)   --->   "%tmp_6 = call i64 @exp_generic<double>, i64 %xd, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib\hlsmath\src\common\hls_exp_float.cpp:12->C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h:61]   --->   Operation 136 'call' 'tmp_6' <Predicate = (!icmp_ln36 & !icmp_ln45 & !and_ln46 & and_ln51 & !icmp_ln9 & !icmp_ln10)> <Delay = 7.17> <CoreType = "Generic">   --->   Generic Core
 
 State 24 <SV = 23> <Delay = 7.17>
-ST_24 : Operation 137 [8/23] (7.17ns)   --->   "%tmp_4 = call i64 @exp_generic<double>, i64 %xd, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib\hlsmath\src\common\hls_exp_float.cpp:12->C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h:61]   --->   Operation 137 'call' 'tmp_4' <Predicate = (!icmp_ln36 & !icmp_ln45 & !and_ln46 & and_ln51 & !icmp_ln9 & !icmp_ln10)> <Delay = 7.17> <CoreType = "Generic">   --->   Generic Core
+ST_24 : Operation 137 [8/23] (7.17ns)   --->   "%tmp_6 = call i64 @exp_generic<double>, i64 %xd, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib\hlsmath\src\common\hls_exp_float.cpp:12->C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h:61]   --->   Operation 137 'call' 'tmp_6' <Predicate = (!icmp_ln36 & !icmp_ln45 & !and_ln46 & and_ln51 & !icmp_ln9 & !icmp_ln10)> <Delay = 7.17> <CoreType = "Generic">   --->   Generic Core
 
 State 25 <SV = 24> <Delay = 7.17>
-ST_25 : Operation 138 [7/23] (7.17ns)   --->   "%tmp_4 = call i64 @exp_generic<double>, i64 %xd, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib\hlsmath\src\common\hls_exp_float.cpp:12->C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h:61]   --->   Operation 138 'call' 'tmp_4' <Predicate = (!icmp_ln36 & !icmp_ln45 & !and_ln46 & and_ln51 & !icmp_ln9 & !icmp_ln10)> <Delay = 7.17> <CoreType = "Generic">   --->   Generic Core
+ST_25 : Operation 138 [7/23] (7.17ns)   --->   "%tmp_6 = call i64 @exp_generic<double>, i64 %xd, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib\hlsmath\src\common\hls_exp_float.cpp:12->C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h:61]   --->   Operation 138 'call' 'tmp_6' <Predicate = (!icmp_ln36 & !icmp_ln45 & !and_ln46 & and_ln51 & !icmp_ln9 & !icmp_ln10)> <Delay = 7.17> <CoreType = "Generic">   --->   Generic Core
 
 State 26 <SV = 25> <Delay = 7.17>
-ST_26 : Operation 139 [6/23] (7.17ns)   --->   "%tmp_4 = call i64 @exp_generic<double>, i64 %xd, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib\hlsmath\src\common\hls_exp_float.cpp:12->C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h:61]   --->   Operation 139 'call' 'tmp_4' <Predicate = (!icmp_ln36 & !icmp_ln45 & !and_ln46 & and_ln51 & !icmp_ln9 & !icmp_ln10)> <Delay = 7.17> <CoreType = "Generic">   --->   Generic Core
+ST_26 : Operation 139 [6/23] (7.17ns)   --->   "%tmp_6 = call i64 @exp_generic<double>, i64 %xd, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib\hlsmath\src\common\hls_exp_float.cpp:12->C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h:61]   --->   Operation 139 'call' 'tmp_6' <Predicate = (!icmp_ln36 & !icmp_ln45 & !and_ln46 & and_ln51 & !icmp_ln9 & !icmp_ln10)> <Delay = 7.17> <CoreType = "Generic">   --->   Generic Core
 
 State 27 <SV = 26> <Delay = 7.17>
-ST_27 : Operation 140 [5/23] (7.17ns)   --->   "%tmp_4 = call i64 @exp_generic<double>, i64 %xd, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib\hlsmath\src\common\hls_exp_float.cpp:12->C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h:61]   --->   Operation 140 'call' 'tmp_4' <Predicate = (!icmp_ln36 & !icmp_ln45 & !and_ln46 & and_ln51 & !icmp_ln9 & !icmp_ln10)> <Delay = 7.17> <CoreType = "Generic">   --->   Generic Core
+ST_27 : Operation 140 [5/23] (7.17ns)   --->   "%tmp_6 = call i64 @exp_generic<double>, i64 %xd, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib\hlsmath\src\common\hls_exp_float.cpp:12->C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h:61]   --->   Operation 140 'call' 'tmp_6' <Predicate = (!icmp_ln36 & !icmp_ln45 & !and_ln46 & and_ln51 & !icmp_ln9 & !icmp_ln10)> <Delay = 7.17> <CoreType = "Generic">   --->   Generic Core
 
 State 28 <SV = 27> <Delay = 7.17>
-ST_28 : Operation 141 [4/23] (7.17ns)   --->   "%tmp_4 = call i64 @exp_generic<double>, i64 %xd, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib\hlsmath\src\common\hls_exp_float.cpp:12->C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h:61]   --->   Operation 141 'call' 'tmp_4' <Predicate = (!icmp_ln36 & !icmp_ln45 & !and_ln46 & and_ln51 & !icmp_ln9 & !icmp_ln10)> <Delay = 7.17> <CoreType = "Generic">   --->   Generic Core
+ST_28 : Operation 141 [4/23] (7.17ns)   --->   "%tmp_6 = call i64 @exp_generic<double>, i64 %xd, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib\hlsmath\src\common\hls_exp_float.cpp:12->C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h:61]   --->   Operation 141 'call' 'tmp_6' <Predicate = (!icmp_ln36 & !icmp_ln45 & !and_ln46 & and_ln51 & !icmp_ln9 & !icmp_ln10)> <Delay = 7.17> <CoreType = "Generic">   --->   Generic Core
 
 State 29 <SV = 28> <Delay = 7.17>
-ST_29 : Operation 142 [3/23] (7.17ns)   --->   "%tmp_4 = call i64 @exp_generic<double>, i64 %xd, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib\hlsmath\src\common\hls_exp_float.cpp:12->C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h:61]   --->   Operation 142 'call' 'tmp_4' <Predicate = (!icmp_ln36 & !icmp_ln45 & !and_ln46 & and_ln51 & !icmp_ln9 & !icmp_ln10)> <Delay = 7.17> <CoreType = "Generic">   --->   Generic Core
+ST_29 : Operation 142 [3/23] (7.17ns)   --->   "%tmp_6 = call i64 @exp_generic<double>, i64 %xd, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib\hlsmath\src\common\hls_exp_float.cpp:12->C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h:61]   --->   Operation 142 'call' 'tmp_6' <Predicate = (!icmp_ln36 & !icmp_ln45 & !and_ln46 & and_ln51 & !icmp_ln9 & !icmp_ln10)> <Delay = 7.17> <CoreType = "Generic">   --->   Generic Core
 
 State 30 <SV = 29> <Delay = 7.17>
-ST_30 : Operation 143 [2/23] (7.17ns)   --->   "%tmp_4 = call i64 @exp_generic<double>, i64 %xd, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib\hlsmath\src\common\hls_exp_float.cpp:12->C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h:61]   --->   Operation 143 'call' 'tmp_4' <Predicate = (!icmp_ln36 & !icmp_ln45 & !and_ln46 & and_ln51 & !icmp_ln9 & !icmp_ln10)> <Delay = 7.17> <CoreType = "Generic">   --->   Generic Core
+ST_30 : Operation 143 [2/23] (7.17ns)   --->   "%tmp_6 = call i64 @exp_generic<double>, i64 %xd, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib\hlsmath\src\common\hls_exp_float.cpp:12->C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h:61]   --->   Operation 143 'call' 'tmp_6' <Predicate = (!icmp_ln36 & !icmp_ln45 & !and_ln46 & and_ln51 & !icmp_ln9 & !icmp_ln10)> <Delay = 7.17> <CoreType = "Generic">   --->   Generic Core
 
 State 31 <SV = 30> <Delay = 3.74>
-ST_31 : Operation 144 [1/23] (3.74ns)   --->   "%tmp_4 = call i64 @exp_generic<double>, i64 %xd, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib\hlsmath\src\common\hls_exp_float.cpp:12->C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h:61]   --->   Operation 144 'call' 'tmp_4' <Predicate = (!icmp_ln36 & !icmp_ln45 & !and_ln46 & and_ln51 & !icmp_ln9 & !icmp_ln10)> <Delay = 3.74> <CoreType = "Generic">   --->   Generic Core
+ST_31 : Operation 144 [1/23] (3.74ns)   --->   "%tmp_6 = call i64 @exp_generic<double>, i64 %xd, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib\hlsmath\src\common\hls_exp_float.cpp:12->C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h:61]   --->   Operation 144 'call' 'tmp_6' <Predicate = (!icmp_ln36 & !icmp_ln45 & !and_ln46 & and_ln51 & !icmp_ln9 & !icmp_ln10)> <Delay = 3.74> <CoreType = "Generic">   --->   Generic Core
 
 State 32 <SV = 31> <Delay = 7.05>
-ST_32 : Operation 145 [5/5] (7.05ns)   --->   "%sub_i = dadd i64 %tmp_4, i64 -1" [C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib\hlsmath\src\common\hls_exp_float.cpp:12->C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h:61]   --->   Operation 145 'dadd' 'sub_i' <Predicate = (!icmp_ln36 & !icmp_ln45 & !and_ln46 & and_ln51 & !icmp_ln9 & !icmp_ln10)> <Delay = 7.05> <CoreInst = "DAddSub_fulldsp">   --->   Core 37 'DAddSub_fulldsp' <Latency = 4> <II = 1> <Delay = 7.05> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+ST_32 : Operation 145 [5/5] (7.05ns)   --->   "%sub_i = dadd i64 %tmp_6, i64 -1" [C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib\hlsmath\src\common\hls_exp_float.cpp:12->C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h:61]   --->   Operation 145 'dadd' 'sub_i' <Predicate = (!icmp_ln36 & !icmp_ln45 & !and_ln46 & and_ln51 & !icmp_ln9 & !icmp_ln10)> <Delay = 7.05> <CoreInst = "DAddSub_fulldsp">   --->   Core 37 'DAddSub_fulldsp' <Latency = 4> <II = 1> <Delay = 7.05> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
 
 State 33 <SV = 32> <Delay = 7.05>
-ST_33 : Operation 146 [4/5] (7.05ns)   --->   "%sub_i = dadd i64 %tmp_4, i64 -1" [C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib\hlsmath\src\common\hls_exp_float.cpp:12->C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h:61]   --->   Operation 146 'dadd' 'sub_i' <Predicate = (!icmp_ln36 & !icmp_ln45 & !and_ln46 & and_ln51 & !icmp_ln9 & !icmp_ln10)> <Delay = 7.05> <CoreInst = "DAddSub_fulldsp">   --->   Core 37 'DAddSub_fulldsp' <Latency = 4> <II = 1> <Delay = 7.05> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+ST_33 : Operation 146 [4/5] (7.05ns)   --->   "%sub_i = dadd i64 %tmp_6, i64 -1" [C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib\hlsmath\src\common\hls_exp_float.cpp:12->C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h:61]   --->   Operation 146 'dadd' 'sub_i' <Predicate = (!icmp_ln36 & !icmp_ln45 & !and_ln46 & and_ln51 & !icmp_ln9 & !icmp_ln10)> <Delay = 7.05> <CoreInst = "DAddSub_fulldsp">   --->   Core 37 'DAddSub_fulldsp' <Latency = 4> <II = 1> <Delay = 7.05> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
 
 State 34 <SV = 33> <Delay = 7.05>
-ST_34 : Operation 147 [3/5] (7.05ns)   --->   "%sub_i = dadd i64 %tmp_4, i64 -1" [C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib\hlsmath\src\common\hls_exp_float.cpp:12->C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h:61]   --->   Operation 147 'dadd' 'sub_i' <Predicate = (!icmp_ln36 & !icmp_ln45 & !and_ln46 & and_ln51 & !icmp_ln9 & !icmp_ln10)> <Delay = 7.05> <CoreInst = "DAddSub_fulldsp">   --->   Core 37 'DAddSub_fulldsp' <Latency = 4> <II = 1> <Delay = 7.05> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+ST_34 : Operation 147 [3/5] (7.05ns)   --->   "%sub_i = dadd i64 %tmp_6, i64 -1" [C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib\hlsmath\src\common\hls_exp_float.cpp:12->C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h:61]   --->   Operation 147 'dadd' 'sub_i' <Predicate = (!icmp_ln36 & !icmp_ln45 & !and_ln46 & and_ln51 & !icmp_ln9 & !icmp_ln10)> <Delay = 7.05> <CoreInst = "DAddSub_fulldsp">   --->   Core 37 'DAddSub_fulldsp' <Latency = 4> <II = 1> <Delay = 7.05> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
 
 State 35 <SV = 34> <Delay = 7.05>
-ST_35 : Operation 148 [2/5] (7.05ns)   --->   "%sub_i = dadd i64 %tmp_4, i64 -1" [C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib\hlsmath\src\common\hls_exp_float.cpp:12->C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h:61]   --->   Operation 148 'dadd' 'sub_i' <Predicate = (!icmp_ln36 & !icmp_ln45 & !and_ln46 & and_ln51 & !icmp_ln9 & !icmp_ln10)> <Delay = 7.05> <CoreInst = "DAddSub_fulldsp">   --->   Core 37 'DAddSub_fulldsp' <Latency = 4> <II = 1> <Delay = 7.05> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+ST_35 : Operation 148 [2/5] (7.05ns)   --->   "%sub_i = dadd i64 %tmp_6, i64 -1" [C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib\hlsmath\src\common\hls_exp_float.cpp:12->C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h:61]   --->   Operation 148 'dadd' 'sub_i' <Predicate = (!icmp_ln36 & !icmp_ln45 & !and_ln46 & and_ln51 & !icmp_ln9 & !icmp_ln10)> <Delay = 7.05> <CoreInst = "DAddSub_fulldsp">   --->   Core 37 'DAddSub_fulldsp' <Latency = 4> <II = 1> <Delay = 7.05> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
 
 State 36 <SV = 35> <Delay = 7.05>
-ST_36 : Operation 149 [1/5] (7.05ns)   --->   "%sub_i = dadd i64 %tmp_4, i64 -1" [C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib\hlsmath\src\common\hls_exp_float.cpp:12->C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h:61]   --->   Operation 149 'dadd' 'sub_i' <Predicate = (!icmp_ln36 & !icmp_ln45 & !and_ln46 & and_ln51 & !icmp_ln9 & !icmp_ln10)> <Delay = 7.05> <CoreInst = "DAddSub_fulldsp">   --->   Core 37 'DAddSub_fulldsp' <Latency = 4> <II = 1> <Delay = 7.05> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+ST_36 : Operation 149 [1/5] (7.05ns)   --->   "%sub_i = dadd i64 %tmp_6, i64 -1" [C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib\hlsmath\src\common\hls_exp_float.cpp:12->C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h:61]   --->   Operation 149 'dadd' 'sub_i' <Predicate = (!icmp_ln36 & !icmp_ln45 & !and_ln46 & and_ln51 & !icmp_ln9 & !icmp_ln10)> <Delay = 7.05> <CoreInst = "DAddSub_fulldsp">   --->   Core 37 'DAddSub_fulldsp' <Latency = 4> <II = 1> <Delay = 7.05> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
 
 State 37 <SV = 36> <Delay = 4.38>
 ST_37 : Operation 150 [2/2] (4.38ns)   --->   "%conv6_i = fptrunc i64 %sub_i" [C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib\hlsmath\src\common\hls_exp_float.cpp:12->C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h:61]   --->   Operation 150 'fptrunc' 'conv6_i' <Predicate = (!icmp_ln36 & !icmp_ln45 & !and_ln46 & and_ln51 & !icmp_ln9 & !icmp_ln10)> <Delay = 4.38> <CoreInst = "Double2Float">   --->   Core 67 'Double2Float' <Latency = 1> <II = 1> <Delay = 4.38> <FuncUnit> <Opcode : 'fptrunc'> <InPorts = 1> <OutPorts = 1>
@@ -713,7 +724,7 @@ br_ln10        (br            ) [ 0111000011111111111111111111111111111110000000
 br_ln0         (br            ) [ 011100001111111111111111111111111111111000000000000000000000000]
 xd             (fpext         ) [ 011100000011111111111111111111110000000000000000000000000000000]
 resultf        (fmul          ) [ 011100000011111111111111111111111111111111111111111111111111111]
-tmp_4          (call          ) [ 011100000000000000000000000000001111100000000000000000000000000]
+tmp_6          (call          ) [ 011100000000000000000000000000001111100000000000000000000000000]
 sub_i          (dadd          ) [ 011000000000000000000000000000000000011000000000000000000000000]
 conv6_i        (fptrunc       ) [ 000000000000000000000000000000000000000000000000000000000000000]
 expx           (phi           ) [ 011100000111111111111111111111111111111111110000000000000000000]
@@ -1060,7 +1071,7 @@ ret_ln85       (ret           ) [ 0000000000000000000000000000000000000000000000
 </pin_list>
 <bind>
 <opcode="call(48) " fcode="call"/>
-<opset="tmp_4/9 "/>
+<opset="tmp_6/9 "/>
 </bind>
 </comp>
 
@@ -1826,13 +1837,13 @@ ret_ln85       (ret           ) [ 0000000000000000000000000000000000000000000000
 </bind>
 </comp>
 
-<comp id="470" class="1005" name="tmp_4_reg_470">
+<comp id="470" class="1005" name="tmp_6_reg_470">
 <pin_list>
 <pin id="471" dir="0" index="0" bw="64" slack="1"/>
 <pin id="472" dir="1" index="1" bw="64" slack="1"/>
 </pin_list>
 <bind>
-<opset="tmp_4 "/>
+<opset="tmp_6 "/>
 </bind>
 </comp>
 
@@ -2252,7 +2263,7 @@ ret_ln85       (ret           ) [ 0000000000000000000000000000000000000000000000
 		icmp_ln10 : 2
 		br_ln10 : 3
 	State 9
-		tmp_4 : 1
+		tmp_6 : 1
 	State 10
 	State 11
 	State 12
@@ -2425,7 +2436,7 @@ N/A
 |    resultf_reg_465   |   32   |
 |     sub_i_reg_475    |   64   |
 |       t_reg_384      |   31   |
-|     tmp_4_reg_470    |   64   |
+|     tmp_6_reg_470    |   64   |
 |  trunc_ln66_reg_490  |   31   |
 |      x_3_reg_445     |   32   |
 |      xd_reg_460      |   64   |

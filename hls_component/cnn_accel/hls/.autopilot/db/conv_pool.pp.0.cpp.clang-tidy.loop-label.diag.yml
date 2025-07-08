@@ -1302,30 +1302,30 @@ Diagnostics:
         Length:          0
         ReplacementText: 'VITIS_LOOP_169_3: '
   - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_252_1:  '
-    FileOffset:      252
+    Message:         'Added loop label VITIS_LOOP_309_1:  '
+    FileOffset:      309
     FilePath:        'C:\Users\ozair\Documents\Code_Drive\Drone\hls_files\conv_pool.cpp'
     Replacements:    
       - FilePath:        'C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp'
-        Offset:          1760794
+        Offset:          1776660
         Length:          0
-        ReplacementText: 'VITIS_LOOP_252_1: '
+        ReplacementText: 'VITIS_LOOP_309_1: '
   - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_253_2:  '
-    FileOffset:      253
+    Message:         'Added loop label VITIS_LOOP_310_2:  '
+    FileOffset:      310
     FilePath:        'C:\Users\ozair\Documents\Code_Drive\Drone\hls_files\conv_pool.cpp'
     Replacements:    
       - FilePath:        'C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp'
-        Offset:          1760859
+        Offset:          1776725
         Length:          0
-        ReplacementText: 'VITIS_LOOP_253_2: '
+        ReplacementText: 'VITIS_LOOP_310_2: '
   - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_270_1:  '
-    FileOffset:      270
+    Message:         'Added loop label VITIS_LOOP_327_1:  '
+    FileOffset:      327
     FilePath:        'C:\Users\ozair\Documents\Code_Drive\Drone\hls_files\conv_pool.cpp'
     Replacements:    
       - FilePath:        'C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp'
-        Offset:          1761260
+        Offset:          1777126
         Length:          0
-        ReplacementText: 'VITIS_LOOP_270_1: '
+        ReplacementText: 'VITIS_LOOP_327_1: '
 ...

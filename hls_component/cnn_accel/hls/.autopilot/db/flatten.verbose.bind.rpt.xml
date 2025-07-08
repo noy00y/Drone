@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'flatten'" level="0">
-<item name = "Date">Tue Jul  8 00:39:56 2025
+<item name = "Date">Tue Jul  8 02:25:43 2025
 </item>
 <item name = "Version">2025.1 (Build 6135595 on May 21 2025)</item>
 <item name = "Project">cnn_accel</item>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">217155, 217155, 2.172 ms, 2.172 ms, 217156, 217156, loop auto-rewind stp (delay=4 clock cycles(s))</column>
+<column name="">217155, 217155, 2.172 ms, 2.172 ms, 217154, 217154, loop auto-rewind stp (delay=0 clock cycles(s))</column>
 </table>
 </item>
 <item name = "Detail">
@@ -35,7 +35,7 @@
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- FLATTEN_VITIS_LOOP_252_1_VITIS_LOOP_253_2">217153, 217153, 5, 3, 3, 72384, yes</column>
+<column name="- FLATTEN_VITIS_LOOP_309_1_VITIS_LOOP_310_2">217153, 217153, 5, 3, 3, 72384, yes</column>
 </table>
 </item>
 </section>

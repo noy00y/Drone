@@ -2,13 +2,22 @@
     <msg msg_groups="" msg_id="207-1016" msg_severity="WARNING" msg_loc="C:/Xilinx/2025.1/Vitis/common/technology/autopilot/etc/hls_sqrt_apfixed.h:16:34" msg_body="unknown warning group '-Wmisleading-indentation', ignored">
         <args ClangWarningOption="unknown-warning-option"/>
     </msg>
-    <msg msg_groups="PRAGMA_DATAFLOW" msg_id="214-111" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:92:16" msg_body="Static scalars and arrays declared inside a dataflow region will be treated like local variables"/>
-    <msg msg_groups="PRAGMA_DATAFLOW" msg_id="214-111" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:93:19" msg_body="Static scalars and arrays declared inside a dataflow region will be treated like local variables"/>
+    <msg msg_groups="PRAGMA_DATAFLOW" msg_id="214-111" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:93:16" msg_body="Static scalars and arrays declared inside a dataflow region will be treated like local variables"/>
     <msg msg_groups="PRAGMA_DATAFLOW" msg_id="214-111" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:94:19" msg_body="Static scalars and arrays declared inside a dataflow region will be treated like local variables"/>
     <msg msg_groups="PRAGMA_DATAFLOW" msg_id="214-111" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:95:19" msg_body="Static scalars and arrays declared inside a dataflow region will be treated like local variables"/>
     <msg msg_groups="PRAGMA_DATAFLOW" msg_id="214-111" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:96:19" msg_body="Static scalars and arrays declared inside a dataflow region will be treated like local variables"/>
     <msg msg_groups="PRAGMA_DATAFLOW" msg_id="214-111" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:97:19" msg_body="Static scalars and arrays declared inside a dataflow region will be treated like local variables"/>
     <msg msg_groups="PRAGMA_DATAFLOW" msg_id="214-111" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:98:19" msg_body="Static scalars and arrays declared inside a dataflow region will be treated like local variables"/>
+    <msg msg_groups="PRAGMA_DATAFLOW" msg_id="214-111" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:99:19" msg_body="Static scalars and arrays declared inside a dataflow region will be treated like local variables"/>
+    <msg msg_groups="PRAGMA_DATAFLOW" msg_id="214-111" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:103:19" msg_body="Static scalars and arrays declared inside a dataflow region will be treated like local variables"/>
+    <msg msg_groups="PRAGMA_DATAFLOW" msg_id="214-111" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:104:19" msg_body="Static scalars and arrays declared inside a dataflow region will be treated like local variables"/>
+    <msg msg_groups="PRAGMA_DATAFLOW" msg_id="214-111" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:105:19" msg_body="Static scalars and arrays declared inside a dataflow region will be treated like local variables"/>
+    <msg msg_groups="PRAGMA_DATAFLOW" msg_id="214-111" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:106:19" msg_body="Static scalars and arrays declared inside a dataflow region will be treated like local variables"/>
+    <msg msg_groups="PRAGMA_DATAFLOW" msg_id="214-111" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:107:19" msg_body="Static scalars and arrays declared inside a dataflow region will be treated like local variables"/>
+    <msg msg_groups="PRAGMA_DATAFLOW" msg_id="214-111" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:108:19" msg_body="Static scalars and arrays declared inside a dataflow region will be treated like local variables"/>
+    <msg msg_groups="PRAGMA_DATAFLOW" msg_id="214-111" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:109:19" msg_body="Static scalars and arrays declared inside a dataflow region will be treated like local variables"/>
+    <msg msg_groups="PRAGMA_DATAFLOW" msg_id="214-111" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:110:19" msg_body="Static scalars and arrays declared inside a dataflow region will be treated like local variables"/>
+    <msg msg_groups="PRAGMA_DATAFLOW" msg_id="214-114" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:165:9" msg_body="Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region"/>
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/2025.1/Vitis/common/technology/autopilot\ap_axi_sdata.h:149:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="get_data" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
@@ -645,167 +654,215 @@
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="directive:1:9" msg_body="HLS pragma dump">
         <args ARG_PragmaContext="directive" ARG_PragmaFunction="cnn_accel" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=cnn_accel" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:67:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:68:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="cnn_accel" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port=img_in offset=slave bundle=IMGmem depth=240*320*3" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:68:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:69:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="cnn_accel" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port=weights1 offset=slave bundle=W1mem depth=8*3*3*3" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:69:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:70:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="cnn_accel" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port=bias1 offset=slave bundle=B1mem depth=8" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:70:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:71:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="cnn_accel" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port=weights2 offset=slave bundle=W2mem depth=16*8*3*3" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:71:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:72:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="cnn_accel" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port=bias2 offset=slave bundle=B2mem depth=16" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:72:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:73:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="cnn_accel" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port=FC1_W offset=slave bundle=W3mem depth=32*(16*((((240 -3 +1)/2)-3 +1)/2)*((((320 -3 +1)/2)-3 +1)/2))" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:73:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:74:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="cnn_accel" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port=FC1_B offset=slave bundle=B3mem depth=32" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:74:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:75:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="cnn_accel" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port=FC2_W offset=slave bundle=W4mem depth=32" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:75:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:76:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="cnn_accel" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port=FC2_B offset=slave bundle=B4mem depth=1" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:76:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:77:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="cnn_accel" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port=flag_out offset=slave bundle=Foutmem depth=1" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:78:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:79:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="cnn_accel" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=img_in bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:79:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:80:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="cnn_accel" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=weights1 bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:80:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:81:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="cnn_accel" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=bias1 bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:81:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:82:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="cnn_accel" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=weights2 bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:82:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:83:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="cnn_accel" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=bias2 bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:83:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:84:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="cnn_accel" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=FC1_W bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:84:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:85:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="cnn_accel" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=FC1_B bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:85:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:86:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="cnn_accel" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=FC2_W bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:86:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:87:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="cnn_accel" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=FC2_B bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:87:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:88:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="cnn_accel" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=flag_out bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:88:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:89:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="cnn_accel" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=ctrl bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:89:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:90:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="cnn_accel" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=return bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:102:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="cnn_accel" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=local_img block factor=2 dim=3" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:113:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="cnn_accel" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=w1_local complete dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:103:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="cnn_accel" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=feat1 block factor=4 dim=3" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:114:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="cnn_accel" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=b1_local complete dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:104:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="cnn_accel" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=feat1_p block factor=4 dim=3" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:115:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="cnn_accel" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=w2_local complete dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:105:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="cnn_accel" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=feat2 block factor=4 dim=3" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:116:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="cnn_accel" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=b2_local complete dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:106:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="cnn_accel" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=feat2_p block factor=4 dim=3" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:117:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="cnn_accel" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=fc1_w_local cyclic factor=8 dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:108:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="cnn_accel" ARG_PragmaIsValid="1" ARG_PragmaType="dataflow" ClangWarningOption="dump-hls-pragmas"/>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:118:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="cnn_accel" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=fc1_b_local complete dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:142:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="load_img" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=3" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:119:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="cnn_accel" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=fc2_w_local complete dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:120:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="cnn_accel" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=fc2_b_local complete dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:125:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="cnn_accel" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=3" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:129:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="cnn_accel" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=3" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:133:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="cnn_accel" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=3" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:137:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="cnn_accel" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=3" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:141:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="cnn_accel" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=3" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:145:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="cnn_accel" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=3" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:149:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="cnn_accel" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=3" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:153:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="cnn_accel" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=3" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:159:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="cnn_accel" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=local_img block factor=2 dim=3" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:160:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="cnn_accel" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=feat1 block factor=4 dim=3" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:161:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="cnn_accel" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=feat1_p block factor=4 dim=3" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:162:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="cnn_accel" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=feat2 block factor=4 dim=3" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:163:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="cnn_accel" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=feat2_p block factor=4 dim=3" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:165:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="cnn_accel" ARG_PragmaIsValid="1" ARG_PragmaType="dataflow" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:199:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="load_img" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=3" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:216:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="conv1" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=3" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:164:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:221:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="conv1" ARG_PragmaIsValid="1" ARG_PragmaOptions="factor=2" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:185:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:242:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="pool1" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=3" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:207:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:264:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="conv2" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=3" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:212:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:269:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="conv2" ARG_PragmaIsValid="1" ARG_PragmaOptions="factor=2" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:232:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:289:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="pool2" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=3" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:254:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:311:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="flatten" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=3" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:268:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:325:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="fc1" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=3" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:271:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:328:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="fc1" ARG_PragmaIsValid="1" ARG_PragmaOptions="factor=2" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:287:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:344:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="fc2" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=3" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
     <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib\hlsmath\src\c++\expfloat.cpp:17:9" msg_body="Inlining function 'exp_reduce_::exp(float)' into 'hls::exp(float)'">
         <args Callee="exp_reduce_::exp(float)" Callee-DebugLoc="File {C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib\hlsmath\src\common\hls_exp_float.cpp} Line 15 Column 0" Caller="hls::exp(float)" Caller-DebugLoc="File {C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib\hlsmath\src\c++\expfloat.cpp} Line 15 Column 0"/>
     </msg>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls_files/conv_pool.cpp:290:34" msg_body="Inlining function 'hls::exp(float)' into 'fc2(float const*, float const*, float const*, unsigned char*)'">
-        <args Callee="hls::exp(float)" Callee-DebugLoc="File {C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib\hlsmath\src\c++\expfloat.cpp} Line 15 Column 0" Caller="fc2(float const*, float const*, float const*, unsigned char*)" Caller-DebugLoc="File ../hls_files/conv_pool.cpp Line 284 Column 0"/>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls_files/conv_pool.cpp:347:34" msg_body="Inlining function 'hls::exp(float)' into 'fc2(float const*, float const*, float const*, unsigned char*)'">
+        <args Callee="hls::exp(float)" Callee-DebugLoc="File {C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib\hlsmath\src\c++\expfloat.cpp} Line 15 Column 0" Caller="fc2(float const*, float const*, float const*, unsigned char*)" Caller-DebugLoc="File ../hls_files/conv_pool.cpp Line 341 Column 0"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../hls_files/conv_pool.cpp:270:27" msg_body="Loop 'VITIS_LOOP_270_1' is marked as complete unroll implied by the pipeline pragma">
-        <args LoopName="VITIS_LOOP_270_1"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../hls_files/conv_pool.cpp:327:27" msg_body="Loop 'VITIS_LOOP_327_1' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_327_1"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../hls_files/conv_pool.cpp:209:27" msg_body="Loop 'CONV2_KR' is marked as complete unroll implied by the pipeline pragma">
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../hls_files/conv_pool.cpp:266:27" msg_body="Loop 'CONV2_KR' is marked as complete unroll implied by the pipeline pragma">
         <args LoopName="CONV2_KR"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../hls_files/conv_pool.cpp:210:31" msg_body="Loop 'CONV2_KC' is marked as complete unroll implied by the pipeline pragma">
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../hls_files/conv_pool.cpp:267:31" msg_body="Loop 'CONV2_KC' is marked as complete unroll implied by the pipeline pragma">
         <args LoopName="CONV2_KC"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../hls_files/conv_pool.cpp:211:35" msg_body="Loop 'CONV2_CH' is marked as complete unroll implied by the pipeline pragma">
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../hls_files/conv_pool.cpp:268:35" msg_body="Loop 'CONV2_CH' is marked as complete unroll implied by the pipeline pragma">
         <args LoopName="CONV2_CH"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../hls_files/conv_pool.cpp:161:27" msg_body="Loop 'CONV1_KR' is marked as complete unroll implied by the pipeline pragma">
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../hls_files/conv_pool.cpp:218:27" msg_body="Loop 'CONV1_KR' is marked as complete unroll implied by the pipeline pragma">
         <args LoopName="CONV1_KR"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../hls_files/conv_pool.cpp:162:31" msg_body="Loop 'CONV1_KC' is marked as complete unroll implied by the pipeline pragma">
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../hls_files/conv_pool.cpp:219:31" msg_body="Loop 'CONV1_KC' is marked as complete unroll implied by the pipeline pragma">
         <args LoopName="CONV1_KC"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../hls_files/conv_pool.cpp:163:35" msg_body="Loop 'CONV1_CH' is marked as complete unroll implied by the pipeline pragma">
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../hls_files/conv_pool.cpp:220:35" msg_body="Loop 'CONV1_CH' is marked as complete unroll implied by the pipeline pragma">
         <args LoopName="CONV1_CH"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../hls_files/conv_pool.cpp:203:0" msg_body="Unrolling loop 'CONV2_KR' (../hls_files/conv_pool.cpp:209:27) in function 'conv2' completely with a factor of 3">
-        <args Factor="3" LoopLoc="../hls_files/conv_pool.cpp:209:27" LoopName="CONV2_KR"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../hls_files/conv_pool.cpp:260:0" msg_body="Unrolling loop 'CONV2_KR' (../hls_files/conv_pool.cpp:266:27) in function 'conv2' completely with a factor of 3">
+        <args Factor="3" LoopLoc="../hls_files/conv_pool.cpp:266:27" LoopName="CONV2_KR"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../hls_files/conv_pool.cpp:203:0" msg_body="Unrolling loop 'CONV2_KC' (../hls_files/conv_pool.cpp:210:31) in function 'conv2' completely with a factor of 3">
-        <args Factor="3" LoopLoc="../hls_files/conv_pool.cpp:210:31" LoopName="CONV2_KC"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../hls_files/conv_pool.cpp:260:0" msg_body="Unrolling loop 'CONV2_KC' (../hls_files/conv_pool.cpp:267:31) in function 'conv2' completely with a factor of 3">
+        <args Factor="3" LoopLoc="../hls_files/conv_pool.cpp:267:31" LoopName="CONV2_KC"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../hls_files/conv_pool.cpp:203:0" msg_body="Unrolling loop 'CONV2_CH' (../hls_files/conv_pool.cpp:211:35) in function 'conv2' completely with a factor of 8">
-        <args Factor="8" LoopLoc="../hls_files/conv_pool.cpp:211:35" LoopName="CONV2_CH"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../hls_files/conv_pool.cpp:260:0" msg_body="Unrolling loop 'CONV2_CH' (../hls_files/conv_pool.cpp:268:35) in function 'conv2' completely with a factor of 8">
+        <args Factor="8" LoopLoc="../hls_files/conv_pool.cpp:268:35" LoopName="CONV2_CH"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../hls_files/conv_pool.cpp:155:0" msg_body="Unrolling loop 'CONV1_KR' (../hls_files/conv_pool.cpp:161:27) in function 'conv1' completely with a factor of 3">
-        <args Factor="3" LoopLoc="../hls_files/conv_pool.cpp:161:27" LoopName="CONV1_KR"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../hls_files/conv_pool.cpp:212:0" msg_body="Unrolling loop 'CONV1_KR' (../hls_files/conv_pool.cpp:218:27) in function 'conv1' completely with a factor of 3">
+        <args Factor="3" LoopLoc="../hls_files/conv_pool.cpp:218:27" LoopName="CONV1_KR"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../hls_files/conv_pool.cpp:155:0" msg_body="Unrolling loop 'CONV1_KC' (../hls_files/conv_pool.cpp:162:31) in function 'conv1' completely with a factor of 3">
-        <args Factor="3" LoopLoc="../hls_files/conv_pool.cpp:162:31" LoopName="CONV1_KC"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../hls_files/conv_pool.cpp:212:0" msg_body="Unrolling loop 'CONV1_KC' (../hls_files/conv_pool.cpp:219:31) in function 'conv1' completely with a factor of 3">
+        <args Factor="3" LoopLoc="../hls_files/conv_pool.cpp:219:31" LoopName="CONV1_KC"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../hls_files/conv_pool.cpp:155:0" msg_body="Unrolling loop 'CONV1_CH' (../hls_files/conv_pool.cpp:163:35) in function 'conv1' completely with a factor of 3">
-        <args Factor="3" LoopLoc="../hls_files/conv_pool.cpp:163:35" LoopName="CONV1_CH"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../hls_files/conv_pool.cpp:212:0" msg_body="Unrolling loop 'CONV1_CH' (../hls_files/conv_pool.cpp:220:35) in function 'conv1' completely with a factor of 3">
+        <args Factor="3" LoopLoc="../hls_files/conv_pool.cpp:220:35" LoopName="CONV1_CH"/>
     </msg>
     <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h:322:0" msg_body="Inlining function 'fp_struct&lt;float&gt;::data() const (.35.45.54.65)' into 'fp_struct&lt;float&gt;::to_float() const (.32.42.51.62)'">
         <args Callee="fp_struct&lt;float&gt;::data() const (.35.45.54.65)" Callee-DebugLoc="File {C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h} Line 309 Column 0" Caller="fp_struct&lt;float&gt;::to_float() const (.32.42.51.62)" Caller-DebugLoc="File {C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h} Line 322 Column 0"/>
@@ -870,32 +927,50 @@
     <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h:28:0" msg_body="Inlining function 'exp_reduce_::expm1(float)' into 'float explog_based::generic_tanh&lt;float&gt;(float)'">
         <args Callee="exp_reduce_::expm1(float)" Callee-DebugLoc="File {C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib\hlsmath\src\common\hls_exp_float.cpp} Line 7 Column 0" Caller="float explog_based::generic_tanh&lt;float&gt;(float)" Caller-DebugLoc="File {C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h} Line 28 Column 0"/>
     </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../hls_files/conv_pool.cpp:266:0" msg_body="Inlining function 'hls::tanh(float)' into 'fc1(float const*, int, float const*, float const*, float*)'">
-        <args Callee="hls::tanh(float)" Callee-DebugLoc="File {C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib\hlsmath\src\c++\tanhfloat.cpp} Line 6 Column 0" Caller="fc1(float const*, int, float const*, float const*, float*)" Caller-DebugLoc="File ../hls_files/conv_pool.cpp Line 266 Column 0"/>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../hls_files/conv_pool.cpp:323:0" msg_body="Inlining function 'hls::tanh(float)' into 'fc1(float const*, int, float const*, float const*, float*)'">
+        <args Callee="hls::tanh(float)" Callee-DebugLoc="File {C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib\hlsmath\src\c++\tanhfloat.cpp} Line 6 Column 0" Caller="fc1(float const*, int, float const*, float const*, float*)" Caller-DebugLoc="File ../hls_files/conv_pool.cpp Line 323 Column 0"/>
     </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-464" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:66:0" msg_body="Skipping array undecay on variable length array 'FC2_B'.">
-        <args ArrayName="FC2_B"/>
-    </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-464" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:66:0" msg_body="Skipping array undecay on variable length array 'flag_out'.">
-        <args ArrayName="flag_out"/>
-    </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../hls_files/conv_pool.cpp:96:0" msg_body="Applying array_partition to '_ZZ9cnn_accelE7feat2_p': Block partitioning with factor 4 on dimension 3.">
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../hls_files/conv_pool.cpp:97:0" msg_body="Applying array_partition to '_ZZ9cnn_accelE7feat2_p': Block partitioning with factor 4 on dimension 3.">
         <args Dim="3" Factor="4" Mode="Block" UOName="_ZZ9cnn_accelE7feat2_p"/>
     </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../hls_files/conv_pool.cpp:95:0" msg_body="Applying array_partition to '_ZZ9cnn_accelE5feat2': Block partitioning with factor 4 on dimension 3.">
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../hls_files/conv_pool.cpp:96:0" msg_body="Applying array_partition to '_ZZ9cnn_accelE5feat2': Block partitioning with factor 4 on dimension 3.">
         <args Dim="3" Factor="4" Mode="Block" UOName="_ZZ9cnn_accelE5feat2"/>
     </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../hls_files/conv_pool.cpp:94:0" msg_body="Applying array_partition to '_ZZ9cnn_accelE7feat1_p': Block partitioning with factor 4 on dimension 3.">
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../hls_files/conv_pool.cpp:95:0" msg_body="Applying array_partition to '_ZZ9cnn_accelE7feat1_p': Block partitioning with factor 4 on dimension 3.">
         <args Dim="3" Factor="4" Mode="Block" UOName="_ZZ9cnn_accelE7feat1_p"/>
     </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../hls_files/conv_pool.cpp:93:0" msg_body="Applying array_partition to '_ZZ9cnn_accelE5feat1': Block partitioning with factor 4 on dimension 3.">
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../hls_files/conv_pool.cpp:94:0" msg_body="Applying array_partition to '_ZZ9cnn_accelE5feat1': Block partitioning with factor 4 on dimension 3.">
         <args Dim="3" Factor="4" Mode="Block" UOName="_ZZ9cnn_accelE5feat1"/>
     </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../hls_files/conv_pool.cpp:92:0" msg_body="Applying array_partition to '_ZZ9cnn_accelE9local_img': Block partitioning with factor 2 on dimension 3.">
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../hls_files/conv_pool.cpp:93:0" msg_body="Applying array_partition to '_ZZ9cnn_accelE9local_img': Block partitioning with factor 2 on dimension 3.">
         <args Dim="3" Factor="2" Mode="Block" UOName="_ZZ9cnn_accelE9local_img"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-187" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:270:27" msg_body="Cannot unroll loop 'VITIS_LOOP_270_1' (../hls_files/conv_pool.cpp:270:27) in function 'fc1' as it has a variable trip count">
-        <args LoopLoc="../hls_files/conv_pool.cpp:270:27" LoopName="VITIS_LOOP_270_1"/>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../hls_files/conv_pool.cpp:110:0" msg_body="Applying array_partition to '_ZZ9cnn_accelE11fc2_b_local': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZZ9cnn_accelE11fc2_b_local"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../hls_files/conv_pool.cpp:109:0" msg_body="Applying array_partition to '_ZZ9cnn_accelE11fc2_w_local': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZZ9cnn_accelE11fc2_w_local"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../hls_files/conv_pool.cpp:108:0" msg_body="Applying array_partition to '_ZZ9cnn_accelE11fc1_b_local': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZZ9cnn_accelE11fc1_b_local"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../hls_files/conv_pool.cpp:107:0" msg_body="Applying array_partition to '_ZZ9cnn_accelE11fc1_w_local': Cyclic partitioning with factor 8 on dimension 1.">
+        <args Dim="1" Factor="8" Mode="Cyclic" UOName="_ZZ9cnn_accelE11fc1_w_local"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../hls_files/conv_pool.cpp:106:0" msg_body="Applying array_partition to '_ZZ9cnn_accelE8b2_local': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZZ9cnn_accelE8b2_local"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../hls_files/conv_pool.cpp:105:0" msg_body="Applying array_partition to '_ZZ9cnn_accelE8w2_local': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZZ9cnn_accelE8w2_local"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../hls_files/conv_pool.cpp:104:0" msg_body="Applying array_partition to '_ZZ9cnn_accelE8b1_local': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZZ9cnn_accelE8b1_local"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../hls_files/conv_pool.cpp:103:0" msg_body="Applying array_partition to '_ZZ9cnn_accelE8w1_local': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZZ9cnn_accelE8w1_local"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-187" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:327:27" msg_body="Cannot unroll loop 'VITIS_LOOP_327_1' (../hls_files/conv_pool.cpp:327:27) in function 'fc1' as it has a variable trip count">
+        <args LoopLoc="../hls_files/conv_pool.cpp:327:27" LoopName="VITIS_LOOP_327_1"/>
     </msg>
 </xilinx:hls_fe_msgs>
 

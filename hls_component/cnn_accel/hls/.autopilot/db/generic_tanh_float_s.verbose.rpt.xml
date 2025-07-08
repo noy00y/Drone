@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'generic_tanh_float_s'" level="0">
-<item name = "Date">Tue Jul  8 00:40:06 2025
+<item name = "Date">Tue Jul  8 02:26:11 2025
 </item>
 <item name = "Version">2025.1 (Build 6135595 on May 21 2025)</item>
 <item name = "Project">cnn_accel</item>
@@ -50,25 +50,22 @@
 <column name="DSP">-, -, -, -, -</column>
 <column name="Expression">-, -, 0, 294, -</column>
 <column name="FIFO">-, -, -, -, -</column>
-<column name="Instance">5, 34, 3882, 4247, -</column>
+<column name="Instance">5, 32, 3677, 4044, -</column>
 <column name="Memory">-, -, -, -, -</column>
 <column name="Multiplexer">-, -, 0, 187, -</column>
 <column name="Register">-, -, 2096, 320, -</column>
 <specialColumn name="Available">270, 240, 126800, 63400, 0</specialColumn>
-<specialColumn name="Utilization (%)">1, 14, 4, 7, 0</specialColumn>
+<specialColumn name="Utilization (%)">1, 13, 4, 7, 0</specialColumn>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
-<column name="dadd_64ns_64ns_64_5_full_dsp_1_U107">dadd_64ns_64ns_64_5_full_dsp_1, 0, 3, 445, 788, 0</column>
+<column name="dadd_64ns_64ns_64_5_full_dsp_1_U1611">dadd_64ns_64ns_64_5_full_dsp_1, 0, 3, 445, 788, 0</column>
 <column name="grp_exp_generic_double_s_fu_89">exp_generic_double_s, 5, 29, 3232, 3256, 0</column>
-<column name="faddfsub_32ns_32ns_32_5_full_dsp_1_U101">faddfsub_32ns_32ns_32_5_full_dsp_1, 0, 2, 205, 203, 0</column>
-<column name="fcmp_32ns_32ns_1_2_no_dsp_1_U106">fcmp_32ns_32ns_1_2_no_dsp_1, 0, 0, 0, 0, 0</column>
-<column name="fdiv_32ns_32ns_32_12_no_dsp_1_U103">fdiv_32ns_32ns_32_12_no_dsp_1, 0, 0, 0, 0, 0</column>
-<column name="fpext_32ns_64_2_no_dsp_1_U105">fpext_32ns_64_2_no_dsp_1, 0, 0, 0, 0, 0</column>
-<column name="fptrunc_64ns_32_2_no_dsp_1_U104">fptrunc_64ns_32_2_no_dsp_1, 0, 0, 0, 0, 0</column>
+<column name="fpext_32ns_64_2_no_dsp_1_U1609">fpext_32ns_64_2_no_dsp_1, 0, 0, 0, 0, 0</column>
+<column name="fptrunc_64ns_32_2_no_dsp_1_U1608">fptrunc_64ns_32_2_no_dsp_1, 0, 0, 0, 0, 0</column>
 </table>
 </item>
 <item name = "DSP"><table name="" hasTotal="0">
@@ -217,7 +214,7 @@
 <column name="resultf_2_reg_500">32, 0, 32, 0</column>
 <column name="sub_i_reg_475">64, 0, 64, 0</column>
 <column name="t_reg_384">31, 0, 31, 0</column>
-<column name="tmp_4_reg_470">64, 0, 64, 0</column>
+<column name="tmp_6_reg_470">64, 0, 64, 0</column>
 <column name="trunc_ln66_reg_490">31, 0, 31, 0</column>
 <column name="x_3_reg_445">32, 0, 32, 0</column>
 <column name="xor_ln66_reg_485">1, 0, 1, 0</column>
@@ -247,15 +244,29 @@
 <column name="ap_idle">out, 1, ap_ctrl_hs, generic_tanh&lt;float&gt;, return value</column>
 <column name="ap_ready">out, 1, ap_ctrl_hs, generic_tanh&lt;float&gt;, return value</column>
 <column name="ap_return">out, 32, ap_ctrl_hs, generic_tanh&lt;float&gt;, return value</column>
-<column name="grp_fu_188_p_din0">out, 32, ap_ctrl_hs, generic_tanh&lt;float&gt;, return value</column>
-<column name="grp_fu_188_p_din1">out, 32, ap_ctrl_hs, generic_tanh&lt;float&gt;, return value</column>
-<column name="grp_fu_188_p_opcode">out, 2, ap_ctrl_hs, generic_tanh&lt;float&gt;, return value</column>
-<column name="grp_fu_188_p_dout0">in, 32, ap_ctrl_hs, generic_tanh&lt;float&gt;, return value</column>
-<column name="grp_fu_188_p_ce">out, 1, ap_ctrl_hs, generic_tanh&lt;float&gt;, return value</column>
-<column name="grp_fu_193_p_din0">out, 32, ap_ctrl_hs, generic_tanh&lt;float&gt;, return value</column>
-<column name="grp_fu_193_p_din1">out, 32, ap_ctrl_hs, generic_tanh&lt;float&gt;, return value</column>
-<column name="grp_fu_193_p_dout0">in, 32, ap_ctrl_hs, generic_tanh&lt;float&gt;, return value</column>
-<column name="grp_fu_193_p_ce">out, 1, ap_ctrl_hs, generic_tanh&lt;float&gt;, return value</column>
+<column name="grp_fu_394_p_din0">out, 32, ap_ctrl_hs, generic_tanh&lt;float&gt;, return value</column>
+<column name="grp_fu_394_p_din1">out, 32, ap_ctrl_hs, generic_tanh&lt;float&gt;, return value</column>
+<column name="grp_fu_394_p_opcode">out, 2, ap_ctrl_hs, generic_tanh&lt;float&gt;, return value</column>
+<column name="grp_fu_394_p_dout0">in, 32, ap_ctrl_hs, generic_tanh&lt;float&gt;, return value</column>
+<column name="grp_fu_394_p_ce">out, 1, ap_ctrl_hs, generic_tanh&lt;float&gt;, return value</column>
+<column name="grp_fu_990_p_din0">out, 32, ap_ctrl_hs, generic_tanh&lt;float&gt;, return value</column>
+<column name="grp_fu_990_p_din1">out, 32, ap_ctrl_hs, generic_tanh&lt;float&gt;, return value</column>
+<column name="grp_fu_990_p_opcode">out, 2, ap_ctrl_hs, generic_tanh&lt;float&gt;, return value</column>
+<column name="grp_fu_990_p_dout0">in, 32, ap_ctrl_hs, generic_tanh&lt;float&gt;, return value</column>
+<column name="grp_fu_990_p_ce">out, 1, ap_ctrl_hs, generic_tanh&lt;float&gt;, return value</column>
+<column name="grp_fu_399_p_din0">out, 32, ap_ctrl_hs, generic_tanh&lt;float&gt;, return value</column>
+<column name="grp_fu_399_p_din1">out, 32, ap_ctrl_hs, generic_tanh&lt;float&gt;, return value</column>
+<column name="grp_fu_399_p_dout0">in, 32, ap_ctrl_hs, generic_tanh&lt;float&gt;, return value</column>
+<column name="grp_fu_399_p_ce">out, 1, ap_ctrl_hs, generic_tanh&lt;float&gt;, return value</column>
+<column name="grp_fu_994_p_din0">out, 32, ap_ctrl_hs, generic_tanh&lt;float&gt;, return value</column>
+<column name="grp_fu_994_p_din1">out, 32, ap_ctrl_hs, generic_tanh&lt;float&gt;, return value</column>
+<column name="grp_fu_994_p_dout0">in, 32, ap_ctrl_hs, generic_tanh&lt;float&gt;, return value</column>
+<column name="grp_fu_994_p_ce">out, 1, ap_ctrl_hs, generic_tanh&lt;float&gt;, return value</column>
+<column name="grp_fu_998_p_din0">out, 32, ap_ctrl_hs, generic_tanh&lt;float&gt;, return value</column>
+<column name="grp_fu_998_p_din1">out, 32, ap_ctrl_hs, generic_tanh&lt;float&gt;, return value</column>
+<column name="grp_fu_998_p_opcode">out, 5, ap_ctrl_hs, generic_tanh&lt;float&gt;, return value</column>
+<column name="grp_fu_998_p_dout0">in, 1, ap_ctrl_hs, generic_tanh&lt;float&gt;, return value</column>
+<column name="grp_fu_998_p_ce">out, 1, ap_ctrl_hs, generic_tanh&lt;float&gt;, return value</column>
 <column name="t_in">in, 32, ap_none, t_in, scalar</column>
 </table>
 </item>

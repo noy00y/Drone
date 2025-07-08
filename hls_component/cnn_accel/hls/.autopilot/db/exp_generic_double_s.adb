@@ -2443,7 +2443,7 @@
                 </item>
               </inlineStackInfo>
               <originalName></originalName>
-              <rtlName>mac_muladd_16s_15ns_19s_31_4_0_U89</rtlName>
+              <rtlName>mac_muladd_16s_15ns_19s_31_4_0_U1593</rtlName>
               <control>auto</control>
               <opType>mul</opType>
               <implIndex>dsp_slice</implIndex>
@@ -2614,7 +2614,7 @@
                 </item>
               </inlineStackInfo>
               <originalName></originalName>
-              <rtlName>mac_muladd_16s_15ns_19s_31_4_0_U89</rtlName>
+              <rtlName>mac_muladd_16s_15ns_19s_31_4_0_U1593</rtlName>
               <control>auto</control>
               <opType>add</opType>
               <implIndex>dsp_slice</implIndex>
@@ -3130,7 +3130,7 @@
                 </item>
               </inlineStackInfo>
               <originalName></originalName>
-              <rtlName>mul_13s_71s_71_5_0_U84</rtlName>
+              <rtlName>mul_13s_71s_71_5_0_U1588</rtlName>
               <control>auto</control>
               <opType>mul</opType>
               <implIndex>auto</implIndex>
@@ -3218,7 +3218,7 @@
             <Obj>
               <type>0</type>
               <id>60</id>
-              <name>tmp_s</name>
+              <name>tmp_26</name>
               <fileName>C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h</fileName>
               <fileDirectory>../../../../../../../scratch/2025.1/hls_product/640/2025.1/src/shared/hls/clib/hlsmath</fileDirectory>
               <lineNumber>255</lineNumber>
@@ -3243,7 +3243,7 @@
                 </item>
               </inlineStackInfo>
               <originalName></originalName>
-              <rtlName>tmp_s_reg_1206</rtlName>
+              <rtlName>tmp_26_reg_1206</rtlName>
               <control></control>
               <opType></opType>
               <implIndex></implIndex>
@@ -4807,7 +4807,7 @@
                 </item>
               </inlineStackInfo>
               <originalName></originalName>
-              <rtlName>mul_43ns_36ns_79_2_0_U85</rtlName>
+              <rtlName>mul_43ns_36ns_79_2_0_U1589</rtlName>
               <control>auto</control>
               <opType>mul</opType>
               <implIndex>auto</implIndex>
@@ -4902,7 +4902,7 @@
             <Obj>
               <type>0</type>
               <id>87</id>
-              <name>tmp_26</name>
+              <name>tmp_27</name>
               <fileName>C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h</fileName>
               <fileDirectory>../../../../../../../scratch/2025.1/hls_product/640/2025.1/src/shared/hls/clib/hlsmath</fileDirectory>
               <lineNumber>126</lineNumber>
@@ -4934,7 +4934,7 @@
                 </item>
               </inlineStackInfo>
               <originalName></originalName>
-              <rtlName>tmp_26_reg_1269</rtlName>
+              <rtlName>tmp_27_reg_1269</rtlName>
               <control></control>
               <opType></opType>
               <implIndex></implIndex>
@@ -5350,7 +5350,7 @@
             <Obj>
               <type>0</type>
               <id>94</id>
-              <name>tmp_27</name>
+              <name>tmp_28</name>
               <fileName>C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h</fileName>
               <fileDirectory>../../../../../../../scratch/2025.1/hls_product/640/2025.1/src/shared/hls/clib/hlsmath</fileDirectory>
               <lineNumber>139</lineNumber>
@@ -5382,7 +5382,7 @@
                 </item>
               </inlineStackInfo>
               <originalName></originalName>
-              <rtlName>tmp_27_reg_1285</rtlName>
+              <rtlName>tmp_28_reg_1285</rtlName>
               <control></control>
               <opType></opType>
               <implIndex></implIndex>
@@ -5640,7 +5640,7 @@
                 </item>
               </inlineStackInfo>
               <originalName></originalName>
-              <rtlName>mul_49ns_44ns_93_2_0_U86</rtlName>
+              <rtlName>mul_49ns_44ns_93_2_0_U1590</rtlName>
               <control>auto</control>
               <opType>mul</opType>
               <implIndex>auto</implIndex>
@@ -5865,7 +5865,7 @@
             <Obj>
               <type>0</type>
               <id>102</id>
-              <name>tmp_28</name>
+              <name>tmp_29</name>
               <fileName>C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h</fileName>
               <fileDirectory>../../../../../../../scratch/2025.1/hls_product/640/2025.1/src/shared/hls/clib/hlsmath</fileDirectory>
               <lineNumber>145</lineNumber>
@@ -5897,7 +5897,7 @@
                 </item>
               </inlineStackInfo>
               <originalName></originalName>
-              <rtlName>tmp_28_reg_1306</rtlName>
+              <rtlName>tmp_29_reg_1306</rtlName>
               <control></control>
               <opType></opType>
               <implIndex></implIndex>
@@ -6441,7 +6441,7 @@
                 </item>
               </inlineStackInfo>
               <originalName></originalName>
-              <rtlName>mul_50ns_50ns_99_2_0_U87</rtlName>
+              <rtlName>mul_50ns_50ns_99_2_0_U1591</rtlName>
               <control>auto</control>
               <opType>mul</opType>
               <implIndex>auto</implIndex>
@@ -7506,6 +7506,86 @@
             <Obj>
               <type>0</type>
               <id>130</id>
+              <name>tmp_s</name>
+              <fileName>C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h</fileName>
+              <fileDirectory>../../../../../../../scratch/2025.1/hls_product/640/2025.1/src/shared/hls/clib/hlsmath</fileDirectory>
+              <lineNumber>479</lineNumber>
+              <contextFuncName>data</contextFuncName>
+              <contextNormFuncName>data</contextNormFuncName>
+              <inlineStackInfo>
+                <count>1</count>
+                <item_version>0</item_version>
+                <item>
+                  <first>C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib\hlsmath</first>
+                  <second>
+                    <count>4</count>
+                    <item_version>0</item_version>
+                    <item>
+                      <first>
+                        <first>C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h</first>
+                        <second>exp_generic&amp;lt;double&amp;gt;</second>
+                      </first>
+                      <second>337</second>
+                    </item>
+                    <item>
+                      <first>
+                        <first>C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h</first>
+                        <second>data</second>
+                      </first>
+                      <second>479</second>
+                    </item>
+                    <item>
+                      <first>
+                        <first>C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h</first>
+                        <second>to_double</second>
+                      </first>
+                      <second>496</second>
+                    </item>
+                    <item>
+                      <first>
+                        <first>C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h</first>
+                        <second>to_ieee</second>
+                      </first>
+                      <second>510</second>
+                    </item>
+                  </second>
+                </item>
+              </inlineStackInfo>
+              <originalName></originalName>
+              <rtlName>tmp_s_fu_897_p4</rtlName>
+              <control></control>
+              <opType></opType>
+              <implIndex></implIndex>
+              <coreName></coreName>
+              <isStorage>0</isStorage>
+              <storageDepth>0</storageDepth>
+              <coreId>4294967295</coreId>
+              <rtlModuleName></rtlModuleName>
+            </Obj>
+            <bitwidth>52</bitwidth>
+          </Value>
+          <oprand_edges>
+            <count>4</count>
+            <item_version>0</item_version>
+            <item>511</item>
+            <item>512</item>
+            <item>514</item>
+            <item>516</item>
+          </oprand_edges>
+          <opcode>partselect</opcode>
+          <m_Display>0</m_Display>
+          <m_isOnCriticalPath>0</m_isOnCriticalPath>
+          <m_isLCDNode>0</m_isLCDNode>
+          <m_isStartOfPath>0</m_isStartOfPath>
+          <m_delay>0.00</m_delay>
+          <m_topoIndex>116</m_topoIndex>
+          <m_clusterGroupNumber>-1</m_clusterGroupNumber>
+        </item>
+        <item class_id_reference="9" object_id="_127">
+          <Value>
+            <Obj>
+              <type>0</type>
+              <id>131</id>
               <name>tmp_8</name>
               <fileName>C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h</fileName>
               <fileDirectory>../../../../../../../scratch/2025.1/hls_product/640/2025.1/src/shared/hls/clib/hlsmath</fileDirectory>
@@ -7552,87 +7632,7 @@
                 </item>
               </inlineStackInfo>
               <originalName></originalName>
-              <rtlName>tmp_8_fu_897_p4</rtlName>
-              <control></control>
-              <opType></opType>
-              <implIndex></implIndex>
-              <coreName></coreName>
-              <isStorage>0</isStorage>
-              <storageDepth>0</storageDepth>
-              <coreId>4294967295</coreId>
-              <rtlModuleName></rtlModuleName>
-            </Obj>
-            <bitwidth>52</bitwidth>
-          </Value>
-          <oprand_edges>
-            <count>4</count>
-            <item_version>0</item_version>
-            <item>511</item>
-            <item>512</item>
-            <item>514</item>
-            <item>516</item>
-          </oprand_edges>
-          <opcode>partselect</opcode>
-          <m_Display>0</m_Display>
-          <m_isOnCriticalPath>0</m_isOnCriticalPath>
-          <m_isLCDNode>0</m_isLCDNode>
-          <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>0.00</m_delay>
-          <m_topoIndex>116</m_topoIndex>
-          <m_clusterGroupNumber>-1</m_clusterGroupNumber>
-        </item>
-        <item class_id_reference="9" object_id="_127">
-          <Value>
-            <Obj>
-              <type>0</type>
-              <id>131</id>
-              <name>tmp_9</name>
-              <fileName>C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h</fileName>
-              <fileDirectory>../../../../../../../scratch/2025.1/hls_product/640/2025.1/src/shared/hls/clib/hlsmath</fileDirectory>
-              <lineNumber>479</lineNumber>
-              <contextFuncName>data</contextFuncName>
-              <contextNormFuncName>data</contextNormFuncName>
-              <inlineStackInfo>
-                <count>1</count>
-                <item_version>0</item_version>
-                <item>
-                  <first>C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib\hlsmath</first>
-                  <second>
-                    <count>4</count>
-                    <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h</first>
-                        <second>exp_generic&amp;lt;double&amp;gt;</second>
-                      </first>
-                      <second>337</second>
-                    </item>
-                    <item>
-                      <first>
-                        <first>C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h</first>
-                        <second>data</second>
-                      </first>
-                      <second>479</second>
-                    </item>
-                    <item>
-                      <first>
-                        <first>C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h</first>
-                        <second>to_double</second>
-                      </first>
-                      <second>496</second>
-                    </item>
-                    <item>
-                      <first>
-                        <first>C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h</first>
-                        <second>to_ieee</second>
-                      </first>
-                      <second>510</second>
-                    </item>
-                  </second>
-                </item>
-              </inlineStackInfo>
-              <originalName></originalName>
-              <rtlName>tmp_9_fu_907_p4</rtlName>
+              <rtlName>tmp_8_fu_907_p4</rtlName>
               <control></control>
               <opType></opType>
               <implIndex></implIndex>
@@ -8775,7 +8775,7 @@
                 </item>
               </inlineStackInfo>
               <originalName></originalName>
-              <rtlName>sparsemux_9_3_64_1_0_U88</rtlName>
+              <rtlName>sparsemux_9_3_64_1_0_U1592</rtlName>
               <control>auto</control>
               <opType>sparsemux</opType>
               <implIndex>onehotencoding_realdef</implIndex>
@@ -14476,7 +14476,7 @@
         <count>5</count>
         <item_version>0</item_version>
         <item class_id="36" tracking_level="0" version="0">
-          <first>mul_13s_71s_71_5_0_U84 (mul_13s_71s_71_5_0)</first>
+          <first>mul_13s_71s_71_5_0_U1588 (mul_13s_71s_71_5_0)</first>
           <second class_id="37" tracking_level="0" version="0">
             <count>3</count>
             <item_version>0</item_version>
@@ -14495,7 +14495,7 @@
           </second>
         </item>
         <item>
-          <first>mul_43ns_36ns_79_2_0_U85 (mul_43ns_36ns_79_2_0)</first>
+          <first>mul_43ns_36ns_79_2_0_U1589 (mul_43ns_36ns_79_2_0)</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -14514,7 +14514,7 @@
           </second>
         </item>
         <item>
-          <first>mul_49ns_44ns_93_2_0_U86 (mul_49ns_44ns_93_2_0)</first>
+          <first>mul_49ns_44ns_93_2_0_U1590 (mul_49ns_44ns_93_2_0)</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -14533,7 +14533,7 @@
           </second>
         </item>
         <item>
-          <first>mul_50ns_50ns_99_2_0_U87 (mul_50ns_50ns_99_2_0)</first>
+          <first>mul_50ns_50ns_99_2_0_U1591 (mul_50ns_50ns_99_2_0)</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -14552,7 +14552,7 @@
           </second>
         </item>
         <item>
-          <first>sparsemux_9_3_64_1_0_U88 (sparsemux_9_3_64_1_0)</first>
+          <first>sparsemux_9_3_64_1_0_U1592 (sparsemux_9_3_64_1_0)</first>
           <second>
             <count>2</count>
             <item_version>0</item_version>
@@ -16644,7 +16644,26 @@
           </second>
         </item>
         <item>
-          <first>tmp_26_reg_1269</first>
+          <first>tmp_26_reg_1206</first>
+          <second>
+            <count>3</count>
+            <item_version>0</item_version>
+            <item>
+              <first>(Bits)</first>
+              <second>58</second>
+            </item>
+            <item>
+              <first>(Consts)</first>
+              <second>0</second>
+            </item>
+            <item>
+              <first>FF</first>
+              <second>58</second>
+            </item>
+          </second>
+        </item>
+        <item>
+          <first>tmp_27_reg_1269</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -16663,7 +16682,7 @@
           </second>
         </item>
         <item>
-          <first>tmp_27_reg_1285</first>
+          <first>tmp_28_reg_1285</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -16682,7 +16701,7 @@
           </second>
         </item>
         <item>
-          <first>tmp_28_reg_1306</first>
+          <first>tmp_29_reg_1306</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -16796,25 +16815,6 @@
           </second>
         </item>
         <item>
-          <first>tmp_s_reg_1206</first>
-          <second>
-            <count>3</count>
-            <item_version>0</item_version>
-            <item>
-              <first>(Bits)</first>
-              <second>58</second>
-            </item>
-            <item>
-              <first>(Consts)</first>
-              <second>0</second>
-            </item>
-            <item>
-              <first>FF</first>
-              <second>58</second>
-            </item>
-          </second>
-        </item>
-        <item>
           <first>trunc_ln255_reg_1179</first>
           <second>
             <count>3</count>
@@ -16914,7 +16914,7 @@
         <count>6</count>
         <item_version>0</item_version>
         <item>
-          <first>mac_muladd_16s_15ns_19s_31_4_0_U89</first>
+          <first>mac_muladd_16s_15ns_19s_31_4_0_U1593</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -16925,35 +16925,35 @@
           </second>
         </item>
         <item>
-          <first>mul_13s_71s_71_5_0_U84</first>
+          <first>mul_13s_71s_71_5_0_U1588</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
           </second>
         </item>
         <item>
-          <first>mul_43ns_36ns_79_2_0_U85</first>
+          <first>mul_43ns_36ns_79_2_0_U1589</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
           </second>
         </item>
         <item>
-          <first>mul_49ns_44ns_93_2_0_U86</first>
+          <first>mul_49ns_44ns_93_2_0_U1590</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
           </second>
         </item>
         <item>
-          <first>mul_50ns_50ns_99_2_0_U87</first>
+          <first>mul_50ns_50ns_99_2_0_U1591</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
           </second>
         </item>
         <item>
-          <first>sparsemux_9_3_64_1_0_U88</first>
+          <first>sparsemux_9_3_64_1_0_U1592</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
@@ -16964,7 +16964,7 @@
         <count>5</count>
         <item_version>0</item_version>
         <item class_id="40" tracking_level="0" version="0">
-          <first>mul_13s_71s_71_5_0_U84 (mul_13s_71s_71_5_0)</first>
+          <first>mul_13s_71s_71_5_0_U1588 (mul_13s_71s_71_5_0)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -16972,7 +16972,7 @@
           </second>
         </item>
         <item>
-          <first>mul_43ns_36ns_79_2_0_U85 (mul_43ns_36ns_79_2_0)</first>
+          <first>mul_43ns_36ns_79_2_0_U1589 (mul_43ns_36ns_79_2_0)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -16980,7 +16980,7 @@
           </second>
         </item>
         <item>
-          <first>mul_49ns_44ns_93_2_0_U86 (mul_49ns_44ns_93_2_0)</first>
+          <first>mul_49ns_44ns_93_2_0_U1590 (mul_49ns_44ns_93_2_0)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -16988,7 +16988,7 @@
           </second>
         </item>
         <item>
-          <first>mul_50ns_50ns_99_2_0_U87 (mul_50ns_50ns_99_2_0)</first>
+          <first>mul_50ns_50ns_99_2_0_U1591 (mul_50ns_50ns_99_2_0)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -16996,7 +16996,7 @@
           </second>
         </item>
         <item>
-          <first>sparsemux_9_3_64_1_0_U88 (sparsemux_9_3_64_1_0)</first>
+          <first>sparsemux_9_3_64_1_0_U1592 (sparsemux_9_3_64_1_0)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -20435,7 +20435,15 @@
         </second>
       </item>
       <item>
-        <first>tmp_26_fu_694</first>
+        <first>tmp_26_fu_578</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>60</item>
+        </second>
+      </item>
+      <item>
+        <first>tmp_27_fu_694</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -20443,7 +20451,7 @@
         </second>
       </item>
       <item>
-        <first>tmp_27_fu_729</first>
+        <first>tmp_28_fu_729</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -20451,7 +20459,7 @@
         </second>
       </item>
       <item>
-        <first>tmp_28_fu_760</first>
+        <first>tmp_29_fu_760</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -20499,15 +20507,7 @@
         </second>
       </item>
       <item>
-        <first>tmp_8_fu_897</first>
-        <second>
-          <count>1</count>
-          <item_version>0</item_version>
-          <item>130</item>
-        </second>
-      </item>
-      <item>
-        <first>tmp_9_fu_907</first>
+        <first>tmp_8_fu_907</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -20523,11 +20523,11 @@
         </second>
       </item>
       <item>
-        <first>tmp_s_fu_578</first>
+        <first>tmp_s_fu_897</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
-          <item>60</item>
+          <item>130</item>
         </second>
       </item>
       <item>
@@ -21606,7 +21606,15 @@
         </second>
       </item>
       <item>
-        <first>tmp_26_reg_1269</first>
+        <first>tmp_26_reg_1206</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>60</item>
+        </second>
+      </item>
+      <item>
+        <first>tmp_27_reg_1269</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -21614,7 +21622,7 @@
         </second>
       </item>
       <item>
-        <first>tmp_27_reg_1285</first>
+        <first>tmp_28_reg_1285</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -21622,7 +21630,7 @@
         </second>
       </item>
       <item>
-        <first>tmp_28_reg_1306</first>
+        <first>tmp_29_reg_1306</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -21651,14 +21659,6 @@
           <count>1</count>
           <item_version>0</item_version>
           <item>30</item>
-        </second>
-      </item>
-      <item>
-        <first>tmp_s_reg_1206</first>
-        <second>
-          <count>1</count>
-          <item_version>0</item_version>
-          <item>60</item>
         </second>
       </item>
       <item>

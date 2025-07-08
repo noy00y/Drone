@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'pool1'" level="0">
-<item name = "Date">Tue Jul  8 00:39:51 2025
+<item name = "Date">Tue Jul  8 02:25:37 2025
 </item>
 <item name = "Version">2025.1 (Build 6135595 on May 21 2025)</item>
 <item name = "Project">cnn_accel</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00 ns, 6.248 ns, 2.70 ns</column>
+<column name="ap_clk">10.00 ns, 6.975 ns, 2.70 ns</column>
 </table>
 </item>
 </section>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">454115, 454115, 4.541 ms, 4.541 ms, 454109, 454109, loop auto-rewind stp (delay=5 clock cycles(s))</column>
+<column name="">454115, 454115, 4.541 ms, 4.541 ms, 454107, 454107, loop auto-rewind stp (delay=0 clock cycles(s))</column>
 </table>
 </item>
 <item name = "Detail">

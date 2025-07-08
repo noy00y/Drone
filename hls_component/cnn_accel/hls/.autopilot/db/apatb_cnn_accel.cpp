@@ -43,12 +43,39 @@ using namespace std;
 #define AUTOTB_TVOUT_flag_out "../tv/cdatafile/c.cnn_accel.autotvout_flag_out.dat"
 #define AUTOTB_TVIN_ctrl "../tv/cdatafile/c.cnn_accel.autotvin_ctrl.dat"
 #define AUTOTB_TVOUT_ctrl "../tv/cdatafile/c.cnn_accel.autotvout_ctrl.dat"
-#define AUTOTB_TVIN_gmem "../tv/cdatafile/c.cnn_accel.autotvin_gmem.dat"
-#define AUTOTB_TVOUT_gmem "../tv/cdatafile/c.cnn_accel.autotvout_gmem.dat"
+#define AUTOTB_TVIN_B1mem "../tv/cdatafile/c.cnn_accel.autotvin_B1mem.dat"
+#define AUTOTB_TVOUT_B1mem "../tv/cdatafile/c.cnn_accel.autotvout_B1mem.dat"
+#define AUTOTB_TVIN_B2mem "../tv/cdatafile/c.cnn_accel.autotvin_B2mem.dat"
+#define AUTOTB_TVOUT_B2mem "../tv/cdatafile/c.cnn_accel.autotvout_B2mem.dat"
+#define AUTOTB_TVIN_B3mem "../tv/cdatafile/c.cnn_accel.autotvin_B3mem.dat"
+#define AUTOTB_TVOUT_B3mem "../tv/cdatafile/c.cnn_accel.autotvout_B3mem.dat"
+#define AUTOTB_TVIN_B4mem "../tv/cdatafile/c.cnn_accel.autotvin_B4mem.dat"
+#define AUTOTB_TVOUT_B4mem "../tv/cdatafile/c.cnn_accel.autotvout_B4mem.dat"
+#define AUTOTB_TVIN_Foutmem "../tv/cdatafile/c.cnn_accel.autotvin_Foutmem.dat"
+#define AUTOTB_TVOUT_Foutmem "../tv/cdatafile/c.cnn_accel.autotvout_Foutmem.dat"
+#define AUTOTB_TVIN_IMGmem "../tv/cdatafile/c.cnn_accel.autotvin_IMGmem.dat"
+#define AUTOTB_TVOUT_IMGmem "../tv/cdatafile/c.cnn_accel.autotvout_IMGmem.dat"
+#define AUTOTB_TVIN_W1mem "../tv/cdatafile/c.cnn_accel.autotvin_W1mem.dat"
+#define AUTOTB_TVOUT_W1mem "../tv/cdatafile/c.cnn_accel.autotvout_W1mem.dat"
+#define AUTOTB_TVIN_W2mem "../tv/cdatafile/c.cnn_accel.autotvin_W2mem.dat"
+#define AUTOTB_TVOUT_W2mem "../tv/cdatafile/c.cnn_accel.autotvout_W2mem.dat"
+#define AUTOTB_TVIN_W3mem "../tv/cdatafile/c.cnn_accel.autotvin_W3mem.dat"
+#define AUTOTB_TVOUT_W3mem "../tv/cdatafile/c.cnn_accel.autotvout_W3mem.dat"
+#define AUTOTB_TVIN_W4mem "../tv/cdatafile/c.cnn_accel.autotvin_W4mem.dat"
+#define AUTOTB_TVOUT_W4mem "../tv/cdatafile/c.cnn_accel.autotvout_W4mem.dat"
 
 
 // tvout file define:
-#define AUTOTB_TVOUT_PC_gmem "../tv/rtldatafile/rtl.cnn_accel.autotvout_gmem.dat"
+#define AUTOTB_TVOUT_PC_B1mem "../tv/rtldatafile/rtl.cnn_accel.autotvout_B1mem.dat"
+#define AUTOTB_TVOUT_PC_B2mem "../tv/rtldatafile/rtl.cnn_accel.autotvout_B2mem.dat"
+#define AUTOTB_TVOUT_PC_B3mem "../tv/rtldatafile/rtl.cnn_accel.autotvout_B3mem.dat"
+#define AUTOTB_TVOUT_PC_B4mem "../tv/rtldatafile/rtl.cnn_accel.autotvout_B4mem.dat"
+#define AUTOTB_TVOUT_PC_Foutmem "../tv/rtldatafile/rtl.cnn_accel.autotvout_Foutmem.dat"
+#define AUTOTB_TVOUT_PC_IMGmem "../tv/rtldatafile/rtl.cnn_accel.autotvout_IMGmem.dat"
+#define AUTOTB_TVOUT_PC_W1mem "../tv/rtldatafile/rtl.cnn_accel.autotvout_W1mem.dat"
+#define AUTOTB_TVOUT_PC_W2mem "../tv/rtldatafile/rtl.cnn_accel.autotvout_W2mem.dat"
+#define AUTOTB_TVOUT_PC_W3mem "../tv/rtldatafile/rtl.cnn_accel.autotvout_W3mem.dat"
+#define AUTOTB_TVOUT_PC_W4mem "../tv/rtldatafile/rtl.cnn_accel.autotvout_W4mem.dat"
 
 
 namespace hls::sim
@@ -1396,56 +1423,261 @@ void apatb_cnn_accel_hw(void* __xlx_apatb_param_img_in, void* __xlx_apatb_param_
     .width = 32,
     .asize = 4,
     .hbm = false,
-    .name = { "gmem" },
+    .name = { "B1mem" },
+#ifdef POST_CHECK
+#else
+    .owriter = nullptr,
+#ifdef USE_BINARY_TV_FILE
+    .iwriter = new hls::sim::Output(AUTOTB_TVIN_B1mem),
+#else
+    .iwriter = new hls::sim::Writer(AUTOTB_TVIN_B1mem),
+#endif
+#endif
+    .hasWrite = { false },
+    .max_nbytes = { 0 },
+  };
+  port11.param = { __xlx_apatb_param_bias1 };
+  port11.mname = { "bias1" };
+  port11.nbytes = { 32 };
+
+#ifdef USE_BINARY_TV_FILE
+  static hls::sim::Memory<hls::sim::Input, hls::sim::Output> port12 {
+#else
+  static hls::sim::Memory<hls::sim::Reader, hls::sim::Writer> port12 {
+#endif
+    .width = 32,
+    .asize = 4,
+    .hbm = false,
+    .name = { "B2mem" },
+#ifdef POST_CHECK
+#else
+    .owriter = nullptr,
+#ifdef USE_BINARY_TV_FILE
+    .iwriter = new hls::sim::Output(AUTOTB_TVIN_B2mem),
+#else
+    .iwriter = new hls::sim::Writer(AUTOTB_TVIN_B2mem),
+#endif
+#endif
+    .hasWrite = { false },
+    .max_nbytes = { 0 },
+  };
+  port12.param = { __xlx_apatb_param_bias2 };
+  port12.mname = { "bias2" };
+  port12.nbytes = { 64 };
+
+#ifdef USE_BINARY_TV_FILE
+  static hls::sim::Memory<hls::sim::Input, hls::sim::Output> port13 {
+#else
+  static hls::sim::Memory<hls::sim::Reader, hls::sim::Writer> port13 {
+#endif
+    .width = 32,
+    .asize = 4,
+    .hbm = false,
+    .name = { "B3mem" },
+#ifdef POST_CHECK
+#else
+    .owriter = nullptr,
+#ifdef USE_BINARY_TV_FILE
+    .iwriter = new hls::sim::Output(AUTOTB_TVIN_B3mem),
+#else
+    .iwriter = new hls::sim::Writer(AUTOTB_TVIN_B3mem),
+#endif
+#endif
+    .hasWrite = { false },
+    .max_nbytes = { 0 },
+  };
+  port13.param = { __xlx_apatb_param_FC1_B };
+  port13.mname = { "FC1_B" };
+  port13.nbytes = { 128 };
+
+#ifdef USE_BINARY_TV_FILE
+  static hls::sim::Memory<hls::sim::Reader, hls::sim::Writer> port14 {
+#else
+  static hls::sim::Memory<hls::sim::Reader, hls::sim::Writer> port14 {
+#endif
+    .width = 32,
+    .asize = 4,
+    .hbm = false,
+    .name = { "B4mem" },
+#ifdef POST_CHECK
+#else
+    .owriter = nullptr,
+#ifdef USE_BINARY_TV_FILE
+    .iwriter = new hls::sim::Writer(AUTOTB_TVIN_B4mem),
+#else
+    .iwriter = new hls::sim::Writer(AUTOTB_TVIN_B4mem),
+#endif
+#endif
+    .hasWrite = { false },
+    .max_nbytes = { 0 },
+  };
+  port14.param = { __xlx_apatb_param_FC2_B };
+  port14.mname = { "FC2_B" };
+  port14.nbytes = { 4 };
+
+#ifdef USE_BINARY_TV_FILE
+  static hls::sim::Memory<hls::sim::Reader, hls::sim::Writer> port15 {
+#else
+  static hls::sim::Memory<hls::sim::Reader, hls::sim::Writer> port15 {
+#endif
+    .width = 8,
+    .asize = 1,
+    .hbm = false,
+    .name = { "Foutmem" },
 #ifdef POST_CHECK
 #ifdef USE_BINARY_TV_FILE
-    .reader = new hls::sim::Input(AUTOTB_TVOUT_PC_gmem),
+    .reader = new hls::sim::Reader(AUTOTB_TVOUT_PC_Foutmem),
 #else
-    .reader = new hls::sim::Reader(AUTOTB_TVOUT_PC_gmem),
+    .reader = new hls::sim::Reader(AUTOTB_TVOUT_PC_Foutmem),
 #endif
 #else
 #ifdef USE_BINARY_TV_FILE
-    .owriter = new hls::sim::Output(AUTOTB_TVOUT_gmem),
+    .owriter = new hls::sim::Writer(AUTOTB_TVOUT_Foutmem),
 #else
-    .owriter = new hls::sim::Writer(AUTOTB_TVOUT_gmem),
+    .owriter = new hls::sim::Writer(AUTOTB_TVOUT_Foutmem),
 #endif
 #ifdef USE_BINARY_TV_FILE
-    .iwriter = new hls::sim::Output(AUTOTB_TVIN_gmem),
+    .iwriter = new hls::sim::Writer(AUTOTB_TVIN_Foutmem),
 #else
-    .iwriter = new hls::sim::Writer(AUTOTB_TVIN_gmem),
+    .iwriter = new hls::sim::Writer(AUTOTB_TVIN_Foutmem),
 #endif
 #endif
-    .hasWrite = { true, true, true, true, true, true, true, true, true, true },
-    .max_nbytes = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 },
+    .hasWrite = { true },
+    .max_nbytes = { 0 },
   };
-  port11.param = { __xlx_apatb_param_img_in, __xlx_apatb_param_weights1, __xlx_apatb_param_bias1, __xlx_apatb_param_weights2, __xlx_apatb_param_bias2, __xlx_apatb_param_FC1_W, __xlx_apatb_param_FC1_B, __xlx_apatb_param_FC2_W, __xlx_apatb_param_FC2_B, __xlx_apatb_param_flag_out };
-  port11.mname = { "img_in", "weights1", "bias1", "weights2", "bias2", "FC1_W", "FC1_B", "FC2_W", "FC2_B", "flag_out" };
-  port11.nbytes = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
-  for (size_t i = 0; i < port11.nbytes.size(); ++i) {
-    if (port11.nbytes[i] > port11.max_nbytes[i]) {
-      port11.max_nbytes[i] = port11.nbytes[i];
-    }
-  }
-  port11.offset.clear();
-  for (size_t off = 0, i = 0; i < port11.nbytes.size(); ++i) {
-    port11.offset.push_back(off);
-    off += hls::sim::divide_ceil(port11.max_nbytes[i], port11.asize);
-  }
-  __xlx_offset_byte_param_img_in = port11.offset[0]*4;
-  __xlx_offset_byte_param_weights1 = port11.offset[1]*4;
-  __xlx_offset_byte_param_bias1 = port11.offset[2]*4;
-  __xlx_offset_byte_param_weights2 = port11.offset[3]*4;
-  __xlx_offset_byte_param_bias2 = port11.offset[4]*4;
-  __xlx_offset_byte_param_FC1_W = port11.offset[5]*4;
-  __xlx_offset_byte_param_FC1_B = port11.offset[6]*4;
-  __xlx_offset_byte_param_FC2_W = port11.offset[7]*4;
-  __xlx_offset_byte_param_FC2_B = port11.offset[8]*4;
-  __xlx_offset_byte_param_flag_out = port11.offset[9]*4;
+  port15.param = { __xlx_apatb_param_flag_out };
+  port15.mname = { "flag_out" };
+  port15.nbytes = { 1 };
+
+#ifdef USE_BINARY_TV_FILE
+  static hls::sim::Memory<hls::sim::Input, hls::sim::Output> port16 {
+#else
+  static hls::sim::Memory<hls::sim::Reader, hls::sim::Writer> port16 {
+#endif
+    .width = 32,
+    .asize = 4,
+    .hbm = false,
+    .name = { "IMGmem" },
+#ifdef POST_CHECK
+#else
+    .owriter = nullptr,
+#ifdef USE_BINARY_TV_FILE
+    .iwriter = new hls::sim::Output(AUTOTB_TVIN_IMGmem),
+#else
+    .iwriter = new hls::sim::Writer(AUTOTB_TVIN_IMGmem),
+#endif
+#endif
+    .hasWrite = { false },
+    .max_nbytes = { 0 },
+  };
+  port16.param = { __xlx_apatb_param_img_in };
+  port16.mname = { "img_in" };
+  port16.nbytes = { 921600 };
+
+#ifdef USE_BINARY_TV_FILE
+  static hls::sim::Memory<hls::sim::Input, hls::sim::Output> port17 {
+#else
+  static hls::sim::Memory<hls::sim::Reader, hls::sim::Writer> port17 {
+#endif
+    .width = 32,
+    .asize = 4,
+    .hbm = false,
+    .name = { "W1mem" },
+#ifdef POST_CHECK
+#else
+    .owriter = nullptr,
+#ifdef USE_BINARY_TV_FILE
+    .iwriter = new hls::sim::Output(AUTOTB_TVIN_W1mem),
+#else
+    .iwriter = new hls::sim::Writer(AUTOTB_TVIN_W1mem),
+#endif
+#endif
+    .hasWrite = { false },
+    .max_nbytes = { 0 },
+  };
+  port17.param = { __xlx_apatb_param_weights1 };
+  port17.mname = { "weights1" };
+  port17.nbytes = { 864 };
+
+#ifdef USE_BINARY_TV_FILE
+  static hls::sim::Memory<hls::sim::Input, hls::sim::Output> port18 {
+#else
+  static hls::sim::Memory<hls::sim::Reader, hls::sim::Writer> port18 {
+#endif
+    .width = 32,
+    .asize = 4,
+    .hbm = false,
+    .name = { "W2mem" },
+#ifdef POST_CHECK
+#else
+    .owriter = nullptr,
+#ifdef USE_BINARY_TV_FILE
+    .iwriter = new hls::sim::Output(AUTOTB_TVIN_W2mem),
+#else
+    .iwriter = new hls::sim::Writer(AUTOTB_TVIN_W2mem),
+#endif
+#endif
+    .hasWrite = { false },
+    .max_nbytes = { 0 },
+  };
+  port18.param = { __xlx_apatb_param_weights2 };
+  port18.mname = { "weights2" };
+  port18.nbytes = { 4608 };
+
+#ifdef USE_BINARY_TV_FILE
+  static hls::sim::Memory<hls::sim::Input, hls::sim::Output> port19 {
+#else
+  static hls::sim::Memory<hls::sim::Reader, hls::sim::Writer> port19 {
+#endif
+    .width = 32,
+    .asize = 4,
+    .hbm = false,
+    .name = { "W3mem" },
+#ifdef POST_CHECK
+#else
+    .owriter = nullptr,
+#ifdef USE_BINARY_TV_FILE
+    .iwriter = new hls::sim::Output(AUTOTB_TVIN_W3mem),
+#else
+    .iwriter = new hls::sim::Writer(AUTOTB_TVIN_W3mem),
+#endif
+#endif
+    .hasWrite = { false },
+    .max_nbytes = { 0 },
+  };
+  port19.param = { __xlx_apatb_param_FC1_W };
+  port19.mname = { "FC1_W" };
+  port19.nbytes = { 9265152 };
+
+#ifdef USE_BINARY_TV_FILE
+  static hls::sim::Memory<hls::sim::Input, hls::sim::Output> port20 {
+#else
+  static hls::sim::Memory<hls::sim::Reader, hls::sim::Writer> port20 {
+#endif
+    .width = 32,
+    .asize = 4,
+    .hbm = false,
+    .name = { "W4mem" },
+#ifdef POST_CHECK
+#else
+    .owriter = nullptr,
+#ifdef USE_BINARY_TV_FILE
+    .iwriter = new hls::sim::Output(AUTOTB_TVIN_W4mem),
+#else
+    .iwriter = new hls::sim::Writer(AUTOTB_TVIN_W4mem),
+#endif
+#endif
+    .hasWrite = { false },
+    .max_nbytes = { 0 },
+  };
+  port20.param = { __xlx_apatb_param_FC2_W };
+  port20.mname = { "FC2_W" };
+  port20.nbytes = { 128 };
 
   try {
 #ifdef POST_CHECK
     CodeState = ENTER_WRAPC_PC;
-    check(port11);
+    check(port15);
 #else
     static hls::sim::RefTCL tcl("../tv/cdatafile/ref.tcl");
     tcl.containsVLA = 0;
@@ -1462,6 +1694,15 @@ void apatb_cnn_accel_hw(void* __xlx_apatb_param_img_in, void* __xlx_apatb_param_
     delay_dump(port9, port9.iwriter, tcl.AESL_transaction);
     dump(port10, port10.iwriter, tcl.AESL_transaction);
     dump(port11, port11.iwriter, tcl.AESL_transaction);
+    dump(port12, port12.iwriter, tcl.AESL_transaction);
+    dump(port13, port13.iwriter, tcl.AESL_transaction);
+    dump(port14, port14.iwriter, tcl.AESL_transaction);
+    dump(port15, port15.iwriter, tcl.AESL_transaction);
+    dump(port16, port16.iwriter, tcl.AESL_transaction);
+    dump(port17, port17.iwriter, tcl.AESL_transaction);
+    dump(port18, port18.iwriter, tcl.AESL_transaction);
+    dump(port19, port19.iwriter, tcl.AESL_transaction);
+    dump(port20, port20.iwriter, tcl.AESL_transaction);
     port0.doTCL(tcl);
     port1.doTCL(tcl);
     port2.doTCL(tcl);
@@ -1474,10 +1715,19 @@ void apatb_cnn_accel_hw(void* __xlx_apatb_param_img_in, void* __xlx_apatb_param_
     port9.doTCL(tcl);
     port10.doTCL(tcl);
     port11.doTCL(tcl);
+    port12.doTCL(tcl);
+    port13.doTCL(tcl);
+    port14.doTCL(tcl);
+    port15.doTCL(tcl);
+    port16.doTCL(tcl);
+    port17.doTCL(tcl);
+    port18.doTCL(tcl);
+    port19.doTCL(tcl);
+    port20.doTCL(tcl);
     CodeState = CALL_C_DUT;
     cnn_accel_hw_stub_wrapper(__xlx_apatb_param_img_in, __xlx_apatb_param_weights1, __xlx_apatb_param_bias1, __xlx_apatb_param_weights2, __xlx_apatb_param_bias2, __xlx_apatb_param_FC1_W, __xlx_apatb_param_FC1_B, __xlx_apatb_param_FC2_W, __xlx_apatb_param_FC2_B, __xlx_apatb_param_flag_out, __xlx_apatb_param_ctrl);
     CodeState = DUMP_OUTPUTS;
-    dump(port11, port11.owriter, tcl.AESL_transaction);
+    dump(port15, port15.owriter, tcl.AESL_transaction);
     tcl.AESL_transaction++;
 #endif
   } catch (const hls::sim::SimException &e) {

@@ -60,7 +60,7 @@ void cnn_accel(
 #pragma HLS ALLOCATION operation instances=mul limit=32
 
     // Allow parallel channel/filter access
-#pragma HLS ARRAY_PARTITION variable=local_img complete dim=3
+#pragma HLS ARRAY_PARTITION variable=img_in complete dim=3
 #pragma HLS ARRAY_PARTITION variable=feat1     complete dim=3
 #pragma HLS ARRAY_PARTITION variable=feat1_p   complete dim=3
 #pragma HLS ARRAY_PARTITION variable=feat2     complete dim=3

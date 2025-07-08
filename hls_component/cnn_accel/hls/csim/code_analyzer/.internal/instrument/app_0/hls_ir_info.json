@@ -1,5 +1,5 @@
 {
-    "top_level_hw_fn_id": 217,
+    "top_level_hw_fn_id": 227,
     "functions": {
         "200": {
             "fn_id": 200,
@@ -79,8 +79,8 @@
                 "column": 0
             }
         },
-        "214": {
-            "fn_id": 214,
+        "224": {
+            "fn_id": 224,
             "mangled_name": "_GLOBAL__sub_I_conv_pool.cpp.6",
             "fully_qualified_name": "_GLOBAL__sub_I_conv_pool",
             "is_sys": true,
@@ -92,8 +92,8 @@
                 "column": 0
             }
         },
-        "215": {
-            "fn_id": 215,
+        "225": {
+            "fn_id": 225,
             "mangled_name": "__cxx_global_var_init.7",
             "fully_qualified_name": "__cxx_global_var_init",
             "is_sys": true,
@@ -105,8 +105,8 @@
                 "column": 0
             }
         },
-        "216": {
-            "fn_id": 216,
+        "226": {
+            "fn_id": 226,
             "mangled_name": "__dtor__ZStL8__ioinit.9",
             "fully_qualified_name": "__dtor__ZStL8__ioinit",
             "is_sys": true,
@@ -118,8 +118,8 @@
                 "column": 0
             }
         },
-        "217": {
-            "fn_id": 217,
+        "227": {
+            "fn_id": 227,
             "mangled_name": "cnn_accel",
             "fully_qualified_name": "cnn_accel",
             "is_sys": false,
@@ -127,143 +127,247 @@
             "supports_dataflow": true,
             "src_loc": {
                 "file": "C:\\Users\\ozair\\Documents\\Code_Drive\\Drone\\hls_files\\conv_pool.cpp",
-                "line": 30,
+                "line": 52,
+                "column": 1
+            }
+        },
+        "228": {
+            "fn_id": 228,
+            "mangled_name": "_Z8load_imgPKfPA320_A3_f",
+            "fully_qualified_name": "load_img",
+            "is_sys": false,
+            "is_declaration": false,
+            "supports_dataflow": true,
+            "src_loc": {
+                "file": "C:\\Users\\ozair\\Documents\\Code_Drive\\Drone\\hls_files\\conv_pool.cpp",
+                "line": 138,
+                "column": 1
+            }
+        },
+        "229": {
+            "fn_id": 229,
+            "mangled_name": "_Z5conv1PA320_A3_KfPS_S3_PA318_A8_f",
+            "fully_qualified_name": "conv1",
+            "is_sys": false,
+            "is_declaration": false,
+            "supports_dataflow": true,
+            "src_loc": {
+                "file": "C:\\Users\\ozair\\Documents\\Code_Drive\\Drone\\hls_files\\conv_pool.cpp",
+                "line": 152,
+                "column": 1
+            }
+        },
+        "230": {
+            "fn_id": 230,
+            "mangled_name": "_Z5pool1PA318_A8_KfPA159_A8_f",
+            "fully_qualified_name": "pool1",
+            "is_sys": false,
+            "is_declaration": false,
+            "supports_dataflow": true,
+            "src_loc": {
+                "file": "C:\\Users\\ozair\\Documents\\Code_Drive\\Drone\\hls_files\\conv_pool.cpp",
+                "line": 179,
+                "column": 1
+            }
+        },
+        "231": {
+            "fn_id": 231,
+            "mangled_name": "_Z5conv2PA159_A8_KfPS_S3_PA157_A16_f",
+            "fully_qualified_name": "conv2",
+            "is_sys": false,
+            "is_declaration": false,
+            "supports_dataflow": true,
+            "src_loc": {
+                "file": "C:\\Users\\ozair\\Documents\\Code_Drive\\Drone\\hls_files\\conv_pool.cpp",
+                "line": 200,
+                "column": 1
+            }
+        },
+        "232": {
+            "fn_id": 232,
+            "mangled_name": "_Z5pool2PA157_A16_KfPA78_A16_f",
+            "fully_qualified_name": "pool2",
+            "is_sys": false,
+            "is_declaration": false,
+            "supports_dataflow": true,
+            "src_loc": {
+                "file": "C:\\Users\\ozair\\Documents\\Code_Drive\\Drone\\hls_files\\conv_pool.cpp",
+                "line": 226,
+                "column": 1
+            }
+        },
+        "233": {
+            "fn_id": 233,
+            "mangled_name": "_Z7flattenPA78_A16_KfPfRi",
+            "fully_qualified_name": "flatten",
+            "is_sys": false,
+            "is_declaration": false,
+            "supports_dataflow": true,
+            "src_loc": {
+                "file": "C:\\Users\\ozair\\Documents\\Code_Drive\\Drone\\hls_files\\conv_pool.cpp",
+                "line": 247,
+                "column": 1
+            }
+        },
+        "234": {
+            "fn_id": 234,
+            "mangled_name": "_Z3fc1PKfiS0_S0_Pf",
+            "fully_qualified_name": "fc1",
+            "is_sys": false,
+            "is_declaration": false,
+            "supports_dataflow": true,
+            "src_loc": {
+                "file": "C:\\Users\\ozair\\Documents\\Code_Drive\\Drone\\hls_files\\conv_pool.cpp",
+                "line": 263,
+                "column": 1
+            }
+        },
+        "235": {
+            "fn_id": 235,
+            "mangled_name": "_Z3fc2PKfS0_S0_Ph",
+            "fully_qualified_name": "fc2",
+            "is_sys": false,
+            "is_declaration": false,
+            "supports_dataflow": true,
+            "src_loc": {
+                "file": "C:\\Users\\ozair\\Documents\\Code_Drive\\Drone\\hls_files\\conv_pool.cpp",
+                "line": 281,
                 "column": 1
             }
         }
     },
     "loops": {
-        "9": {
-            "fn_id": 217,
-            "lp_id": 9,
-            "label": "FC2_LOOP"
-        },
-        "10": {
-            "fn_id": 217,
-            "lp_id": 10,
-            "label": "FC1_OUT"
-        },
-        "11": {
-            "fn_id": 217,
-            "lp_id": 11
-        },
-        "12": {
-            "fn_id": 217,
-            "lp_id": 12,
-            "label": "FLATTEN"
-        },
-        "13": {
-            "fn_id": 217,
-            "lp_id": 13
-        },
-        "14": {
-            "fn_id": 217,
-            "lp_id": 14
-        },
-        "15": {
-            "fn_id": 217,
-            "lp_id": 15,
-            "label": "POOL2_ROW"
-        },
-        "16": {
-            "fn_id": 217,
-            "lp_id": 16,
-            "label": "POOL2_COL"
-        },
-        "17": {
-            "fn_id": 217,
-            "lp_id": 17,
-            "label": "POOL2_CH"
-        },
-        "18": {
-            "fn_id": 217,
-            "lp_id": 18,
-            "label": "CONV2_ROW"
-        },
-        "19": {
-            "fn_id": 217,
-            "lp_id": 19,
-            "label": "CONV2_COL"
-        },
-        "20": {
-            "fn_id": 217,
-            "lp_id": 20,
-            "label": "CONV2_FIL"
-        },
-        "21": {
-            "fn_id": 217,
-            "lp_id": 21,
-            "label": "CONV2_KR"
-        },
-        "22": {
-            "fn_id": 217,
-            "lp_id": 22,
-            "label": "CONV2_KC"
-        },
-        "23": {
-            "fn_id": 217,
-            "lp_id": 23,
-            "label": "CONV2_CH"
-        },
-        "24": {
-            "fn_id": 217,
-            "lp_id": 24,
-            "label": "POOL1_ROW"
-        },
-        "25": {
-            "fn_id": 217,
-            "lp_id": 25,
-            "label": "POOL1_COL"
-        },
-        "26": {
-            "fn_id": 217,
-            "lp_id": 26,
-            "label": "POOL1_CH"
-        },
-        "27": {
-            "fn_id": 217,
-            "lp_id": 27,
-            "label": "CONV1_ROW"
-        },
-        "28": {
-            "fn_id": 217,
-            "lp_id": 28,
-            "label": "CONV1_COL"
-        },
-        "29": {
-            "fn_id": 217,
-            "lp_id": 29,
-            "label": "CONV1_FIL"
-        },
-        "30": {
-            "fn_id": 217,
-            "lp_id": 30,
-            "label": "CONV1_KR"
-        },
-        "31": {
-            "fn_id": 217,
-            "lp_id": 31,
-            "label": "CONV1_KC"
-        },
-        "32": {
-            "fn_id": 217,
-            "lp_id": 32,
-            "label": "CONV1_CH"
-        },
-        "33": {
-            "fn_id": 217,
-            "lp_id": 33,
+        "36": {
+            "fn_id": 228,
+            "lp_id": 36,
             "label": "LOAD_IMG_ROWS"
         },
-        "34": {
-            "fn_id": 217,
-            "lp_id": 34,
+        "37": {
+            "fn_id": 228,
+            "lp_id": 37,
             "label": "LOAD_IMG_COLS"
         },
-        "35": {
-            "fn_id": 217,
-            "lp_id": 35,
+        "38": {
+            "fn_id": 228,
+            "lp_id": 38,
             "label": "LOAD_IMG_CH"
+        },
+        "39": {
+            "fn_id": 229,
+            "lp_id": 39,
+            "label": "CONV1_ROW"
+        },
+        "40": {
+            "fn_id": 229,
+            "lp_id": 40,
+            "label": "CONV1_COL"
+        },
+        "41": {
+            "fn_id": 229,
+            "lp_id": 41,
+            "label": "CONV1_FIL"
+        },
+        "42": {
+            "fn_id": 229,
+            "lp_id": 42,
+            "label": "CONV1_KR"
+        },
+        "43": {
+            "fn_id": 229,
+            "lp_id": 43,
+            "label": "CONV1_KC"
+        },
+        "44": {
+            "fn_id": 229,
+            "lp_id": 44,
+            "label": "CONV1_CH"
+        },
+        "45": {
+            "fn_id": 230,
+            "lp_id": 45,
+            "label": "POOL1_ROW"
+        },
+        "46": {
+            "fn_id": 230,
+            "lp_id": 46,
+            "label": "POOL1_COL"
+        },
+        "47": {
+            "fn_id": 230,
+            "lp_id": 47,
+            "label": "POOL1_CH"
+        },
+        "48": {
+            "fn_id": 231,
+            "lp_id": 48,
+            "label": "CONV2_ROW"
+        },
+        "49": {
+            "fn_id": 231,
+            "lp_id": 49,
+            "label": "CONV2_COL"
+        },
+        "50": {
+            "fn_id": 231,
+            "lp_id": 50,
+            "label": "CONV2_FIL"
+        },
+        "51": {
+            "fn_id": 231,
+            "lp_id": 51,
+            "label": "CONV2_KR"
+        },
+        "52": {
+            "fn_id": 231,
+            "lp_id": 52,
+            "label": "CONV2_KC"
+        },
+        "53": {
+            "fn_id": 231,
+            "lp_id": 53,
+            "label": "CONV2_CH"
+        },
+        "54": {
+            "fn_id": 232,
+            "lp_id": 54,
+            "label": "POOL2_ROW"
+        },
+        "55": {
+            "fn_id": 232,
+            "lp_id": 55,
+            "label": "POOL2_COL"
+        },
+        "56": {
+            "fn_id": 232,
+            "lp_id": 56,
+            "label": "POOL2_CH"
+        },
+        "57": {
+            "fn_id": 233,
+            "lp_id": 57,
+            "label": "FLATTEN"
+        },
+        "58": {
+            "fn_id": 233,
+            "lp_id": 58
+        },
+        "59": {
+            "fn_id": 233,
+            "lp_id": 59
+        },
+        "60": {
+            "fn_id": 234,
+            "lp_id": 60,
+            "label": "FC1_OUT"
+        },
+        "61": {
+            "fn_id": 234,
+            "lp_id": 61
+        },
+        "62": {
+            "fn_id": 235,
+            "lp_id": 62,
+            "label": "FC2_LOOP"
         }
     },
     "used_types": [

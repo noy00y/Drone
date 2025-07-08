@@ -2,9 +2,9 @@ set moduleName generic_tanh_float_s
 set isTopModule 0
 set isCombinational 0
 set isDatapathOnly 0
-set isPipelined 0
-set isPipelined_legacy 0
-set pipeline_type none
+set isPipelined 1
+set isPipelined_legacy 1
+set pipeline_type function
 set FunctionProtocol ap_ctrl_hs
 set isOneStateSeq 0
 set ProfileFlag 0
@@ -14,7 +14,7 @@ set hasInterrupt 0
 set DLRegFirstOffset 0
 set DLRegItemOffset 0
 set svuvm_can_support 1
-set cdfgNum 13
+set cdfgNum 14
 set C_modelName {generic_tanh<float>}
 set C_modelType { float 32 }
 set ap_memory_interface_dict [dict create]
@@ -28,7 +28,7 @@ set C_modelArgMapList {[
 	{ "Name" : "t_in", "interface" : "wire", "bitwidth" : 32, "direction" : "READONLY"} , 
  	{ "Name" : "ap_return", "interface" : "wire", "bitwidth" : 32} ]}
 # RTL Port declarations: 
-set portNum 26
+set portNum 17
 set portList { 
 	{ ap_clk sc_in sc_logic 1 clock -1 } 
 	{ ap_rst sc_in sc_logic 1 reset -1 active_high_sync } 
@@ -38,24 +38,15 @@ set portList {
 	{ ap_ready sc_out sc_logic 1 ready -1 } 
 	{ t_in sc_in sc_lv 32 signal 0 } 
 	{ ap_return sc_out sc_lv 32 signal -1 } 
-	{ grp_fu_1268_p_din0 sc_out sc_lv 32 signal -1 } 
-	{ grp_fu_1268_p_din1 sc_out sc_lv 32 signal -1 } 
-	{ grp_fu_1268_p_opcode sc_out sc_lv 2 signal -1 } 
-	{ grp_fu_1268_p_dout0 sc_in sc_lv 32 signal -1 } 
-	{ grp_fu_1268_p_ce sc_out sc_logic 1 signal -1 } 
-	{ grp_fu_2859_p_din0 sc_out sc_lv 32 signal -1 } 
-	{ grp_fu_2859_p_din1 sc_out sc_lv 32 signal -1 } 
-	{ grp_fu_2859_p_dout0 sc_in sc_lv 32 signal -1 } 
-	{ grp_fu_2859_p_ce sc_out sc_logic 1 signal -1 } 
-	{ grp_fu_1273_p_din0 sc_out sc_lv 32 signal -1 } 
-	{ grp_fu_1273_p_din1 sc_out sc_lv 32 signal -1 } 
-	{ grp_fu_1273_p_dout0 sc_in sc_lv 32 signal -1 } 
-	{ grp_fu_1273_p_ce sc_out sc_logic 1 signal -1 } 
-	{ grp_fu_1278_p_din0 sc_out sc_lv 32 signal -1 } 
-	{ grp_fu_1278_p_din1 sc_out sc_lv 32 signal -1 } 
-	{ grp_fu_1278_p_opcode sc_out sc_lv 5 signal -1 } 
-	{ grp_fu_1278_p_dout0 sc_in sc_lv 1 signal -1 } 
-	{ grp_fu_1278_p_ce sc_out sc_logic 1 signal -1 } 
+	{ grp_fu_188_p_din0 sc_out sc_lv 32 signal -1 } 
+	{ grp_fu_188_p_din1 sc_out sc_lv 32 signal -1 } 
+	{ grp_fu_188_p_opcode sc_out sc_lv 2 signal -1 } 
+	{ grp_fu_188_p_dout0 sc_in sc_lv 32 signal -1 } 
+	{ grp_fu_188_p_ce sc_out sc_logic 1 signal -1 } 
+	{ grp_fu_193_p_din0 sc_out sc_lv 32 signal -1 } 
+	{ grp_fu_193_p_din1 sc_out sc_lv 32 signal -1 } 
+	{ grp_fu_193_p_dout0 sc_in sc_lv 32 signal -1 } 
+	{ grp_fu_193_p_ce sc_out sc_logic 1 signal -1 } 
 }
 set NewPortList {[ 
 	{ "name": "ap_clk", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "clock", "bundle":{"name": "ap_clk", "role": "default" }} , 
@@ -66,24 +57,15 @@ set NewPortList {[
  	{ "name": "ap_ready", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "ready", "bundle":{"name": "ap_ready", "role": "default" }} , 
  	{ "name": "t_in", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "t_in", "role": "default" }} , 
  	{ "name": "ap_return", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "ap_return", "role": "default" }} , 
- 	{ "name": "grp_fu_1268_p_din0", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "grp_fu_1268_p_din0", "role": "default" }} , 
- 	{ "name": "grp_fu_1268_p_din1", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "grp_fu_1268_p_din1", "role": "default" }} , 
- 	{ "name": "grp_fu_1268_p_opcode", "direction": "out", "datatype": "sc_lv", "bitwidth":2, "type": "signal", "bundle":{"name": "grp_fu_1268_p_opcode", "role": "default" }} , 
- 	{ "name": "grp_fu_1268_p_dout0", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "grp_fu_1268_p_dout0", "role": "default" }} , 
- 	{ "name": "grp_fu_1268_p_ce", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "grp_fu_1268_p_ce", "role": "default" }} , 
- 	{ "name": "grp_fu_2859_p_din0", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "grp_fu_2859_p_din0", "role": "default" }} , 
- 	{ "name": "grp_fu_2859_p_din1", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "grp_fu_2859_p_din1", "role": "default" }} , 
- 	{ "name": "grp_fu_2859_p_dout0", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "grp_fu_2859_p_dout0", "role": "default" }} , 
- 	{ "name": "grp_fu_2859_p_ce", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "grp_fu_2859_p_ce", "role": "default" }} , 
- 	{ "name": "grp_fu_1273_p_din0", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "grp_fu_1273_p_din0", "role": "default" }} , 
- 	{ "name": "grp_fu_1273_p_din1", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "grp_fu_1273_p_din1", "role": "default" }} , 
- 	{ "name": "grp_fu_1273_p_dout0", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "grp_fu_1273_p_dout0", "role": "default" }} , 
- 	{ "name": "grp_fu_1273_p_ce", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "grp_fu_1273_p_ce", "role": "default" }} , 
- 	{ "name": "grp_fu_1278_p_din0", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "grp_fu_1278_p_din0", "role": "default" }} , 
- 	{ "name": "grp_fu_1278_p_din1", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "grp_fu_1278_p_din1", "role": "default" }} , 
- 	{ "name": "grp_fu_1278_p_opcode", "direction": "out", "datatype": "sc_lv", "bitwidth":5, "type": "signal", "bundle":{"name": "grp_fu_1278_p_opcode", "role": "default" }} , 
- 	{ "name": "grp_fu_1278_p_dout0", "direction": "in", "datatype": "sc_lv", "bitwidth":1, "type": "signal", "bundle":{"name": "grp_fu_1278_p_dout0", "role": "default" }} , 
- 	{ "name": "grp_fu_1278_p_ce", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "grp_fu_1278_p_ce", "role": "default" }}  ]}
+ 	{ "name": "grp_fu_188_p_din0", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "grp_fu_188_p_din0", "role": "default" }} , 
+ 	{ "name": "grp_fu_188_p_din1", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "grp_fu_188_p_din1", "role": "default" }} , 
+ 	{ "name": "grp_fu_188_p_opcode", "direction": "out", "datatype": "sc_lv", "bitwidth":2, "type": "signal", "bundle":{"name": "grp_fu_188_p_opcode", "role": "default" }} , 
+ 	{ "name": "grp_fu_188_p_dout0", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "grp_fu_188_p_dout0", "role": "default" }} , 
+ 	{ "name": "grp_fu_188_p_ce", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "grp_fu_188_p_ce", "role": "default" }} , 
+ 	{ "name": "grp_fu_193_p_din0", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "grp_fu_193_p_din0", "role": "default" }} , 
+ 	{ "name": "grp_fu_193_p_din1", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "grp_fu_193_p_din1", "role": "default" }} , 
+ 	{ "name": "grp_fu_193_p_dout0", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "grp_fu_193_p_dout0", "role": "default" }} , 
+ 	{ "name": "grp_fu_193_p_ce", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "grp_fu_193_p_ce", "role": "default" }}  ]}
 
 set ArgLastReadFirstWriteLatency {
 	generic_tanh_float_s {
@@ -100,11 +82,12 @@ set ArgLastReadFirstWriteLatency {
 set hasDtUnsupportedChannel 0
 
 set PerformanceInfo {[
-	{"Name" : "Latency", "Min" : "2", "Max" : "38"}
-	, {"Name" : "Interval", "Min" : "2", "Max" : "38"}
+	{"Name" : "Latency", "Min" : "61", "Max" : "61"}
+	, {"Name" : "Interval", "Min" : "3", "Max" : "3"}
 ]}
 
 set PipelineEnableSignalInfo {[
+	{"Pipeline" : "0", "EnableSignal" : "ap_enable_pp0"}
 ]}
 
 set Spec2ImplPortList { 

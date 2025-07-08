@@ -9,8 +9,8 @@
 <ProductFamily>artix7</ProductFamily>
 <Part>xc7a100t-fgg484-2L</Part>
 <TopModelName>exp_generic_double_s</TopModelName>
-<TargetClockPeriod>20.00</TargetClockPeriod>
-<ClockUncertainty>5.40</ClockUncertainty>
+<TargetClockPeriod>10.00</TargetClockPeriod>
+<ClockUncertainty>2.70</ClockUncertainty>
 <TargetInitiationInterval>4294967295</TargetInitiationInterval>
 <FlowTarget>vivado</FlowTarget>
 </UserAssignments>
@@ -19,18 +19,18 @@
 <PipelineType>yes</PipelineType>
 <SummaryOfTimingAnalysis>
 <unit>ns</unit>
-<EstimatedClockPeriod>14.584</EstimatedClockPeriod>
+<EstimatedClockPeriod>7.171</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
-<Best-caseLatency>9</Best-caseLatency>
-<Average-caseLatency>9</Average-caseLatency>
-<Worst-caseLatency>9</Worst-caseLatency>
-<Best-caseRealTimeLatency>0.180 us</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>0.180 us</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>0.180 us</Worst-caseRealTimeLatency>
+<Best-caseLatency>21</Best-caseLatency>
+<Average-caseLatency>21</Average-caseLatency>
+<Worst-caseLatency>21</Worst-caseLatency>
+<Best-caseRealTimeLatency>0.210 us</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>0.210 us</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>0.210 us</Worst-caseRealTimeLatency>
 <PipelineInitiationInterval>1</PipelineInitiationInterval>
-<PipelineDepth>10</PipelineDepth>
+<PipelineDepth>22</PipelineDepth>
 <Interval-min>1</Interval-min>
 <Interval-max>1</Interval-max>
 <PerformancePragma>-</PerformancePragma>
@@ -46,8 +46,8 @@
 <Resources>
 <BRAM_18K>5</BRAM_18K>
 <DSP>29</DSP>
-<FF>1261</FF>
-<LUT>2705</LUT>
+<FF>3232</FF>
+<LUT>3256</LUT>
 <URAM>0</URAM>
 </Resources>
 <AvailableResources>
@@ -92,6 +92,17 @@
 <Dir>out</Dir>
 <Bits>64</Bits>
 <Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_ce</name>
+<Object>exp_generic&lt;double&gt;</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
 <name>x</name>

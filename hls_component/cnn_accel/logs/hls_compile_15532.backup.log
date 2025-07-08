@@ -1,0 +1,137 @@
+  **** HLS Build v2025.1 6135595
+INFO: [HLS 200-2005] Using work_dir C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/cnn_accel 
+INFO: [HLS 200-2176] Writing Vitis IDE component file C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/cnn_accel/vitis-comp.json
+INFO: [HLS 200-10] Creating and opening component 'C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/cnn_accel'.
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-2174] Applying component config ini file C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/hls_config.cfg
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../hls_files/conv_pool.cpp' from C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/hls_config.cfg(18)
+INFO: [HLS 200-10] Adding design file 'C:/Users/ozair/Documents/Code_Drive/Drone/hls_files/conv_pool.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'tb.file=../hls_files/testbench.cpp' from C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/hls_config.cfg(8)
+INFO: [HLS 200-10] Adding test bench file 'C:/Users/ozair/Documents/Code_Drive/Drone/hls_files/testbench.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.top=cnn_accel' from C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/hls_config.cfg(7)
+INFO: [HLS 200-1465] Applying config ini 'flow_target=vivado' from C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying config ini 'part=xc7a100tfgg484-2L' from C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xc7a100t-fgg484-2L'
+INFO: [HLS 200-1465] Applying config ini 'clock=10ns' from C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/hls_config.cfg(9)
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1465] Applying config ini 'csim.code_analyzer=1' from C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/hls_config.cfg(10)
+INFO: [HLS 200-1465] Applying config ini 'package.output.format=ip_catalog' from C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/hls_config.cfg(5)
+INFO: [HLS 200-1465] Applying config ini 'syn.array_partition.complete_threshold=0' from C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/hls_config.cfg(12)
+INFO: [XFORM 203-102] Size-based automatic array partition disabled.
+INFO: [HLS 200-1465] Applying config ini 'syn.array_partition.throughput_driven=off' from C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/hls_config.cfg(13)
+INFO: [XFORM 203-102] Size-based automatic array partition disabled.
+INFO: [HLS 200-1465] Applying config ini 'syn.compile.performance_budgeter=disable' from C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/hls_config.cfg(14)
+INFO: [HLS 200-1465] Applying config ini 'syn.compile.pipeline_flush_in_task=ii1' from C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/hls_config.cfg(11)
+INFO: [HLS 200-1465] Applying config ini 'syn.compile.pipeline_style=stp' from C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/hls_config.cfg(15)
+INFO: [HLS 200-1465] Applying config ini 'syn.dataflow.disable_fifo_sizing_opt=1' from C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/hls_config.cfg(16)
+INFO: [HLS 200-1465] Applying config ini 'syn.dataflow.enable_canonicalization=0' from C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/hls_config.cfg(17)
+INFO: [HLS 200-2176] Writing Vitis IDE component file C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/cnn_accel/vitis-comp.json
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 2 seconds. CPU system time: 1 seconds. Elapsed time: 2.918 seconds; current allocated memory: 144.539 MB.
+INFO: [HLS 200-10] Analyzing design file '../hls_files/conv_pool.cpp' ... 
+WARNING: [HLS 207-1016] unknown warning group '-Wmisleading-indentation', ignored (C:/Xilinx/2025.1/Vitis/common/technology/autopilot/etc/hls_sqrt_apfixed.h:16:34)
+WARNING: [HLS 214-111] Static scalars and arrays declared inside a dataflow region will be treated like local variables (../hls_files/conv_pool.cpp:92:16)
+Resolution: For help on HLS 214-111 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=214-111.html
+WARNING: [HLS 214-111] Static scalars and arrays declared inside a dataflow region will be treated like local variables (../hls_files/conv_pool.cpp:93:19)
+Resolution: For help on HLS 214-111 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=214-111.html
+WARNING: [HLS 214-111] Static scalars and arrays declared inside a dataflow region will be treated like local variables (../hls_files/conv_pool.cpp:94:19)
+Resolution: For help on HLS 214-111 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=214-111.html
+WARNING: [HLS 214-111] Static scalars and arrays declared inside a dataflow region will be treated like local variables (../hls_files/conv_pool.cpp:95:19)
+Resolution: For help on HLS 214-111 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=214-111.html
+WARNING: [HLS 214-111] Static scalars and arrays declared inside a dataflow region will be treated like local variables (../hls_files/conv_pool.cpp:96:19)
+Resolution: For help on HLS 214-111 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=214-111.html
+WARNING: [HLS 214-111] Static scalars and arrays declared inside a dataflow region will be treated like local variables (../hls_files/conv_pool.cpp:97:19)
+Resolution: For help on HLS 214-111 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=214-111.html
+WARNING: [HLS 214-111] Static scalars and arrays declared inside a dataflow region will be treated like local variables (../hls_files/conv_pool.cpp:98:19)
+Resolution: For help on HLS 214-111 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=214-111.html
+WARNING: [HLS 200-471] Dataflow form checks found 7 issue(s) in file ../hls_files/conv_pool.cpp
+Resolution: For help on HLS 200-471 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-471.html
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 29.378 seconds; current allocated memory: 151.918 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-1995] There were 14,801 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details (C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/cnn_accel/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 2,604 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details (C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/cnn_accel/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 1,667 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details (C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/cnn_accel/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 1,476 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details (C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/cnn_accel/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 1,232 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details (C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/cnn_accel/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 1,708 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details (C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/cnn_accel/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 1,455 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details (C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/cnn_accel/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 1,455 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details (C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/cnn_accel/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 1,455 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details (C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/cnn_accel/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 1,330 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details (C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/cnn_accel/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 1,330 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details (C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/cnn_accel/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 1,328 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details (C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/cnn_accel/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 1,327 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details (C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/cnn_accel/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 1,327 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details (C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/cnn_accel/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 1,658 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details (C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/cnn_accel/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 1,717 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details (C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/cnn_accel/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 214-131] Inlining function 'exp_reduce_::exp(float)' into 'hls::exp(float)' (C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib\hlsmath\src\c++\expfloat.cpp:17:9)
+INFO: [HLS 214-131] Inlining function 'hls::exp(float)' into 'fc2(float const*, float const*, float const*, unsigned char*)' (../hls_files/conv_pool.cpp:290:34)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_270_1' is marked as complete unroll implied by the pipeline pragma (../hls_files/conv_pool.cpp:270:27)
+INFO: [HLS 214-291] Loop 'CONV2_KR' is marked as complete unroll implied by the pipeline pragma (../hls_files/conv_pool.cpp:209:27)
+INFO: [HLS 214-291] Loop 'CONV2_KC' is marked as complete unroll implied by the pipeline pragma (../hls_files/conv_pool.cpp:210:31)
+INFO: [HLS 214-291] Loop 'CONV2_CH' is marked as complete unroll implied by the pipeline pragma (../hls_files/conv_pool.cpp:211:35)
+INFO: [HLS 214-291] Loop 'CONV1_KR' is marked as complete unroll implied by the pipeline pragma (../hls_files/conv_pool.cpp:161:27)
+INFO: [HLS 214-291] Loop 'CONV1_KC' is marked as complete unroll implied by the pipeline pragma (../hls_files/conv_pool.cpp:162:31)
+INFO: [HLS 214-291] Loop 'CONV1_CH' is marked as complete unroll implied by the pipeline pragma (../hls_files/conv_pool.cpp:163:35)
+INFO: [HLS 214-186] Unrolling loop 'CONV2_KR' (../hls_files/conv_pool.cpp:209:27) in function 'conv2' completely with a factor of 3 (../hls_files/conv_pool.cpp:203:0)
+INFO: [HLS 214-186] Unrolling loop 'CONV2_KC' (../hls_files/conv_pool.cpp:210:31) in function 'conv2' completely with a factor of 3 (../hls_files/conv_pool.cpp:203:0)
+INFO: [HLS 214-186] Unrolling loop 'CONV2_CH' (../hls_files/conv_pool.cpp:211:35) in function 'conv2' completely with a factor of 8 (../hls_files/conv_pool.cpp:203:0)
+INFO: [HLS 214-186] Unrolling loop 'CONV1_KR' (../hls_files/conv_pool.cpp:161:27) in function 'conv1' completely with a factor of 3 (../hls_files/conv_pool.cpp:155:0)
+INFO: [HLS 214-186] Unrolling loop 'CONV1_KC' (../hls_files/conv_pool.cpp:162:31) in function 'conv1' completely with a factor of 3 (../hls_files/conv_pool.cpp:155:0)
+INFO: [HLS 214-186] Unrolling loop 'CONV1_CH' (../hls_files/conv_pool.cpp:163:35) in function 'conv1' completely with a factor of 3 (../hls_files/conv_pool.cpp:155:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<float>::data() const (.35.45.54.65)' into 'fp_struct<float>::to_float() const (.32.42.51.62)' (C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h:322:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<float>::to_float() const (.32.42.51.62)' into 'fp_struct<float>::to_ieee() const' (C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h:346:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<float>::fp_struct(float)' into 'float generic_copysign<float>(float, float)' (C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_copysign.h:10:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<float>::to_ieee() const' into 'float generic_copysign<float>(float, float)' (C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_copysign.h:10:0)
+INFO: [HLS 214-178] Inlining function 'float generic_copysign<float>(float, float)' into 'float generic_fabs<float>(float)' (C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_fabs.h:12:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<float>::to_ieee() const' into 'float generic_nan<float>(char const*)' (C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_nan.h:10:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::fp_struct(double)' into 'int generic_isnan<double>(double)' (C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_isnan.h:16:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::fp_struct(double)' into 'int generic_isinf<double>(double)' (C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_isinf.h:16:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::data() const (.96.106.116.134)' into 'fp_struct<double>::to_double() const (.93.103.113.131)' (C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h:494:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::to_double() const (.93.103.113.131)' into 'fp_struct<double>::to_ieee() const' (C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h:509:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::fp_struct(double)' into 'double exp_reduce_::exp_generic<double>(double)' (C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h:157:0)
+INFO: [HLS 214-178] Inlining function 'int generic_isnan<double>(double)' into 'double exp_reduce_::exp_generic<double>(double)' (C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h:157:0)
+INFO: [HLS 214-178] Inlining function 'int generic_isinf<double>(double)' into 'double exp_reduce_::exp_generic<double>(double)' (C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h:157:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::to_ieee() const' into 'double exp_reduce_::exp_generic<double>(double)' (C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h:157:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::expv() const' into 'double exp_reduce_::exp_generic<double>(double)' (C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h:157:0)
+INFO: [HLS 214-178] Inlining function 'exp_reduce_::exp_traits<double>::exp_Z1P_m_1(ap_ufixed<51, -8, (ap_q_mode)5, (ap_o_mode)3, 0>)' into 'double exp_reduce_::exp_generic<double>(double)' (C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h:157:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<float>::fp_struct(float)' into 'exp_reduce_::expm1(float)' (C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib\hlsmath\src\common\hls_exp_float.cpp:7:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<float>::fp_struct(float)' into 'float explog_based::generic_tanh<float>(float)' (C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h:28:0)
+INFO: [HLS 214-178] Inlining function 'float generic_fabs<float>(float)' into 'float explog_based::generic_tanh<float>(float)' (C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h:28:0)
+INFO: [HLS 214-178] Inlining function 'float generic_nan<float>(char const*)' into 'float explog_based::generic_tanh<float>(float)' (C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h:28:0)
+INFO: [HLS 214-178] Inlining function 'exp_reduce_::expm1(float)' into 'float explog_based::generic_tanh<float>(float)' (C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h:28:0)
+INFO: [HLS 214-178] Inlining function 'hls::tanh(float)' into 'fc1(float const*, int, float const*, float const*, float*)' (../hls_files/conv_pool.cpp:266:0)
+WARNING: [HLS 214-464] Skipping array undecay on variable length array 'img_in'. (../hls_files/conv_pool.cpp:66:0)
+WARNING: [HLS 214-464] Skipping array undecay on variable length array 'weights1'. (../hls_files/conv_pool.cpp:66:0)
+WARNING: [HLS 214-464] Skipping array undecay on variable length array 'bias1'. (../hls_files/conv_pool.cpp:66:0)
+WARNING: [HLS 214-464] Skipping array undecay on variable length array 'weights2'. (../hls_files/conv_pool.cpp:66:0)
+WARNING: [HLS 214-464] Skipping array undecay on variable length array 'bias2'. (../hls_files/conv_pool.cpp:66:0)
+WARNING: [HLS 214-464] Skipping array undecay on variable length array 'FC1_W'. (../hls_files/conv_pool.cpp:66:0)
+WARNING: [HLS 214-464] Skipping array undecay on variable length array 'FC1_B'. (../hls_files/conv_pool.cpp:66:0)
+WARNING: [HLS 214-464] Skipping array undecay on variable length array 'FC2_W'. (../hls_files/conv_pool.cpp:66:0)
+WARNING: [HLS 214-464] Skipping array undecay on variable length array 'FC2_B'. (../hls_files/conv_pool.cpp:66:0)
+WARNING: [HLS 214-464] Skipping array undecay on variable length array 'flag_out'. (../hls_files/conv_pool.cpp:66:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZZ9cnn_accelE7feat2_p': Block partitioning with factor 4 on dimension 3. (../hls_files/conv_pool.cpp:96:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZZ9cnn_accelE5feat2': Block partitioning with factor 4 on dimension 3. (../hls_files/conv_pool.cpp:95:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZZ9cnn_accelE7feat1_p': Block partitioning with factor 4 on dimension 3. (../hls_files/conv_pool.cpp:94:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZZ9cnn_accelE5feat1': Block partitioning with factor 4 on dimension 3. (../hls_files/conv_pool.cpp:93:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZZ9cnn_accelE9local_img': Block partitioning with factor 2 on dimension 3. (../hls_files/conv_pool.cpp:92:0)
+INFO: [HLS 214-437] Automatically disabling loop flattening for loop 'FC1_OUT'. (../hls_files/conv_pool.cpp:267:14)
+INFO: [HLS 214-115] Multiple burst reads of length 230400 and bit width 32 in loop 'LOAD_IMG_ROWS'(../hls_files/conv_pool.cpp:139:20) has been inferred on bundle 'gmem'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (../hls_files/conv_pool.cpp:139:20)
+INFO: [HLS 214-115] Multiple burst reads of length 32 and bit width 32 in loop 'FC2_LOOP'(../hls_files/conv_pool.cpp:286:15) has been inferred on bundle 'gmem'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (../hls_files/conv_pool.cpp:286:15)
+WARNING: [HLS 214-187] Cannot unroll loop 'VITIS_LOOP_270_1' (../hls_files/conv_pool.cpp:270:27) in function 'fc1' as it has a variable trip count (../hls_files/conv_pool.cpp:270:27)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 15.189 seconds; current allocated memory: 156.145 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.006 seconds; current allocated memory: 156.145 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.255 seconds; current allocated memory: 164.531 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.21 seconds; current allocated memory: 169.547 MB.
+ERROR: [HLS 200-1013] Bundled bus interface 'gmem' on ports 'img_in, weights1, bias1, weights2, bias2, FC1_W, FC1_B, FC2_W, FC2_B, flag_out' failed dataflow checking: it cannot read data in multiple processes.
+ERROR: [HLS 200-984] Bundled bus interface 'gmem' on ports 'img_in, weights1, bias1, weights2, bias2, FC1_W, FC1_B, FC2_W, FC2_B, flag_out' has read operations in functions:  'load_img' (../hls_files/conv_pool.cpp:138), 'conv1' (../hls_files/conv_pool.cpp:153), 'conv2' (../hls_files/conv_pool.cpp:201), 'fc1' (../hls_files/conv_pool.cpp:264) and 'fc2' (../hls_files/conv_pool.cpp:17:15).
+
+ERROR: [HLS 200-1715] Encountered problem during source synthesis
+ERROR: [HLS 200-70] Pre-synthesis failed.
+ERROR: 
+INFO: [HLS 200-112] Total CPU user time: 5 seconds. Total CPU system time: 2 seconds. Total elapsed time: 48.407 seconds; peak allocated memory: 176.020 MB.

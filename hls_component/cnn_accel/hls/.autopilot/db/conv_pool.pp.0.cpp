@@ -153,7 +153,6 @@ extern "C" {
 }
 # 2 "<built-in>" 2
 # 1 "../hls_files/conv_pool.cpp" 2
-
 # 1 "C:/Xilinx/2025.1/Vitis/common/technology/autopilot\\ap_int.h" 1
 # 10 "C:/Xilinx/2025.1/Vitis/common/technology/autopilot\\ap_int.h"
 # 1 "C:/Xilinx/2025.1/Vitis/common/technology/autopilot\\etc/ap_common.h" 1
@@ -6200,7 +6199,7 @@ operator/(const complex<ap_ufixed<_AP_W, _AP_I, _AP_Q, _AP_O, _AP_N>> &__x, cons
 }
 # 370 "C:/Xilinx/2025.1/Vitis/common/technology/autopilot\\ap_fixed.h" 2
 # 365 "C:/Xilinx/2025.1/Vitis/common/technology/autopilot\\ap_int.h" 2
-# 3 "../hls_files/conv_pool.cpp" 2
+# 2 "../hls_files/conv_pool.cpp" 2
 # 1 "C:/Xilinx/2025.1/Vitis/common/technology/autopilot\\hls_stream.h" 1
 # 12 "C:/Xilinx/2025.1/Vitis/common/technology/autopilot\\hls_stream.h"
 # 1 "C:/Xilinx/2025.1/Vitis/common/technology/autopilot/hls_stream_39.h" 1
@@ -6330,7 +6329,7 @@ class stream : public stream<__STREAM_T__, 0> {
 };
 }
 # 13 "C:/Xilinx/2025.1/Vitis/common/technology/autopilot\\hls_stream.h" 2
-# 4 "../hls_files/conv_pool.cpp" 2
+# 3 "../hls_files/conv_pool.cpp" 2
 # 1 "C:/Xilinx/2025.1/Vitis/common/technology/autopilot\\ap_axi_sdata.h" 1
 # 15 "C:/Xilinx/2025.1/Vitis/common/technology/autopilot\\ap_axi_sdata.h"
 # 1 "C:/Xilinx/2025.1/Vitis/common/technology/autopilot/ap_int.h" 1
@@ -10241,7 +10240,7 @@ private:
 };
 
 }
-# 5 "../hls_files/conv_pool.cpp" 2
+# 4 "../hls_files/conv_pool.cpp" 2
 # 1 "C:/Xilinx/2025.1/Vitis/common/technology/autopilot\\hls_math.h" 1
 # 26 "C:/Xilinx/2025.1/Vitis/common/technology/autopilot\\hls_math.h"
 # 1 "C:/Xilinx/2025.1/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\cmath" 1 3
@@ -29910,10 +29909,33 @@ namespace hls {
     uint32_t logb(uint32_t);
 
 };
-# 6 "../hls_files/conv_pool.cpp" 2
-# 25 "../hls_files/conv_pool.cpp"
+# 5 "../hls_files/conv_pool.cpp" 2
+# 24 "../hls_files/conv_pool.cpp"
 typedef float data_t;
 typedef unsigned char flag_t;
+
+
+
+void load_img(const data_t *img_in, data_t local_img[240][320][3]);
+void conv1(const data_t local_img[240][320][3],
+           const data_t *weights1, const data_t *bias1,
+           data_t feat1[(240 -3 +1)][(320 -3 +1)][8]);
+void pool1(const data_t feat1[(240 -3 +1)][(320 -3 +1)][8],
+           data_t feat1_p[((240 -3 +1)/2)][((320 -3 +1)/2)][8]);
+void conv2(const data_t feat1_p[((240 -3 +1)/2)][((320 -3 +1)/2)][8],
+           const data_t *weights2, const data_t *bias2,
+           data_t feat2[(((240 -3 +1)/2)-3 +1)][(((320 -3 +1)/2)-3 +1)][16]);
+void pool2(const data_t feat2[(((240 -3 +1)/2)-3 +1)][(((320 -3 +1)/2)-3 +1)][16],
+           data_t feat2_p[((((240 -3 +1)/2)-3 +1)/2)][((((320 -3 +1)/2)-3 +1)/2)][16]);
+void flatten(const data_t feat2_p[((((240 -3 +1)/2)-3 +1)/2)][((((320 -3 +1)/2)-3 +1)/2)][16],
+             data_t vec1[16 * ((((240 -3 +1)/2)-3 +1)/2) * ((((320 -3 +1)/2)-3 +1)/2)], int &cnt);
+void fc1(const data_t vec1[16 * ((((240 -3 +1)/2)-3 +1)/2) * ((((320 -3 +1)/2)-3 +1)/2)], int cnt,
+         const data_t *FC1_W, const data_t *FC1_B,
+         data_t vec2[32]);
+void fc2(const data_t vec2[32],
+         const data_t *FC2_W, const data_t *FC2_B,
+         flag_t *flag_out);
+
 
 
 extern "C" {
@@ -29930,21 +29952,22 @@ __attribute__((sdx_kernel("cnn_accel", 0))) void cnn_accel(
     const data_t *FC2_B,
     flag_t *flag_out,
 
-    int ctrl) {
+    int ctrl)
+{
 #line 1 "directive"
 #pragma HLSDIRECTIVE TOP name=cnn_accel
-# 43 "../hls_files/conv_pool.cpp"
+# 66 "../hls_files/conv_pool.cpp"
 
-#pragma HLS INTERFACE m_axi port=img_in offset=slave bundle=gmem
-#pragma HLS INTERFACE m_axi port=weights1 offset=slave bundle=gmem
-#pragma HLS INTERFACE m_axi port=bias1 offset=slave bundle=gmem
-#pragma HLS INTERFACE m_axi port=weights2 offset=slave bundle=gmem
-#pragma HLS INTERFACE m_axi port=bias2 offset=slave bundle=gmem
-#pragma HLS INTERFACE m_axi port=FC1_W offset=slave bundle=gmem
-#pragma HLS INTERFACE m_axi port=FC1_B offset=slave bundle=gmem
-#pragma HLS INTERFACE m_axi port=FC2_W offset=slave bundle=gmem
-#pragma HLS INTERFACE m_axi port=FC2_B offset=slave bundle=gmem
-#pragma HLS INTERFACE m_axi port=flag_out offset=slave bundle=gmem
+#pragma HLS INTERFACE m_axi port=img_in offset=slave bundle=IMGmem depth=240*320*3
+#pragma HLS INTERFACE m_axi port=weights1 offset=slave bundle=W1mem depth=8*3*3*3
+#pragma HLS INTERFACE m_axi port=bias1 offset=slave bundle=B1mem depth=8
+#pragma HLS INTERFACE m_axi port=weights2 offset=slave bundle=W2mem depth=16*8*3*3
+#pragma HLS INTERFACE m_axi port=bias2 offset=slave bundle=B2mem depth=16
+#pragma HLS INTERFACE m_axi port=FC1_W offset=slave bundle=W3mem depth=32*(16*((((240 -3 +1)/2)-3 +1)/2)*((((320 -3 +1)/2)-3 +1)/2))
+#pragma HLS INTERFACE m_axi port=FC1_B offset=slave bundle=B3mem depth=32
+#pragma HLS INTERFACE m_axi port=FC2_W offset=slave bundle=W4mem depth=32
+#pragma HLS INTERFACE m_axi port=FC2_B offset=slave bundle=B4mem depth=1
+#pragma HLS INTERFACE m_axi port=flag_out offset=slave bundle=Foutmem depth=1
 
 #pragma HLS INTERFACE s_axilite port=img_in bundle=control
 #pragma HLS INTERFACE s_axilite port=weights1 bundle=control
@@ -29967,152 +29990,198 @@ __attribute__((sdx_kernel("cnn_accel", 0))) void cnn_accel(
     static data_t feat2_p [((((240 -3 +1)/2)-3 +1)/2)][((((320 -3 +1)/2)-3 +1)/2)][16];
     static data_t vec1 [16*((((240 -3 +1)/2)-3 +1)/2)*((((320 -3 +1)/2)-3 +1)/2)];
     static data_t vec2 [32];
-
-#pragma HLS ARRAY_PARTITION variable=local_img complete dim=3
-#pragma HLS ARRAY_PARTITION variable=feat1 complete dim=3
-#pragma HLS ARRAY_PARTITION variable=feat1_p complete dim=3
-#pragma HLS ARRAY_PARTITION variable=feat2 complete dim=3
-#pragma HLS ARRAY_PARTITION variable=feat2_p complete dim=3
+    int cnt;
 
 
- LOAD_IMG_ROWS:
-    for(int i=0;i<240;i++){
-      LOAD_IMG_COLS:
-      for(int j=0;j<320;j++){
-        LOAD_IMG_CH:
-        for(int c=0;c<3;c++){
+#pragma HLS ARRAY_PARTITION variable=local_img block factor=2 dim=3
+#pragma HLS ARRAY_PARTITION variable=feat1 block factor=4 dim=3
+#pragma HLS ARRAY_PARTITION variable=feat1_p block factor=4 dim=3
+#pragma HLS ARRAY_PARTITION variable=feat2 block factor=4 dim=3
+#pragma HLS ARRAY_PARTITION variable=feat2_p block factor=4 dim=3
 
-          int idx = (i*320 + j)*3 + c;
-          local_img[i][j][c] = img_in[idx];
-        }
-      }
-    }
+#pragma HLS DATAFLOW
 
 
-    CONV1_ROW:
-    for(int i=0;i<(240 -3 +1);i++){
-      CONV1_COL:
-      for(int j=0;j<(320 -3 +1);j++){
-        CONV1_FIL:
-        for(int m=0;m<8;m++){
+ load_img(img_in, local_img);
 
-          data_t acc = bias1[m];
-          CONV1_KR:
-          for(int p=0;p<3;p++){
-            CONV1_KC:
-            for(int q=0;q<3;q++){
-              CONV1_CH:
-              for(int c=0;c<3;c++){
-                int widx = ((m*3 + c)*3 + p)*3 + q;
-                acc += local_img[i+p][j+q][c] * weights1[widx];
-              }
+
+    conv1(local_img, weights1, bias1, feat1);
+
+
+    pool1(feat1, feat1_p);
+
+
+    conv2(feat1_p, weights2, bias2, feat2);
+
+
+    pool2(feat2, feat2_p);
+
+
+    flatten(feat2_p, vec1, cnt);
+
+
+    fc1(vec1, cnt, FC1_W, FC1_B, vec2);
+
+
+    fc2(vec2, FC2_W, FC2_B, flag_out);
+}
+}
+
+
+
+void load_img(const data_t *img_in, data_t local_img[240][320][3]) {
+    LOAD_IMG_ROWS: for(int i = 0; i < 240; i++){
+        LOAD_IMG_COLS: for(int j = 0; j < 320; j++){
+            LOAD_IMG_CH: for(int c = 0; c < 3; c++){
+#pragma HLS PIPELINE II=3
+ int idx = (i*320 + j)*3 + c;
+                local_img[i][j][c] = img_in[idx];
             }
-          }
-          feat1[i][j][m] = (acc>0)?acc:0;
         }
-      }
     }
+}
 
 
-    POOL1_ROW:
-    for(int i=0;i<((240 -3 +1)/2);i++){
-      POOL1_COL:
-      for(int j=0;j<((320 -3 +1)/2);j++){
-        POOL1_CH:
-        for(int m=0;m<8;m++){
 
-          data_t m0 = feat1[2*i ][2*j ][m];
-          data_t m1 = feat1[2*i+1 ][2*j ][m];
-          data_t m2 = feat1[2*i ][2*j+1 ][m];
-          data_t m3 = feat1[2*i+1 ][2*j+1 ][m];
-          data_t mx = (m0>m1?m0:m1);
-          data_t my = (m2>m3?m2:m3);
-          feat1_p[i][j][m] = (mx>my?mx:my);
-        }
-      }
-    }
+void conv1(const data_t local_img[240][320][3],
+           const data_t *weights1, const data_t *bias1,
+           data_t feat1[(240 -3 +1)][(320 -3 +1)][8])
+{
+    CONV1_ROW: for(int i = 0; i < (240 -3 +1); i++){
+        CONV1_COL: for(int j = 0; j < (320 -3 +1); j++){
+            CONV1_FIL: for(int m = 0; m < 8; m++){
+#pragma HLS PIPELINE II=3
+ data_t acc = bias1[m];
+                CONV1_KR: for(int p = 0; p < 3; p++){
+                    CONV1_KC: for(int q = 0; q < 3; q++){
+                        CONV1_CH: for(int c = 0; c < 3; c++){
+#pragma HLS UNROLL factor=2
+ int widx = ((m * 3 + c)*3 + p)*3 + q;
+                            acc += local_img[i+p][j+q][c] * weights1[widx];
+                        }
+                    }
+                }
 
-
-    CONV2_ROW:
-    for(int i=0;i<(((240 -3 +1)/2)-3 +1);i++){
-      CONV2_COL:
-      for(int j=0;j<(((320 -3 +1)/2)-3 +1);j++){
-        CONV2_FIL:
-        for(int m=0;m<16;m++){
-
-          data_t acc = bias2[m];
-          CONV2_KR:
-          for(int p=0;p<3;p++){
-            CONV2_KC:
-            for(int q=0;q<3;q++){
-              CONV2_CH:
-              for(int c=0;c<8;c++){
-                int widx = ((m*8 + c)*3 + p)*3 + q;
-                acc += feat1_p[i+p][j+q][c] * weights2[widx];
-              }
+                feat1[i][j][m] = (acc > 0) ? acc : 0;
             }
-          }
-          feat2[i][j][m] = (acc>0)?acc:0;
         }
-      }
     }
+}
 
 
-    POOL2_ROW:
-    for(int i=0;i<((((240 -3 +1)/2)-3 +1)/2);i++){
-      POOL2_COL:
-      for(int j=0;j<((((320 -3 +1)/2)-3 +1)/2);j++){
-        POOL2_CH:
-        for(int m=0;m<16;m++){
 
-          data_t m0 = feat2[2*i ][2*j ][m];
-          data_t m1 = feat2[2*i+1 ][2*j ][m];
-          data_t m2 = feat2[2*i ][2*j+1 ][m];
-          data_t m3 = feat2[2*i+1 ][2*j+1 ][m];
-          data_t mx = (m0>m1?m0:m1);
-          data_t my = (m2>m3?m2:m3);
-          feat2_p[i][j][m] = (mx>my?mx:my);
+void pool1(const data_t feat1[(240 -3 +1)][(320 -3 +1)][8],
+           data_t feat1_p[((240 -3 +1)/2)][((320 -3 +1)/2)][8])
+{
+    POOL1_ROW: for(int i = 0; i < ((240 -3 +1)/2); i++){
+        POOL1_COL: for(int j = 0; j < ((320 -3 +1)/2); j++){
+            POOL1_CH: for(int m = 0; m < 8; m++){
+#pragma HLS PIPELINE II=3
+ data_t m0 = feat1[2*i][2*j][m];
+                data_t m1 = feat1[2*i+1][2*j][m];
+                data_t m2 = feat1[2*i][2*j+1][m];
+                data_t m3 = feat1[2*i+1][2*j+1][m];
+                data_t mx = (m0 > m1) ? m0 : m1;
+                data_t my = (m2 > m3) ? m2 : m3;
+                feat1_p[i][j][m] = (mx > my) ? mx : my;
+            }
         }
-      }
     }
+}
 
 
-    int cnt=0;
-    FLATTEN:
-    for(int i=0;i<((((240 -3 +1)/2)-3 +1)/2);i++){
-      VITIS_LOOP_189_1: for(int j=0;j<((((320 -3 +1)/2)-3 +1)/2);j++){
-        VITIS_LOOP_190_2: for(int m=0;m<16;m++){
 
-          vec1[cnt++] = feat2_p[i][j][m];
+void conv2(const data_t feat1_p[((240 -3 +1)/2)][((320 -3 +1)/2)][8],
+           const data_t *weights2, const data_t *bias2,
+           data_t feat2[(((240 -3 +1)/2)-3 +1)][(((320 -3 +1)/2)-3 +1)][16])
+{
+    CONV2_ROW: for(int i = 0; i < (((240 -3 +1)/2)-3 +1); i++){
+        CONV2_COL: for(int j = 0; j < (((320 -3 +1)/2)-3 +1); j++){
+            CONV2_FIL: for(int m = 0; m < 16; m++){
+#pragma HLS PIPELINE II=3
+ data_t acc = bias2[m];
+                CONV2_KR: for(int p = 0; p < 3; p++){
+                    CONV2_KC: for(int q = 0; q < 3; q++){
+                        CONV2_CH: for(int c = 0; c < 8; c++){
+#pragma HLS UNROLL factor=2
+ int widx = ((m * 8 + c)*3 + p)*3 + q;
+                            acc += feat1_p[i+p][j+q][c] * weights2[widx];
+                        }
+                    }
+                }
+                feat2[i][j][m] = (acc > 0) ? acc : 0;
+            }
         }
-      }
     }
+}
 
 
-    FC1_OUT:
-    for(int o=0;o<32;o++){
 
-      data_t acc = FC1_B[o];
-      VITIS_LOOP_202_3: for(int i=0;i<cnt;i++){
-        acc += vec1[i] * FC1_W[o*cnt + i];
-      }
-
-      vec2[o] = hls::tanh(acc);
+void pool2(const data_t feat2[(((240 -3 +1)/2)-3 +1)][(((320 -3 +1)/2)-3 +1)][16],
+           data_t feat2_p[((((240 -3 +1)/2)-3 +1)/2)][((((320 -3 +1)/2)-3 +1)/2)][16])
+{
+    POOL2_ROW: for(int i = 0; i < ((((240 -3 +1)/2)-3 +1)/2); i++){
+        POOL2_COL: for(int j = 0; j < ((((320 -3 +1)/2)-3 +1)/2); j++){
+            POOL2_CH: for(int m = 0; m < 16; m++){
+#pragma HLS PIPELINE II=3
+ data_t m0 = feat2[2*i][2*j][m];
+                data_t m1 = feat2[2*i+1][2*j][m];
+                data_t m2 = feat2[2*i][2*j+1][m];
+                data_t m3 = feat2[2*i+1][2*j+1][m];
+                data_t mx = (m0 > m1) ? m0 : m1;
+                data_t my = (m2 > m3) ? m2 : m3;
+                feat2_p[i][j][m] = (mx > my) ? mx : my;
+            }
+        }
     }
+}
 
 
+
+void flatten(const data_t feat2_p[((((240 -3 +1)/2)-3 +1)/2)][((((320 -3 +1)/2)-3 +1)/2)][16],
+             data_t vec1[16 * ((((240 -3 +1)/2)-3 +1)/2) * ((((320 -3 +1)/2)-3 +1)/2)], int &cnt)
+{
+    cnt = 0;
+    FLATTEN: for(int i = 0; i < ((((240 -3 +1)/2)-3 +1)/2); i++){
+        VITIS_LOOP_252_1: for(int j = 0; j < ((((320 -3 +1)/2)-3 +1)/2); j++){
+            VITIS_LOOP_253_2: for(int m = 0; m < 16; m++){
+#pragma HLS PIPELINE II=3
+ vec1[cnt++] = feat2_p[i][j][m];
+            }
+        }
+    }
+}
+
+
+
+void fc1(const data_t vec1[16 * ((((240 -3 +1)/2)-3 +1)/2) * ((((320 -3 +1)/2)-3 +1)/2)], int cnt,
+         const data_t *FC1_W, const data_t *FC1_B,
+         data_t vec2[32])
+{
+    FC1_OUT: for(int o = 0; o < 32; o++){
+#pragma HLS PIPELINE II=3
+ data_t acc = FC1_B[o];
+        VITIS_LOOP_270_1: for(int i = 0; i < cnt; i++){
+#pragma HLS UNROLL factor=2
+ acc += vec1[i] * FC1_W[o * cnt + i];
+        }
+
+        vec2[o] = hls::tanh(acc);
+    }
+}
+
+
+
+void fc2(const data_t vec2[32],
+         const data_t *FC2_W, const data_t *FC2_B,
+         flag_t *flag_out)
+{
     data_t acc2 = FC2_B[0];
-    FC2_LOOP:
-    for(int i=0;i<32;i++){
-
-      acc2 += vec2[i] * FC2_W[i];
+    FC2_LOOP: for(int i = 0; i < 32; i++){
+#pragma HLS PIPELINE II=3
+ acc2 += vec2[i] * FC2_W[i];
     }
     data_t prob = 1.0f / (1.0f + hls::exp(-acc2));
-
-
     flag_t flag = (prob > 0.5f) ? 1 : 0;
-
-
     flag_out[0] = flag;
-    }
 }

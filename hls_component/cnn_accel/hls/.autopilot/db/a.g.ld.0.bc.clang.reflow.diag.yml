@@ -446,6 +446,20 @@ Args:
                        Line: 6, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 275, Column: 19 }
+Function:        _Z3fc1PKfiS0_S0_Pf
+Args:            
+  - Callee:          'hls::tanh(float)'
+    DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib\hlsmath\src\c++\tanhfloat.cpp', 
+                       Line: 6, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'fc1(float const*, int, float const*, float const*, float*)'
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 266, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
 --- !Passed
 Pass:            inline
 Name:            AlwaysInline
@@ -463,34 +477,610 @@ Args:
                        Line: 15, Column: 0 }
   - String:          ''''
 ...
---- !Missed
-Pass:            inline
-Name:            NeverInline
-DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 206, Column: 17 }
-Function:        cnn_accel
-Args:            
-  - Callee:          'hls::tanh(float)'
-    DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib\hlsmath\src\c++\tanhfloat.cpp', 
-                       Line: 6, Column: 0 }
-  - String:          ' not inlined into '
-  - Caller:          cnn_accel
-    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 43, Column: 0 }
-  - String:          ' because it should never be inlined (cost=never)'
-...
 --- !Passed
 Pass:            inline
 Name:            AlwaysInline
-DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 216, Column: 34 }
-Function:        cnn_accel
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 290, Column: 34 }
+Function:        _Z3fc2PKfS0_S0_Ph
 Args:            
   - String:          'Inlining function '''
   - Callee:          'hls::exp(float)'
     DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib\hlsmath\src\c++\expfloat.cpp', 
                        Line: 15, Column: 0 }
   - String:          ''' into '''
-  - Caller:          cnn_accel
-    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 43, Column: 0 }
+  - Caller:          'fc2(float const*, float const*, float const*, unsigned char*)'
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 284, Column: 0 }
   - String:          ''''
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 111, Column: 2 }
+Function:        cnn_accel
+Args:            
+  - Callee:          'load_img(float const*, float (*) [320][3])'
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 138, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          cnn_accel
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 66, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 114, Column: 5 }
+Function:        cnn_accel
+Args:            
+  - Callee:          'conv1(float const (*) [320][3], float const*, float const*, float (*) [318][8])'
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 155, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          cnn_accel
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 66, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 117, Column: 5 }
+Function:        cnn_accel
+Args:            
+  - Callee:          'pool1(float const (*) [318][8], float (*) [159][8])'
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 181, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          cnn_accel
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 66, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 120, Column: 5 }
+Function:        cnn_accel
+Args:            
+  - Callee:          'conv2(float const (*) [159][8], float const*, float const*, float (*) [157][16])'
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 203, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          cnn_accel
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 66, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 123, Column: 5 }
+Function:        cnn_accel
+Args:            
+  - Callee:          'pool2(float const (*) [157][16], float (*) [78][16])'
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 228, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          cnn_accel
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 66, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 126, Column: 5 }
+Function:        cnn_accel
+Args:            
+  - Callee:          'flatten(float const (*) [78][16], float*, int&)'
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 249, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          cnn_accel
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 66, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 129, Column: 5 }
+Function:        cnn_accel
+Args:            
+  - Callee:          'fc1(float const*, int, float const*, float const*, float*)'
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 266, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          cnn_accel
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 66, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 132, Column: 5 }
+Function:        cnn_accel
+Args:            
+  - Callee:          'fc2(float const*, float const*, float const*, unsigned char*)'
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 284, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          cnn_accel
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 66, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 270, Column: 27 }
+Function:        _Z3fc1PKfiS0_S0_Pf
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_270_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 209, Column: 27 }
+Function:        _Z5conv2PA159_A8_KfPS_S3_PA157_A16_f
+Args:            
+  - String:          'Loop '''
+  - LoopName:        CONV2_KR
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 210, Column: 31 }
+Function:        _Z5conv2PA159_A8_KfPS_S3_PA157_A16_f
+Args:            
+  - String:          'Loop '''
+  - LoopName:        CONV2_KC
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 211, Column: 35 }
+Function:        _Z5conv2PA159_A8_KfPS_S3_PA157_A16_f
+Args:            
+  - String:          'Loop '''
+  - LoopName:        CONV2_CH
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 161, Column: 27 }
+Function:        _Z5conv1PA320_A3_KfPS_S3_PA318_A8_f
+Args:            
+  - String:          'Loop '''
+  - LoopName:        CONV1_KR
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 162, Column: 31 }
+Function:        _Z5conv1PA320_A3_KfPS_S3_PA318_A8_f
+Args:            
+  - String:          'Loop '''
+  - LoopName:        CONV1_KC
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 163, Column: 35 }
+Function:        _Z5conv1PA320_A3_KfPS_S3_PA318_A8_f
+Args:            
+  - String:          'Loop '''
+  - LoopName:        CONV1_CH
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 203, Column: 0 }
+Function:        _Z5conv2PA159_A8_KfPS_S3_PA157_A16_f
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        CONV2_KR
+  - String:          ''' ('
+  - LoopLoc:         '../hls_files/conv_pool.cpp:209:27'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          conv2
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 203, Column: 0 }
+Function:        _Z5conv2PA159_A8_KfPS_S3_PA157_A16_f
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        CONV2_KC
+  - String:          ''' ('
+  - LoopLoc:         '../hls_files/conv_pool.cpp:210:31'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          conv2
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 203, Column: 0 }
+Function:        _Z5conv2PA159_A8_KfPS_S3_PA157_A16_f
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        CONV2_CH
+  - String:          ''' ('
+  - LoopLoc:         '../hls_files/conv_pool.cpp:211:35'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          conv2
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 203, Column: 0 }
+Function:        _Z5conv2PA159_A8_KfPS_S3_PA157_A16_f
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        CONV2_CH
+  - String:          ''' ('
+  - LoopLoc:         '../hls_files/conv_pool.cpp:211:35'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          conv2
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 203, Column: 0 }
+Function:        _Z5conv2PA159_A8_KfPS_S3_PA157_A16_f
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        CONV2_CH
+  - String:          ''' ('
+  - LoopLoc:         '../hls_files/conv_pool.cpp:211:35'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          conv2
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 203, Column: 0 }
+Function:        _Z5conv2PA159_A8_KfPS_S3_PA157_A16_f
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        CONV2_KC
+  - String:          ''' ('
+  - LoopLoc:         '../hls_files/conv_pool.cpp:210:31'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          conv2
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 203, Column: 0 }
+Function:        _Z5conv2PA159_A8_KfPS_S3_PA157_A16_f
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        CONV2_CH
+  - String:          ''' ('
+  - LoopLoc:         '../hls_files/conv_pool.cpp:211:35'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          conv2
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 203, Column: 0 }
+Function:        _Z5conv2PA159_A8_KfPS_S3_PA157_A16_f
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        CONV2_CH
+  - String:          ''' ('
+  - LoopLoc:         '../hls_files/conv_pool.cpp:211:35'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          conv2
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 203, Column: 0 }
+Function:        _Z5conv2PA159_A8_KfPS_S3_PA157_A16_f
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        CONV2_CH
+  - String:          ''' ('
+  - LoopLoc:         '../hls_files/conv_pool.cpp:211:35'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          conv2
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 203, Column: 0 }
+Function:        _Z5conv2PA159_A8_KfPS_S3_PA157_A16_f
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        CONV2_KC
+  - String:          ''' ('
+  - LoopLoc:         '../hls_files/conv_pool.cpp:210:31'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          conv2
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 203, Column: 0 }
+Function:        _Z5conv2PA159_A8_KfPS_S3_PA157_A16_f
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        CONV2_CH
+  - String:          ''' ('
+  - LoopLoc:         '../hls_files/conv_pool.cpp:211:35'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          conv2
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 203, Column: 0 }
+Function:        _Z5conv2PA159_A8_KfPS_S3_PA157_A16_f
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        CONV2_CH
+  - String:          ''' ('
+  - LoopLoc:         '../hls_files/conv_pool.cpp:211:35'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          conv2
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 203, Column: 0 }
+Function:        _Z5conv2PA159_A8_KfPS_S3_PA157_A16_f
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        CONV2_CH
+  - String:          ''' ('
+  - LoopLoc:         '../hls_files/conv_pool.cpp:211:35'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          conv2
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 155, Column: 0 }
+Function:        _Z5conv1PA320_A3_KfPS_S3_PA318_A8_f
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        CONV1_KR
+  - String:          ''' ('
+  - LoopLoc:         '../hls_files/conv_pool.cpp:161:27'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          conv1
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 155, Column: 0 }
+Function:        _Z5conv1PA320_A3_KfPS_S3_PA318_A8_f
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        CONV1_KC
+  - String:          ''' ('
+  - LoopLoc:         '../hls_files/conv_pool.cpp:162:31'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          conv1
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 155, Column: 0 }
+Function:        _Z5conv1PA320_A3_KfPS_S3_PA318_A8_f
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        CONV1_CH
+  - String:          ''' ('
+  - LoopLoc:         '../hls_files/conv_pool.cpp:163:35'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          conv1
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 155, Column: 0 }
+Function:        _Z5conv1PA320_A3_KfPS_S3_PA318_A8_f
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        CONV1_CH
+  - String:          ''' ('
+  - LoopLoc:         '../hls_files/conv_pool.cpp:163:35'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          conv1
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 155, Column: 0 }
+Function:        _Z5conv1PA320_A3_KfPS_S3_PA318_A8_f
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        CONV1_CH
+  - String:          ''' ('
+  - LoopLoc:         '../hls_files/conv_pool.cpp:163:35'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          conv1
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 155, Column: 0 }
+Function:        _Z5conv1PA320_A3_KfPS_S3_PA318_A8_f
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        CONV1_KC
+  - String:          ''' ('
+  - LoopLoc:         '../hls_files/conv_pool.cpp:162:31'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          conv1
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 155, Column: 0 }
+Function:        _Z5conv1PA320_A3_KfPS_S3_PA318_A8_f
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        CONV1_CH
+  - String:          ''' ('
+  - LoopLoc:         '../hls_files/conv_pool.cpp:163:35'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          conv1
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 155, Column: 0 }
+Function:        _Z5conv1PA320_A3_KfPS_S3_PA318_A8_f
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        CONV1_CH
+  - String:          ''' ('
+  - LoopLoc:         '../hls_files/conv_pool.cpp:163:35'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          conv1
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 155, Column: 0 }
+Function:        _Z5conv1PA320_A3_KfPS_S3_PA318_A8_f
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        CONV1_CH
+  - String:          ''' ('
+  - LoopLoc:         '../hls_files/conv_pool.cpp:163:35'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          conv1
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 155, Column: 0 }
+Function:        _Z5conv1PA320_A3_KfPS_S3_PA318_A8_f
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        CONV1_KC
+  - String:          ''' ('
+  - LoopLoc:         '../hls_files/conv_pool.cpp:162:31'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          conv1
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 155, Column: 0 }
+Function:        _Z5conv1PA320_A3_KfPS_S3_PA318_A8_f
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        CONV1_CH
+  - String:          ''' ('
+  - LoopLoc:         '../hls_files/conv_pool.cpp:163:35'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          conv1
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 155, Column: 0 }
+Function:        _Z5conv1PA320_A3_KfPS_S3_PA318_A8_f
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        CONV1_CH
+  - String:          ''' ('
+  - LoopLoc:         '../hls_files/conv_pool.cpp:163:35'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          conv1
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 155, Column: 0 }
+Function:        _Z5conv1PA320_A3_KfPS_S3_PA318_A8_f
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        CONV1_CH
+  - String:          ''' ('
+  - LoopLoc:         '../hls_files/conv_pool.cpp:163:35'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          conv1
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
 ...
 --- !Missed
 Pass:            inline
@@ -863,15 +1453,119 @@ Args:
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 206, Column: 17 }
-Function:        cnn_accel
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 275, Column: 19 }
+Function:        _Z3fc1PKfiS0_S0_Pf
 Args:            
   - Callee:          'hls::tanh(float)'
     DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib\hlsmath\src\c++\tanhfloat.cpp', 
                        Line: 6, Column: 0 }
   - String:          ' not inlined into '
+  - Caller:          'fc1(float const*, int, float const*, float const*, float*)'
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 266, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 111, Column: 2 }
+Function:        cnn_accel
+Args:            
+  - Callee:          'load_img(float const*, float (*) [320][3])'
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 138, Column: 0 }
+  - String:          ' not inlined into '
   - Caller:          cnn_accel
-    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 43, Column: 0 }
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 66, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 114, Column: 5 }
+Function:        cnn_accel
+Args:            
+  - Callee:          'conv1(float const (*) [320][3], float const*, float const*, float (*) [318][8])'
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 155, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          cnn_accel
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 66, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 117, Column: 5 }
+Function:        cnn_accel
+Args:            
+  - Callee:          'pool1(float const (*) [318][8], float (*) [159][8])'
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 181, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          cnn_accel
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 66, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 120, Column: 5 }
+Function:        cnn_accel
+Args:            
+  - Callee:          'conv2(float const (*) [159][8], float const*, float const*, float (*) [157][16])'
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 203, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          cnn_accel
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 66, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 123, Column: 5 }
+Function:        cnn_accel
+Args:            
+  - Callee:          'pool2(float const (*) [157][16], float (*) [78][16])'
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 228, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          cnn_accel
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 66, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 126, Column: 5 }
+Function:        cnn_accel
+Args:            
+  - Callee:          'flatten(float const (*) [78][16], float*, int&)'
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 249, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          cnn_accel
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 66, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 129, Column: 5 }
+Function:        cnn_accel
+Args:            
+  - Callee:          'fc1(float const*, int, float const*, float const*, float*)'
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 266, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          cnn_accel
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 66, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 132, Column: 5 }
+Function:        cnn_accel
+Args:            
+  - Callee:          'fc2(float const*, float const*, float const*, unsigned char*)'
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 284, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          cnn_accel
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 66, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
@@ -880,7 +1574,7 @@ Name:            NeverInline
 Function:        apatb_cnn_accel_ir
 Args:            
   - Callee:          cnn_accel
-    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 43, Column: 0 }
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 66, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          apatb_cnn_accel_ir
   - String:          ' because it should never be inlined (cost=never)'
@@ -1245,23 +1939,43 @@ Args:
 --- !Passed
 Pass:            reflow-inliner
 Name:            Inline
-DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 43, Column: 0 }
-Function:        cnn_accel
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 266, Column: 0 }
+Function:        _Z3fc1PKfiS0_S0_Pf
 Args:            
   - String:          'Inlining function '''
   - Callee:          'hls::tanh(float)'
     DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib\hlsmath\src\c++\tanhfloat.cpp', 
                        Line: 6, Column: 0 }
   - String:          ''' into '''
-  - Caller:          cnn_accel
-    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 43, Column: 0 }
+  - Caller:          'fc1(float const*, int, float const*, float const*, float*)'
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 266, Column: 0 }
   - String:          ''''
+...
+--- !Failure
+Pass:            reflow-array-undecay
+Name:            WarnOnUnsupportedVLAUnDecay
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 66, Column: 0 }
+Function:        cnn_accel
+Args:            
+  - String:          'Skipping array undecay on variable length array '''
+  - ArrayName:       FC2_B
+  - String:          '''.'
+...
+--- !Failure
+Pass:            reflow-array-undecay
+Name:            WarnOnUnsupportedVLAUnDecay
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 66, Column: 0 }
+Function:        cnn_accel
+Args:            
+  - String:          'Skipping array undecay on variable length array '''
+  - ArrayName:       flag_out
+  - String:          '''.'
 ...
 --- !Passed
 Pass:            reflow-array-partition
 Name:            ArrayXform
-DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 73, Column: 0 }
-Function:        cnn_accel
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 96, Column: 0 }
+Function:        _Z5pool2PA157_A16_KfPA78_A16_f
 Args:            
   - String:          'Applying '
   - String:          array_partition
@@ -1269,8 +1983,10 @@ Args:
   - UOName:          _ZZ9cnn_accelE7feat2_p
   - String:          ''':'
   - String:          ' '
-  - Mode:            Complete
+  - Mode:            Block
   - String:          ' partitioning'
+  - String:          ' with factor '
+  - Factor:          '4'
   - String:          ' on dimension '
   - Dim:             '3'
   - String:          .
@@ -1278,8 +1994,8 @@ Args:
 --- !Passed
 Pass:            reflow-array-partition
 Name:            ArrayXform
-DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 72, Column: 0 }
-Function:        cnn_accel
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 95, Column: 0 }
+Function:        _Z5conv2PA159_A8_KfPS_S3_PA157_A16_f
 Args:            
   - String:          'Applying '
   - String:          array_partition
@@ -1287,8 +2003,10 @@ Args:
   - UOName:          _ZZ9cnn_accelE5feat2
   - String:          ''':'
   - String:          ' '
-  - Mode:            Complete
+  - Mode:            Block
   - String:          ' partitioning'
+  - String:          ' with factor '
+  - Factor:          '4'
   - String:          ' on dimension '
   - Dim:             '3'
   - String:          .
@@ -1296,8 +2014,8 @@ Args:
 --- !Passed
 Pass:            reflow-array-partition
 Name:            ArrayXform
-DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 71, Column: 0 }
-Function:        cnn_accel
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 94, Column: 0 }
+Function:        _Z5pool1PA318_A8_KfPA159_A8_f
 Args:            
   - String:          'Applying '
   - String:          array_partition
@@ -1305,8 +2023,10 @@ Args:
   - UOName:          _ZZ9cnn_accelE7feat1_p
   - String:          ''':'
   - String:          ' '
-  - Mode:            Complete
+  - Mode:            Block
   - String:          ' partitioning'
+  - String:          ' with factor '
+  - Factor:          '4'
   - String:          ' on dimension '
   - Dim:             '3'
   - String:          .
@@ -1314,8 +2034,8 @@ Args:
 --- !Passed
 Pass:            reflow-array-partition
 Name:            ArrayXform
-DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 70, Column: 0 }
-Function:        cnn_accel
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 93, Column: 0 }
+Function:        _Z5conv1PA320_A3_KfPS_S3_PA318_A8_f
 Args:            
   - String:          'Applying '
   - String:          array_partition
@@ -1323,8 +2043,10 @@ Args:
   - UOName:          _ZZ9cnn_accelE5feat1
   - String:          ''':'
   - String:          ' '
-  - Mode:            Complete
+  - Mode:            Block
   - String:          ' partitioning'
+  - String:          ' with factor '
+  - Factor:          '4'
   - String:          ' on dimension '
   - Dim:             '3'
   - String:          .
@@ -1332,8 +2054,8 @@ Args:
 --- !Passed
 Pass:            reflow-array-partition
 Name:            ArrayXform
-DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 69, Column: 0 }
-Function:        cnn_accel
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 92, Column: 0 }
+Function:        _Z8load_imgPKfPA320_A3_f
 Args:            
   - String:          'Applying '
   - String:          array_partition
@@ -1341,8 +2063,10 @@ Args:
   - UOName:          _ZZ9cnn_accelE9local_img
   - String:          ''':'
   - String:          ' '
-  - Mode:            Complete
+  - Mode:            Block
   - String:          ' partitioning'
+  - String:          ' with factor '
+  - Factor:          '2'
   - String:          ' on dimension '
   - Dim:             '3'
   - String:          .
@@ -1350,8 +2074,8 @@ Args:
 --- !Passed
 Pass:            reflow-burst-inference
 Name:            BurstInferred
-DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 85, Column: 5 }
-Function:        cnn_accel
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 139, Column: 20 }
+Function:        _Z8load_imgPKfPA320_A3_f
 Args:            
   - String:          'Sequential '
   - Direction:       read
@@ -1359,29 +2083,163 @@ Args:
   - Length:          '230400'
   - String:          ' has been inferred'
   - String:          ' _XLX_SEP_ '
-  - AccessID:        img_inseq
+  - AccessID:        img_in2seq
   - ArrayName:       img_in
   - String:          ' '
-  - BundleName:      gmem
+  - BundleName:      IMGmem
   - String:          ' '
   - LoopName:        LOAD_IMG_ROWS
   - String:          ' '
-  - LoopLoc:         '../hls_files/conv_pool.cpp:85:5'
+  - LoopLoc:         '../hls_files/conv_pool.cpp:139:20'
   - String:          ' '
-  - Function:        cnn_accel
-    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 43, Column: 0 }
+  - Function:        'load_img(float const*, float (*) [320][3])'
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 138, Column: 0 }
   - String:          ' '
   - String:          ' _XLX_SEP_ '
   - OrigAccess:      load
-    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 92, Column: 32 }
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 144, Column: 38 }
   - OrigDirection:   read
-  - OrigID:          for.inc.load.9
+  - OrigID:          for.inc.load.10
 ...
 --- !Passed
 Pass:            reflow-burst-inference
 Name:            BurstInferred
-DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 103, Column: 9 }
-Function:        cnn_accel
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 158, Column: 24 }
+Function:        _Z5conv1PA320_A3_KfPS_S3_PA318_A8_f
+Args:            
+  - String:          'Sequential '
+  - Direction:       read
+  - String:          ' of length '
+  - Length:          '216'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        weights129seq
+  - ArrayName:       weights1
+  - String:          ' '
+  - BundleName:      W1mem
+  - String:          ' '
+  - LoopName:        CONV1_FIL
+  - String:          ' '
+  - LoopLoc:         '../hls_files/conv_pool.cpp:158:24'
+  - String:          ' '
+  - Function:        'conv1(float const (*) [320][3], float const*, float const*, float (*) [318][8])'
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 155, Column: 0 }
+  - String:          ' '
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 166, Column: 61 }
+  - OrigDirection:   read
+  - OrigID:          CONV1_KR.load.75
+  - OrigAccess:      load
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 166, Column: 61 }
+  - OrigDirection:   read
+  - OrigID:          CONV1_KR.load.103
+  - OrigAccess:      load
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 166, Column: 61 }
+  - OrigDirection:   read
+  - OrigID:          CONV1_KR.load.127
+  - OrigAccess:      load
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 166, Column: 61 }
+  - OrigDirection:   read
+  - OrigID:          CONV1_KR.load.155
+  - OrigAccess:      load
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 166, Column: 61 }
+  - OrigDirection:   read
+  - OrigID:          CONV1_KR.load.181
+  - OrigAccess:      load
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 166, Column: 61 }
+  - OrigDirection:   read
+  - OrigID:          CONV1_KR.load.205
+  - OrigAccess:      load
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 166, Column: 61 }
+  - OrigDirection:   read
+  - OrigID:          CONV1_KR.load.233
+  - OrigAccess:      load
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 166, Column: 61 }
+  - OrigDirection:   read
+  - OrigID:          CONV1_KR.load.259
+  - OrigAccess:      load
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 166, Column: 61 }
+  - OrigDirection:   read
+  - OrigID:          CONV1_KR.load.283
+  - OrigAccess:      load
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 166, Column: 61 }
+  - OrigDirection:   read
+  - OrigID:          CONV1_KR.load.84
+  - OrigAccess:      load
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 166, Column: 61 }
+  - OrigDirection:   read
+  - OrigID:          CONV1_KR.load.110
+  - OrigAccess:      load
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 166, Column: 61 }
+  - OrigDirection:   read
+  - OrigID:          CONV1_KR.load.134
+  - OrigAccess:      load
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 166, Column: 61 }
+  - OrigDirection:   read
+  - OrigID:          CONV1_KR.load.163
+  - OrigAccess:      load
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 166, Column: 61 }
+  - OrigDirection:   read
+  - OrigID:          CONV1_KR.load.188
+  - OrigAccess:      load
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 166, Column: 61 }
+  - OrigDirection:   read
+  - OrigID:          CONV1_KR.load.212
+  - OrigAccess:      load
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 166, Column: 61 }
+  - OrigDirection:   read
+  - OrigID:          CONV1_KR.load.241
+  - OrigAccess:      load
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 166, Column: 61 }
+  - OrigDirection:   read
+  - OrigID:          CONV1_KR.load.266
+  - OrigAccess:      load
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 166, Column: 61 }
+  - OrigDirection:   read
+  - OrigID:          CONV1_KR.load.290
+  - OrigAccess:      load
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 166, Column: 61 }
+  - OrigDirection:   read
+  - OrigID:          CONV1_KR.load.93
+  - OrigAccess:      load
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 166, Column: 61 }
+  - OrigDirection:   read
+  - OrigID:          CONV1_KR.load.117
+  - OrigAccess:      load
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 166, Column: 61 }
+  - OrigDirection:   read
+  - OrigID:          CONV1_KR.load.141
+  - OrigAccess:      load
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 166, Column: 61 }
+  - OrigDirection:   read
+  - OrigID:          CONV1_KR.load.171
+  - OrigAccess:      load
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 166, Column: 61 }
+  - OrigDirection:   read
+  - OrigID:          CONV1_KR.load.195
+  - OrigAccess:      load
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 166, Column: 61 }
+  - OrigDirection:   read
+  - OrigID:          CONV1_KR.load.219
+  - OrigAccess:      load
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 166, Column: 61 }
+  - OrigDirection:   read
+  - OrigID:          CONV1_KR.load.249
+  - OrigAccess:      load
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 166, Column: 61 }
+  - OrigDirection:   read
+  - OrigID:          CONV1_KR.load.273
+  - OrigAccess:      load
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 166, Column: 61 }
+  - OrigDirection:   read
+  - OrigID:          CONV1_KR.load.297
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 158, Column: 24 }
+Function:        _Z5conv1PA320_A3_KfPS_S3_PA318_A8_f
 Args:            
   - String:          'Sequential '
   - Direction:       read
@@ -1389,29 +2247,391 @@ Args:
   - Length:          '8'
   - String:          ' has been inferred'
   - String:          ' _XLX_SEP_ '
-  - AccessID:        bias1seq
+  - AccessID:        bias130seq
   - ArrayName:       bias1
   - String:          ' '
-  - BundleName:      gmem
+  - BundleName:      B1mem
   - String:          ' '
   - LoopName:        CONV1_FIL
   - String:          ' '
-  - LoopLoc:         '../hls_files/conv_pool.cpp:103:9'
+  - LoopLoc:         '../hls_files/conv_pool.cpp:158:24'
   - String:          ' '
-  - Function:        cnn_accel
-    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 43, Column: 0 }
+  - Function:        'conv1(float const (*) [320][3], float const*, float const*, float (*) [318][8])'
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 155, Column: 0 }
   - String:          ' '
   - String:          ' _XLX_SEP_ '
   - OrigAccess:      load
-    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 105, Column: 24 }
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 160, Column: 15 }
   - OrigDirection:   read
-  - OrigID:          CONV1_KR.load.12
+  - OrigID:          CONV1_KR.load.37
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 158, Column: 24 }
+Function:        _Z5conv1PA320_A3_KfPS_S3_PA318_A8_f
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 158, Column: 24 }
+  - OrigDirection:   read
+  - OrigID:          bias130seq
+  - ArrayName:       bias1
+  - String:          ' '
+  - BundleName:      B1mem
+  - String:          ' '
+  - LoopName:        CONV1_COL
+  - String:          ' '
+  - LoopLoc:         '../hls_files/conv_pool.cpp:157:20'
+  - String:          ' '
+  - Function:        'conv1(float const (*) [320][3], float const*, float const*, float (*) [318][8])'
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 155, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 158, Column: 24 }
+Function:        _Z5conv1PA320_A3_KfPS_S3_PA318_A8_f
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 158, Column: 24 }
+  - OrigDirection:   read
+  - OrigID:          weights129seq
+  - ArrayName:       weights1
+  - String:          ' '
+  - BundleName:      W1mem
+  - String:          ' '
+  - LoopName:        CONV1_COL
+  - String:          ' '
+  - LoopLoc:         '../hls_files/conv_pool.cpp:157:20'
+  - String:          ' '
+  - Function:        'conv1(float const (*) [320][3], float const*, float const*, float (*) [318][8])'
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 155, Column: 0 }
+  - String:          ' '
 ...
 --- !Passed
 Pass:            reflow-burst-inference
 Name:            BurstInferred
-DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 147, Column: 9 }
-Function:        cnn_accel
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 206, Column: 24 }
+Function:        _Z5conv2PA159_A8_KfPS_S3_PA157_A16_f
+Args:            
+  - String:          'Sequential '
+  - Direction:       read
+  - String:          ' of length '
+  - Length:          '1152'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        weights274seq
+  - ArrayName:       weights2
+  - String:          ' '
+  - BundleName:      W2mem
+  - String:          ' '
+  - LoopName:        CONV2_FIL
+  - String:          ' '
+  - LoopLoc:         '../hls_files/conv_pool.cpp:206:24'
+  - String:          ' '
+  - Function:        'conv2(float const (*) [159][8], float const*, float const*, float (*) [157][16])'
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 203, Column: 0 }
+  - String:          ' '
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 214, Column: 59 }
+  - OrigDirection:   read
+  - OrigID:          CONV2_KR.load.165
+  - OrigAccess:      load
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 214, Column: 59 }
+  - OrigDirection:   read
+  - OrigID:          CONV2_KR.load.238
+  - OrigAccess:      load
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 214, Column: 59 }
+  - OrigDirection:   read
+  - OrigID:          CONV2_KR.load.297
+  - OrigAccess:      load
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 214, Column: 59 }
+  - OrigDirection:   read
+  - OrigID:          CONV2_KR.load.360
+  - OrigAccess:      load
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 214, Column: 59 }
+  - OrigDirection:   read
+  - OrigID:          CONV2_KR.load.426
+  - OrigAccess:      load
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 214, Column: 59 }
+  - OrigDirection:   read
+  - OrigID:          CONV2_KR.load.485
+  - OrigAccess:      load
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 214, Column: 59 }
+  - OrigDirection:   read
+  - OrigID:          CONV2_KR.load.548
+  - OrigAccess:      load
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 214, Column: 59 }
+  - OrigDirection:   read
+  - OrigID:          CONV2_KR.load.614
+  - OrigAccess:      load
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 214, Column: 59 }
+  - OrigDirection:   read
+  - OrigID:          CONV2_KR.load.673
+  - OrigAccess:      load
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 214, Column: 59 }
+  - OrigDirection:   read
+  - OrigID:          CONV2_KR.load.174
+  - OrigAccess:      load
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 214, Column: 59 }
+  - OrigDirection:   read
+  - OrigID:          CONV2_KR.load.245
+  - OrigAccess:      load
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 214, Column: 59 }
+  - OrigDirection:   read
+  - OrigID:          CONV2_KR.load.304
+  - OrigAccess:      load
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 214, Column: 59 }
+  - OrigDirection:   read
+  - OrigID:          CONV2_KR.load.368
+  - OrigAccess:      load
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 214, Column: 59 }
+  - OrigDirection:   read
+  - OrigID:          CONV2_KR.load.433
+  - OrigAccess:      load
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 214, Column: 59 }
+  - OrigDirection:   read
+  - OrigID:          CONV2_KR.load.492
+  - OrigAccess:      load
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 214, Column: 59 }
+  - OrigDirection:   read
+  - OrigID:          CONV2_KR.load.556
+  - OrigAccess:      load
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 214, Column: 59 }
+  - OrigDirection:   read
+  - OrigID:          CONV2_KR.load.621
+  - OrigAccess:      load
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 214, Column: 59 }
+  - OrigDirection:   read
+  - OrigID:          CONV2_KR.load.680
+  - OrigAccess:      load
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 214, Column: 59 }
+  - OrigDirection:   read
+  - OrigID:          CONV2_KR.load.183
+  - OrigAccess:      load
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 214, Column: 59 }
+  - OrigDirection:   read
+  - OrigID:          CONV2_KR.load.252
+  - OrigAccess:      load
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 214, Column: 59 }
+  - OrigDirection:   read
+  - OrigID:          CONV2_KR.load.311
+  - OrigAccess:      load
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 214, Column: 59 }
+  - OrigDirection:   read
+  - OrigID:          CONV2_KR.load.376
+  - OrigAccess:      load
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 214, Column: 59 }
+  - OrigDirection:   read
+  - OrigID:          CONV2_KR.load.440
+  - OrigAccess:      load
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 214, Column: 59 }
+  - OrigDirection:   read
+  - OrigID:          CONV2_KR.load.499
+  - OrigAccess:      load
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 214, Column: 59 }
+  - OrigDirection:   read
+  - OrigID:          CONV2_KR.load.564
+  - OrigAccess:      load
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 214, Column: 59 }
+  - OrigDirection:   read
+  - OrigID:          CONV2_KR.load.628
+  - OrigAccess:      load
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 214, Column: 59 }
+  - OrigDirection:   read
+  - OrigID:          CONV2_KR.load.687
+  - OrigAccess:      load
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 214, Column: 59 }
+  - OrigDirection:   read
+  - OrigID:          CONV2_KR.load.192
+  - OrigAccess:      load
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 214, Column: 59 }
+  - OrigDirection:   read
+  - OrigID:          CONV2_KR.load.259
+  - OrigAccess:      load
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 214, Column: 59 }
+  - OrigDirection:   read
+  - OrigID:          CONV2_KR.load.318
+  - OrigAccess:      load
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 214, Column: 59 }
+  - OrigDirection:   read
+  - OrigID:          CONV2_KR.load.384
+  - OrigAccess:      load
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 214, Column: 59 }
+  - OrigDirection:   read
+  - OrigID:          CONV2_KR.load.447
+  - OrigAccess:      load
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 214, Column: 59 }
+  - OrigDirection:   read
+  - OrigID:          CONV2_KR.load.506
+  - OrigAccess:      load
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 214, Column: 59 }
+  - OrigDirection:   read
+  - OrigID:          CONV2_KR.load.572
+  - OrigAccess:      load
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 214, Column: 59 }
+  - OrigDirection:   read
+  - OrigID:          CONV2_KR.load.635
+  - OrigAccess:      load
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 214, Column: 59 }
+  - OrigDirection:   read
+  - OrigID:          CONV2_KR.load.694
+  - OrigAccess:      load
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 214, Column: 59 }
+  - OrigDirection:   read
+  - OrigID:          CONV2_KR.load.201
+  - OrigAccess:      load
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 214, Column: 59 }
+  - OrigDirection:   read
+  - OrigID:          CONV2_KR.load.266
+  - OrigAccess:      load
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 214, Column: 59 }
+  - OrigDirection:   read
+  - OrigID:          CONV2_KR.load.325
+  - OrigAccess:      load
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 214, Column: 59 }
+  - OrigDirection:   read
+  - OrigID:          CONV2_KR.load.392
+  - OrigAccess:      load
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 214, Column: 59 }
+  - OrigDirection:   read
+  - OrigID:          CONV2_KR.load.454
+  - OrigAccess:      load
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 214, Column: 59 }
+  - OrigDirection:   read
+  - OrigID:          CONV2_KR.load.513
+  - OrigAccess:      load
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 214, Column: 59 }
+  - OrigDirection:   read
+  - OrigID:          CONV2_KR.load.580
+  - OrigAccess:      load
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 214, Column: 59 }
+  - OrigDirection:   read
+  - OrigID:          CONV2_KR.load.642
+  - OrigAccess:      load
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 214, Column: 59 }
+  - OrigDirection:   read
+  - OrigID:          CONV2_KR.load.701
+  - OrigAccess:      load
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 214, Column: 59 }
+  - OrigDirection:   read
+  - OrigID:          CONV2_KR.load.210
+  - OrigAccess:      load
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 214, Column: 59 }
+  - OrigDirection:   read
+  - OrigID:          CONV2_KR.load.273
+  - OrigAccess:      load
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 214, Column: 59 }
+  - OrigDirection:   read
+  - OrigID:          CONV2_KR.load.332
+  - OrigAccess:      load
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 214, Column: 59 }
+  - OrigDirection:   read
+  - OrigID:          CONV2_KR.load.400
+  - OrigAccess:      load
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 214, Column: 59 }
+  - OrigDirection:   read
+  - OrigID:          CONV2_KR.load.461
+  - OrigAccess:      load
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 214, Column: 59 }
+  - OrigDirection:   read
+  - OrigID:          CONV2_KR.load.520
+  - OrigAccess:      load
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 214, Column: 59 }
+  - OrigDirection:   read
+  - OrigID:          CONV2_KR.load.588
+  - OrigAccess:      load
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 214, Column: 59 }
+  - OrigDirection:   read
+  - OrigID:          CONV2_KR.load.649
+  - OrigAccess:      load
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 214, Column: 59 }
+  - OrigDirection:   read
+  - OrigID:          CONV2_KR.load.708
+  - OrigAccess:      load
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 214, Column: 59 }
+  - OrigDirection:   read
+  - OrigID:          CONV2_KR.load.219
+  - OrigAccess:      load
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 214, Column: 59 }
+  - OrigDirection:   read
+  - OrigID:          CONV2_KR.load.280
+  - OrigAccess:      load
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 214, Column: 59 }
+  - OrigDirection:   read
+  - OrigID:          CONV2_KR.load.339
+  - OrigAccess:      load
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 214, Column: 59 }
+  - OrigDirection:   read
+  - OrigID:          CONV2_KR.load.408
+  - OrigAccess:      load
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 214, Column: 59 }
+  - OrigDirection:   read
+  - OrigID:          CONV2_KR.load.468
+  - OrigAccess:      load
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 214, Column: 59 }
+  - OrigDirection:   read
+  - OrigID:          CONV2_KR.load.527
+  - OrigAccess:      load
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 214, Column: 59 }
+  - OrigDirection:   read
+  - OrigID:          CONV2_KR.load.596
+  - OrigAccess:      load
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 214, Column: 59 }
+  - OrigDirection:   read
+  - OrigID:          CONV2_KR.load.656
+  - OrigAccess:      load
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 214, Column: 59 }
+  - OrigDirection:   read
+  - OrigID:          CONV2_KR.load.715
+  - OrigAccess:      load
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 214, Column: 59 }
+  - OrigDirection:   read
+  - OrigID:          CONV2_KR.load.228
+  - OrigAccess:      load
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 214, Column: 59 }
+  - OrigDirection:   read
+  - OrigID:          CONV2_KR.load.287
+  - OrigAccess:      load
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 214, Column: 59 }
+  - OrigDirection:   read
+  - OrigID:          CONV2_KR.load.346
+  - OrigAccess:      load
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 214, Column: 59 }
+  - OrigDirection:   read
+  - OrigID:          CONV2_KR.load.416
+  - OrigAccess:      load
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 214, Column: 59 }
+  - OrigDirection:   read
+  - OrigID:          CONV2_KR.load.475
+  - OrigAccess:      load
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 214, Column: 59 }
+  - OrigDirection:   read
+  - OrigID:          CONV2_KR.load.534
+  - OrigAccess:      load
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 214, Column: 59 }
+  - OrigDirection:   read
+  - OrigID:          CONV2_KR.load.604
+  - OrigAccess:      load
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 214, Column: 59 }
+  - OrigDirection:   read
+  - OrigID:          CONV2_KR.load.663
+  - OrigAccess:      load
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 214, Column: 59 }
+  - OrigDirection:   read
+  - OrigID:          CONV2_KR.load.722
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 206, Column: 24 }
+Function:        _Z5conv2PA159_A8_KfPS_S3_PA157_A16_f
 Args:            
   - String:          'Sequential '
   - Direction:       read
@@ -1419,296 +2639,168 @@ Args:
   - Length:          '16'
   - String:          ' has been inferred'
   - String:          ' _XLX_SEP_ '
-  - AccessID:        bias2seq
+  - AccessID:        bias275seq
   - ArrayName:       bias2
   - String:          ' '
-  - BundleName:      gmem
+  - BundleName:      B2mem
   - String:          ' '
   - LoopName:        CONV2_FIL
   - String:          ' '
-  - LoopLoc:         '../hls_files/conv_pool.cpp:147:9'
+  - LoopLoc:         '../hls_files/conv_pool.cpp:206:24'
   - String:          ' '
-  - Function:        cnn_accel
-    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 43, Column: 0 }
-  - String:          ' '
-  - String:          ' _XLX_SEP_ '
-  - OrigAccess:      load
-    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 149, Column: 24 }
-  - OrigDirection:   read
-  - OrigID:          CONV2_KR.load.20
-...
---- !Passed
-Pass:            reflow-burst-inference
-Name:            BurstInferred
-DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 199, Column: 5 }
-Function:        cnn_accel
-Args:            
-  - String:          'Sequential '
-  - Direction:       read
-  - String:          ' of length '
-  - Length:          '2316288'
-  - String:          ' has been inferred'
-  - String:          ' _XLX_SEP_ '
-  - AccessID:        FC1_Wseq
-  - ArrayName:       FC1_W
-  - String:          ' '
-  - BundleName:      gmem
-  - String:          ' '
-  - LoopName:        FC1_OUT
-  - String:          ' '
-  - LoopLoc:         '../hls_files/conv_pool.cpp:199:5'
-  - String:          ' '
-  - Function:        cnn_accel
-    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 43, Column: 0 }
+  - Function:        'conv2(float const (*) [159][8], float const*, float const*, float (*) [157][16])'
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 203, Column: 0 }
   - String:          ' '
   - String:          ' _XLX_SEP_ '
   - OrigAccess:      load
-    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 203, Column: 26 }
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 208, Column: 15 }
   - OrigDirection:   read
-  - OrigID:          for.inc397.load.10
-...
---- !Passed
-Pass:            reflow-burst-inference
-Name:            BurstInferred
-DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 199, Column: 5 }
-Function:        cnn_accel
-Args:            
-  - String:          'Sequential '
-  - Direction:       read
-  - String:          ' of length '
-  - Length:          '32'
-  - String:          ' has been inferred'
-  - String:          ' _XLX_SEP_ '
-  - AccessID:        FC1_Bseq
-  - ArrayName:       FC1_B
-  - String:          ' '
-  - BundleName:      gmem
-  - String:          ' '
-  - LoopName:        FC1_OUT
-  - String:          ' '
-  - LoopLoc:         '../hls_files/conv_pool.cpp:199:5'
-  - String:          ' '
-  - Function:        cnn_accel
-    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 43, Column: 0 }
-  - String:          ' '
-  - String:          ' _XLX_SEP_ '
-  - OrigAccess:      load
-    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 201, Column: 20 }
-  - OrigDirection:   read
-  - OrigID:          VITIS_LOOP_202_3.load.5
-...
---- !Passed
-Pass:            reflow-burst-inference
-Name:            BurstInferred
-DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 212, Column: 5 }
-Function:        cnn_accel
-Args:            
-  - String:          'Sequential '
-  - Direction:       read
-  - String:          ' of length '
-  - Length:          '32'
-  - String:          ' has been inferred'
-  - String:          ' _XLX_SEP_ '
-  - AccessID:        FC2_Wseq
-  - ArrayName:       FC2_W
-  - String:          ' '
-  - BundleName:      gmem
-  - String:          ' '
-  - LoopName:        FC2_LOOP
-  - String:          ' '
-  - LoopLoc:         '../hls_files/conv_pool.cpp:212:5'
-  - String:          ' '
-  - Function:        cnn_accel
-    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 43, Column: 0 }
-  - String:          ' '
-  - String:          ' _XLX_SEP_ '
-  - OrigAccess:      load
-    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 214, Column: 25 }
-  - OrigDirection:   read
-  - OrigID:          for.inc417.load.8
-...
---- !Missed
-Pass:            reflow-burst-inference
-Name:            IncompatibleStride
-DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 113, Column: 49 }
-Function:        cnn_accel
-Args:            
-  - String:          Stride is incompatible
-  - String:          ' _XLX_SEP_ '
-  - OrigAccess:      load
-    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 113, Column: 49 }
-  - OrigDirection:   read
-  - OrigID:          for.inc70.load.17
-  - ArrayName:       weights1
-  - String:          ' '
-  - BundleName:      gmem
-  - String:          ' '
-  - LoopName:        CONV1_CH
-  - String:          ' '
-  - LoopLoc:         '../hls_files/conv_pool.cpp:111:15'
-  - String:          ' '
-  - Function:        cnn_accel
-    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 43, Column: 0 }
-  - String:          ' '
+  - OrigID:          CONV2_KR.load.82
 ...
 --- !Missed
 Pass:            reflow-burst-inference
 Name:            CouldNotAnalyzePattern
-DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 103, Column: 9 }
-Function:        cnn_accel
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 206, Column: 24 }
+Function:        _Z5conv2PA159_A8_KfPS_S3_PA157_A16_f
 Args:            
   - String:          Could not analyze pattern
   - String:          ' _XLX_SEP_ '
   - OrigAccess:      call
-    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 103, Column: 9 }
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 206, Column: 24 }
   - OrigDirection:   read
-  - OrigID:          bias1seq
-  - ArrayName:       bias1
-  - String:          ' '
-  - BundleName:      gmem
-  - String:          ' '
-  - LoopName:        CONV1_COL
-  - String:          ' '
-  - LoopLoc:         '../hls_files/conv_pool.cpp:101:7'
-  - String:          ' '
-  - Function:        cnn_accel
-    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 43, Column: 0 }
-  - String:          ' '
-...
---- !Missed
-Pass:            reflow-burst-inference
-Name:            IncompatibleStride
-DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 157, Column: 47 }
-Function:        cnn_accel
-Args:            
-  - String:          Stride is incompatible
-  - String:          ' _XLX_SEP_ '
-  - OrigAccess:      load
-    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 157, Column: 47 }
-  - OrigDirection:   read
-  - OrigID:          for.inc228.load.27
-  - ArrayName:       weights2
-  - String:          ' '
-  - BundleName:      gmem
-  - String:          ' '
-  - LoopName:        CONV2_CH
-  - String:          ' '
-  - LoopLoc:         '../hls_files/conv_pool.cpp:155:15'
-  - String:          ' '
-  - Function:        cnn_accel
-    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 43, Column: 0 }
-  - String:          ' '
-...
---- !Missed
-Pass:            reflow-burst-inference
-Name:            CouldNotAnalyzePattern
-DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 147, Column: 9 }
-Function:        cnn_accel
-Args:            
-  - String:          Could not analyze pattern
-  - String:          ' _XLX_SEP_ '
-  - OrigAccess:      call
-    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 147, Column: 9 }
-  - OrigDirection:   read
-  - OrigID:          bias2seq
+  - OrigID:          bias275seq
   - ArrayName:       bias2
   - String:          ' '
-  - BundleName:      gmem
+  - BundleName:      B2mem
   - String:          ' '
   - LoopName:        CONV2_COL
   - String:          ' '
-  - LoopLoc:         '../hls_files/conv_pool.cpp:145:7'
+  - LoopLoc:         '../hls_files/conv_pool.cpp:205:20'
   - String:          ' '
-  - Function:        cnn_accel
-    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 43, Column: 0 }
-  - String:          ' '
-...
---- !Missed
-Pass:            reflow-burst-widen
-Name:            GreaterOrEqualThreshold
-DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 212, Column: 5 }
-Function:        cnn_accel
-Args:            
-  - String:          'Could not widen since type '
-  - Type:            float
-  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
-  - Threshold:       '0'
-  - String:          ' _XLX_SEP_ '
-  - OrigAccess:      call
-    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 212, Column: 5 }
-  - OrigDirection:   read
-  - OrigID:          FC2_Wseq
-  - ArrayName:       FC2_W
-  - String:          ' '
-  - BundleName:      gmem
-  - String:          ' '
-  - LoopName:        FC2_LOOP
-  - String:          ' '
-  - LoopLoc:         '../hls_files/conv_pool.cpp:212:5'
-  - String:          ' '
-  - Function:        cnn_accel
-    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 43, Column: 0 }
+  - Function:        'conv2(float const (*) [159][8], float const*, float const*, float (*) [157][16])'
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 203, Column: 0 }
   - String:          ' '
 ...
 --- !Missed
-Pass:            reflow-burst-widen
-Name:            GreaterOrEqualThreshold
-DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 199, Column: 5 }
-Function:        cnn_accel
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 206, Column: 24 }
+Function:        _Z5conv2PA159_A8_KfPS_S3_PA157_A16_f
 Args:            
-  - String:          'Could not widen since type '
-  - Type:            float
-  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
-  - Threshold:       '0'
+  - String:          Could not analyze pattern
   - String:          ' _XLX_SEP_ '
   - OrigAccess:      call
-    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 199, Column: 5 }
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 206, Column: 24 }
   - OrigDirection:   read
-  - OrigID:          FC1_Wseq
+  - OrigID:          weights274seq
+  - ArrayName:       weights2
+  - String:          ' '
+  - BundleName:      W2mem
+  - String:          ' '
+  - LoopName:        CONV2_COL
+  - String:          ' '
+  - LoopLoc:         '../hls_files/conv_pool.cpp:205:20'
+  - String:          ' '
+  - Function:        'conv2(float const (*) [159][8], float const*, float const*, float (*) [157][16])'
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 203, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 267, Column: 14 }
+Function:        _Z3fc1PKfiS0_S0_Pf
+Args:            
+  - String:          'Sequential '
+  - Direction:       read
+  - String:          ' of '
+  - Length:          variable
+  - String:          ' length'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        FC1_W3seq
   - ArrayName:       FC1_W
   - String:          ' '
-  - BundleName:      gmem
+  - BundleName:      W3mem
   - String:          ' '
-  - LoopName:        VITIS_LOOP_202_3
+  - LoopName:        FC1_OUT
   - String:          ' '
-  - LoopLoc:         '../hls_files/conv_pool.cpp:202:25'
+  - LoopLoc:         '../hls_files/conv_pool.cpp:267:14'
   - String:          ' '
-  - Function:        cnn_accel
-    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 43, Column: 0 }
+  - Function:        'fc1(float const*, int, float const*, float const*, float*)'
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 266, Column: 0 }
   - String:          ' '
-...
---- !Missed
-Pass:            reflow-burst-widen
-Name:            GreaterOrEqualThreshold
-DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 199, Column: 5 }
-Function:        cnn_accel
-Args:            
-  - String:          'Could not widen since type '
-  - Type:            float
-  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
-  - Threshold:       '0'
   - String:          ' _XLX_SEP_ '
-  - OrigAccess:      call
-    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 199, Column: 5 }
+  - OrigAccess:      load
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 272, Column: 19 }
   - OrigDirection:   read
-  - OrigID:          FC1_Bseq
+  - OrigID:          for.inc.load.12
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 267, Column: 14 }
+Function:        _Z3fc1PKfiS0_S0_Pf
+Args:            
+  - String:          'Sequential '
+  - Direction:       read
+  - String:          ' of length '
+  - Length:          '32'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        FC1_B4seq
   - ArrayName:       FC1_B
   - String:          ' '
-  - BundleName:      gmem
+  - BundleName:      B3mem
   - String:          ' '
   - LoopName:        FC1_OUT
   - String:          ' '
-  - LoopLoc:         '../hls_files/conv_pool.cpp:199:5'
+  - LoopLoc:         '../hls_files/conv_pool.cpp:267:14'
   - String:          ' '
-  - Function:        cnn_accel
-    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 43, Column: 0 }
+  - Function:        'fc1(float const*, int, float const*, float const*, float*)'
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 266, Column: 0 }
   - String:          ' '
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 269, Column: 15 }
+  - OrigDirection:   read
+  - OrigID:          VITIS_LOOP_270_1.load.5
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 286, Column: 15 }
+Function:        _Z3fc2PKfS0_S0_Ph
+Args:            
+  - String:          'Sequential '
+  - Direction:       read
+  - String:          ' of length '
+  - Length:          '32'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        FC2_W2seq
+  - ArrayName:       FC2_W
+  - String:          ' '
+  - BundleName:      W4mem
+  - String:          ' '
+  - LoopName:        FC2_LOOP
+  - String:          ' '
+  - LoopLoc:         '../hls_files/conv_pool.cpp:286:15'
+  - String:          ' '
+  - Function:        'fc2(float const*, float const*, float const*, unsigned char*)'
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 284, Column: 0 }
+  - String:          ' '
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 288, Column: 20 }
+  - OrigDirection:   read
+  - OrigID:          for.inc.load.8
 ...
 --- !Missed
 Pass:            reflow-burst-widen
 Name:            GreaterOrEqualThreshold
-DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 147, Column: 9 }
-Function:        cnn_accel
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 139, Column: 20 }
+Function:        _Z8load_imgPKfPA320_A3_f
 Args:            
   - String:          'Could not widen since type '
   - Type:            float
@@ -1716,528 +2808,235 @@ Args:
   - Threshold:       '0'
   - String:          ' _XLX_SEP_ '
   - OrigAccess:      call
-    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 147, Column: 9 }
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 139, Column: 20 }
   - OrigDirection:   read
-  - OrigID:          bias2seq
-  - ArrayName:       bias2
-  - String:          ' '
-  - BundleName:      gmem
-  - String:          ' '
-  - LoopName:        CONV2_FIL
-  - String:          ' '
-  - LoopLoc:         '../hls_files/conv_pool.cpp:147:9'
-  - String:          ' '
-  - Function:        cnn_accel
-    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 43, Column: 0 }
-  - String:          ' '
-...
---- !Missed
-Pass:            reflow-burst-widen
-Name:            GreaterOrEqualThreshold
-DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 103, Column: 9 }
-Function:        cnn_accel
-Args:            
-  - String:          'Could not widen since type '
-  - Type:            float
-  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
-  - Threshold:       '0'
-  - String:          ' _XLX_SEP_ '
-  - OrigAccess:      call
-    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 103, Column: 9 }
-  - OrigDirection:   read
-  - OrigID:          bias1seq
-  - ArrayName:       bias1
-  - String:          ' '
-  - BundleName:      gmem
-  - String:          ' '
-  - LoopName:        CONV1_FIL
-  - String:          ' '
-  - LoopLoc:         '../hls_files/conv_pool.cpp:103:9'
-  - String:          ' '
-  - Function:        cnn_accel
-    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 43, Column: 0 }
-  - String:          ' '
-...
---- !Missed
-Pass:            reflow-burst-widen
-Name:            GreaterOrEqualThreshold
-DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 85, Column: 5 }
-Function:        cnn_accel
-Args:            
-  - String:          'Could not widen since type '
-  - Type:            float
-  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
-  - Threshold:       '0'
-  - String:          ' _XLX_SEP_ '
-  - OrigAccess:      call
-    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 85, Column: 5 }
-  - OrigDirection:   read
-  - OrigID:          img_inseq
+  - OrigID:          img_in2seq
   - ArrayName:       img_in
   - String:          ' '
-  - BundleName:      gmem
+  - BundleName:      IMGmem
   - String:          ' '
   - LoopName:        LOAD_IMG_CH
   - String:          ' '
-  - LoopLoc:         '../hls_files/conv_pool.cpp:89:9'
+  - LoopLoc:         '../hls_files/conv_pool.cpp:141:26'
   - String:          ' '
-  - Function:        cnn_accel
-    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 43, Column: 0 }
-  - String:          ' '
-...
---- !HLSReportInfo
-Pass:            auto-loop-pipeline
-Name:            AutoLoopPipeline
-Args:            
-  - String:          'automatically set the pipeline for Loop< '
-  - LoopName:        LOAD_IMG_CH
-  - String:          '> at '
-  - LoopLoc:         '../hls_files/conv_pool.cpp:89:9'
+  - Function:        'load_img(float const*, float (*) [320][3])'
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 138, Column: 0 }
   - String:          ' '
 ...
---- !HLSReportInfo
-Pass:            auto-loop-pipeline
-Name:            AutoLoopPipeline
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualThreshold
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 158, Column: 24 }
+Function:        _Z5conv1PA320_A3_KfPS_S3_PA318_A8_f
 Args:            
-  - String:          'automatically set the pipeline for Loop< '
+  - String:          'Could not widen since type '
+  - Type:            float
+  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
+  - Threshold:       '0'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 158, Column: 24 }
+  - OrigDirection:   read
+  - OrigID:          bias130seq
+  - ArrayName:       bias1
+  - String:          ' '
+  - BundleName:      B1mem
+  - String:          ' '
   - LoopName:        CONV1_FIL
-  - String:          '> at '
-  - LoopLoc:         '../hls_files/conv_pool.cpp:103:9'
+  - String:          ' '
+  - LoopLoc:         '../hls_files/conv_pool.cpp:158:24'
+  - String:          ' '
+  - Function:        'conv1(float const (*) [320][3], float const*, float const*, float (*) [318][8])'
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 155, Column: 0 }
   - String:          ' '
 ...
---- !HLSReportInfo
-Pass:            auto-loop-pipeline
-Name:            AutoLoopPipeline
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualThreshold
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 158, Column: 24 }
+Function:        _Z5conv1PA320_A3_KfPS_S3_PA318_A8_f
 Args:            
-  - String:          'automatically set the pipeline for Loop< '
-  - LoopName:        POOL1_CH
-  - String:          '> at '
-  - LoopLoc:         '../hls_files/conv_pool.cpp:128:9'
+  - String:          'Could not widen since type '
+  - Type:            float
+  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
+  - Threshold:       '0'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 158, Column: 24 }
+  - OrigDirection:   read
+  - OrigID:          weights129seq
+  - ArrayName:       weights1
+  - String:          ' '
+  - BundleName:      W1mem
+  - String:          ' '
+  - LoopName:        CONV1_FIL
+  - String:          ' '
+  - LoopLoc:         '../hls_files/conv_pool.cpp:158:24'
+  - String:          ' '
+  - Function:        'conv1(float const (*) [320][3], float const*, float const*, float (*) [318][8])'
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 155, Column: 0 }
   - String:          ' '
 ...
---- !HLSReportInfo
-Pass:            auto-loop-pipeline
-Name:            AutoLoopPipeline
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualThreshold
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 206, Column: 24 }
+Function:        _Z5conv2PA159_A8_KfPS_S3_PA157_A16_f
 Args:            
-  - String:          'automatically set the pipeline for Loop< '
-  - LoopName:        CONV2_CH
-  - String:          '> at '
-  - LoopLoc:         '../hls_files/conv_pool.cpp:155:15'
+  - String:          'Could not widen since type '
+  - Type:            float
+  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
+  - Threshold:       '0'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 206, Column: 24 }
+  - OrigDirection:   read
+  - OrigID:          bias275seq
+  - ArrayName:       bias2
+  - String:          ' '
+  - BundleName:      B2mem
+  - String:          ' '
+  - LoopName:        CONV2_FIL
+  - String:          ' '
+  - LoopLoc:         '../hls_files/conv_pool.cpp:206:24'
+  - String:          ' '
+  - Function:        'conv2(float const (*) [159][8], float const*, float const*, float (*) [157][16])'
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 203, Column: 0 }
   - String:          ' '
 ...
---- !HLSReportInfo
-Pass:            auto-loop-pipeline
-Name:            AutoLoopPipeline
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualThreshold
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 206, Column: 24 }
+Function:        _Z5conv2PA159_A8_KfPS_S3_PA157_A16_f
 Args:            
-  - String:          'automatically set the pipeline for Loop< '
-  - LoopName:        POOL2_CH
-  - String:          '> at '
-  - LoopLoc:         '../hls_files/conv_pool.cpp:172:9'
+  - String:          'Could not widen since type '
+  - Type:            float
+  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
+  - Threshold:       '0'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 206, Column: 24 }
+  - OrigDirection:   read
+  - OrigID:          weights274seq
+  - ArrayName:       weights2
+  - String:          ' '
+  - BundleName:      W2mem
+  - String:          ' '
+  - LoopName:        CONV2_FIL
+  - String:          ' '
+  - LoopLoc:         '../hls_files/conv_pool.cpp:206:24'
+  - String:          ' '
+  - Function:        'conv2(float const (*) [159][8], float const*, float const*, float (*) [157][16])'
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 203, Column: 0 }
   - String:          ' '
 ...
---- !HLSReportInfo
-Pass:            auto-loop-pipeline
-Name:            AutoLoopPipeline
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualThreshold
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 267, Column: 14 }
+Function:        _Z3fc1PKfiS0_S0_Pf
 Args:            
-  - String:          'automatically set the pipeline for Loop< '
-  - LoopName:        VITIS_LOOP_190_2
-  - String:          '> at '
-  - LoopLoc:         '../hls_files/conv_pool.cpp:190:27'
+  - String:          'Could not widen since type '
+  - Type:            float
+  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
+  - Threshold:       '0'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 267, Column: 14 }
+  - OrigDirection:   read
+  - OrigID:          FC1_W3seq
+  - ArrayName:       FC1_W
+  - String:          ' '
+  - BundleName:      W3mem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_270_1
+  - String:          ' '
+  - LoopLoc:         '../hls_files/conv_pool.cpp:270:27'
+  - String:          ' '
+  - Function:        'fc1(float const*, int, float const*, float const*, float*)'
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 266, Column: 0 }
   - String:          ' '
 ...
---- !HLSReportInfo
-Pass:            auto-loop-pipeline
-Name:            AutoLoopPipeline
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualThreshold
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 267, Column: 14 }
+Function:        _Z3fc1PKfiS0_S0_Pf
 Args:            
-  - String:          'automatically set the pipeline for Loop< '
-  - LoopName:        VITIS_LOOP_202_3
-  - String:          '> at '
-  - LoopLoc:         '../hls_files/conv_pool.cpp:202:25'
+  - String:          'Could not widen since type '
+  - Type:            float
+  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
+  - Threshold:       '0'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 267, Column: 14 }
+  - OrigDirection:   read
+  - OrigID:          FC1_B4seq
+  - ArrayName:       FC1_B
+  - String:          ' '
+  - BundleName:      B3mem
+  - String:          ' '
+  - LoopName:        FC1_OUT
+  - String:          ' '
+  - LoopLoc:         '../hls_files/conv_pool.cpp:267:14'
+  - String:          ' '
+  - Function:        'fc1(float const*, int, float const*, float const*, float*)'
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 266, Column: 0 }
   - String:          ' '
 ...
---- !HLSReportInfo
-Pass:            auto-loop-pipeline
-Name:            AutoLoopPipeline
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualThreshold
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 286, Column: 15 }
+Function:        _Z3fc2PKfS0_S0_Ph
 Args:            
-  - String:          'automatically set the pipeline for Loop< '
+  - String:          'Could not widen since type '
+  - Type:            float
+  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
+  - Threshold:       '0'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 286, Column: 15 }
+  - OrigDirection:   read
+  - OrigID:          FC2_W2seq
+  - ArrayName:       FC2_W
+  - String:          ' '
+  - BundleName:      W4mem
+  - String:          ' '
   - LoopName:        FC2_LOOP
-  - String:          '> at '
-  - LoopLoc:         '../hls_files/conv_pool.cpp:212:5'
+  - String:          ' '
+  - LoopLoc:         '../hls_files/conv_pool.cpp:286:15'
+  - String:          ' '
+  - Function:        'fc2(float const*, float const*, float const*, unsigned char*)'
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 284, Column: 0 }
   - String:          ' '
 ...
 --- !Passed
 Pass:            reflow-infer-unroll
 Name:            ImplicitUnroll
-DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 107, Column: 11 }
-Function:        cnn_accel
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 270, Column: 27 }
+Function:        _Z3fc1PKfiS0_S0_Pf
 Args:            
   - String:          'Loop '''
-  - LoopName:        CONV1_KR
+  - LoopName:        VITIS_LOOP_270_1
   - String:          ''' is marked as complete unroll implied by the pipeline pragma'
 ...
 --- !Passed
 Pass:            reflow-infer-unroll
 Name:            ImplicitUnroll
-DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 109, Column: 13 }
-Function:        cnn_accel
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 270, Column: 27 }
+Function:        _Z3fc1PKfiS0_S0_Pf
 Args:            
   - String:          'Loop '''
-  - LoopName:        CONV1_KC
+  - LoopName:        VITIS_LOOP_270_1
   - String:          ''' is marked as complete unroll implied by the pipeline pragma'
-...
---- !Passed
-Pass:            reflow-infer-unroll
-Name:            ImplicitUnroll
-DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 111, Column: 15 }
-Function:        cnn_accel
-Args:            
-  - String:          'Loop '''
-  - LoopName:        CONV1_CH
-  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
-...
---- !Passed
-Pass:            reflow-pragma-loop-unroll
-Name:            PragmaFullyUnroll
-DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 43, Column: 0 }
-Function:        cnn_accel
-Args:            
-  - String:          'Unrolling loop '''
-  - LoopName:        CONV1_KR
-  - String:          ''' ('
-  - LoopLoc:         '../hls_files/conv_pool.cpp:107:11'
-  - String:          ') '
-  - String:          'in function '''
-  - String:          cnn_accel
-  - String:          ''' completely with a factor of '
-  - Factor:          '3'
-...
---- !Passed
-Pass:            reflow-pragma-loop-unroll
-Name:            PragmaFullyUnroll
-DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 43, Column: 0 }
-Function:        cnn_accel
-Args:            
-  - String:          'Unrolling loop '''
-  - LoopName:        CONV1_KC
-  - String:          ''' ('
-  - LoopLoc:         '../hls_files/conv_pool.cpp:109:13'
-  - String:          ') '
-  - String:          'in function '''
-  - String:          cnn_accel
-  - String:          ''' completely with a factor of '
-  - Factor:          '3'
-...
---- !Passed
-Pass:            reflow-pragma-loop-unroll
-Name:            PragmaFullyUnroll
-DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 43, Column: 0 }
-Function:        cnn_accel
-Args:            
-  - String:          'Unrolling loop '''
-  - LoopName:        CONV1_CH
-  - String:          ''' ('
-  - LoopLoc:         '../hls_files/conv_pool.cpp:111:15'
-  - String:          ') '
-  - String:          'in function '''
-  - String:          cnn_accel
-  - String:          ''' completely with a factor of '
-  - Factor:          '3'
-...
---- !Passed
-Pass:            reflow-pragma-loop-unroll
-Name:            PragmaFullyUnroll
-DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 43, Column: 0 }
-Function:        cnn_accel
-Args:            
-  - String:          'Unrolling loop '''
-  - LoopName:        CONV1_CH
-  - String:          ''' ('
-  - LoopLoc:         '../hls_files/conv_pool.cpp:111:15'
-  - String:          ') '
-  - String:          'in function '''
-  - String:          cnn_accel
-  - String:          ''' completely with a factor of '
-  - Factor:          '3'
-...
---- !Passed
-Pass:            reflow-pragma-loop-unroll
-Name:            PragmaFullyUnroll
-DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 43, Column: 0 }
-Function:        cnn_accel
-Args:            
-  - String:          'Unrolling loop '''
-  - LoopName:        CONV1_CH
-  - String:          ''' ('
-  - LoopLoc:         '../hls_files/conv_pool.cpp:111:15'
-  - String:          ') '
-  - String:          'in function '''
-  - String:          cnn_accel
-  - String:          ''' completely with a factor of '
-  - Factor:          '3'
-...
---- !Passed
-Pass:            reflow-pragma-loop-unroll
-Name:            PragmaFullyUnroll
-DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 43, Column: 0 }
-Function:        cnn_accel
-Args:            
-  - String:          'Unrolling loop '''
-  - LoopName:        CONV1_KC
-  - String:          ''' ('
-  - LoopLoc:         '../hls_files/conv_pool.cpp:109:13'
-  - String:          ') '
-  - String:          'in function '''
-  - String:          cnn_accel
-  - String:          ''' completely with a factor of '
-  - Factor:          '3'
-...
---- !Passed
-Pass:            reflow-pragma-loop-unroll
-Name:            PragmaFullyUnroll
-DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 43, Column: 0 }
-Function:        cnn_accel
-Args:            
-  - String:          'Unrolling loop '''
-  - LoopName:        CONV1_CH
-  - String:          ''' ('
-  - LoopLoc:         '../hls_files/conv_pool.cpp:111:15'
-  - String:          ') '
-  - String:          'in function '''
-  - String:          cnn_accel
-  - String:          ''' completely with a factor of '
-  - Factor:          '3'
-...
---- !Passed
-Pass:            reflow-pragma-loop-unroll
-Name:            PragmaFullyUnroll
-DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 43, Column: 0 }
-Function:        cnn_accel
-Args:            
-  - String:          'Unrolling loop '''
-  - LoopName:        CONV1_CH
-  - String:          ''' ('
-  - LoopLoc:         '../hls_files/conv_pool.cpp:111:15'
-  - String:          ') '
-  - String:          'in function '''
-  - String:          cnn_accel
-  - String:          ''' completely with a factor of '
-  - Factor:          '3'
-...
---- !Passed
-Pass:            reflow-pragma-loop-unroll
-Name:            PragmaFullyUnroll
-DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 43, Column: 0 }
-Function:        cnn_accel
-Args:            
-  - String:          'Unrolling loop '''
-  - LoopName:        CONV1_CH
-  - String:          ''' ('
-  - LoopLoc:         '../hls_files/conv_pool.cpp:111:15'
-  - String:          ') '
-  - String:          'in function '''
-  - String:          cnn_accel
-  - String:          ''' completely with a factor of '
-  - Factor:          '3'
-...
---- !Passed
-Pass:            reflow-pragma-loop-unroll
-Name:            PragmaFullyUnroll
-DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 43, Column: 0 }
-Function:        cnn_accel
-Args:            
-  - String:          'Unrolling loop '''
-  - LoopName:        CONV1_KC
-  - String:          ''' ('
-  - LoopLoc:         '../hls_files/conv_pool.cpp:109:13'
-  - String:          ') '
-  - String:          'in function '''
-  - String:          cnn_accel
-  - String:          ''' completely with a factor of '
-  - Factor:          '3'
-...
---- !Passed
-Pass:            reflow-pragma-loop-unroll
-Name:            PragmaFullyUnroll
-DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 43, Column: 0 }
-Function:        cnn_accel
-Args:            
-  - String:          'Unrolling loop '''
-  - LoopName:        CONV1_CH
-  - String:          ''' ('
-  - LoopLoc:         '../hls_files/conv_pool.cpp:111:15'
-  - String:          ') '
-  - String:          'in function '''
-  - String:          cnn_accel
-  - String:          ''' completely with a factor of '
-  - Factor:          '3'
-...
---- !Passed
-Pass:            reflow-pragma-loop-unroll
-Name:            PragmaFullyUnroll
-DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 43, Column: 0 }
-Function:        cnn_accel
-Args:            
-  - String:          'Unrolling loop '''
-  - LoopName:        CONV1_CH
-  - String:          ''' ('
-  - LoopLoc:         '../hls_files/conv_pool.cpp:111:15'
-  - String:          ') '
-  - String:          'in function '''
-  - String:          cnn_accel
-  - String:          ''' completely with a factor of '
-  - Factor:          '3'
-...
---- !Passed
-Pass:            reflow-pragma-loop-unroll
-Name:            PragmaFullyUnroll
-DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 43, Column: 0 }
-Function:        cnn_accel
-Args:            
-  - String:          'Unrolling loop '''
-  - LoopName:        CONV1_CH
-  - String:          ''' ('
-  - LoopLoc:         '../hls_files/conv_pool.cpp:111:15'
-  - String:          ') '
-  - String:          'in function '''
-  - String:          cnn_accel
-  - String:          ''' completely with a factor of '
-  - Factor:          '3'
-...
---- !Passed
-Pass:            reflow-loop-flatten-cost-model
-Name:            FlattenOffInference
-DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 199, Column: 5 }
-Function:        cnn_accel
-Args:            
-  - String:          'Automatically disabling loop flattening for loop '''
-  - LoopName:        FC1_OUT
-  - String:          '''.'
-...
---- !Passed
-Pass:            reflow-loop-flatten-cost-model
-Name:            AutoParallelPerformanceDrivenVerbosePassed
-DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 199, Column: 5 }
-Function:        cnn_accel
-Args:            
-  - PragmaType:      loop_flatten
-  - String:          ' '
-  - PragmaOptions:   off
-  - String:          ' '
-  - PragmaIsAuto:    '1'
-  - String:          ' '
-  - PragmaFunction:  cnn_accel
-  - String:          ' '
-  - PragmaSrcLoc:    '../hls_files/conv_pool.cpp:199:5'
-    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 199, Column: 5 }
-  - LoopName:        FC1_OUT
-  - String:          ' '
-  - LoopLoc:         '../hls_files/conv_pool.cpp:199:5'
-    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 199, Column: 5 }
-  - String:          ' '
-...
---- !Passed
-Pass:            reflow-loop-flatten-cost-model
-Name:            FlattenOffInference
-DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 147, Column: 9 }
-Function:        cnn_accel
-Args:            
-  - String:          'Automatically disabling loop flattening for loop '''
-  - LoopName:        CONV2_FIL
-  - String:          '''.'
-...
---- !Passed
-Pass:            reflow-loop-flatten-cost-model
-Name:            AutoParallelPerformanceDrivenVerbosePassed
-DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 147, Column: 9 }
-Function:        cnn_accel
-Args:            
-  - PragmaType:      loop_flatten
-  - String:          ' '
-  - PragmaOptions:   off
-  - String:          ' '
-  - PragmaIsAuto:    '1'
-  - String:          ' '
-  - PragmaFunction:  cnn_accel
-  - String:          ' '
-  - PragmaSrcLoc:    '../hls_files/conv_pool.cpp:147:9'
-    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 147, Column: 9 }
-  - LoopName:        CONV2_FIL
-  - String:          ' '
-  - LoopLoc:         '../hls_files/conv_pool.cpp:147:9'
-    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 147, Column: 9 }
-  - String:          ' '
-...
---- !Missed
-Pass:            reflow-burst-inference
-Name:            BurstConflict
-DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 103, Column: 9 }
-Function:        cnn_accel
-Args:            
-  - String:          'Could not burst due to multiple potential '
-  - Direction:       reads
-  - String:          ' to the same bundle in the same region.'
-  - String:          ' _XLX_SEP_ '
-  - OrigAccess:      call
-    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 103, Column: 9 }
-  - OrigDirection:   read
-  - OrigID:          seq1
-  - ArrayName:       ''
-  - String:          ' '
-  - BundleName:      gmem
-  - String:          ' '
-  - Function:        cnn_accel
-    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 43, Column: 0 }
-  - String:          ' '
-...
---- !Missed
-Pass:            reflow-burst-inference
-Name:            BurstConflict
-DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 147, Column: 9 }
-Function:        cnn_accel
-Args:            
-  - String:          'Could not burst due to multiple potential '
-  - Direction:       reads
-  - String:          ' to the same bundle in the same region.'
-  - String:          ' _XLX_SEP_ '
-  - OrigAccess:      call
-    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 147, Column: 9 }
-  - OrigDirection:   read
-  - OrigID:          seq2
-  - ArrayName:       ''
-  - String:          ' '
-  - BundleName:      gmem
-  - String:          ' '
-  - Function:        cnn_accel
-    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 43, Column: 0 }
-  - String:          ' '
-...
---- !Missed
-Pass:            reflow-burst-inference
-Name:            BurstConflict
-DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 199, Column: 5 }
-Function:        cnn_accel
-Args:            
-  - String:          'Could not burst due to multiple potential '
-  - Direction:       reads
-  - String:          ' to the same bundle in the same region.'
-  - String:          ' _XLX_SEP_ '
-  - OrigAccess:      call
-    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 199, Column: 5 }
-  - OrigDirection:   read
-  - OrigID:          seq3
-  - ArrayName:       ''
-  - String:          ' '
-  - BundleName:      gmem
-  - String:          ' '
-  - Function:        cnn_accel
-    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 43, Column: 0 }
-  - String:          ' '
 ...
 --- !Passed
 Pass:            reflow-burst-summary
 Name:            BurstInferredVerboseSummary
-DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 85, Column: 5 }
-Function:        cnn_accel
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 139, Column: 20 }
+Function:        _Z8load_imgPKfPA320_A3_f.1
 Args:            
   - String:          'Multiple burst '
   - Direction:       reads
@@ -2251,21 +3050,21 @@ Args:
   - AccessID:        seq
   - ArrayName:       ''
   - String:          ' '
-  - BundleName:      gmem
+  - BundleName:      IMGmem
   - String:          ' '
   - LoopName:        LOAD_IMG_ROWS
   - String:          ' '
-  - LoopLoc:         '../hls_files/conv_pool.cpp:85:5'
+  - LoopLoc:         '../hls_files/conv_pool.cpp:139:20'
   - String:          ' '
-  - Function:        cnn_accel
-    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 43, Column: 0 }
+  - Function:        'load_img(float const*, float (*) [320][3]) (.1)'
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 138, Column: 0 }
   - String:          ' '
 ...
 --- !Passed
 Pass:            reflow-burst-summary
 Name:            BurstInferredSummary
-DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 85, Column: 5 }
-Function:        cnn_accel
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 139, Column: 20 }
+Function:        _Z8load_imgPKfPA320_A3_f.1
 Args:            
   - String:          'Multiple burst '
   - Direction:       reads
@@ -2276,18 +3075,259 @@ Args:
   - String:          ' in loop '''
   - LoopName:        LOAD_IMG_ROWS
   - String:          '''('
-  - LoopLoc:         '../hls_files/conv_pool.cpp:85:5'
+  - LoopLoc:         '../hls_files/conv_pool.cpp:139:20'
   - String:          ')'
   - String:          ' has been inferred on bundle '''
-  - BundleName:      gmem
+  - BundleName:      IMGmem
   - String:          '''.'
   - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
 ...
 --- !Passed
 Pass:            reflow-burst-summary
 Name:            BurstInferredVerboseSummary
-DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 212, Column: 5 }
-Function:        cnn_accel
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 158, Column: 24 }
+Function:        _Z5conv1PA320_A3_KfPS_S3_PA318_A8_f.1
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '216'
+  - String:          ' and bit width '
+  - Width:           '32'
+  - String:          ' has been inferred.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      W1mem
+  - String:          ' '
+  - LoopName:        CONV1_FIL
+  - String:          ' '
+  - LoopLoc:         '../hls_files/conv_pool.cpp:158:24'
+  - String:          ' '
+  - Function:        'conv1(float const (*) [320][3], float const*, float const*, float (*) [318][8]) (.1)'
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 155, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredSummary
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 158, Column: 24 }
+Function:        _Z5conv1PA320_A3_KfPS_S3_PA318_A8_f.1
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '216'
+  - String:          ' and bit width '
+  - Width:           '32'
+  - String:          ' in loop '''
+  - LoopName:        CONV1_FIL
+  - String:          '''('
+  - LoopLoc:         '../hls_files/conv_pool.cpp:158:24'
+  - String:          ')'
+  - String:          ' has been inferred on bundle '''
+  - BundleName:      W1mem
+  - String:          '''.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredVerboseSummary
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 158, Column: 24 }
+Function:        _Z5conv1PA320_A3_KfPS_S3_PA318_A8_f.1
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '8'
+  - String:          ' and bit width '
+  - Width:           '32'
+  - String:          ' has been inferred.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq1
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      B1mem
+  - String:          ' '
+  - LoopName:        CONV1_FIL
+  - String:          ' '
+  - LoopLoc:         '../hls_files/conv_pool.cpp:158:24'
+  - String:          ' '
+  - Function:        'conv1(float const (*) [320][3], float const*, float const*, float (*) [318][8]) (.1)'
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 155, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredSummary
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 158, Column: 24 }
+Function:        _Z5conv1PA320_A3_KfPS_S3_PA318_A8_f.1
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '8'
+  - String:          ' and bit width '
+  - Width:           '32'
+  - String:          ' in loop '''
+  - LoopName:        CONV1_FIL
+  - String:          '''('
+  - LoopLoc:         '../hls_files/conv_pool.cpp:158:24'
+  - String:          ')'
+  - String:          ' has been inferred on bundle '''
+  - BundleName:      B1mem
+  - String:          '''.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredVerboseSummary
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 206, Column: 24 }
+Function:        _Z5conv2PA159_A8_KfPS_S3_PA157_A16_f.1
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '1152'
+  - String:          ' and bit width '
+  - Width:           '32'
+  - String:          ' has been inferred.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      W2mem
+  - String:          ' '
+  - LoopName:        CONV2_FIL
+  - String:          ' '
+  - LoopLoc:         '../hls_files/conv_pool.cpp:206:24'
+  - String:          ' '
+  - Function:        'conv2(float const (*) [159][8], float const*, float const*, float (*) [157][16]) (.1)'
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 203, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredSummary
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 206, Column: 24 }
+Function:        _Z5conv2PA159_A8_KfPS_S3_PA157_A16_f.1
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '1152'
+  - String:          ' and bit width '
+  - Width:           '32'
+  - String:          ' in loop '''
+  - LoopName:        CONV2_FIL
+  - String:          '''('
+  - LoopLoc:         '../hls_files/conv_pool.cpp:206:24'
+  - String:          ')'
+  - String:          ' has been inferred on bundle '''
+  - BundleName:      W2mem
+  - String:          '''.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredVerboseSummary
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 206, Column: 24 }
+Function:        _Z5conv2PA159_A8_KfPS_S3_PA157_A16_f.1
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '16'
+  - String:          ' and bit width '
+  - Width:           '32'
+  - String:          ' has been inferred.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq1
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      B2mem
+  - String:          ' '
+  - LoopName:        CONV2_FIL
+  - String:          ' '
+  - LoopLoc:         '../hls_files/conv_pool.cpp:206:24'
+  - String:          ' '
+  - Function:        'conv2(float const (*) [159][8], float const*, float const*, float (*) [157][16]) (.1)'
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 203, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredSummary
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 206, Column: 24 }
+Function:        _Z5conv2PA159_A8_KfPS_S3_PA157_A16_f.1
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '16'
+  - String:          ' and bit width '
+  - Width:           '32'
+  - String:          ' in loop '''
+  - LoopName:        CONV2_FIL
+  - String:          '''('
+  - LoopLoc:         '../hls_files/conv_pool.cpp:206:24'
+  - String:          ')'
+  - String:          ' has been inferred on bundle '''
+  - BundleName:      B2mem
+  - String:          '''.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredVerboseSummary
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 267, Column: 14 }
+Function:        _Z3fc1PKfiS0_S0_Pf.1
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of '
+  - Length:          variable
+  - String:          ' length and bit width '
+  - Width:           '32'
+  - String:          ' has been inferred.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      W3mem
+  - String:          ' '
+  - Function:        'fc1(float const*, int, float const*, float const*, float*) (.1)'
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 266, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredSummary
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 267, Column: 14 }
+Function:        _Z3fc1PKfiS0_S0_Pf.1
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of '
+  - Length:          variable
+  - String:          ' length and bit width '
+  - Width:           '32'
+  - String:          ' has been inferred on bundle '''
+  - BundleName:      W3mem
+  - String:          '''.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredVerboseSummary
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 267, Column: 14 }
+Function:        _Z3fc1PKfiS0_S0_Pf.1
 Args:            
   - String:          'Multiple burst '
   - Direction:       reads
@@ -2298,24 +3338,74 @@ Args:
   - String:          ' has been inferred.'
   - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
   - String:          ' _XLX_SEP_ '
-  - AccessID:        seq5
+  - AccessID:        seq1
   - ArrayName:       ''
   - String:          ' '
-  - BundleName:      gmem
+  - BundleName:      B3mem
   - String:          ' '
-  - LoopName:        FC2_LOOP
+  - LoopName:        FC1_OUT
   - String:          ' '
-  - LoopLoc:         '../hls_files/conv_pool.cpp:212:5'
+  - LoopLoc:         '../hls_files/conv_pool.cpp:267:14'
   - String:          ' '
-  - Function:        cnn_accel
-    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 43, Column: 0 }
+  - Function:        'fc1(float const*, int, float const*, float const*, float*) (.1)'
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 266, Column: 0 }
   - String:          ' '
 ...
 --- !Passed
 Pass:            reflow-burst-summary
 Name:            BurstInferredSummary
-DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 212, Column: 5 }
-Function:        cnn_accel
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 267, Column: 14 }
+Function:        _Z3fc1PKfiS0_S0_Pf.1
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '32'
+  - String:          ' and bit width '
+  - Width:           '32'
+  - String:          ' in loop '''
+  - LoopName:        FC1_OUT
+  - String:          '''('
+  - LoopLoc:         '../hls_files/conv_pool.cpp:267:14'
+  - String:          ')'
+  - String:          ' has been inferred on bundle '''
+  - BundleName:      B3mem
+  - String:          '''.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredVerboseSummary
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 286, Column: 15 }
+Function:        _Z3fc2PKfS0_S0_Ph.1
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '32'
+  - String:          ' and bit width '
+  - Width:           '32'
+  - String:          ' has been inferred.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      W4mem
+  - String:          ' '
+  - LoopName:        FC2_LOOP
+  - String:          ' '
+  - LoopLoc:         '../hls_files/conv_pool.cpp:286:15'
+  - String:          ' '
+  - Function:        'fc2(float const*, float const*, float const*, unsigned char*) (.1)'
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 284, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredSummary
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 286, Column: 15 }
+Function:        _Z3fc2PKfS0_S0_Ph.1
 Args:            
   - String:          'Multiple burst '
   - Direction:       reads
@@ -2326,12 +3416,37 @@ Args:
   - String:          ' in loop '''
   - LoopName:        FC2_LOOP
   - String:          '''('
-  - LoopLoc:         '../hls_files/conv_pool.cpp:212:5'
+  - LoopLoc:         '../hls_files/conv_pool.cpp:286:15'
   - String:          ')'
   - String:          ' has been inferred on bundle '''
-  - BundleName:      gmem
+  - BundleName:      W4mem
   - String:          '''.'
   - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 270, Column: 27 }
+Function:        _Z3fc1PKfiS0_S0_Pf.1
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_270_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Missed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFailFullyUnroll
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 270, Column: 27 }
+Function:        _Z3fc1PKfiS0_S0_Pf.1
+Args:            
+  - String:          'Cannot unroll loop '''
+  - LoopName:        VITIS_LOOP_270_1
+  - String:          ''' ('
+  - LoopLoc:         '../hls_files/conv_pool.cpp:270:27'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          fc1
+  - String:          ''' as it has a variable trip count'
 ...
 --- !Missed
 Pass:            inline
@@ -2354,13 +3469,117 @@ Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib\hlsmath\src\c++\tanhfloat.cpp', 
                    Line: 7, Column: 9 }
-Function:        cnn_accel
+Function:        _Z3fc1PKfiS0_S0_Pf.1
 Args:            
   - Callee:          'float explog_based::generic_tanh<float>(float)'
     DebugLoc:        { File: 'C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h', 
                        Line: 28, Column: 0 }
   - String:          ' not inlined into '
+  - Caller:          'fc1(float const*, int, float const*, float const*, float*) (.1)'
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 0, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 111, Column: 2 }
+Function:        cnn_accel
+Args:            
+  - Callee:          'load_img(float const*, float (*) [320][3]) (.1)'
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 138, Column: 0 }
+  - String:          ' not inlined into '
   - Caller:          cnn_accel
-    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 43, Column: 0 }
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 66, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 114, Column: 5 }
+Function:        cnn_accel
+Args:            
+  - Callee:          'conv1(float const (*) [320][3], float const*, float const*, float (*) [318][8]) (.1)'
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 155, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          cnn_accel
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 66, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 117, Column: 5 }
+Function:        cnn_accel
+Args:            
+  - Callee:          'pool1(float const (*) [318][8], float (*) [159][8])'
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 181, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          cnn_accel
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 66, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 120, Column: 5 }
+Function:        cnn_accel
+Args:            
+  - Callee:          'conv2(float const (*) [159][8], float const*, float const*, float (*) [157][16]) (.1)'
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 203, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          cnn_accel
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 66, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 123, Column: 5 }
+Function:        cnn_accel
+Args:            
+  - Callee:          'pool2(float const (*) [157][16], float (*) [78][16])'
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 228, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          cnn_accel
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 66, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 126, Column: 5 }
+Function:        cnn_accel
+Args:            
+  - Callee:          'flatten(float const (*) [78][16], float*, int&)'
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 249, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          cnn_accel
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 66, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 129, Column: 15 }
+Function:        cnn_accel
+Args:            
+  - Callee:          'fc1(float const*, int, float const*, float const*, float*) (.1)'
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 0, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          cnn_accel
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 66, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 132, Column: 5 }
+Function:        cnn_accel
+Args:            
+  - Callee:          'fc2(float const*, float const*, float const*, unsigned char*) (.1)'
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 0, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          cnn_accel
+    DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 66, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...

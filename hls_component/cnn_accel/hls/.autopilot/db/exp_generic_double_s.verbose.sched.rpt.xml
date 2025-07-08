@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'exp_generic_double_s'" level="0">
-<item name = "Date">Fri Jul  4 17:05:23 2025
+<item name = "Date">Tue Jul  8 00:39:56 2025
 </item>
 <item name = "Version">2025.1 (Build 6135595 on May 21 2025)</item>
 <item name = "Project">cnn_accel</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">20.00 ns, 14.584 ns, 5.40 ns</column>
+<column name="ap_clk">10.00 ns, 7.171 ns, 2.70 ns</column>
 </table>
 </item>
 </section>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">9, 9, 0.180 us, 0.180 us, 1, 1, yes</column>
+<column name="">21, 21, 0.210 us, 0.210 us, 1, 1, yes</column>
 </table>
 </item>
 <item name = "Detail">

@@ -1,14 +1,14 @@
 
 set TopModule "cnn_accel"
-set ClockPeriod 20
+set ClockPeriod 10
 set ClockList ap_clk
 set AxiliteClockList {}
 set HasVivadoClockPeriod 0
 set CombLogicFlag 0
-set PipelineFlag 0
+set PipelineFlag 1
 set DataflowTaskPipelineFlag 1
 set TrivialPipelineFlag 0
-set noPortSwitchingFlag 0
+set noPortSwitchingFlag 1
 set FloatingPointFlag 1
 set FftOrFirFlag 0
 set NbRWValue 0

@@ -9,19 +9,17 @@
 <ENTRY>
 {
  "type": "ET_CmdStep",
- "dateTimestamp": "07/04/25 17:32:01",
- "timestampMillis": "1751664721518",
+ "dateTimestamp": "07/08/25 00:08:30",
+ "timestampMillis": "1751958510394",
  "buildStep": {
-  "cmdId": "2afae2be-4062-429a-a954-4c54f64791e9",
+  "cmdId": "ff176a63-46a2-40d6-9b04-26c2275ad904",
   "name": "vitis-run",
   "logFile": "C:/Users\\ozair\\Documents\\Code_Drive\\Drone\\hls_component\\cnn_accel\\logs\\cnn_accel.steps.log",
-  "commandLine": "C:/Xilinx/2025.1/Vitis/bin/unwrapped/win64.o/vitis-run.exe  --mode hls --csim --config C:\\Users\\ozair\\Documents\\Code_Drive\\Drone\\hls_component\\cnn_accel\\hls-debug.cfg --config C:\\Users\\ozair\\Documents\\Code_Drive\\Drone\\hls_component\\hls_config.cfg --work_dir cnn_accel ",
+  "commandLine": "C:/Xilinx/2025.1/Vitis/bin/unwrapped/win64.o/vitis-run.exe  --mode hls --csim --config C:\\Users\\ozair\\Documents\\Code_Drive\\Drone\\hls_component\\hls_config.cfg --work_dir cnn_accel ",
   "args": [
    "--mode",
    "hls",
    "--csim",
-   "--config",
-   "C:\\Users\\ozair\\Documents\\Code_Drive\\Drone\\hls_component\\cnn_accel\\hls-debug.cfg",
    "--config",
    "C:\\Users\\ozair\\Documents\\Code_Drive\\Drone\\hls_component\\hls_config.cfg",
    "--work_dir",
@@ -35,11 +33,124 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "07/04/25 17:32:01",
- "timestampMillis": "1751664721519",
+ "dateTimestamp": "07/08/25 00:08:30",
+ "timestampMillis": "1751958510395",
  "status": {
-  "cmdId": "2afae2be-4062-429a-a954-4c54f64791e9",
+  "cmdId": "ff176a63-46a2-40d6-9b04-26c2275ad904",
   "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "07/08/25 00:08:40",
+ "timestampMillis": "1751958520225",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_C_SIM",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "cnn_accel",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "C:/Users\\ozair\\Documents\\Code_Drive\\Drone\\hls_files\\conv_pool.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2025.1"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "07/08/25 00:08:40",
+ "timestampMillis": "1751958520227",
+ "buildStep": {
+  "cmdId": "67c7dd6c-6947-455b-a7ee-ecdaedc2bd9c",
+  "name": "",
+  "logFile": "C:/Users\\ozair\\Documents\\Code_Drive\\Drone\\hls_component\\cnn_accel\\hls\\hls.log",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "C:\\Users\\ozair\\Documents\\Code_Drive\\Drone\\hls_component"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "07/08/25 00:08:40",
+ "timestampMillis": "1751958520227",
+ "status": {
+  "cmdId": "67c7dd6c-6947-455b-a7ee-ecdaedc2bd9c",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "07/08/25 00:09:28",
+ "timestampMillis": "1751958568942",
+ "status": {
+  "cmdId": "67c7dd6c-6947-455b-a7ee-ecdaedc2bd9c",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "07/08/25 00:09:29",
+ "timestampMillis": "1751958569095",
+ "status": {
+  "cmdId": "ff176a63-46a2-40d6-9b04-26c2275ad904",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "07/08/25 00:09:29",
+ "timestampMillis": "1751958569097",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "07/08/25 00:09:29",
+ "timestampMillis": "1751958569097",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
  }
 }
 </ENTRY>

@@ -118,6 +118,9 @@ void cnn_accel(
 #pragma HLS ARRAY_PARTITION variable=fc1_b_local complete dim=1
 #pragma HLS ARRAY_PARTITION variable=fc2_w_local complete dim=1
 #pragma HLS ARRAY_PARTITION variable=fc2_b_local complete dim=1
+// #pragma HLS ARRAY_PARTITION variable=FC2_W_LOCAL complete dim=1
+// #pragma HLS ARRAY_PARTITION variable=vec2         complete dim=1
+
 
     // Prefetch weights/biases into on-chip BRAM once (pipelined)
     if (ctrl == 1) {

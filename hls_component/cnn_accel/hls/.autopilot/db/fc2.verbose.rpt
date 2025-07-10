@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'fc2'
 ================================================================
-* Date:           Tue Jul  8 02:26:12 2025
+* Date:           Wed Jul  9 07:45:53 2025
 
 * Version:        2025.1 (Build 6135595 on May 21 2025)
 * Project:        cnn_accel
@@ -74,7 +74,7 @@
     |               Instance               |             Module             | BRAM_18K| DSP|  FF | LUT | URAM|
     +--------------------------------------+--------------------------------+---------+----+-----+-----+-----+
     |grp_fc2_Pipeline_FC2_LOOP_fu_156      |fc2_Pipeline_FC2_LOOP           |        0|   0|  113|  277|    0|
-    |fexp_32ns_32ns_32_8_full_dsp_1_U1707  |fexp_32ns_32ns_32_8_full_dsp_1  |        0|   7|  324|  904|    0|
+    |fexp_32ns_32ns_32_8_full_dsp_1_U1703  |fexp_32ns_32ns_32_8_full_dsp_1  |        0|   7|  324|  904|    0|
     +--------------------------------------+--------------------------------+---------+----+-----+-----+-----+
     |Total                                 |                                |        0|   7|  437| 1181|    0|
     +--------------------------------------+--------------------------------+---------+----+-----+-----+-----+
@@ -151,24 +151,24 @@
 |ap_done                          |  out|    1|  ap_ctrl_hs|                              fc2|  return value|
 |ap_idle                          |  out|    1|  ap_ctrl_hs|                              fc2|  return value|
 |ap_ready                         |  out|    1|  ap_ctrl_hs|                              fc2|  return value|
-|grp_fu_9558_p_din0               |  out|   32|  ap_ctrl_hs|                              fc2|  return value|
-|grp_fu_9558_p_din1               |  out|   32|  ap_ctrl_hs|                              fc2|  return value|
-|grp_fu_9558_p_opcode             |  out|    1|  ap_ctrl_hs|                              fc2|  return value|
-|grp_fu_9558_p_dout0              |   in|   32|  ap_ctrl_hs|                              fc2|  return value|
-|grp_fu_9558_p_ce                 |  out|    1|  ap_ctrl_hs|                              fc2|  return value|
-|grp_fu_9586_p_din0               |  out|   32|  ap_ctrl_hs|                              fc2|  return value|
-|grp_fu_9586_p_din1               |  out|   32|  ap_ctrl_hs|                              fc2|  return value|
-|grp_fu_9586_p_dout0              |   in|   32|  ap_ctrl_hs|                              fc2|  return value|
-|grp_fu_9586_p_ce                 |  out|    1|  ap_ctrl_hs|                              fc2|  return value|
-|grp_fu_9582_p_din0               |  out|   32|  ap_ctrl_hs|                              fc2|  return value|
-|grp_fu_9582_p_din1               |  out|   32|  ap_ctrl_hs|                              fc2|  return value|
-|grp_fu_9582_p_opcode             |  out|    5|  ap_ctrl_hs|                              fc2|  return value|
-|grp_fu_9582_p_dout0              |   in|    1|  ap_ctrl_hs|                              fc2|  return value|
-|grp_fu_9582_p_ce                 |  out|    1|  ap_ctrl_hs|                              fc2|  return value|
-|grp_fu_9570_p_din0               |  out|   32|  ap_ctrl_hs|                              fc2|  return value|
-|grp_fu_9570_p_din1               |  out|   32|  ap_ctrl_hs|                              fc2|  return value|
-|grp_fu_9570_p_dout0              |   in|   32|  ap_ctrl_hs|                              fc2|  return value|
-|grp_fu_9570_p_ce                 |  out|    1|  ap_ctrl_hs|                              fc2|  return value|
+|grp_fu_9552_p_din0               |  out|   32|  ap_ctrl_hs|                              fc2|  return value|
+|grp_fu_9552_p_din1               |  out|   32|  ap_ctrl_hs|                              fc2|  return value|
+|grp_fu_9552_p_opcode             |  out|    1|  ap_ctrl_hs|                              fc2|  return value|
+|grp_fu_9552_p_dout0              |   in|   32|  ap_ctrl_hs|                              fc2|  return value|
+|grp_fu_9552_p_ce                 |  out|    1|  ap_ctrl_hs|                              fc2|  return value|
+|grp_fu_9572_p_din0               |  out|   32|  ap_ctrl_hs|                              fc2|  return value|
+|grp_fu_9572_p_din1               |  out|   32|  ap_ctrl_hs|                              fc2|  return value|
+|grp_fu_9572_p_dout0              |   in|   32|  ap_ctrl_hs|                              fc2|  return value|
+|grp_fu_9572_p_ce                 |  out|    1|  ap_ctrl_hs|                              fc2|  return value|
+|grp_fu_9568_p_din0               |  out|   32|  ap_ctrl_hs|                              fc2|  return value|
+|grp_fu_9568_p_din1               |  out|   32|  ap_ctrl_hs|                              fc2|  return value|
+|grp_fu_9568_p_opcode             |  out|    5|  ap_ctrl_hs|                              fc2|  return value|
+|grp_fu_9568_p_dout0              |   in|    1|  ap_ctrl_hs|                              fc2|  return value|
+|grp_fu_9568_p_ce                 |  out|    1|  ap_ctrl_hs|                              fc2|  return value|
+|grp_fu_9560_p_din0               |  out|   32|  ap_ctrl_hs|                              fc2|  return value|
+|grp_fu_9560_p_din1               |  out|   32|  ap_ctrl_hs|                              fc2|  return value|
+|grp_fu_9560_p_dout0              |   in|   32|  ap_ctrl_hs|                              fc2|  return value|
+|grp_fu_9560_p_ce                 |  out|    1|  ap_ctrl_hs|                              fc2|  return value|
 |m_axi_Foutmem_0_AWVALID          |  out|    1|       m_axi|                          Foutmem|       pointer|
 |m_axi_Foutmem_0_AWREADY          |   in|    1|       m_axi|                          Foutmem|       pointer|
 |m_axi_Foutmem_0_AWADDR           |  out|   64|       m_axi|                          Foutmem|       pointer|
@@ -481,7 +481,7 @@ State 35 <SV = 34> <Delay = 7.30>
 ST_35 : Operation 122 [2/5] (7.30ns)   --->   "%Foutmem_addr_resp = writeresp i1 @_ssdm_op_WriteResp.m_axi.i8P1A, i64 %Foutmem_addr" [../hls_files/conv_pool.cpp:349]   --->   Operation 122 'writeresp' 'Foutmem_addr_resp' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 111 'm_axi' <Latency = 3> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 36 <SV = 35> <Delay = 7.30>
-ST_36 : Operation 123 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %Foutmem, void @empty_37, i32 0, i32 0, void @empty_38, i32 0, i32 1, void @empty_10, void @empty_23, void @empty_38, i32 16, i32 16, i32 16, i32 16, void @empty_38, void @empty_38, i32 4294967295, i32 0, i32 0"   --->   Operation 123 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_36 : Operation 123 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %Foutmem, void @empty_17, i32 0, i32 0, void @empty_19, i32 0, i32 1, void @empty_29, void @empty_20, void @empty_19, i32 16, i32 16, i32 16, i32 16, void @empty_19, void @empty_19, i32 4294967295, i32 0, i32 0"   --->   Operation 123 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
 ST_36 : Operation 124 [1/5] (7.30ns)   --->   "%Foutmem_addr_resp = writeresp i1 @_ssdm_op_WriteResp.m_axi.i8P1A, i64 %Foutmem_addr" [../hls_files/conv_pool.cpp:349]   --->   Operation 124 'writeresp' 'Foutmem_addr_resp' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 111 'm_axi' <Latency = 3> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 ST_36 : Operation 125 [1/1] (0.00ns)   --->   "%ret_ln0 = ret"   --->   Operation 125 'ret' 'ret_ln0' <Predicate = true> <Delay = 0.00>
 
@@ -1107,7 +1107,7 @@ ret_ln0                              (ret           ) [ 000000000000000000000000
 <pin id="111" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_37"/></StgValue>
+<StgValue><ssdm name="empty_17"/></StgValue>
 </bind>
 </comp>
 
@@ -1125,7 +1125,7 @@ ret_ln0                              (ret           ) [ 000000000000000000000000
 <pin id="115" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_38"/></StgValue>
+<StgValue><ssdm name="empty_19"/></StgValue>
 </bind>
 </comp>
 
@@ -1143,7 +1143,7 @@ ret_ln0                              (ret           ) [ 000000000000000000000000
 <pin id="119" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_10"/></StgValue>
+<StgValue><ssdm name="empty_29"/></StgValue>
 </bind>
 </comp>
 
@@ -1152,7 +1152,7 @@ ret_ln0                              (ret           ) [ 000000000000000000000000
 <pin id="121" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_23"/></StgValue>
+<StgValue><ssdm name="empty_20"/></StgValue>
 </bind>
 </comp>
 

@@ -52,7 +52,7 @@
 					<Obj>
 						<type>1</type>
 						<id>2</id>
-						<name>feat2_p_70</name>
+						<name>feat2_p_69</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -88,7 +88,7 @@
 					<Obj>
 						<type>1</type>
 						<id>3</id>
-						<name>feat2_p_71</name>
+						<name>feat2_p_70</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -124,7 +124,7 @@
 					<Obj>
 						<type>1</type>
 						<id>4</id>
-						<name>feat2_p_72</name>
+						<name>feat2_p_71</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -3261,7 +3261,7 @@
 					<Obj>
 						<type>0</type>
 						<id>68</id>
-						<name>feat2_p_70_addr</name>
+						<name>feat2_p_69_addr</name>
 						<fileName>../hls_files/conv_pool.cpp</fileName>
 						<fileDirectory>C:\Users\ozair\Documents\Code_Drive\Drone\hls_component</fileDirectory>
 						<lineNumber>312</lineNumber>
@@ -3319,7 +3319,7 @@
 					<Obj>
 						<type>0</type>
 						<id>69</id>
-						<name>feat2_p_71_addr</name>
+						<name>feat2_p_70_addr</name>
 						<fileName>../hls_files/conv_pool.cpp</fileName>
 						<fileDirectory>C:\Users\ozair\Documents\Code_Drive\Drone\hls_component</fileDirectory>
 						<lineNumber>312</lineNumber>
@@ -3377,7 +3377,7 @@
 					<Obj>
 						<type>0</type>
 						<id>70</id>
-						<name>feat2_p_72_addr</name>
+						<name>feat2_p_71_addr</name>
 						<fileName>../hls_files/conv_pool.cpp</fileName>
 						<fileDirectory>C:\Users\ozair\Documents\Code_Drive\Drone\hls_component</fileDirectory>
 						<lineNumber>312</lineNumber>
@@ -3550,7 +3550,7 @@
 					<Obj>
 						<type>0</type>
 						<id>73</id>
-						<name>feat2_p_70_load</name>
+						<name>feat2_p_69_load</name>
 						<fileName>../hls_files/conv_pool.cpp</fileName>
 						<fileDirectory>C:\Users\ozair\Documents\Code_Drive\Drone\hls_component</fileDirectory>
 						<lineNumber>312</lineNumber>
@@ -3606,7 +3606,7 @@
 					<Obj>
 						<type>0</type>
 						<id>74</id>
-						<name>feat2_p_71_load</name>
+						<name>feat2_p_70_load</name>
 						<fileName>../hls_files/conv_pool.cpp</fileName>
 						<fileDirectory>C:\Users\ozair\Documents\Code_Drive\Drone\hls_component</fileDirectory>
 						<lineNumber>312</lineNumber>
@@ -3662,7 +3662,7 @@
 					<Obj>
 						<type>0</type>
 						<id>75</id>
-						<name>feat2_p_72_load</name>
+						<name>feat2_p_71_load</name>
 						<fileName>../hls_files/conv_pool.cpp</fileName>
 						<fileDirectory>C:\Users\ozair\Documents\Code_Drive\Drone\hls_component</fileDirectory>
 						<lineNumber>312</lineNumber>

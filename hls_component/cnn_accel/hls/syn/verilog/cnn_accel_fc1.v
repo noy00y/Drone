@@ -76,29 +76,29 @@ module cnn_accel_fc1 (
         p_ZZ9cnn_accelE11fc1_b_local_29,
         p_ZZ9cnn_accelE11fc1_b_local_30,
         p_ZZ9cnn_accelE11fc1_b_local_31,
-        grp_fu_9558_p_din0,
-        grp_fu_9558_p_din1,
-        grp_fu_9558_p_opcode,
-        grp_fu_9558_p_dout0,
-        grp_fu_9558_p_ce,
-        grp_fu_9570_p_din0,
-        grp_fu_9570_p_din1,
-        grp_fu_9570_p_dout0,
-        grp_fu_9570_p_ce,
-        grp_fu_9562_p_din0,
-        grp_fu_9562_p_din1,
-        grp_fu_9562_p_opcode,
-        grp_fu_9562_p_dout0,
-        grp_fu_9562_p_ce,
-        grp_fu_9586_p_din0,
-        grp_fu_9586_p_din1,
-        grp_fu_9586_p_dout0,
-        grp_fu_9586_p_ce,
-        grp_fu_9582_p_din0,
-        grp_fu_9582_p_din1,
-        grp_fu_9582_p_opcode,
-        grp_fu_9582_p_dout0,
-        grp_fu_9582_p_ce
+        grp_fu_9552_p_din0,
+        grp_fu_9552_p_din1,
+        grp_fu_9552_p_opcode,
+        grp_fu_9552_p_dout0,
+        grp_fu_9552_p_ce,
+        grp_fu_9560_p_din0,
+        grp_fu_9560_p_din1,
+        grp_fu_9560_p_dout0,
+        grp_fu_9560_p_ce,
+        grp_fu_9556_p_din0,
+        grp_fu_9556_p_din1,
+        grp_fu_9556_p_opcode,
+        grp_fu_9556_p_dout0,
+        grp_fu_9556_p_ce,
+        grp_fu_9572_p_din0,
+        grp_fu_9572_p_din1,
+        grp_fu_9572_p_dout0,
+        grp_fu_9572_p_ce,
+        grp_fu_9568_p_din0,
+        grp_fu_9568_p_din1,
+        grp_fu_9568_p_opcode,
+        grp_fu_9568_p_dout0,
+        grp_fu_9568_p_ce
 );
 
 parameter    ap_ST_fsm_state1 = 75'd1;
@@ -246,29 +246,29 @@ input  [31:0] p_ZZ9cnn_accelE11fc1_b_local_28;
 input  [31:0] p_ZZ9cnn_accelE11fc1_b_local_29;
 input  [31:0] p_ZZ9cnn_accelE11fc1_b_local_30;
 input  [31:0] p_ZZ9cnn_accelE11fc1_b_local_31;
-output  [31:0] grp_fu_9558_p_din0;
-output  [31:0] grp_fu_9558_p_din1;
-output  [1:0] grp_fu_9558_p_opcode;
-input  [31:0] grp_fu_9558_p_dout0;
-output   grp_fu_9558_p_ce;
-output  [31:0] grp_fu_9570_p_din0;
-output  [31:0] grp_fu_9570_p_din1;
-input  [31:0] grp_fu_9570_p_dout0;
-output   grp_fu_9570_p_ce;
-output  [31:0] grp_fu_9562_p_din0;
-output  [31:0] grp_fu_9562_p_din1;
-output  [1:0] grp_fu_9562_p_opcode;
-input  [31:0] grp_fu_9562_p_dout0;
-output   grp_fu_9562_p_ce;
-output  [31:0] grp_fu_9586_p_din0;
-output  [31:0] grp_fu_9586_p_din1;
-input  [31:0] grp_fu_9586_p_dout0;
-output   grp_fu_9586_p_ce;
-output  [31:0] grp_fu_9582_p_din0;
-output  [31:0] grp_fu_9582_p_din1;
-output  [4:0] grp_fu_9582_p_opcode;
-input  [0:0] grp_fu_9582_p_dout0;
-output   grp_fu_9582_p_ce;
+output  [31:0] grp_fu_9552_p_din0;
+output  [31:0] grp_fu_9552_p_din1;
+output  [1:0] grp_fu_9552_p_opcode;
+input  [31:0] grp_fu_9552_p_dout0;
+output   grp_fu_9552_p_ce;
+output  [31:0] grp_fu_9560_p_din0;
+output  [31:0] grp_fu_9560_p_din1;
+input  [31:0] grp_fu_9560_p_dout0;
+output   grp_fu_9560_p_ce;
+output  [31:0] grp_fu_9556_p_din0;
+output  [31:0] grp_fu_9556_p_din1;
+output  [1:0] grp_fu_9556_p_opcode;
+input  [31:0] grp_fu_9556_p_dout0;
+output   grp_fu_9556_p_ce;
+output  [31:0] grp_fu_9572_p_din0;
+output  [31:0] grp_fu_9572_p_din1;
+input  [31:0] grp_fu_9572_p_dout0;
+output   grp_fu_9572_p_ce;
+output  [31:0] grp_fu_9568_p_din0;
+output  [31:0] grp_fu_9568_p_din1;
+output  [4:0] grp_fu_9568_p_opcode;
+input  [0:0] grp_fu_9568_p_dout0;
+output   grp_fu_9568_p_ce;
 
 reg ap_done;
 reg ap_idle;
@@ -558,25 +558,25 @@ cnn_accel_generic_tanh_float_s grp_generic_tanh_float_s_fu_381(
     .grp_fu_394_p_din0(grp_generic_tanh_float_s_fu_381_grp_fu_394_p_din0),
     .grp_fu_394_p_din1(grp_generic_tanh_float_s_fu_381_grp_fu_394_p_din1),
     .grp_fu_394_p_opcode(grp_generic_tanh_float_s_fu_381_grp_fu_394_p_opcode),
-    .grp_fu_394_p_dout0(grp_fu_9558_p_dout0),
+    .grp_fu_394_p_dout0(grp_fu_9552_p_dout0),
     .grp_fu_394_p_ce(grp_generic_tanh_float_s_fu_381_grp_fu_394_p_ce),
     .grp_fu_990_p_din0(grp_generic_tanh_float_s_fu_381_grp_fu_990_p_din0),
     .grp_fu_990_p_din1(grp_generic_tanh_float_s_fu_381_grp_fu_990_p_din1),
     .grp_fu_990_p_opcode(grp_generic_tanh_float_s_fu_381_grp_fu_990_p_opcode),
-    .grp_fu_990_p_dout0(grp_fu_9562_p_dout0),
+    .grp_fu_990_p_dout0(grp_fu_9556_p_dout0),
     .grp_fu_990_p_ce(grp_generic_tanh_float_s_fu_381_grp_fu_990_p_ce),
     .grp_fu_399_p_din0(grp_generic_tanh_float_s_fu_381_grp_fu_399_p_din0),
     .grp_fu_399_p_din1(grp_generic_tanh_float_s_fu_381_grp_fu_399_p_din1),
-    .grp_fu_399_p_dout0(grp_fu_9570_p_dout0),
+    .grp_fu_399_p_dout0(grp_fu_9560_p_dout0),
     .grp_fu_399_p_ce(grp_generic_tanh_float_s_fu_381_grp_fu_399_p_ce),
     .grp_fu_994_p_din0(grp_generic_tanh_float_s_fu_381_grp_fu_994_p_din0),
     .grp_fu_994_p_din1(grp_generic_tanh_float_s_fu_381_grp_fu_994_p_din1),
-    .grp_fu_994_p_dout0(grp_fu_9586_p_dout0),
+    .grp_fu_994_p_dout0(grp_fu_9572_p_dout0),
     .grp_fu_994_p_ce(grp_generic_tanh_float_s_fu_381_grp_fu_994_p_ce),
     .grp_fu_998_p_din0(grp_generic_tanh_float_s_fu_381_grp_fu_998_p_din0),
     .grp_fu_998_p_din1(grp_generic_tanh_float_s_fu_381_grp_fu_998_p_din1),
     .grp_fu_998_p_opcode(grp_generic_tanh_float_s_fu_381_grp_fu_998_p_opcode),
-    .grp_fu_998_p_dout0(grp_fu_9582_p_dout0),
+    .grp_fu_998_p_dout0(grp_fu_9568_p_dout0),
     .grp_fu_998_p_ce(grp_generic_tanh_float_s_fu_381_grp_fu_998_p_ce)
 );
 
@@ -650,7 +650,7 @@ cnn_accel_generic_tanh_float_s grp_generic_tanh_float_s_fu_381(
     .def_WIDTH( 32 ),
     .sel_WIDTH( 5 ),
     .dout_WIDTH( 32 ))
-sparsemux_65_5_32_1_1_U1618(
+sparsemux_65_5_32_1_1_U1614(
     .din0(fc1_b_local),
     .din1(fc1_b_local_42),
     .din2(fc1_b_local_43),
@@ -710,7 +710,7 @@ sparsemux_65_5_32_1_1_U1618(
     .def_WIDTH( 32 ),
     .sel_WIDTH( 3 ),
     .dout_WIDTH( 32 ))
-sparsemux_17_3_32_1_1_U1619(
+sparsemux_17_3_32_1_1_U1615(
     .din0(fc1_w_local_q0),
     .din1(fc1_w_local_35_q0),
     .din2(fc1_w_local_36_q0),
@@ -746,7 +746,7 @@ end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state13)) begin
-        acc_1_reg_371 <= grp_fu_9558_p_dout0;
+        acc_1_reg_371 <= grp_fu_9552_p_dout0;
     end else if (((icmp_ln324_fu_553_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state2))) begin
         acc_1_reg_371 <= acc_fu_573_p67;
     end
@@ -793,7 +793,7 @@ end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state8)) begin
-        mul9_i_reg_980 <= grp_fu_9570_p_dout0;
+        mul9_i_reg_980 <= grp_fu_9560_p_dout0;
     end
 end
 
@@ -1603,41 +1603,41 @@ assign fc1_w_local_address0 = zext_ln329_fu_717_p1;
 
 assign fc1_w_local_ce0 = fc1_w_local_ce0_local;
 
-assign grp_fu_9558_p_ce = grp_fu_394_ce;
+assign grp_fu_9552_p_ce = grp_fu_394_ce;
 
-assign grp_fu_9558_p_din0 = grp_fu_394_p0;
+assign grp_fu_9552_p_din0 = grp_fu_394_p0;
 
-assign grp_fu_9558_p_din1 = grp_fu_394_p1;
+assign grp_fu_9552_p_din1 = grp_fu_394_p1;
 
-assign grp_fu_9558_p_opcode = grp_fu_394_opcode;
+assign grp_fu_9552_p_opcode = grp_fu_394_opcode;
 
-assign grp_fu_9562_p_ce = grp_fu_990_ce;
+assign grp_fu_9556_p_ce = grp_fu_990_ce;
 
-assign grp_fu_9562_p_din0 = grp_generic_tanh_float_s_fu_381_grp_fu_990_p_din0;
+assign grp_fu_9556_p_din0 = grp_generic_tanh_float_s_fu_381_grp_fu_990_p_din0;
 
-assign grp_fu_9562_p_din1 = grp_generic_tanh_float_s_fu_381_grp_fu_990_p_din1;
+assign grp_fu_9556_p_din1 = grp_generic_tanh_float_s_fu_381_grp_fu_990_p_din1;
 
-assign grp_fu_9562_p_opcode = grp_generic_tanh_float_s_fu_381_grp_fu_990_p_opcode;
+assign grp_fu_9556_p_opcode = grp_generic_tanh_float_s_fu_381_grp_fu_990_p_opcode;
 
-assign grp_fu_9570_p_ce = grp_fu_399_ce;
+assign grp_fu_9560_p_ce = grp_fu_399_ce;
 
-assign grp_fu_9570_p_din0 = grp_fu_399_p0;
+assign grp_fu_9560_p_din0 = grp_fu_399_p0;
 
-assign grp_fu_9570_p_din1 = grp_fu_399_p1;
+assign grp_fu_9560_p_din1 = grp_fu_399_p1;
 
-assign grp_fu_9582_p_ce = grp_fu_998_ce;
+assign grp_fu_9568_p_ce = grp_fu_998_ce;
 
-assign grp_fu_9582_p_din0 = grp_generic_tanh_float_s_fu_381_grp_fu_998_p_din0;
+assign grp_fu_9568_p_din0 = grp_generic_tanh_float_s_fu_381_grp_fu_998_p_din0;
 
-assign grp_fu_9582_p_din1 = grp_generic_tanh_float_s_fu_381_grp_fu_998_p_din1;
+assign grp_fu_9568_p_din1 = grp_generic_tanh_float_s_fu_381_grp_fu_998_p_din1;
 
-assign grp_fu_9582_p_opcode = grp_generic_tanh_float_s_fu_381_grp_fu_998_p_opcode;
+assign grp_fu_9568_p_opcode = grp_generic_tanh_float_s_fu_381_grp_fu_998_p_opcode;
 
-assign grp_fu_9586_p_ce = grp_fu_994_ce;
+assign grp_fu_9572_p_ce = grp_fu_994_ce;
 
-assign grp_fu_9586_p_din0 = grp_generic_tanh_float_s_fu_381_grp_fu_994_p_din0;
+assign grp_fu_9572_p_din0 = grp_generic_tanh_float_s_fu_381_grp_fu_994_p_din0;
 
-assign grp_fu_9586_p_din1 = grp_generic_tanh_float_s_fu_381_grp_fu_994_p_din1;
+assign grp_fu_9572_p_din1 = grp_generic_tanh_float_s_fu_381_grp_fu_994_p_din1;
 
 assign grp_generic_tanh_float_s_fu_381_ap_start = grp_generic_tanh_float_s_fu_381_ap_start_reg;
 

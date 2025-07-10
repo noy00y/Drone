@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'fc2_Pipeline_FC2_LOOP'
 ================================================================
-* Date:           Tue Jul  8 02:25:45 2025
+* Date:           Wed Jul  9 07:45:28 2025
 
 * Version:        2025.1 (Build 6135595 on May 21 2025)
 * Project:        cnn_accel
@@ -172,9 +172,9 @@ State 9 <SV = 8> <Delay = 6.51>
 ST_9 : Operation 70 [2/5] (6.51ns)   --->   "%acc2_2 = fadd i32 %acc2_1_load, i32 %mul_i" [../hls_files/conv_pool.cpp:345]   --->   Operation 70 'fadd' 'acc2_2' <Predicate = true> <Delay = 6.51> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 4> <II = 1> <Delay = 6.51> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
 
 State 10 <SV = 9> <Delay = 7.83>
-ST_10 : Operation 71 [1/1] (0.00ns)   --->   "%specpipeline_ln344 = specpipeline void @_ssdm_op_SpecPipeline, i32 3, i32 0, i32 0, i32 0, void @empty_38" [../hls_files/conv_pool.cpp:344]   --->   Operation 71 'specpipeline' 'specpipeline_ln344' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 71 [1/1] (0.00ns)   --->   "%specpipeline_ln344 = specpipeline void @_ssdm_op_SpecPipeline, i32 3, i32 0, i32 0, i32 0, void @empty_19" [../hls_files/conv_pool.cpp:344]   --->   Operation 71 'specpipeline' 'specpipeline_ln344' <Predicate = true> <Delay = 0.00>
 ST_10 : Operation 72 [1/1] (0.00ns)   --->   "%speclooptripcount_ln342 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 32, i64 32, i64 32" [../hls_files/conv_pool.cpp:342]   --->   Operation 72 'speclooptripcount' 'speclooptripcount_ln342' <Predicate = true> <Delay = 0.00>
-ST_10 : Operation 73 [1/1] (0.00ns)   --->   "%specloopname_ln343 = specloopname void @_ssdm_op_SpecLoopName, void @empty_35" [../hls_files/conv_pool.cpp:343]   --->   Operation 73 'specloopname' 'specloopname_ln343' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 73 [1/1] (0.00ns)   --->   "%specloopname_ln343 = specloopname void @_ssdm_op_SpecLoopName, void @empty_3" [../hls_files/conv_pool.cpp:343]   --->   Operation 73 'specloopname' 'specloopname_ln343' <Predicate = true> <Delay = 0.00>
 ST_10 : Operation 74 [1/5] (6.51ns)   --->   "%acc2_2 = fadd i32 %acc2_1_load, i32 %mul_i" [../hls_files/conv_pool.cpp:345]   --->   Operation 74 'fadd' 'acc2_2' <Predicate = true> <Delay = 6.51> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 4> <II = 1> <Delay = 6.51> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
 ST_10 : Operation 75 [1/1] (1.32ns)   --->   "%store_ln342 = store i32 %acc2_2, i32 %acc2_1" [../hls_files/conv_pool.cpp:342]   --->   Operation 75 'store' 'store_ln342' <Predicate = true> <Delay = 1.32>
 ST_10 : Operation 76 [1/1] (0.00ns)   --->   "%br_ln343 = br void %for.inc.i" [../hls_files/conv_pool.cpp:343]   --->   Operation 76 'br' 'br_ln343' <Predicate = true> <Delay = 0.00>
@@ -189,7 +189,7 @@ Target clock period: 10.000ns, clock uncertainty: 2.700ns.
 The critical path consists of the following:
 	'store' operation 0 bit ('store_ln343', ../hls_files/conv_pool.cpp:343) of constant 0 on local variable 'i', ../hls_files/conv_pool.cpp:343 [71]  (1.324 ns)
 	'load' operation 6 bit ('i', ../hls_files/conv_pool.cpp:343) on local variable 'i', ../hls_files/conv_pool.cpp:343 [75]  (0.000 ns)
-	'icmp' operation 1 bit ('icmp_ln343', ../hls_files/conv_pool.cpp:343) [76]  (1.605 ns)
+	'add' operation 6 bit ('add_ln343', ../hls_files/conv_pool.cpp:343) [77]  (1.605 ns)
 	'store' operation 0 bit ('store_ln343', ../hls_files/conv_pool.cpp:343) of variable 'add_ln343', ../hls_files/conv_pool.cpp:343 on local variable 'i', ../hls_files/conv_pool.cpp:343 [91]  (1.324 ns)
 
  <State 2>: 7.780ns

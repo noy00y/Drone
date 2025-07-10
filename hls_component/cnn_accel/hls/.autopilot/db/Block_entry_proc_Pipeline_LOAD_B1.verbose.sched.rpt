@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'Block_entry_proc_Pipeline_LOAD_B1'
 ================================================================
-* Date:           Tue Jul  8 02:25:47 2025
+* Date:           Wed Jul  9 07:45:30 2025
 
 * Version:        2025.1 (Build 6135595 on May 21 2025)
 * Project:        cnn_accel
@@ -88,7 +88,7 @@ State 1 <SV = 0> <Delay = 2.81>
 ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%i_1 = alloca i32 1" [../hls_files/conv_pool.cpp:128->../hls_files/conv_pool.cpp:123]   --->   Operation 5 'alloca' 'i_1' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%sext_ln128_read = read i62 @_ssdm_op_Read.ap_auto.i62, i62 %sext_ln128"   --->   Operation 6 'read' 'sext_ln128_read' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%sext_ln128_cast = sext i62 %sext_ln128_read"   --->   Operation 7 'sext' 'sext_ln128_cast' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %B1mem, void @empty_37, i32 0, i32 0, void @empty_38, i32 0, i32 8, void @empty_6, void @empty_23, void @empty_38, i32 16, i32 16, i32 16, i32 16, void @empty_38, void @empty_38, i32 4294967295, i32 0, i32 0"   --->   Operation 8 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %B1mem, void @empty_17, i32 0, i32 0, void @empty_19, i32 0, i32 8, void @empty_22, void @empty_20, void @empty_19, i32 16, i32 16, i32 16, i32 16, void @empty_19, void @empty_19, i32 4294967295, i32 0, i32 0"   --->   Operation 8 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 9 [1/1] (1.32ns)   --->   "%store_ln128 = store i4 0, i4 %i_1" [../hls_files/conv_pool.cpp:128->../hls_files/conv_pool.cpp:123]   --->   Operation 9 'store' 'store_ln128' <Predicate = true> <Delay = 1.32>
 ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%br_ln0 = br void %for.inc13.i"   --->   Operation 10 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%i = load i4 %i_1" [../hls_files/conv_pool.cpp:128->../hls_files/conv_pool.cpp:123]   --->   Operation 11 'load' 'i' <Predicate = true> <Delay = 0.00>
@@ -100,9 +100,9 @@ ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%trunc_ln128 = trunc i4 %i" [../hls
 ST_1 : Operation 41 [1/1] (1.32ns)   --->   "%ret_ln0 = ret"   --->   Operation 41 'ret' 'ret_ln0' <Predicate = (icmp_ln128)> <Delay = 1.32>
 
 State 2 <SV = 1> <Delay = 7.30>
-ST_2 : Operation 17 [1/1] (0.00ns)   --->   "%specpipeline_ln129 = specpipeline void @_ssdm_op_SpecPipeline, i32 3, i32 0, i32 0, i32 0, void @empty_38" [../hls_files/conv_pool.cpp:129->../hls_files/conv_pool.cpp:123]   --->   Operation 17 'specpipeline' 'specpipeline_ln129' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 17 [1/1] (0.00ns)   --->   "%specpipeline_ln129 = specpipeline void @_ssdm_op_SpecPipeline, i32 3, i32 0, i32 0, i32 0, void @empty_19" [../hls_files/conv_pool.cpp:129->../hls_files/conv_pool.cpp:123]   --->   Operation 17 'specpipeline' 'specpipeline_ln129' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 18 [1/1] (0.00ns)   --->   "%speclooptripcount_ln128 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 8, i64 8, i64 8" [../hls_files/conv_pool.cpp:128->../hls_files/conv_pool.cpp:123]   --->   Operation 18 'speclooptripcount' 'speclooptripcount_ln128' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 19 [1/1] (0.00ns)   --->   "%specloopname_ln128 = specloopname void @_ssdm_op_SpecLoopName, void @empty_28" [../hls_files/conv_pool.cpp:128->../hls_files/conv_pool.cpp:123]   --->   Operation 19 'specloopname' 'specloopname_ln128' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 19 [1/1] (0.00ns)   --->   "%specloopname_ln128 = specloopname void @_ssdm_op_SpecLoopName, void @empty_10" [../hls_files/conv_pool.cpp:128->../hls_files/conv_pool.cpp:123]   --->   Operation 19 'specloopname' 'specloopname_ln128' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 20 [1/1] (7.30ns)   --->   "%B1mem_addr_read = read i32 @_ssdm_op_Read.m_axi.p1i32, i32 %B1mem_addr" [../hls_files/conv_pool.cpp:130->../hls_files/conv_pool.cpp:123]   --->   Operation 20 'read' 'B1mem_addr_read' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 111 'm_axi' <Latency = 3> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 ST_2 : Operation 21 [1/1] (0.00ns)   --->   "%bitcast_ln130 = bitcast i32 %B1mem_addr_read" [../hls_files/conv_pool.cpp:130->../hls_files/conv_pool.cpp:123]   --->   Operation 21 'bitcast' 'bitcast_ln130' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 22 [1/1] (1.34ns)   --->   "%switch_ln130 = switch i3 %trunc_ln128, void %arrayidx12.case.7.i, i3 0, void %arrayidx12.case.0.i, i3 1, void %arrayidx12.case.1.i, i3 2, void %arrayidx12.case.2.i, i3 3, void %arrayidx12.case.3.i, i3 4, void %arrayidx12.case.4.i, i3 5, void %arrayidx12.case.5.i, i3 6, void %arrayidx12.case.6.i" [../hls_files/conv_pool.cpp:130->../hls_files/conv_pool.cpp:123]   --->   Operation 22 'switch' 'switch_ln130' <Predicate = true> <Delay = 1.34>

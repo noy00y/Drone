@@ -423,7 +423,7 @@ cnn_accel_mul_13s_71s_71_5_0 #(
     .din0_WIDTH( 13 ),
     .din1_WIDTH( 71 ),
     .dout_WIDTH( 71 ))
-mul_13s_71s_71_5_0_U1588(
+mul_13s_71s_71_5_0_U1584(
     .clk(ap_clk),
     .reset(ap_rst),
     .din0(r_exp_reg_1194),
@@ -438,7 +438,7 @@ cnn_accel_mul_43ns_36ns_79_2_0 #(
     .din0_WIDTH( 43 ),
     .din1_WIDTH( 36 ),
     .dout_WIDTH( 79 ))
-mul_43ns_36ns_79_2_0_U1589(
+mul_43ns_36ns_79_2_0_U1585(
     .clk(ap_clk),
     .reset(ap_rst),
     .din0(grp_fu_268_p0),
@@ -453,7 +453,7 @@ cnn_accel_mul_49ns_44ns_93_2_0 #(
     .din0_WIDTH( 49 ),
     .din1_WIDTH( 44 ),
     .dout_WIDTH( 93 ))
-mul_49ns_44ns_93_2_0_U1590(
+mul_49ns_44ns_93_2_0_U1586(
     .clk(ap_clk),
     .reset(ap_rst),
     .din0(grp_fu_272_p0),
@@ -468,7 +468,7 @@ cnn_accel_mul_50ns_50ns_99_2_0 #(
     .din0_WIDTH( 50 ),
     .din1_WIDTH( 50 ),
     .dout_WIDTH( 99 ))
-mul_50ns_50ns_99_2_0_U1591(
+mul_50ns_50ns_99_2_0_U1587(
     .clk(ap_clk),
     .reset(ap_rst),
     .din0(grp_fu_276_p0),
@@ -491,7 +491,7 @@ mul_50ns_50ns_99_2_0_U1591(
     .def_WIDTH( 64 ),
     .sel_WIDTH( 3 ),
     .dout_WIDTH( 64 ))
-sparsemux_9_3_64_1_0_U1592(
+sparsemux_9_3_64_1_0_U1588(
     .din0(retval_1_fu_1071_p2),
     .din1(retval_1_fu_1071_p4),
     .din2(64'd0),
@@ -508,7 +508,7 @@ cnn_accel_mac_muladd_16s_15ns_19s_31_4_0 #(
     .din1_WIDTH( 15 ),
     .din2_WIDTH( 19 ),
     .dout_WIDTH( 31 ))
-mac_muladd_16s_15ns_19s_31_4_0_U1593(
+mac_muladd_16s_15ns_19s_31_4_0_U1589(
     .clk(ap_clk),
     .reset(ap_rst),
     .din0(m_fix_hi_fu_457_p4),

@@ -1052,7 +1052,6 @@ set ArgLastReadFirstWriteLatency {
 		FC2_B {Type I LastRead 1 FirstWrite -1}
 		B4mem {Type I LastRead 69 FirstWrite -1}
 		local_img {Type IO LastRead -1 FirstWrite -1}
-		local_img_60 {Type IO LastRead -1 FirstWrite -1}
 		b1_local {Type IO LastRead -1 FirstWrite -1}
 		b1_local_10 {Type IO LastRead -1 FirstWrite -1}
 		b1_local_11 {Type IO LastRead -1 FirstWrite -1}
@@ -1278,13 +1277,13 @@ set ArgLastReadFirstWriteLatency {
 		p_ZZ9cnn_accelE8w1_local_188 {Type IO LastRead -1 FirstWrite -1}
 		p_ZZ9cnn_accelE8w1_local_215 {Type IO LastRead -1 FirstWrite -1}
 		feat1 {Type IO LastRead -1 FirstWrite -1}
+		feat1_60 {Type IO LastRead -1 FirstWrite -1}
 		feat1_61 {Type IO LastRead -1 FirstWrite -1}
 		feat1_62 {Type IO LastRead -1 FirstWrite -1}
-		feat1_63 {Type IO LastRead -1 FirstWrite -1}
 		feat1_p {Type IO LastRead -1 FirstWrite -1}
+		feat1_p_63 {Type IO LastRead -1 FirstWrite -1}
 		feat1_p_64 {Type IO LastRead -1 FirstWrite -1}
 		feat1_p_65 {Type IO LastRead -1 FirstWrite -1}
-		feat1_p_66 {Type IO LastRead -1 FirstWrite -1}
 		b2_local {Type IO LastRead -1 FirstWrite -1}
 		b2_local_26 {Type IO LastRead -1 FirstWrite -1}
 		b2_local_27 {Type IO LastRead -1 FirstWrite -1}
@@ -2454,13 +2453,13 @@ set ArgLastReadFirstWriteLatency {
 		p_ZZ9cnn_accelE8w2_local_1079 {Type IO LastRead -1 FirstWrite -1}
 		p_ZZ9cnn_accelE8w2_local_1151 {Type IO LastRead -1 FirstWrite -1}
 		feat2 {Type IO LastRead -1 FirstWrite -1}
+		feat2_66 {Type IO LastRead -1 FirstWrite -1}
 		feat2_67 {Type IO LastRead -1 FirstWrite -1}
 		feat2_68 {Type IO LastRead -1 FirstWrite -1}
-		feat2_69 {Type IO LastRead -1 FirstWrite -1}
 		feat2_p {Type IO LastRead -1 FirstWrite -1}
+		feat2_p_69 {Type IO LastRead -1 FirstWrite -1}
 		feat2_p_70 {Type IO LastRead -1 FirstWrite -1}
 		feat2_p_71 {Type IO LastRead -1 FirstWrite -1}
-		feat2_p_72 {Type IO LastRead -1 FirstWrite -1}
 		vec1 {Type IO LastRead -1 FirstWrite -1}
 		fc1_b_local {Type IO LastRead -1 FirstWrite -1}
 		fc1_b_local_42 {Type IO LastRead -1 FirstWrite -1}
@@ -2542,20 +2541,17 @@ set ArgLastReadFirstWriteLatency {
 	load_img {
 		IMGmem {Type I LastRead 1 FirstWrite -1}
 		img_in {Type I LastRead 0 FirstWrite -1}
-		local_img {Type O LastRead -1 FirstWrite 2}
-		local_img_60 {Type O LastRead -1 FirstWrite 2}}
+		local_img {Type O LastRead -1 FirstWrite 2}}
 	load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH {
 		IMGmem {Type I LastRead 1 FirstWrite -1}
 		sext_ln196 {Type I LastRead 0 FirstWrite -1}
-		local_img {Type O LastRead -1 FirstWrite 2}
-		local_img_60 {Type O LastRead -1 FirstWrite 2}}
+		local_img {Type O LastRead -1 FirstWrite 2}}
 	conv1 {
 		feat1 {Type O LastRead -1 FirstWrite 145}
+		feat1_60 {Type O LastRead -1 FirstWrite 145}
 		feat1_61 {Type O LastRead -1 FirstWrite 145}
 		feat1_62 {Type O LastRead -1 FirstWrite 145}
-		feat1_63 {Type O LastRead -1 FirstWrite 145}
-		local_img {Type I LastRead 11 FirstWrite -1}
-		local_img_60 {Type I LastRead 7 FirstWrite -1}
+		local_img {Type I LastRead 16 FirstWrite -1}
 		b1_local {Type I LastRead 0 FirstWrite -1}
 		b1_local_10 {Type I LastRead 0 FirstWrite -1}
 		b1_local_11 {Type I LastRead 0 FirstWrite -1}
@@ -2782,22 +2778,22 @@ set ArgLastReadFirstWriteLatency {
 		p_ZZ9cnn_accelE8w1_local_215 {Type I LastRead 0 FirstWrite -1}}
 	pool1 {
 		feat1_p {Type O LastRead -1 FirstWrite 12}
+		feat1_p_63 {Type O LastRead -1 FirstWrite 12}
 		feat1_p_64 {Type O LastRead -1 FirstWrite 12}
 		feat1_p_65 {Type O LastRead -1 FirstWrite 12}
-		feat1_p_66 {Type O LastRead -1 FirstWrite 12}
 		feat1 {Type I LastRead 4 FirstWrite -1}
+		feat1_60 {Type I LastRead 4 FirstWrite -1}
 		feat1_61 {Type I LastRead 4 FirstWrite -1}
-		feat1_62 {Type I LastRead 4 FirstWrite -1}
-		feat1_63 {Type I LastRead 4 FirstWrite -1}}
+		feat1_62 {Type I LastRead 4 FirstWrite -1}}
 	conv2 {
 		feat1_p {Type I LastRead 11 FirstWrite -1}
+		feat1_p_63 {Type I LastRead 11 FirstWrite -1}
 		feat1_p_64 {Type I LastRead 11 FirstWrite -1}
 		feat1_p_65 {Type I LastRead 11 FirstWrite -1}
-		feat1_p_66 {Type I LastRead 11 FirstWrite -1}
 		feat2 {Type O LastRead -1 FirstWrite 370}
+		feat2_66 {Type O LastRead -1 FirstWrite 370}
 		feat2_67 {Type O LastRead -1 FirstWrite 370}
 		feat2_68 {Type O LastRead -1 FirstWrite 370}
-		feat2_69 {Type O LastRead -1 FirstWrite 370}
 		b2_local {Type I LastRead 0 FirstWrite -1}
 		b2_local_26 {Type I LastRead 0 FirstWrite -1}
 		b2_local_27 {Type I LastRead 0 FirstWrite -1}
@@ -3968,18 +3964,18 @@ set ArgLastReadFirstWriteLatency {
 		p_ZZ9cnn_accelE8w2_local_1151 {Type I LastRead 0 FirstWrite -1}}
 	pool2 {
 		feat2_p {Type O LastRead -1 FirstWrite 12}
+		feat2_p_69 {Type O LastRead -1 FirstWrite 12}
 		feat2_p_70 {Type O LastRead -1 FirstWrite 12}
 		feat2_p_71 {Type O LastRead -1 FirstWrite 12}
-		feat2_p_72 {Type O LastRead -1 FirstWrite 12}
 		feat2 {Type I LastRead 4 FirstWrite -1}
+		feat2_66 {Type I LastRead 4 FirstWrite -1}
 		feat2_67 {Type I LastRead 4 FirstWrite -1}
-		feat2_68 {Type I LastRead 4 FirstWrite -1}
-		feat2_69 {Type I LastRead 4 FirstWrite -1}}
+		feat2_68 {Type I LastRead 4 FirstWrite -1}}
 	flatten {
 		feat2_p {Type I LastRead 4 FirstWrite -1}
+		feat2_p_69 {Type I LastRead 4 FirstWrite -1}
 		feat2_p_70 {Type I LastRead 4 FirstWrite -1}
 		feat2_p_71 {Type I LastRead 4 FirstWrite -1}
-		feat2_p_72 {Type I LastRead 4 FirstWrite -1}
 		vec1 {Type O LastRead -1 FirstWrite 5}}
 	fc1 {
 		fc1_w_local {Type I LastRead 2 FirstWrite -1}
@@ -5599,8 +5595,8 @@ set ArgLastReadFirstWriteLatency {
 set hasDtUnsupportedChannel 0
 
 set PerformanceInfo {[
-	{"Name" : "Latency", "Min" : "6951794", "Max" : "35155930"}
-	, {"Name" : "Interval", "Min" : "6951794", "Max" : "35155930"}
+	{"Name" : "Latency", "Min" : "6951794", "Max" : "38183285"}
+	, {"Name" : "Interval", "Min" : "6951794", "Max" : "38183285"}
 ]}
 
 set PipelineEnableSignalInfo {[

@@ -1159,7 +1159,7 @@ VITIS_LOOP_327_1.split.i:1 %trunc_ln324 = trunc i6 %o_1
 
 <Node id="93" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="0">
 <![CDATA[
-VITIS_LOOP_327_1.split.i:2 %specpipeline_ln325 = specpipeline void @_ssdm_op_SpecPipeline, i32 3, i32 0, i32 0, i32 0, void @empty_38
+VITIS_LOOP_327_1.split.i:2 %specpipeline_ln325 = specpipeline void @_ssdm_op_SpecPipeline, i32 3, i32 0, i32 0, i32 0, void @empty_19
 
 ]]></Node>
 <StgValue><ssdm name="specpipeline_ln325"/></StgValue>
@@ -1191,7 +1191,7 @@ VITIS_LOOP_327_1.split.i:3 %speclooptripcount_ln324 = speclooptripcount void @_s
 
 <Node id="95" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
-VITIS_LOOP_327_1.split.i:4 %specloopname_ln324 = specloopname void @_ssdm_op_SpecLoopName, void @empty_22
+VITIS_LOOP_327_1.split.i:4 %specloopname_ln324 = specloopname void @_ssdm_op_SpecLoopName, void @empty_18
 
 ]]></Node>
 <StgValue><ssdm name="specloopname_ln324"/></StgValue>
@@ -2063,7 +2063,7 @@ for.inc.split.i:27 %acc_2 = fadd i32 %acc_1, i32 %mul9_i
 
 <Node id="108" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
-for.inc.split.i:2 %specloopname_ln327 = specloopname void @_ssdm_op_SpecLoopName, void @empty_31
+for.inc.split.i:2 %specloopname_ln327 = specloopname void @_ssdm_op_SpecLoopName, void @empty_24
 
 ]]></Node>
 <StgValue><ssdm name="specloopname_ln327"/></StgValue>

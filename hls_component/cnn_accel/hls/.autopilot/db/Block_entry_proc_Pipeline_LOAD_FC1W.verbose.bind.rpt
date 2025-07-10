@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'Block_entry_proc_Pipeline_LOAD_FC1W'
 ================================================================
-* Date:           Tue Jul  8 02:25:59 2025
+* Date:           Wed Jul  9 07:45:41 2025
 
 * Version:        2025.1 (Build 6135595 on May 21 2025)
 * Project:        cnn_accel
@@ -89,7 +89,7 @@ State 1 <SV = 0> <Delay = 3.29>
 ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%i_4 = alloca i32 1" [../hls_files/conv_pool.cpp:140->../hls_files/conv_pool.cpp:123]   --->   Operation 6 'alloca' 'i_4' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%sext_ln140_read = read i62 @_ssdm_op_Read.ap_auto.i62, i62 %sext_ln140"   --->   Operation 7 'read' 'sext_ln140_read' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%sext_ln140_cast = sext i62 %sext_ln140_read"   --->   Operation 8 'sext' 'sext_ln140_cast' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %W3mem, void @empty_37, i32 0, i32 0, void @empty_38, i32 0, i32 2316288, void @empty_9, void @empty_23, void @empty_38, i32 16, i32 16, i32 16, i32 16, void @empty_38, void @empty_38, i32 4294967295, i32 0, i32 0"   --->   Operation 9 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %W3mem, void @empty_17, i32 0, i32 0, void @empty_19, i32 0, i32 2316288, void @empty_25, void @empty_20, void @empty_19, i32 16, i32 16, i32 16, i32 16, void @empty_19, void @empty_19, i32 4294967295, i32 0, i32 0"   --->   Operation 9 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 10 [1/1] (1.32ns)   --->   "%store_ln140 = store i22 0, i22 %i_4" [../hls_files/conv_pool.cpp:140->../hls_files/conv_pool.cpp:123]   --->   Operation 10 'store' 'store_ln140' <Predicate = true> <Delay = 1.32>
 ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%br_ln0 = br void %for.inc49.i"   --->   Operation 11 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%i = load i22 %i_4" [../hls_files/conv_pool.cpp:140->../hls_files/conv_pool.cpp:123]   --->   Operation 12 'load' 'i' <Predicate = true> <Delay = 0.00>
@@ -105,9 +105,9 @@ ST_2 : Operation 52 [1/1] (1.32ns)   --->   "%ret_ln0 = ret"   --->   Operation 
 
 State 3 <SV = 2> <Delay = 4.11>
 ST_3 : Operation 19 [1/1] (0.00ns)   --->   "%trunc_ln140 = trunc i22 %i" [../hls_files/conv_pool.cpp:140->../hls_files/conv_pool.cpp:123]   --->   Operation 19 'trunc' 'trunc_ln140' <Predicate = true> <Delay = 0.00>
-ST_3 : Operation 20 [1/1] (0.00ns)   --->   "%specpipeline_ln141 = specpipeline void @_ssdm_op_SpecPipeline, i32 3, i32 0, i32 0, i32 0, void @empty_38" [../hls_files/conv_pool.cpp:141->../hls_files/conv_pool.cpp:123]   --->   Operation 20 'specpipeline' 'specpipeline_ln141' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 20 [1/1] (0.00ns)   --->   "%specpipeline_ln141 = specpipeline void @_ssdm_op_SpecPipeline, i32 3, i32 0, i32 0, i32 0, void @empty_19" [../hls_files/conv_pool.cpp:141->../hls_files/conv_pool.cpp:123]   --->   Operation 20 'specpipeline' 'specpipeline_ln141' <Predicate = true> <Delay = 0.00>
 ST_3 : Operation 21 [1/1] (0.00ns)   --->   "%speclooptripcount_ln140 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 2316288, i64 2316288, i64 2316288" [../hls_files/conv_pool.cpp:140->../hls_files/conv_pool.cpp:123]   --->   Operation 21 'speclooptripcount' 'speclooptripcount_ln140' <Predicate = true> <Delay = 0.00>
-ST_3 : Operation 22 [1/1] (0.00ns)   --->   "%specloopname_ln140 = specloopname void @_ssdm_op_SpecLoopName, void @empty" [../hls_files/conv_pool.cpp:140->../hls_files/conv_pool.cpp:123]   --->   Operation 22 'specloopname' 'specloopname_ln140' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 22 [1/1] (0.00ns)   --->   "%specloopname_ln140 = specloopname void @_ssdm_op_SpecLoopName, void @empty_6" [../hls_files/conv_pool.cpp:140->../hls_files/conv_pool.cpp:123]   --->   Operation 22 'specloopname' 'specloopname_ln140' <Predicate = true> <Delay = 0.00>
 ST_3 : Operation 23 [1/1] (0.00ns)   --->   "%lshr_ln = partselect i19 @_ssdm_op_PartSelect.i19.i22.i32.i32, i22 %i, i32 3, i32 21" [../hls_files/conv_pool.cpp:140->../hls_files/conv_pool.cpp:123]   --->   Operation 23 'partselect' 'lshr_ln' <Predicate = true> <Delay = 0.00>
 ST_3 : Operation 24 [1/1] (0.00ns)   --->   "%zext_ln140 = zext i19 %lshr_ln" [../hls_files/conv_pool.cpp:140->../hls_files/conv_pool.cpp:123]   --->   Operation 24 'zext' 'zext_ln140' <Predicate = true> <Delay = 0.00>
 ST_3 : Operation 25 [1/1] (0.00ns)   --->   "%fc1_w_local_addr = getelementptr i32 %fc1_w_local, i64 0, i64 %zext_ln140" [../hls_files/conv_pool.cpp:142->../hls_files/conv_pool.cpp:123]   --->   Operation 25 'getelementptr' 'fc1_w_local_addr' <Predicate = true> <Delay = 0.00>
@@ -349,7 +349,7 @@ ret_ln0                 (ret              ) [ 0000]
 <pin id="27" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_37"/></StgValue>
+<StgValue><ssdm name="empty_17"/></StgValue>
 </bind>
 </comp>
 
@@ -367,7 +367,7 @@ ret_ln0                 (ret              ) [ 0000]
 <pin id="31" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_38"/></StgValue>
+<StgValue><ssdm name="empty_19"/></StgValue>
 </bind>
 </comp>
 
@@ -385,7 +385,7 @@ ret_ln0                 (ret              ) [ 0000]
 <pin id="35" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_9"/></StgValue>
+<StgValue><ssdm name="empty_25"/></StgValue>
 </bind>
 </comp>
 
@@ -394,7 +394,7 @@ ret_ln0                 (ret              ) [ 0000]
 <pin id="37" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_23"/></StgValue>
+<StgValue><ssdm name="empty_20"/></StgValue>
 </bind>
 </comp>
 
@@ -502,7 +502,7 @@ ret_ln0                 (ret              ) [ 0000]
 <pin id="61" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty"/></StgValue>
+<StgValue><ssdm name="empty_6"/></StgValue>
 </bind>
 </comp>
 

@@ -19,15 +19,15 @@ port (
     feat2_p_address0 : OUT STD_LOGIC_VECTOR (14 downto 0);
     feat2_p_ce0 : OUT STD_LOGIC;
     feat2_p_q0 : IN STD_LOGIC_VECTOR (31 downto 0);
+    feat2_p_69_address0 : OUT STD_LOGIC_VECTOR (14 downto 0);
+    feat2_p_69_ce0 : OUT STD_LOGIC;
+    feat2_p_69_q0 : IN STD_LOGIC_VECTOR (31 downto 0);
     feat2_p_70_address0 : OUT STD_LOGIC_VECTOR (14 downto 0);
     feat2_p_70_ce0 : OUT STD_LOGIC;
     feat2_p_70_q0 : IN STD_LOGIC_VECTOR (31 downto 0);
     feat2_p_71_address0 : OUT STD_LOGIC_VECTOR (14 downto 0);
     feat2_p_71_ce0 : OUT STD_LOGIC;
     feat2_p_71_q0 : IN STD_LOGIC_VECTOR (31 downto 0);
-    feat2_p_72_address0 : OUT STD_LOGIC_VECTOR (14 downto 0);
-    feat2_p_72_ce0 : OUT STD_LOGIC;
-    feat2_p_72_q0 : IN STD_LOGIC_VECTOR (31 downto 0);
     vec1_address0 : OUT STD_LOGIC_VECTOR (16 downto 0);
     vec1_ce0 : OUT STD_LOGIC;
     vec1_we0 : OUT STD_LOGIC;
@@ -124,9 +124,9 @@ attribute shreg_extract : string;
     signal indvar_flatten20_fu_118 : STD_LOGIC_VECTOR (16 downto 0) := "00000000000000000";
     signal add_ln308_2_fu_236_p2 : STD_LOGIC_VECTOR (16 downto 0);
     signal feat2_p_ce0_local : STD_LOGIC;
+    signal feat2_p_69_ce0_local : STD_LOGIC;
     signal feat2_p_70_ce0_local : STD_LOGIC;
     signal feat2_p_71_ce0_local : STD_LOGIC;
-    signal feat2_p_72_ce0_local : STD_LOGIC;
     signal vec1_we0_local : STD_LOGIC;
     signal tmp_i_fu_461_p11 : STD_LOGIC_VECTOR (31 downto 0);
     signal vec1_ce0_local : STD_LOGIC;
@@ -230,7 +230,7 @@ attribute shreg_extract : string;
 
 
 begin
-    sparsemux_9_2_32_1_1_U1581 : component cnn_accel_sparsemux_9_2_32_1_1
+    sparsemux_9_2_32_1_1_U1577 : component cnn_accel_sparsemux_9_2_32_1_1
     generic map (
         ID => 1,
         NUM_STAGE => 1,
@@ -247,14 +247,14 @@ begin
         dout_WIDTH => 32)
     port map (
         din0 => feat2_p_q0,
-        din1 => feat2_p_70_q0,
-        din2 => feat2_p_71_q0,
-        din3 => feat2_p_72_q0,
+        din1 => feat2_p_69_q0,
+        din2 => feat2_p_70_q0,
+        din3 => feat2_p_71_q0,
         def => tmp_i_fu_461_p9,
         sel => trunc_ln310_2_reg_640,
         dout => tmp_i_fu_461_p11);
 
-    mac_muladd_7ns_6ns_7ns_13_4_1_U1582 : component cnn_accel_mac_muladd_7ns_6ns_7ns_13_4_1
+    mac_muladd_7ns_6ns_7ns_13_4_1_U1578 : component cnn_accel_mac_muladd_7ns_6ns_7ns_13_4_1
     generic map (
         ID => 1,
         NUM_STAGE => 4,
@@ -590,6 +590,18 @@ begin
     end process;
 
     empty_fu_337_p2 <= (icmp_ln309_reg_609 or and_ln308_fu_325_p2);
+    feat2_p_69_address0 <= zext_ln312_2_fu_398_p1(15 - 1 downto 0);
+    feat2_p_69_ce0 <= feat2_p_69_ce0_local;
+
+    feat2_p_69_ce0_local_assign_proc : process(ap_enable_reg_pp0_iter1, ap_CS_fsm_pp0_stage1, ap_block_pp0_stage1_11001)
+    begin
+        if (((ap_const_boolean_0 = ap_block_pp0_stage1_11001) and (ap_enable_reg_pp0_iter1 = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_pp0_stage1))) then 
+            feat2_p_69_ce0_local <= ap_const_logic_1;
+        else 
+            feat2_p_69_ce0_local <= ap_const_logic_0;
+        end if; 
+    end process;
+
     feat2_p_70_address0 <= zext_ln312_2_fu_398_p1(15 - 1 downto 0);
     feat2_p_70_ce0 <= feat2_p_70_ce0_local;
 
@@ -611,18 +623,6 @@ begin
             feat2_p_71_ce0_local <= ap_const_logic_1;
         else 
             feat2_p_71_ce0_local <= ap_const_logic_0;
-        end if; 
-    end process;
-
-    feat2_p_72_address0 <= zext_ln312_2_fu_398_p1(15 - 1 downto 0);
-    feat2_p_72_ce0 <= feat2_p_72_ce0_local;
-
-    feat2_p_72_ce0_local_assign_proc : process(ap_enable_reg_pp0_iter1, ap_CS_fsm_pp0_stage1, ap_block_pp0_stage1_11001)
-    begin
-        if (((ap_const_boolean_0 = ap_block_pp0_stage1_11001) and (ap_enable_reg_pp0_iter1 = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_pp0_stage1))) then 
-            feat2_p_72_ce0_local <= ap_const_logic_1;
-        else 
-            feat2_p_72_ce0_local <= ap_const_logic_0;
         end if; 
     end process;
 

@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'fc1'" level="0">
-<item name = "Date">Tue Jul  8 02:26:11 2025
+<item name = "Date">Wed Jul  9 07:45:53 2025
 </item>
 <item name = "Version">2025.1 (Build 6135595 on May 21 2025)</item>
 <item name = "Project">cnn_accel</item>
@@ -65,8 +65,8 @@
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
 <column name="grp_generic_tanh_float_s_fu_381">generic_tanh_float_s, 5, 32, 5773, 4845, 0</column>
-<column name="sparsemux_17_3_32_1_1_U1619">sparsemux_17_3_32_1_1, 0, 0, 0, 33, 0</column>
-<column name="sparsemux_65_5_32_1_1_U1618">sparsemux_65_5_32_1_1, 0, 0, 0, 145, 0</column>
+<column name="sparsemux_17_3_32_1_1_U1615">sparsemux_17_3_32_1_1, 0, 0, 0, 33, 0</column>
+<column name="sparsemux_65_5_32_1_1_U1614">sparsemux_65_5_32_1_1, 0, 0, 0, 145, 0</column>
 </table>
 </item>
 <item name = "DSP"><table name="" hasTotal="0">
@@ -141,29 +141,29 @@
 <column name="ap_done">out, 1, ap_ctrl_hs, fc1, return value</column>
 <column name="ap_idle">out, 1, ap_ctrl_hs, fc1, return value</column>
 <column name="ap_ready">out, 1, ap_ctrl_hs, fc1, return value</column>
-<column name="grp_fu_9558_p_din0">out, 32, ap_ctrl_hs, fc1, return value</column>
-<column name="grp_fu_9558_p_din1">out, 32, ap_ctrl_hs, fc1, return value</column>
-<column name="grp_fu_9558_p_opcode">out, 2, ap_ctrl_hs, fc1, return value</column>
-<column name="grp_fu_9558_p_dout0">in, 32, ap_ctrl_hs, fc1, return value</column>
-<column name="grp_fu_9558_p_ce">out, 1, ap_ctrl_hs, fc1, return value</column>
-<column name="grp_fu_9570_p_din0">out, 32, ap_ctrl_hs, fc1, return value</column>
-<column name="grp_fu_9570_p_din1">out, 32, ap_ctrl_hs, fc1, return value</column>
-<column name="grp_fu_9570_p_dout0">in, 32, ap_ctrl_hs, fc1, return value</column>
-<column name="grp_fu_9570_p_ce">out, 1, ap_ctrl_hs, fc1, return value</column>
-<column name="grp_fu_9562_p_din0">out, 32, ap_ctrl_hs, fc1, return value</column>
-<column name="grp_fu_9562_p_din1">out, 32, ap_ctrl_hs, fc1, return value</column>
-<column name="grp_fu_9562_p_opcode">out, 2, ap_ctrl_hs, fc1, return value</column>
-<column name="grp_fu_9562_p_dout0">in, 32, ap_ctrl_hs, fc1, return value</column>
-<column name="grp_fu_9562_p_ce">out, 1, ap_ctrl_hs, fc1, return value</column>
-<column name="grp_fu_9586_p_din0">out, 32, ap_ctrl_hs, fc1, return value</column>
-<column name="grp_fu_9586_p_din1">out, 32, ap_ctrl_hs, fc1, return value</column>
-<column name="grp_fu_9586_p_dout0">in, 32, ap_ctrl_hs, fc1, return value</column>
-<column name="grp_fu_9586_p_ce">out, 1, ap_ctrl_hs, fc1, return value</column>
-<column name="grp_fu_9582_p_din0">out, 32, ap_ctrl_hs, fc1, return value</column>
-<column name="grp_fu_9582_p_din1">out, 32, ap_ctrl_hs, fc1, return value</column>
-<column name="grp_fu_9582_p_opcode">out, 5, ap_ctrl_hs, fc1, return value</column>
-<column name="grp_fu_9582_p_dout0">in, 1, ap_ctrl_hs, fc1, return value</column>
-<column name="grp_fu_9582_p_ce">out, 1, ap_ctrl_hs, fc1, return value</column>
+<column name="grp_fu_9552_p_din0">out, 32, ap_ctrl_hs, fc1, return value</column>
+<column name="grp_fu_9552_p_din1">out, 32, ap_ctrl_hs, fc1, return value</column>
+<column name="grp_fu_9552_p_opcode">out, 2, ap_ctrl_hs, fc1, return value</column>
+<column name="grp_fu_9552_p_dout0">in, 32, ap_ctrl_hs, fc1, return value</column>
+<column name="grp_fu_9552_p_ce">out, 1, ap_ctrl_hs, fc1, return value</column>
+<column name="grp_fu_9560_p_din0">out, 32, ap_ctrl_hs, fc1, return value</column>
+<column name="grp_fu_9560_p_din1">out, 32, ap_ctrl_hs, fc1, return value</column>
+<column name="grp_fu_9560_p_dout0">in, 32, ap_ctrl_hs, fc1, return value</column>
+<column name="grp_fu_9560_p_ce">out, 1, ap_ctrl_hs, fc1, return value</column>
+<column name="grp_fu_9556_p_din0">out, 32, ap_ctrl_hs, fc1, return value</column>
+<column name="grp_fu_9556_p_din1">out, 32, ap_ctrl_hs, fc1, return value</column>
+<column name="grp_fu_9556_p_opcode">out, 2, ap_ctrl_hs, fc1, return value</column>
+<column name="grp_fu_9556_p_dout0">in, 32, ap_ctrl_hs, fc1, return value</column>
+<column name="grp_fu_9556_p_ce">out, 1, ap_ctrl_hs, fc1, return value</column>
+<column name="grp_fu_9572_p_din0">out, 32, ap_ctrl_hs, fc1, return value</column>
+<column name="grp_fu_9572_p_din1">out, 32, ap_ctrl_hs, fc1, return value</column>
+<column name="grp_fu_9572_p_dout0">in, 32, ap_ctrl_hs, fc1, return value</column>
+<column name="grp_fu_9572_p_ce">out, 1, ap_ctrl_hs, fc1, return value</column>
+<column name="grp_fu_9568_p_din0">out, 32, ap_ctrl_hs, fc1, return value</column>
+<column name="grp_fu_9568_p_din1">out, 32, ap_ctrl_hs, fc1, return value</column>
+<column name="grp_fu_9568_p_opcode">out, 5, ap_ctrl_hs, fc1, return value</column>
+<column name="grp_fu_9568_p_dout0">in, 1, ap_ctrl_hs, fc1, return value</column>
+<column name="grp_fu_9568_p_ce">out, 1, ap_ctrl_hs, fc1, return value</column>
 <column name="fc1_w_local_address0">out, 19, ap_memory, fc1_w_local, array</column>
 <column name="fc1_w_local_ce0">out, 1, ap_memory, fc1_w_local, array</column>
 <column name="fc1_w_local_q0">in, 32, ap_memory, fc1_w_local, array</column>

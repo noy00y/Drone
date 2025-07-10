@@ -19,18 +19,16 @@ set C_modelName {conv1}
 set C_modelType { void 0 }
 set ap_memory_interface_dict [dict create]
 dict set ap_memory_interface_dict feat1 { MEM_WIDTH 32 MEM_SIZE 605472 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 0 }
+dict set ap_memory_interface_dict feat1_60 { MEM_WIDTH 32 MEM_SIZE 605472 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 0 }
 dict set ap_memory_interface_dict feat1_61 { MEM_WIDTH 32 MEM_SIZE 605472 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 0 }
 dict set ap_memory_interface_dict feat1_62 { MEM_WIDTH 32 MEM_SIZE 605472 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 0 }
-dict set ap_memory_interface_dict feat1_63 { MEM_WIDTH 32 MEM_SIZE 605472 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 0 }
-dict set ap_memory_interface_dict local_img { MEM_WIDTH 32 MEM_SIZE 614400 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 1 }
-dict set ap_memory_interface_dict local_img_60 { MEM_WIDTH 32 MEM_SIZE 614400 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 1 }
+dict set ap_memory_interface_dict local_img { MEM_WIDTH 32 MEM_SIZE 921600 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 1 }
 set C_modelArgList {
 	{ feat1 float 32 regular {array 151368 { 0 3 } 0 1 }  }
+	{ feat1_60 float 32 regular {array 151368 { 0 3 } 0 1 }  }
 	{ feat1_61 float 32 regular {array 151368 { 0 3 } 0 1 }  }
 	{ feat1_62 float 32 regular {array 151368 { 0 3 } 0 1 }  }
-	{ feat1_63 float 32 regular {array 151368 { 0 3 } 0 1 }  }
-	{ local_img float 32 regular {array 153600 { 1 1 } 1 1 }  }
-	{ local_img_60 float 32 regular {array 153600 { 1 1 } 1 1 }  }
+	{ local_img float 32 regular {array 230400 { 1 1 } 1 1 }  }
 	{ b1_local float 32 regular {pointer 0} {global 0}  }
 	{ b1_local_10 float 32 regular {pointer 0} {global 0}  }
 	{ b1_local_11 float 32 regular {pointer 0} {global 0}  }
@@ -261,11 +259,10 @@ set l_AXIML2Cache [list]
 set AXIMCacheInstDict [dict create]
 set C_modelArgMapList {[ 
 	{ "Name" : "feat1", "interface" : "memory", "bitwidth" : 32, "direction" : "WRITEONLY"} , 
+ 	{ "Name" : "feat1_60", "interface" : "memory", "bitwidth" : 32, "direction" : "WRITEONLY"} , 
  	{ "Name" : "feat1_61", "interface" : "memory", "bitwidth" : 32, "direction" : "WRITEONLY"} , 
  	{ "Name" : "feat1_62", "interface" : "memory", "bitwidth" : 32, "direction" : "WRITEONLY"} , 
- 	{ "Name" : "feat1_63", "interface" : "memory", "bitwidth" : 32, "direction" : "WRITEONLY"} , 
  	{ "Name" : "local_img", "interface" : "memory", "bitwidth" : 32, "direction" : "READONLY"} , 
- 	{ "Name" : "local_img_60", "interface" : "memory", "bitwidth" : 32, "direction" : "READONLY"} , 
  	{ "Name" : "b1_local", "interface" : "wire", "bitwidth" : 32, "direction" : "READONLY", "extern" : 0} , 
  	{ "Name" : "b1_local_10", "interface" : "wire", "bitwidth" : 32, "direction" : "READONLY", "extern" : 0} , 
  	{ "Name" : "b1_local_11", "interface" : "wire", "bitwidth" : 32, "direction" : "READONLY", "extern" : 0} , 
@@ -491,7 +488,7 @@ set C_modelArgMapList {[
  	{ "Name" : "p_ZZ9cnn_accelE8w1_local_188", "interface" : "wire", "bitwidth" : 32, "direction" : "READONLY", "extern" : 0} , 
  	{ "Name" : "p_ZZ9cnn_accelE8w1_local_215", "interface" : "wire", "bitwidth" : 32, "direction" : "READONLY", "extern" : 0} ]}
 # RTL Port declarations: 
-set portNum 290
+set portNum 275
 set portList { 
 	{ ap_clk sc_in sc_logic 1 clock -1 } 
 	{ ap_rst sc_in sc_logic 1 reset -1 active_high_sync } 
@@ -503,286 +500,271 @@ set portList {
 	{ feat1_ce0 sc_out sc_logic 1 signal 0 } 
 	{ feat1_we0 sc_out sc_logic 1 signal 0 } 
 	{ feat1_d0 sc_out sc_lv 32 signal 0 } 
-	{ feat1_61_address0 sc_out sc_lv 18 signal 1 } 
-	{ feat1_61_ce0 sc_out sc_logic 1 signal 1 } 
-	{ feat1_61_we0 sc_out sc_logic 1 signal 1 } 
-	{ feat1_61_d0 sc_out sc_lv 32 signal 1 } 
-	{ feat1_62_address0 sc_out sc_lv 18 signal 2 } 
-	{ feat1_62_ce0 sc_out sc_logic 1 signal 2 } 
-	{ feat1_62_we0 sc_out sc_logic 1 signal 2 } 
-	{ feat1_62_d0 sc_out sc_lv 32 signal 2 } 
-	{ feat1_63_address0 sc_out sc_lv 18 signal 3 } 
-	{ feat1_63_ce0 sc_out sc_logic 1 signal 3 } 
-	{ feat1_63_we0 sc_out sc_logic 1 signal 3 } 
-	{ feat1_63_d0 sc_out sc_lv 32 signal 3 } 
+	{ feat1_60_address0 sc_out sc_lv 18 signal 1 } 
+	{ feat1_60_ce0 sc_out sc_logic 1 signal 1 } 
+	{ feat1_60_we0 sc_out sc_logic 1 signal 1 } 
+	{ feat1_60_d0 sc_out sc_lv 32 signal 1 } 
+	{ feat1_61_address0 sc_out sc_lv 18 signal 2 } 
+	{ feat1_61_ce0 sc_out sc_logic 1 signal 2 } 
+	{ feat1_61_we0 sc_out sc_logic 1 signal 2 } 
+	{ feat1_61_d0 sc_out sc_lv 32 signal 2 } 
+	{ feat1_62_address0 sc_out sc_lv 18 signal 3 } 
+	{ feat1_62_ce0 sc_out sc_logic 1 signal 3 } 
+	{ feat1_62_we0 sc_out sc_logic 1 signal 3 } 
+	{ feat1_62_d0 sc_out sc_lv 32 signal 3 } 
 	{ local_img_address0 sc_out sc_lv 18 signal 4 } 
 	{ local_img_ce0 sc_out sc_logic 1 signal 4 } 
 	{ local_img_q0 sc_in sc_lv 32 signal 4 } 
 	{ local_img_address1 sc_out sc_lv 18 signal 4 } 
 	{ local_img_ce1 sc_out sc_logic 1 signal 4 } 
 	{ local_img_q1 sc_in sc_lv 32 signal 4 } 
-	{ local_img_60_address0 sc_out sc_lv 18 signal 5 } 
-	{ local_img_60_ce0 sc_out sc_logic 1 signal 5 } 
-	{ local_img_60_q0 sc_in sc_lv 32 signal 5 } 
-	{ local_img_60_address1 sc_out sc_lv 18 signal 5 } 
-	{ local_img_60_ce1 sc_out sc_logic 1 signal 5 } 
-	{ local_img_60_q1 sc_in sc_lv 32 signal 5 } 
-	{ b1_local sc_in sc_lv 32 signal 6 } 
-	{ b1_local_10 sc_in sc_lv 32 signal 7 } 
-	{ b1_local_11 sc_in sc_lv 32 signal 8 } 
-	{ b1_local_12 sc_in sc_lv 32 signal 9 } 
-	{ b1_local_13 sc_in sc_lv 32 signal 10 } 
-	{ b1_local_14 sc_in sc_lv 32 signal 11 } 
-	{ b1_local_15 sc_in sc_lv 32 signal 12 } 
-	{ b1_local_16 sc_in sc_lv 32 signal 13 } 
-	{ w1_local sc_in sc_lv 32 signal 14 } 
-	{ p_ZZ9cnn_accelE8w1_local_27 sc_in sc_lv 32 signal 15 } 
-	{ p_ZZ9cnn_accelE8w1_local_54 sc_in sc_lv 32 signal 16 } 
-	{ p_ZZ9cnn_accelE8w1_local_81 sc_in sc_lv 32 signal 17 } 
-	{ p_ZZ9cnn_accelE8w1_local_108 sc_in sc_lv 32 signal 18 } 
-	{ p_ZZ9cnn_accelE8w1_local_135 sc_in sc_lv 32 signal 19 } 
-	{ p_ZZ9cnn_accelE8w1_local_162 sc_in sc_lv 32 signal 20 } 
-	{ p_ZZ9cnn_accelE8w1_local_189 sc_in sc_lv 32 signal 21 } 
-	{ w1_local_9 sc_in sc_lv 32 signal 22 } 
-	{ p_ZZ9cnn_accelE8w1_local_36 sc_in sc_lv 32 signal 23 } 
-	{ p_ZZ9cnn_accelE8w1_local_63 sc_in sc_lv 32 signal 24 } 
-	{ p_ZZ9cnn_accelE8w1_local_90 sc_in sc_lv 32 signal 25 } 
-	{ p_ZZ9cnn_accelE8w1_local_117 sc_in sc_lv 32 signal 26 } 
-	{ p_ZZ9cnn_accelE8w1_local_144 sc_in sc_lv 32 signal 27 } 
-	{ p_ZZ9cnn_accelE8w1_local_171 sc_in sc_lv 32 signal 28 } 
-	{ p_ZZ9cnn_accelE8w1_local_198 sc_in sc_lv 32 signal 29 } 
-	{ p_ZZ9cnn_accelE8w1_local_18 sc_in sc_lv 32 signal 30 } 
-	{ p_ZZ9cnn_accelE8w1_local_45 sc_in sc_lv 32 signal 31 } 
-	{ p_ZZ9cnn_accelE8w1_local_72 sc_in sc_lv 32 signal 32 } 
-	{ p_ZZ9cnn_accelE8w1_local_99 sc_in sc_lv 32 signal 33 } 
-	{ p_ZZ9cnn_accelE8w1_local_126 sc_in sc_lv 32 signal 34 } 
-	{ p_ZZ9cnn_accelE8w1_local_153 sc_in sc_lv 32 signal 35 } 
-	{ p_ZZ9cnn_accelE8w1_local_180 sc_in sc_lv 32 signal 36 } 
-	{ p_ZZ9cnn_accelE8w1_local_207 sc_in sc_lv 32 signal 37 } 
-	{ w1_local_1 sc_in sc_lv 32 signal 38 } 
-	{ p_ZZ9cnn_accelE8w1_local_28 sc_in sc_lv 32 signal 39 } 
-	{ p_ZZ9cnn_accelE8w1_local_55 sc_in sc_lv 32 signal 40 } 
-	{ p_ZZ9cnn_accelE8w1_local_82 sc_in sc_lv 32 signal 41 } 
-	{ p_ZZ9cnn_accelE8w1_local_109 sc_in sc_lv 32 signal 42 } 
-	{ p_ZZ9cnn_accelE8w1_local_136 sc_in sc_lv 32 signal 43 } 
-	{ p_ZZ9cnn_accelE8w1_local_163 sc_in sc_lv 32 signal 44 } 
-	{ p_ZZ9cnn_accelE8w1_local_190 sc_in sc_lv 32 signal 45 } 
-	{ p_ZZ9cnn_accelE8w1_local_10 sc_in sc_lv 32 signal 46 } 
-	{ p_ZZ9cnn_accelE8w1_local_37 sc_in sc_lv 32 signal 47 } 
-	{ p_ZZ9cnn_accelE8w1_local_64 sc_in sc_lv 32 signal 48 } 
-	{ p_ZZ9cnn_accelE8w1_local_91 sc_in sc_lv 32 signal 49 } 
-	{ p_ZZ9cnn_accelE8w1_local_118 sc_in sc_lv 32 signal 50 } 
-	{ p_ZZ9cnn_accelE8w1_local_145 sc_in sc_lv 32 signal 51 } 
-	{ p_ZZ9cnn_accelE8w1_local_172 sc_in sc_lv 32 signal 52 } 
-	{ p_ZZ9cnn_accelE8w1_local_199 sc_in sc_lv 32 signal 53 } 
-	{ p_ZZ9cnn_accelE8w1_local_19 sc_in sc_lv 32 signal 54 } 
-	{ p_ZZ9cnn_accelE8w1_local_46 sc_in sc_lv 32 signal 55 } 
-	{ p_ZZ9cnn_accelE8w1_local_73 sc_in sc_lv 32 signal 56 } 
-	{ p_ZZ9cnn_accelE8w1_local_100 sc_in sc_lv 32 signal 57 } 
-	{ p_ZZ9cnn_accelE8w1_local_127 sc_in sc_lv 32 signal 58 } 
-	{ p_ZZ9cnn_accelE8w1_local_154 sc_in sc_lv 32 signal 59 } 
-	{ p_ZZ9cnn_accelE8w1_local_181 sc_in sc_lv 32 signal 60 } 
-	{ p_ZZ9cnn_accelE8w1_local_208 sc_in sc_lv 32 signal 61 } 
-	{ w1_local_2 sc_in sc_lv 32 signal 62 } 
-	{ p_ZZ9cnn_accelE8w1_local_29 sc_in sc_lv 32 signal 63 } 
-	{ p_ZZ9cnn_accelE8w1_local_56 sc_in sc_lv 32 signal 64 } 
-	{ p_ZZ9cnn_accelE8w1_local_83 sc_in sc_lv 32 signal 65 } 
-	{ p_ZZ9cnn_accelE8w1_local_110 sc_in sc_lv 32 signal 66 } 
-	{ p_ZZ9cnn_accelE8w1_local_137 sc_in sc_lv 32 signal 67 } 
-	{ p_ZZ9cnn_accelE8w1_local_164 sc_in sc_lv 32 signal 68 } 
-	{ p_ZZ9cnn_accelE8w1_local_191 sc_in sc_lv 32 signal 69 } 
-	{ p_ZZ9cnn_accelE8w1_local_11 sc_in sc_lv 32 signal 70 } 
-	{ p_ZZ9cnn_accelE8w1_local_38 sc_in sc_lv 32 signal 71 } 
-	{ p_ZZ9cnn_accelE8w1_local_65 sc_in sc_lv 32 signal 72 } 
-	{ p_ZZ9cnn_accelE8w1_local_92 sc_in sc_lv 32 signal 73 } 
-	{ p_ZZ9cnn_accelE8w1_local_119 sc_in sc_lv 32 signal 74 } 
-	{ p_ZZ9cnn_accelE8w1_local_146 sc_in sc_lv 32 signal 75 } 
-	{ p_ZZ9cnn_accelE8w1_local_173 sc_in sc_lv 32 signal 76 } 
-	{ p_ZZ9cnn_accelE8w1_local_200 sc_in sc_lv 32 signal 77 } 
-	{ p_ZZ9cnn_accelE8w1_local_20 sc_in sc_lv 32 signal 78 } 
-	{ p_ZZ9cnn_accelE8w1_local_47 sc_in sc_lv 32 signal 79 } 
-	{ p_ZZ9cnn_accelE8w1_local_74 sc_in sc_lv 32 signal 80 } 
-	{ p_ZZ9cnn_accelE8w1_local_101 sc_in sc_lv 32 signal 81 } 
-	{ p_ZZ9cnn_accelE8w1_local_128 sc_in sc_lv 32 signal 82 } 
-	{ p_ZZ9cnn_accelE8w1_local_155 sc_in sc_lv 32 signal 83 } 
-	{ p_ZZ9cnn_accelE8w1_local_182 sc_in sc_lv 32 signal 84 } 
-	{ p_ZZ9cnn_accelE8w1_local_209 sc_in sc_lv 32 signal 85 } 
-	{ w1_local_3 sc_in sc_lv 32 signal 86 } 
-	{ p_ZZ9cnn_accelE8w1_local_30 sc_in sc_lv 32 signal 87 } 
-	{ p_ZZ9cnn_accelE8w1_local_57 sc_in sc_lv 32 signal 88 } 
-	{ p_ZZ9cnn_accelE8w1_local_84 sc_in sc_lv 32 signal 89 } 
-	{ p_ZZ9cnn_accelE8w1_local_111 sc_in sc_lv 32 signal 90 } 
-	{ p_ZZ9cnn_accelE8w1_local_138 sc_in sc_lv 32 signal 91 } 
-	{ p_ZZ9cnn_accelE8w1_local_165 sc_in sc_lv 32 signal 92 } 
-	{ p_ZZ9cnn_accelE8w1_local_192 sc_in sc_lv 32 signal 93 } 
-	{ p_ZZ9cnn_accelE8w1_local_12 sc_in sc_lv 32 signal 94 } 
-	{ p_ZZ9cnn_accelE8w1_local_39 sc_in sc_lv 32 signal 95 } 
-	{ p_ZZ9cnn_accelE8w1_local_66 sc_in sc_lv 32 signal 96 } 
-	{ p_ZZ9cnn_accelE8w1_local_93 sc_in sc_lv 32 signal 97 } 
-	{ p_ZZ9cnn_accelE8w1_local_120 sc_in sc_lv 32 signal 98 } 
-	{ p_ZZ9cnn_accelE8w1_local_147 sc_in sc_lv 32 signal 99 } 
-	{ p_ZZ9cnn_accelE8w1_local_174 sc_in sc_lv 32 signal 100 } 
-	{ p_ZZ9cnn_accelE8w1_local_201 sc_in sc_lv 32 signal 101 } 
-	{ p_ZZ9cnn_accelE8w1_local_21 sc_in sc_lv 32 signal 102 } 
-	{ p_ZZ9cnn_accelE8w1_local_48 sc_in sc_lv 32 signal 103 } 
-	{ p_ZZ9cnn_accelE8w1_local_75 sc_in sc_lv 32 signal 104 } 
-	{ p_ZZ9cnn_accelE8w1_local_102 sc_in sc_lv 32 signal 105 } 
-	{ p_ZZ9cnn_accelE8w1_local_129 sc_in sc_lv 32 signal 106 } 
-	{ p_ZZ9cnn_accelE8w1_local_156 sc_in sc_lv 32 signal 107 } 
-	{ p_ZZ9cnn_accelE8w1_local_183 sc_in sc_lv 32 signal 108 } 
-	{ p_ZZ9cnn_accelE8w1_local_210 sc_in sc_lv 32 signal 109 } 
-	{ w1_local_4 sc_in sc_lv 32 signal 110 } 
-	{ p_ZZ9cnn_accelE8w1_local_31 sc_in sc_lv 32 signal 111 } 
-	{ p_ZZ9cnn_accelE8w1_local_58 sc_in sc_lv 32 signal 112 } 
-	{ p_ZZ9cnn_accelE8w1_local_85 sc_in sc_lv 32 signal 113 } 
-	{ p_ZZ9cnn_accelE8w1_local_112 sc_in sc_lv 32 signal 114 } 
-	{ p_ZZ9cnn_accelE8w1_local_139 sc_in sc_lv 32 signal 115 } 
-	{ p_ZZ9cnn_accelE8w1_local_166 sc_in sc_lv 32 signal 116 } 
-	{ p_ZZ9cnn_accelE8w1_local_193 sc_in sc_lv 32 signal 117 } 
-	{ p_ZZ9cnn_accelE8w1_local_13 sc_in sc_lv 32 signal 118 } 
-	{ p_ZZ9cnn_accelE8w1_local_40 sc_in sc_lv 32 signal 119 } 
-	{ p_ZZ9cnn_accelE8w1_local_67 sc_in sc_lv 32 signal 120 } 
-	{ p_ZZ9cnn_accelE8w1_local_94 sc_in sc_lv 32 signal 121 } 
-	{ p_ZZ9cnn_accelE8w1_local_121 sc_in sc_lv 32 signal 122 } 
-	{ p_ZZ9cnn_accelE8w1_local_148 sc_in sc_lv 32 signal 123 } 
-	{ p_ZZ9cnn_accelE8w1_local_175 sc_in sc_lv 32 signal 124 } 
-	{ p_ZZ9cnn_accelE8w1_local_202 sc_in sc_lv 32 signal 125 } 
-	{ p_ZZ9cnn_accelE8w1_local_22 sc_in sc_lv 32 signal 126 } 
-	{ p_ZZ9cnn_accelE8w1_local_49 sc_in sc_lv 32 signal 127 } 
-	{ p_ZZ9cnn_accelE8w1_local_76 sc_in sc_lv 32 signal 128 } 
-	{ p_ZZ9cnn_accelE8w1_local_103 sc_in sc_lv 32 signal 129 } 
-	{ p_ZZ9cnn_accelE8w1_local_130 sc_in sc_lv 32 signal 130 } 
-	{ p_ZZ9cnn_accelE8w1_local_157 sc_in sc_lv 32 signal 131 } 
-	{ p_ZZ9cnn_accelE8w1_local_184 sc_in sc_lv 32 signal 132 } 
-	{ p_ZZ9cnn_accelE8w1_local_211 sc_in sc_lv 32 signal 133 } 
-	{ w1_local_5 sc_in sc_lv 32 signal 134 } 
-	{ p_ZZ9cnn_accelE8w1_local_32 sc_in sc_lv 32 signal 135 } 
-	{ p_ZZ9cnn_accelE8w1_local_59 sc_in sc_lv 32 signal 136 } 
-	{ p_ZZ9cnn_accelE8w1_local_86 sc_in sc_lv 32 signal 137 } 
-	{ p_ZZ9cnn_accelE8w1_local_113 sc_in sc_lv 32 signal 138 } 
-	{ p_ZZ9cnn_accelE8w1_local_140 sc_in sc_lv 32 signal 139 } 
-	{ p_ZZ9cnn_accelE8w1_local_167 sc_in sc_lv 32 signal 140 } 
-	{ p_ZZ9cnn_accelE8w1_local_194 sc_in sc_lv 32 signal 141 } 
-	{ p_ZZ9cnn_accelE8w1_local_14 sc_in sc_lv 32 signal 142 } 
-	{ p_ZZ9cnn_accelE8w1_local_41 sc_in sc_lv 32 signal 143 } 
-	{ p_ZZ9cnn_accelE8w1_local_68 sc_in sc_lv 32 signal 144 } 
-	{ p_ZZ9cnn_accelE8w1_local_95 sc_in sc_lv 32 signal 145 } 
-	{ p_ZZ9cnn_accelE8w1_local_122 sc_in sc_lv 32 signal 146 } 
-	{ p_ZZ9cnn_accelE8w1_local_149 sc_in sc_lv 32 signal 147 } 
-	{ p_ZZ9cnn_accelE8w1_local_176 sc_in sc_lv 32 signal 148 } 
-	{ p_ZZ9cnn_accelE8w1_local_203 sc_in sc_lv 32 signal 149 } 
-	{ p_ZZ9cnn_accelE8w1_local_23 sc_in sc_lv 32 signal 150 } 
-	{ p_ZZ9cnn_accelE8w1_local_50 sc_in sc_lv 32 signal 151 } 
-	{ p_ZZ9cnn_accelE8w1_local_77 sc_in sc_lv 32 signal 152 } 
-	{ p_ZZ9cnn_accelE8w1_local_104 sc_in sc_lv 32 signal 153 } 
-	{ p_ZZ9cnn_accelE8w1_local_131 sc_in sc_lv 32 signal 154 } 
-	{ p_ZZ9cnn_accelE8w1_local_158 sc_in sc_lv 32 signal 155 } 
-	{ p_ZZ9cnn_accelE8w1_local_185 sc_in sc_lv 32 signal 156 } 
-	{ p_ZZ9cnn_accelE8w1_local_212 sc_in sc_lv 32 signal 157 } 
-	{ w1_local_6 sc_in sc_lv 32 signal 158 } 
-	{ p_ZZ9cnn_accelE8w1_local_33 sc_in sc_lv 32 signal 159 } 
-	{ p_ZZ9cnn_accelE8w1_local_60 sc_in sc_lv 32 signal 160 } 
-	{ p_ZZ9cnn_accelE8w1_local_87 sc_in sc_lv 32 signal 161 } 
-	{ p_ZZ9cnn_accelE8w1_local_114 sc_in sc_lv 32 signal 162 } 
-	{ p_ZZ9cnn_accelE8w1_local_141 sc_in sc_lv 32 signal 163 } 
-	{ p_ZZ9cnn_accelE8w1_local_168 sc_in sc_lv 32 signal 164 } 
-	{ p_ZZ9cnn_accelE8w1_local_195 sc_in sc_lv 32 signal 165 } 
-	{ p_ZZ9cnn_accelE8w1_local_15 sc_in sc_lv 32 signal 166 } 
-	{ p_ZZ9cnn_accelE8w1_local_42 sc_in sc_lv 32 signal 167 } 
-	{ p_ZZ9cnn_accelE8w1_local_69 sc_in sc_lv 32 signal 168 } 
-	{ p_ZZ9cnn_accelE8w1_local_96 sc_in sc_lv 32 signal 169 } 
-	{ p_ZZ9cnn_accelE8w1_local_123 sc_in sc_lv 32 signal 170 } 
-	{ p_ZZ9cnn_accelE8w1_local_150 sc_in sc_lv 32 signal 171 } 
-	{ p_ZZ9cnn_accelE8w1_local_177 sc_in sc_lv 32 signal 172 } 
-	{ p_ZZ9cnn_accelE8w1_local_204 sc_in sc_lv 32 signal 173 } 
-	{ p_ZZ9cnn_accelE8w1_local_24 sc_in sc_lv 32 signal 174 } 
-	{ p_ZZ9cnn_accelE8w1_local_51 sc_in sc_lv 32 signal 175 } 
-	{ p_ZZ9cnn_accelE8w1_local_78 sc_in sc_lv 32 signal 176 } 
-	{ p_ZZ9cnn_accelE8w1_local_105 sc_in sc_lv 32 signal 177 } 
-	{ p_ZZ9cnn_accelE8w1_local_132 sc_in sc_lv 32 signal 178 } 
-	{ p_ZZ9cnn_accelE8w1_local_159 sc_in sc_lv 32 signal 179 } 
-	{ p_ZZ9cnn_accelE8w1_local_186 sc_in sc_lv 32 signal 180 } 
-	{ p_ZZ9cnn_accelE8w1_local_213 sc_in sc_lv 32 signal 181 } 
-	{ w1_local_7 sc_in sc_lv 32 signal 182 } 
-	{ p_ZZ9cnn_accelE8w1_local_34 sc_in sc_lv 32 signal 183 } 
-	{ p_ZZ9cnn_accelE8w1_local_61 sc_in sc_lv 32 signal 184 } 
-	{ p_ZZ9cnn_accelE8w1_local_88 sc_in sc_lv 32 signal 185 } 
-	{ p_ZZ9cnn_accelE8w1_local_115 sc_in sc_lv 32 signal 186 } 
-	{ p_ZZ9cnn_accelE8w1_local_142 sc_in sc_lv 32 signal 187 } 
-	{ p_ZZ9cnn_accelE8w1_local_169 sc_in sc_lv 32 signal 188 } 
-	{ p_ZZ9cnn_accelE8w1_local_196 sc_in sc_lv 32 signal 189 } 
-	{ p_ZZ9cnn_accelE8w1_local_16 sc_in sc_lv 32 signal 190 } 
-	{ p_ZZ9cnn_accelE8w1_local_43 sc_in sc_lv 32 signal 191 } 
-	{ p_ZZ9cnn_accelE8w1_local_70 sc_in sc_lv 32 signal 192 } 
-	{ p_ZZ9cnn_accelE8w1_local_97 sc_in sc_lv 32 signal 193 } 
-	{ p_ZZ9cnn_accelE8w1_local_124 sc_in sc_lv 32 signal 194 } 
-	{ p_ZZ9cnn_accelE8w1_local_151 sc_in sc_lv 32 signal 195 } 
-	{ p_ZZ9cnn_accelE8w1_local_178 sc_in sc_lv 32 signal 196 } 
-	{ p_ZZ9cnn_accelE8w1_local_205 sc_in sc_lv 32 signal 197 } 
-	{ p_ZZ9cnn_accelE8w1_local_25 sc_in sc_lv 32 signal 198 } 
-	{ p_ZZ9cnn_accelE8w1_local_52 sc_in sc_lv 32 signal 199 } 
-	{ p_ZZ9cnn_accelE8w1_local_79 sc_in sc_lv 32 signal 200 } 
-	{ p_ZZ9cnn_accelE8w1_local_106 sc_in sc_lv 32 signal 201 } 
-	{ p_ZZ9cnn_accelE8w1_local_133 sc_in sc_lv 32 signal 202 } 
-	{ p_ZZ9cnn_accelE8w1_local_160 sc_in sc_lv 32 signal 203 } 
-	{ p_ZZ9cnn_accelE8w1_local_187 sc_in sc_lv 32 signal 204 } 
-	{ p_ZZ9cnn_accelE8w1_local_214 sc_in sc_lv 32 signal 205 } 
-	{ w1_local_8 sc_in sc_lv 32 signal 206 } 
-	{ p_ZZ9cnn_accelE8w1_local_35 sc_in sc_lv 32 signal 207 } 
-	{ p_ZZ9cnn_accelE8w1_local_62 sc_in sc_lv 32 signal 208 } 
-	{ p_ZZ9cnn_accelE8w1_local_89 sc_in sc_lv 32 signal 209 } 
-	{ p_ZZ9cnn_accelE8w1_local_116 sc_in sc_lv 32 signal 210 } 
-	{ p_ZZ9cnn_accelE8w1_local_143 sc_in sc_lv 32 signal 211 } 
-	{ p_ZZ9cnn_accelE8w1_local_170 sc_in sc_lv 32 signal 212 } 
-	{ p_ZZ9cnn_accelE8w1_local_197 sc_in sc_lv 32 signal 213 } 
-	{ p_ZZ9cnn_accelE8w1_local_17 sc_in sc_lv 32 signal 214 } 
-	{ p_ZZ9cnn_accelE8w1_local_44 sc_in sc_lv 32 signal 215 } 
-	{ p_ZZ9cnn_accelE8w1_local_71 sc_in sc_lv 32 signal 216 } 
-	{ p_ZZ9cnn_accelE8w1_local_98 sc_in sc_lv 32 signal 217 } 
-	{ p_ZZ9cnn_accelE8w1_local_125 sc_in sc_lv 32 signal 218 } 
-	{ p_ZZ9cnn_accelE8w1_local_152 sc_in sc_lv 32 signal 219 } 
-	{ p_ZZ9cnn_accelE8w1_local_179 sc_in sc_lv 32 signal 220 } 
-	{ p_ZZ9cnn_accelE8w1_local_206 sc_in sc_lv 32 signal 221 } 
-	{ p_ZZ9cnn_accelE8w1_local_26 sc_in sc_lv 32 signal 222 } 
-	{ p_ZZ9cnn_accelE8w1_local_53 sc_in sc_lv 32 signal 223 } 
-	{ p_ZZ9cnn_accelE8w1_local_80 sc_in sc_lv 32 signal 224 } 
-	{ p_ZZ9cnn_accelE8w1_local_107 sc_in sc_lv 32 signal 225 } 
-	{ p_ZZ9cnn_accelE8w1_local_134 sc_in sc_lv 32 signal 226 } 
-	{ p_ZZ9cnn_accelE8w1_local_161 sc_in sc_lv 32 signal 227 } 
-	{ p_ZZ9cnn_accelE8w1_local_188 sc_in sc_lv 32 signal 228 } 
-	{ p_ZZ9cnn_accelE8w1_local_215 sc_in sc_lv 32 signal 229 } 
-	{ grp_fu_9558_p_din0 sc_out sc_lv 32 signal -1 } 
-	{ grp_fu_9558_p_din1 sc_out sc_lv 32 signal -1 } 
-	{ grp_fu_9558_p_opcode sc_out sc_lv 1 signal -1 } 
-	{ grp_fu_9558_p_dout0 sc_in sc_lv 32 signal -1 } 
-	{ grp_fu_9558_p_ce sc_out sc_logic 1 signal -1 } 
-	{ grp_fu_9562_p_din0 sc_out sc_lv 32 signal -1 } 
-	{ grp_fu_9562_p_din1 sc_out sc_lv 32 signal -1 } 
-	{ grp_fu_9562_p_opcode sc_out sc_lv 1 signal -1 } 
-	{ grp_fu_9562_p_dout0 sc_in sc_lv 32 signal -1 } 
-	{ grp_fu_9562_p_ce sc_out sc_logic 1 signal -1 } 
-	{ grp_fu_9566_p_din0 sc_out sc_lv 32 signal -1 } 
-	{ grp_fu_9566_p_din1 sc_out sc_lv 32 signal -1 } 
-	{ grp_fu_9566_p_opcode sc_out sc_lv 2 signal -1 } 
-	{ grp_fu_9566_p_dout0 sc_in sc_lv 32 signal -1 } 
-	{ grp_fu_9566_p_ce sc_out sc_logic 1 signal -1 } 
-	{ grp_fu_9570_p_din0 sc_out sc_lv 32 signal -1 } 
-	{ grp_fu_9570_p_din1 sc_out sc_lv 32 signal -1 } 
-	{ grp_fu_9570_p_dout0 sc_in sc_lv 32 signal -1 } 
-	{ grp_fu_9570_p_ce sc_out sc_logic 1 signal -1 } 
-	{ grp_fu_9574_p_din0 sc_out sc_lv 32 signal -1 } 
-	{ grp_fu_9574_p_din1 sc_out sc_lv 32 signal -1 } 
-	{ grp_fu_9574_p_dout0 sc_in sc_lv 32 signal -1 } 
-	{ grp_fu_9574_p_ce sc_out sc_logic 1 signal -1 } 
-	{ grp_fu_9578_p_din0 sc_out sc_lv 32 signal -1 } 
-	{ grp_fu_9578_p_din1 sc_out sc_lv 32 signal -1 } 
-	{ grp_fu_9578_p_dout0 sc_in sc_lv 32 signal -1 } 
-	{ grp_fu_9578_p_ce sc_out sc_logic 1 signal -1 } 
-	{ grp_fu_9582_p_din0 sc_out sc_lv 32 signal -1 } 
-	{ grp_fu_9582_p_din1 sc_out sc_lv 32 signal -1 } 
-	{ grp_fu_9582_p_opcode sc_out sc_lv 5 signal -1 } 
-	{ grp_fu_9582_p_dout0 sc_in sc_lv 1 signal -1 } 
-	{ grp_fu_9582_p_ce sc_out sc_logic 1 signal -1 } 
+	{ b1_local sc_in sc_lv 32 signal 5 } 
+	{ b1_local_10 sc_in sc_lv 32 signal 6 } 
+	{ b1_local_11 sc_in sc_lv 32 signal 7 } 
+	{ b1_local_12 sc_in sc_lv 32 signal 8 } 
+	{ b1_local_13 sc_in sc_lv 32 signal 9 } 
+	{ b1_local_14 sc_in sc_lv 32 signal 10 } 
+	{ b1_local_15 sc_in sc_lv 32 signal 11 } 
+	{ b1_local_16 sc_in sc_lv 32 signal 12 } 
+	{ w1_local sc_in sc_lv 32 signal 13 } 
+	{ p_ZZ9cnn_accelE8w1_local_27 sc_in sc_lv 32 signal 14 } 
+	{ p_ZZ9cnn_accelE8w1_local_54 sc_in sc_lv 32 signal 15 } 
+	{ p_ZZ9cnn_accelE8w1_local_81 sc_in sc_lv 32 signal 16 } 
+	{ p_ZZ9cnn_accelE8w1_local_108 sc_in sc_lv 32 signal 17 } 
+	{ p_ZZ9cnn_accelE8w1_local_135 sc_in sc_lv 32 signal 18 } 
+	{ p_ZZ9cnn_accelE8w1_local_162 sc_in sc_lv 32 signal 19 } 
+	{ p_ZZ9cnn_accelE8w1_local_189 sc_in sc_lv 32 signal 20 } 
+	{ w1_local_9 sc_in sc_lv 32 signal 21 } 
+	{ p_ZZ9cnn_accelE8w1_local_36 sc_in sc_lv 32 signal 22 } 
+	{ p_ZZ9cnn_accelE8w1_local_63 sc_in sc_lv 32 signal 23 } 
+	{ p_ZZ9cnn_accelE8w1_local_90 sc_in sc_lv 32 signal 24 } 
+	{ p_ZZ9cnn_accelE8w1_local_117 sc_in sc_lv 32 signal 25 } 
+	{ p_ZZ9cnn_accelE8w1_local_144 sc_in sc_lv 32 signal 26 } 
+	{ p_ZZ9cnn_accelE8w1_local_171 sc_in sc_lv 32 signal 27 } 
+	{ p_ZZ9cnn_accelE8w1_local_198 sc_in sc_lv 32 signal 28 } 
+	{ p_ZZ9cnn_accelE8w1_local_18 sc_in sc_lv 32 signal 29 } 
+	{ p_ZZ9cnn_accelE8w1_local_45 sc_in sc_lv 32 signal 30 } 
+	{ p_ZZ9cnn_accelE8w1_local_72 sc_in sc_lv 32 signal 31 } 
+	{ p_ZZ9cnn_accelE8w1_local_99 sc_in sc_lv 32 signal 32 } 
+	{ p_ZZ9cnn_accelE8w1_local_126 sc_in sc_lv 32 signal 33 } 
+	{ p_ZZ9cnn_accelE8w1_local_153 sc_in sc_lv 32 signal 34 } 
+	{ p_ZZ9cnn_accelE8w1_local_180 sc_in sc_lv 32 signal 35 } 
+	{ p_ZZ9cnn_accelE8w1_local_207 sc_in sc_lv 32 signal 36 } 
+	{ w1_local_1 sc_in sc_lv 32 signal 37 } 
+	{ p_ZZ9cnn_accelE8w1_local_28 sc_in sc_lv 32 signal 38 } 
+	{ p_ZZ9cnn_accelE8w1_local_55 sc_in sc_lv 32 signal 39 } 
+	{ p_ZZ9cnn_accelE8w1_local_82 sc_in sc_lv 32 signal 40 } 
+	{ p_ZZ9cnn_accelE8w1_local_109 sc_in sc_lv 32 signal 41 } 
+	{ p_ZZ9cnn_accelE8w1_local_136 sc_in sc_lv 32 signal 42 } 
+	{ p_ZZ9cnn_accelE8w1_local_163 sc_in sc_lv 32 signal 43 } 
+	{ p_ZZ9cnn_accelE8w1_local_190 sc_in sc_lv 32 signal 44 } 
+	{ p_ZZ9cnn_accelE8w1_local_10 sc_in sc_lv 32 signal 45 } 
+	{ p_ZZ9cnn_accelE8w1_local_37 sc_in sc_lv 32 signal 46 } 
+	{ p_ZZ9cnn_accelE8w1_local_64 sc_in sc_lv 32 signal 47 } 
+	{ p_ZZ9cnn_accelE8w1_local_91 sc_in sc_lv 32 signal 48 } 
+	{ p_ZZ9cnn_accelE8w1_local_118 sc_in sc_lv 32 signal 49 } 
+	{ p_ZZ9cnn_accelE8w1_local_145 sc_in sc_lv 32 signal 50 } 
+	{ p_ZZ9cnn_accelE8w1_local_172 sc_in sc_lv 32 signal 51 } 
+	{ p_ZZ9cnn_accelE8w1_local_199 sc_in sc_lv 32 signal 52 } 
+	{ p_ZZ9cnn_accelE8w1_local_19 sc_in sc_lv 32 signal 53 } 
+	{ p_ZZ9cnn_accelE8w1_local_46 sc_in sc_lv 32 signal 54 } 
+	{ p_ZZ9cnn_accelE8w1_local_73 sc_in sc_lv 32 signal 55 } 
+	{ p_ZZ9cnn_accelE8w1_local_100 sc_in sc_lv 32 signal 56 } 
+	{ p_ZZ9cnn_accelE8w1_local_127 sc_in sc_lv 32 signal 57 } 
+	{ p_ZZ9cnn_accelE8w1_local_154 sc_in sc_lv 32 signal 58 } 
+	{ p_ZZ9cnn_accelE8w1_local_181 sc_in sc_lv 32 signal 59 } 
+	{ p_ZZ9cnn_accelE8w1_local_208 sc_in sc_lv 32 signal 60 } 
+	{ w1_local_2 sc_in sc_lv 32 signal 61 } 
+	{ p_ZZ9cnn_accelE8w1_local_29 sc_in sc_lv 32 signal 62 } 
+	{ p_ZZ9cnn_accelE8w1_local_56 sc_in sc_lv 32 signal 63 } 
+	{ p_ZZ9cnn_accelE8w1_local_83 sc_in sc_lv 32 signal 64 } 
+	{ p_ZZ9cnn_accelE8w1_local_110 sc_in sc_lv 32 signal 65 } 
+	{ p_ZZ9cnn_accelE8w1_local_137 sc_in sc_lv 32 signal 66 } 
+	{ p_ZZ9cnn_accelE8w1_local_164 sc_in sc_lv 32 signal 67 } 
+	{ p_ZZ9cnn_accelE8w1_local_191 sc_in sc_lv 32 signal 68 } 
+	{ p_ZZ9cnn_accelE8w1_local_11 sc_in sc_lv 32 signal 69 } 
+	{ p_ZZ9cnn_accelE8w1_local_38 sc_in sc_lv 32 signal 70 } 
+	{ p_ZZ9cnn_accelE8w1_local_65 sc_in sc_lv 32 signal 71 } 
+	{ p_ZZ9cnn_accelE8w1_local_92 sc_in sc_lv 32 signal 72 } 
+	{ p_ZZ9cnn_accelE8w1_local_119 sc_in sc_lv 32 signal 73 } 
+	{ p_ZZ9cnn_accelE8w1_local_146 sc_in sc_lv 32 signal 74 } 
+	{ p_ZZ9cnn_accelE8w1_local_173 sc_in sc_lv 32 signal 75 } 
+	{ p_ZZ9cnn_accelE8w1_local_200 sc_in sc_lv 32 signal 76 } 
+	{ p_ZZ9cnn_accelE8w1_local_20 sc_in sc_lv 32 signal 77 } 
+	{ p_ZZ9cnn_accelE8w1_local_47 sc_in sc_lv 32 signal 78 } 
+	{ p_ZZ9cnn_accelE8w1_local_74 sc_in sc_lv 32 signal 79 } 
+	{ p_ZZ9cnn_accelE8w1_local_101 sc_in sc_lv 32 signal 80 } 
+	{ p_ZZ9cnn_accelE8w1_local_128 sc_in sc_lv 32 signal 81 } 
+	{ p_ZZ9cnn_accelE8w1_local_155 sc_in sc_lv 32 signal 82 } 
+	{ p_ZZ9cnn_accelE8w1_local_182 sc_in sc_lv 32 signal 83 } 
+	{ p_ZZ9cnn_accelE8w1_local_209 sc_in sc_lv 32 signal 84 } 
+	{ w1_local_3 sc_in sc_lv 32 signal 85 } 
+	{ p_ZZ9cnn_accelE8w1_local_30 sc_in sc_lv 32 signal 86 } 
+	{ p_ZZ9cnn_accelE8w1_local_57 sc_in sc_lv 32 signal 87 } 
+	{ p_ZZ9cnn_accelE8w1_local_84 sc_in sc_lv 32 signal 88 } 
+	{ p_ZZ9cnn_accelE8w1_local_111 sc_in sc_lv 32 signal 89 } 
+	{ p_ZZ9cnn_accelE8w1_local_138 sc_in sc_lv 32 signal 90 } 
+	{ p_ZZ9cnn_accelE8w1_local_165 sc_in sc_lv 32 signal 91 } 
+	{ p_ZZ9cnn_accelE8w1_local_192 sc_in sc_lv 32 signal 92 } 
+	{ p_ZZ9cnn_accelE8w1_local_12 sc_in sc_lv 32 signal 93 } 
+	{ p_ZZ9cnn_accelE8w1_local_39 sc_in sc_lv 32 signal 94 } 
+	{ p_ZZ9cnn_accelE8w1_local_66 sc_in sc_lv 32 signal 95 } 
+	{ p_ZZ9cnn_accelE8w1_local_93 sc_in sc_lv 32 signal 96 } 
+	{ p_ZZ9cnn_accelE8w1_local_120 sc_in sc_lv 32 signal 97 } 
+	{ p_ZZ9cnn_accelE8w1_local_147 sc_in sc_lv 32 signal 98 } 
+	{ p_ZZ9cnn_accelE8w1_local_174 sc_in sc_lv 32 signal 99 } 
+	{ p_ZZ9cnn_accelE8w1_local_201 sc_in sc_lv 32 signal 100 } 
+	{ p_ZZ9cnn_accelE8w1_local_21 sc_in sc_lv 32 signal 101 } 
+	{ p_ZZ9cnn_accelE8w1_local_48 sc_in sc_lv 32 signal 102 } 
+	{ p_ZZ9cnn_accelE8w1_local_75 sc_in sc_lv 32 signal 103 } 
+	{ p_ZZ9cnn_accelE8w1_local_102 sc_in sc_lv 32 signal 104 } 
+	{ p_ZZ9cnn_accelE8w1_local_129 sc_in sc_lv 32 signal 105 } 
+	{ p_ZZ9cnn_accelE8w1_local_156 sc_in sc_lv 32 signal 106 } 
+	{ p_ZZ9cnn_accelE8w1_local_183 sc_in sc_lv 32 signal 107 } 
+	{ p_ZZ9cnn_accelE8w1_local_210 sc_in sc_lv 32 signal 108 } 
+	{ w1_local_4 sc_in sc_lv 32 signal 109 } 
+	{ p_ZZ9cnn_accelE8w1_local_31 sc_in sc_lv 32 signal 110 } 
+	{ p_ZZ9cnn_accelE8w1_local_58 sc_in sc_lv 32 signal 111 } 
+	{ p_ZZ9cnn_accelE8w1_local_85 sc_in sc_lv 32 signal 112 } 
+	{ p_ZZ9cnn_accelE8w1_local_112 sc_in sc_lv 32 signal 113 } 
+	{ p_ZZ9cnn_accelE8w1_local_139 sc_in sc_lv 32 signal 114 } 
+	{ p_ZZ9cnn_accelE8w1_local_166 sc_in sc_lv 32 signal 115 } 
+	{ p_ZZ9cnn_accelE8w1_local_193 sc_in sc_lv 32 signal 116 } 
+	{ p_ZZ9cnn_accelE8w1_local_13 sc_in sc_lv 32 signal 117 } 
+	{ p_ZZ9cnn_accelE8w1_local_40 sc_in sc_lv 32 signal 118 } 
+	{ p_ZZ9cnn_accelE8w1_local_67 sc_in sc_lv 32 signal 119 } 
+	{ p_ZZ9cnn_accelE8w1_local_94 sc_in sc_lv 32 signal 120 } 
+	{ p_ZZ9cnn_accelE8w1_local_121 sc_in sc_lv 32 signal 121 } 
+	{ p_ZZ9cnn_accelE8w1_local_148 sc_in sc_lv 32 signal 122 } 
+	{ p_ZZ9cnn_accelE8w1_local_175 sc_in sc_lv 32 signal 123 } 
+	{ p_ZZ9cnn_accelE8w1_local_202 sc_in sc_lv 32 signal 124 } 
+	{ p_ZZ9cnn_accelE8w1_local_22 sc_in sc_lv 32 signal 125 } 
+	{ p_ZZ9cnn_accelE8w1_local_49 sc_in sc_lv 32 signal 126 } 
+	{ p_ZZ9cnn_accelE8w1_local_76 sc_in sc_lv 32 signal 127 } 
+	{ p_ZZ9cnn_accelE8w1_local_103 sc_in sc_lv 32 signal 128 } 
+	{ p_ZZ9cnn_accelE8w1_local_130 sc_in sc_lv 32 signal 129 } 
+	{ p_ZZ9cnn_accelE8w1_local_157 sc_in sc_lv 32 signal 130 } 
+	{ p_ZZ9cnn_accelE8w1_local_184 sc_in sc_lv 32 signal 131 } 
+	{ p_ZZ9cnn_accelE8w1_local_211 sc_in sc_lv 32 signal 132 } 
+	{ w1_local_5 sc_in sc_lv 32 signal 133 } 
+	{ p_ZZ9cnn_accelE8w1_local_32 sc_in sc_lv 32 signal 134 } 
+	{ p_ZZ9cnn_accelE8w1_local_59 sc_in sc_lv 32 signal 135 } 
+	{ p_ZZ9cnn_accelE8w1_local_86 sc_in sc_lv 32 signal 136 } 
+	{ p_ZZ9cnn_accelE8w1_local_113 sc_in sc_lv 32 signal 137 } 
+	{ p_ZZ9cnn_accelE8w1_local_140 sc_in sc_lv 32 signal 138 } 
+	{ p_ZZ9cnn_accelE8w1_local_167 sc_in sc_lv 32 signal 139 } 
+	{ p_ZZ9cnn_accelE8w1_local_194 sc_in sc_lv 32 signal 140 } 
+	{ p_ZZ9cnn_accelE8w1_local_14 sc_in sc_lv 32 signal 141 } 
+	{ p_ZZ9cnn_accelE8w1_local_41 sc_in sc_lv 32 signal 142 } 
+	{ p_ZZ9cnn_accelE8w1_local_68 sc_in sc_lv 32 signal 143 } 
+	{ p_ZZ9cnn_accelE8w1_local_95 sc_in sc_lv 32 signal 144 } 
+	{ p_ZZ9cnn_accelE8w1_local_122 sc_in sc_lv 32 signal 145 } 
+	{ p_ZZ9cnn_accelE8w1_local_149 sc_in sc_lv 32 signal 146 } 
+	{ p_ZZ9cnn_accelE8w1_local_176 sc_in sc_lv 32 signal 147 } 
+	{ p_ZZ9cnn_accelE8w1_local_203 sc_in sc_lv 32 signal 148 } 
+	{ p_ZZ9cnn_accelE8w1_local_23 sc_in sc_lv 32 signal 149 } 
+	{ p_ZZ9cnn_accelE8w1_local_50 sc_in sc_lv 32 signal 150 } 
+	{ p_ZZ9cnn_accelE8w1_local_77 sc_in sc_lv 32 signal 151 } 
+	{ p_ZZ9cnn_accelE8w1_local_104 sc_in sc_lv 32 signal 152 } 
+	{ p_ZZ9cnn_accelE8w1_local_131 sc_in sc_lv 32 signal 153 } 
+	{ p_ZZ9cnn_accelE8w1_local_158 sc_in sc_lv 32 signal 154 } 
+	{ p_ZZ9cnn_accelE8w1_local_185 sc_in sc_lv 32 signal 155 } 
+	{ p_ZZ9cnn_accelE8w1_local_212 sc_in sc_lv 32 signal 156 } 
+	{ w1_local_6 sc_in sc_lv 32 signal 157 } 
+	{ p_ZZ9cnn_accelE8w1_local_33 sc_in sc_lv 32 signal 158 } 
+	{ p_ZZ9cnn_accelE8w1_local_60 sc_in sc_lv 32 signal 159 } 
+	{ p_ZZ9cnn_accelE8w1_local_87 sc_in sc_lv 32 signal 160 } 
+	{ p_ZZ9cnn_accelE8w1_local_114 sc_in sc_lv 32 signal 161 } 
+	{ p_ZZ9cnn_accelE8w1_local_141 sc_in sc_lv 32 signal 162 } 
+	{ p_ZZ9cnn_accelE8w1_local_168 sc_in sc_lv 32 signal 163 } 
+	{ p_ZZ9cnn_accelE8w1_local_195 sc_in sc_lv 32 signal 164 } 
+	{ p_ZZ9cnn_accelE8w1_local_15 sc_in sc_lv 32 signal 165 } 
+	{ p_ZZ9cnn_accelE8w1_local_42 sc_in sc_lv 32 signal 166 } 
+	{ p_ZZ9cnn_accelE8w1_local_69 sc_in sc_lv 32 signal 167 } 
+	{ p_ZZ9cnn_accelE8w1_local_96 sc_in sc_lv 32 signal 168 } 
+	{ p_ZZ9cnn_accelE8w1_local_123 sc_in sc_lv 32 signal 169 } 
+	{ p_ZZ9cnn_accelE8w1_local_150 sc_in sc_lv 32 signal 170 } 
+	{ p_ZZ9cnn_accelE8w1_local_177 sc_in sc_lv 32 signal 171 } 
+	{ p_ZZ9cnn_accelE8w1_local_204 sc_in sc_lv 32 signal 172 } 
+	{ p_ZZ9cnn_accelE8w1_local_24 sc_in sc_lv 32 signal 173 } 
+	{ p_ZZ9cnn_accelE8w1_local_51 sc_in sc_lv 32 signal 174 } 
+	{ p_ZZ9cnn_accelE8w1_local_78 sc_in sc_lv 32 signal 175 } 
+	{ p_ZZ9cnn_accelE8w1_local_105 sc_in sc_lv 32 signal 176 } 
+	{ p_ZZ9cnn_accelE8w1_local_132 sc_in sc_lv 32 signal 177 } 
+	{ p_ZZ9cnn_accelE8w1_local_159 sc_in sc_lv 32 signal 178 } 
+	{ p_ZZ9cnn_accelE8w1_local_186 sc_in sc_lv 32 signal 179 } 
+	{ p_ZZ9cnn_accelE8w1_local_213 sc_in sc_lv 32 signal 180 } 
+	{ w1_local_7 sc_in sc_lv 32 signal 181 } 
+	{ p_ZZ9cnn_accelE8w1_local_34 sc_in sc_lv 32 signal 182 } 
+	{ p_ZZ9cnn_accelE8w1_local_61 sc_in sc_lv 32 signal 183 } 
+	{ p_ZZ9cnn_accelE8w1_local_88 sc_in sc_lv 32 signal 184 } 
+	{ p_ZZ9cnn_accelE8w1_local_115 sc_in sc_lv 32 signal 185 } 
+	{ p_ZZ9cnn_accelE8w1_local_142 sc_in sc_lv 32 signal 186 } 
+	{ p_ZZ9cnn_accelE8w1_local_169 sc_in sc_lv 32 signal 187 } 
+	{ p_ZZ9cnn_accelE8w1_local_196 sc_in sc_lv 32 signal 188 } 
+	{ p_ZZ9cnn_accelE8w1_local_16 sc_in sc_lv 32 signal 189 } 
+	{ p_ZZ9cnn_accelE8w1_local_43 sc_in sc_lv 32 signal 190 } 
+	{ p_ZZ9cnn_accelE8w1_local_70 sc_in sc_lv 32 signal 191 } 
+	{ p_ZZ9cnn_accelE8w1_local_97 sc_in sc_lv 32 signal 192 } 
+	{ p_ZZ9cnn_accelE8w1_local_124 sc_in sc_lv 32 signal 193 } 
+	{ p_ZZ9cnn_accelE8w1_local_151 sc_in sc_lv 32 signal 194 } 
+	{ p_ZZ9cnn_accelE8w1_local_178 sc_in sc_lv 32 signal 195 } 
+	{ p_ZZ9cnn_accelE8w1_local_205 sc_in sc_lv 32 signal 196 } 
+	{ p_ZZ9cnn_accelE8w1_local_25 sc_in sc_lv 32 signal 197 } 
+	{ p_ZZ9cnn_accelE8w1_local_52 sc_in sc_lv 32 signal 198 } 
+	{ p_ZZ9cnn_accelE8w1_local_79 sc_in sc_lv 32 signal 199 } 
+	{ p_ZZ9cnn_accelE8w1_local_106 sc_in sc_lv 32 signal 200 } 
+	{ p_ZZ9cnn_accelE8w1_local_133 sc_in sc_lv 32 signal 201 } 
+	{ p_ZZ9cnn_accelE8w1_local_160 sc_in sc_lv 32 signal 202 } 
+	{ p_ZZ9cnn_accelE8w1_local_187 sc_in sc_lv 32 signal 203 } 
+	{ p_ZZ9cnn_accelE8w1_local_214 sc_in sc_lv 32 signal 204 } 
+	{ w1_local_8 sc_in sc_lv 32 signal 205 } 
+	{ p_ZZ9cnn_accelE8w1_local_35 sc_in sc_lv 32 signal 206 } 
+	{ p_ZZ9cnn_accelE8w1_local_62 sc_in sc_lv 32 signal 207 } 
+	{ p_ZZ9cnn_accelE8w1_local_89 sc_in sc_lv 32 signal 208 } 
+	{ p_ZZ9cnn_accelE8w1_local_116 sc_in sc_lv 32 signal 209 } 
+	{ p_ZZ9cnn_accelE8w1_local_143 sc_in sc_lv 32 signal 210 } 
+	{ p_ZZ9cnn_accelE8w1_local_170 sc_in sc_lv 32 signal 211 } 
+	{ p_ZZ9cnn_accelE8w1_local_197 sc_in sc_lv 32 signal 212 } 
+	{ p_ZZ9cnn_accelE8w1_local_17 sc_in sc_lv 32 signal 213 } 
+	{ p_ZZ9cnn_accelE8w1_local_44 sc_in sc_lv 32 signal 214 } 
+	{ p_ZZ9cnn_accelE8w1_local_71 sc_in sc_lv 32 signal 215 } 
+	{ p_ZZ9cnn_accelE8w1_local_98 sc_in sc_lv 32 signal 216 } 
+	{ p_ZZ9cnn_accelE8w1_local_125 sc_in sc_lv 32 signal 217 } 
+	{ p_ZZ9cnn_accelE8w1_local_152 sc_in sc_lv 32 signal 218 } 
+	{ p_ZZ9cnn_accelE8w1_local_179 sc_in sc_lv 32 signal 219 } 
+	{ p_ZZ9cnn_accelE8w1_local_206 sc_in sc_lv 32 signal 220 } 
+	{ p_ZZ9cnn_accelE8w1_local_26 sc_in sc_lv 32 signal 221 } 
+	{ p_ZZ9cnn_accelE8w1_local_53 sc_in sc_lv 32 signal 222 } 
+	{ p_ZZ9cnn_accelE8w1_local_80 sc_in sc_lv 32 signal 223 } 
+	{ p_ZZ9cnn_accelE8w1_local_107 sc_in sc_lv 32 signal 224 } 
+	{ p_ZZ9cnn_accelE8w1_local_134 sc_in sc_lv 32 signal 225 } 
+	{ p_ZZ9cnn_accelE8w1_local_161 sc_in sc_lv 32 signal 226 } 
+	{ p_ZZ9cnn_accelE8w1_local_188 sc_in sc_lv 32 signal 227 } 
+	{ p_ZZ9cnn_accelE8w1_local_215 sc_in sc_lv 32 signal 228 } 
+	{ grp_fu_9552_p_din0 sc_out sc_lv 32 signal -1 } 
+	{ grp_fu_9552_p_din1 sc_out sc_lv 32 signal -1 } 
+	{ grp_fu_9552_p_opcode sc_out sc_lv 1 signal -1 } 
+	{ grp_fu_9552_p_dout0 sc_in sc_lv 32 signal -1 } 
+	{ grp_fu_9552_p_ce sc_out sc_logic 1 signal -1 } 
+	{ grp_fu_9556_p_din0 sc_out sc_lv 32 signal -1 } 
+	{ grp_fu_9556_p_din1 sc_out sc_lv 32 signal -1 } 
+	{ grp_fu_9556_p_opcode sc_out sc_lv 1 signal -1 } 
+	{ grp_fu_9556_p_dout0 sc_in sc_lv 32 signal -1 } 
+	{ grp_fu_9556_p_ce sc_out sc_logic 1 signal -1 } 
+	{ grp_fu_9560_p_din0 sc_out sc_lv 32 signal -1 } 
+	{ grp_fu_9560_p_din1 sc_out sc_lv 32 signal -1 } 
+	{ grp_fu_9560_p_dout0 sc_in sc_lv 32 signal -1 } 
+	{ grp_fu_9560_p_ce sc_out sc_logic 1 signal -1 } 
+	{ grp_fu_9564_p_din0 sc_out sc_lv 32 signal -1 } 
+	{ grp_fu_9564_p_din1 sc_out sc_lv 32 signal -1 } 
+	{ grp_fu_9564_p_dout0 sc_in sc_lv 32 signal -1 } 
+	{ grp_fu_9564_p_ce sc_out sc_logic 1 signal -1 } 
+	{ grp_fu_9568_p_din0 sc_out sc_lv 32 signal -1 } 
+	{ grp_fu_9568_p_din1 sc_out sc_lv 32 signal -1 } 
+	{ grp_fu_9568_p_opcode sc_out sc_lv 5 signal -1 } 
+	{ grp_fu_9568_p_dout0 sc_in sc_lv 1 signal -1 } 
+	{ grp_fu_9568_p_ce sc_out sc_logic 1 signal -1 } 
 }
 set NewPortList {[ 
 	{ "name": "ap_clk", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "clock", "bundle":{"name": "ap_clk", "role": "default" }} , 
@@ -795,6 +777,10 @@ set NewPortList {[
  	{ "name": "feat1_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "feat1", "role": "ce0" }} , 
  	{ "name": "feat1_we0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "feat1", "role": "we0" }} , 
  	{ "name": "feat1_d0", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "feat1", "role": "d0" }} , 
+ 	{ "name": "feat1_60_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":18, "type": "signal", "bundle":{"name": "feat1_60", "role": "address0" }} , 
+ 	{ "name": "feat1_60_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "feat1_60", "role": "ce0" }} , 
+ 	{ "name": "feat1_60_we0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "feat1_60", "role": "we0" }} , 
+ 	{ "name": "feat1_60_d0", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "feat1_60", "role": "d0" }} , 
  	{ "name": "feat1_61_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":18, "type": "signal", "bundle":{"name": "feat1_61", "role": "address0" }} , 
  	{ "name": "feat1_61_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "feat1_61", "role": "ce0" }} , 
  	{ "name": "feat1_61_we0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "feat1_61", "role": "we0" }} , 
@@ -803,22 +789,12 @@ set NewPortList {[
  	{ "name": "feat1_62_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "feat1_62", "role": "ce0" }} , 
  	{ "name": "feat1_62_we0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "feat1_62", "role": "we0" }} , 
  	{ "name": "feat1_62_d0", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "feat1_62", "role": "d0" }} , 
- 	{ "name": "feat1_63_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":18, "type": "signal", "bundle":{"name": "feat1_63", "role": "address0" }} , 
- 	{ "name": "feat1_63_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "feat1_63", "role": "ce0" }} , 
- 	{ "name": "feat1_63_we0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "feat1_63", "role": "we0" }} , 
- 	{ "name": "feat1_63_d0", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "feat1_63", "role": "d0" }} , 
  	{ "name": "local_img_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":18, "type": "signal", "bundle":{"name": "local_img", "role": "address0" }} , 
  	{ "name": "local_img_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "local_img", "role": "ce0" }} , 
  	{ "name": "local_img_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "local_img", "role": "q0" }} , 
  	{ "name": "local_img_address1", "direction": "out", "datatype": "sc_lv", "bitwidth":18, "type": "signal", "bundle":{"name": "local_img", "role": "address1" }} , 
  	{ "name": "local_img_ce1", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "local_img", "role": "ce1" }} , 
  	{ "name": "local_img_q1", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "local_img", "role": "q1" }} , 
- 	{ "name": "local_img_60_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":18, "type": "signal", "bundle":{"name": "local_img_60", "role": "address0" }} , 
- 	{ "name": "local_img_60_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "local_img_60", "role": "ce0" }} , 
- 	{ "name": "local_img_60_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "local_img_60", "role": "q0" }} , 
- 	{ "name": "local_img_60_address1", "direction": "out", "datatype": "sc_lv", "bitwidth":18, "type": "signal", "bundle":{"name": "local_img_60", "role": "address1" }} , 
- 	{ "name": "local_img_60_ce1", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "local_img_60", "role": "ce1" }} , 
- 	{ "name": "local_img_60_q1", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "local_img_60", "role": "q1" }} , 
  	{ "name": "b1_local", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "b1_local", "role": "default" }} , 
  	{ "name": "b1_local_10", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "b1_local_10", "role": "default" }} , 
  	{ "name": "b1_local_11", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "b1_local_11", "role": "default" }} , 
@@ -1043,47 +1019,37 @@ set NewPortList {[
  	{ "name": "p_ZZ9cnn_accelE8w1_local_161", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "p_ZZ9cnn_accelE8w1_local_161", "role": "default" }} , 
  	{ "name": "p_ZZ9cnn_accelE8w1_local_188", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "p_ZZ9cnn_accelE8w1_local_188", "role": "default" }} , 
  	{ "name": "p_ZZ9cnn_accelE8w1_local_215", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "p_ZZ9cnn_accelE8w1_local_215", "role": "default" }} , 
- 	{ "name": "grp_fu_9558_p_din0", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "grp_fu_9558_p_din0", "role": "default" }} , 
- 	{ "name": "grp_fu_9558_p_din1", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "grp_fu_9558_p_din1", "role": "default" }} , 
- 	{ "name": "grp_fu_9558_p_opcode", "direction": "out", "datatype": "sc_lv", "bitwidth":1, "type": "signal", "bundle":{"name": "grp_fu_9558_p_opcode", "role": "default" }} , 
- 	{ "name": "grp_fu_9558_p_dout0", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "grp_fu_9558_p_dout0", "role": "default" }} , 
- 	{ "name": "grp_fu_9558_p_ce", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "grp_fu_9558_p_ce", "role": "default" }} , 
- 	{ "name": "grp_fu_9562_p_din0", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "grp_fu_9562_p_din0", "role": "default" }} , 
- 	{ "name": "grp_fu_9562_p_din1", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "grp_fu_9562_p_din1", "role": "default" }} , 
- 	{ "name": "grp_fu_9562_p_opcode", "direction": "out", "datatype": "sc_lv", "bitwidth":1, "type": "signal", "bundle":{"name": "grp_fu_9562_p_opcode", "role": "default" }} , 
- 	{ "name": "grp_fu_9562_p_dout0", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "grp_fu_9562_p_dout0", "role": "default" }} , 
- 	{ "name": "grp_fu_9562_p_ce", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "grp_fu_9562_p_ce", "role": "default" }} , 
- 	{ "name": "grp_fu_9566_p_din0", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "grp_fu_9566_p_din0", "role": "default" }} , 
- 	{ "name": "grp_fu_9566_p_din1", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "grp_fu_9566_p_din1", "role": "default" }} , 
- 	{ "name": "grp_fu_9566_p_opcode", "direction": "out", "datatype": "sc_lv", "bitwidth":2, "type": "signal", "bundle":{"name": "grp_fu_9566_p_opcode", "role": "default" }} , 
- 	{ "name": "grp_fu_9566_p_dout0", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "grp_fu_9566_p_dout0", "role": "default" }} , 
- 	{ "name": "grp_fu_9566_p_ce", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "grp_fu_9566_p_ce", "role": "default" }} , 
- 	{ "name": "grp_fu_9570_p_din0", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "grp_fu_9570_p_din0", "role": "default" }} , 
- 	{ "name": "grp_fu_9570_p_din1", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "grp_fu_9570_p_din1", "role": "default" }} , 
- 	{ "name": "grp_fu_9570_p_dout0", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "grp_fu_9570_p_dout0", "role": "default" }} , 
- 	{ "name": "grp_fu_9570_p_ce", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "grp_fu_9570_p_ce", "role": "default" }} , 
- 	{ "name": "grp_fu_9574_p_din0", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "grp_fu_9574_p_din0", "role": "default" }} , 
- 	{ "name": "grp_fu_9574_p_din1", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "grp_fu_9574_p_din1", "role": "default" }} , 
- 	{ "name": "grp_fu_9574_p_dout0", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "grp_fu_9574_p_dout0", "role": "default" }} , 
- 	{ "name": "grp_fu_9574_p_ce", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "grp_fu_9574_p_ce", "role": "default" }} , 
- 	{ "name": "grp_fu_9578_p_din0", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "grp_fu_9578_p_din0", "role": "default" }} , 
- 	{ "name": "grp_fu_9578_p_din1", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "grp_fu_9578_p_din1", "role": "default" }} , 
- 	{ "name": "grp_fu_9578_p_dout0", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "grp_fu_9578_p_dout0", "role": "default" }} , 
- 	{ "name": "grp_fu_9578_p_ce", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "grp_fu_9578_p_ce", "role": "default" }} , 
- 	{ "name": "grp_fu_9582_p_din0", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "grp_fu_9582_p_din0", "role": "default" }} , 
- 	{ "name": "grp_fu_9582_p_din1", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "grp_fu_9582_p_din1", "role": "default" }} , 
- 	{ "name": "grp_fu_9582_p_opcode", "direction": "out", "datatype": "sc_lv", "bitwidth":5, "type": "signal", "bundle":{"name": "grp_fu_9582_p_opcode", "role": "default" }} , 
- 	{ "name": "grp_fu_9582_p_dout0", "direction": "in", "datatype": "sc_lv", "bitwidth":1, "type": "signal", "bundle":{"name": "grp_fu_9582_p_dout0", "role": "default" }} , 
- 	{ "name": "grp_fu_9582_p_ce", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "grp_fu_9582_p_ce", "role": "default" }}  ]}
+ 	{ "name": "grp_fu_9552_p_din0", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "grp_fu_9552_p_din0", "role": "default" }} , 
+ 	{ "name": "grp_fu_9552_p_din1", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "grp_fu_9552_p_din1", "role": "default" }} , 
+ 	{ "name": "grp_fu_9552_p_opcode", "direction": "out", "datatype": "sc_lv", "bitwidth":1, "type": "signal", "bundle":{"name": "grp_fu_9552_p_opcode", "role": "default" }} , 
+ 	{ "name": "grp_fu_9552_p_dout0", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "grp_fu_9552_p_dout0", "role": "default" }} , 
+ 	{ "name": "grp_fu_9552_p_ce", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "grp_fu_9552_p_ce", "role": "default" }} , 
+ 	{ "name": "grp_fu_9556_p_din0", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "grp_fu_9556_p_din0", "role": "default" }} , 
+ 	{ "name": "grp_fu_9556_p_din1", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "grp_fu_9556_p_din1", "role": "default" }} , 
+ 	{ "name": "grp_fu_9556_p_opcode", "direction": "out", "datatype": "sc_lv", "bitwidth":1, "type": "signal", "bundle":{"name": "grp_fu_9556_p_opcode", "role": "default" }} , 
+ 	{ "name": "grp_fu_9556_p_dout0", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "grp_fu_9556_p_dout0", "role": "default" }} , 
+ 	{ "name": "grp_fu_9556_p_ce", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "grp_fu_9556_p_ce", "role": "default" }} , 
+ 	{ "name": "grp_fu_9560_p_din0", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "grp_fu_9560_p_din0", "role": "default" }} , 
+ 	{ "name": "grp_fu_9560_p_din1", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "grp_fu_9560_p_din1", "role": "default" }} , 
+ 	{ "name": "grp_fu_9560_p_dout0", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "grp_fu_9560_p_dout0", "role": "default" }} , 
+ 	{ "name": "grp_fu_9560_p_ce", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "grp_fu_9560_p_ce", "role": "default" }} , 
+ 	{ "name": "grp_fu_9564_p_din0", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "grp_fu_9564_p_din0", "role": "default" }} , 
+ 	{ "name": "grp_fu_9564_p_din1", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "grp_fu_9564_p_din1", "role": "default" }} , 
+ 	{ "name": "grp_fu_9564_p_dout0", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "grp_fu_9564_p_dout0", "role": "default" }} , 
+ 	{ "name": "grp_fu_9564_p_ce", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "grp_fu_9564_p_ce", "role": "default" }} , 
+ 	{ "name": "grp_fu_9568_p_din0", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "grp_fu_9568_p_din0", "role": "default" }} , 
+ 	{ "name": "grp_fu_9568_p_din1", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "grp_fu_9568_p_din1", "role": "default" }} , 
+ 	{ "name": "grp_fu_9568_p_opcode", "direction": "out", "datatype": "sc_lv", "bitwidth":5, "type": "signal", "bundle":{"name": "grp_fu_9568_p_opcode", "role": "default" }} , 
+ 	{ "name": "grp_fu_9568_p_dout0", "direction": "in", "datatype": "sc_lv", "bitwidth":1, "type": "signal", "bundle":{"name": "grp_fu_9568_p_dout0", "role": "default" }} , 
+ 	{ "name": "grp_fu_9568_p_ce", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "grp_fu_9568_p_ce", "role": "default" }}  ]}
 
 set ArgLastReadFirstWriteLatency {
 	conv1 {
 		feat1 {Type O LastRead -1 FirstWrite 145}
+		feat1_60 {Type O LastRead -1 FirstWrite 145}
 		feat1_61 {Type O LastRead -1 FirstWrite 145}
 		feat1_62 {Type O LastRead -1 FirstWrite 145}
-		feat1_63 {Type O LastRead -1 FirstWrite 145}
-		local_img {Type I LastRead 11 FirstWrite -1}
-		local_img_60 {Type I LastRead 7 FirstWrite -1}
+		local_img {Type I LastRead 16 FirstWrite -1}
 		b1_local {Type I LastRead 0 FirstWrite -1}
 		b1_local_10 {Type I LastRead 0 FirstWrite -1}
 		b1_local_11 {Type I LastRead 0 FirstWrite -1}
@@ -1312,8 +1278,8 @@ set ArgLastReadFirstWriteLatency {
 set hasDtUnsupportedChannel 0
 
 set PerformanceInfo {[
-	{"Name" : "Latency", "Min" : "5449385", "Max" : "5449385"}
-	, {"Name" : "Interval", "Min" : "5449385", "Max" : "5449385"}
+	{"Name" : "Latency", "Min" : "8476740", "Max" : "8476740"}
+	, {"Name" : "Interval", "Min" : "8476740", "Max" : "8476740"}
 ]}
 
 set PipelineEnableSignalInfo {[
@@ -1322,11 +1288,10 @@ set PipelineEnableSignalInfo {[
 
 set Spec2ImplPortList { 
 	feat1 { ap_memory {  { feat1_address0 mem_address 1 18 }  { feat1_ce0 mem_ce 1 1 }  { feat1_we0 mem_we 1 1 }  { feat1_d0 mem_din 1 32 } } }
+	feat1_60 { ap_memory {  { feat1_60_address0 mem_address 1 18 }  { feat1_60_ce0 mem_ce 1 1 }  { feat1_60_we0 mem_we 1 1 }  { feat1_60_d0 mem_din 1 32 } } }
 	feat1_61 { ap_memory {  { feat1_61_address0 mem_address 1 18 }  { feat1_61_ce0 mem_ce 1 1 }  { feat1_61_we0 mem_we 1 1 }  { feat1_61_d0 mem_din 1 32 } } }
 	feat1_62 { ap_memory {  { feat1_62_address0 mem_address 1 18 }  { feat1_62_ce0 mem_ce 1 1 }  { feat1_62_we0 mem_we 1 1 }  { feat1_62_d0 mem_din 1 32 } } }
-	feat1_63 { ap_memory {  { feat1_63_address0 mem_address 1 18 }  { feat1_63_ce0 mem_ce 1 1 }  { feat1_63_we0 mem_we 1 1 }  { feat1_63_d0 mem_din 1 32 } } }
 	local_img { ap_memory {  { local_img_address0 mem_address 1 18 }  { local_img_ce0 mem_ce 1 1 }  { local_img_q0 mem_dout 0 32 }  { local_img_address1 MemPortADDR2 1 18 }  { local_img_ce1 MemPortCE2 1 1 }  { local_img_q1 MemPortDOUT2 0 32 } } }
-	local_img_60 { ap_memory {  { local_img_60_address0 mem_address 1 18 }  { local_img_60_ce0 mem_ce 1 1 }  { local_img_60_q0 mem_dout 0 32 }  { local_img_60_address1 MemPortADDR2 1 18 }  { local_img_60_ce1 MemPortCE2 1 1 }  { local_img_60_q1 MemPortDOUT2 0 32 } } }
 	b1_local { ap_none {  { b1_local in_data 0 32 } } }
 	b1_local_10 { ap_none {  { b1_local_10 in_data 0 32 } } }
 	b1_local_11 { ap_none {  { b1_local_11 in_data 0 32 } } }

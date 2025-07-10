@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'Block_entry_proc'" level="0">
-<item name = "Date">Tue Jul  8 02:26:55 2025
+<item name = "Date">Wed Jul  9 07:46:38 2025
 </item>
 <item name = "Version">2025.1 (Build 6135595 on May 21 2025)</item>
 <item name = "Project">cnn_accel</item>
@@ -24,28 +24,28 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">6951794, 35155930, 69.518 ms, 0.352 sec, 6951794, 35155930, no</column>
+<column name="">6951794, 38183285, 69.518 ms, 0.382 sec, 6951794, 38183285, no</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_load_img_fu_3253">load_img, 691211, 691211, 6.912 ms, 6.912 ms, 691211, 691211, no</column>
-<column name="grp_conv1_fu_3265">conv1, 5449385, 5449385, 54.494 ms, 54.494 ms, 5449385, 5449385, no</column>
-<column name="grp_pool1_fu_3729">pool1, 454115, 454115, 4.541 ms, 4.541 ms, 454107, 454107, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="grp_conv2_fu_3749">conv2, 2645498, 2645498, 26.455 ms, 26.455 ms, 2645498, 2645498, no</column>
-<column name="grp_pool2_fu_6105">pool2, 217162, 217162, 2.172 ms, 2.172 ms, 217155, 217155, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="grp_flatten_fu_6125">flatten, 217155, 217155, 2.172 ms, 2.172 ms, 217154, 217154, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="grp_fc1_fu_6139">fc1, 25481217, 25481217, 0.255 sec, 0.255 sec, 25481217, 25481217, no</column>
-<column name="grp_fc2_fu_6233">fc2, 170, 170, 1.700 us, 1.700 us, 170, 170, no</column>
-<column name="grp_Block_entry_proc_Pipeline_LOAD_W1_fu_6308">Block_entry_proc_Pipeline_LOAD_W1, 434, 434, 4.340 us, 4.340 us, 433, 433, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="grp_Block_entry_proc_Pipeline_LOAD_B1_fu_6747">Block_entry_proc_Pipeline_LOAD_B1, 18, 18, 0.180 us, 0.180 us, 17, 17, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="grp_Block_entry_proc_Pipeline_LOAD_W2_fu_6770">Block_entry_proc_Pipeline_LOAD_W2, 2306, 2306, 23.060 us, 23.060 us, 2305, 2305, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="grp_Block_entry_proc_Pipeline_LOAD_B2_fu_9081">Block_entry_proc_Pipeline_LOAD_B2, 34, 34, 0.340 us, 0.340 us, 33, 33, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="grp_Block_entry_proc_Pipeline_LOAD_FC1W_fu_9120">Block_entry_proc_Pipeline_LOAD_FC1W, 6948867, 6948867, 69.489 ms, 69.489 ms, 6948866, 6948866, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="grp_Block_entry_proc_Pipeline_LOAD_FC1B_fu_9143">Block_entry_proc_Pipeline_LOAD_FC1B, 66, 66, 0.660 us, 0.660 us, 65, 65, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="grp_Block_entry_proc_Pipeline_LOAD_FC2W_fu_9214">Block_entry_proc_Pipeline_LOAD_FC2W, 66, 66, 0.660 us, 0.660 us, 65, 65, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_load_img_fu_3251">load_img, 691211, 691211, 6.912 ms, 6.912 ms, 691211, 691211, no</column>
+<column name="grp_conv1_fu_3261">conv1, 8476740, 8476740, 84.767 ms, 84.767 ms, 8476740, 8476740, no</column>
+<column name="grp_pool1_fu_3723">pool1, 454115, 454115, 4.541 ms, 4.541 ms, 454107, 454107, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_conv2_fu_3743">conv2, 2645498, 2645498, 26.455 ms, 26.455 ms, 2645498, 2645498, no</column>
+<column name="grp_pool2_fu_6099">pool2, 217162, 217162, 2.172 ms, 2.172 ms, 217155, 217155, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_flatten_fu_6119">flatten, 217155, 217155, 2.172 ms, 2.172 ms, 217154, 217154, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_fc1_fu_6133">fc1, 25481217, 25481217, 0.255 sec, 0.255 sec, 25481217, 25481217, no</column>
+<column name="grp_fc2_fu_6227">fc2, 170, 170, 1.700 us, 1.700 us, 170, 170, no</column>
+<column name="grp_Block_entry_proc_Pipeline_LOAD_W1_fu_6302">Block_entry_proc_Pipeline_LOAD_W1, 434, 434, 4.340 us, 4.340 us, 433, 433, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_Block_entry_proc_Pipeline_LOAD_B1_fu_6741">Block_entry_proc_Pipeline_LOAD_B1, 18, 18, 0.180 us, 0.180 us, 17, 17, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_Block_entry_proc_Pipeline_LOAD_W2_fu_6764">Block_entry_proc_Pipeline_LOAD_W2, 2306, 2306, 23.060 us, 23.060 us, 2305, 2305, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_Block_entry_proc_Pipeline_LOAD_B2_fu_9075">Block_entry_proc_Pipeline_LOAD_B2, 34, 34, 0.340 us, 0.340 us, 33, 33, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_Block_entry_proc_Pipeline_LOAD_FC1W_fu_9114">Block_entry_proc_Pipeline_LOAD_FC1W, 6948867, 6948867, 69.489 ms, 69.489 ms, 6948866, 6948866, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_Block_entry_proc_Pipeline_LOAD_FC1B_fu_9137">Block_entry_proc_Pipeline_LOAD_FC1B, 66, 66, 0.660 us, 0.660 us, 65, 65, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_Block_entry_proc_Pipeline_LOAD_FC2W_fu_9208">Block_entry_proc_Pipeline_LOAD_FC2W, 66, 66, 0.660 us, 0.660 us, 65, 65, loop auto-rewind stp (delay=0 clock cycles(s))</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
@@ -64,41 +64,39 @@
 <column name="DSP">-, -, -, -, -</column>
 <column name="Expression">-, -, 0, 49, -</column>
 <column name="FIFO">-, -, -, -, -</column>
-<column name="Instance">5, 84, 27054, 26406, -</column>
-<column name="Memory">13313, -, 0, 0, 0</column>
-<column name="Multiplexer">-, -, 0, 3002, -</column>
+<column name="Instance">5, 84, 26206, 26970, -</column>
+<column name="Memory">12801, -, 0, 0, 0</column>
+<column name="Multiplexer">-, -, 0, 2880, -</column>
 <column name="Register">-, -, 47352, -, -</column>
 <specialColumn name="Available">270, 240, 126800, 63400, 0</specialColumn>
-<specialColumn name="Utilization (%)">4932, 35, 58, 46, 0</specialColumn>
+<specialColumn name="Utilization (%)">4742, 35, 58, 47, 0</specialColumn>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
-<column name="grp_Block_entry_proc_Pipeline_LOAD_B1_fu_6747">Block_entry_proc_Pipeline_LOAD_B1, 0, 0, 14, 75, 0</column>
-<column name="grp_Block_entry_proc_Pipeline_LOAD_B2_fu_9081">Block_entry_proc_Pipeline_LOAD_B2, 0, 0, 17, 76, 0</column>
-<column name="grp_Block_entry_proc_Pipeline_LOAD_FC1B_fu_9143">Block_entry_proc_Pipeline_LOAD_FC1B, 0, 0, 20, 77, 0</column>
-<column name="grp_Block_entry_proc_Pipeline_LOAD_FC1W_fu_9120">Block_entry_proc_Pipeline_LOAD_FC1W, 0, 0, 103, 113, 0</column>
-<column name="grp_Block_entry_proc_Pipeline_LOAD_FC2W_fu_9214">Block_entry_proc_Pipeline_LOAD_FC2W, 0, 0, 20, 77, 0</column>
-<column name="grp_Block_entry_proc_Pipeline_LOAD_W1_fu_6308">Block_entry_proc_Pipeline_LOAD_W1, 0, 0, 27, 79, 0</column>
-<column name="grp_Block_entry_proc_Pipeline_LOAD_W2_fu_6770">Block_entry_proc_Pipeline_LOAD_W2, 0, 0, 36, 85, 0</column>
-<column name="grp_conv1_fu_3265">conv1, 0, 1, 4600, 3154, 0</column>
-<column name="grp_conv2_fu_3749">conv2, 0, 26, 12592, 11071, 0</column>
-<column name="fadd_32ns_32ns_32_5_full_dsp_1_U3226">fadd_32ns_32ns_32_5_full_dsp_1, 0, 2, 205, 203, 0</column>
-<column name="faddfsub_32ns_32ns_32_5_full_dsp_1_U3224">faddfsub_32ns_32ns_32_5_full_dsp_1, 0, 2, 205, 203, 0</column>
-<column name="faddfsub_32ns_32ns_32_5_full_dsp_1_U3225">faddfsub_32ns_32ns_32_5_full_dsp_1, 0, 2, 205, 203, 0</column>
-<column name="grp_fc1_fu_6139">fc1, 5, 32, 6076, 5654, 0</column>
-<column name="grp_fc2_fu_6233">fc2, 0, 7, 605, 1481, 0</column>
-<column name="fcmp_32ns_32ns_1_2_no_dsp_1_U3230">fcmp_32ns_32ns_1_2_no_dsp_1, 0, 0, 0, 0, 0</column>
-<column name="fdiv_32ns_32ns_32_12_no_dsp_1_U3231">fdiv_32ns_32ns_32_12_no_dsp_1, 0, 0, 0, 0, 0</column>
-<column name="grp_flatten_fu_6125">flatten, 0, 1, 146, 476, 0</column>
-<column name="fmul_32ns_32ns_32_4_max_dsp_1_U3227">fmul_32ns_32ns_32_4_max_dsp_1, 0, 3, 143, 134, 0</column>
-<column name="fmul_32ns_32ns_32_4_max_dsp_1_U3228">fmul_32ns_32ns_32_4_max_dsp_1, 0, 3, 143, 134, 0</column>
-<column name="fmul_32ns_32ns_32_4_max_dsp_1_U3229">fmul_32ns_32ns_32_4_max_dsp_1, 0, 3, 143, 134, 0</column>
-<column name="grp_load_img_fu_3253">load_img, 0, 0, 207, 497, 0</column>
-<column name="grp_pool1_fu_3729">pool1, 0, 1, 771, 1259, 0</column>
-<column name="grp_pool2_fu_6105">pool2, 0, 1, 776, 1221, 0</column>
+<column name="grp_Block_entry_proc_Pipeline_LOAD_B1_fu_6741">Block_entry_proc_Pipeline_LOAD_B1, 0, 0, 14, 75, 0</column>
+<column name="grp_Block_entry_proc_Pipeline_LOAD_B2_fu_9075">Block_entry_proc_Pipeline_LOAD_B2, 0, 0, 17, 76, 0</column>
+<column name="grp_Block_entry_proc_Pipeline_LOAD_FC1B_fu_9137">Block_entry_proc_Pipeline_LOAD_FC1B, 0, 0, 20, 77, 0</column>
+<column name="grp_Block_entry_proc_Pipeline_LOAD_FC1W_fu_9114">Block_entry_proc_Pipeline_LOAD_FC1W, 0, 0, 103, 113, 0</column>
+<column name="grp_Block_entry_proc_Pipeline_LOAD_FC2W_fu_9208">Block_entry_proc_Pipeline_LOAD_FC2W, 0, 0, 20, 77, 0</column>
+<column name="grp_Block_entry_proc_Pipeline_LOAD_W1_fu_6302">Block_entry_proc_Pipeline_LOAD_W1, 0, 0, 27, 79, 0</column>
+<column name="grp_Block_entry_proc_Pipeline_LOAD_W2_fu_6764">Block_entry_proc_Pipeline_LOAD_W2, 0, 0, 36, 85, 0</column>
+<column name="grp_conv1_fu_3261">conv1, 0, 1, 3766, 3682, 0</column>
+<column name="grp_conv2_fu_3743">conv2, 0, 31, 12940, 11408, 0</column>
+<column name="faddfsub_32ns_32ns_32_5_full_dsp_1_U3220">faddfsub_32ns_32ns_32_5_full_dsp_1, 0, 2, 205, 203, 0</column>
+<column name="faddfsub_32ns_32ns_32_5_full_dsp_1_U3221">faddfsub_32ns_32ns_32_5_full_dsp_1, 0, 2, 205, 203, 0</column>
+<column name="grp_fc1_fu_6133">fc1, 5, 32, 6076, 5654, 0</column>
+<column name="grp_fc2_fu_6227">fc2, 0, 7, 605, 1481, 0</column>
+<column name="fcmp_32ns_32ns_1_2_no_dsp_1_U3224">fcmp_32ns_32ns_1_2_no_dsp_1, 0, 0, 0, 0, 0</column>
+<column name="fdiv_32ns_32ns_32_12_no_dsp_1_U3225">fdiv_32ns_32ns_32_12_no_dsp_1, 0, 0, 0, 0, 0</column>
+<column name="grp_flatten_fu_6119">flatten, 0, 1, 146, 476, 0</column>
+<column name="fmul_32ns_32ns_32_4_max_dsp_1_U3222">fmul_32ns_32ns_32_4_max_dsp_1, 0, 3, 143, 134, 0</column>
+<column name="fmul_32ns_32ns_32_4_max_dsp_1_U3223">fmul_32ns_32ns_32_4_max_dsp_1, 0, 3, 143, 134, 0</column>
+<column name="grp_load_img_fu_3251">load_img, 0, 0, 193, 533, 0</column>
+<column name="grp_pool1_fu_3723">pool1, 0, 1, 771, 1259, 0</column>
+<column name="grp_pool2_fu_6099">pool2, 0, 1, 776, 1221, 0</column>
 </table>
 </item>
 <item name = "DSP"><table name="" hasTotal="0">
@@ -116,23 +114,22 @@
 <column name="fc1_w_local_40_U">Block_entry_proc_fc1_w_local_RAM_AUTO_1R1W, 1024, 0, 0, 0, 289536, 32, 1, 9265152</column>
 <column name="fc1_w_local_41_U">Block_entry_proc_fc1_w_local_RAM_AUTO_1R1W, 1024, 0, 0, 0, 289536, 32, 1, 9265152</column>
 <column name="feat1_U">Block_entry_proc_feat1_RAM_AUTO_1R1W, 512, 0, 0, 0, 151368, 32, 1, 4843776</column>
+<column name="feat1_60_U">Block_entry_proc_feat1_RAM_AUTO_1R1W, 512, 0, 0, 0, 151368, 32, 1, 4843776</column>
 <column name="feat1_61_U">Block_entry_proc_feat1_RAM_AUTO_1R1W, 512, 0, 0, 0, 151368, 32, 1, 4843776</column>
 <column name="feat1_62_U">Block_entry_proc_feat1_RAM_AUTO_1R1W, 512, 0, 0, 0, 151368, 32, 1, 4843776</column>
-<column name="feat1_63_U">Block_entry_proc_feat1_RAM_AUTO_1R1W, 512, 0, 0, 0, 151368, 32, 1, 4843776</column>
 <column name="feat1_p_U">Block_entry_proc_feat1_p_RAM_AUTO_1R1W, 128, 0, 0, 0, 37842, 32, 1, 1210944</column>
+<column name="feat1_p_63_U">Block_entry_proc_feat1_p_RAM_AUTO_1R1W, 128, 0, 0, 0, 37842, 32, 1, 1210944</column>
 <column name="feat1_p_64_U">Block_entry_proc_feat1_p_RAM_AUTO_1R1W, 128, 0, 0, 0, 37842, 32, 1, 1210944</column>
 <column name="feat1_p_65_U">Block_entry_proc_feat1_p_RAM_AUTO_1R1W, 128, 0, 0, 0, 37842, 32, 1, 1210944</column>
-<column name="feat1_p_66_U">Block_entry_proc_feat1_p_RAM_AUTO_1R1W, 128, 0, 0, 0, 37842, 32, 1, 1210944</column>
 <column name="feat2_U">Block_entry_proc_feat2_RAM_AUTO_1R1W, 256, 0, 0, 0, 73476, 32, 1, 2351232</column>
+<column name="feat2_66_U">Block_entry_proc_feat2_RAM_AUTO_1R1W, 256, 0, 0, 0, 73476, 32, 1, 2351232</column>
 <column name="feat2_67_U">Block_entry_proc_feat2_RAM_AUTO_1R1W, 256, 0, 0, 0, 73476, 32, 1, 2351232</column>
 <column name="feat2_68_U">Block_entry_proc_feat2_RAM_AUTO_1R1W, 256, 0, 0, 0, 73476, 32, 1, 2351232</column>
-<column name="feat2_69_U">Block_entry_proc_feat2_RAM_AUTO_1R1W, 256, 0, 0, 0, 73476, 32, 1, 2351232</column>
 <column name="feat2_p_U">Block_entry_proc_feat2_p_RAM_AUTO_1R1W, 64, 0, 0, 0, 18096, 32, 1, 579072</column>
+<column name="feat2_p_69_U">Block_entry_proc_feat2_p_RAM_AUTO_1R1W, 64, 0, 0, 0, 18096, 32, 1, 579072</column>
 <column name="feat2_p_70_U">Block_entry_proc_feat2_p_RAM_AUTO_1R1W, 64, 0, 0, 0, 18096, 32, 1, 579072</column>
 <column name="feat2_p_71_U">Block_entry_proc_feat2_p_RAM_AUTO_1R1W, 64, 0, 0, 0, 18096, 32, 1, 579072</column>
-<column name="feat2_p_72_U">Block_entry_proc_feat2_p_RAM_AUTO_1R1W, 64, 0, 0, 0, 18096, 32, 1, 579072</column>
-<column name="local_img_U">Block_entry_proc_local_img_RAM_AUTO_1R1W, 512, 0, 0, 0, 153600, 32, 1, 4915200</column>
-<column name="local_img_60_U">Block_entry_proc_local_img_RAM_AUTO_1R1W, 512, 0, 0, 0, 153600, 32, 1, 4915200</column>
+<column name="local_img_U">Block_entry_proc_local_img_RAM_AUTO_1R1W, 512, 0, 0, 0, 230400, 32, 1, 7372800</column>
 <column name="vec1_U">Block_entry_proc_vec1_RAM_AUTO_1R1W, 256, 0, 0, 0, 72384, 32, 1, 2316288</column>
 <column name="vec2_U">Block_entry_proc_vec2_RAM_AUTO_1R1W, 1, 0, 0, 0, 32, 32, 1, 1024</column>
 </table>
@@ -145,7 +142,7 @@
 <keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
 <column name="ap_block_state2_io">and, 0, 0, 2, 1, 1</column>
 <column name="ap_block_state85">and, 0, 0, 2, 1, 1</column>
-<column name="icmp_ln123_fu_9285_p2">icmp, 0, 0, 39, 32, 1</column>
+<column name="icmp_ln123_fu_9279_p2">icmp, 0, 0, 39, 32, 1</column>
 <column name="ap_block_state1">or, 0, 0, 2, 1, 1</column>
 <column name="ap_block_state57_io">or, 0, 0, 2, 1, 1</column>
 <column name="ap_block_state66_on_subcall_done">or, 0, 0, 2, 1, 1</column>
@@ -188,6 +185,10 @@
 <column name="fc1_w_local_address0">13, 3, 19, 57</column>
 <column name="fc1_w_local_ce0">13, 3, 1, 3</column>
 <column name="fc1_w_local_we0">9, 2, 1, 2</column>
+<column name="feat1_60_address0">13, 3, 18, 54</column>
+<column name="feat1_60_ce0">13, 3, 1, 3</column>
+<column name="feat1_60_ce1">9, 2, 1, 2</column>
+<column name="feat1_60_we0">9, 2, 1, 2</column>
 <column name="feat1_61_address0">13, 3, 18, 54</column>
 <column name="feat1_61_ce0">13, 3, 1, 3</column>
 <column name="feat1_61_ce1">9, 2, 1, 2</column>
@@ -196,13 +197,13 @@
 <column name="feat1_62_ce0">13, 3, 1, 3</column>
 <column name="feat1_62_ce1">9, 2, 1, 2</column>
 <column name="feat1_62_we0">9, 2, 1, 2</column>
-<column name="feat1_63_address0">13, 3, 18, 54</column>
-<column name="feat1_63_ce0">13, 3, 1, 3</column>
-<column name="feat1_63_ce1">9, 2, 1, 2</column>
-<column name="feat1_63_we0">9, 2, 1, 2</column>
 <column name="feat1_address0">13, 3, 18, 54</column>
 <column name="feat1_ce0">13, 3, 1, 3</column>
 <column name="feat1_ce1">9, 2, 1, 2</column>
+<column name="feat1_p_63_address0">13, 3, 16, 48</column>
+<column name="feat1_p_63_ce0">13, 3, 1, 3</column>
+<column name="feat1_p_63_ce1">9, 2, 1, 2</column>
+<column name="feat1_p_63_we0">9, 2, 1, 2</column>
 <column name="feat1_p_64_address0">13, 3, 16, 48</column>
 <column name="feat1_p_64_ce0">13, 3, 1, 3</column>
 <column name="feat1_p_64_ce1">9, 2, 1, 2</column>
@@ -211,15 +212,15 @@
 <column name="feat1_p_65_ce0">13, 3, 1, 3</column>
 <column name="feat1_p_65_ce1">9, 2, 1, 2</column>
 <column name="feat1_p_65_we0">9, 2, 1, 2</column>
-<column name="feat1_p_66_address0">13, 3, 16, 48</column>
-<column name="feat1_p_66_ce0">13, 3, 1, 3</column>
-<column name="feat1_p_66_ce1">9, 2, 1, 2</column>
-<column name="feat1_p_66_we0">9, 2, 1, 2</column>
 <column name="feat1_p_address0">13, 3, 16, 48</column>
 <column name="feat1_p_ce0">13, 3, 1, 3</column>
 <column name="feat1_p_ce1">9, 2, 1, 2</column>
 <column name="feat1_p_we0">9, 2, 1, 2</column>
 <column name="feat1_we0">9, 2, 1, 2</column>
+<column name="feat2_66_address0">13, 3, 17, 51</column>
+<column name="feat2_66_ce0">13, 3, 1, 3</column>
+<column name="feat2_66_ce1">9, 2, 1, 2</column>
+<column name="feat2_66_we0">9, 2, 1, 2</column>
 <column name="feat2_67_address0">13, 3, 17, 51</column>
 <column name="feat2_67_ce0">13, 3, 1, 3</column>
 <column name="feat2_67_ce1">9, 2, 1, 2</column>
@@ -228,57 +229,43 @@
 <column name="feat2_68_ce0">13, 3, 1, 3</column>
 <column name="feat2_68_ce1">9, 2, 1, 2</column>
 <column name="feat2_68_we0">9, 2, 1, 2</column>
-<column name="feat2_69_address0">13, 3, 17, 51</column>
-<column name="feat2_69_ce0">13, 3, 1, 3</column>
-<column name="feat2_69_ce1">9, 2, 1, 2</column>
-<column name="feat2_69_we0">9, 2, 1, 2</column>
 <column name="feat2_address0">13, 3, 17, 51</column>
 <column name="feat2_ce0">13, 3, 1, 3</column>
 <column name="feat2_ce1">9, 2, 1, 2</column>
+<column name="feat2_p_69_address0">13, 3, 15, 45</column>
+<column name="feat2_p_69_ce0">13, 3, 1, 3</column>
+<column name="feat2_p_69_we0">9, 2, 1, 2</column>
 <column name="feat2_p_70_address0">13, 3, 15, 45</column>
 <column name="feat2_p_70_ce0">13, 3, 1, 3</column>
 <column name="feat2_p_70_we0">9, 2, 1, 2</column>
 <column name="feat2_p_71_address0">13, 3, 15, 45</column>
 <column name="feat2_p_71_ce0">13, 3, 1, 3</column>
 <column name="feat2_p_71_we0">9, 2, 1, 2</column>
-<column name="feat2_p_72_address0">13, 3, 15, 45</column>
-<column name="feat2_p_72_ce0">13, 3, 1, 3</column>
-<column name="feat2_p_72_we0">9, 2, 1, 2</column>
 <column name="feat2_p_address0">13, 3, 15, 45</column>
 <column name="feat2_p_ce0">13, 3, 1, 3</column>
 <column name="feat2_p_we0">9, 2, 1, 2</column>
 <column name="feat2_we0">9, 2, 1, 2</column>
-<column name="grp_fu_9558_ce">21, 5, 1, 5</column>
-<column name="grp_fu_9558_opcode">21, 5, 2, 10</column>
-<column name="grp_fu_9558_p0">21, 5, 32, 160</column>
-<column name="grp_fu_9558_p1">21, 5, 32, 160</column>
-<column name="grp_fu_9562_ce">17, 4, 1, 4</column>
-<column name="grp_fu_9562_opcode">17, 4, 2, 8</column>
-<column name="grp_fu_9562_p0">17, 4, 32, 128</column>
-<column name="grp_fu_9562_p1">17, 4, 32, 128</column>
-<column name="grp_fu_9566_ce">13, 3, 1, 3</column>
-<column name="grp_fu_9566_p0">13, 3, 32, 96</column>
-<column name="grp_fu_9566_p1">13, 3, 32, 96</column>
-<column name="grp_fu_9570_ce">21, 5, 1, 5</column>
-<column name="grp_fu_9570_p0">21, 5, 32, 160</column>
-<column name="grp_fu_9570_p1">21, 5, 32, 160</column>
-<column name="grp_fu_9574_ce">13, 3, 1, 3</column>
-<column name="grp_fu_9574_p0">13, 3, 32, 96</column>
-<column name="grp_fu_9574_p1">13, 3, 32, 96</column>
-<column name="grp_fu_9578_ce">13, 3, 1, 3</column>
-<column name="grp_fu_9578_p0">13, 3, 32, 96</column>
-<column name="grp_fu_9578_p1">13, 3, 32, 96</column>
-<column name="grp_fu_9582_ce">29, 7, 1, 7</column>
-<column name="grp_fu_9582_opcode">29, 7, 5, 35</column>
-<column name="grp_fu_9582_p0">29, 7, 32, 224</column>
-<column name="grp_fu_9582_p1">29, 7, 32, 224</column>
-<column name="grp_fu_9586_ce">13, 3, 1, 3</column>
-<column name="grp_fu_9586_p0">13, 3, 32, 96</column>
-<column name="grp_fu_9586_p1">13, 3, 32, 96</column>
-<column name="local_img_60_address0">13, 3, 18, 54</column>
-<column name="local_img_60_ce0">13, 3, 1, 3</column>
-<column name="local_img_60_ce1">9, 2, 1, 2</column>
-<column name="local_img_60_we0">9, 2, 1, 2</column>
+<column name="grp_fu_9552_ce">21, 5, 1, 5</column>
+<column name="grp_fu_9552_opcode">21, 5, 2, 10</column>
+<column name="grp_fu_9552_p0">21, 5, 32, 160</column>
+<column name="grp_fu_9552_p1">21, 5, 32, 160</column>
+<column name="grp_fu_9556_ce">17, 4, 1, 4</column>
+<column name="grp_fu_9556_opcode">17, 4, 2, 8</column>
+<column name="grp_fu_9556_p0">17, 4, 32, 128</column>
+<column name="grp_fu_9556_p1">17, 4, 32, 128</column>
+<column name="grp_fu_9560_ce">21, 5, 1, 5</column>
+<column name="grp_fu_9560_p0">21, 5, 32, 160</column>
+<column name="grp_fu_9560_p1">21, 5, 32, 160</column>
+<column name="grp_fu_9564_ce">13, 3, 1, 3</column>
+<column name="grp_fu_9564_p0">13, 3, 32, 96</column>
+<column name="grp_fu_9564_p1">13, 3, 32, 96</column>
+<column name="grp_fu_9568_ce">29, 7, 1, 7</column>
+<column name="grp_fu_9568_opcode">29, 7, 5, 35</column>
+<column name="grp_fu_9568_p0">29, 7, 32, 224</column>
+<column name="grp_fu_9568_p1">29, 7, 32, 224</column>
+<column name="grp_fu_9572_ce">13, 3, 1, 3</column>
+<column name="grp_fu_9572_p0">13, 3, 32, 96</column>
+<column name="grp_fu_9572_p1">13, 3, 32, 96</column>
 <column name="local_img_address0">13, 3, 18, 54</column>
 <column name="local_img_ce0">13, 3, 1, 3</column>
 <column name="local_img_ce1">9, 2, 1, 2</column>
@@ -384,7 +371,7 @@
 </item>
 <item name = "Register"><table name="" hasTotal="1">
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
-<column name="B4mem_addr_reg_9522">64, 0, 64, 0</column>
+<column name="B4mem_addr_reg_9516">64, 0, 64, 0</column>
 <column name="ap_CS_fsm">85, 0, 85, 0</column>
 <column name="ap_done_reg">1, 0, 1, 0</column>
 <column name="b1_local">32, 0, 32, 0</column>
@@ -426,24 +413,24 @@
 <column name="fc2_w_local_57">32, 0, 32, 0</column>
 <column name="fc2_w_local_58">32, 0, 32, 0</column>
 <column name="fc2_w_local_59">32, 0, 32, 0</column>
-<column name="flag_out_read_reg_9466">64, 0, 64, 0</column>
-<column name="grp_Block_entry_proc_Pipeline_LOAD_B1_fu_6747_ap_start_reg">1, 0, 1, 0</column>
-<column name="grp_Block_entry_proc_Pipeline_LOAD_B2_fu_9081_ap_start_reg">1, 0, 1, 0</column>
-<column name="grp_Block_entry_proc_Pipeline_LOAD_FC1B_fu_9143_ap_start_reg">1, 0, 1, 0</column>
-<column name="grp_Block_entry_proc_Pipeline_LOAD_FC1W_fu_9120_ap_start_reg">1, 0, 1, 0</column>
-<column name="grp_Block_entry_proc_Pipeline_LOAD_FC2W_fu_9214_ap_start_reg">1, 0, 1, 0</column>
-<column name="grp_Block_entry_proc_Pipeline_LOAD_W1_fu_6308_ap_start_reg">1, 0, 1, 0</column>
-<column name="grp_Block_entry_proc_Pipeline_LOAD_W2_fu_6770_ap_start_reg">1, 0, 1, 0</column>
-<column name="grp_conv1_fu_3265_ap_start_reg">1, 0, 1, 0</column>
-<column name="grp_conv2_fu_3749_ap_start_reg">1, 0, 1, 0</column>
-<column name="grp_fc1_fu_6139_ap_start_reg">1, 0, 1, 0</column>
-<column name="grp_fc2_fu_6233_ap_start_reg">1, 0, 1, 0</column>
-<column name="grp_flatten_fu_6125_ap_start_reg">1, 0, 1, 0</column>
-<column name="grp_load_img_fu_3253_ap_start_reg">1, 0, 1, 0</column>
-<column name="grp_pool1_fu_3729_ap_start_reg">1, 0, 1, 0</column>
-<column name="grp_pool2_fu_6105_ap_start_reg">1, 0, 1, 0</column>
-<column name="icmp_ln123_reg_9462">1, 0, 1, 0</column>
-<column name="img_in_read_reg_9471">64, 0, 64, 0</column>
+<column name="flag_out_read_reg_9460">64, 0, 64, 0</column>
+<column name="grp_Block_entry_proc_Pipeline_LOAD_B1_fu_6741_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_Block_entry_proc_Pipeline_LOAD_B2_fu_9075_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_Block_entry_proc_Pipeline_LOAD_FC1B_fu_9137_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_Block_entry_proc_Pipeline_LOAD_FC1W_fu_9114_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_Block_entry_proc_Pipeline_LOAD_FC2W_fu_9208_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_Block_entry_proc_Pipeline_LOAD_W1_fu_6302_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_Block_entry_proc_Pipeline_LOAD_W2_fu_6764_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_conv1_fu_3261_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_conv2_fu_3743_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_fc1_fu_6133_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_fc2_fu_6227_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_flatten_fu_6119_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_load_img_fu_3251_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_pool1_fu_3723_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_pool2_fu_6099_ap_start_reg">1, 0, 1, 0</column>
+<column name="icmp_ln123_reg_9456">1, 0, 1, 0</column>
+<column name="img_in_read_reg_9465">64, 0, 64, 0</column>
 <column name="p_ZZ9cnn_accelE11fc1_b_local_10">32, 0, 32, 0</column>
 <column name="p_ZZ9cnn_accelE11fc1_b_local_11">32, 0, 32, 0</column>
 <column name="p_ZZ9cnn_accelE11fc1_b_local_12">32, 0, 32, 0</column>
@@ -1842,13 +1829,13 @@
 <column name="p_ZZ9cnn_accelE8w2_local_997">32, 0, 32, 0</column>
 <column name="p_ZZ9cnn_accelE8w2_local_998">32, 0, 32, 0</column>
 <column name="p_ZZ9cnn_accelE8w2_local_999">32, 0, 32, 0</column>
-<column name="trunc_ln1_reg_9486">62, 0, 62, 0</column>
-<column name="trunc_ln2_reg_9492">62, 0, 62, 0</column>
-<column name="trunc_ln3_reg_9498">62, 0, 62, 0</column>
-<column name="trunc_ln4_reg_9504">62, 0, 62, 0</column>
-<column name="trunc_ln5_reg_9510">62, 0, 62, 0</column>
-<column name="trunc_ln6_reg_9516">62, 0, 62, 0</column>
-<column name="trunc_ln_reg_9476">62, 0, 62, 0</column>
+<column name="trunc_ln1_reg_9480">62, 0, 62, 0</column>
+<column name="trunc_ln2_reg_9486">62, 0, 62, 0</column>
+<column name="trunc_ln3_reg_9492">62, 0, 62, 0</column>
+<column name="trunc_ln4_reg_9498">62, 0, 62, 0</column>
+<column name="trunc_ln5_reg_9504">62, 0, 62, 0</column>
+<column name="trunc_ln6_reg_9510">62, 0, 62, 0</column>
+<column name="trunc_ln_reg_9470">62, 0, 62, 0</column>
 <column name="w1_local">32, 0, 32, 0</column>
 <column name="w1_local_1">32, 0, 32, 0</column>
 <column name="w1_local_2">32, 0, 32, 0</column>

@@ -96,24 +96,24 @@ module cnn_accel_fc2 (
         vec2_address0,
         vec2_ce0,
         vec2_q0,
-        grp_fu_9558_p_din0,
-        grp_fu_9558_p_din1,
-        grp_fu_9558_p_opcode,
-        grp_fu_9558_p_dout0,
-        grp_fu_9558_p_ce,
-        grp_fu_9586_p_din0,
-        grp_fu_9586_p_din1,
-        grp_fu_9586_p_dout0,
-        grp_fu_9586_p_ce,
-        grp_fu_9582_p_din0,
-        grp_fu_9582_p_din1,
-        grp_fu_9582_p_opcode,
-        grp_fu_9582_p_dout0,
-        grp_fu_9582_p_ce,
-        grp_fu_9570_p_din0,
-        grp_fu_9570_p_din1,
-        grp_fu_9570_p_dout0,
-        grp_fu_9570_p_ce
+        grp_fu_9552_p_din0,
+        grp_fu_9552_p_din1,
+        grp_fu_9552_p_opcode,
+        grp_fu_9552_p_dout0,
+        grp_fu_9552_p_ce,
+        grp_fu_9572_p_din0,
+        grp_fu_9572_p_din1,
+        grp_fu_9572_p_dout0,
+        grp_fu_9572_p_ce,
+        grp_fu_9568_p_din0,
+        grp_fu_9568_p_din1,
+        grp_fu_9568_p_opcode,
+        grp_fu_9568_p_dout0,
+        grp_fu_9568_p_ce,
+        grp_fu_9560_p_din0,
+        grp_fu_9560_p_din1,
+        grp_fu_9560_p_dout0,
+        grp_fu_9560_p_ce
 );
 
 parameter    ap_ST_fsm_state1 = 36'd1;
@@ -242,24 +242,24 @@ input  [31:0] p_ZZ9cnn_accelE11fc2_w_local_31;
 output  [4:0] vec2_address0;
 output   vec2_ce0;
 input  [31:0] vec2_q0;
-output  [31:0] grp_fu_9558_p_din0;
-output  [31:0] grp_fu_9558_p_din1;
-output  [0:0] grp_fu_9558_p_opcode;
-input  [31:0] grp_fu_9558_p_dout0;
-output   grp_fu_9558_p_ce;
-output  [31:0] grp_fu_9586_p_din0;
-output  [31:0] grp_fu_9586_p_din1;
-input  [31:0] grp_fu_9586_p_dout0;
-output   grp_fu_9586_p_ce;
-output  [31:0] grp_fu_9582_p_din0;
-output  [31:0] grp_fu_9582_p_din1;
-output  [4:0] grp_fu_9582_p_opcode;
-input  [0:0] grp_fu_9582_p_dout0;
-output   grp_fu_9582_p_ce;
-output  [31:0] grp_fu_9570_p_din0;
-output  [31:0] grp_fu_9570_p_din1;
-input  [31:0] grp_fu_9570_p_dout0;
-output   grp_fu_9570_p_ce;
+output  [31:0] grp_fu_9552_p_din0;
+output  [31:0] grp_fu_9552_p_din1;
+output  [0:0] grp_fu_9552_p_opcode;
+input  [31:0] grp_fu_9552_p_dout0;
+output   grp_fu_9552_p_ce;
+output  [31:0] grp_fu_9572_p_din0;
+output  [31:0] grp_fu_9572_p_din1;
+input  [31:0] grp_fu_9572_p_dout0;
+output   grp_fu_9572_p_ce;
+output  [31:0] grp_fu_9568_p_din0;
+output  [31:0] grp_fu_9568_p_din1;
+output  [4:0] grp_fu_9568_p_opcode;
+input  [0:0] grp_fu_9568_p_dout0;
+output   grp_fu_9568_p_ce;
+output  [31:0] grp_fu_9560_p_din0;
+output  [31:0] grp_fu_9560_p_din1;
+input  [31:0] grp_fu_9560_p_dout0;
+output   grp_fu_9560_p_ce;
 
 reg ap_done;
 reg ap_idle;
@@ -421,11 +421,11 @@ cnn_accel_fc2_Pipeline_FC2_LOOP grp_fc2_Pipeline_FC2_LOOP_fu_156(
     .grp_fu_196_p_din0(grp_fc2_Pipeline_FC2_LOOP_fu_156_grp_fu_196_p_din0),
     .grp_fu_196_p_din1(grp_fc2_Pipeline_FC2_LOOP_fu_156_grp_fu_196_p_din1),
     .grp_fu_196_p_opcode(grp_fc2_Pipeline_FC2_LOOP_fu_156_grp_fu_196_p_opcode),
-    .grp_fu_196_p_dout0(grp_fu_9558_p_dout0),
+    .grp_fu_196_p_dout0(grp_fu_9552_p_dout0),
     .grp_fu_196_p_ce(grp_fc2_Pipeline_FC2_LOOP_fu_156_grp_fu_196_p_ce),
     .grp_fu_624_p_din0(grp_fc2_Pipeline_FC2_LOOP_fu_156_grp_fu_624_p_din0),
     .grp_fu_624_p_din1(grp_fc2_Pipeline_FC2_LOOP_fu_156_grp_fu_624_p_din1),
-    .grp_fu_624_p_dout0(grp_fu_9570_p_dout0),
+    .grp_fu_624_p_dout0(grp_fu_9560_p_dout0),
     .grp_fu_624_p_ce(grp_fc2_Pipeline_FC2_LOOP_fu_156_grp_fu_624_p_ce)
 );
 
@@ -435,7 +435,7 @@ cnn_accel_fexp_32ns_32ns_32_8_full_dsp_1 #(
     .din0_WIDTH( 32 ),
     .din1_WIDTH( 32 ),
     .dout_WIDTH( 32 ))
-fexp_32ns_32ns_32_8_full_dsp_1_U1707(
+fexp_32ns_32ns_32_8_full_dsp_1_U1703(
     .clk(ap_clk),
     .reset(ap_rst),
     .din0(32'd0),
@@ -466,7 +466,7 @@ end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state16)) begin
-        add4_i_reg_592 <= grp_fu_9558_p_dout0;
+        add4_i_reg_592 <= grp_fu_9552_p_dout0;
     end
 end
 
@@ -485,7 +485,7 @@ end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state28)) begin
-        prob_reg_597 <= grp_fu_9586_p_dout0;
+        prob_reg_597 <= grp_fu_9572_p_dout0;
     end
 end
 
@@ -896,39 +896,39 @@ assign bitcast_ln347_fu_384_p1 = grp_fc2_Pipeline_FC2_LOOP_fu_156_acc2_1_out;
 
 assign bitcast_ln348_fu_417_p1 = prob_reg_597;
 
-assign flag_fu_450_p2 = (or_ln348_fu_446_p2 & grp_fu_9582_p_dout0);
+assign flag_fu_450_p2 = (or_ln348_fu_446_p2 & grp_fu_9568_p_dout0);
 
 assign grp_fc2_Pipeline_FC2_LOOP_fu_156_ap_start = grp_fc2_Pipeline_FC2_LOOP_fu_156_ap_start_reg;
 
 assign grp_fu_211_p1 = xor_ln_fu_406_p3;
 
-assign grp_fu_9558_p_ce = grp_fu_196_ce;
+assign grp_fu_9552_p_ce = grp_fu_196_ce;
 
-assign grp_fu_9558_p_din0 = grp_fu_196_p0;
+assign grp_fu_9552_p_din0 = grp_fu_196_p0;
 
-assign grp_fu_9558_p_din1 = grp_fu_196_p1;
+assign grp_fu_9552_p_din1 = grp_fu_196_p1;
 
-assign grp_fu_9558_p_opcode = grp_fu_196_opcode;
+assign grp_fu_9552_p_opcode = grp_fu_196_opcode;
 
-assign grp_fu_9570_p_ce = grp_fu_624_ce;
+assign grp_fu_9560_p_ce = grp_fu_624_ce;
 
-assign grp_fu_9570_p_din0 = grp_fc2_Pipeline_FC2_LOOP_fu_156_grp_fu_624_p_din0;
+assign grp_fu_9560_p_din0 = grp_fc2_Pipeline_FC2_LOOP_fu_156_grp_fu_624_p_din0;
 
-assign grp_fu_9570_p_din1 = grp_fc2_Pipeline_FC2_LOOP_fu_156_grp_fu_624_p_din1;
+assign grp_fu_9560_p_din1 = grp_fc2_Pipeline_FC2_LOOP_fu_156_grp_fu_624_p_din1;
 
-assign grp_fu_9582_p_ce = grp_fu_206_ce;
+assign grp_fu_9568_p_ce = grp_fu_206_ce;
 
-assign grp_fu_9582_p_din0 = prob_reg_597;
+assign grp_fu_9568_p_din0 = prob_reg_597;
 
-assign grp_fu_9582_p_din1 = 32'd1056964608;
+assign grp_fu_9568_p_din1 = 32'd1056964608;
 
-assign grp_fu_9582_p_opcode = 5'd2;
+assign grp_fu_9568_p_opcode = 5'd2;
 
-assign grp_fu_9586_p_ce = 1'b1;
+assign grp_fu_9572_p_ce = 1'b1;
 
-assign grp_fu_9586_p_din0 = 32'd1065353216;
+assign grp_fu_9572_p_din0 = 32'd1065353216;
 
-assign grp_fu_9586_p_din1 = add4_i_reg_592;
+assign grp_fu_9572_p_din1 = add4_i_reg_592;
 
 assign icmp_ln348_1_fu_440_p2 = ((trunc_ln348_fu_430_p1 == 23'd0) ? 1'b1 : 1'b0);
 

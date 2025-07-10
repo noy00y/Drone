@@ -1,7 +1,9 @@
 #include "ap_int.h"
+#include "ap_fixed.h"
 #include "hls_stream.h"
 #include "ap_axi_sdata.h"
 #include "hls_math.h"
+#include "hls_stream.h"
 #include <cstring>  // for memcpy
 
 // -----------------------------------------------------------------------------
@@ -18,11 +20,11 @@
 #define W2  (W1/2)
 #define H3  (H2-K+1)
 #define W3  (W2-K+1)
-#define H4  (H3/2)
+#define H4  (H3/2)  
 #define W4  (W3/2)
 #define N2    32   // FC1 outputs
 
-typedef float data_t;
+typedef ap_fixed<16, 4> data_t;
 typedef unsigned char flag_t;
 
 // ============================================================================
@@ -110,14 +112,15 @@ void cnn_accel(
     static data_t fc2_b_local[1];
 
     // Partition small BRAM arrays for parallel access
-#pragma HLS ARRAY_PARTITION variable=w1_local complete dim=1
-#pragma HLS ARRAY_PARTITION variable=b1_local complete dim=1
-#pragma HLS ARRAY_PARTITION variable=w2_local complete dim=1
-#pragma HLS ARRAY_PARTITION variable=b2_local complete dim=1
-#pragma HLS ARRAY_PARTITION variable=fc1_w_local cyclic factor=8 dim=1
-#pragma HLS ARRAY_PARTITION variable=fc1_b_local complete dim=1
-#pragma HLS ARRAY_PARTITION variable=fc2_w_local complete dim=1
-#pragma HLS ARRAY_PARTITION variable=fc2_b_local complete dim=1
+// #pragma HLS ARRAY_PARTITION variable=w1_local complete dim=1
+// #pragma HLS ARRAY_PARTITION variable=b1_local complete dim=1
+// #pragma HLS ARRAY_PARTITION variable=w2_local complete dim=1
+// #pragma HLS ARRAY_PARTITION variable=b2_local complete dim=1
+// #pragma HLS ARRAY_PARTITION variable=fc1_w_local cyclic factor=8 dim=1
+// #pragma HLS ARRAY_PARTITION variable=fc1_b_local complete dim=1
+// #pragma HLS ARRAY_PARTITION variable=fc2_w_local complete dim=1
+// #pragma HLS ARRAY_PARTITION variable=fc2_b_local complete dim=1
+#pragma HLS ARRAY_PARTITION variable=vec2   cyclic factor=8 dim=1
 
     // Prefetch weights/biases into on-chip BRAM once (pipelined)
     if (ctrl == 1) {
@@ -156,11 +159,12 @@ void cnn_accel(
       return;
     }
 
-#pragma HLS ARRAY_PARTITION variable=local_img block factor=2 dim=3
-#pragma HLS ARRAY_PARTITION variable=feat1     block factor=4 dim=3
-#pragma HLS ARRAY_PARTITION variable=feat1_p   block factor=4 dim=3
-#pragma HLS ARRAY_PARTITION variable=feat2     block factor=4 dim=3
-#pragma HLS ARRAY_PARTITION variable=feat2_p   block factor=4 dim=3
+// #pragma HLS ARRAY_PARTITION variable=local_img block factor=2 dim=3
+// #pragma HLS ARRAY_PARTITION variable=feat1     block factor=4 dim=3
+// #pragma HLS ARRAY_PARTITION variable=feat1_p   block factor=4 dim=3
+// #pragma HLS ARRAY_PARTITION variable=feat2     block factor=4 dim=3
+// #pragma HLS ARRAY_PARTITION variable=feat2_p   block factor=4 dim=3
+#pragma HLS ARRAY_PARTITION variable=FC2_W cyclic factor=8 dim=1
 
 #pragma HLS DATAFLOW
 
@@ -218,14 +222,14 @@ void conv1(const data_t local_img[H][W][C0],
                 CONV1_KR: for(int p = 0; p < K; p++){
                     CONV1_KC: for(int q = 0; q < K; q++){
                         CONV1_CH: for(int c = 0; c < C0; c++){
-#pragma HLS UNROLL factor=2
+// #pragma HLS UNROLL factor=2
                             int widx = ((m * C0 + c)*K + p)*K + q;
                             acc += local_img[i+p][j+q][c] * weights1[widx];
                         }
                     }
                 }
                 // Apply ReLU activation
-                feat1[i][j][m] = (acc > 0) ? acc : 0;
+                feat1[i][j][m] = (acc > (data_t)0) ? acc :  (data_t)0;
             }
         }
     }
@@ -266,13 +270,13 @@ void conv2(const data_t feat1_p[H2][W2][M1],
                 CONV2_KR: for(int p = 0; p < K; p++){
                     CONV2_KC: for(int q = 0; q < K; q++){
                         CONV2_CH: for(int c = 0; c < M1; c++){
-#pragma HLS UNROLL factor=2
+// #pragma HLS UNROLL factor=2
                             int widx = ((m * M1 + c)*K + p)*K + q;
                             acc += feat1_p[i+p][j+q][c] * weights2[widx];
                         }
                     }
                 }
-                feat2[i][j][m] = (acc > 0) ? acc : 0;
+                feat2[i][j][m] = (acc > (data_t)0) ? acc : (data_t)0;
             }
         }
     }
@@ -344,11 +348,7 @@ void fc2(const data_t vec2[N2],
 #pragma HLS PIPELINE II=3
         acc2 += vec2[i] * FC2_W[i];
     }
-    data_t prob = 1.0f / (1.0f + hls::exp(-acc2));
-    flag_t flag = (prob > 0.5f) ? 1 : 0;
+    data_t prob = (data_t)1.0 / ((data_t)1.0 + hls::exp(-acc2));
+    flag_t flag = (prob > (data_t)0.5) ? (data_t)1 : (data_t)0;
     flag_out[0] = flag;
 }
-
-// May need to add these lines:
-// #pragma HLS ARRAY_PARTITION variable=FC2_W cyclic factor=8 dim=1
-// #pragma HLS ARRAY_PARTITION variable=vec2   cyclic factor=8 dim=1

@@ -17,6 +17,10 @@ module cnn_accel_pool1 (
         feat1_p_ce0,
         feat1_p_we0,
         feat1_p_d0,
+        feat1_p_63_address0,
+        feat1_p_63_ce0,
+        feat1_p_63_we0,
+        feat1_p_63_d0,
         feat1_p_64_address0,
         feat1_p_64_ce0,
         feat1_p_64_we0,
@@ -25,16 +29,18 @@ module cnn_accel_pool1 (
         feat1_p_65_ce0,
         feat1_p_65_we0,
         feat1_p_65_d0,
-        feat1_p_66_address0,
-        feat1_p_66_ce0,
-        feat1_p_66_we0,
-        feat1_p_66_d0,
         feat1_address0,
         feat1_ce0,
         feat1_q0,
         feat1_address1,
         feat1_ce1,
         feat1_q1,
+        feat1_60_address0,
+        feat1_60_ce0,
+        feat1_60_q0,
+        feat1_60_address1,
+        feat1_60_ce1,
+        feat1_60_q1,
         feat1_61_address0,
         feat1_61_ce0,
         feat1_61_q0,
@@ -47,17 +53,11 @@ module cnn_accel_pool1 (
         feat1_62_address1,
         feat1_62_ce1,
         feat1_62_q1,
-        feat1_63_address0,
-        feat1_63_ce0,
-        feat1_63_q0,
-        feat1_63_address1,
-        feat1_63_ce1,
-        feat1_63_q1,
-        grp_fu_9582_p_din0,
-        grp_fu_9582_p_din1,
-        grp_fu_9582_p_opcode,
-        grp_fu_9582_p_dout0,
-        grp_fu_9582_p_ce
+        grp_fu_9568_p_din0,
+        grp_fu_9568_p_din1,
+        grp_fu_9568_p_opcode,
+        grp_fu_9568_p_dout0,
+        grp_fu_9568_p_ce
 );
 
 parameter    ap_ST_fsm_pp0_stage0 = 3'd1;
@@ -74,6 +74,10 @@ output  [15:0] feat1_p_address0;
 output   feat1_p_ce0;
 output   feat1_p_we0;
 output  [31:0] feat1_p_d0;
+output  [15:0] feat1_p_63_address0;
+output   feat1_p_63_ce0;
+output   feat1_p_63_we0;
+output  [31:0] feat1_p_63_d0;
 output  [15:0] feat1_p_64_address0;
 output   feat1_p_64_ce0;
 output   feat1_p_64_we0;
@@ -82,16 +86,18 @@ output  [15:0] feat1_p_65_address0;
 output   feat1_p_65_ce0;
 output   feat1_p_65_we0;
 output  [31:0] feat1_p_65_d0;
-output  [15:0] feat1_p_66_address0;
-output   feat1_p_66_ce0;
-output   feat1_p_66_we0;
-output  [31:0] feat1_p_66_d0;
 output  [17:0] feat1_address0;
 output   feat1_ce0;
 input  [31:0] feat1_q0;
 output  [17:0] feat1_address1;
 output   feat1_ce1;
 input  [31:0] feat1_q1;
+output  [17:0] feat1_60_address0;
+output   feat1_60_ce0;
+input  [31:0] feat1_60_q0;
+output  [17:0] feat1_60_address1;
+output   feat1_60_ce1;
+input  [31:0] feat1_60_q1;
 output  [17:0] feat1_61_address0;
 output   feat1_61_ce0;
 input  [31:0] feat1_61_q0;
@@ -104,17 +110,11 @@ input  [31:0] feat1_62_q0;
 output  [17:0] feat1_62_address1;
 output   feat1_62_ce1;
 input  [31:0] feat1_62_q1;
-output  [17:0] feat1_63_address0;
-output   feat1_63_ce0;
-input  [31:0] feat1_63_q0;
-output  [17:0] feat1_63_address1;
-output   feat1_63_ce1;
-input  [31:0] feat1_63_q1;
-output  [31:0] grp_fu_9582_p_din0;
-output  [31:0] grp_fu_9582_p_din1;
-output  [4:0] grp_fu_9582_p_opcode;
-input  [0:0] grp_fu_9582_p_dout0;
-output   grp_fu_9582_p_ce;
+output  [31:0] grp_fu_9568_p_din0;
+output  [31:0] grp_fu_9568_p_din1;
+output  [4:0] grp_fu_9568_p_opcode;
+input  [0:0] grp_fu_9568_p_dout0;
+output   grp_fu_9568_p_ce;
 
 reg ap_idle;
 
@@ -201,6 +201,10 @@ reg    feat1_ce1_local;
 reg   [17:0] feat1_address1_local;
 reg    feat1_ce0_local;
 reg   [17:0] feat1_address0_local;
+reg    feat1_60_ce1_local;
+reg   [17:0] feat1_60_address1_local;
+reg    feat1_60_ce0_local;
+reg   [17:0] feat1_60_address0_local;
 reg    feat1_61_ce1_local;
 reg   [17:0] feat1_61_address1_local;
 reg    feat1_61_ce0_local;
@@ -209,18 +213,14 @@ reg    feat1_62_ce1_local;
 reg   [17:0] feat1_62_address1_local;
 reg    feat1_62_ce0_local;
 reg   [17:0] feat1_62_address0_local;
-reg    feat1_63_ce1_local;
-reg   [17:0] feat1_63_address1_local;
-reg    feat1_63_ce0_local;
-reg   [17:0] feat1_63_address0_local;
-reg    feat1_p_65_we0_local;
-reg    feat1_p_65_ce0_local;
 reg    feat1_p_64_we0_local;
 reg    feat1_p_64_ce0_local;
+reg    feat1_p_63_we0_local;
+reg    feat1_p_63_ce0_local;
 reg    feat1_p_we0_local;
 reg    feat1_p_ce0_local;
-reg    feat1_p_66_we0_local;
-reg    feat1_p_66_ce0_local;
+reg    feat1_p_65_we0_local;
+reg    feat1_p_65_ce0_local;
 reg   [31:0] grp_fu_340_p0;
 reg   [31:0] grp_fu_340_p1;
 wire   [31:0] grp_fu_344_p9;
@@ -361,11 +361,11 @@ end
     .def_WIDTH( 32 ),
     .sel_WIDTH( 2 ),
     .dout_WIDTH( 32 ))
-sparsemux_9_2_32_1_1_U278(
+sparsemux_9_2_32_1_1_U273(
     .din0(feat1_q1),
-    .din1(feat1_61_q1),
-    .din2(feat1_62_q1),
-    .din3(feat1_63_q1),
+    .din1(feat1_60_q1),
+    .din2(feat1_61_q1),
+    .din3(feat1_62_q1),
     .def(grp_fu_344_p9),
     .sel(trunc_ln241_3_reg_1082),
     .dout(grp_fu_344_p11)
@@ -385,11 +385,11 @@ sparsemux_9_2_32_1_1_U278(
     .def_WIDTH( 32 ),
     .sel_WIDTH( 2 ),
     .dout_WIDTH( 32 ))
-sparsemux_9_2_32_1_1_U279(
+sparsemux_9_2_32_1_1_U274(
     .din0(feat1_q0),
-    .din1(feat1_61_q0),
-    .din2(feat1_62_q0),
-    .din3(feat1_63_q0),
+    .din1(feat1_60_q0),
+    .din2(feat1_61_q0),
+    .din3(feat1_62_q0),
     .def(grp_fu_367_p9),
     .sel(trunc_ln241_3_reg_1082),
     .dout(grp_fu_367_p11)
@@ -401,7 +401,7 @@ cnn_accel_mul_8ns_10ns_17_1_1 #(
     .din0_WIDTH( 8 ),
     .din1_WIDTH( 10 ),
     .dout_WIDTH( 17 ))
-mul_8ns_10ns_17_1_1_U280(
+mul_8ns_10ns_17_1_1_U275(
     .din0(mul_ln243_fu_528_p0),
     .din1(mul_ln243_fu_528_p1),
     .dout(mul_ln243_fu_528_p2)
@@ -413,7 +413,7 @@ cnn_accel_mul_8ns_10ns_17_1_1 #(
     .din0_WIDTH( 8 ),
     .din1_WIDTH( 10 ),
     .dout_WIDTH( 17 ))
-mul_8ns_10ns_17_1_1_U281(
+mul_8ns_10ns_17_1_1_U276(
     .din0(mul_ln244_fu_614_p0),
     .din1(mul_ln244_fu_614_p1),
     .dout(mul_ln244_fu_614_p2)
@@ -426,7 +426,7 @@ cnn_accel_mac_muladd_8ns_7ns_8ns_15_4_1 #(
     .din1_WIDTH( 7 ),
     .din2_WIDTH( 8 ),
     .dout_WIDTH( 15 ))
-mac_muladd_8ns_7ns_8ns_15_4_1_U282(
+mac_muladd_8ns_7ns_8ns_15_4_1_U277(
     .clk(ap_clk),
     .reset(ap_rst),
     .din0(grp_fu_1006_p0),
@@ -719,6 +719,42 @@ end
 
 always @ (*) begin
     if (((1'b0 == ap_block_pp0_stage0) & (ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
+        feat1_60_address0_local = zext_ln246_fu_714_p1;
+    end else if (((ap_enable_reg_pp0_iter0_reg == 1'b1) & (1'b0 == ap_block_pp0_stage2) & (1'b1 == ap_CS_fsm_pp0_stage2))) begin
+        feat1_60_address0_local = zext_ln245_1_fu_686_p1;
+    end else begin
+        feat1_60_address0_local = 'bx;
+    end
+end
+
+always @ (*) begin
+    if (((1'b0 == ap_block_pp0_stage0) & (ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
+        feat1_60_address1_local = zext_ln244_1_fu_700_p1;
+    end else if (((ap_enable_reg_pp0_iter0_reg == 1'b1) & (1'b0 == ap_block_pp0_stage2) & (1'b1 == ap_CS_fsm_pp0_stage2))) begin
+        feat1_60_address1_local = zext_ln243_2_fu_671_p1;
+    end else begin
+        feat1_60_address1_local = 'bx;
+    end
+end
+
+always @ (*) begin
+    if ((((ap_enable_reg_pp0_iter0_reg == 1'b1) & (1'b0 == ap_block_pp0_stage2_11001) & (1'b1 == ap_CS_fsm_pp0_stage2)) | ((1'b0 == ap_block_pp0_stage0_11001) & (ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0)))) begin
+        feat1_60_ce0_local = 1'b1;
+    end else begin
+        feat1_60_ce0_local = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((((ap_enable_reg_pp0_iter0_reg == 1'b1) & (1'b0 == ap_block_pp0_stage2_11001) & (1'b1 == ap_CS_fsm_pp0_stage2)) | ((1'b0 == ap_block_pp0_stage0_11001) & (ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0)))) begin
+        feat1_60_ce1_local = 1'b1;
+    end else begin
+        feat1_60_ce1_local = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if (((1'b0 == ap_block_pp0_stage0) & (ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
         feat1_61_address0_local = zext_ln246_fu_714_p1;
     end else if (((ap_enable_reg_pp0_iter0_reg == 1'b1) & (1'b0 == ap_block_pp0_stage2) & (1'b1 == ap_CS_fsm_pp0_stage2))) begin
         feat1_61_address0_local = zext_ln245_1_fu_686_p1;
@@ -791,42 +827,6 @@ end
 
 always @ (*) begin
     if (((1'b0 == ap_block_pp0_stage0) & (ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
-        feat1_63_address0_local = zext_ln246_fu_714_p1;
-    end else if (((ap_enable_reg_pp0_iter0_reg == 1'b1) & (1'b0 == ap_block_pp0_stage2) & (1'b1 == ap_CS_fsm_pp0_stage2))) begin
-        feat1_63_address0_local = zext_ln245_1_fu_686_p1;
-    end else begin
-        feat1_63_address0_local = 'bx;
-    end
-end
-
-always @ (*) begin
-    if (((1'b0 == ap_block_pp0_stage0) & (ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
-        feat1_63_address1_local = zext_ln244_1_fu_700_p1;
-    end else if (((ap_enable_reg_pp0_iter0_reg == 1'b1) & (1'b0 == ap_block_pp0_stage2) & (1'b1 == ap_CS_fsm_pp0_stage2))) begin
-        feat1_63_address1_local = zext_ln243_2_fu_671_p1;
-    end else begin
-        feat1_63_address1_local = 'bx;
-    end
-end
-
-always @ (*) begin
-    if ((((ap_enable_reg_pp0_iter0_reg == 1'b1) & (1'b0 == ap_block_pp0_stage2_11001) & (1'b1 == ap_CS_fsm_pp0_stage2)) | ((1'b0 == ap_block_pp0_stage0_11001) & (ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0)))) begin
-        feat1_63_ce0_local = 1'b1;
-    end else begin
-        feat1_63_ce0_local = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if ((((ap_enable_reg_pp0_iter0_reg == 1'b1) & (1'b0 == ap_block_pp0_stage2_11001) & (1'b1 == ap_CS_fsm_pp0_stage2)) | ((1'b0 == ap_block_pp0_stage0_11001) & (ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0)))) begin
-        feat1_63_ce1_local = 1'b1;
-    end else begin
-        feat1_63_ce1_local = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if (((1'b0 == ap_block_pp0_stage0) & (ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
         feat1_address0_local = zext_ln246_fu_714_p1;
     end else if (((ap_enable_reg_pp0_iter0_reg == 1'b1) & (1'b0 == ap_block_pp0_stage2) & (1'b1 == ap_CS_fsm_pp0_stage2))) begin
         feat1_address0_local = zext_ln245_1_fu_686_p1;
@@ -863,6 +863,22 @@ end
 
 always @ (*) begin
     if (((1'b0 == ap_block_pp0_stage0_11001) & (ap_enable_reg_pp0_iter4 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
+        feat1_p_63_ce0_local = 1'b1;
+    end else begin
+        feat1_p_63_ce0_local = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if (((1'b0 == ap_block_pp0_stage0_11001) & (ap_enable_reg_pp0_iter4 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0) & (trunc_ln241_3_reg_1082_pp0_iter3_reg == 2'd1))) begin
+        feat1_p_63_we0_local = 1'b1;
+    end else begin
+        feat1_p_63_we0_local = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if (((1'b0 == ap_block_pp0_stage0_11001) & (ap_enable_reg_pp0_iter4 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
         feat1_p_64_ce0_local = 1'b1;
     end else begin
         feat1_p_64_ce0_local = 1'b0;
@@ -870,7 +886,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b0 == ap_block_pp0_stage0_11001) & (ap_enable_reg_pp0_iter4 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0) & (trunc_ln241_3_reg_1082_pp0_iter3_reg == 2'd1))) begin
+    if (((1'b0 == ap_block_pp0_stage0_11001) & (ap_enable_reg_pp0_iter4 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0) & (trunc_ln241_3_reg_1082_pp0_iter3_reg == 2'd2))) begin
         feat1_p_64_we0_local = 1'b1;
     end else begin
         feat1_p_64_we0_local = 1'b0;
@@ -886,26 +902,10 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b0 == ap_block_pp0_stage0_11001) & (ap_enable_reg_pp0_iter4 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0) & (trunc_ln241_3_reg_1082_pp0_iter3_reg == 2'd2))) begin
+    if (((1'b0 == ap_block_pp0_stage0_11001) & (ap_enable_reg_pp0_iter4 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0) & (trunc_ln241_3_reg_1082_pp0_iter3_reg == 2'd3))) begin
         feat1_p_65_we0_local = 1'b1;
     end else begin
         feat1_p_65_we0_local = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if (((1'b0 == ap_block_pp0_stage0_11001) & (ap_enable_reg_pp0_iter4 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
-        feat1_p_66_ce0_local = 1'b1;
-    end else begin
-        feat1_p_66_ce0_local = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if (((1'b0 == ap_block_pp0_stage0_11001) & (ap_enable_reg_pp0_iter4 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0) & (trunc_ln241_3_reg_1082_pp0_iter3_reg == 2'd3))) begin
-        feat1_p_66_we0_local = 1'b1;
-    end else begin
-        feat1_p_66_we0_local = 1'b0;
     end
 end
 
@@ -1000,15 +1000,15 @@ assign add_ln246_fu_658_p2 = (mul_ln244_fu_614_p2 + zext_ln245_fu_649_p1);
 
 assign and_ln239_fu_474_p2 = (xor_ln239_fu_462_p2 & icmp_ln241_fu_468_p2);
 
-assign and_ln247_1_fu_798_p2 = (grp_fu_9582_p_dout0 & and_ln247_fu_792_p2);
+assign and_ln247_1_fu_798_p2 = (grp_fu_9568_p_dout0 & and_ln247_fu_792_p2);
 
 assign and_ln247_fu_792_p2 = (or_ln247_fu_768_p2 & or_ln247_1_fu_786_p2);
 
-assign and_ln248_1_fu_886_p2 = (grp_fu_9582_p_dout0 & and_ln248_fu_880_p2);
+assign and_ln248_1_fu_886_p2 = (grp_fu_9568_p_dout0 & and_ln248_fu_880_p2);
 
 assign and_ln248_fu_880_p2 = (or_ln248_fu_856_p2 & or_ln248_1_fu_874_p2);
 
-assign and_ln249_1_fu_980_p2 = (grp_fu_9582_p_dout0 & and_ln249_fu_974_p2);
+assign and_ln249_1_fu_980_p2 = (grp_fu_9568_p_dout0 & and_ln249_fu_974_p2);
 
 assign and_ln249_fu_974_p2 = (or_ln249_fu_950_p2 & or_ln249_1_fu_968_p2);
 
@@ -1064,6 +1064,14 @@ assign bitcast_ln249_fu_904_p1 = mx_reg_1206_pp0_iter3_reg;
 
 assign empty_fu_494_p2 = (icmp_ln240_fu_448_p2 | and_ln239_fu_474_p2);
 
+assign feat1_60_address0 = feat1_60_address0_local;
+
+assign feat1_60_address1 = feat1_60_address1_local;
+
+assign feat1_60_ce0 = feat1_60_ce0_local;
+
+assign feat1_60_ce1 = feat1_60_ce1_local;
+
 assign feat1_61_address0 = feat1_61_address0_local;
 
 assign feat1_61_address1 = feat1_61_address1_local;
@@ -1080,14 +1088,6 @@ assign feat1_62_ce0 = feat1_62_ce0_local;
 
 assign feat1_62_ce1 = feat1_62_ce1_local;
 
-assign feat1_63_address0 = feat1_63_address0_local;
-
-assign feat1_63_address1 = feat1_63_address1_local;
-
-assign feat1_63_ce0 = feat1_63_ce0_local;
-
-assign feat1_63_ce1 = feat1_63_ce1_local;
-
 assign feat1_address0 = feat1_address0_local;
 
 assign feat1_address1 = feat1_address1_local;
@@ -1095,6 +1095,14 @@ assign feat1_address1 = feat1_address1_local;
 assign feat1_ce0 = feat1_ce0_local;
 
 assign feat1_ce1 = feat1_ce1_local;
+
+assign feat1_p_63_address0 = zext_ln249_2_fu_998_p1;
+
+assign feat1_p_63_ce0 = feat1_p_63_ce0_local;
+
+assign feat1_p_63_d0 = select_ln249_reg_1230;
+
+assign feat1_p_63_we0 = feat1_p_63_we0_local;
 
 assign feat1_p_64_address0 = zext_ln249_2_fu_998_p1;
 
@@ -1111,14 +1119,6 @@ assign feat1_p_65_ce0 = feat1_p_65_ce0_local;
 assign feat1_p_65_d0 = select_ln249_reg_1230;
 
 assign feat1_p_65_we0 = feat1_p_65_we0_local;
-
-assign feat1_p_66_address0 = zext_ln249_2_fu_998_p1;
-
-assign feat1_p_66_ce0 = feat1_p_66_ce0_local;
-
-assign feat1_p_66_d0 = select_ln249_reg_1230;
-
-assign feat1_p_66_we0 = feat1_p_66_we0_local;
 
 assign feat1_p_address0 = zext_ln249_2_fu_998_p1;
 
@@ -1142,13 +1142,13 @@ assign grp_fu_344_p9 = 'bx;
 
 assign grp_fu_367_p9 = 'bx;
 
-assign grp_fu_9582_p_ce = 1'b1;
+assign grp_fu_9568_p_ce = 1'b1;
 
-assign grp_fu_9582_p_din0 = grp_fu_340_p0;
+assign grp_fu_9568_p_din0 = grp_fu_340_p0;
 
-assign grp_fu_9582_p_din1 = grp_fu_340_p1;
+assign grp_fu_9568_p_din1 = grp_fu_340_p1;
 
-assign grp_fu_9582_p_opcode = 5'd2;
+assign grp_fu_9568_p_opcode = 5'd2;
 
 assign icmp_ln239_fu_421_p2 = ((indvar_flatten12_fu_120 == 18'd151368) ? 1'b1 : 1'b0);
 

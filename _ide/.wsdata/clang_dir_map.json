@@ -1,0 +1,7 @@
+{
+  "workspaceRoot": "C:\\Users\\ozair\\Documents\\Code_Drive\\Drone",
+  "mapping": {
+    "hls_component\\..\\hls_files\\conv_pool.cpp": "hls_component",
+    "hls_component\\..\\hls_files\\testbench.cpp": "hls_component"
+  }
+}

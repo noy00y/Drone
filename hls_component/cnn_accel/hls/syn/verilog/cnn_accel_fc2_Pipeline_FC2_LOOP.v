@@ -290,7 +290,7 @@ end
     .def_WIDTH( 32 ),
     .sel_WIDTH( 5 ),
     .dout_WIDTH( 32 ))
-sparsemux_65_5_32_1_1_U1668(
+sparsemux_65_5_32_1_1_U1664(
     .din0(fc2_w_local_load),
     .din1(fc2_w_local_51_load),
     .din2(fc2_w_local_52_load),

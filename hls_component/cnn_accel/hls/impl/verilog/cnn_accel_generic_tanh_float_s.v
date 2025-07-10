@@ -446,7 +446,7 @@ cnn_accel_fptrunc_64ns_32_2_no_dsp_1 #(
     .NUM_STAGE( 2 ),
     .din0_WIDTH( 64 ),
     .dout_WIDTH( 32 ))
-fptrunc_64ns_32_2_no_dsp_1_U1608(
+fptrunc_64ns_32_2_no_dsp_1_U1604(
     .clk(ap_clk),
     .reset(ap_rst),
     .din0(sub_i_reg_475),
@@ -459,7 +459,7 @@ cnn_accel_fpext_32ns_64_2_no_dsp_1 #(
     .NUM_STAGE( 2 ),
     .din0_WIDTH( 32 ),
     .dout_WIDTH( 64 ))
-fpext_32ns_64_2_no_dsp_1_U1609(
+fpext_32ns_64_2_no_dsp_1_U1605(
     .clk(ap_clk),
     .reset(ap_rst),
     .din0(x_3_reg_445),
@@ -473,7 +473,7 @@ cnn_accel_dadd_64ns_64ns_64_5_full_dsp_1 #(
     .din0_WIDTH( 64 ),
     .din1_WIDTH( 64 ),
     .dout_WIDTH( 64 ))
-dadd_64ns_64ns_64_5_full_dsp_1_U1611(
+dadd_64ns_64ns_64_5_full_dsp_1_U1607(
     .clk(ap_clk),
     .reset(ap_rst),
     .din0(tmp_6_reg_470),

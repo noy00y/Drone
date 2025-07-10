@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'exp_generic_double_s'
 ================================================================
-* Date:           Tue Jul  8 02:25:43 2025
+* Date:           Wed Jul  9 07:45:26 2025
 
 * Version:        2025.1 (Build 6135595 on May 21 2025)
 * Project:        cnn_accel
@@ -274,7 +274,7 @@ ST_21 : Operation 153 [1/1] (0.00ns)   --->   "%tmp_8 = partselect i52 @_ssdm_op
 ST_21 : Operation 154 [1/1] (0.75ns)   --->   "%select_ln303 = select i1 %tmp_32, i52 %tmp_s, i52 %tmp_8" [C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h:303]   --->   Operation 154 'select' 'select_ln303' <Predicate = true> <Delay = 0.75> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.75> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
 
 State 22 <SV = 21> <Delay = 3.74>
-ST_22 : Operation 155 [1/1] (0.00ns)   --->   "%specpipeline_ln158 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_38" [C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h:158]   --->   Operation 155 'specpipeline' 'specpipeline_ln158' <Predicate = true> <Delay = 0.00>
+ST_22 : Operation 155 [1/1] (0.00ns)   --->   "%specpipeline_ln158 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_19" [C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h:158]   --->   Operation 155 'specpipeline' 'specpipeline_ln158' <Predicate = true> <Delay = 0.00>
 ST_22 : Operation 156 [1/1] (0.00ns) (grouped into LUT with out node select_ln185_1)   --->   "%xor_ln182 = xor i1 %es_sign, i1 1" [C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h:182]   --->   Operation 156 'xor' 'xor_ln182' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
 ST_22 : Operation 157 [1/1] (0.00ns) (grouped into LUT with out node select_ln185_1)   --->   "%x_is_pinf = and i1 %x_is_inf, i1 %xor_ln182" [C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h:182]   --->   Operation 157 'and' 'x_is_pinf' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
 ST_22 : Operation 158 [1/1] (0.00ns) (grouped into LUT with out node select_ln185_1)   --->   "%or_ln185 = or i1 %x_is_NaN, i1 %x_is_pinf" [C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h:185]   --->   Operation 158 'or' 'or_ln185' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
@@ -318,7 +318,7 @@ The critical path consists of the following:
 
  <State 2>: 5.819ns
 The critical path consists of the following:
-	'shl' operation 71 bit ('shl_ln229', C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h:229) [37]  (3.474 ns)
+	'ashr' operation 71 bit ('ashr_ln229', C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h:229) [36]  (3.474 ns)
 	'select' operation 71 bit ('m_fix', C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h:229) [38]  (0.965 ns)
 	'mul' operation 31 bit of DSP[49] ('mul_ln243', C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h:243) [46]  (1.380 ns)
 

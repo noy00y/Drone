@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'exp_generic_double_s'" level="0">
-<item name = "Date">Tue Jul  8 02:26:09 2025
+<item name = "Date">Wed Jul  9 07:45:51 2025
 </item>
 <item name = "Version">2025.1 (Build 6135595 on May 21 2025)</item>
 <item name = "Project">cnn_accel</item>
@@ -61,16 +61,16 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
-<column name="mul_13s_71s_71_5_0_U1588">mul_13s_71s_71_5_0, 0, 4, 441, 256, 0</column>
-<column name="mul_43ns_36ns_79_2_0_U1589">mul_43ns_36ns_79_2_0, 0, 6, 219, 155, 0</column>
-<column name="mul_49ns_44ns_93_2_0_U1590">mul_49ns_44ns_93_2_0, 0, 9, 233, 85, 0</column>
-<column name="mul_50ns_50ns_99_2_0_U1591">mul_50ns_50ns_99_2_0, 0, 9, 237, 87, 0</column>
-<column name="sparsemux_9_3_64_1_0_U1592">sparsemux_9_3_64_1_0, 0, 0, 0, 13, 0</column>
+<column name="mul_13s_71s_71_5_0_U1584">mul_13s_71s_71_5_0, 0, 4, 441, 256, 0</column>
+<column name="mul_43ns_36ns_79_2_0_U1585">mul_43ns_36ns_79_2_0, 0, 6, 219, 155, 0</column>
+<column name="mul_49ns_44ns_93_2_0_U1586">mul_49ns_44ns_93_2_0, 0, 9, 233, 85, 0</column>
+<column name="mul_50ns_50ns_99_2_0_U1587">mul_50ns_50ns_99_2_0, 0, 9, 237, 87, 0</column>
+<column name="sparsemux_9_3_64_1_0_U1588">sparsemux_9_3_64_1_0, 0, 0, 0, 13, 0</column>
 </table>
 </item>
 <item name = "DSP"><table name="" hasTotal="0">
 <keys size="3">Instance, Module, Expression</keys>
-<column name="mac_muladd_16s_15ns_19s_31_4_0_U1593">mac_muladd_16s_15ns_19s_31_4_0, i0 * i1 + i2</column>
+<column name="mac_muladd_16s_15ns_19s_31_4_0_U1589">mac_muladd_16s_15ns_19s_31_4_0, i0 * i1 + i2</column>
 </table>
 </item>
 <item name = "Memory"><table name="" hasTotal="1">

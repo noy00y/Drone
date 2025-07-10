@@ -1,5 +1,7 @@
 instrumenter::INFOR: [Instrumenter - Initialization] Checking for the existence of the required environment variables
 instrumenter::INFOR: [Instrumenter - Initialization] Loading the supported wrappers for standard library functions
 instrumenter::INFOR: [Instrumenter - Initialization] Adding static information
+instrumenter::WARNG: spec:0:0: warning: [IRBuilder]: Non constant global object without debug information found
+instrumenter::WARNG: spec:0:0: warning: [IRBuilder]: Non constant global object without debug information found
 instrumenter::INFOR: [Instrumenter - Initialization] Finished adding static information
 instrumenter::INFOR: [Instrumenter - FN_TRACE] Adding the init function for the trace calls...

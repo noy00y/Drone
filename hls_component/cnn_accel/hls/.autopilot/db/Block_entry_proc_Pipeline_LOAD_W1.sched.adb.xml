@@ -70,7 +70,7 @@ newFuncRoot:2 %sext_ln124_cast = sext i62 %sext_ln124_read
 
 <Node id="222" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0" op_17_bw="32" op_18_bw="32" op_19_bw="32">
 <![CDATA[
-newFuncRoot:3 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %W1mem, void @empty_37, i32 0, i32 0, void @empty_38, i32 0, i32 216, void @empty_12, void @empty_23, void @empty_38, i32 16, i32 16, i32 16, i32 16, void @empty_38, void @empty_38, i32 4294967295, i32 0, i32 0
+newFuncRoot:3 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %W1mem, void @empty_17, i32 0, i32 0, void @empty_19, i32 0, i32 216, void @empty_21, void @empty_20, void @empty_19, i32 16, i32 16, i32 16, i32 16, void @empty_19, void @empty_19, i32 4294967295, i32 0, i32 0
 
 ]]></Node>
 <StgValue><ssdm name="specinterface_ln0"/></StgValue>
@@ -210,7 +210,7 @@ LOAD_B1.i.exitStub:0 %ret_ln0 = ret
 
 <Node id="232" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="0">
 <![CDATA[
-for.inc.split.i:1 %specpipeline_ln125 = specpipeline void @_ssdm_op_SpecPipeline, i32 3, i32 0, i32 0, i32 0, void @empty_38
+for.inc.split.i:1 %specpipeline_ln125 = specpipeline void @_ssdm_op_SpecPipeline, i32 3, i32 0, i32 0, i32 0, void @empty_19
 
 ]]></Node>
 <StgValue><ssdm name="specpipeline_ln125"/></StgValue>
@@ -240,7 +240,7 @@ for.inc.split.i:2 %speclooptripcount_ln124 = speclooptripcount void @_ssdm_op_Sp
 
 <Node id="234" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
-for.inc.split.i:3 %specloopname_ln124 = specloopname void @_ssdm_op_SpecLoopName, void @empty_36
+for.inc.split.i:3 %specloopname_ln124 = specloopname void @_ssdm_op_SpecLoopName, void @empty_16
 
 ]]></Node>
 <StgValue><ssdm name="specloopname_ln124"/></StgValue>

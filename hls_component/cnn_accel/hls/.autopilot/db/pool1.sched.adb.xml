@@ -1077,10 +1077,10 @@ for.inc61.i:44 %feat1_addr_2 = getelementptr i32 %feat1, i64 0, i64 %zext_ln245_
 
 <Node id="75" bw="18" op_0_bw="32" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-for.inc61.i:48 %feat1_61_addr = getelementptr i32 %feat1_61, i64 0, i64 %zext_ln243_2
+for.inc61.i:48 %feat1_60_addr = getelementptr i32 %feat1_60, i64 0, i64 %zext_ln243_2
 
 ]]></Node>
-<StgValue><ssdm name="feat1_61_addr"/></StgValue>
+<StgValue><ssdm name="feat1_60_addr"/></StgValue>
 </operation>
 
 <operation id="79" st_id="3" stage="1" lat="1">
@@ -1094,10 +1094,10 @@ for.inc61.i:48 %feat1_61_addr = getelementptr i32 %feat1_61, i64 0, i64 %zext_ln
 
 <Node id="77" bw="18" op_0_bw="32" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-for.inc61.i:50 %feat1_61_addr_2 = getelementptr i32 %feat1_61, i64 0, i64 %zext_ln245_1
+for.inc61.i:50 %feat1_60_addr_2 = getelementptr i32 %feat1_60, i64 0, i64 %zext_ln245_1
 
 ]]></Node>
-<StgValue><ssdm name="feat1_61_addr_2"/></StgValue>
+<StgValue><ssdm name="feat1_60_addr_2"/></StgValue>
 </operation>
 
 <operation id="80" st_id="3" stage="1" lat="1">
@@ -1111,10 +1111,10 @@ for.inc61.i:50 %feat1_61_addr_2 = getelementptr i32 %feat1_61, i64 0, i64 %zext_
 
 <Node id="79" bw="18" op_0_bw="32" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-for.inc61.i:52 %feat1_62_addr = getelementptr i32 %feat1_62, i64 0, i64 %zext_ln243_2
+for.inc61.i:52 %feat1_61_addr = getelementptr i32 %feat1_61, i64 0, i64 %zext_ln243_2
 
 ]]></Node>
-<StgValue><ssdm name="feat1_62_addr"/></StgValue>
+<StgValue><ssdm name="feat1_61_addr"/></StgValue>
 </operation>
 
 <operation id="81" st_id="3" stage="1" lat="1">
@@ -1128,10 +1128,10 @@ for.inc61.i:52 %feat1_62_addr = getelementptr i32 %feat1_62, i64 0, i64 %zext_ln
 
 <Node id="81" bw="18" op_0_bw="32" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-for.inc61.i:54 %feat1_62_addr_2 = getelementptr i32 %feat1_62, i64 0, i64 %zext_ln245_1
+for.inc61.i:54 %feat1_61_addr_2 = getelementptr i32 %feat1_61, i64 0, i64 %zext_ln245_1
 
 ]]></Node>
-<StgValue><ssdm name="feat1_62_addr_2"/></StgValue>
+<StgValue><ssdm name="feat1_61_addr_2"/></StgValue>
 </operation>
 
 <operation id="82" st_id="3" stage="1" lat="1">
@@ -1145,10 +1145,10 @@ for.inc61.i:54 %feat1_62_addr_2 = getelementptr i32 %feat1_62, i64 0, i64 %zext_
 
 <Node id="83" bw="18" op_0_bw="32" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-for.inc61.i:56 %feat1_63_addr = getelementptr i32 %feat1_63, i64 0, i64 %zext_ln243_2
+for.inc61.i:56 %feat1_62_addr = getelementptr i32 %feat1_62, i64 0, i64 %zext_ln243_2
 
 ]]></Node>
-<StgValue><ssdm name="feat1_63_addr"/></StgValue>
+<StgValue><ssdm name="feat1_62_addr"/></StgValue>
 </operation>
 
 <operation id="83" st_id="3" stage="1" lat="1">
@@ -1162,10 +1162,10 @@ for.inc61.i:56 %feat1_63_addr = getelementptr i32 %feat1_63, i64 0, i64 %zext_ln
 
 <Node id="85" bw="18" op_0_bw="32" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-for.inc61.i:58 %feat1_63_addr_2 = getelementptr i32 %feat1_63, i64 0, i64 %zext_ln245_1
+for.inc61.i:58 %feat1_62_addr_2 = getelementptr i32 %feat1_62, i64 0, i64 %zext_ln245_1
 
 ]]></Node>
-<StgValue><ssdm name="feat1_63_addr_2"/></StgValue>
+<StgValue><ssdm name="feat1_62_addr_2"/></StgValue>
 </operation>
 
 <operation id="84" st_id="3" stage="2" lat="2">
@@ -1196,10 +1196,10 @@ for.inc61.i:67 %feat1_load = load i18 %feat1_addr
 
 <Node id="95" bw="32" op_0_bw="18">
 <![CDATA[
-for.inc61.i:68 %feat1_61_load = load i18 %feat1_61_addr
+for.inc61.i:68 %feat1_60_load = load i18 %feat1_60_addr
 
 ]]></Node>
-<StgValue><ssdm name="feat1_61_load"/></StgValue>
+<StgValue><ssdm name="feat1_60_load"/></StgValue>
 </operation>
 
 <operation id="86" st_id="3" stage="2" lat="2">
@@ -1213,10 +1213,10 @@ for.inc61.i:68 %feat1_61_load = load i18 %feat1_61_addr
 
 <Node id="96" bw="32" op_0_bw="18">
 <![CDATA[
-for.inc61.i:69 %feat1_62_load = load i18 %feat1_62_addr
+for.inc61.i:69 %feat1_61_load = load i18 %feat1_61_addr
 
 ]]></Node>
-<StgValue><ssdm name="feat1_62_load"/></StgValue>
+<StgValue><ssdm name="feat1_61_load"/></StgValue>
 </operation>
 
 <operation id="87" st_id="3" stage="2" lat="2">
@@ -1230,10 +1230,10 @@ for.inc61.i:69 %feat1_62_load = load i18 %feat1_62_addr
 
 <Node id="97" bw="32" op_0_bw="18">
 <![CDATA[
-for.inc61.i:70 %feat1_63_load = load i18 %feat1_63_addr
+for.inc61.i:70 %feat1_62_load = load i18 %feat1_62_addr
 
 ]]></Node>
-<StgValue><ssdm name="feat1_63_load"/></StgValue>
+<StgValue><ssdm name="feat1_62_load"/></StgValue>
 </operation>
 
 <operation id="88" st_id="3" stage="2" lat="2">
@@ -1264,10 +1264,10 @@ for.inc61.i:77 %feat1_load_2 = load i18 %feat1_addr_2
 
 <Node id="105" bw="32" op_0_bw="18">
 <![CDATA[
-for.inc61.i:78 %feat1_61_load_2 = load i18 %feat1_61_addr_2
+for.inc61.i:78 %feat1_60_load_2 = load i18 %feat1_60_addr_2
 
 ]]></Node>
-<StgValue><ssdm name="feat1_61_load_2"/></StgValue>
+<StgValue><ssdm name="feat1_60_load_2"/></StgValue>
 </operation>
 
 <operation id="90" st_id="3" stage="2" lat="2">
@@ -1281,10 +1281,10 @@ for.inc61.i:78 %feat1_61_load_2 = load i18 %feat1_61_addr_2
 
 <Node id="106" bw="32" op_0_bw="18">
 <![CDATA[
-for.inc61.i:79 %feat1_62_load_2 = load i18 %feat1_62_addr_2
+for.inc61.i:79 %feat1_61_load_2 = load i18 %feat1_61_addr_2
 
 ]]></Node>
-<StgValue><ssdm name="feat1_62_load_2"/></StgValue>
+<StgValue><ssdm name="feat1_61_load_2"/></StgValue>
 </operation>
 
 <operation id="91" st_id="3" stage="2" lat="2">
@@ -1298,10 +1298,10 @@ for.inc61.i:79 %feat1_62_load_2 = load i18 %feat1_62_addr_2
 
 <Node id="107" bw="32" op_0_bw="18">
 <![CDATA[
-for.inc61.i:80 %feat1_63_load_2 = load i18 %feat1_63_addr_2
+for.inc61.i:80 %feat1_62_load_2 = load i18 %feat1_62_addr_2
 
 ]]></Node>
-<StgValue><ssdm name="feat1_63_load_2"/></StgValue>
+<StgValue><ssdm name="feat1_62_load_2"/></StgValue>
 </operation>
 </state>
 
@@ -1409,10 +1409,10 @@ for.inc61.i:47 %feat1_addr_3 = getelementptr i32 %feat1, i64 0, i64 %zext_ln246
 
 <Node id="76" bw="18" op_0_bw="32" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-for.inc61.i:49 %feat1_61_addr_1 = getelementptr i32 %feat1_61, i64 0, i64 %zext_ln244_1
+for.inc61.i:49 %feat1_60_addr_1 = getelementptr i32 %feat1_60, i64 0, i64 %zext_ln244_1
 
 ]]></Node>
-<StgValue><ssdm name="feat1_61_addr_1"/></StgValue>
+<StgValue><ssdm name="feat1_60_addr_1"/></StgValue>
 </operation>
 
 <operation id="99" st_id="4" stage="1" lat="1">
@@ -1425,10 +1425,10 @@ for.inc61.i:49 %feat1_61_addr_1 = getelementptr i32 %feat1_61, i64 0, i64 %zext_
 
 <Node id="78" bw="18" op_0_bw="32" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-for.inc61.i:51 %feat1_61_addr_3 = getelementptr i32 %feat1_61, i64 0, i64 %zext_ln246
+for.inc61.i:51 %feat1_60_addr_3 = getelementptr i32 %feat1_60, i64 0, i64 %zext_ln246
 
 ]]></Node>
-<StgValue><ssdm name="feat1_61_addr_3"/></StgValue>
+<StgValue><ssdm name="feat1_60_addr_3"/></StgValue>
 </operation>
 
 <operation id="100" st_id="4" stage="1" lat="1">
@@ -1441,10 +1441,10 @@ for.inc61.i:51 %feat1_61_addr_3 = getelementptr i32 %feat1_61, i64 0, i64 %zext_
 
 <Node id="80" bw="18" op_0_bw="32" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-for.inc61.i:53 %feat1_62_addr_1 = getelementptr i32 %feat1_62, i64 0, i64 %zext_ln244_1
+for.inc61.i:53 %feat1_61_addr_1 = getelementptr i32 %feat1_61, i64 0, i64 %zext_ln244_1
 
 ]]></Node>
-<StgValue><ssdm name="feat1_62_addr_1"/></StgValue>
+<StgValue><ssdm name="feat1_61_addr_1"/></StgValue>
 </operation>
 
 <operation id="101" st_id="4" stage="1" lat="1">
@@ -1457,10 +1457,10 @@ for.inc61.i:53 %feat1_62_addr_1 = getelementptr i32 %feat1_62, i64 0, i64 %zext_
 
 <Node id="82" bw="18" op_0_bw="32" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-for.inc61.i:55 %feat1_62_addr_3 = getelementptr i32 %feat1_62, i64 0, i64 %zext_ln246
+for.inc61.i:55 %feat1_61_addr_3 = getelementptr i32 %feat1_61, i64 0, i64 %zext_ln246
 
 ]]></Node>
-<StgValue><ssdm name="feat1_62_addr_3"/></StgValue>
+<StgValue><ssdm name="feat1_61_addr_3"/></StgValue>
 </operation>
 
 <operation id="102" st_id="4" stage="1" lat="1">
@@ -1473,10 +1473,10 @@ for.inc61.i:55 %feat1_62_addr_3 = getelementptr i32 %feat1_62, i64 0, i64 %zext_
 
 <Node id="84" bw="18" op_0_bw="32" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-for.inc61.i:57 %feat1_63_addr_1 = getelementptr i32 %feat1_63, i64 0, i64 %zext_ln244_1
+for.inc61.i:57 %feat1_62_addr_1 = getelementptr i32 %feat1_62, i64 0, i64 %zext_ln244_1
 
 ]]></Node>
-<StgValue><ssdm name="feat1_63_addr_1"/></StgValue>
+<StgValue><ssdm name="feat1_62_addr_1"/></StgValue>
 </operation>
 
 <operation id="103" st_id="4" stage="1" lat="1">
@@ -1489,10 +1489,10 @@ for.inc61.i:57 %feat1_63_addr_1 = getelementptr i32 %feat1_63, i64 0, i64 %zext_
 
 <Node id="86" bw="18" op_0_bw="32" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-for.inc61.i:59 %feat1_63_addr_3 = getelementptr i32 %feat1_63, i64 0, i64 %zext_ln246
+for.inc61.i:59 %feat1_62_addr_3 = getelementptr i32 %feat1_62, i64 0, i64 %zext_ln246
 
 ]]></Node>
-<StgValue><ssdm name="feat1_63_addr_3"/></StgValue>
+<StgValue><ssdm name="feat1_62_addr_3"/></StgValue>
 </operation>
 
 <operation id="104" st_id="4" stage="1" lat="2">
@@ -1521,10 +1521,10 @@ for.inc61.i:67 %feat1_load = load i18 %feat1_addr
 
 <Node id="95" bw="32" op_0_bw="18">
 <![CDATA[
-for.inc61.i:68 %feat1_61_load = load i18 %feat1_61_addr
+for.inc61.i:68 %feat1_60_load = load i18 %feat1_60_addr
 
 ]]></Node>
-<StgValue><ssdm name="feat1_61_load"/></StgValue>
+<StgValue><ssdm name="feat1_60_load"/></StgValue>
 </operation>
 
 <operation id="106" st_id="4" stage="1" lat="2">
@@ -1537,10 +1537,10 @@ for.inc61.i:68 %feat1_61_load = load i18 %feat1_61_addr
 
 <Node id="96" bw="32" op_0_bw="18">
 <![CDATA[
-for.inc61.i:69 %feat1_62_load = load i18 %feat1_62_addr
+for.inc61.i:69 %feat1_61_load = load i18 %feat1_61_addr
 
 ]]></Node>
-<StgValue><ssdm name="feat1_62_load"/></StgValue>
+<StgValue><ssdm name="feat1_61_load"/></StgValue>
 </operation>
 
 <operation id="107" st_id="4" stage="1" lat="2">
@@ -1553,10 +1553,10 @@ for.inc61.i:69 %feat1_62_load = load i18 %feat1_62_addr
 
 <Node id="97" bw="32" op_0_bw="18">
 <![CDATA[
-for.inc61.i:70 %feat1_63_load = load i18 %feat1_63_addr
+for.inc61.i:70 %feat1_62_load = load i18 %feat1_62_addr
 
 ]]></Node>
-<StgValue><ssdm name="feat1_63_load"/></StgValue>
+<StgValue><ssdm name="feat1_62_load"/></StgValue>
 </operation>
 
 <operation id="108" st_id="4" stage="1" lat="1">
@@ -1568,7 +1568,7 @@ for.inc61.i:70 %feat1_63_load = load i18 %feat1_63_addr
 
 <Node id="98" bw="32" op_0_bw="32" op_1_bw="2" op_2_bw="32" op_3_bw="2" op_4_bw="32" op_5_bw="2" op_6_bw="32" op_7_bw="2" op_8_bw="32" op_9_bw="32" op_10_bw="2">
 <![CDATA[
-for.inc61.i:71 %m0 = sparsemux i32 @_ssdm_op_SparseMux.ap_auto.4float.float.i2, i2 0, i32 %feat1_load, i2 1, i32 %feat1_61_load, i2 2, i32 %feat1_62_load, i2 3, i32 %feat1_63_load, i32 <undef>, i2 %trunc_ln241_3
+for.inc61.i:71 %m0 = sparsemux i32 @_ssdm_op_SparseMux.ap_auto.4float.float.i2, i2 0, i32 %feat1_load, i2 1, i32 %feat1_60_load, i2 2, i32 %feat1_61_load, i2 3, i32 %feat1_62_load, i32 <undef>, i2 %trunc_ln241_3
 
 ]]></Node>
 <StgValue><ssdm name="m0"/></StgValue>
@@ -1600,10 +1600,10 @@ for.inc61.i:72 %feat1_load_1 = load i18 %feat1_addr_1
 
 <Node id="100" bw="32" op_0_bw="18">
 <![CDATA[
-for.inc61.i:73 %feat1_61_load_1 = load i18 %feat1_61_addr_1
+for.inc61.i:73 %feat1_60_load_1 = load i18 %feat1_60_addr_1
 
 ]]></Node>
-<StgValue><ssdm name="feat1_61_load_1"/></StgValue>
+<StgValue><ssdm name="feat1_60_load_1"/></StgValue>
 </operation>
 
 <operation id="111" st_id="4" stage="2" lat="2">
@@ -1616,10 +1616,10 @@ for.inc61.i:73 %feat1_61_load_1 = load i18 %feat1_61_addr_1
 
 <Node id="101" bw="32" op_0_bw="18">
 <![CDATA[
-for.inc61.i:74 %feat1_62_load_1 = load i18 %feat1_62_addr_1
+for.inc61.i:74 %feat1_61_load_1 = load i18 %feat1_61_addr_1
 
 ]]></Node>
-<StgValue><ssdm name="feat1_62_load_1"/></StgValue>
+<StgValue><ssdm name="feat1_61_load_1"/></StgValue>
 </operation>
 
 <operation id="112" st_id="4" stage="2" lat="2">
@@ -1632,10 +1632,10 @@ for.inc61.i:74 %feat1_62_load_1 = load i18 %feat1_62_addr_1
 
 <Node id="102" bw="32" op_0_bw="18">
 <![CDATA[
-for.inc61.i:75 %feat1_63_load_1 = load i18 %feat1_63_addr_1
+for.inc61.i:75 %feat1_62_load_1 = load i18 %feat1_62_addr_1
 
 ]]></Node>
-<StgValue><ssdm name="feat1_63_load_1"/></StgValue>
+<StgValue><ssdm name="feat1_62_load_1"/></StgValue>
 </operation>
 
 <operation id="113" st_id="4" stage="1" lat="2">
@@ -1664,10 +1664,10 @@ for.inc61.i:77 %feat1_load_2 = load i18 %feat1_addr_2
 
 <Node id="105" bw="32" op_0_bw="18">
 <![CDATA[
-for.inc61.i:78 %feat1_61_load_2 = load i18 %feat1_61_addr_2
+for.inc61.i:78 %feat1_60_load_2 = load i18 %feat1_60_addr_2
 
 ]]></Node>
-<StgValue><ssdm name="feat1_61_load_2"/></StgValue>
+<StgValue><ssdm name="feat1_60_load_2"/></StgValue>
 </operation>
 
 <operation id="115" st_id="4" stage="1" lat="2">
@@ -1680,10 +1680,10 @@ for.inc61.i:78 %feat1_61_load_2 = load i18 %feat1_61_addr_2
 
 <Node id="106" bw="32" op_0_bw="18">
 <![CDATA[
-for.inc61.i:79 %feat1_62_load_2 = load i18 %feat1_62_addr_2
+for.inc61.i:79 %feat1_61_load_2 = load i18 %feat1_61_addr_2
 
 ]]></Node>
-<StgValue><ssdm name="feat1_62_load_2"/></StgValue>
+<StgValue><ssdm name="feat1_61_load_2"/></StgValue>
 </operation>
 
 <operation id="116" st_id="4" stage="1" lat="2">
@@ -1696,10 +1696,10 @@ for.inc61.i:79 %feat1_62_load_2 = load i18 %feat1_62_addr_2
 
 <Node id="107" bw="32" op_0_bw="18">
 <![CDATA[
-for.inc61.i:80 %feat1_63_load_2 = load i18 %feat1_63_addr_2
+for.inc61.i:80 %feat1_62_load_2 = load i18 %feat1_62_addr_2
 
 ]]></Node>
-<StgValue><ssdm name="feat1_63_load_2"/></StgValue>
+<StgValue><ssdm name="feat1_62_load_2"/></StgValue>
 </operation>
 
 <operation id="117" st_id="4" stage="1" lat="1">
@@ -1711,7 +1711,7 @@ for.inc61.i:80 %feat1_63_load_2 = load i18 %feat1_63_addr_2
 
 <Node id="108" bw="32" op_0_bw="32" op_1_bw="2" op_2_bw="32" op_3_bw="2" op_4_bw="32" op_5_bw="2" op_6_bw="32" op_7_bw="2" op_8_bw="32" op_9_bw="32" op_10_bw="2">
 <![CDATA[
-for.inc61.i:81 %m2 = sparsemux i32 @_ssdm_op_SparseMux.ap_auto.4float.float.i2, i2 0, i32 %feat1_load_2, i2 1, i32 %feat1_61_load_2, i2 2, i32 %feat1_62_load_2, i2 3, i32 %feat1_63_load_2, i32 <undef>, i2 %trunc_ln241_3
+for.inc61.i:81 %m2 = sparsemux i32 @_ssdm_op_SparseMux.ap_auto.4float.float.i2, i2 0, i32 %feat1_load_2, i2 1, i32 %feat1_60_load_2, i2 2, i32 %feat1_61_load_2, i2 3, i32 %feat1_62_load_2, i32 <undef>, i2 %trunc_ln241_3
 
 ]]></Node>
 <StgValue><ssdm name="m2"/></StgValue>
@@ -1743,10 +1743,10 @@ for.inc61.i:82 %feat1_load_3 = load i18 %feat1_addr_3
 
 <Node id="110" bw="32" op_0_bw="18">
 <![CDATA[
-for.inc61.i:83 %feat1_61_load_3 = load i18 %feat1_61_addr_3
+for.inc61.i:83 %feat1_60_load_3 = load i18 %feat1_60_addr_3
 
 ]]></Node>
-<StgValue><ssdm name="feat1_61_load_3"/></StgValue>
+<StgValue><ssdm name="feat1_60_load_3"/></StgValue>
 </operation>
 
 <operation id="120" st_id="4" stage="2" lat="2">
@@ -1759,10 +1759,10 @@ for.inc61.i:83 %feat1_61_load_3 = load i18 %feat1_61_addr_3
 
 <Node id="111" bw="32" op_0_bw="18">
 <![CDATA[
-for.inc61.i:84 %feat1_62_load_3 = load i18 %feat1_62_addr_3
+for.inc61.i:84 %feat1_61_load_3 = load i18 %feat1_61_addr_3
 
 ]]></Node>
-<StgValue><ssdm name="feat1_62_load_3"/></StgValue>
+<StgValue><ssdm name="feat1_61_load_3"/></StgValue>
 </operation>
 
 <operation id="121" st_id="4" stage="2" lat="2">
@@ -1775,10 +1775,10 @@ for.inc61.i:84 %feat1_62_load_3 = load i18 %feat1_62_addr_3
 
 <Node id="112" bw="32" op_0_bw="18">
 <![CDATA[
-for.inc61.i:85 %feat1_63_load_3 = load i18 %feat1_63_addr_3
+for.inc61.i:85 %feat1_62_load_3 = load i18 %feat1_62_addr_3
 
 ]]></Node>
-<StgValue><ssdm name="feat1_63_load_3"/></StgValue>
+<StgValue><ssdm name="feat1_62_load_3"/></StgValue>
 </operation>
 </state>
 
@@ -1810,10 +1810,10 @@ for.inc61.i:72 %feat1_load_1 = load i18 %feat1_addr_1
 
 <Node id="100" bw="32" op_0_bw="18">
 <![CDATA[
-for.inc61.i:73 %feat1_61_load_1 = load i18 %feat1_61_addr_1
+for.inc61.i:73 %feat1_60_load_1 = load i18 %feat1_60_addr_1
 
 ]]></Node>
-<StgValue><ssdm name="feat1_61_load_1"/></StgValue>
+<StgValue><ssdm name="feat1_60_load_1"/></StgValue>
 </operation>
 
 <operation id="124" st_id="5" stage="1" lat="2">
@@ -1826,10 +1826,10 @@ for.inc61.i:73 %feat1_61_load_1 = load i18 %feat1_61_addr_1
 
 <Node id="101" bw="32" op_0_bw="18">
 <![CDATA[
-for.inc61.i:74 %feat1_62_load_1 = load i18 %feat1_62_addr_1
+for.inc61.i:74 %feat1_61_load_1 = load i18 %feat1_61_addr_1
 
 ]]></Node>
-<StgValue><ssdm name="feat1_62_load_1"/></StgValue>
+<StgValue><ssdm name="feat1_61_load_1"/></StgValue>
 </operation>
 
 <operation id="125" st_id="5" stage="1" lat="2">
@@ -1842,10 +1842,10 @@ for.inc61.i:74 %feat1_62_load_1 = load i18 %feat1_62_addr_1
 
 <Node id="102" bw="32" op_0_bw="18">
 <![CDATA[
-for.inc61.i:75 %feat1_63_load_1 = load i18 %feat1_63_addr_1
+for.inc61.i:75 %feat1_62_load_1 = load i18 %feat1_62_addr_1
 
 ]]></Node>
-<StgValue><ssdm name="feat1_63_load_1"/></StgValue>
+<StgValue><ssdm name="feat1_62_load_1"/></StgValue>
 </operation>
 
 <operation id="126" st_id="5" stage="1" lat="1">
@@ -1857,7 +1857,7 @@ for.inc61.i:75 %feat1_63_load_1 = load i18 %feat1_63_addr_1
 
 <Node id="103" bw="32" op_0_bw="32" op_1_bw="2" op_2_bw="32" op_3_bw="2" op_4_bw="32" op_5_bw="2" op_6_bw="32" op_7_bw="2" op_8_bw="32" op_9_bw="32" op_10_bw="2">
 <![CDATA[
-for.inc61.i:76 %m1 = sparsemux i32 @_ssdm_op_SparseMux.ap_auto.4float.float.i2, i2 0, i32 %feat1_load_1, i2 1, i32 %feat1_61_load_1, i2 2, i32 %feat1_62_load_1, i2 3, i32 %feat1_63_load_1, i32 <undef>, i2 %trunc_ln241_3
+for.inc61.i:76 %m1 = sparsemux i32 @_ssdm_op_SparseMux.ap_auto.4float.float.i2, i2 0, i32 %feat1_load_1, i2 1, i32 %feat1_60_load_1, i2 2, i32 %feat1_61_load_1, i2 3, i32 %feat1_62_load_1, i32 <undef>, i2 %trunc_ln241_3
 
 ]]></Node>
 <StgValue><ssdm name="m1"/></StgValue>
@@ -1889,10 +1889,10 @@ for.inc61.i:82 %feat1_load_3 = load i18 %feat1_addr_3
 
 <Node id="110" bw="32" op_0_bw="18">
 <![CDATA[
-for.inc61.i:83 %feat1_61_load_3 = load i18 %feat1_61_addr_3
+for.inc61.i:83 %feat1_60_load_3 = load i18 %feat1_60_addr_3
 
 ]]></Node>
-<StgValue><ssdm name="feat1_61_load_3"/></StgValue>
+<StgValue><ssdm name="feat1_60_load_3"/></StgValue>
 </operation>
 
 <operation id="129" st_id="5" stage="1" lat="2">
@@ -1905,10 +1905,10 @@ for.inc61.i:83 %feat1_61_load_3 = load i18 %feat1_61_addr_3
 
 <Node id="111" bw="32" op_0_bw="18">
 <![CDATA[
-for.inc61.i:84 %feat1_62_load_3 = load i18 %feat1_62_addr_3
+for.inc61.i:84 %feat1_61_load_3 = load i18 %feat1_61_addr_3
 
 ]]></Node>
-<StgValue><ssdm name="feat1_62_load_3"/></StgValue>
+<StgValue><ssdm name="feat1_61_load_3"/></StgValue>
 </operation>
 
 <operation id="130" st_id="5" stage="1" lat="2">
@@ -1921,10 +1921,10 @@ for.inc61.i:84 %feat1_62_load_3 = load i18 %feat1_62_addr_3
 
 <Node id="112" bw="32" op_0_bw="18">
 <![CDATA[
-for.inc61.i:85 %feat1_63_load_3 = load i18 %feat1_63_addr_3
+for.inc61.i:85 %feat1_62_load_3 = load i18 %feat1_62_addr_3
 
 ]]></Node>
-<StgValue><ssdm name="feat1_63_load_3"/></StgValue>
+<StgValue><ssdm name="feat1_62_load_3"/></StgValue>
 </operation>
 
 <operation id="131" st_id="5" stage="1" lat="1">
@@ -1936,7 +1936,7 @@ for.inc61.i:85 %feat1_63_load_3 = load i18 %feat1_63_addr_3
 
 <Node id="113" bw="32" op_0_bw="32" op_1_bw="2" op_2_bw="32" op_3_bw="2" op_4_bw="32" op_5_bw="2" op_6_bw="32" op_7_bw="2" op_8_bw="32" op_9_bw="32" op_10_bw="2">
 <![CDATA[
-for.inc61.i:86 %m3 = sparsemux i32 @_ssdm_op_SparseMux.ap_auto.4float.float.i2, i2 0, i32 %feat1_load_3, i2 1, i32 %feat1_61_load_3, i2 2, i32 %feat1_62_load_3, i2 3, i32 %feat1_63_load_3, i32 <undef>, i2 %trunc_ln241_3
+for.inc61.i:86 %m3 = sparsemux i32 @_ssdm_op_SparseMux.ap_auto.4float.float.i2, i2 0, i32 %feat1_load_3, i2 1, i32 %feat1_60_load_3, i2 2, i32 %feat1_61_load_3, i2 3, i32 %feat1_62_load_3, i32 <undef>, i2 %trunc_ln241_3
 
 ]]></Node>
 <StgValue><ssdm name="m3"/></StgValue>
@@ -2891,7 +2891,7 @@ for.inc61.i:25 %add_ln249 = add i15 %mul_ln249, i15 %zext_ln249_1
 
 <Node id="62" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="0">
 <![CDATA[
-for.inc61.i:35 %specpipeline_ln242 = specpipeline void @_ssdm_op_SpecPipeline, i32 3, i32 0, i32 0, i32 0, void @empty_38
+for.inc61.i:35 %specpipeline_ln242 = specpipeline void @_ssdm_op_SpecPipeline, i32 3, i32 0, i32 0, i32 0, void @empty_19
 
 ]]></Node>
 <StgValue><ssdm name="specpipeline_ln242"/></StgValue>
@@ -2951,10 +2951,10 @@ for.inc61.i:62 %feat1_p_addr = getelementptr i32 %feat1_p, i64 0, i64 %zext_ln24
 
 <Node id="90" bw="16" op_0_bw="32" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-for.inc61.i:63 %feat1_p_64_addr = getelementptr i32 %feat1_p_64, i64 0, i64 %zext_ln249_2
+for.inc61.i:63 %feat1_p_63_addr = getelementptr i32 %feat1_p_63, i64 0, i64 %zext_ln249_2
 
 ]]></Node>
-<StgValue><ssdm name="feat1_p_64_addr"/></StgValue>
+<StgValue><ssdm name="feat1_p_63_addr"/></StgValue>
 </operation>
 
 <operation id="197" st_id="13" stage="1" lat="1">
@@ -2966,10 +2966,10 @@ for.inc61.i:63 %feat1_p_64_addr = getelementptr i32 %feat1_p_64, i64 0, i64 %zex
 
 <Node id="91" bw="16" op_0_bw="32" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-for.inc61.i:64 %feat1_p_65_addr = getelementptr i32 %feat1_p_65, i64 0, i64 %zext_ln249_2
+for.inc61.i:64 %feat1_p_64_addr = getelementptr i32 %feat1_p_64, i64 0, i64 %zext_ln249_2
 
 ]]></Node>
-<StgValue><ssdm name="feat1_p_65_addr"/></StgValue>
+<StgValue><ssdm name="feat1_p_64_addr"/></StgValue>
 </operation>
 
 <operation id="198" st_id="13" stage="1" lat="1">
@@ -2981,10 +2981,10 @@ for.inc61.i:64 %feat1_p_65_addr = getelementptr i32 %feat1_p_65, i64 0, i64 %zex
 
 <Node id="92" bw="16" op_0_bw="32" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-for.inc61.i:65 %feat1_p_66_addr = getelementptr i32 %feat1_p_66, i64 0, i64 %zext_ln249_2
+for.inc61.i:65 %feat1_p_65_addr = getelementptr i32 %feat1_p_65, i64 0, i64 %zext_ln249_2
 
 ]]></Node>
-<StgValue><ssdm name="feat1_p_66_addr"/></StgValue>
+<StgValue><ssdm name="feat1_p_65_addr"/></StgValue>
 </operation>
 
 <operation id="199" st_id="13" stage="1" lat="1">
@@ -2997,7 +2997,7 @@ for.inc61.i:65 %feat1_p_66_addr = getelementptr i32 %feat1_p_66, i64 0, i64 %zex
 
 <Node id="164" bw="0" op_0_bw="32" op_1_bw="16">
 <![CDATA[
-arrayidx571015.case.2.i:0 %store_ln249 = store i32 %select_ln249, i16 %feat1_p_65_addr
+arrayidx571015.case.2.i:0 %store_ln249 = store i32 %select_ln249, i16 %feat1_p_64_addr
 
 ]]></Node>
 <StgValue><ssdm name="store_ln249"/></StgValue>
@@ -3029,7 +3029,7 @@ arrayidx571015.case.2.i:1 %br_ln249 = br void %arrayidx571015.exit.i
 
 <Node id="167" bw="0" op_0_bw="32" op_1_bw="16">
 <![CDATA[
-arrayidx571015.case.1.i:0 %store_ln249 = store i32 %select_ln249, i16 %feat1_p_64_addr
+arrayidx571015.case.1.i:0 %store_ln249 = store i32 %select_ln249, i16 %feat1_p_63_addr
 
 ]]></Node>
 <StgValue><ssdm name="store_ln249"/></StgValue>
@@ -3093,7 +3093,7 @@ arrayidx571015.case.0.i:1 %br_ln249 = br void %arrayidx571015.exit.i
 
 <Node id="173" bw="0" op_0_bw="32" op_1_bw="16">
 <![CDATA[
-arrayidx571015.case.3.i:0 %store_ln249 = store i32 %select_ln249, i16 %feat1_p_66_addr
+arrayidx571015.case.3.i:0 %store_ln249 = store i32 %select_ln249, i16 %feat1_p_65_addr
 
 ]]></Node>
 <StgValue><ssdm name="store_ln249"/></StgValue>

@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'pool1'" level="0">
-<item name = "Date">Tue Jul  8 02:26:04 2025
+<item name = "Date">Wed Jul  9 07:45:46 2025
 </item>
 <item name = "Version">2025.1 (Build 6135595 on May 21 2025)</item>
 <item name = "Project">cnn_accel</item>
@@ -62,15 +62,15 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
-<column name="mul_8ns_10ns_17_1_1_U280">mul_8ns_10ns_17_1_1, 0, 0, 0, 63, 0</column>
-<column name="mul_8ns_10ns_17_1_1_U281">mul_8ns_10ns_17_1_1, 0, 0, 0, 63, 0</column>
-<column name="sparsemux_9_2_32_1_1_U278">sparsemux_9_2_32_1_1, 0, 0, 0, 17, 0</column>
-<column name="sparsemux_9_2_32_1_1_U279">sparsemux_9_2_32_1_1, 0, 0, 0, 17, 0</column>
+<column name="mul_8ns_10ns_17_1_1_U275">mul_8ns_10ns_17_1_1, 0, 0, 0, 63, 0</column>
+<column name="mul_8ns_10ns_17_1_1_U276">mul_8ns_10ns_17_1_1, 0, 0, 0, 63, 0</column>
+<column name="sparsemux_9_2_32_1_1_U273">sparsemux_9_2_32_1_1, 0, 0, 0, 17, 0</column>
+<column name="sparsemux_9_2_32_1_1_U274">sparsemux_9_2_32_1_1, 0, 0, 0, 17, 0</column>
 </table>
 </item>
 <item name = "DSP"><table name="" hasTotal="0">
 <keys size="3">Instance, Module, Expression</keys>
-<column name="mac_muladd_8ns_7ns_8ns_15_4_1_U282">mac_muladd_8ns_7ns_8ns_15_4_1, i0 * i1 + i2</column>
+<column name="mac_muladd_8ns_7ns_8ns_15_4_1_U277">mac_muladd_8ns_7ns_8ns_15_4_1, i0 * i1 + i2</column>
 </table>
 </item>
 <item name = "Memory"><table name="" hasTotal="1">
@@ -143,12 +143,12 @@
 <column name="ap_loop_exit_ready_pp0_iter1_reg">9, 2, 1, 2</column>
 <column name="ap_loop_exit_ready_pp0_iter2_reg">9, 2, 1, 2</column>
 <column name="ap_loop_exit_ready_pp0_iter3_reg">9, 2, 1, 2</column>
+<column name="feat1_60_address0_local">13, 3, 18, 54</column>
+<column name="feat1_60_address1_local">13, 3, 18, 54</column>
 <column name="feat1_61_address0_local">13, 3, 18, 54</column>
 <column name="feat1_61_address1_local">13, 3, 18, 54</column>
 <column name="feat1_62_address0_local">13, 3, 18, 54</column>
 <column name="feat1_62_address1_local">13, 3, 18, 54</column>
-<column name="feat1_63_address0_local">13, 3, 18, 54</column>
-<column name="feat1_63_address1_local">13, 3, 18, 54</column>
 <column name="feat1_address0_local">13, 3, 18, 54</column>
 <column name="feat1_address1_local">13, 3, 18, 54</column>
 <column name="grp_fu_340_p0">17, 4, 32, 128</column>
@@ -215,15 +215,19 @@
 <column name="ap_done">out, 1, ap_ctrl_hs, pool1, return value</column>
 <column name="ap_idle">out, 1, ap_ctrl_hs, pool1, return value</column>
 <column name="ap_ready">out, 1, ap_ctrl_hs, pool1, return value</column>
-<column name="grp_fu_9582_p_din0">out, 32, ap_ctrl_hs, pool1, return value</column>
-<column name="grp_fu_9582_p_din1">out, 32, ap_ctrl_hs, pool1, return value</column>
-<column name="grp_fu_9582_p_opcode">out, 5, ap_ctrl_hs, pool1, return value</column>
-<column name="grp_fu_9582_p_dout0">in, 1, ap_ctrl_hs, pool1, return value</column>
-<column name="grp_fu_9582_p_ce">out, 1, ap_ctrl_hs, pool1, return value</column>
+<column name="grp_fu_9568_p_din0">out, 32, ap_ctrl_hs, pool1, return value</column>
+<column name="grp_fu_9568_p_din1">out, 32, ap_ctrl_hs, pool1, return value</column>
+<column name="grp_fu_9568_p_opcode">out, 5, ap_ctrl_hs, pool1, return value</column>
+<column name="grp_fu_9568_p_dout0">in, 1, ap_ctrl_hs, pool1, return value</column>
+<column name="grp_fu_9568_p_ce">out, 1, ap_ctrl_hs, pool1, return value</column>
 <column name="feat1_p_address0">out, 16, ap_memory, feat1_p, array</column>
 <column name="feat1_p_ce0">out, 1, ap_memory, feat1_p, array</column>
 <column name="feat1_p_we0">out, 1, ap_memory, feat1_p, array</column>
 <column name="feat1_p_d0">out, 32, ap_memory, feat1_p, array</column>
+<column name="feat1_p_63_address0">out, 16, ap_memory, feat1_p_63, array</column>
+<column name="feat1_p_63_ce0">out, 1, ap_memory, feat1_p_63, array</column>
+<column name="feat1_p_63_we0">out, 1, ap_memory, feat1_p_63, array</column>
+<column name="feat1_p_63_d0">out, 32, ap_memory, feat1_p_63, array</column>
 <column name="feat1_p_64_address0">out, 16, ap_memory, feat1_p_64, array</column>
 <column name="feat1_p_64_ce0">out, 1, ap_memory, feat1_p_64, array</column>
 <column name="feat1_p_64_we0">out, 1, ap_memory, feat1_p_64, array</column>
@@ -232,16 +236,18 @@
 <column name="feat1_p_65_ce0">out, 1, ap_memory, feat1_p_65, array</column>
 <column name="feat1_p_65_we0">out, 1, ap_memory, feat1_p_65, array</column>
 <column name="feat1_p_65_d0">out, 32, ap_memory, feat1_p_65, array</column>
-<column name="feat1_p_66_address0">out, 16, ap_memory, feat1_p_66, array</column>
-<column name="feat1_p_66_ce0">out, 1, ap_memory, feat1_p_66, array</column>
-<column name="feat1_p_66_we0">out, 1, ap_memory, feat1_p_66, array</column>
-<column name="feat1_p_66_d0">out, 32, ap_memory, feat1_p_66, array</column>
 <column name="feat1_address0">out, 18, ap_memory, feat1, array</column>
 <column name="feat1_ce0">out, 1, ap_memory, feat1, array</column>
 <column name="feat1_q0">in, 32, ap_memory, feat1, array</column>
 <column name="feat1_address1">out, 18, ap_memory, feat1, array</column>
 <column name="feat1_ce1">out, 1, ap_memory, feat1, array</column>
 <column name="feat1_q1">in, 32, ap_memory, feat1, array</column>
+<column name="feat1_60_address0">out, 18, ap_memory, feat1_60, array</column>
+<column name="feat1_60_ce0">out, 1, ap_memory, feat1_60, array</column>
+<column name="feat1_60_q0">in, 32, ap_memory, feat1_60, array</column>
+<column name="feat1_60_address1">out, 18, ap_memory, feat1_60, array</column>
+<column name="feat1_60_ce1">out, 1, ap_memory, feat1_60, array</column>
+<column name="feat1_60_q1">in, 32, ap_memory, feat1_60, array</column>
 <column name="feat1_61_address0">out, 18, ap_memory, feat1_61, array</column>
 <column name="feat1_61_ce0">out, 1, ap_memory, feat1_61, array</column>
 <column name="feat1_61_q0">in, 32, ap_memory, feat1_61, array</column>
@@ -254,12 +260,6 @@
 <column name="feat1_62_address1">out, 18, ap_memory, feat1_62, array</column>
 <column name="feat1_62_ce1">out, 1, ap_memory, feat1_62, array</column>
 <column name="feat1_62_q1">in, 32, ap_memory, feat1_62, array</column>
-<column name="feat1_63_address0">out, 18, ap_memory, feat1_63, array</column>
-<column name="feat1_63_ce0">out, 1, ap_memory, feat1_63, array</column>
-<column name="feat1_63_q0">in, 32, ap_memory, feat1_63, array</column>
-<column name="feat1_63_address1">out, 18, ap_memory, feat1_63, array</column>
-<column name="feat1_63_ce1">out, 1, ap_memory, feat1_63, array</column>
-<column name="feat1_63_q1">in, 32, ap_memory, feat1_63, array</column>
 </table>
 </item>
 </section>

@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'conv1'" level="0">
-<item name = "Date">Tue Jul  8 02:25:37 2025
+<item name = "Date">Wed Jul  9 07:45:20 2025
 </item>
 <item name = "Version">2025.1 (Build 6135595 on May 21 2025)</item>
 <item name = "Project">cnn_accel</item>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">5449385, 5449385, 54.494 ms, 54.494 ms, 5449385, 5449385, no</column>
+<column name="">8476740, 8476740, 84.767 ms, 84.767 ms, 8476740, 8476740, no</column>
 </table>
 </item>
 <item name = "Detail">
@@ -35,7 +35,7 @@
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- CONV1_ROW_CONV1_COL_CONV1_FIL">5449383, 5449383, 145, 9, 3, 605472, yes</column>
+<column name="- CONV1_ROW_CONV1_COL_CONV1_FIL">8476738, 8476738, 145, 14, 3, 605472, yes</column>
 </table>
 </item>
 </section>

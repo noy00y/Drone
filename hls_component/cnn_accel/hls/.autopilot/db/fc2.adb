@@ -3322,7 +3322,7 @@
                 </item>
               </inlineStackInfo>
               <originalName></originalName>
-              <rtlName>fexp_32ns_32ns_32_8_full_dsp_1_U1707</rtlName>
+              <rtlName>fexp_32ns_32ns_32_8_full_dsp_1_U1703</rtlName>
               <control>auto</control>
               <opType>fexp</opType>
               <implIndex>fulldsp</implIndex>
@@ -6718,7 +6718,7 @@
         <count>2</count>
         <item_version>0</item_version>
         <item class_id="36" tracking_level="0" version="0">
-          <first>fexp_32ns_32ns_32_8_full_dsp_1_U1707 (fexp_32ns_32ns_32_8_full_dsp_1)</first>
+          <first>fexp_32ns_32ns_32_8_full_dsp_1_U1703 (fexp_32ns_32ns_32_8_full_dsp_1)</first>
           <second class_id="37" tracking_level="0" version="0">
             <count>3</count>
             <item_version>0</item_version>
@@ -7324,7 +7324,7 @@
         <count>2</count>
         <item_version>0</item_version>
         <item>
-          <first>fexp_32ns_32ns_32_8_full_dsp_1_U1707</first>
+          <first>fexp_32ns_32ns_32_8_full_dsp_1_U1703</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
@@ -7342,7 +7342,7 @@
         <count>2</count>
         <item_version>0</item_version>
         <item class_id="40" tracking_level="0" version="0">
-          <first>fexp_32ns_32ns_32_8_full_dsp_1_U1707 (fexp_32ns_32ns_32_8_full_dsp_1)</first>
+          <first>fexp_32ns_32ns_32_8_full_dsp_1_U1703 (fexp_32ns_32ns_32_8_full_dsp_1)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>

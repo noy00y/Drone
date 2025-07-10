@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'flatten'
 ================================================================
-* Date:           Tue Jul  8 02:25:43 2025
+* Date:           Wed Jul  9 07:45:26 2025
 
 * Version:        2025.1 (Build 6135595 on May 21 2025)
 * Project:        cnn_accel
@@ -156,13 +156,13 @@ ST_5 : Operation 62 [1/2] (1.76ns) (root node of the DSP)   --->   "%add_ln312_1
 ST_5 : Operation 63 [1/1] (0.00ns)   --->   "%tmp_s = bitconcatenate i15 @_ssdm_op_BitConcatenate.i15.i13.i2, i13 %add_ln312_1, i2 %trunc_ln310" [../hls_files/conv_pool.cpp:312]   --->   Operation 63 'bitconcatenate' 'tmp_s' <Predicate = true> <Delay = 0.00>
 ST_5 : Operation 64 [1/1] (0.00ns)   --->   "%zext_ln312_2 = zext i15 %tmp_s" [../hls_files/conv_pool.cpp:312]   --->   Operation 64 'zext' 'zext_ln312_2' <Predicate = true> <Delay = 0.00>
 ST_5 : Operation 65 [1/1] (0.00ns)   --->   "%feat2_p_addr = getelementptr i32 %feat2_p, i64 0, i64 %zext_ln312_2" [../hls_files/conv_pool.cpp:312]   --->   Operation 65 'getelementptr' 'feat2_p_addr' <Predicate = (trunc_ln310_2 == 0)> <Delay = 0.00>
-ST_5 : Operation 66 [1/1] (0.00ns)   --->   "%feat2_p_70_addr = getelementptr i32 %feat2_p_70, i64 0, i64 %zext_ln312_2" [../hls_files/conv_pool.cpp:312]   --->   Operation 66 'getelementptr' 'feat2_p_70_addr' <Predicate = (trunc_ln310_2 == 1)> <Delay = 0.00>
-ST_5 : Operation 67 [1/1] (0.00ns)   --->   "%feat2_p_71_addr = getelementptr i32 %feat2_p_71, i64 0, i64 %zext_ln312_2" [../hls_files/conv_pool.cpp:312]   --->   Operation 67 'getelementptr' 'feat2_p_71_addr' <Predicate = (trunc_ln310_2 == 2)> <Delay = 0.00>
-ST_5 : Operation 68 [1/1] (0.00ns)   --->   "%feat2_p_72_addr = getelementptr i32 %feat2_p_72, i64 0, i64 %zext_ln312_2" [../hls_files/conv_pool.cpp:312]   --->   Operation 68 'getelementptr' 'feat2_p_72_addr' <Predicate = (trunc_ln310_2 == 3)> <Delay = 0.00>
+ST_5 : Operation 66 [1/1] (0.00ns)   --->   "%feat2_p_69_addr = getelementptr i32 %feat2_p_69, i64 0, i64 %zext_ln312_2" [../hls_files/conv_pool.cpp:312]   --->   Operation 66 'getelementptr' 'feat2_p_69_addr' <Predicate = (trunc_ln310_2 == 1)> <Delay = 0.00>
+ST_5 : Operation 67 [1/1] (0.00ns)   --->   "%feat2_p_70_addr = getelementptr i32 %feat2_p_70, i64 0, i64 %zext_ln312_2" [../hls_files/conv_pool.cpp:312]   --->   Operation 67 'getelementptr' 'feat2_p_70_addr' <Predicate = (trunc_ln310_2 == 2)> <Delay = 0.00>
+ST_5 : Operation 68 [1/1] (0.00ns)   --->   "%feat2_p_71_addr = getelementptr i32 %feat2_p_71, i64 0, i64 %zext_ln312_2" [../hls_files/conv_pool.cpp:312]   --->   Operation 68 'getelementptr' 'feat2_p_71_addr' <Predicate = (trunc_ln310_2 == 3)> <Delay = 0.00>
 ST_5 : Operation 69 [2/2] (2.77ns)   --->   "%feat2_p_load = load i15 %feat2_p_addr" [../hls_files/conv_pool.cpp:312]   --->   Operation 69 'load' 'feat2_p_load' <Predicate = (trunc_ln310_2 == 0)> <Delay = 2.77> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 18096> <RAM>
-ST_5 : Operation 70 [2/2] (2.77ns)   --->   "%feat2_p_70_load = load i15 %feat2_p_70_addr" [../hls_files/conv_pool.cpp:312]   --->   Operation 70 'load' 'feat2_p_70_load' <Predicate = (trunc_ln310_2 == 1)> <Delay = 2.77> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 18096> <RAM>
-ST_5 : Operation 71 [2/2] (2.77ns)   --->   "%feat2_p_71_load = load i15 %feat2_p_71_addr" [../hls_files/conv_pool.cpp:312]   --->   Operation 71 'load' 'feat2_p_71_load' <Predicate = (trunc_ln310_2 == 2)> <Delay = 2.77> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 18096> <RAM>
-ST_5 : Operation 72 [2/2] (2.77ns)   --->   "%feat2_p_72_load = load i15 %feat2_p_72_addr" [../hls_files/conv_pool.cpp:312]   --->   Operation 72 'load' 'feat2_p_72_load' <Predicate = (trunc_ln310_2 == 3)> <Delay = 2.77> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 18096> <RAM>
+ST_5 : Operation 70 [2/2] (2.77ns)   --->   "%feat2_p_69_load = load i15 %feat2_p_69_addr" [../hls_files/conv_pool.cpp:312]   --->   Operation 70 'load' 'feat2_p_69_load' <Predicate = (trunc_ln310_2 == 1)> <Delay = 2.77> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 18096> <RAM>
+ST_5 : Operation 71 [2/2] (2.77ns)   --->   "%feat2_p_70_load = load i15 %feat2_p_70_addr" [../hls_files/conv_pool.cpp:312]   --->   Operation 71 'load' 'feat2_p_70_load' <Predicate = (trunc_ln310_2 == 2)> <Delay = 2.77> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 18096> <RAM>
+ST_5 : Operation 72 [2/2] (2.77ns)   --->   "%feat2_p_71_load = load i15 %feat2_p_71_addr" [../hls_files/conv_pool.cpp:312]   --->   Operation 72 'load' 'feat2_p_71_load' <Predicate = (trunc_ln310_2 == 3)> <Delay = 2.77> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 18096> <RAM>
 
 State 6 <SV = 5> <Delay = 6.91>
 ST_6 : Operation 73 [1/1] (0.00ns)   --->   "%indvars_iv_i_load = load i17 %indvars_iv_i" [../hls_files/conv_pool.cpp:308]   --->   Operation 73 'load' 'indvars_iv_i_load' <Predicate = (!icmp_ln309 & !and_ln308)> <Delay = 0.00>
@@ -178,12 +178,12 @@ ST_6 : Operation 82 [1/1] (0.94ns)   --->   "%select_ln308_3 = select i1 %icmp_l
 ST_6 : Operation 83 [1/1] (0.94ns) (out node of the LUT)   --->   "%indvars_iv_i_mid2 = select i1 %and_ln308, i17 %add_ln3103_load, i17 %select_ln308_2" [../hls_files/conv_pool.cpp:308]   --->   Operation 83 'select' 'indvars_iv_i_mid2' <Predicate = true> <Delay = 0.94> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.94> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
 ST_6 : Operation 84 [1/1] (0.94ns) (out node of the LUT)   --->   "%select_ln309 = select i1 %and_ln308, i17 %add_ln3103_load, i17 %select_ln308" [../hls_files/conv_pool.cpp:309]   --->   Operation 84 'select' 'select_ln309' <Predicate = true> <Delay = 0.94> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.94> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
 ST_6 : Operation 85 [1/1] (0.00ns)   --->   "%zext_ln310 = zext i17 %indvars_iv_i_mid2" [../hls_files/conv_pool.cpp:310]   --->   Operation 85 'zext' 'zext_ln310' <Predicate = true> <Delay = 0.00>
-ST_6 : Operation 86 [1/1] (0.00ns)   --->   "%specpipeline_ln311 = specpipeline void @_ssdm_op_SpecPipeline, i32 3, i32 0, i32 0, i32 0, void @empty_38" [../hls_files/conv_pool.cpp:311]   --->   Operation 86 'specpipeline' 'specpipeline_ln311' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 86 [1/1] (0.00ns)   --->   "%specpipeline_ln311 = specpipeline void @_ssdm_op_SpecPipeline, i32 3, i32 0, i32 0, i32 0, void @empty_19" [../hls_files/conv_pool.cpp:311]   --->   Operation 86 'specpipeline' 'specpipeline_ln311' <Predicate = true> <Delay = 0.00>
 ST_6 : Operation 87 [1/2] ( I:2.77ns O:2.77ns )   --->   "%feat2_p_load = load i15 %feat2_p_addr" [../hls_files/conv_pool.cpp:312]   --->   Operation 87 'load' 'feat2_p_load' <Predicate = (trunc_ln310_2 == 0)> <Delay = 2.77> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 18096> <RAM>
-ST_6 : Operation 88 [1/2] ( I:2.77ns O:2.77ns )   --->   "%feat2_p_70_load = load i15 %feat2_p_70_addr" [../hls_files/conv_pool.cpp:312]   --->   Operation 88 'load' 'feat2_p_70_load' <Predicate = (trunc_ln310_2 == 1)> <Delay = 2.77> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 18096> <RAM>
-ST_6 : Operation 89 [1/2] ( I:2.77ns O:2.77ns )   --->   "%feat2_p_71_load = load i15 %feat2_p_71_addr" [../hls_files/conv_pool.cpp:312]   --->   Operation 89 'load' 'feat2_p_71_load' <Predicate = (trunc_ln310_2 == 2)> <Delay = 2.77> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 18096> <RAM>
-ST_6 : Operation 90 [1/2] ( I:2.77ns O:2.77ns )   --->   "%feat2_p_72_load = load i15 %feat2_p_72_addr" [../hls_files/conv_pool.cpp:312]   --->   Operation 90 'load' 'feat2_p_72_load' <Predicate = (trunc_ln310_2 == 3)> <Delay = 2.77> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 18096> <RAM>
-ST_6 : Operation 91 [1/1] (1.37ns)   --->   "%tmp_i = sparsemux i32 @_ssdm_op_SparseMux.ap_auto.4float.float.i2, i2 0, i32 %feat2_p_load, i2 1, i32 %feat2_p_70_load, i2 2, i32 %feat2_p_71_load, i2 3, i32 %feat2_p_72_load, i32 <undef>, i2 %trunc_ln310_2" [../hls_files/conv_pool.cpp:312]   --->   Operation 91 'sparsemux' 'tmp_i' <Predicate = true> <Delay = 1.37> <CoreInst = "BinarySparseMux_DontCare">   --->   Core 137 'BinarySparseMux_DontCare' <Latency = 0> <II = 1> <Delay = 1.37> <FuncUnit> <Opcode : 'sparsemux'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 88 [1/2] ( I:2.77ns O:2.77ns )   --->   "%feat2_p_69_load = load i15 %feat2_p_69_addr" [../hls_files/conv_pool.cpp:312]   --->   Operation 88 'load' 'feat2_p_69_load' <Predicate = (trunc_ln310_2 == 1)> <Delay = 2.77> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 18096> <RAM>
+ST_6 : Operation 89 [1/2] ( I:2.77ns O:2.77ns )   --->   "%feat2_p_70_load = load i15 %feat2_p_70_addr" [../hls_files/conv_pool.cpp:312]   --->   Operation 89 'load' 'feat2_p_70_load' <Predicate = (trunc_ln310_2 == 2)> <Delay = 2.77> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 18096> <RAM>
+ST_6 : Operation 90 [1/2] ( I:2.77ns O:2.77ns )   --->   "%feat2_p_71_load = load i15 %feat2_p_71_addr" [../hls_files/conv_pool.cpp:312]   --->   Operation 90 'load' 'feat2_p_71_load' <Predicate = (trunc_ln310_2 == 3)> <Delay = 2.77> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 18096> <RAM>
+ST_6 : Operation 91 [1/1] (1.37ns)   --->   "%tmp_i = sparsemux i32 @_ssdm_op_SparseMux.ap_auto.4float.float.i2, i2 0, i32 %feat2_p_load, i2 1, i32 %feat2_p_69_load, i2 2, i32 %feat2_p_70_load, i2 3, i32 %feat2_p_71_load, i32 <undef>, i2 %trunc_ln310_2" [../hls_files/conv_pool.cpp:312]   --->   Operation 91 'sparsemux' 'tmp_i' <Predicate = true> <Delay = 1.37> <CoreInst = "BinarySparseMux_DontCare">   --->   Core 137 'BinarySparseMux_DontCare' <Latency = 0> <II = 1> <Delay = 1.37> <FuncUnit> <Opcode : 'sparsemux'> <InPorts = 2> <OutPorts = 1>
 ST_6 : Operation 92 [1/1] (1.86ns)   --->   "%add_ln312 = add i17 %indvars_iv_i_mid2, i17 1" [../hls_files/conv_pool.cpp:312]   --->   Operation 92 'add' 'add_ln312' <Predicate = true> <Delay = 1.86> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.86> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_6 : Operation 93 [1/1] (0.00ns)   --->   "%vec1_addr = getelementptr i32 %vec1, i64 0, i64 %zext_ln310" [../hls_files/conv_pool.cpp:312]   --->   Operation 93 'getelementptr' 'vec1_addr' <Predicate = true> <Delay = 0.00>
 ST_6 : Operation 94 [1/1] ( I:2.77ns O:2.77ns )   --->   "%store_ln312 = store i32 %tmp_i, i17 %vec1_addr" [../hls_files/conv_pool.cpp:312]   --->   Operation 94 'store' 'store_ln312' <Predicate = true> <Delay = 2.77> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 72384> <RAM>
@@ -209,9 +209,9 @@ STG Binding:
 - Is top level: 0
 Port [ Return ] is wired: 1; IO mode=ap_ctrl_hs:ce=0
 Port [ feat2_p]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=1; pingpong=0; private_global=0; MemPort=[13]; IO mode=ap_memory:ce=0
+Port [ feat2_p_69]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=1; pingpong=0; private_global=0; MemPort=[13]; IO mode=ap_memory:ce=0
 Port [ feat2_p_70]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=1; pingpong=0; private_global=0; MemPort=[13]; IO mode=ap_memory:ce=0
 Port [ feat2_p_71]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=1; pingpong=0; private_global=0; MemPort=[13]; IO mode=ap_memory:ce=0
-Port [ feat2_p_72]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=1; pingpong=0; private_global=0; MemPort=[13]; IO mode=ap_memory:ce=0
 Port [ vec1]:  wired=1; compound=1; hidden=0; nouse=0; global=1; static=1; extern=0; dir=1; type=1; pingpong=0; private_global=0; MemPort=[03]; IO mode=ap_memory:ce=0
 ---------------- STG Properties END ------------------
 
@@ -274,9 +274,9 @@ add_ln312_1           (add              ) [ 0000000]
 tmp_s                 (bitconcatenate   ) [ 0000000]
 zext_ln312_2          (zext             ) [ 0000000]
 feat2_p_addr          (getelementptr    ) [ 0001001]
+feat2_p_69_addr       (getelementptr    ) [ 0001001]
 feat2_p_70_addr       (getelementptr    ) [ 0001001]
 feat2_p_71_addr       (getelementptr    ) [ 0001001]
-feat2_p_72_addr       (getelementptr    ) [ 0001001]
 indvars_iv_i_load     (load             ) [ 0000000]
 add_ln308_11_load     (load             ) [ 0000000]
 indvars_iv21_i_load   (load             ) [ 0000000]
@@ -292,9 +292,9 @@ select_ln309          (select           ) [ 0000000]
 zext_ln310            (zext             ) [ 0000000]
 specpipeline_ln311    (specpipeline     ) [ 0000000]
 feat2_p_load          (load             ) [ 0000000]
+feat2_p_69_load       (load             ) [ 0000000]
 feat2_p_70_load       (load             ) [ 0000000]
 feat2_p_71_load       (load             ) [ 0000000]
-feat2_p_72_load       (load             ) [ 0000000]
 tmp_i                 (sparsemux        ) [ 0000000]
 add_ln312             (add              ) [ 0000000]
 vec1_addr             (getelementptr    ) [ 0000000]
@@ -323,9 +323,19 @@ ret_ln308             (ret              ) [ 0000000]
 </bind>
 </comp>
 
-<comp id="2" class="1000" name="feat2_p_70">
+<comp id="2" class="1000" name="feat2_p_69">
 <pin_list>
 <pin id="3" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="feat2_p_69"/><MemPortTyVec>1 3 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="4" class="1000" name="feat2_p_70">
+<pin_list>
+<pin id="5" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
 <StgValue><ssdm name="feat2_p_70"/><MemPortTyVec>1 3 </MemPortTyVec>
@@ -333,22 +343,12 @@ ret_ln308             (ret              ) [ 0000000]
 </bind>
 </comp>
 
-<comp id="4" class="1000" name="feat2_p_71">
-<pin_list>
-<pin id="5" dir="1" index="0" bw="1" slack="0"/>
-</pin_list>
-<bind>
-<StgValue><ssdm name="feat2_p_71"/><MemPortTyVec>1 3 </MemPortTyVec>
-</StgValue>
-</bind>
-</comp>
-
-<comp id="6" class="1000" name="feat2_p_72">
+<comp id="6" class="1000" name="feat2_p_71">
 <pin_list>
 <pin id="7" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="feat2_p_72"/><MemPortTyVec>1 3 </MemPortTyVec>
+<StgValue><ssdm name="feat2_p_71"/><MemPortTyVec>1 3 </MemPortTyVec>
 </StgValue>
 </bind>
 </comp>
@@ -611,7 +611,7 @@ ret_ln308             (ret              ) [ 0000000]
 <pin id="65" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_38"/></StgValue>
+<StgValue><ssdm name="empty_19"/></StgValue>
 </bind>
 </comp>
 
@@ -810,7 +810,7 @@ ret_ln308             (ret              ) [ 0000000]
 </bind>
 </comp>
 
-<comp id="129" class="1004" name="feat2_p_70_addr_gep_fu_129">
+<comp id="129" class="1004" name="feat2_p_69_addr_gep_fu_129">
 <pin_list>
 <pin id="130" dir="0" index="0" bw="32" slack="0"/>
 <pin id="131" dir="0" index="1" bw="1" slack="0"/>
@@ -819,11 +819,11 @@ ret_ln308             (ret              ) [ 0000000]
 </pin_list>
 <bind>
 <opcode="getelementptr(29) " fcode="getelementptr"/>
-<opset="feat2_p_70_addr/5 "/>
+<opset="feat2_p_69_addr/5 "/>
 </bind>
 </comp>
 
-<comp id="136" class="1004" name="feat2_p_71_addr_gep_fu_136">
+<comp id="136" class="1004" name="feat2_p_70_addr_gep_fu_136">
 <pin_list>
 <pin id="137" dir="0" index="0" bw="32" slack="0"/>
 <pin id="138" dir="0" index="1" bw="1" slack="0"/>
@@ -832,11 +832,11 @@ ret_ln308             (ret              ) [ 0000000]
 </pin_list>
 <bind>
 <opcode="getelementptr(29) " fcode="getelementptr"/>
-<opset="feat2_p_71_addr/5 "/>
+<opset="feat2_p_70_addr/5 "/>
 </bind>
 </comp>
 
-<comp id="143" class="1004" name="feat2_p_72_addr_gep_fu_143">
+<comp id="143" class="1004" name="feat2_p_71_addr_gep_fu_143">
 <pin_list>
 <pin id="144" dir="0" index="0" bw="32" slack="0"/>
 <pin id="145" dir="0" index="1" bw="1" slack="0"/>
@@ -845,7 +845,7 @@ ret_ln308             (ret              ) [ 0000000]
 </pin_list>
 <bind>
 <opcode="getelementptr(29) " fcode="getelementptr"/>
-<opset="feat2_p_72_addr/5 "/>
+<opset="feat2_p_71_addr/5 "/>
 </bind>
 </comp>
 
@@ -871,7 +871,7 @@ ret_ln308             (ret              ) [ 0000000]
 </pin_list>
 <bind>
 <opcode="load(27) " fcode="load"/>
-<opset="feat2_p_70_load/5 "/>
+<opset="feat2_p_69_load/5 "/>
 </bind>
 </comp>
 
@@ -884,7 +884,7 @@ ret_ln308             (ret              ) [ 0000000]
 </pin_list>
 <bind>
 <opcode="load(27) " fcode="load"/>
-<opset="feat2_p_71_load/5 "/>
+<opset="feat2_p_70_load/5 "/>
 </bind>
 </comp>
 
@@ -897,7 +897,7 @@ ret_ln308             (ret              ) [ 0000000]
 </pin_list>
 <bind>
 <opcode="load(27) " fcode="load"/>
-<opset="feat2_p_72_load/5 "/>
+<opset="feat2_p_71_load/5 "/>
 </bind>
 </comp>
 
@@ -1847,33 +1847,33 @@ ret_ln308             (ret              ) [ 0000000]
 </bind>
 </comp>
 
-<comp id="650" class="1005" name="feat2_p_70_addr_reg_650">
+<comp id="650" class="1005" name="feat2_p_69_addr_reg_650">
 <pin_list>
 <pin id="651" dir="0" index="0" bw="15" slack="1"/>
 <pin id="652" dir="1" index="1" bw="15" slack="1"/>
+</pin_list>
+<bind>
+<opset="feat2_p_69_addr "/>
+</bind>
+</comp>
+
+<comp id="655" class="1005" name="feat2_p_70_addr_reg_655">
+<pin_list>
+<pin id="656" dir="0" index="0" bw="15" slack="1"/>
+<pin id="657" dir="1" index="1" bw="15" slack="1"/>
 </pin_list>
 <bind>
 <opset="feat2_p_70_addr "/>
 </bind>
 </comp>
 
-<comp id="655" class="1005" name="feat2_p_71_addr_reg_655">
-<pin_list>
-<pin id="656" dir="0" index="0" bw="15" slack="1"/>
-<pin id="657" dir="1" index="1" bw="15" slack="1"/>
-</pin_list>
-<bind>
-<opset="feat2_p_71_addr "/>
-</bind>
-</comp>
-
-<comp id="660" class="1005" name="feat2_p_72_addr_reg_660">
+<comp id="660" class="1005" name="feat2_p_71_addr_reg_660">
 <pin_list>
 <pin id="661" dir="0" index="0" bw="15" slack="1"/>
 <pin id="662" dir="1" index="1" bw="15" slack="1"/>
 </pin_list>
 <bind>
-<opset="feat2_p_72_addr "/>
+<opset="feat2_p_71_addr "/>
 </bind>
 </comp>
 
@@ -2266,9 +2266,9 @@ ret_ln308             (ret              ) [ 0000000]
 	Port: vec1 | {6 }
  - Input state : 
 	Port: flatten : feat2_p | {5 6 }
+	Port: flatten : feat2_p_69 | {5 6 }
 	Port: flatten : feat2_p_70 | {5 6 }
 	Port: flatten : feat2_p_71 | {5 6 }
-	Port: flatten : feat2_p_72 | {5 6 }
   - Chain level:
 	State 1
 		store_ln0 : 1
@@ -2313,13 +2313,13 @@ ret_ln308             (ret              ) [ 0000000]
 		tmp_s : 1
 		zext_ln312_2 : 2
 		feat2_p_addr : 3
+		feat2_p_69_addr : 3
 		feat2_p_70_addr : 3
 		feat2_p_71_addr : 3
-		feat2_p_72_addr : 3
 		feat2_p_load : 4
+		feat2_p_69_load : 4
 		feat2_p_70_load : 4
 		feat2_p_71_load : 4
-		feat2_p_72_load : 4
 	State 6
 		select_ln308 : 1
 		select_ln308_2 : 1
@@ -2406,9 +2406,9 @@ N/A
 |  add_ln308_11_reg_551  |   17   |
 |   add_ln3103_reg_564   |   17   |
 |    and_ln308_reg_624   |    1   |
-| feat2_p_70_addr_reg_650|   15   |
-| feat2_p_71_addr_reg_655|   15   |
-| feat2_p_72_addr_reg_660|   15   |
+| feat2_p_69_addr_reg_650|   15   |
+| feat2_p_70_addr_reg_655|   15   |
+| feat2_p_71_addr_reg_660|   15   |
 |  feat2_p_addr_reg_645  |   15   |
 |        i_reg_584       |    6   |
 |   icmp_ln308_reg_605   |    1   |

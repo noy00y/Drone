@@ -19,15 +19,15 @@ set C_modelName {flatten}
 set C_modelType { void 0 }
 set ap_memory_interface_dict [dict create]
 dict set ap_memory_interface_dict feat2_p { MEM_WIDTH 32 MEM_SIZE 72384 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 1 }
+dict set ap_memory_interface_dict feat2_p_69 { MEM_WIDTH 32 MEM_SIZE 72384 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 1 }
 dict set ap_memory_interface_dict feat2_p_70 { MEM_WIDTH 32 MEM_SIZE 72384 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 1 }
 dict set ap_memory_interface_dict feat2_p_71 { MEM_WIDTH 32 MEM_SIZE 72384 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 1 }
-dict set ap_memory_interface_dict feat2_p_72 { MEM_WIDTH 32 MEM_SIZE 72384 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 1 }
 dict set ap_memory_interface_dict vec1 { MEM_WIDTH 32 MEM_SIZE 289536 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 0 }
 set C_modelArgList {
 	{ feat2_p float 32 regular {array 18096 { 1 3 } 1 1 }  }
+	{ feat2_p_69 float 32 regular {array 18096 { 1 3 } 1 1 }  }
 	{ feat2_p_70 float 32 regular {array 18096 { 1 3 } 1 1 }  }
 	{ feat2_p_71 float 32 regular {array 18096 { 1 3 } 1 1 }  }
-	{ feat2_p_72 float 32 regular {array 18096 { 1 3 } 1 1 }  }
 	{ vec1 float 32 regular {array 72384 { 0 3 } 0 1 } {global 1}  }
 }
 set hasAXIMCache 0
@@ -35,9 +35,9 @@ set l_AXIML2Cache [list]
 set AXIMCacheInstDict [dict create]
 set C_modelArgMapList {[ 
 	{ "Name" : "feat2_p", "interface" : "memory", "bitwidth" : 32, "direction" : "READONLY"} , 
+ 	{ "Name" : "feat2_p_69", "interface" : "memory", "bitwidth" : 32, "direction" : "READONLY"} , 
  	{ "Name" : "feat2_p_70", "interface" : "memory", "bitwidth" : 32, "direction" : "READONLY"} , 
  	{ "Name" : "feat2_p_71", "interface" : "memory", "bitwidth" : 32, "direction" : "READONLY"} , 
- 	{ "Name" : "feat2_p_72", "interface" : "memory", "bitwidth" : 32, "direction" : "READONLY"} , 
  	{ "Name" : "vec1", "interface" : "memory", "bitwidth" : 32, "direction" : "WRITEONLY", "extern" : 0} ]}
 # RTL Port declarations: 
 set portNum 22
@@ -51,15 +51,15 @@ set portList {
 	{ feat2_p_address0 sc_out sc_lv 15 signal 0 } 
 	{ feat2_p_ce0 sc_out sc_logic 1 signal 0 } 
 	{ feat2_p_q0 sc_in sc_lv 32 signal 0 } 
-	{ feat2_p_70_address0 sc_out sc_lv 15 signal 1 } 
-	{ feat2_p_70_ce0 sc_out sc_logic 1 signal 1 } 
-	{ feat2_p_70_q0 sc_in sc_lv 32 signal 1 } 
-	{ feat2_p_71_address0 sc_out sc_lv 15 signal 2 } 
-	{ feat2_p_71_ce0 sc_out sc_logic 1 signal 2 } 
-	{ feat2_p_71_q0 sc_in sc_lv 32 signal 2 } 
-	{ feat2_p_72_address0 sc_out sc_lv 15 signal 3 } 
-	{ feat2_p_72_ce0 sc_out sc_logic 1 signal 3 } 
-	{ feat2_p_72_q0 sc_in sc_lv 32 signal 3 } 
+	{ feat2_p_69_address0 sc_out sc_lv 15 signal 1 } 
+	{ feat2_p_69_ce0 sc_out sc_logic 1 signal 1 } 
+	{ feat2_p_69_q0 sc_in sc_lv 32 signal 1 } 
+	{ feat2_p_70_address0 sc_out sc_lv 15 signal 2 } 
+	{ feat2_p_70_ce0 sc_out sc_logic 1 signal 2 } 
+	{ feat2_p_70_q0 sc_in sc_lv 32 signal 2 } 
+	{ feat2_p_71_address0 sc_out sc_lv 15 signal 3 } 
+	{ feat2_p_71_ce0 sc_out sc_logic 1 signal 3 } 
+	{ feat2_p_71_q0 sc_in sc_lv 32 signal 3 } 
 	{ vec1_address0 sc_out sc_lv 17 signal 4 } 
 	{ vec1_ce0 sc_out sc_logic 1 signal 4 } 
 	{ vec1_we0 sc_out sc_logic 1 signal 4 } 
@@ -75,15 +75,15 @@ set NewPortList {[
  	{ "name": "feat2_p_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":15, "type": "signal", "bundle":{"name": "feat2_p", "role": "address0" }} , 
  	{ "name": "feat2_p_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "feat2_p", "role": "ce0" }} , 
  	{ "name": "feat2_p_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "feat2_p", "role": "q0" }} , 
+ 	{ "name": "feat2_p_69_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":15, "type": "signal", "bundle":{"name": "feat2_p_69", "role": "address0" }} , 
+ 	{ "name": "feat2_p_69_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "feat2_p_69", "role": "ce0" }} , 
+ 	{ "name": "feat2_p_69_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "feat2_p_69", "role": "q0" }} , 
  	{ "name": "feat2_p_70_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":15, "type": "signal", "bundle":{"name": "feat2_p_70", "role": "address0" }} , 
  	{ "name": "feat2_p_70_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "feat2_p_70", "role": "ce0" }} , 
  	{ "name": "feat2_p_70_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "feat2_p_70", "role": "q0" }} , 
  	{ "name": "feat2_p_71_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":15, "type": "signal", "bundle":{"name": "feat2_p_71", "role": "address0" }} , 
  	{ "name": "feat2_p_71_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "feat2_p_71", "role": "ce0" }} , 
  	{ "name": "feat2_p_71_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "feat2_p_71", "role": "q0" }} , 
- 	{ "name": "feat2_p_72_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":15, "type": "signal", "bundle":{"name": "feat2_p_72", "role": "address0" }} , 
- 	{ "name": "feat2_p_72_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "feat2_p_72", "role": "ce0" }} , 
- 	{ "name": "feat2_p_72_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "feat2_p_72", "role": "q0" }} , 
  	{ "name": "vec1_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":17, "type": "signal", "bundle":{"name": "vec1", "role": "address0" }} , 
  	{ "name": "vec1_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "vec1", "role": "ce0" }} , 
  	{ "name": "vec1_we0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "vec1", "role": "we0" }} , 
@@ -92,9 +92,9 @@ set NewPortList {[
 set ArgLastReadFirstWriteLatency {
 	flatten {
 		feat2_p {Type I LastRead 4 FirstWrite -1}
+		feat2_p_69 {Type I LastRead 4 FirstWrite -1}
 		feat2_p_70 {Type I LastRead 4 FirstWrite -1}
 		feat2_p_71 {Type I LastRead 4 FirstWrite -1}
-		feat2_p_72 {Type I LastRead 4 FirstWrite -1}
 		vec1 {Type O LastRead -1 FirstWrite 5}}}
 
 set hasDtUnsupportedChannel 0
@@ -110,8 +110,8 @@ set PipelineEnableSignalInfo {[
 
 set Spec2ImplPortList { 
 	feat2_p { ap_memory {  { feat2_p_address0 mem_address 1 15 }  { feat2_p_ce0 mem_ce 1 1 }  { feat2_p_q0 mem_dout 0 32 } } }
+	feat2_p_69 { ap_memory {  { feat2_p_69_address0 mem_address 1 15 }  { feat2_p_69_ce0 mem_ce 1 1 }  { feat2_p_69_q0 mem_dout 0 32 } } }
 	feat2_p_70 { ap_memory {  { feat2_p_70_address0 mem_address 1 15 }  { feat2_p_70_ce0 mem_ce 1 1 }  { feat2_p_70_q0 mem_dout 0 32 } } }
 	feat2_p_71 { ap_memory {  { feat2_p_71_address0 mem_address 1 15 }  { feat2_p_71_ce0 mem_ce 1 1 }  { feat2_p_71_q0 mem_dout 0 32 } } }
-	feat2_p_72 { ap_memory {  { feat2_p_72_address0 mem_address 1 15 }  { feat2_p_72_ce0 mem_ce 1 1 }  { feat2_p_72_q0 mem_dout 0 32 } } }
 	vec1 { ap_memory {  { vec1_address0 mem_address 1 17 }  { vec1_ce0 mem_ce 1 1 }  { vec1_we0 mem_we 1 1 }  { vec1_d0 mem_din 1 32 } } }
 }

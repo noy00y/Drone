@@ -636,7 +636,7 @@ begin
         ce0 => table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array_ce0_local,
         q0 => table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array_q0);
 
-    mul_13s_71s_71_5_0_U1588 : component cnn_accel_mul_13s_71s_71_5_0
+    mul_13s_71s_71_5_0_U1584 : component cnn_accel_mul_13s_71s_71_5_0
     generic map (
         ID => 1,
         NUM_STAGE => 5,
@@ -651,7 +651,7 @@ begin
         ce => grp_fu_263_ce,
         dout => grp_fu_263_p2);
 
-    mul_43ns_36ns_79_2_0_U1589 : component cnn_accel_mul_43ns_36ns_79_2_0
+    mul_43ns_36ns_79_2_0_U1585 : component cnn_accel_mul_43ns_36ns_79_2_0
     generic map (
         ID => 1,
         NUM_STAGE => 2,
@@ -666,7 +666,7 @@ begin
         ce => grp_fu_268_ce,
         dout => grp_fu_268_p2);
 
-    mul_49ns_44ns_93_2_0_U1590 : component cnn_accel_mul_49ns_44ns_93_2_0
+    mul_49ns_44ns_93_2_0_U1586 : component cnn_accel_mul_49ns_44ns_93_2_0
     generic map (
         ID => 1,
         NUM_STAGE => 2,
@@ -681,7 +681,7 @@ begin
         ce => grp_fu_272_ce,
         dout => grp_fu_272_p2);
 
-    mul_50ns_50ns_99_2_0_U1591 : component cnn_accel_mul_50ns_50ns_99_2_0
+    mul_50ns_50ns_99_2_0_U1587 : component cnn_accel_mul_50ns_50ns_99_2_0
     generic map (
         ID => 1,
         NUM_STAGE => 2,
@@ -696,7 +696,7 @@ begin
         ce => grp_fu_276_ce,
         dout => grp_fu_276_p2);
 
-    sparsemux_9_3_64_1_0_U1592 : component cnn_accel_sparsemux_9_3_64_1_0
+    sparsemux_9_3_64_1_0_U1588 : component cnn_accel_sparsemux_9_3_64_1_0
     generic map (
         ID => 1,
         NUM_STAGE => 1,
@@ -720,7 +720,7 @@ begin
         sel => retval_1_fu_1071_p10,
         dout => retval_1_fu_1071_p11);
 
-    mac_muladd_16s_15ns_19s_31_4_0_U1593 : component cnn_accel_mac_muladd_16s_15ns_19s_31_4_0
+    mac_muladd_16s_15ns_19s_31_4_0_U1589 : component cnn_accel_mac_muladd_16s_15ns_19s_31_4_0
     generic map (
         ID => 1,
         NUM_STAGE => 4,

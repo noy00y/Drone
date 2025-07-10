@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'flatten'" level="0">
-<item name = "Date">Tue Jul  8 02:26:09 2025
+<item name = "Date">Wed Jul  9 07:45:51 2025
 </item>
 <item name = "Version">2025.1 (Build 6135595 on May 21 2025)</item>
 <item name = "Project">cnn_accel</item>
@@ -62,12 +62,12 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
-<column name="sparsemux_9_2_32_1_1_U1581">sparsemux_9_2_32_1_1, 0, 0, 0, 17, 0</column>
+<column name="sparsemux_9_2_32_1_1_U1577">sparsemux_9_2_32_1_1, 0, 0, 0, 17, 0</column>
 </table>
 </item>
 <item name = "DSP"><table name="" hasTotal="0">
 <keys size="3">Instance, Module, Expression</keys>
-<column name="mac_muladd_7ns_6ns_7ns_13_4_1_U1582">mac_muladd_7ns_6ns_7ns_13_4_1, i0 * i1 + i2</column>
+<column name="mac_muladd_7ns_6ns_7ns_13_4_1_U1578">mac_muladd_7ns_6ns_7ns_13_4_1, i0 * i1 + i2</column>
 </table>
 </item>
 <item name = "Memory"><table name="" hasTotal="1">
@@ -163,15 +163,15 @@
 <column name="feat2_p_address0">out, 15, ap_memory, feat2_p, array</column>
 <column name="feat2_p_ce0">out, 1, ap_memory, feat2_p, array</column>
 <column name="feat2_p_q0">in, 32, ap_memory, feat2_p, array</column>
+<column name="feat2_p_69_address0">out, 15, ap_memory, feat2_p_69, array</column>
+<column name="feat2_p_69_ce0">out, 1, ap_memory, feat2_p_69, array</column>
+<column name="feat2_p_69_q0">in, 32, ap_memory, feat2_p_69, array</column>
 <column name="feat2_p_70_address0">out, 15, ap_memory, feat2_p_70, array</column>
 <column name="feat2_p_70_ce0">out, 1, ap_memory, feat2_p_70, array</column>
 <column name="feat2_p_70_q0">in, 32, ap_memory, feat2_p_70, array</column>
 <column name="feat2_p_71_address0">out, 15, ap_memory, feat2_p_71, array</column>
 <column name="feat2_p_71_ce0">out, 1, ap_memory, feat2_p_71, array</column>
 <column name="feat2_p_71_q0">in, 32, ap_memory, feat2_p_71, array</column>
-<column name="feat2_p_72_address0">out, 15, ap_memory, feat2_p_72, array</column>
-<column name="feat2_p_72_ce0">out, 1, ap_memory, feat2_p_72, array</column>
-<column name="feat2_p_72_q0">in, 32, ap_memory, feat2_p_72, array</column>
 <column name="vec1_address0">out, 17, ap_memory, vec1, array</column>
 <column name="vec1_ce0">out, 1, ap_memory, vec1, array</column>
 <column name="vec1_we0">out, 1, ap_memory, vec1, array</column>

@@ -16,15 +16,15 @@ module cnn_accel_flatten (
         feat2_p_address0,
         feat2_p_ce0,
         feat2_p_q0,
+        feat2_p_69_address0,
+        feat2_p_69_ce0,
+        feat2_p_69_q0,
         feat2_p_70_address0,
         feat2_p_70_ce0,
         feat2_p_70_q0,
         feat2_p_71_address0,
         feat2_p_71_ce0,
         feat2_p_71_q0,
-        feat2_p_72_address0,
-        feat2_p_72_ce0,
-        feat2_p_72_q0,
         vec1_address0,
         vec1_ce0,
         vec1_we0,
@@ -44,15 +44,15 @@ output   ap_ready;
 output  [14:0] feat2_p_address0;
 output   feat2_p_ce0;
 input  [31:0] feat2_p_q0;
+output  [14:0] feat2_p_69_address0;
+output   feat2_p_69_ce0;
+input  [31:0] feat2_p_69_q0;
 output  [14:0] feat2_p_70_address0;
 output   feat2_p_70_ce0;
 input  [31:0] feat2_p_70_q0;
 output  [14:0] feat2_p_71_address0;
 output   feat2_p_71_ce0;
 input  [31:0] feat2_p_71_q0;
-output  [14:0] feat2_p_72_address0;
-output   feat2_p_72_ce0;
-input  [31:0] feat2_p_72_q0;
 output  [16:0] vec1_address0;
 output   vec1_ce0;
 output   vec1_we0;
@@ -112,9 +112,9 @@ wire   [16:0] select_ln308_3_fu_435_p3;
 reg   [16:0] indvar_flatten20_fu_118;
 wire   [16:0] add_ln308_2_fu_236_p2;
 reg    feat2_p_ce0_local;
+reg    feat2_p_69_ce0_local;
 reg    feat2_p_70_ce0_local;
 reg    feat2_p_71_ce0_local;
-reg    feat2_p_72_ce0_local;
 reg    vec1_we0_local;
 wire   [31:0] tmp_i_fu_461_p11;
 reg    vec1_ce0_local;
@@ -186,11 +186,11 @@ end
     .def_WIDTH( 32 ),
     .sel_WIDTH( 2 ),
     .dout_WIDTH( 32 ))
-sparsemux_9_2_32_1_1_U1581(
+sparsemux_9_2_32_1_1_U1577(
     .din0(feat2_p_q0),
-    .din1(feat2_p_70_q0),
-    .din2(feat2_p_71_q0),
-    .din3(feat2_p_72_q0),
+    .din1(feat2_p_69_q0),
+    .din2(feat2_p_70_q0),
+    .din3(feat2_p_71_q0),
     .def(tmp_i_fu_461_p9),
     .sel(trunc_ln310_2_reg_640),
     .dout(tmp_i_fu_461_p11)
@@ -203,7 +203,7 @@ cnn_accel_mac_muladd_7ns_6ns_7ns_13_4_1 #(
     .din1_WIDTH( 6 ),
     .din2_WIDTH( 7 ),
     .dout_WIDTH( 13 ))
-mac_muladd_7ns_6ns_7ns_13_4_1_U1582(
+mac_muladd_7ns_6ns_7ns_13_4_1_U1578(
     .clk(ap_clk),
     .reset(ap_rst),
     .din0(grp_fu_528_p0),
@@ -419,6 +419,14 @@ end
 
 always @ (*) begin
     if (((1'b0 == ap_block_pp0_stage1_11001) & (ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage1))) begin
+        feat2_p_69_ce0_local = 1'b1;
+    end else begin
+        feat2_p_69_ce0_local = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if (((1'b0 == ap_block_pp0_stage1_11001) & (ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage1))) begin
         feat2_p_70_ce0_local = 1'b1;
     end else begin
         feat2_p_70_ce0_local = 1'b0;
@@ -430,14 +438,6 @@ always @ (*) begin
         feat2_p_71_ce0_local = 1'b1;
     end else begin
         feat2_p_71_ce0_local = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if (((1'b0 == ap_block_pp0_stage1_11001) & (ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage1))) begin
-        feat2_p_72_ce0_local = 1'b1;
-    end else begin
-        feat2_p_72_ce0_local = 1'b0;
     end
 end
 
@@ -546,6 +546,10 @@ assign ap_ready = ap_ready_sig;
 
 assign empty_fu_337_p2 = (icmp_ln309_reg_609 | and_ln308_fu_325_p2);
 
+assign feat2_p_69_address0 = zext_ln312_2_fu_398_p1;
+
+assign feat2_p_69_ce0 = feat2_p_69_ce0_local;
+
 assign feat2_p_70_address0 = zext_ln312_2_fu_398_p1;
 
 assign feat2_p_70_ce0 = feat2_p_70_ce0_local;
@@ -553,10 +557,6 @@ assign feat2_p_70_ce0 = feat2_p_70_ce0_local;
 assign feat2_p_71_address0 = zext_ln312_2_fu_398_p1;
 
 assign feat2_p_71_ce0 = feat2_p_71_ce0_local;
-
-assign feat2_p_72_address0 = zext_ln312_2_fu_398_p1;
-
-assign feat2_p_72_ce0 = feat2_p_72_ce0_local;
 
 assign feat2_p_address0 = zext_ln312_2_fu_398_p1;
 

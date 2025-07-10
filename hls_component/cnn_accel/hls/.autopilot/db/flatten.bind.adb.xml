@@ -981,10 +981,10 @@ for.inc19.i:36 %feat2_p_addr = getelementptr i32 %feat2_p, i64 0, i64 %zext_ln31
 
 <Node id="68" bw="15" op_0_bw="32" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-for.inc19.i:37 %feat2_p_70_addr = getelementptr i32 %feat2_p_70, i64 0, i64 %zext_ln312_2
+for.inc19.i:37 %feat2_p_69_addr = getelementptr i32 %feat2_p_69, i64 0, i64 %zext_ln312_2
 
 ]]></Node>
-<StgValue><ssdm name="feat2_p_70_addr"/></StgValue>
+<StgValue><ssdm name="feat2_p_69_addr"/></StgValue>
 </operation>
 
 <operation id="67" st_id="5" stage="1" lat="1">
@@ -997,10 +997,10 @@ for.inc19.i:37 %feat2_p_70_addr = getelementptr i32 %feat2_p_70, i64 0, i64 %zex
 
 <Node id="69" bw="15" op_0_bw="32" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-for.inc19.i:38 %feat2_p_71_addr = getelementptr i32 %feat2_p_71, i64 0, i64 %zext_ln312_2
+for.inc19.i:38 %feat2_p_70_addr = getelementptr i32 %feat2_p_70, i64 0, i64 %zext_ln312_2
 
 ]]></Node>
-<StgValue><ssdm name="feat2_p_71_addr"/></StgValue>
+<StgValue><ssdm name="feat2_p_70_addr"/></StgValue>
 </operation>
 
 <operation id="68" st_id="5" stage="1" lat="1">
@@ -1013,10 +1013,10 @@ for.inc19.i:38 %feat2_p_71_addr = getelementptr i32 %feat2_p_71, i64 0, i64 %zex
 
 <Node id="70" bw="15" op_0_bw="32" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-for.inc19.i:39 %feat2_p_72_addr = getelementptr i32 %feat2_p_72, i64 0, i64 %zext_ln312_2
+for.inc19.i:39 %feat2_p_71_addr = getelementptr i32 %feat2_p_71, i64 0, i64 %zext_ln312_2
 
 ]]></Node>
-<StgValue><ssdm name="feat2_p_72_addr"/></StgValue>
+<StgValue><ssdm name="feat2_p_71_addr"/></StgValue>
 </operation>
 
 <operation id="69" st_id="5" stage="2" lat="2">
@@ -1045,10 +1045,10 @@ for.inc19.i:41 %feat2_p_load = load i15 %feat2_p_addr
 
 <Node id="73" bw="32" op_0_bw="15">
 <![CDATA[
-for.inc19.i:42 %feat2_p_70_load = load i15 %feat2_p_70_addr
+for.inc19.i:42 %feat2_p_69_load = load i15 %feat2_p_69_addr
 
 ]]></Node>
-<StgValue><ssdm name="feat2_p_70_load"/></StgValue>
+<StgValue><ssdm name="feat2_p_69_load"/></StgValue>
 </operation>
 
 <operation id="71" st_id="5" stage="2" lat="2">
@@ -1061,10 +1061,10 @@ for.inc19.i:42 %feat2_p_70_load = load i15 %feat2_p_70_addr
 
 <Node id="74" bw="32" op_0_bw="15">
 <![CDATA[
-for.inc19.i:43 %feat2_p_71_load = load i15 %feat2_p_71_addr
+for.inc19.i:43 %feat2_p_70_load = load i15 %feat2_p_70_addr
 
 ]]></Node>
-<StgValue><ssdm name="feat2_p_71_load"/></StgValue>
+<StgValue><ssdm name="feat2_p_70_load"/></StgValue>
 </operation>
 
 <operation id="72" st_id="5" stage="2" lat="2">
@@ -1077,10 +1077,10 @@ for.inc19.i:43 %feat2_p_71_load = load i15 %feat2_p_71_addr
 
 <Node id="75" bw="32" op_0_bw="15">
 <![CDATA[
-for.inc19.i:44 %feat2_p_72_load = load i15 %feat2_p_72_addr
+for.inc19.i:44 %feat2_p_71_load = load i15 %feat2_p_71_addr
 
 ]]></Node>
-<StgValue><ssdm name="feat2_p_72_load"/></StgValue>
+<StgValue><ssdm name="feat2_p_71_load"/></StgValue>
 </operation>
 </state>
 
@@ -1297,7 +1297,7 @@ for.inc19.i:31 %zext_ln310 = zext i17 %indvars_iv_i_mid2
 
 <Node id="64" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="0">
 <![CDATA[
-for.inc19.i:33 %specpipeline_ln311 = specpipeline void @_ssdm_op_SpecPipeline, i32 3, i32 0, i32 0, i32 0, void @empty_38
+for.inc19.i:33 %specpipeline_ln311 = specpipeline void @_ssdm_op_SpecPipeline, i32 3, i32 0, i32 0, i32 0, void @empty_19
 
 ]]></Node>
 <StgValue><ssdm name="specpipeline_ln311"/></StgValue>
@@ -1329,10 +1329,10 @@ for.inc19.i:41 %feat2_p_load = load i15 %feat2_p_addr
 
 <Node id="73" bw="32" op_0_bw="15">
 <![CDATA[
-for.inc19.i:42 %feat2_p_70_load = load i15 %feat2_p_70_addr
+for.inc19.i:42 %feat2_p_69_load = load i15 %feat2_p_69_addr
 
 ]]></Node>
-<StgValue><ssdm name="feat2_p_70_load"/></StgValue>
+<StgValue><ssdm name="feat2_p_69_load"/></StgValue>
 </operation>
 
 <operation id="89" st_id="6" stage="1" lat="2">
@@ -1345,10 +1345,10 @@ for.inc19.i:42 %feat2_p_70_load = load i15 %feat2_p_70_addr
 
 <Node id="74" bw="32" op_0_bw="15">
 <![CDATA[
-for.inc19.i:43 %feat2_p_71_load = load i15 %feat2_p_71_addr
+for.inc19.i:43 %feat2_p_70_load = load i15 %feat2_p_70_addr
 
 ]]></Node>
-<StgValue><ssdm name="feat2_p_71_load"/></StgValue>
+<StgValue><ssdm name="feat2_p_70_load"/></StgValue>
 </operation>
 
 <operation id="90" st_id="6" stage="1" lat="2">
@@ -1361,10 +1361,10 @@ for.inc19.i:43 %feat2_p_71_load = load i15 %feat2_p_71_addr
 
 <Node id="75" bw="32" op_0_bw="15">
 <![CDATA[
-for.inc19.i:44 %feat2_p_72_load = load i15 %feat2_p_72_addr
+for.inc19.i:44 %feat2_p_71_load = load i15 %feat2_p_71_addr
 
 ]]></Node>
-<StgValue><ssdm name="feat2_p_72_load"/></StgValue>
+<StgValue><ssdm name="feat2_p_71_load"/></StgValue>
 </operation>
 
 <operation id="91" st_id="6" stage="1" lat="1">
@@ -1376,7 +1376,7 @@ for.inc19.i:44 %feat2_p_72_load = load i15 %feat2_p_72_addr
 
 <Node id="76" bw="32" op_0_bw="32" op_1_bw="2" op_2_bw="32" op_3_bw="2" op_4_bw="32" op_5_bw="2" op_6_bw="32" op_7_bw="2" op_8_bw="32" op_9_bw="32" op_10_bw="2">
 <![CDATA[
-for.inc19.i:45 %tmp_i = sparsemux i32 @_ssdm_op_SparseMux.ap_auto.4float.float.i2, i2 0, i32 %feat2_p_load, i2 1, i32 %feat2_p_70_load, i2 2, i32 %feat2_p_71_load, i2 3, i32 %feat2_p_72_load, i32 <undef>, i2 %trunc_ln310_2
+for.inc19.i:45 %tmp_i = sparsemux i32 @_ssdm_op_SparseMux.ap_auto.4float.float.i2, i2 0, i32 %feat2_p_load, i2 1, i32 %feat2_p_69_load, i2 2, i32 %feat2_p_70_load, i2 3, i32 %feat2_p_71_load, i32 <undef>, i2 %trunc_ln310_2
 
 ]]></Node>
 <StgValue><ssdm name="tmp_i"/></StgValue>
@@ -1555,16 +1555,16 @@ for.inc19.i:64 %br_ln310 = br void %for.inc.i
 <core>RAM</core><StgValue><ssdm name="feat2_p"/><MemPortTyVec>1 3 </MemPortTyVec>
 </StgValue>
 </port>
-<port id="121" name="feat2_p_70" dir="0" iftype="1">
+<port id="121" name="feat2_p_69" dir="0" iftype="1">
+<core>RAM</core><StgValue><ssdm name="feat2_p_69"/><MemPortTyVec>1 3 </MemPortTyVec>
+</StgValue>
+</port>
+<port id="122" name="feat2_p_70" dir="0" iftype="1">
 <core>RAM</core><StgValue><ssdm name="feat2_p_70"/><MemPortTyVec>1 3 </MemPortTyVec>
 </StgValue>
 </port>
-<port id="122" name="feat2_p_71" dir="0" iftype="1">
+<port id="123" name="feat2_p_71" dir="0" iftype="1">
 <core>RAM</core><StgValue><ssdm name="feat2_p_71"/><MemPortTyVec>1 3 </MemPortTyVec>
-</StgValue>
-</port>
-<port id="123" name="feat2_p_72" dir="0" iftype="1">
-<core>RAM</core><StgValue><ssdm name="feat2_p_72"/><MemPortTyVec>1 3 </MemPortTyVec>
 </StgValue>
 </port>
 <port id="124" name="vec1" dir="1" iftype="1">
@@ -1781,31 +1781,31 @@ for.inc19.i:64 %br_ln310 = br void %for.inc.i
 </dataflow>
 <dataflow id="248" from="zext_ln312_2" to="feat2_p_addr" fromId="64" toId="65">
 </dataflow>
-<dataflow id="249" from="feat2_p_70" to="feat2_p_70_addr" fromId="121" toId="66">
+<dataflow id="249" from="feat2_p_69" to="feat2_p_69_addr" fromId="121" toId="66">
 </dataflow>
-<dataflow id="250" from="StgValue_246" to="feat2_p_70_addr" fromId="246" toId="66">
+<dataflow id="250" from="StgValue_246" to="feat2_p_69_addr" fromId="246" toId="66">
 </dataflow>
-<dataflow id="251" from="zext_ln312_2" to="feat2_p_70_addr" fromId="64" toId="66">
+<dataflow id="251" from="zext_ln312_2" to="feat2_p_69_addr" fromId="64" toId="66">
 </dataflow>
-<dataflow id="252" from="feat2_p_71" to="feat2_p_71_addr" fromId="122" toId="67">
+<dataflow id="252" from="feat2_p_70" to="feat2_p_70_addr" fromId="122" toId="67">
 </dataflow>
-<dataflow id="253" from="StgValue_246" to="feat2_p_71_addr" fromId="246" toId="67">
+<dataflow id="253" from="StgValue_246" to="feat2_p_70_addr" fromId="246" toId="67">
 </dataflow>
-<dataflow id="254" from="zext_ln312_2" to="feat2_p_71_addr" fromId="64" toId="67">
+<dataflow id="254" from="zext_ln312_2" to="feat2_p_70_addr" fromId="64" toId="67">
 </dataflow>
-<dataflow id="255" from="feat2_p_72" to="feat2_p_72_addr" fromId="123" toId="68">
+<dataflow id="255" from="feat2_p_71" to="feat2_p_71_addr" fromId="123" toId="68">
 </dataflow>
-<dataflow id="256" from="StgValue_246" to="feat2_p_72_addr" fromId="246" toId="68">
+<dataflow id="256" from="StgValue_246" to="feat2_p_71_addr" fromId="246" toId="68">
 </dataflow>
-<dataflow id="257" from="zext_ln312_2" to="feat2_p_72_addr" fromId="64" toId="68">
+<dataflow id="257" from="zext_ln312_2" to="feat2_p_71_addr" fromId="64" toId="68">
 </dataflow>
 <dataflow id="258" from="feat2_p_addr" to="feat2_p_load" fromId="65" toId="69">
 </dataflow>
-<dataflow id="259" from="feat2_p_70_addr" to="feat2_p_70_load" fromId="66" toId="70">
+<dataflow id="259" from="feat2_p_69_addr" to="feat2_p_69_load" fromId="66" toId="70">
 </dataflow>
-<dataflow id="260" from="feat2_p_71_addr" to="feat2_p_71_load" fromId="67" toId="71">
+<dataflow id="260" from="feat2_p_70_addr" to="feat2_p_70_load" fromId="67" toId="71">
 </dataflow>
-<dataflow id="261" from="feat2_p_72_addr" to="feat2_p_72_load" fromId="68" toId="72">
+<dataflow id="261" from="feat2_p_71_addr" to="feat2_p_71_load" fromId="68" toId="72">
 </dataflow>
 <dataflow id="262" from="indvars_iv_i" to="indvars_iv_i_load" fromId="8" toId="73">
 </dataflow>
@@ -1871,15 +1871,15 @@ for.inc19.i:64 %br_ln310 = br void %for.inc.i
 </dataflow>
 <dataflow id="299" from="StgValue_296" to="specpipeline_ln311" fromId="296" toId="86">
 </dataflow>
-<dataflow id="301" from="empty_38" to="specpipeline_ln311" fromId="300" toId="86">
+<dataflow id="301" from="empty_19" to="specpipeline_ln311" fromId="300" toId="86">
 </dataflow>
 <dataflow id="302" from="feat2_p_addr" to="feat2_p_load" fromId="65" toId="87">
 </dataflow>
-<dataflow id="303" from="feat2_p_70_addr" to="feat2_p_70_load" fromId="66" toId="88">
+<dataflow id="303" from="feat2_p_69_addr" to="feat2_p_69_load" fromId="66" toId="88">
 </dataflow>
-<dataflow id="304" from="feat2_p_71_addr" to="feat2_p_71_load" fromId="67" toId="89">
+<dataflow id="304" from="feat2_p_70_addr" to="feat2_p_70_load" fromId="67" toId="89">
 </dataflow>
-<dataflow id="305" from="feat2_p_72_addr" to="feat2_p_72_load" fromId="68" toId="90">
+<dataflow id="305" from="feat2_p_71_addr" to="feat2_p_71_load" fromId="68" toId="90">
 </dataflow>
 <dataflow id="307" from="_ssdm_op_SparseMux.ap_auto.4float.float.i2" to="tmp_i" fromId="306" toId="91">
 </dataflow>
@@ -1889,15 +1889,15 @@ for.inc19.i:64 %br_ln310 = br void %for.inc.i
 </dataflow>
 <dataflow id="312" from="StgValue_311" to="tmp_i" fromId="311" toId="91">
 </dataflow>
-<dataflow id="313" from="feat2_p_70_load" to="tmp_i" fromId="88" toId="91">
+<dataflow id="313" from="feat2_p_69_load" to="tmp_i" fromId="88" toId="91">
 </dataflow>
 <dataflow id="315" from="StgValue_314" to="tmp_i" fromId="314" toId="91">
 </dataflow>
-<dataflow id="316" from="feat2_p_71_load" to="tmp_i" fromId="89" toId="91">
+<dataflow id="316" from="feat2_p_70_load" to="tmp_i" fromId="89" toId="91">
 </dataflow>
 <dataflow id="318" from="StgValue_317" to="tmp_i" fromId="317" toId="91">
 </dataflow>
-<dataflow id="319" from="feat2_p_72_load" to="tmp_i" fromId="90" toId="91">
+<dataflow id="319" from="feat2_p_71_load" to="tmp_i" fromId="90" toId="91">
 </dataflow>
 <dataflow id="321" from="StgValue_320" to="tmp_i" fromId="320" toId="91">
 </dataflow>

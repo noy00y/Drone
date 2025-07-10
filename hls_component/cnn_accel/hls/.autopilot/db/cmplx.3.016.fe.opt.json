@@ -1,7 +1,7 @@
 {
   "0": {
     "basicblocks": 1,
-    "calls": "9",
+    "calls": "11",
     "control_depth": 0,
     "def_use_depth": 0,
     "file": "conv_pool.cpp",
@@ -9,45 +9,9 @@
     "instructions": 65,
     "memory_accesses": 0,
     "name": "cnn_accel",
-    "total_instructions": 5867
+    "total_instructions": 5846
   },
   "1": {
-    "basicblocks": 4,
-    "calls": "",
-    "control_depth": 1,
-    "def_use_depth": 6,
-    "file": "conv_pool.cpp",
-    "fileloc": 338,
-    "instructions": 57,
-    "loads": {
-      "G": 34
-    },
-    "memory_accesses": 1,
-    "name": "fc2",
-    "stores": {
-      "L": 1
-    },
-    "total_instructions": 57
-  },
-  "10": {
-    "basicblocks": 15,
-    "calls": "",
-    "control_depth": 2,
-    "def_use_depth": 8,
-    "file": "conv_pool.cpp",
-    "fileloc": 283,
-    "instructions": 102,
-    "loads": {
-      "G": 16
-    },
-    "memory_accesses": 21,
-    "name": "pool2",
-    "stores": {
-      "G": 4
-    },
-    "total_instructions": 102
-  },
-  "11": {
     "basicblocks": 15,
     "calls": "",
     "control_depth": 2,
@@ -65,25 +29,40 @@
     },
     "total_instructions": 420
   },
-  "2": {
-    "basicblocks": 15,
+  "10": {
+    "basicblocks": 10,
     "calls": "",
-    "control_depth": 2,
-    "def_use_depth": 77,
+    "control_depth": 1,
+    "def_use_depth": 2,
     "file": "conv_pool.cpp",
-    "fileloc": 257,
-    "instructions": 1589,
-    "loads": {
-      "G": 1240
-    },
-    "memory_accesses": 5,
-    "name": "conv2",
+    "fileloc": 195,
+    "instructions": 33,
+    "memory_accesses": 2,
+    "name": "load_img",
     "stores": {
-      "G": 4
+      "G": 1
     },
-    "total_instructions": 1589
+    "total_instructions": 33
   },
-  "3": {
+  "11": {
+    "basicblocks": 1496,
+    "calls": "10 1 8 9 7 2 6 4",
+    "control_depth": 2,
+    "def_use_depth": 3,
+    "file": "conv_pool.cpp",
+    "fileloc": 0,
+    "instructions": 3118,
+    "loads": {
+      "L": 2
+    },
+    "memory_accesses": 1478,
+    "name": "cnn_accel_",
+    "stores": {
+      "G": 1465
+    },
+    "total_instructions": 5781
+  },
+  "2": {
     "basicblocks": 10,
     "calls": "",
     "control_depth": 1,
@@ -102,9 +81,9 @@
     },
     "total_instructions": 47
   },
-  "4": {
+  "3": {
     "basicblocks": 13,
-    "calls": "8",
+    "calls": "5",
     "control_depth": 0,
     "def_use_depth": 5,
     "file": "hls_tanh.h",
@@ -114,22 +93,76 @@
     "name": "generic_tanh<float>",
     "total_instructions": 233
   },
-  "5": {
-    "basicblocks": 13,
+  "4": {
+    "basicblocks": 4,
     "calls": "",
-    "control_depth": 2,
-    "def_use_depth": 3,
+    "control_depth": 1,
+    "def_use_depth": 6,
     "file": "conv_pool.cpp",
-    "fileloc": 195,
-    "instructions": 50,
-    "memory_accesses": 4,
-    "name": "load_img",
-    "stores": {
-      "G": 2
+    "fileloc": 338,
+    "instructions": 57,
+    "loads": {
+      "G": 34
     },
-    "total_instructions": 50
+    "memory_accesses": 1,
+    "name": "fc2",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 57
+  },
+  "5": {
+    "basicblocks": 10,
+    "calls": "",
+    "control_depth": 4,
+    "def_use_depth": 42,
+    "file": "hls_exp_.h",
+    "fileloc": 156,
+    "instructions": 179,
+    "loads": {
+      "G": 4
+    },
+    "memory_accesses": 4,
+    "name": "exp_generic<double>",
+    "total_instructions": 179
   },
   "6": {
+    "basicblocks": 7,
+    "calls": "3",
+    "control_depth": 1,
+    "def_use_depth": 6,
+    "file": "conv_pool.cpp",
+    "fileloc": 320,
+    "instructions": 80,
+    "loads": {
+      "G": 41
+    },
+    "memory_accesses": 9,
+    "name": "fc1",
+    "stores": {
+      "G": 1
+    },
+    "total_instructions": 313
+  },
+  "7": {
+    "basicblocks": 15,
+    "calls": "",
+    "control_depth": 2,
+    "def_use_depth": 8,
+    "file": "conv_pool.cpp",
+    "fileloc": 283,
+    "instructions": 102,
+    "loads": {
+      "G": 16
+    },
+    "memory_accesses": 21,
+    "name": "pool2",
+    "stores": {
+      "G": 4
+    },
+    "total_instructions": 102
+  },
+  "8": {
     "basicblocks": 15,
     "calls": "",
     "control_depth": 2,
@@ -147,55 +180,22 @@
     },
     "total_instructions": 102
   },
-  "7": {
-    "basicblocks": 7,
-    "calls": "4",
-    "control_depth": 1,
-    "def_use_depth": 6,
-    "file": "conv_pool.cpp",
-    "fileloc": 320,
-    "instructions": 80,
-    "loads": {
-      "G": 41
-    },
-    "memory_accesses": 9,
-    "name": "fc1",
-    "stores": {
-      "G": 1
-    },
-    "total_instructions": 313
-  },
-  "8": {
-    "basicblocks": 10,
+  "9": {
+    "basicblocks": 15,
     "calls": "",
-    "control_depth": 4,
-    "def_use_depth": 42,
-    "file": "hls_exp_.h",
-    "fileloc": 156,
-    "instructions": 179,
+    "control_depth": 2,
+    "def_use_depth": 77,
+    "file": "conv_pool.cpp",
+    "fileloc": 257,
+    "instructions": 1589,
     "loads": {
+      "G": 1240
+    },
+    "memory_accesses": 5,
+    "name": "conv2",
+    "stores": {
       "G": 4
     },
-    "memory_accesses": 4,
-    "name": "exp_generic<double>",
-    "total_instructions": 179
-  },
-  "9": {
-    "basicblocks": 1496,
-    "calls": "5 11 6 2 10 3 7 1",
-    "control_depth": 2,
-    "def_use_depth": 3,
-    "file": "conv_pool.cpp",
-    "fileloc": 0,
-    "instructions": 3122,
-    "loads": {
-      "L": 2
-    },
-    "memory_accesses": 1478,
-    "name": "cnn_accel_",
-    "stores": {
-      "G": 1465
-    },
-    "total_instructions": 5802
+    "total_instructions": 1589
   }
 }

@@ -1,5 +1,5 @@
 {
-    "top_level_hw_fn_id": 227,
+    "top_level_hw_fn_id": 9894,
     "functions": {
         "200": {
             "fn_id": 200,
@@ -79,9 +79,9 @@
                 "column": 0
             }
         },
-        "224": {
-            "fn_id": 224,
-            "mangled_name": "_GLOBAL__sub_I_conv_pool.cpp.6",
+        "9891": {
+            "fn_id": 9891,
+            "mangled_name": "_GLOBAL__sub_I_conv_pool.cpp.8",
             "fully_qualified_name": "_GLOBAL__sub_I_conv_pool",
             "is_sys": true,
             "is_declaration": false,
@@ -92,9 +92,9 @@
                 "column": 0
             }
         },
-        "225": {
-            "fn_id": 225,
-            "mangled_name": "__cxx_global_var_init.7",
+        "9892": {
+            "fn_id": 9892,
+            "mangled_name": "__cxx_global_var_init.9",
             "fully_qualified_name": "__cxx_global_var_init",
             "is_sys": true,
             "is_declaration": false,
@@ -105,9 +105,9 @@
                 "column": 0
             }
         },
-        "226": {
-            "fn_id": 226,
-            "mangled_name": "__dtor__ZStL8__ioinit.9",
+        "9893": {
+            "fn_id": 9893,
+            "mangled_name": "__dtor__ZStL8__ioinit.11",
             "fully_qualified_name": "__dtor__ZStL8__ioinit",
             "is_sys": true,
             "is_declaration": false,
@@ -118,8 +118,8 @@
                 "column": 0
             }
         },
-        "227": {
-            "fn_id": 227,
+        "9894": {
+            "fn_id": 9894,
             "mangled_name": "cnn_accel",
             "fully_qualified_name": "cnn_accel",
             "is_sys": false,
@@ -127,247 +127,462 @@
             "supports_dataflow": true,
             "src_loc": {
                 "file": "C:\\Users\\ozair\\Documents\\Code_Drive\\Drone\\hls_files\\conv_pool.cpp",
-                "line": 52,
+                "line": 54,
                 "column": 1
             }
         },
-        "228": {
-            "fn_id": 228,
-            "mangled_name": "_Z8load_imgPKfPA320_A3_f",
+        "9895": {
+            "fn_id": 9895,
+            "mangled_name": "_Z8load_imgPK8ap_fixedILi16ELi4EL9ap_q_mode5EL9ap_o_mode3ELi0EEPA320_A3_S2_",
             "fully_qualified_name": "load_img",
             "is_sys": false,
             "is_declaration": false,
             "supports_dataflow": true,
             "src_loc": {
                 "file": "C:\\Users\\ozair\\Documents\\Code_Drive\\Drone\\hls_files\\conv_pool.cpp",
-                "line": 138,
+                "line": 198,
                 "column": 1
             }
         },
-        "229": {
-            "fn_id": 229,
-            "mangled_name": "_Z5conv1PA320_A3_KfPS_S3_PA318_A8_f",
+        "9896": {
+            "fn_id": 9896,
+            "mangled_name": "_Z5conv1PA320_A3_K8ap_fixedILi16ELi4EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS3_S7_PA318_A8_S2_",
             "fully_qualified_name": "conv1",
             "is_sys": false,
             "is_declaration": false,
             "supports_dataflow": true,
             "src_loc": {
                 "file": "C:\\Users\\ozair\\Documents\\Code_Drive\\Drone\\hls_files\\conv_pool.cpp",
-                "line": 152,
+                "line": 212,
                 "column": 1
             }
         },
-        "230": {
-            "fn_id": 230,
-            "mangled_name": "_Z5pool1PA318_A8_KfPA159_A8_f",
+        "9897": {
+            "fn_id": 9897,
+            "mangled_name": "_Z5pool1PA318_A8_K8ap_fixedILi16ELi4EL9ap_q_mode5EL9ap_o_mode3ELi0EEPA159_A8_S2_",
             "fully_qualified_name": "pool1",
             "is_sys": false,
             "is_declaration": false,
             "supports_dataflow": true,
             "src_loc": {
                 "file": "C:\\Users\\ozair\\Documents\\Code_Drive\\Drone\\hls_files\\conv_pool.cpp",
-                "line": 179,
+                "line": 239,
                 "column": 1
             }
         },
-        "231": {
-            "fn_id": 231,
-            "mangled_name": "_Z5conv2PA159_A8_KfPS_S3_PA157_A16_f",
+        "9898": {
+            "fn_id": 9898,
+            "mangled_name": "_Z5conv2PA159_A8_K8ap_fixedILi16ELi4EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS3_S7_PA157_A16_S2_",
             "fully_qualified_name": "conv2",
             "is_sys": false,
             "is_declaration": false,
             "supports_dataflow": true,
             "src_loc": {
                 "file": "C:\\Users\\ozair\\Documents\\Code_Drive\\Drone\\hls_files\\conv_pool.cpp",
-                "line": 200,
+                "line": 260,
                 "column": 1
             }
         },
-        "232": {
-            "fn_id": 232,
-            "mangled_name": "_Z5pool2PA157_A16_KfPA78_A16_f",
+        "9899": {
+            "fn_id": 9899,
+            "mangled_name": "_Z5pool2PA157_A16_K8ap_fixedILi16ELi4EL9ap_q_mode5EL9ap_o_mode3ELi0EEPA78_A16_S2_",
             "fully_qualified_name": "pool2",
             "is_sys": false,
             "is_declaration": false,
             "supports_dataflow": true,
             "src_loc": {
                 "file": "C:\\Users\\ozair\\Documents\\Code_Drive\\Drone\\hls_files\\conv_pool.cpp",
-                "line": 226,
+                "line": 286,
                 "column": 1
             }
         },
-        "233": {
-            "fn_id": 233,
-            "mangled_name": "_Z7flattenPA78_A16_KfPfRi",
+        "9900": {
+            "fn_id": 9900,
+            "mangled_name": "_Z7flattenPA78_A16_K8ap_fixedILi16ELi4EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_Ri",
             "fully_qualified_name": "flatten",
             "is_sys": false,
             "is_declaration": false,
             "supports_dataflow": true,
             "src_loc": {
                 "file": "C:\\Users\\ozair\\Documents\\Code_Drive\\Drone\\hls_files\\conv_pool.cpp",
-                "line": 247,
+                "line": 307,
                 "column": 1
             }
         },
-        "234": {
-            "fn_id": 234,
-            "mangled_name": "_Z3fc1PKfiS0_S0_Pf",
+        "9901": {
+            "fn_id": 9901,
+            "mangled_name": "_Z3fc1PK8ap_fixedILi16ELi4EL9ap_q_mode5EL9ap_o_mode3ELi0EEiS4_S4_PS2_",
             "fully_qualified_name": "fc1",
             "is_sys": false,
             "is_declaration": false,
             "supports_dataflow": true,
             "src_loc": {
                 "file": "C:\\Users\\ozair\\Documents\\Code_Drive\\Drone\\hls_files\\conv_pool.cpp",
-                "line": 263,
+                "line": 323,
                 "column": 1
             }
         },
-        "235": {
-            "fn_id": 235,
-            "mangled_name": "_Z3fc2PKfS0_S0_Ph",
+        "9902": {
+            "fn_id": 9902,
+            "mangled_name": "_Z3fc2PK8ap_fixedILi16ELi4EL9ap_q_mode5EL9ap_o_mode3ELi0EES4_S4_Ph",
             "fully_qualified_name": "fc2",
             "is_sys": false,
             "is_declaration": false,
             "supports_dataflow": true,
             "src_loc": {
                 "file": "C:\\Users\\ozair\\Documents\\Code_Drive\\Drone\\hls_files\\conv_pool.cpp",
-                "line": 281,
+                "line": 341,
                 "column": 1
+            }
+        },
+        "9903": {
+            "fn_id": 9903,
+            "mangled_name": "_ZN3hls3expILi17ELi5EEE8ap_fixedIXT_EXT0_EL9ap_q_mode5EL9ap_o_mode3ELi0EES4_",
+            "fully_qualified_name": "hls::exp<17, 5>",
+            "is_sys": true,
+            "is_declaration": false,
+            "supports_dataflow": false,
+            "src_loc": {
+                "file": "c:\\xilinx\\2025.1\\win64\\tools\\vcxx\\data\\autopilot\\hls_math.h",
+                "line": 1177,
+                "column": 3
+            }
+        },
+        "9904": {
+            "fn_id": 9904,
+            "mangled_name": "_ZN10exp_reduce3expILi17ELi5EEE8ap_fixedIXT_EXT0_EL9ap_q_mode5EL9ap_o_mode3ELi0EES4_",
+            "fully_qualified_name": "exp_reduce::exp<17, 5>",
+            "is_sys": true,
+            "is_declaration": false,
+            "supports_dataflow": false,
+            "src_loc": {
+                "file": "c:\\xilinx\\2025.1\\win64\\tools\\vcxx\\data\\autopilot\\etc\\hls_exp_apfixed.h",
+                "line": 13,
+                "column": 1
+            }
+        },
+        "9908": {
+            "fn_id": 9908,
+            "mangled_name": "_ZN3hls4tanhILi16ELi4EEE8ap_fixedIXT_EXT0_EL9ap_q_mode5EL9ap_o_mode3ELi0EES4_",
+            "fully_qualified_name": "hls::tanh<16, 4>",
+            "is_sys": true,
+            "is_declaration": false,
+            "supports_dataflow": false,
+            "src_loc": {
+                "file": "c:\\xilinx\\2025.1\\win64\\tools\\vcxx\\data\\autopilot\\hls_math.h",
+                "line": 1562,
+                "column": 3
+            }
+        },
+        "9909": {
+            "fn_id": 9909,
+            "mangled_name": "_ZN14cordic_apfixed12generic_tanhILi16ELi4EEE8ap_fixedIXT_EXT0_EL9ap_q_mode5EL9ap_o_mode3ELi0EES4_",
+            "fully_qualified_name": "cordic_apfixed::generic_tanh<16, 4>",
+            "is_sys": true,
+            "is_declaration": false,
+            "supports_dataflow": false,
+            "src_loc": {
+                "file": "c:\\xilinx\\2025.1\\win64\\tools\\vcxx\\data\\autopilot\\etc\\hls_cordic_apfixed.h",
+                "line": 905,
+                "column": 5
+            }
+        },
+        "9910": {
+            "fn_id": 9910,
+            "mangled_name": "_ZN14cordic_apfixed23tanh_range_redux_cordicILi16ELi4EEEv8ap_fixedIXT_EXT0_EL9ap_q_mode5EL9ap_o_mode3ELi0EERS4_",
+            "fully_qualified_name": "cordic_apfixed::tanh_range_redux_cordic<16, 4>",
+            "is_sys": true,
+            "is_declaration": false,
+            "supports_dataflow": false,
+            "src_loc": {
+                "file": "c:\\xilinx\\2025.1\\win64\\tools\\vcxx\\data\\autopilot\\etc\\hls_cordic_apfixed.h",
+                "line": 870,
+                "column": 5
+            }
+        },
+        "9911": {
+            "fn_id": 9911,
+            "mangled_name": "_ZN14cordic_apfixed18hyperb_range_reduxILi16ELi4ELi16EEEv9ap_ufixedIXT_EXT0_EL9ap_q_mode5EL9ap_o_mode3ELi0EER7ap_uintIXplT0_Li1EEERS1_IXT1_ELi0ELS2_5ELS3_3ELi0EE",
+            "fully_qualified_name": "cordic_apfixed::hyperb_range_redux<16, 4, 16>",
+            "is_sys": true,
+            "is_declaration": false,
+            "supports_dataflow": false,
+            "src_loc": {
+                "file": "c:\\xilinx\\2025.1\\win64\\tools\\vcxx\\data\\autopilot\\etc\\hls_cordic_apfixed.h",
+                "line": 715,
+                "column": 3
+            }
+        },
+        "9912": {
+            "fn_id": 9912,
+            "mangled_name": "_ZN14cordic_apfixed21cordic_hyperb_apfixedILi18ELi2ELi0EEEvR8ap_fixedIXT_EXT0_EL9ap_q_mode5EL9ap_o_mode3ELi0EES5_S5_",
+            "fully_qualified_name": "cordic_apfixed::cordic_hyperb_apfixed<18, 2, 0>",
+            "is_sys": true,
+            "is_declaration": false,
+            "supports_dataflow": false,
+            "src_loc": {
+                "file": "c:\\xilinx\\2025.1\\win64\\tools\\vcxx\\data\\autopilot\\etc\\hls_cordic_apfixed.h",
+                "line": 733,
+                "column": 3
             }
         }
     },
     "loops": {
-        "36": {
-            "fn_id": 228,
-            "lp_id": 36,
+        "1269": {
+            "fn_id": 9894,
+            "lp_id": 1269,
+            "label": "LOAD_FC2B"
+        },
+        "1270": {
+            "fn_id": 9894,
+            "lp_id": 1270,
+            "label": "LOAD_FC2W"
+        },
+        "1271": {
+            "fn_id": 9894,
+            "lp_id": 1271,
+            "label": "LOAD_FC1B"
+        },
+        "1272": {
+            "fn_id": 9894,
+            "lp_id": 1272,
+            "label": "LOAD_FC1W"
+        },
+        "1273": {
+            "fn_id": 9894,
+            "lp_id": 1273,
+            "label": "LOAD_B2"
+        },
+        "1274": {
+            "fn_id": 9894,
+            "lp_id": 1274,
+            "label": "LOAD_W2"
+        },
+        "1275": {
+            "fn_id": 9894,
+            "lp_id": 1275,
+            "label": "LOAD_B1"
+        },
+        "1276": {
+            "fn_id": 9894,
+            "lp_id": 1276,
+            "label": "LOAD_W1"
+        },
+        "1277": {
+            "fn_id": 9895,
+            "lp_id": 1277,
             "label": "LOAD_IMG_ROWS"
         },
-        "37": {
-            "fn_id": 228,
-            "lp_id": 37,
+        "1278": {
+            "fn_id": 9895,
+            "lp_id": 1278,
             "label": "LOAD_IMG_COLS"
         },
-        "38": {
-            "fn_id": 228,
-            "lp_id": 38,
+        "1279": {
+            "fn_id": 9895,
+            "lp_id": 1279,
             "label": "LOAD_IMG_CH"
         },
-        "39": {
-            "fn_id": 229,
-            "lp_id": 39,
+        "1280": {
+            "fn_id": 9896,
+            "lp_id": 1280,
             "label": "CONV1_ROW"
         },
-        "40": {
-            "fn_id": 229,
-            "lp_id": 40,
+        "1281": {
+            "fn_id": 9896,
+            "lp_id": 1281,
             "label": "CONV1_COL"
         },
-        "41": {
-            "fn_id": 229,
-            "lp_id": 41,
+        "1282": {
+            "fn_id": 9896,
+            "lp_id": 1282,
             "label": "CONV1_FIL"
         },
-        "42": {
-            "fn_id": 229,
-            "lp_id": 42,
+        "1283": {
+            "fn_id": 9896,
+            "lp_id": 1283,
             "label": "CONV1_KR"
         },
-        "43": {
-            "fn_id": 229,
-            "lp_id": 43,
+        "1284": {
+            "fn_id": 9896,
+            "lp_id": 1284,
             "label": "CONV1_KC"
         },
-        "44": {
-            "fn_id": 229,
-            "lp_id": 44,
+        "1285": {
+            "fn_id": 9896,
+            "lp_id": 1285,
             "label": "CONV1_CH"
         },
-        "45": {
-            "fn_id": 230,
-            "lp_id": 45,
+        "1286": {
+            "fn_id": 9897,
+            "lp_id": 1286,
             "label": "POOL1_ROW"
         },
-        "46": {
-            "fn_id": 230,
-            "lp_id": 46,
+        "1287": {
+            "fn_id": 9897,
+            "lp_id": 1287,
             "label": "POOL1_COL"
         },
-        "47": {
-            "fn_id": 230,
-            "lp_id": 47,
+        "1288": {
+            "fn_id": 9897,
+            "lp_id": 1288,
             "label": "POOL1_CH"
         },
-        "48": {
-            "fn_id": 231,
-            "lp_id": 48,
+        "1289": {
+            "fn_id": 9898,
+            "lp_id": 1289,
             "label": "CONV2_ROW"
         },
-        "49": {
-            "fn_id": 231,
-            "lp_id": 49,
+        "1290": {
+            "fn_id": 9898,
+            "lp_id": 1290,
             "label": "CONV2_COL"
         },
-        "50": {
-            "fn_id": 231,
-            "lp_id": 50,
+        "1291": {
+            "fn_id": 9898,
+            "lp_id": 1291,
             "label": "CONV2_FIL"
         },
-        "51": {
-            "fn_id": 231,
-            "lp_id": 51,
+        "1292": {
+            "fn_id": 9898,
+            "lp_id": 1292,
             "label": "CONV2_KR"
         },
-        "52": {
-            "fn_id": 231,
-            "lp_id": 52,
+        "1293": {
+            "fn_id": 9898,
+            "lp_id": 1293,
             "label": "CONV2_KC"
         },
-        "53": {
-            "fn_id": 231,
-            "lp_id": 53,
+        "1294": {
+            "fn_id": 9898,
+            "lp_id": 1294,
             "label": "CONV2_CH"
         },
-        "54": {
-            "fn_id": 232,
-            "lp_id": 54,
+        "1295": {
+            "fn_id": 9899,
+            "lp_id": 1295,
             "label": "POOL2_ROW"
         },
-        "55": {
-            "fn_id": 232,
-            "lp_id": 55,
+        "1296": {
+            "fn_id": 9899,
+            "lp_id": 1296,
             "label": "POOL2_COL"
         },
-        "56": {
-            "fn_id": 232,
-            "lp_id": 56,
+        "1297": {
+            "fn_id": 9899,
+            "lp_id": 1297,
             "label": "POOL2_CH"
         },
-        "57": {
-            "fn_id": 233,
-            "lp_id": 57,
+        "1298": {
+            "fn_id": 9900,
+            "lp_id": 1298,
             "label": "FLATTEN"
         },
-        "58": {
-            "fn_id": 233,
-            "lp_id": 58
+        "1299": {
+            "fn_id": 9900,
+            "lp_id": 1299
         },
-        "59": {
-            "fn_id": 233,
-            "lp_id": 59
+        "1300": {
+            "fn_id": 9900,
+            "lp_id": 1300
         },
-        "60": {
-            "fn_id": 234,
-            "lp_id": 60,
+        "1301": {
+            "fn_id": 9901,
+            "lp_id": 1301,
             "label": "FC1_OUT"
         },
-        "61": {
-            "fn_id": 234,
-            "lp_id": 61
+        "1302": {
+            "fn_id": 9901,
+            "lp_id": 1302
         },
-        "62": {
-            "fn_id": 235,
-            "lp_id": 62,
+        "1303": {
+            "fn_id": 9902,
+            "lp_id": 1303,
             "label": "FC2_LOOP"
+        },
+        "1304": {
+            "fn_id": 9904,
+            "lp_id": 1304
+        },
+        "1305": {
+            "fn_id": 9904,
+            "lp_id": 1305
+        },
+        "1306": {
+            "fn_id": 9904,
+            "lp_id": 1306
+        },
+        "1307": {
+            "fn_id": 9904,
+            "lp_id": 1307
+        },
+        "1308": {
+            "fn_id": 9904,
+            "lp_id": 1308
+        },
+        "1309": {
+            "fn_id": 9904,
+            "lp_id": 1309
+        },
+        "1310": {
+            "fn_id": 9904,
+            "lp_id": 1310
+        },
+        "1311": {
+            "fn_id": 9904,
+            "lp_id": 1311
+        },
+        "1312": {
+            "fn_id": 9904,
+            "lp_id": 1312
+        },
+        "1313": {
+            "fn_id": 9904,
+            "lp_id": 1313
+        },
+        "1314": {
+            "fn_id": 9904,
+            "lp_id": 1314
+        },
+        "1315": {
+            "fn_id": 9904,
+            "lp_id": 1315
+        },
+        "1316": {
+            "fn_id": 9904,
+            "lp_id": 1316
+        },
+        "1317": {
+            "fn_id": 9904,
+            "lp_id": 1317
+        },
+        "1318": {
+            "fn_id": 9904,
+            "lp_id": 1318
+        },
+        "1319": {
+            "fn_id": 9904,
+            "lp_id": 1319
+        },
+        "1320": {
+            "fn_id": 9904,
+            "lp_id": 1320
+        },
+        "1321": {
+            "fn_id": 9904,
+            "lp_id": 1321
+        },
+        "1322": {
+            "fn_id": 9904,
+            "lp_id": 1322
+        },
+        "1323": {
+            "fn_id": 9904,
+            "lp_id": 1323
+        },
+        "1324": {
+            "fn_id": 9912,
+            "lp_id": 1324
         }
     },
     "used_types": [
@@ -377,14 +592,29 @@
             "count": 3
         },
         {
-            "type_name": "float",
+            "type_name": "ap_fixed",
+            "dwarf_tag": "struct",
+            "count": 56
+        },
+        {
+            "type_name": "ap_ufixed",
+            "dwarf_tag": "struct",
+            "count": 103
+        },
+        {
+            "type_name": "ap_uint",
+            "dwarf_tag": "struct",
+            "count": 18
+        },
+        {
+            "type_name": "bool",
             "dwarf_tag": "base",
-            "count": 24
+            "count": 7
         },
         {
             "type_name": "int",
             "dwarf_tag": "base",
-            "count": 31
+            "count": 66
         },
         {
             "type_name": "unsigned char",

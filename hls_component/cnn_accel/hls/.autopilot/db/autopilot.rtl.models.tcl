@@ -20,6 +20,7 @@ set SynModuleInfo {
   }
   {SRCNAME conv2 MODELNAME conv2 RTLNAME cnn_accel_conv2
     SUBMODULES {
+      {MODELNAME cnn_accel_fadd_32ns_32ns_32_5_full_dsp_1 RTLNAME cnn_accel_fadd_32ns_32ns_32_5_full_dsp_1 BINDTYPE op TYPE fadd IMPL fulldsp LATENCY 4 ALLOW_PRAGMA 1}
       {MODELNAME cnn_accel_mul_7ns_9ns_15_1_1 RTLNAME cnn_accel_mul_7ns_9ns_15_1_1 BINDTYPE op TYPE mul IMPL auto LATENCY 0 ALLOW_PRAGMA 1}
       {MODELNAME cnn_accel_sparsemux_33_4_32_1_1 RTLNAME cnn_accel_sparsemux_33_4_32_1_1 BINDTYPE op TYPE sparsemux IMPL compactencoding_dontcare}
     }
@@ -71,7 +72,6 @@ set SynModuleInfo {
   {SRCNAME Block_entry_proc MODELNAME Block_entry_proc RTLNAME cnn_accel_Block_entry_proc
     SUBMODULES {
       {MODELNAME cnn_accel_faddfsub_32ns_32ns_32_5_full_dsp_1 RTLNAME cnn_accel_faddfsub_32ns_32ns_32_5_full_dsp_1 BINDTYPE op TYPE fadd IMPL fulldsp LATENCY 4 ALLOW_PRAGMA 1}
-      {MODELNAME cnn_accel_fadd_32ns_32ns_32_5_full_dsp_1 RTLNAME cnn_accel_fadd_32ns_32ns_32_5_full_dsp_1 BINDTYPE op TYPE fadd IMPL fulldsp LATENCY 4 ALLOW_PRAGMA 1}
       {MODELNAME cnn_accel_fmul_32ns_32ns_32_4_max_dsp_1 RTLNAME cnn_accel_fmul_32ns_32ns_32_4_max_dsp_1 BINDTYPE op TYPE fmul IMPL maxdsp LATENCY 3 ALLOW_PRAGMA 1}
       {MODELNAME cnn_accel_fcmp_32ns_32ns_1_2_no_dsp_1 RTLNAME cnn_accel_fcmp_32ns_32ns_1_2_no_dsp_1 BINDTYPE op TYPE fcmp IMPL auto LATENCY 1 ALLOW_PRAGMA 1}
       {MODELNAME cnn_accel_fdiv_32ns_32ns_32_12_no_dsp_1 RTLNAME cnn_accel_fdiv_32ns_32ns_32_12_no_dsp_1 BINDTYPE op TYPE fdiv IMPL fabric LATENCY 11 ALLOW_PRAGMA 1}

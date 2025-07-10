@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'Block_entry_proc_Pipeline_LOAD_W1'
 ================================================================
-* Date:           Tue Jul  8 02:26:13 2025
+* Date:           Wed Jul  9 07:45:54 2025
 
 * Version:        2025.1 (Build 6135595 on May 21 2025)
 * Project:        cnn_accel
@@ -657,7 +657,7 @@ State 1 <SV = 0> <Delay = 3.04>
 ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%i = alloca i32 1" [../hls_files/conv_pool.cpp:124->../hls_files/conv_pool.cpp:123]   --->   Operation 5 'alloca' 'i' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%sext_ln124_read = read i62 @_ssdm_op_Read.ap_auto.i62, i62 %sext_ln124"   --->   Operation 6 'read' 'sext_ln124_read' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%sext_ln124_cast = sext i62 %sext_ln124_read"   --->   Operation 7 'sext' 'sext_ln124_cast' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %W1mem, void @empty_37, i32 0, i32 0, void @empty_38, i32 0, i32 216, void @empty_12, void @empty_23, void @empty_38, i32 16, i32 16, i32 16, i32 16, void @empty_38, void @empty_38, i32 4294967295, i32 0, i32 0"   --->   Operation 8 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %W1mem, void @empty_17, i32 0, i32 0, void @empty_19, i32 0, i32 216, void @empty_21, void @empty_20, void @empty_19, i32 16, i32 16, i32 16, i32 16, void @empty_19, void @empty_19, i32 4294967295, i32 0, i32 0"   --->   Operation 8 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 9 [1/1] (1.32ns)   --->   "%store_ln124 = store i8 0, i8 %i" [../hls_files/conv_pool.cpp:124->../hls_files/conv_pool.cpp:123]   --->   Operation 9 'store' 'store_ln124' <Predicate = true> <Delay = 1.32>
 ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%br_ln0 = br void %for.inc.i"   --->   Operation 10 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%i_3 = load i8 %i" [../hls_files/conv_pool.cpp:124->../hls_files/conv_pool.cpp:123]   --->   Operation 11 'load' 'i_3' <Predicate = true> <Delay = 0.00>
@@ -668,9 +668,9 @@ ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%W1mem_addr = getelementptr i32 %W1
 ST_1 : Operation 456 [1/1] (1.32ns)   --->   "%ret_ln0 = ret"   --->   Operation 456 'ret' 'ret_ln0' <Predicate = (icmp_ln124)> <Delay = 1.32>
 
 State 2 <SV = 1> <Delay = 7.30>
-ST_2 : Operation 16 [1/1] (0.00ns)   --->   "%specpipeline_ln125 = specpipeline void @_ssdm_op_SpecPipeline, i32 3, i32 0, i32 0, i32 0, void @empty_38" [../hls_files/conv_pool.cpp:125->../hls_files/conv_pool.cpp:123]   --->   Operation 16 'specpipeline' 'specpipeline_ln125' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 16 [1/1] (0.00ns)   --->   "%specpipeline_ln125 = specpipeline void @_ssdm_op_SpecPipeline, i32 3, i32 0, i32 0, i32 0, void @empty_19" [../hls_files/conv_pool.cpp:125->../hls_files/conv_pool.cpp:123]   --->   Operation 16 'specpipeline' 'specpipeline_ln125' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 17 [1/1] (0.00ns)   --->   "%speclooptripcount_ln124 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 216, i64 216, i64 216" [../hls_files/conv_pool.cpp:124->../hls_files/conv_pool.cpp:123]   --->   Operation 17 'speclooptripcount' 'speclooptripcount_ln124' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 18 [1/1] (0.00ns)   --->   "%specloopname_ln124 = specloopname void @_ssdm_op_SpecLoopName, void @empty_36" [../hls_files/conv_pool.cpp:124->../hls_files/conv_pool.cpp:123]   --->   Operation 18 'specloopname' 'specloopname_ln124' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 18 [1/1] (0.00ns)   --->   "%specloopname_ln124 = specloopname void @_ssdm_op_SpecLoopName, void @empty_16" [../hls_files/conv_pool.cpp:124->../hls_files/conv_pool.cpp:123]   --->   Operation 18 'specloopname' 'specloopname_ln124' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 19 [1/1] (7.30ns)   --->   "%W1mem_addr_read = read i32 @_ssdm_op_Read.m_axi.p1i32, i64 %W1mem_addr" [../hls_files/conv_pool.cpp:126->../hls_files/conv_pool.cpp:123]   --->   Operation 19 'read' 'W1mem_addr_read' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 111 'm_axi' <Latency = 3> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 ST_2 : Operation 20 [1/1] (0.00ns)   --->   "%bitcast_ln126 = bitcast i32 %W1mem_addr_read" [../hls_files/conv_pool.cpp:126->../hls_files/conv_pool.cpp:123]   --->   Operation 20 'bitcast' 'bitcast_ln126' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 21 [1/1] (1.71ns)   --->   "%switch_ln126 = switch i8 %i_3, void %arrayidx3.case.215.i, i8 0, void %arrayidx3.case.0.i, i8 1, void %arrayidx3.case.1.i, i8 2, void %arrayidx3.case.2.i, i8 3, void %arrayidx3.case.3.i, i8 4, void %arrayidx3.case.4.i, i8 5, void %arrayidx3.case.5.i, i8 6, void %arrayidx3.case.6.i, i8 7, void %arrayidx3.case.7.i, i8 8, void %arrayidx3.case.8.i, i8 9, void %arrayidx3.case.9.i, i8 10, void %arrayidx3.case.10.i, i8 11, void %arrayidx3.case.11.i, i8 12, void %arrayidx3.case.12.i, i8 13, void %arrayidx3.case.13.i, i8 14, void %arrayidx3.case.14.i, i8 15, void %arrayidx3.case.15.i, i8 16, void %arrayidx3.case.16.i, i8 17, void %arrayidx3.case.17.i, i8 18, void %arrayidx3.case.18.i, i8 19, void %arrayidx3.case.19.i, i8 20, void %arrayidx3.case.20.i, i8 21, void %arrayidx3.case.21.i, i8 22, void %arrayidx3.case.22.i, i8 23, void %arrayidx3.case.23.i, i8 24, void %arrayidx3.case.24.i, i8 25, void %arrayidx3.case.25.i, i8 26, void %arrayidx3.case.26.i, i8 27, void %arrayidx3.case.27.i, i8 28, void %arrayidx3.case.28.i, i8 29, void %arrayidx3.case.29.i, i8 30, void %arrayidx3.case.30.i, i8 31, void %arrayidx3.case.31.i, i8 32, void %arrayidx3.case.32.i, i8 33, void %arrayidx3.case.33.i, i8 34, void %arrayidx3.case.34.i, i8 35, void %arrayidx3.case.35.i, i8 36, void %arrayidx3.case.36.i, i8 37, void %arrayidx3.case.37.i, i8 38, void %arrayidx3.case.38.i, i8 39, void %arrayidx3.case.39.i, i8 40, void %arrayidx3.case.40.i, i8 41, void %arrayidx3.case.41.i, i8 42, void %arrayidx3.case.42.i, i8 43, void %arrayidx3.case.43.i, i8 44, void %arrayidx3.case.44.i, i8 45, void %arrayidx3.case.45.i, i8 46, void %arrayidx3.case.46.i, i8 47, void %arrayidx3.case.47.i, i8 48, void %arrayidx3.case.48.i, i8 49, void %arrayidx3.case.49.i, i8 50, void %arrayidx3.case.50.i, i8 51, void %arrayidx3.case.51.i, i8 52, void %arrayidx3.case.52.i, i8 53, void %arrayidx3.case.53.i, i8 54, void %arrayidx3.case.54.i, i8 55, void %arrayidx3.case.55.i, i8 56, void %arrayidx3.case.56.i, i8 57, void %arrayidx3.case.57.i, i8 58, void %arrayidx3.case.58.i, i8 59, void %arrayidx3.case.59.i, i8 60, void %arrayidx3.case.60.i, i8 61, void %arrayidx3.case.61.i, i8 62, void %arrayidx3.case.62.i, i8 63, void %arrayidx3.case.63.i, i8 64, void %arrayidx3.case.64.i, i8 65, void %arrayidx3.case.65.i, i8 66, void %arrayidx3.case.66.i, i8 67, void %arrayidx3.case.67.i, i8 68, void %arrayidx3.case.68.i, i8 69, void %arrayidx3.case.69.i, i8 70, void %arrayidx3.case.70.i, i8 71, void %arrayidx3.case.71.i, i8 72, void %arrayidx3.case.72.i, i8 73, void %arrayidx3.case.73.i, i8 74, void %arrayidx3.case.74.i, i8 75, void %arrayidx3.case.75.i, i8 76, void %arrayidx3.case.76.i, i8 77, void %arrayidx3.case.77.i, i8 78, void %arrayidx3.case.78.i, i8 79, void %arrayidx3.case.79.i, i8 80, void %arrayidx3.case.80.i, i8 81, void %arrayidx3.case.81.i, i8 82, void %arrayidx3.case.82.i, i8 83, void %arrayidx3.case.83.i, i8 84, void %arrayidx3.case.84.i, i8 85, void %arrayidx3.case.85.i, i8 86, void %arrayidx3.case.86.i, i8 87, void %arrayidx3.case.87.i, i8 88, void %arrayidx3.case.88.i, i8 89, void %arrayidx3.case.89.i, i8 90, void %arrayidx3.case.90.i, i8 91, void %arrayidx3.case.91.i, i8 92, void %arrayidx3.case.92.i, i8 93, void %arrayidx3.case.93.i, i8 94, void %arrayidx3.case.94.i, i8 95, void %arrayidx3.case.95.i, i8 96, void %arrayidx3.case.96.i, i8 97, void %arrayidx3.case.97.i, i8 98, void %arrayidx3.case.98.i, i8 99, void %arrayidx3.case.99.i, i8 100, void %arrayidx3.case.100.i, i8 101, void %arrayidx3.case.101.i, i8 102, void %arrayidx3.case.102.i, i8 103, void %arrayidx3.case.103.i, i8 104, void %arrayidx3.case.104.i, i8 105, void %arrayidx3.case.105.i, i8 106, void %arrayidx3.case.106.i, i8 107, void %arrayidx3.case.107.i, i8 108, void %arrayidx3.case.108.i, i8 109, void %arrayidx3.case.109.i, i8 110, void %arrayidx3.case.110.i, i8 111, void %arrayidx3.case.111.i, i8 112, void %arrayidx3.case.112.i, i8 113, void %arrayidx3.case.113.i, i8 114, void %arrayidx3.case.114.i, i8 115, void %arrayidx3.case.115.i, i8 116, void %arrayidx3.case.116.i, i8 117, void %arrayidx3.case.117.i, i8 118, void %arrayidx3.case.118.i, i8 119, void %arrayidx3.case.119.i, i8 120, void %arrayidx3.case.120.i, i8 121, void %arrayidx3.case.121.i, i8 122, void %arrayidx3.case.122.i, i8 123, void %arrayidx3.case.123.i, i8 124, void %arrayidx3.case.124.i, i8 125, void %arrayidx3.case.125.i, i8 126, void %arrayidx3.case.126.i, i8 127, void %arrayidx3.case.127.i, i8 128, void %arrayidx3.case.128.i, i8 129, void %arrayidx3.case.129.i, i8 130, void %arrayidx3.case.130.i, i8 131, void %arrayidx3.case.131.i, i8 132, void %arrayidx3.case.132.i, i8 133, void %arrayidx3.case.133.i, i8 134, void %arrayidx3.case.134.i, i8 135, void %arrayidx3.case.135.i, i8 136, void %arrayidx3.case.136.i, i8 137, void %arrayidx3.case.137.i, i8 138, void %arrayidx3.case.138.i, i8 139, void %arrayidx3.case.139.i, i8 140, void %arrayidx3.case.140.i, i8 141, void %arrayidx3.case.141.i, i8 142, void %arrayidx3.case.142.i, i8 143, void %arrayidx3.case.143.i, i8 144, void %arrayidx3.case.144.i, i8 145, void %arrayidx3.case.145.i, i8 146, void %arrayidx3.case.146.i, i8 147, void %arrayidx3.case.147.i, i8 148, void %arrayidx3.case.148.i, i8 149, void %arrayidx3.case.149.i, i8 150, void %arrayidx3.case.150.i, i8 151, void %arrayidx3.case.151.i, i8 152, void %arrayidx3.case.152.i, i8 153, void %arrayidx3.case.153.i, i8 154, void %arrayidx3.case.154.i, i8 155, void %arrayidx3.case.155.i, i8 156, void %arrayidx3.case.156.i, i8 157, void %arrayidx3.case.157.i, i8 158, void %arrayidx3.case.158.i, i8 159, void %arrayidx3.case.159.i, i8 160, void %arrayidx3.case.160.i, i8 161, void %arrayidx3.case.161.i, i8 162, void %arrayidx3.case.162.i, i8 163, void %arrayidx3.case.163.i, i8 164, void %arrayidx3.case.164.i, i8 165, void %arrayidx3.case.165.i, i8 166, void %arrayidx3.case.166.i, i8 167, void %arrayidx3.case.167.i, i8 168, void %arrayidx3.case.168.i, i8 169, void %arrayidx3.case.169.i, i8 170, void %arrayidx3.case.170.i, i8 171, void %arrayidx3.case.171.i, i8 172, void %arrayidx3.case.172.i, i8 173, void %arrayidx3.case.173.i, i8 174, void %arrayidx3.case.174.i, i8 175, void %arrayidx3.case.175.i, i8 176, void %arrayidx3.case.176.i, i8 177, void %arrayidx3.case.177.i, i8 178, void %arrayidx3.case.178.i, i8 179, void %arrayidx3.case.179.i, i8 180, void %arrayidx3.case.180.i, i8 181, void %arrayidx3.case.181.i, i8 182, void %arrayidx3.case.182.i, i8 183, void %arrayidx3.case.183.i, i8 184, void %arrayidx3.case.184.i, i8 185, void %arrayidx3.case.185.i, i8 186, void %arrayidx3.case.186.i, i8 187, void %arrayidx3.case.187.i, i8 188, void %arrayidx3.case.188.i, i8 189, void %arrayidx3.case.189.i, i8 190, void %arrayidx3.case.190.i, i8 191, void %arrayidx3.case.191.i, i8 192, void %arrayidx3.case.192.i, i8 193, void %arrayidx3.case.193.i, i8 194, void %arrayidx3.case.194.i, i8 195, void %arrayidx3.case.195.i, i8 196, void %arrayidx3.case.196.i, i8 197, void %arrayidx3.case.197.i, i8 198, void %arrayidx3.case.198.i, i8 199, void %arrayidx3.case.199.i, i8 200, void %arrayidx3.case.200.i, i8 201, void %arrayidx3.case.201.i, i8 202, void %arrayidx3.case.202.i, i8 203, void %arrayidx3.case.203.i, i8 204, void %arrayidx3.case.204.i, i8 205, void %arrayidx3.case.205.i, i8 206, void %arrayidx3.case.206.i, i8 207, void %arrayidx3.case.207.i, i8 208, void %arrayidx3.case.208.i, i8 209, void %arrayidx3.case.209.i, i8 210, void %arrayidx3.case.210.i, i8 211, void %arrayidx3.case.211.i, i8 212, void %arrayidx3.case.212.i, i8 213, void %arrayidx3.case.213.i, i8 214, void %arrayidx3.case.214.i" [../hls_files/conv_pool.cpp:126->../hls_files/conv_pool.cpp:123]   --->   Operation 21 'switch' 'switch_ln126' <Predicate = true> <Delay = 1.71>
@@ -3797,7 +3797,7 @@ ret_ln0                 (ret              ) [ 000]
 <pin id="443" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_37"/></StgValue>
+<StgValue><ssdm name="empty_17"/></StgValue>
 </bind>
 </comp>
 
@@ -3815,7 +3815,7 @@ ret_ln0                 (ret              ) [ 000]
 <pin id="447" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_38"/></StgValue>
+<StgValue><ssdm name="empty_19"/></StgValue>
 </bind>
 </comp>
 
@@ -3833,7 +3833,7 @@ ret_ln0                 (ret              ) [ 000]
 <pin id="451" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_12"/></StgValue>
+<StgValue><ssdm name="empty_21"/></StgValue>
 </bind>
 </comp>
 
@@ -3842,7 +3842,7 @@ ret_ln0                 (ret              ) [ 000]
 <pin id="453" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_23"/></StgValue>
+<StgValue><ssdm name="empty_20"/></StgValue>
 </bind>
 </comp>
 
@@ -3941,7 +3941,7 @@ ret_ln0                 (ret              ) [ 000]
 <pin id="475" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_36"/></StgValue>
+<StgValue><ssdm name="empty_16"/></StgValue>
 </bind>
 </comp>
 

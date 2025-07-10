@@ -1,0 +1,49 @@
+20:00:44 INFO  : updated workspace path: C:\Users\ozair\Documents\Code_Drive\Drone
+20:00:44 INFO  : Marking the target connection as default Local
+20:00:44 INFO  : Marking the target connection as default Linux Agent
+20:00:44 INFO  : Marking the target connection as default XRTServer
+20:00:44 INFO  : Marking the target connection as default LinuxEmulation
+20:00:44 INFO  : Marking the target connection as default QEMU
+20:02:46 INFO  : created .gitignore file for the project C:\Users\ozair\Documents\Code_Drive\Drone\hls_component
+11:24:57 INFO  : connection terminated
+11:24:57 INFO  : connection terminated
+11:24:57 INFO  : scheduling shutdown timer for 2 seconds ...
+11:24:57 INFO  : scheduling shutdown timer for 2 seconds ...
+11:24:59 INFO  : Terminating Vitis C++ Server
+11:24:59 INFO  : Terminating Vitis C++ Server
+11:24:59 INFO  : Vitis C++ Server terminated
+11:24:59 INFO  : Vitis C++ Server terminated
+15:05:54 INFO  : updated workspace path: C:\Users\ozair\Documents\Code_Drive\Drone
+17:32:02 ERROR : Error in handling the notification Failed to read env.json file at 'C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\csim\build\env.json'.
+17:32:48 ERROR : Error in handling the notification Failed to read env.json file at 'C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\csim\build\env.json'.
+16:56:17 INFO  : updated workspace path: C:\Users\ozair\Documents\Code_Drive\Drone
+19:55:04 INFO  : connection terminated
+19:55:04 INFO  : connection terminated
+19:55:04 INFO  : scheduling shutdown timer for 2 seconds ...
+19:55:04 INFO  : scheduling shutdown timer for 2 seconds ...
+19:55:06 INFO  : Terminating Vitis C++ Server
+19:55:06 INFO  : Terminating Vitis C++ Server
+19:55:06 INFO  : Vitis C++ Server terminated
+19:55:06 INFO  : Vitis C++ Server terminated
+16:55:25 INFO  : updated workspace path: C:\Users\ozair\Documents\Code_Drive\Drone
+23:02:06 INFO  : created .gitignore file for the project C:\Users\ozair\Documents\Code_Drive\Drone
+23:02:07 INFO  : updated workspace path: C:\Users\ozair\Documents\Code_Drive\Drone
+23:59:44 INFO  : created .gitignore file for the project C:\Users\ozair\Documents\Code_Drive\Drone
+23:59:44 INFO  : updated workspace path: C:\Users\ozair\Documents\Code_Drive\Drone
+02:27:52 INFO  : connection terminated
+02:27:52 INFO  : connection terminated
+02:27:52 INFO  : scheduling shutdown timer for 2 seconds ...
+02:27:55 INFO  : Terminating Vitis C++ Server
+02:27:55 INFO  : Vitis C++ Server terminated
+02:28:27 INFO  : updated workspace path: C:\Users\ozair\Documents\Code_Drive\Drone
+02:28:27 INFO  : created .gitignore file for the project C:\Users\ozair\Documents\Code_Drive\Drone
+02:29:16 INFO  : connection terminated
+02:29:16 INFO  : connection terminated
+02:29:16 INFO  : scheduling shutdown timer for 2 seconds ...
+02:29:18 INFO  : Terminating Vitis C++ Server
+02:29:18 INFO  : Vitis C++ Server terminated
+02:29:35 INFO  : updated workspace path: C:\Users\ozair\Documents\Code_Drive\Drone
+19:31:10 INFO  : created .gitignore file for the project C:\Users\ozair\Documents\Code_Drive\Drone
+19:31:10 INFO  : updated workspace path: C:\Users\ozair\Documents\Code_Drive\Drone
+19:52:59 INFO  : created .gitignore file for the project C:\Users\ozair\Documents\Code_Drive\Drone
+19:53:01 INFO  : updated workspace path: C:\Users\ozair\Documents\Code_Drive\Drone

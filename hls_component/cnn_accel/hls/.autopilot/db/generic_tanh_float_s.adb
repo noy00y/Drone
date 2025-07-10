@@ -2214,7 +2214,7 @@
                 </item>
               </inlineStackInfo>
               <originalName>xd</originalName>
-              <rtlName>fpext_32ns_64_2_no_dsp_1_U1609</rtlName>
+              <rtlName>fpext_32ns_64_2_no_dsp_1_U1605</rtlName>
               <control>auto</control>
               <opType>fpext</opType>
               <implIndex>auto</implIndex>
@@ -2344,7 +2344,7 @@
                 </item>
               </inlineStackInfo>
               <originalName></originalName>
-              <rtlName>dadd_64ns_64ns_64_5_full_dsp_1_U1611</rtlName>
+              <rtlName>dadd_64ns_64ns_64_5_full_dsp_1_U1607</rtlName>
               <control>auto</control>
               <opType>dadd</opType>
               <implIndex>fulldsp</implIndex>
@@ -2408,7 +2408,7 @@
                 </item>
               </inlineStackInfo>
               <originalName></originalName>
-              <rtlName>fptrunc_64ns_32_2_no_dsp_1_U1608</rtlName>
+              <rtlName>fptrunc_64ns_32_2_no_dsp_1_U1604</rtlName>
               <control>auto</control>
               <opType>fptrunc</opType>
               <implIndex>auto</implIndex>
@@ -8320,7 +8320,7 @@
         <count>4</count>
         <item_version>0</item_version>
         <item class_id="36" tracking_level="0" version="0">
-          <first>dadd_64ns_64ns_64_5_full_dsp_1_U1611 (dadd_64ns_64ns_64_5_full_dsp_1)</first>
+          <first>dadd_64ns_64ns_64_5_full_dsp_1_U1607 (dadd_64ns_64ns_64_5_full_dsp_1)</first>
           <second class_id="37" tracking_level="0" version="0">
             <count>3</count>
             <item_version>0</item_version>
@@ -8339,14 +8339,14 @@
           </second>
         </item>
         <item>
-          <first>fpext_32ns_64_2_no_dsp_1_U1609 (fpext_32ns_64_2_no_dsp_1)</first>
+          <first>fpext_32ns_64_2_no_dsp_1_U1605 (fpext_32ns_64_2_no_dsp_1)</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
           </second>
         </item>
         <item>
-          <first>fptrunc_64ns_32_2_no_dsp_1_U1608 (fptrunc_64ns_32_2_no_dsp_1)</first>
+          <first>fptrunc_64ns_32_2_no_dsp_1_U1604 (fptrunc_64ns_32_2_no_dsp_1)</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
@@ -11080,21 +11080,21 @@
         <count>4</count>
         <item_version>0</item_version>
         <item>
-          <first>dadd_64ns_64ns_64_5_full_dsp_1_U1611</first>
+          <first>dadd_64ns_64ns_64_5_full_dsp_1_U1607</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
           </second>
         </item>
         <item>
-          <first>fpext_32ns_64_2_no_dsp_1_U1609</first>
+          <first>fpext_32ns_64_2_no_dsp_1_U1605</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
           </second>
         </item>
         <item>
-          <first>fptrunc_64ns_32_2_no_dsp_1_U1608</first>
+          <first>fptrunc_64ns_32_2_no_dsp_1_U1604</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
@@ -11112,7 +11112,7 @@
         <count>4</count>
         <item_version>0</item_version>
         <item class_id="40" tracking_level="0" version="0">
-          <first>dadd_64ns_64ns_64_5_full_dsp_1_U1611 (dadd_64ns_64ns_64_5_full_dsp_1)</first>
+          <first>dadd_64ns_64ns_64_5_full_dsp_1_U1607 (dadd_64ns_64ns_64_5_full_dsp_1)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -11120,7 +11120,7 @@
           </second>
         </item>
         <item>
-          <first>fpext_32ns_64_2_no_dsp_1_U1609 (fpext_32ns_64_2_no_dsp_1)</first>
+          <first>fpext_32ns_64_2_no_dsp_1_U1605 (fpext_32ns_64_2_no_dsp_1)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -11128,7 +11128,7 @@
           </second>
         </item>
         <item>
-          <first>fptrunc_64ns_32_2_no_dsp_1_U1608 (fptrunc_64ns_32_2_no_dsp_1)</first>
+          <first>fptrunc_64ns_32_2_no_dsp_1_U1604 (fptrunc_64ns_32_2_no_dsp_1)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>

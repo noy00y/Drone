@@ -545,7 +545,7 @@ begin
         ap_return => grp_exp_generic_double_s_fu_89_ap_return,
         ap_ce => grp_exp_generic_double_s_fu_89_ap_ce);
 
-    fptrunc_64ns_32_2_no_dsp_1_U1608 : component cnn_accel_fptrunc_64ns_32_2_no_dsp_1
+    fptrunc_64ns_32_2_no_dsp_1_U1604 : component cnn_accel_fptrunc_64ns_32_2_no_dsp_1
     generic map (
         ID => 1,
         NUM_STAGE => 2,
@@ -558,7 +558,7 @@ begin
         ce => ap_const_logic_1,
         dout => grp_fu_121_p1);
 
-    fpext_32ns_64_2_no_dsp_1_U1609 : component cnn_accel_fpext_32ns_64_2_no_dsp_1
+    fpext_32ns_64_2_no_dsp_1_U1605 : component cnn_accel_fpext_32ns_64_2_no_dsp_1
     generic map (
         ID => 1,
         NUM_STAGE => 2,
@@ -571,7 +571,7 @@ begin
         ce => ap_const_logic_1,
         dout => grp_fu_125_p1);
 
-    dadd_64ns_64ns_64_5_full_dsp_1_U1611 : component cnn_accel_dadd_64ns_64ns_64_5_full_dsp_1
+    dadd_64ns_64ns_64_5_full_dsp_1_U1607 : component cnn_accel_dadd_64ns_64ns_64_5_full_dsp_1
     generic map (
         ID => 1,
         NUM_STAGE => 5,

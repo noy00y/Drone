@@ -13,7 +13,7 @@ entity cnn_accel_Block_entry_proc_local_img_RAM_AUTO_1R1W is
         MEM_TYPE        : string    := "auto"; 
         DataWidth       : integer   := 32; 
         AddressWidth    : integer   := 18;
-        AddressRange    : integer   := 153600
+        AddressRange    : integer   := 230400
     ); 
     port (
         address0    : in std_logic_vector(AddressWidth-1 downto 0); 

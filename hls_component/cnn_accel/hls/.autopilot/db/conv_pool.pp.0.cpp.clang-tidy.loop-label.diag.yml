@@ -1307,7 +1307,7 @@ Diagnostics:
     FilePath:        'C:\Users\ozair\Documents\Code_Drive\Drone\hls_files\conv_pool.cpp'
     Replacements:    
       - FilePath:        'C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp'
-        Offset:          1776660
+        Offset:          1776593
         Length:          0
         ReplacementText: 'VITIS_LOOP_309_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -1316,7 +1316,7 @@ Diagnostics:
     FilePath:        'C:\Users\ozair\Documents\Code_Drive\Drone\hls_files\conv_pool.cpp'
     Replacements:    
       - FilePath:        'C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp'
-        Offset:          1776725
+        Offset:          1776658
         Length:          0
         ReplacementText: 'VITIS_LOOP_310_2: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -1325,7 +1325,7 @@ Diagnostics:
     FilePath:        'C:\Users\ozair\Documents\Code_Drive\Drone\hls_files\conv_pool.cpp'
     Replacements:    
       - FilePath:        'C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp'
-        Offset:          1777126
+        Offset:          1777059
         Length:          0
         ReplacementText: 'VITIS_LOOP_327_1: '
 ...

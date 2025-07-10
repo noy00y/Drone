@@ -27,7 +27,7 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 286 \
+    id 281 \
     name feat1_p \
     reset_level 1 \
     sync_rst true \
@@ -46,7 +46,26 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 287 \
+    id 282 \
+    name feat1_p_63 \
+    reset_level 1 \
+    sync_rst true \
+    dir O \
+    corename feat1_p_63 \
+    op interface \
+    ports { feat1_p_63_address0 { O 16 vector } feat1_p_63_ce0 { O 1 bit } feat1_p_63_we0 { O 1 bit } feat1_p_63_d0 { O 32 vector } } \
+} "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'feat1_p_63'"
+}
+}
+
+
+# XIL_BRAM:
+if {${::AESL::PGuard_autoexp_gen}} {
+if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
+eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
+    id 283 \
     name feat1_p_64 \
     reset_level 1 \
     sync_rst true \
@@ -65,7 +84,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 288 \
+    id 284 \
     name feat1_p_65 \
     reset_level 1 \
     sync_rst true \
@@ -84,26 +103,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 289 \
-    name feat1_p_66 \
-    reset_level 1 \
-    sync_rst true \
-    dir O \
-    corename feat1_p_66 \
-    op interface \
-    ports { feat1_p_66_address0 { O 16 vector } feat1_p_66_ce0 { O 1 bit } feat1_p_66_we0 { O 1 bit } feat1_p_66_d0 { O 32 vector } } \
-} "
-} else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'feat1_p_66'"
-}
-}
-
-
-# XIL_BRAM:
-if {${::AESL::PGuard_autoexp_gen}} {
-if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
-eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 290 \
+    id 285 \
     name feat1 \
     reset_level 1 \
     sync_rst true \
@@ -122,7 +122,26 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 291 \
+    id 286 \
+    name feat1_60 \
+    reset_level 1 \
+    sync_rst true \
+    dir I \
+    corename feat1_60 \
+    op interface \
+    ports { feat1_60_address0 { O 18 vector } feat1_60_ce0 { O 1 bit } feat1_60_q0 { I 32 vector } feat1_60_address1 { O 18 vector } feat1_60_ce1 { O 1 bit } feat1_60_q1 { I 32 vector } } \
+} "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'feat1_60'"
+}
+}
+
+
+# XIL_BRAM:
+if {${::AESL::PGuard_autoexp_gen}} {
+if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
+eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
+    id 287 \
     name feat1_61 \
     reset_level 1 \
     sync_rst true \
@@ -141,7 +160,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 292 \
+    id 288 \
     name feat1_62 \
     reset_level 1 \
     sync_rst true \
@@ -152,25 +171,6 @@ eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'feat1_62'"
-}
-}
-
-
-# XIL_BRAM:
-if {${::AESL::PGuard_autoexp_gen}} {
-if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
-eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 293 \
-    name feat1_63 \
-    reset_level 1 \
-    sync_rst true \
-    dir I \
-    corename feat1_63 \
-    op interface \
-    ports { feat1_63_address0 { O 18 vector } feat1_63_ce0 { O 1 bit } feat1_63_q0 { I 32 vector } feat1_63_address1 { O 18 vector } feat1_63_ce1 { O 1 bit } feat1_63_q1 { I 32 vector } } \
-} "
-} else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'feat1_63'"
 }
 }
 

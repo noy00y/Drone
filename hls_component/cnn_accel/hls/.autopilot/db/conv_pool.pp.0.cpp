@@ -30269,7 +30269,7 @@ __attribute__((sdx_kernel("cnn_accel", 0))) void cnn_accel(
       return;
     }
 
-#pragma HLS ARRAY_PARTITION variable=local_img block factor=2 dim=3
+
 #pragma HLS ARRAY_PARTITION variable=feat1 block factor=4 dim=3
 #pragma HLS ARRAY_PARTITION variable=feat1_p block factor=4 dim=3
 #pragma HLS ARRAY_PARTITION variable=feat2 block factor=4 dim=3

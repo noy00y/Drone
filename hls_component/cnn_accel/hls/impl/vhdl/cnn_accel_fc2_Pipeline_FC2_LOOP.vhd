@@ -340,7 +340,7 @@ attribute shreg_extract : string;
 
 
 begin
-    sparsemux_65_5_32_1_1_U1668 : component cnn_accel_sparsemux_65_5_32_1_1
+    sparsemux_65_5_32_1_1_U1664 : component cnn_accel_sparsemux_65_5_32_1_1
     generic map (
         ID => 1,
         NUM_STAGE => 1,

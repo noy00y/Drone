@@ -2034,26 +2034,6 @@ Args:
 --- !Passed
 Pass:            reflow-array-partition
 Name:            ArrayXform
-DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 93, Column: 0 }
-Function:        _Z8load_imgPKfPA320_A3_f
-Args:            
-  - String:          'Applying '
-  - String:          array_partition
-  - String:          ' to '''
-  - UOName:          _ZZ9cnn_accelE9local_img
-  - String:          ''':'
-  - String:          ' '
-  - Mode:            Block
-  - String:          ' partitioning'
-  - String:          ' with factor '
-  - Factor:          '2'
-  - String:          ' on dimension '
-  - Dim:             '3'
-  - String:          .
-...
---- !Passed
-Pass:            reflow-array-partition
-Name:            ArrayXform
 DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 110, Column: 0 }
 Function:        cnn_accel
 Args:            
@@ -2435,7 +2415,7 @@ Args:
   - OrigAccess:      load
     DebugLoc:        { File: ../hls_files/conv_pool.cpp, Line: 201, Column: 38 }
   - OrigDirection:   read
-  - OrigID:          for.inc.load.10
+  - OrigID:          for.inc.load.6
 ...
 --- !Missed
 Pass:            reflow-burst-widen

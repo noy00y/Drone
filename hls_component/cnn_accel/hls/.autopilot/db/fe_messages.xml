@@ -768,9 +768,6 @@
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:153:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="cnn_accel" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=3" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:159:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="cnn_accel" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=local_img block factor=2 dim=3" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:160:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="cnn_accel" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=feat1 block factor=4 dim=3" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
@@ -941,9 +938,6 @@
     </msg>
     <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../hls_files/conv_pool.cpp:94:0" msg_body="Applying array_partition to '_ZZ9cnn_accelE5feat1': Block partitioning with factor 4 on dimension 3.">
         <args Dim="3" Factor="4" Mode="Block" UOName="_ZZ9cnn_accelE5feat1"/>
-    </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../hls_files/conv_pool.cpp:93:0" msg_body="Applying array_partition to '_ZZ9cnn_accelE9local_img': Block partitioning with factor 2 on dimension 3.">
-        <args Dim="3" Factor="2" Mode="Block" UOName="_ZZ9cnn_accelE9local_img"/>
     </msg>
     <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../hls_files/conv_pool.cpp:110:0" msg_body="Applying array_partition to '_ZZ9cnn_accelE11fc2_b_local': Complete partitioning on dimension 1.">
         <args Dim="1" Mode="Complete" UOName="_ZZ9cnn_accelE11fc2_b_local"/>

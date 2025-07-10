@@ -2,94 +2,94 @@
     <item name="Total Instructions per Compilation Phase">
         <table>
             <keys size="4">Phase, Step, Instructions, Description</keys>
-            <column name="Compile/Link">, 14936, After all functions are compiled and linked into a single design</column>
+            <column name="Compile/Link">, 14935, After all functions are compiled and linked into a single design</column>
             <column name="">, , </column>
             <column name="Unroll/Inline">, , After user unroll and inline pragmas are applied</column>
-            <column name="">(1) unroll,  2725, user unroll pragmas are applied</column>
-            <column name="">(2) simplification,  1754, simplification of applied user unroll pragmas</column>
-            <column name="">(3) inline,  1556, user inline pragmas are applied</column>
-            <column name="">(4) simplification,  1312, simplification of applied user inline pragmas</column>
+            <column name="">(1) unroll,  2724, user unroll pragmas are applied</column>
+            <column name="">(2) simplification,  1753, simplification of applied user unroll pragmas</column>
+            <column name="">(3) inline,  1555, user inline pragmas are applied</column>
+            <column name="">(4) simplification,  1311, simplification of applied user inline pragmas</column>
             <column name="">, , </column>
             <column name="Array/Struct">, , After user array partition and struct aggregate/disaggregate pragmas are applied</column>
-            <column name="">(1) array partition,  6400, user array partition pragmas are applied</column>
-            <column name="">(2) simplification,  5731, simplification of applied user array partition &amp; struct aggregate/disaggregate pragmas</column>
-            <column name="">(3) aggregate/disaggregate ,  5731, user struct aggregate/disaggregate pragmas are applied</column>
-            <column name="">(4) array reshape,  5731, apply array reshape pragmas</column>
-            <column name="">(5) access patterns,  5750, array access pattern optmizations</column>
+            <column name="">(1) array partition,  6354, user array partition pragmas are applied</column>
+            <column name="">(2) simplification,  5710, simplification of applied user array partition &amp; struct aggregate/disaggregate pragmas</column>
+            <column name="">(3) aggregate/disaggregate ,  5710, user struct aggregate/disaggregate pragmas are applied</column>
+            <column name="">(4) array reshape,  5710, apply array reshape pragmas</column>
+            <column name="">(5) access patterns,  5729, array access pattern optmizations</column>
             <column name="">, , </column>
             <column name="Performance">, , After transformations are applied to meet performance pragma targets</column>
-            <column name="">(1) loop simplification,  5743, loop and instruction simplification</column>
-            <column name="">(2) parallelization,  5741, loops are unrolled or pipelined to meet performance targets</column>
-            <column name="">(3) array partition,  5740, arrays are partitioned to meet performance targets</column>
-            <column name="">(4) simplification,  5740, simplification of design after performance transformations</column>
+            <column name="">(1) loop simplification,  5722, loop and instruction simplification</column>
+            <column name="">(2) parallelization,  5720, loops are unrolled or pipelined to meet performance targets</column>
+            <column name="">(3) array partition,  5719, arrays are partitioned to meet performance targets</column>
+            <column name="">(4) simplification,  5719, simplification of design after performance transformations</column>
             <column name="">, , </column>
             <column name="HW Transforms">, , After hardware transfomations</column>
-            <column name="">(1) lowering,  5781, initial conversion to HW specific instructions</column>
-            <column name="">(2) optimizations,  5867, high level synthesis optimizations</column>
+            <column name="">(1) lowering,  5760, initial conversion to HW specific instructions</column>
+            <column name="">(2) optimizations,  5846, high level synthesis optimizations</column>
         </table>
     </item>
     <item name="Instructions per Function for each Compilation Phase">
         <hiertable>
             <header size="7" col0="Function" col1="Location" col2="Compile/Link" col3="Unroll/Inline" col4="Array/Struct" col5="Performance" col6="HW Transforms"/>
             <rows>
-                <row id="0" col0="cnn_accel" col1="conv_pool.cpp:53" col2="14936" col3="1312" col4="5750" col5="5740" col6="5867">
-                    <row id="32" col0="load_img" col1="conv_pool.cpp:195" col2="42" col3="24" col4="43" col5="43" col6=""/>
-                    <row id="21" col0="conv1" col1="conv_pool.cpp:209" col2="93" col3="225" col4="410" col5="410" col6=""/>
-                    <row id="1" col0="pool1" col1="conv_pool.cpp:236" col2="90" col3="36" col4="92" col5="92" col6=""/>
-                    <row id="31" col0="conv2" col1="conv_pool.cpp:257" col2="93" col3="560" col4="1579" col5="1579" col6=""/>
-                    <row id="29" col0="pool2" col1="conv_pool.cpp:283" col2="90" col3="36" col4="92" col5="92" col6=""/>
-                    <row id="19" col0="flatten" col1="conv_pool.cpp:304" col2="42" col3="29" col4="37" col5="37" col6=""/>
-                    <row id="3" col0="fc1" col1="conv_pool.cpp:320" col2="14274" col3="263" col4="312" col5="310" col6="">
-                        <row id="28" col0="tanh" col1="tanhfloat.cpp:6" col2="14237" col3="" col4="" col5="" col6="">
-                            <row id="4" col0="generic_tanh&lt;float&gt;" col1="hls_tanh.h:28" col2="14235" col3="" col4="" col5="" col6="">
-                                <row id="27" col0="fp_struct" col1="x_hls_utils.h:283" col2="318" col3="" col4="" col5="" col6=""/>
-                                <row id="36" col0="generic_fabs&lt;float&gt;" col1="hls_fabs.h:12" col2="959" col3="" col4="" col5="" col6="">
-                                    <row id="22" col0="generic_copysign&lt;float&gt;" col1="hls_copysign.h:10" col2="957" col3="" col4="" col5="" col6="">
-                                        <row id="27" col0="fp_struct" col1="x_hls_utils.h:283" col2="636" col2_disp="  636 (2 calls)" col3="" col4="" col5="" col6=""/>
-                                        <row id="7" col0="to_ieee" col1="x_hls_utils.h:346" col2="303" col3="" col4="" col5="" col6="">
-                                            <row id="24" col0="to_float" col1="x_hls_utils.h:322" col2="301" col3="" col4="" col5="" col6="">
-                                                <row id="6" col0="data" col1="x_hls_utils.h:309" col2="279" col3="" col4="" col5="" col6=""/>
+                <row id="0" col0="cnn_accel" col1="conv_pool.cpp:53" col2="14935" col3="1311" col4="5729" col5="5719" col6="5846">
+                    <row id="15" col0="load_img" col1="conv_pool.cpp:195" col2="42" col3="24" col4="26" col5="26" col6=""/>
+                    <row id="35" col0="conv1" col1="conv_pool.cpp:209" col2="93" col3="225" col4="410" col5="410" col6=""/>
+                    <row id="2" col0="pool1" col1="conv_pool.cpp:236" col2="90" col3="36" col4="92" col5="92" col6=""/>
+                    <row id="4" col0="conv2" col1="conv_pool.cpp:257" col2="93" col3="560" col4="1579" col5="1579" col6=""/>
+                    <row id="33" col0="pool2" col1="conv_pool.cpp:283" col2="90" col3="36" col4="92" col5="92" col6=""/>
+                    <row id="12" col0="flatten" col1="conv_pool.cpp:304" col2="42" col3="29" col4="37" col5="37" col6=""/>
+                    <row id="34" col0="fc1" col1="conv_pool.cpp:320" col2="14274" col3="263" col4="312" col5="310" col6="">
+                        <row id="13" col0="tanh" col1="tanhfloat.cpp:6" col2="14237" col3="" col4="" col5="" col6="">
+                            <row id="31" col0="generic_tanh&lt;float&gt;" col1="hls_tanh.h:28" col2="14235" col3="" col4="" col5="" col6="">
+                                <row id="22" col0="fp_struct" col1="x_hls_utils.h:283" col2="318" col3="" col4="" col5="" col6=""/>
+                                <row id="8" col0="generic_fabs&lt;float&gt;" col1="hls_fabs.h:12" col2="959" col3="" col4="" col5="" col6="">
+                                    <row id="27" col0="generic_copysign&lt;float&gt;" col1="hls_copysign.h:10" col2="957" col3="" col4="" col5="" col6="">
+                                        <row id="22" col0="fp_struct" col1="x_hls_utils.h:283" col2="636" col2_disp="  636 (2 calls)" col3="" col4="" col5="" col6=""/>
+                                        <row id="1" col0="to_ieee" col1="x_hls_utils.h:346" col2="303" col3="" col4="" col5="" col6="">
+                                            <row id="6" col0="to_float" col1="x_hls_utils.h:322" col2="301" col3="" col4="" col5="" col6="">
+                                                <row id="3" col0="data" col1="x_hls_utils.h:309" col2="279" col3="" col4="" col5="" col6=""/>
                                             </row>
                                         </row>
                                     </row>
                                 </row>
-                                <row id="16" col0="expm1" col1="hls_exp_float.cpp:7" col2="12291" col3="" col4="" col5="" col6="">
-                                    <row id="27" col0="fp_struct" col1="x_hls_utils.h:283" col2="318" col3="" col4="" col5="" col6=""/>
-                                    <row id="5" col0="exp_generic&lt;double&gt;" col1="hls_exp_.h:156" col2="11898" col3="" col4="" col5="" col6="">
-                                        <row id="9" col0="fp_struct" col1="x_hls_utils.h:456" col2="319" col3="" col4="" col5="" col6=""/>
-                                        <row id="14" col0="fp_struct" col1="x_hls_utils.h:454" col2="4" col3="" col4="" col5="" col6=""/>
-                                        <row id="8" col0="generic_isnan&lt;double&gt;" col1="hls_isnan.h:16" col2="390" col3="" col4="" col5="" col6="">
-                                            <row id="9" col0="fp_struct" col1="x_hls_utils.h:456" col2="319" col3="" col4="" col5="" col6=""/>
+                                <row id="19" col0="expm1" col1="hls_exp_float.cpp:7" col2="12291" col3="" col4="" col5="" col6="">
+                                    <row id="22" col0="fp_struct" col1="x_hls_utils.h:283" col2="318" col3="" col4="" col5="" col6=""/>
+                                    <row id="28" col0="exp_generic&lt;double&gt;" col1="hls_exp_.h:156" col2="11898" col3="" col4="" col5="" col6="">
+                                        <row id="16" col0="fp_struct" col1="x_hls_utils.h:456" col2="319" col3="" col4="" col5="" col6=""/>
+                                        <row id="25" col0="fp_struct" col1="x_hls_utils.h:454" col2="4" col3="" col4="" col5="" col6=""/>
+                                        <row id="23" col0="generic_isnan&lt;double&gt;" col1="hls_isnan.h:16" col2="390" col3="" col4="" col5="" col6="">
+                                            <row id="16" col0="fp_struct" col1="x_hls_utils.h:456" col2="319" col3="" col4="" col5="" col6=""/>
                                         </row>
-                                        <row id="11" col0="generic_isinf&lt;double&gt;" col1="hls_isinf.h:16" col2="389" col3="" col4="" col5="" col6="">
-                                            <row id="9" col0="fp_struct" col1="x_hls_utils.h:456" col2="319" col3="" col4="" col5="" col6=""/>
+                                        <row id="21" col0="generic_isinf&lt;double&gt;" col1="hls_isinf.h:16" col2="389" col3="" col4="" col5="" col6="">
+                                            <row id="16" col0="fp_struct" col1="x_hls_utils.h:456" col2="319" col3="" col4="" col5="" col6=""/>
                                         </row>
-                                        <row id="30" col0="expv" col1="x_hls_utils.h:485" col2="109" col3="" col4="" col5="" col6=""/>
-                                        <row id="25" col0="exp_Z1P_m_1" col1="hls_exp_.h:90" col2="2725" col3="" col4="" col5="" col6=""/>
-                                        <row id="13" col0="to_ieee" col1="x_hls_utils.h:509" col2="2121" col2_disp="2,121 (7 calls)" col3="" col4="" col5="" col6="">
-                                            <row id="23" col0="to_double" col1="x_hls_utils.h:494" col2="2107" col2_disp="2,107 (7 calls)" col3="" col4="" col5="" col6="">
-                                                <row id="12" col0="data" col1="x_hls_utils.h:475" col2="1953" col2_disp="1,953 (7 calls)" col3="" col4="" col5="" col6=""/>
+                                        <row id="20" col0="expv" col1="x_hls_utils.h:485" col2="109" col3="" col4="" col5="" col6=""/>
+                                        <row id="29" col0="exp_Z1P_m_1" col1="hls_exp_.h:90" col2="2725" col3="" col4="" col5="" col6=""/>
+                                        <row id="9" col0="to_ieee" col1="x_hls_utils.h:509" col2="2121" col2_disp="2,121 (7 calls)" col3="" col4="" col5="" col6="">
+                                            <row id="30" col0="to_double" col1="x_hls_utils.h:494" col2="2107" col2_disp="2,107 (7 calls)" col3="" col4="" col5="" col6="">
+                                                <row id="26" col0="data" col1="x_hls_utils.h:475" col2="1953" col2_disp="1,953 (7 calls)" col3="" col4="" col5="" col6=""/>
                                             </row>
                                         </row>
                                     </row>
                                 </row>
-                                <row id="2" col0="generic_nan&lt;float&gt;" col1="hls_nan.h:10" col2="393" col3="" col4="" col5="" col6="">
-                                    <row id="15" col0="fp_struct" col1="x_hls_utils.h:281" col2="4" col3="" col4="" col5="" col6=""/>
-                                    <row id="7" col0="to_ieee" col1="x_hls_utils.h:346" col2="303" col3="" col4="" col5="" col6="">
-                                        <row id="24" col0="to_float" col1="x_hls_utils.h:322" col2="301" col3="" col4="" col5="" col6="">
-                                            <row id="6" col0="data" col1="x_hls_utils.h:309" col2="279" col3="" col4="" col5="" col6=""/>
+                                <row id="14" col0="generic_nan&lt;float&gt;" col1="hls_nan.h:10" col2="393" col3="" col4="" col5="" col6="">
+                                    <row id="36" col0="fp_struct" col1="x_hls_utils.h:281" col2="4" col3="" col4="" col5="" col6=""/>
+                                    <row id="1" col0="to_ieee" col1="x_hls_utils.h:346" col2="303" col3="" col4="" col5="" col6="">
+                                        <row id="6" col0="to_float" col1="x_hls_utils.h:322" col2="301" col3="" col4="" col5="" col6="">
+                                            <row id="3" col0="data" col1="x_hls_utils.h:309" col2="279" col3="" col4="" col5="" col6=""/>
                                         </row>
                                     </row>
                                 </row>
                             </row>
                         </row>
-                        <row id="4" col0="generic_tanh&lt;float&gt;" col1="hls_tanh.h:28" col2="" col3="232" col4="232" col5="232" col6="">
-                            <row id="5" col0="exp_generic&lt;double&gt;" col1="hls_exp_.h:156" col2="" col3="178" col4="178" col5="178" col6=""/>
+                        <row id="31" col0="generic_tanh&lt;float&gt;" col1="hls_tanh.h:28" col2="" col3="232" col4="232" col5="232" col6="">
+                            <row id="28" col0="exp_generic&lt;double&gt;" col1="hls_exp_.h:156" col2="" col3="178" col4="178" col5="178" col6=""/>
                         </row>
                     </row>
-                    <row id="34" col0="fc2" col1="conv_pool.cpp:338" col2="35" col3="21" col4="53" col5="52" col6="">
-                        <row id="20" col0="exp" col1="expfloat.cpp:15" col2="4" col3="" col4="" col5="" col6="">
-                            <row id="17" col0="exp" col1="hls_exp_float.cpp:15" col2="2" col3="" col4="" col5="" col6=""/>
+                    <row id="10" col0="fc2" col1="conv_pool.cpp:338" col2="35" col3="21" col4="53" col5="52" col6="">
+                        <row id="32" col0="exp" col1="expfloat.cpp:15" col2="4" col3="" col4="" col5="" col6="">
+                            <row id="7" col0="exp" col1="hls_exp_float.cpp:15" col2="2" col3="" col4="" col5="" col6=""/>
                         </row>
                     </row>
                 </row>

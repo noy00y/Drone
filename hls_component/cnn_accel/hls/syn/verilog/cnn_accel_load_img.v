@@ -63,11 +63,7 @@ module cnn_accel_load_img (
         local_img_address0,
         local_img_ce0,
         local_img_we0,
-        local_img_d0,
-        local_img_60_address0,
-        local_img_60_ce0,
-        local_img_60_we0,
-        local_img_60_d0
+        local_img_d0
 );
 
 parameter    ap_ST_fsm_state1 = 10'd1;
@@ -138,10 +134,6 @@ output  [17:0] local_img_address0;
 output   local_img_ce0;
 output   local_img_we0;
 output  [31:0] local_img_d0;
-output  [17:0] local_img_60_address0;
-output   local_img_60_ce0;
-output   local_img_60_we0;
-output  [31:0] local_img_60_d0;
 
 reg ap_done;
 reg ap_idle;
@@ -163,56 +155,52 @@ reg m_axi_IMGmem_0_RREADY;
 (* fsm_encoding = "none" *) reg   [9:0] ap_CS_fsm;
 wire    ap_CS_fsm_state1;
 reg    IMGmem_blk_n_AR;
-wire  signed [61:0] trunc_ln_fu_64_p4;
-reg   [61:0] trunc_ln_reg_85;
-wire    grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_53_ap_start;
-wire    grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_53_ap_done;
-wire    grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_53_ap_idle;
-wire    grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_53_ap_ready;
-wire    grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_53_m_axi_IMGmem_0_AWVALID;
-wire   [63:0] grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_53_m_axi_IMGmem_0_AWADDR;
-wire   [0:0] grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_53_m_axi_IMGmem_0_AWID;
-wire   [31:0] grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_53_m_axi_IMGmem_0_AWLEN;
-wire   [2:0] grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_53_m_axi_IMGmem_0_AWSIZE;
-wire   [1:0] grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_53_m_axi_IMGmem_0_AWBURST;
-wire   [1:0] grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_53_m_axi_IMGmem_0_AWLOCK;
-wire   [3:0] grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_53_m_axi_IMGmem_0_AWCACHE;
-wire   [2:0] grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_53_m_axi_IMGmem_0_AWPROT;
-wire   [3:0] grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_53_m_axi_IMGmem_0_AWQOS;
-wire   [3:0] grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_53_m_axi_IMGmem_0_AWREGION;
-wire   [0:0] grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_53_m_axi_IMGmem_0_AWUSER;
-wire    grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_53_m_axi_IMGmem_0_WVALID;
-wire   [31:0] grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_53_m_axi_IMGmem_0_WDATA;
-wire   [3:0] grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_53_m_axi_IMGmem_0_WSTRB;
-wire    grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_53_m_axi_IMGmem_0_WLAST;
-wire   [0:0] grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_53_m_axi_IMGmem_0_WID;
-wire   [0:0] grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_53_m_axi_IMGmem_0_WUSER;
-wire    grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_53_m_axi_IMGmem_0_ARVALID;
-wire   [63:0] grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_53_m_axi_IMGmem_0_ARADDR;
-wire   [0:0] grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_53_m_axi_IMGmem_0_ARID;
-wire   [31:0] grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_53_m_axi_IMGmem_0_ARLEN;
-wire   [2:0] grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_53_m_axi_IMGmem_0_ARSIZE;
-wire   [1:0] grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_53_m_axi_IMGmem_0_ARBURST;
-wire   [1:0] grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_53_m_axi_IMGmem_0_ARLOCK;
-wire   [3:0] grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_53_m_axi_IMGmem_0_ARCACHE;
-wire   [2:0] grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_53_m_axi_IMGmem_0_ARPROT;
-wire   [3:0] grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_53_m_axi_IMGmem_0_ARQOS;
-wire   [3:0] grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_53_m_axi_IMGmem_0_ARREGION;
-wire   [0:0] grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_53_m_axi_IMGmem_0_ARUSER;
-wire    grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_53_m_axi_IMGmem_0_RREADY;
-wire    grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_53_m_axi_IMGmem_0_BREADY;
-wire   [17:0] grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_53_local_img_address0;
-wire    grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_53_local_img_ce0;
-wire    grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_53_local_img_we0;
-wire   [31:0] grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_53_local_img_d0;
-wire   [17:0] grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_53_local_img_60_address0;
-wire    grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_53_local_img_60_ce0;
-wire    grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_53_local_img_60_we0;
-wire   [31:0] grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_53_local_img_60_d0;
-reg    grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_53_ap_start_reg;
+wire  signed [61:0] trunc_ln_fu_60_p4;
+reg   [61:0] trunc_ln_reg_81;
+wire    grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_51_ap_start;
+wire    grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_51_ap_done;
+wire    grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_51_ap_idle;
+wire    grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_51_ap_ready;
+wire    grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_51_m_axi_IMGmem_0_AWVALID;
+wire   [63:0] grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_51_m_axi_IMGmem_0_AWADDR;
+wire   [0:0] grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_51_m_axi_IMGmem_0_AWID;
+wire   [31:0] grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_51_m_axi_IMGmem_0_AWLEN;
+wire   [2:0] grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_51_m_axi_IMGmem_0_AWSIZE;
+wire   [1:0] grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_51_m_axi_IMGmem_0_AWBURST;
+wire   [1:0] grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_51_m_axi_IMGmem_0_AWLOCK;
+wire   [3:0] grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_51_m_axi_IMGmem_0_AWCACHE;
+wire   [2:0] grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_51_m_axi_IMGmem_0_AWPROT;
+wire   [3:0] grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_51_m_axi_IMGmem_0_AWQOS;
+wire   [3:0] grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_51_m_axi_IMGmem_0_AWREGION;
+wire   [0:0] grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_51_m_axi_IMGmem_0_AWUSER;
+wire    grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_51_m_axi_IMGmem_0_WVALID;
+wire   [31:0] grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_51_m_axi_IMGmem_0_WDATA;
+wire   [3:0] grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_51_m_axi_IMGmem_0_WSTRB;
+wire    grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_51_m_axi_IMGmem_0_WLAST;
+wire   [0:0] grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_51_m_axi_IMGmem_0_WID;
+wire   [0:0] grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_51_m_axi_IMGmem_0_WUSER;
+wire    grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_51_m_axi_IMGmem_0_ARVALID;
+wire   [63:0] grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_51_m_axi_IMGmem_0_ARADDR;
+wire   [0:0] grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_51_m_axi_IMGmem_0_ARID;
+wire   [31:0] grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_51_m_axi_IMGmem_0_ARLEN;
+wire   [2:0] grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_51_m_axi_IMGmem_0_ARSIZE;
+wire   [1:0] grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_51_m_axi_IMGmem_0_ARBURST;
+wire   [1:0] grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_51_m_axi_IMGmem_0_ARLOCK;
+wire   [3:0] grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_51_m_axi_IMGmem_0_ARCACHE;
+wire   [2:0] grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_51_m_axi_IMGmem_0_ARPROT;
+wire   [3:0] grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_51_m_axi_IMGmem_0_ARQOS;
+wire   [3:0] grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_51_m_axi_IMGmem_0_ARREGION;
+wire   [0:0] grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_51_m_axi_IMGmem_0_ARUSER;
+wire    grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_51_m_axi_IMGmem_0_RREADY;
+wire    grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_51_m_axi_IMGmem_0_BREADY;
+wire   [17:0] grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_51_local_img_address0;
+wire    grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_51_local_img_ce0;
+wire    grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_51_local_img_we0;
+wire   [31:0] grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_51_local_img_d0;
+reg    grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_51_ap_start_reg;
 wire    ap_CS_fsm_state9;
 wire    ap_CS_fsm_state10;
-wire  signed [63:0] sext_ln196_fu_74_p1;
+wire  signed [63:0] sext_ln196_fu_70_p1;
 reg   [9:0] ap_NS_fsm;
 reg    ap_ST_fsm_state1_blk;
 wire    ap_ST_fsm_state2_blk;
@@ -229,51 +217,51 @@ wire    ap_ce_reg;
 // power-on initialization
 initial begin
 #0 ap_CS_fsm = 10'd1;
-#0 grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_53_ap_start_reg = 1'b0;
+#0 grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_51_ap_start_reg = 1'b0;
 end
 
-cnn_accel_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_53(
+cnn_accel_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_51(
     .ap_clk(ap_clk),
     .ap_rst(ap_rst),
-    .ap_start(grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_53_ap_start),
-    .ap_done(grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_53_ap_done),
-    .ap_idle(grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_53_ap_idle),
-    .ap_ready(grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_53_ap_ready),
-    .m_axi_IMGmem_0_AWVALID(grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_53_m_axi_IMGmem_0_AWVALID),
+    .ap_start(grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_51_ap_start),
+    .ap_done(grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_51_ap_done),
+    .ap_idle(grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_51_ap_idle),
+    .ap_ready(grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_51_ap_ready),
+    .m_axi_IMGmem_0_AWVALID(grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_51_m_axi_IMGmem_0_AWVALID),
     .m_axi_IMGmem_0_AWREADY(1'b0),
-    .m_axi_IMGmem_0_AWADDR(grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_53_m_axi_IMGmem_0_AWADDR),
-    .m_axi_IMGmem_0_AWID(grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_53_m_axi_IMGmem_0_AWID),
-    .m_axi_IMGmem_0_AWLEN(grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_53_m_axi_IMGmem_0_AWLEN),
-    .m_axi_IMGmem_0_AWSIZE(grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_53_m_axi_IMGmem_0_AWSIZE),
-    .m_axi_IMGmem_0_AWBURST(grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_53_m_axi_IMGmem_0_AWBURST),
-    .m_axi_IMGmem_0_AWLOCK(grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_53_m_axi_IMGmem_0_AWLOCK),
-    .m_axi_IMGmem_0_AWCACHE(grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_53_m_axi_IMGmem_0_AWCACHE),
-    .m_axi_IMGmem_0_AWPROT(grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_53_m_axi_IMGmem_0_AWPROT),
-    .m_axi_IMGmem_0_AWQOS(grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_53_m_axi_IMGmem_0_AWQOS),
-    .m_axi_IMGmem_0_AWREGION(grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_53_m_axi_IMGmem_0_AWREGION),
-    .m_axi_IMGmem_0_AWUSER(grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_53_m_axi_IMGmem_0_AWUSER),
-    .m_axi_IMGmem_0_WVALID(grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_53_m_axi_IMGmem_0_WVALID),
+    .m_axi_IMGmem_0_AWADDR(grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_51_m_axi_IMGmem_0_AWADDR),
+    .m_axi_IMGmem_0_AWID(grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_51_m_axi_IMGmem_0_AWID),
+    .m_axi_IMGmem_0_AWLEN(grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_51_m_axi_IMGmem_0_AWLEN),
+    .m_axi_IMGmem_0_AWSIZE(grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_51_m_axi_IMGmem_0_AWSIZE),
+    .m_axi_IMGmem_0_AWBURST(grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_51_m_axi_IMGmem_0_AWBURST),
+    .m_axi_IMGmem_0_AWLOCK(grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_51_m_axi_IMGmem_0_AWLOCK),
+    .m_axi_IMGmem_0_AWCACHE(grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_51_m_axi_IMGmem_0_AWCACHE),
+    .m_axi_IMGmem_0_AWPROT(grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_51_m_axi_IMGmem_0_AWPROT),
+    .m_axi_IMGmem_0_AWQOS(grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_51_m_axi_IMGmem_0_AWQOS),
+    .m_axi_IMGmem_0_AWREGION(grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_51_m_axi_IMGmem_0_AWREGION),
+    .m_axi_IMGmem_0_AWUSER(grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_51_m_axi_IMGmem_0_AWUSER),
+    .m_axi_IMGmem_0_WVALID(grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_51_m_axi_IMGmem_0_WVALID),
     .m_axi_IMGmem_0_WREADY(1'b0),
-    .m_axi_IMGmem_0_WDATA(grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_53_m_axi_IMGmem_0_WDATA),
-    .m_axi_IMGmem_0_WSTRB(grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_53_m_axi_IMGmem_0_WSTRB),
-    .m_axi_IMGmem_0_WLAST(grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_53_m_axi_IMGmem_0_WLAST),
-    .m_axi_IMGmem_0_WID(grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_53_m_axi_IMGmem_0_WID),
-    .m_axi_IMGmem_0_WUSER(grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_53_m_axi_IMGmem_0_WUSER),
-    .m_axi_IMGmem_0_ARVALID(grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_53_m_axi_IMGmem_0_ARVALID),
+    .m_axi_IMGmem_0_WDATA(grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_51_m_axi_IMGmem_0_WDATA),
+    .m_axi_IMGmem_0_WSTRB(grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_51_m_axi_IMGmem_0_WSTRB),
+    .m_axi_IMGmem_0_WLAST(grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_51_m_axi_IMGmem_0_WLAST),
+    .m_axi_IMGmem_0_WID(grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_51_m_axi_IMGmem_0_WID),
+    .m_axi_IMGmem_0_WUSER(grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_51_m_axi_IMGmem_0_WUSER),
+    .m_axi_IMGmem_0_ARVALID(grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_51_m_axi_IMGmem_0_ARVALID),
     .m_axi_IMGmem_0_ARREADY(m_axi_IMGmem_0_ARREADY),
-    .m_axi_IMGmem_0_ARADDR(grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_53_m_axi_IMGmem_0_ARADDR),
-    .m_axi_IMGmem_0_ARID(grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_53_m_axi_IMGmem_0_ARID),
-    .m_axi_IMGmem_0_ARLEN(grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_53_m_axi_IMGmem_0_ARLEN),
-    .m_axi_IMGmem_0_ARSIZE(grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_53_m_axi_IMGmem_0_ARSIZE),
-    .m_axi_IMGmem_0_ARBURST(grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_53_m_axi_IMGmem_0_ARBURST),
-    .m_axi_IMGmem_0_ARLOCK(grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_53_m_axi_IMGmem_0_ARLOCK),
-    .m_axi_IMGmem_0_ARCACHE(grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_53_m_axi_IMGmem_0_ARCACHE),
-    .m_axi_IMGmem_0_ARPROT(grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_53_m_axi_IMGmem_0_ARPROT),
-    .m_axi_IMGmem_0_ARQOS(grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_53_m_axi_IMGmem_0_ARQOS),
-    .m_axi_IMGmem_0_ARREGION(grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_53_m_axi_IMGmem_0_ARREGION),
-    .m_axi_IMGmem_0_ARUSER(grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_53_m_axi_IMGmem_0_ARUSER),
+    .m_axi_IMGmem_0_ARADDR(grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_51_m_axi_IMGmem_0_ARADDR),
+    .m_axi_IMGmem_0_ARID(grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_51_m_axi_IMGmem_0_ARID),
+    .m_axi_IMGmem_0_ARLEN(grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_51_m_axi_IMGmem_0_ARLEN),
+    .m_axi_IMGmem_0_ARSIZE(grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_51_m_axi_IMGmem_0_ARSIZE),
+    .m_axi_IMGmem_0_ARBURST(grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_51_m_axi_IMGmem_0_ARBURST),
+    .m_axi_IMGmem_0_ARLOCK(grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_51_m_axi_IMGmem_0_ARLOCK),
+    .m_axi_IMGmem_0_ARCACHE(grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_51_m_axi_IMGmem_0_ARCACHE),
+    .m_axi_IMGmem_0_ARPROT(grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_51_m_axi_IMGmem_0_ARPROT),
+    .m_axi_IMGmem_0_ARQOS(grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_51_m_axi_IMGmem_0_ARQOS),
+    .m_axi_IMGmem_0_ARREGION(grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_51_m_axi_IMGmem_0_ARREGION),
+    .m_axi_IMGmem_0_ARUSER(grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_51_m_axi_IMGmem_0_ARUSER),
     .m_axi_IMGmem_0_RVALID(m_axi_IMGmem_0_RVALID),
-    .m_axi_IMGmem_0_RREADY(grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_53_m_axi_IMGmem_0_RREADY),
+    .m_axi_IMGmem_0_RREADY(grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_51_m_axi_IMGmem_0_RREADY),
     .m_axi_IMGmem_0_RDATA(m_axi_IMGmem_0_RDATA),
     .m_axi_IMGmem_0_RLAST(m_axi_IMGmem_0_RLAST),
     .m_axi_IMGmem_0_RID(m_axi_IMGmem_0_RID),
@@ -281,19 +269,15 @@ cnn_accel_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH grp_load_img
     .m_axi_IMGmem_0_RUSER(m_axi_IMGmem_0_RUSER),
     .m_axi_IMGmem_0_RRESP(m_axi_IMGmem_0_RRESP),
     .m_axi_IMGmem_0_BVALID(1'b0),
-    .m_axi_IMGmem_0_BREADY(grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_53_m_axi_IMGmem_0_BREADY),
+    .m_axi_IMGmem_0_BREADY(grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_51_m_axi_IMGmem_0_BREADY),
     .m_axi_IMGmem_0_BRESP(2'd0),
     .m_axi_IMGmem_0_BID(1'd0),
     .m_axi_IMGmem_0_BUSER(1'd0),
-    .sext_ln196(trunc_ln_reg_85),
-    .local_img_address0(grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_53_local_img_address0),
-    .local_img_ce0(grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_53_local_img_ce0),
-    .local_img_we0(grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_53_local_img_we0),
-    .local_img_d0(grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_53_local_img_d0),
-    .local_img_60_address0(grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_53_local_img_60_address0),
-    .local_img_60_ce0(grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_53_local_img_60_ce0),
-    .local_img_60_we0(grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_53_local_img_60_we0),
-    .local_img_60_d0(grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_53_local_img_60_d0)
+    .sext_ln196(trunc_ln_reg_81),
+    .local_img_address0(grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_51_local_img_address0),
+    .local_img_ce0(grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_51_local_img_ce0),
+    .local_img_we0(grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_51_local_img_we0),
+    .local_img_d0(grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_51_local_img_d0)
 );
 
 always @ (posedge ap_clk) begin
@@ -306,19 +290,19 @@ end
 
 always @ (posedge ap_clk) begin
     if (ap_rst == 1'b1) begin
-        grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_53_ap_start_reg <= 1'b0;
+        grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_51_ap_start_reg <= 1'b0;
     end else begin
         if ((1'b1 == ap_CS_fsm_state9)) begin
-            grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_53_ap_start_reg <= 1'b1;
-        end else if ((grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_53_ap_ready == 1'b1)) begin
-            grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_53_ap_start_reg <= 1'b0;
+            grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_51_ap_start_reg <= 1'b1;
+        end else if ((grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_51_ap_ready == 1'b1)) begin
+            grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_51_ap_start_reg <= 1'b0;
         end
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state1)) begin
-        trunc_ln_reg_85 <= {{img_in[63:2]}};
+        trunc_ln_reg_81 <= {{img_in[63:2]}};
     end
 end
 
@@ -331,7 +315,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if ((grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_53_ap_done == 1'b0)) begin
+    if ((grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_51_ap_done == 1'b0)) begin
         ap_ST_fsm_state10_blk = 1'b1;
     end else begin
         ap_ST_fsm_state10_blk = 1'b0;
@@ -363,7 +347,7 @@ assign ap_ST_fsm_state8_blk = 1'b0;
 assign ap_ST_fsm_state9_blk = 1'b0;
 
 always @ (*) begin
-    if ((((1'b1 == ap_CS_fsm_state1) & (ap_start == 1'b0)) | ((1'b1 == ap_CS_fsm_state10) & (grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_53_ap_done == 1'b1)))) begin
+    if ((((1'b1 == ap_CS_fsm_state1) & (ap_start == 1'b0)) | ((1'b1 == ap_CS_fsm_state10) & (grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_51_ap_done == 1'b1)))) begin
         ap_done = 1'b1;
     end else begin
         ap_done = 1'b0;
@@ -379,7 +363,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state10) & (grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_53_ap_done == 1'b1))) begin
+    if (((1'b1 == ap_CS_fsm_state10) & (grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_51_ap_done == 1'b1))) begin
         ap_ready = 1'b1;
     end else begin
         ap_ready = 1'b0;
@@ -388,9 +372,9 @@ end
 
 always @ (*) begin
     if ((~((m_axi_IMGmem_0_ARREADY == 1'b0) | (ap_start == 1'b0)) & (1'b1 == ap_CS_fsm_state1))) begin
-        m_axi_IMGmem_0_ARADDR = sext_ln196_fu_74_p1;
+        m_axi_IMGmem_0_ARADDR = sext_ln196_fu_70_p1;
     end else if (((1'b1 == ap_CS_fsm_state10) | (1'b1 == ap_CS_fsm_state9))) begin
-        m_axi_IMGmem_0_ARADDR = grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_53_m_axi_IMGmem_0_ARADDR;
+        m_axi_IMGmem_0_ARADDR = grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_51_m_axi_IMGmem_0_ARADDR;
     end else begin
         m_axi_IMGmem_0_ARADDR = 'bx;
     end
@@ -398,7 +382,7 @@ end
 
 always @ (*) begin
     if (((1'b1 == ap_CS_fsm_state10) | (1'b1 == ap_CS_fsm_state9))) begin
-        m_axi_IMGmem_0_ARBURST = grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_53_m_axi_IMGmem_0_ARBURST;
+        m_axi_IMGmem_0_ARBURST = grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_51_m_axi_IMGmem_0_ARBURST;
     end else begin
         m_axi_IMGmem_0_ARBURST = 2'd0;
     end
@@ -406,7 +390,7 @@ end
 
 always @ (*) begin
     if (((1'b1 == ap_CS_fsm_state10) | (1'b1 == ap_CS_fsm_state9))) begin
-        m_axi_IMGmem_0_ARCACHE = grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_53_m_axi_IMGmem_0_ARCACHE;
+        m_axi_IMGmem_0_ARCACHE = grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_51_m_axi_IMGmem_0_ARCACHE;
     end else begin
         m_axi_IMGmem_0_ARCACHE = 4'd0;
     end
@@ -414,7 +398,7 @@ end
 
 always @ (*) begin
     if (((1'b1 == ap_CS_fsm_state10) | (1'b1 == ap_CS_fsm_state9))) begin
-        m_axi_IMGmem_0_ARID = grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_53_m_axi_IMGmem_0_ARID;
+        m_axi_IMGmem_0_ARID = grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_51_m_axi_IMGmem_0_ARID;
     end else begin
         m_axi_IMGmem_0_ARID = 1'd0;
     end
@@ -424,7 +408,7 @@ always @ (*) begin
     if ((~((m_axi_IMGmem_0_ARREADY == 1'b0) | (ap_start == 1'b0)) & (1'b1 == ap_CS_fsm_state1))) begin
         m_axi_IMGmem_0_ARLEN = 64'd230400;
     end else if (((1'b1 == ap_CS_fsm_state10) | (1'b1 == ap_CS_fsm_state9))) begin
-        m_axi_IMGmem_0_ARLEN = grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_53_m_axi_IMGmem_0_ARLEN;
+        m_axi_IMGmem_0_ARLEN = grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_51_m_axi_IMGmem_0_ARLEN;
     end else begin
         m_axi_IMGmem_0_ARLEN = 'bx;
     end
@@ -432,7 +416,7 @@ end
 
 always @ (*) begin
     if (((1'b1 == ap_CS_fsm_state10) | (1'b1 == ap_CS_fsm_state9))) begin
-        m_axi_IMGmem_0_ARLOCK = grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_53_m_axi_IMGmem_0_ARLOCK;
+        m_axi_IMGmem_0_ARLOCK = grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_51_m_axi_IMGmem_0_ARLOCK;
     end else begin
         m_axi_IMGmem_0_ARLOCK = 2'd0;
     end
@@ -440,7 +424,7 @@ end
 
 always @ (*) begin
     if (((1'b1 == ap_CS_fsm_state10) | (1'b1 == ap_CS_fsm_state9))) begin
-        m_axi_IMGmem_0_ARPROT = grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_53_m_axi_IMGmem_0_ARPROT;
+        m_axi_IMGmem_0_ARPROT = grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_51_m_axi_IMGmem_0_ARPROT;
     end else begin
         m_axi_IMGmem_0_ARPROT = 3'd0;
     end
@@ -448,7 +432,7 @@ end
 
 always @ (*) begin
     if (((1'b1 == ap_CS_fsm_state10) | (1'b1 == ap_CS_fsm_state9))) begin
-        m_axi_IMGmem_0_ARQOS = grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_53_m_axi_IMGmem_0_ARQOS;
+        m_axi_IMGmem_0_ARQOS = grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_51_m_axi_IMGmem_0_ARQOS;
     end else begin
         m_axi_IMGmem_0_ARQOS = 4'd0;
     end
@@ -456,7 +440,7 @@ end
 
 always @ (*) begin
     if (((1'b1 == ap_CS_fsm_state10) | (1'b1 == ap_CS_fsm_state9))) begin
-        m_axi_IMGmem_0_ARREGION = grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_53_m_axi_IMGmem_0_ARREGION;
+        m_axi_IMGmem_0_ARREGION = grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_51_m_axi_IMGmem_0_ARREGION;
     end else begin
         m_axi_IMGmem_0_ARREGION = 4'd0;
     end
@@ -464,7 +448,7 @@ end
 
 always @ (*) begin
     if (((1'b1 == ap_CS_fsm_state10) | (1'b1 == ap_CS_fsm_state9))) begin
-        m_axi_IMGmem_0_ARSIZE = grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_53_m_axi_IMGmem_0_ARSIZE;
+        m_axi_IMGmem_0_ARSIZE = grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_51_m_axi_IMGmem_0_ARSIZE;
     end else begin
         m_axi_IMGmem_0_ARSIZE = 3'd0;
     end
@@ -472,7 +456,7 @@ end
 
 always @ (*) begin
     if (((1'b1 == ap_CS_fsm_state10) | (1'b1 == ap_CS_fsm_state9))) begin
-        m_axi_IMGmem_0_ARUSER = grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_53_m_axi_IMGmem_0_ARUSER;
+        m_axi_IMGmem_0_ARUSER = grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_51_m_axi_IMGmem_0_ARUSER;
     end else begin
         m_axi_IMGmem_0_ARUSER = 1'd0;
     end
@@ -482,7 +466,7 @@ always @ (*) begin
     if ((~((m_axi_IMGmem_0_ARREADY == 1'b0) | (ap_start == 1'b0)) & (1'b1 == ap_CS_fsm_state1))) begin
         m_axi_IMGmem_0_ARVALID = 1'b1;
     end else if (((1'b1 == ap_CS_fsm_state10) | (1'b1 == ap_CS_fsm_state9))) begin
-        m_axi_IMGmem_0_ARVALID = grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_53_m_axi_IMGmem_0_ARVALID;
+        m_axi_IMGmem_0_ARVALID = grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_51_m_axi_IMGmem_0_ARVALID;
     end else begin
         m_axi_IMGmem_0_ARVALID = 1'b0;
     end
@@ -490,7 +474,7 @@ end
 
 always @ (*) begin
     if (((1'b1 == ap_CS_fsm_state10) | (1'b1 == ap_CS_fsm_state9))) begin
-        m_axi_IMGmem_0_RREADY = grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_53_m_axi_IMGmem_0_RREADY;
+        m_axi_IMGmem_0_RREADY = grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_51_m_axi_IMGmem_0_RREADY;
     end else begin
         m_axi_IMGmem_0_RREADY = 1'b0;
     end
@@ -530,7 +514,7 @@ always @ (*) begin
             ap_NS_fsm = ap_ST_fsm_state10;
         end
         ap_ST_fsm_state10 : begin
-            if (((1'b1 == ap_CS_fsm_state10) & (grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_53_ap_done == 1'b1))) begin
+            if (((1'b1 == ap_CS_fsm_state10) & (grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_51_ap_done == 1'b1))) begin
                 ap_NS_fsm = ap_ST_fsm_state1;
             end else begin
                 ap_NS_fsm = ap_ST_fsm_state10;
@@ -548,23 +532,15 @@ assign ap_CS_fsm_state10 = ap_CS_fsm[32'd9];
 
 assign ap_CS_fsm_state9 = ap_CS_fsm[32'd8];
 
-assign grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_53_ap_start = grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_53_ap_start_reg;
+assign grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_51_ap_start = grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_51_ap_start_reg;
 
-assign local_img_60_address0 = grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_53_local_img_60_address0;
+assign local_img_address0 = grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_51_local_img_address0;
 
-assign local_img_60_ce0 = grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_53_local_img_60_ce0;
+assign local_img_ce0 = grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_51_local_img_ce0;
 
-assign local_img_60_d0 = grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_53_local_img_60_d0;
+assign local_img_d0 = grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_51_local_img_d0;
 
-assign local_img_60_we0 = grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_53_local_img_60_we0;
-
-assign local_img_address0 = grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_53_local_img_address0;
-
-assign local_img_ce0 = grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_53_local_img_ce0;
-
-assign local_img_d0 = grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_53_local_img_d0;
-
-assign local_img_we0 = grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_53_local_img_we0;
+assign local_img_we0 = grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_51_local_img_we0;
 
 assign m_axi_IMGmem_0_AWADDR = 64'd0;
 
@@ -604,8 +580,8 @@ assign m_axi_IMGmem_0_WUSER = 1'd0;
 
 assign m_axi_IMGmem_0_WVALID = 1'b0;
 
-assign sext_ln196_fu_74_p1 = trunc_ln_fu_64_p4;
+assign sext_ln196_fu_70_p1 = trunc_ln_fu_60_p4;
 
-assign trunc_ln_fu_64_p4 = {{img_in[63:2]}};
+assign trunc_ln_fu_60_p4 = {{img_in[63:2]}};
 
 endmodule //cnn_accel_load_img

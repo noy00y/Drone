@@ -52,7 +52,7 @@
 					<Obj>
 						<type>1</type>
 						<id>2</id>
-						<name>feat2_p_70</name>
+						<name>feat2_p_69</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -88,7 +88,7 @@
 					<Obj>
 						<type>1</type>
 						<id>3</id>
-						<name>feat2_p_71</name>
+						<name>feat2_p_70</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -124,7 +124,7 @@
 					<Obj>
 						<type>1</type>
 						<id>4</id>
-						<name>feat2_p_72</name>
+						<name>feat2_p_71</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -3261,7 +3261,7 @@
 					<Obj>
 						<type>0</type>
 						<id>68</id>
-						<name>feat2_p_70_addr</name>
+						<name>feat2_p_69_addr</name>
 						<fileName>../hls_files/conv_pool.cpp</fileName>
 						<fileDirectory>C:\Users\ozair\Documents\Code_Drive\Drone\hls_component</fileDirectory>
 						<lineNumber>312</lineNumber>
@@ -3319,7 +3319,7 @@
 					<Obj>
 						<type>0</type>
 						<id>69</id>
-						<name>feat2_p_71_addr</name>
+						<name>feat2_p_70_addr</name>
 						<fileName>../hls_files/conv_pool.cpp</fileName>
 						<fileDirectory>C:\Users\ozair\Documents\Code_Drive\Drone\hls_component</fileDirectory>
 						<lineNumber>312</lineNumber>
@@ -3377,7 +3377,7 @@
 					<Obj>
 						<type>0</type>
 						<id>70</id>
-						<name>feat2_p_72_addr</name>
+						<name>feat2_p_71_addr</name>
 						<fileName>../hls_files/conv_pool.cpp</fileName>
 						<fileDirectory>C:\Users\ozair\Documents\Code_Drive\Drone\hls_component</fileDirectory>
 						<lineNumber>312</lineNumber>
@@ -3550,7 +3550,7 @@
 					<Obj>
 						<type>0</type>
 						<id>73</id>
-						<name>feat2_p_70_load</name>
+						<name>feat2_p_69_load</name>
 						<fileName>../hls_files/conv_pool.cpp</fileName>
 						<fileDirectory>C:\Users\ozair\Documents\Code_Drive\Drone\hls_component</fileDirectory>
 						<lineNumber>312</lineNumber>
@@ -3606,7 +3606,7 @@
 					<Obj>
 						<type>0</type>
 						<id>74</id>
-						<name>feat2_p_71_load</name>
+						<name>feat2_p_70_load</name>
 						<fileName>../hls_files/conv_pool.cpp</fileName>
 						<fileDirectory>C:\Users\ozair\Documents\Code_Drive\Drone\hls_component</fileDirectory>
 						<lineNumber>312</lineNumber>
@@ -3662,7 +3662,7 @@
 					<Obj>
 						<type>0</type>
 						<id>75</id>
-						<name>feat2_p_72_load</name>
+						<name>feat2_p_71_load</name>
 						<fileName>../hls_files/conv_pool.cpp</fileName>
 						<fileDirectory>C:\Users\ozair\Documents\Code_Drive\Drone\hls_component</fileDirectory>
 						<lineNumber>312</lineNumber>
@@ -9450,7 +9450,7 @@
 			</second>
 		</item>
 		<item>
-			<first>feat2_p_70_addr_gep_fu_129</first>
+			<first>feat2_p_69_addr_gep_fu_129</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -9458,7 +9458,7 @@
 			</second>
 		</item>
 		<item>
-			<first>feat2_p_71_addr_gep_fu_136</first>
+			<first>feat2_p_70_addr_gep_fu_136</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -9466,7 +9466,7 @@
 			</second>
 		</item>
 		<item>
-			<first>feat2_p_72_addr_gep_fu_143</first>
+			<first>feat2_p_71_addr_gep_fu_143</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -9995,31 +9995,31 @@
 		</item>
 		<item>
 			<first>
+				<first>feat2_p_69</first>
+				<second>0</second>
+			</first>
+			<second>
+				<count>2</count>
+				<item_version>0</item_version>
+				<item>73</item>
+				<item>73</item>
+			</second>
+		</item>
+		<item>
+			<first>
 				<first>feat2_p_70</first>
 				<second>0</second>
 			</first>
 			<second>
 				<count>2</count>
 				<item_version>0</item_version>
-				<item>73</item>
-				<item>73</item>
+				<item>74</item>
+				<item>74</item>
 			</second>
 		</item>
 		<item>
 			<first>
 				<first>feat2_p_71</first>
-				<second>0</second>
-			</first>
-			<second>
-				<count>2</count>
-				<item_version>0</item_version>
-				<item>74</item>
-				<item>74</item>
-			</second>
-		</item>
-		<item>
-			<first>
-				<first>feat2_p_72</first>
 				<second>0</second>
 			</first>
 			<second>
@@ -10241,7 +10241,7 @@
 			</second>
 		</item>
 		<item>
-			<first>feat2_p_70_addr_reg_650</first>
+			<first>feat2_p_69_addr_reg_650</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -10249,7 +10249,7 @@
 			</second>
 		</item>
 		<item>
-			<first>feat2_p_71_addr_reg_655</first>
+			<first>feat2_p_70_addr_reg_655</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -10257,7 +10257,7 @@
 			</second>
 		</item>
 		<item>
-			<first>feat2_p_72_addr_reg_660</first>
+			<first>feat2_p_71_addr_reg_660</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -10413,6 +10413,22 @@
 			</second>
 		</item>
 		<item>
+			<first>feat2_p_69(p0)</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>
+					<first>load</first>
+					<second>
+						<count>2</count>
+						<item_version>0</item_version>
+						<item>73</item>
+						<item>73</item>
+					</second>
+				</item>
+			</second>
+		</item>
+		<item>
 			<first>feat2_p_70(p0)</first>
 			<second>
 				<count>1</count>
@@ -10422,30 +10438,14 @@
 					<second>
 						<count>2</count>
 						<item_version>0</item_version>
-						<item>73</item>
-						<item>73</item>
+						<item>74</item>
+						<item>74</item>
 					</second>
 				</item>
 			</second>
 		</item>
 		<item>
 			<first>feat2_p_71(p0)</first>
-			<second>
-				<count>1</count>
-				<item_version>0</item_version>
-				<item>
-					<first>load</first>
-					<second>
-						<count>2</count>
-						<item_version>0</item_version>
-						<item>74</item>
-						<item>74</item>
-					</second>
-				</item>
-			</second>
-		</item>
-		<item>
-			<first>feat2_p_72(p0)</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>

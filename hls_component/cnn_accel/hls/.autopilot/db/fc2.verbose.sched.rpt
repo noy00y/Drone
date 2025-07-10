@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'fc2'
 ================================================================
-* Date:           Tue Jul  8 02:25:45 2025
+* Date:           Wed Jul  9 07:45:28 2025
 
 * Version:        2025.1 (Build 6135595 on May 21 2025)
 * Project:        cnn_accel
@@ -266,7 +266,7 @@ State 35 <SV = 34> <Delay = 7.30>
 ST_35 : Operation 122 [2/5] (7.30ns)   --->   "%Foutmem_addr_resp = writeresp i1 @_ssdm_op_WriteResp.m_axi.i8P1A, i8 %Foutmem_addr" [../hls_files/conv_pool.cpp:349]   --->   Operation 122 'writeresp' 'Foutmem_addr_resp' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 111 'm_axi' <Latency = 3> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 36 <SV = 35> <Delay = 7.30>
-ST_36 : Operation 123 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %Foutmem, void @empty_37, i32 0, i32 0, void @empty_38, i32 0, i32 1, void @empty_10, void @empty_23, void @empty_38, i32 16, i32 16, i32 16, i32 16, void @empty_38, void @empty_38, i32 4294967295, i32 0, i32 0"   --->   Operation 123 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_36 : Operation 123 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %Foutmem, void @empty_17, i32 0, i32 0, void @empty_19, i32 0, i32 1, void @empty_29, void @empty_20, void @empty_19, i32 16, i32 16, i32 16, i32 16, void @empty_19, void @empty_19, i32 4294967295, i32 0, i32 0"   --->   Operation 123 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
 ST_36 : Operation 124 [1/5] (7.30ns)   --->   "%Foutmem_addr_resp = writeresp i1 @_ssdm_op_WriteResp.m_axi.i8P1A, i8 %Foutmem_addr" [../hls_files/conv_pool.cpp:349]   --->   Operation 124 'writeresp' 'Foutmem_addr_resp' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 111 'm_axi' <Latency = 3> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 ST_36 : Operation 125 [1/1] (0.00ns)   --->   "%ret_ln0 = ret"   --->   Operation 125 'ret' 'ret_ln0' <Predicate = true> <Delay = 0.00>
 

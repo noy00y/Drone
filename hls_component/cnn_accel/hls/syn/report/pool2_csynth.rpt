@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'pool2'
 ================================================================
-* Date:           Tue Jul  8 02:26:08 2025
+* Date:           Wed Jul  9 07:45:50 2025
 
 * Version:        2025.1 (Build 6135595 on May 21 2025)
 * Project:        cnn_accel
@@ -73,10 +73,10 @@
     +----------------------------+----------------------+---------+----+---+----+-----+
     |          Instance          |        Module        | BRAM_18K| DSP| FF| LUT| URAM|
     +----------------------------+----------------------+---------+----+---+----+-----+
-    |mul_7ns_9ns_15_1_1_U1569    |mul_7ns_9ns_15_1_1    |        0|   0|  0|  50|    0|
-    |mul_7ns_9ns_15_1_1_U1570    |mul_7ns_9ns_15_1_1    |        0|   0|  0|  50|    0|
-    |sparsemux_9_2_32_1_1_U1567  |sparsemux_9_2_32_1_1  |        0|   0|  0|  17|    0|
-    |sparsemux_9_2_32_1_1_U1568  |sparsemux_9_2_32_1_1  |        0|   0|  0|  17|    0|
+    |mul_7ns_9ns_15_1_1_U1565    |mul_7ns_9ns_15_1_1    |        0|   0|  0|  50|    0|
+    |mul_7ns_9ns_15_1_1_U1566    |mul_7ns_9ns_15_1_1    |        0|   0|  0|  50|    0|
+    |sparsemux_9_2_32_1_1_U1563  |sparsemux_9_2_32_1_1  |        0|   0|  0|  17|    0|
+    |sparsemux_9_2_32_1_1_U1564  |sparsemux_9_2_32_1_1  |        0|   0|  0|  17|    0|
     +----------------------------+----------------------+---------+----+---+----+-----+
     |Total                       |                      |        0|   0|  0| 134|    0|
     +----------------------------+----------------------+---------+----+---+----+-----+
@@ -85,7 +85,7 @@
     +-------------------------------------+-------------------------------+--------------+
     |               Instance              |             Module            |  Expression  |
     +-------------------------------------+-------------------------------+--------------+
-    |mac_muladd_7ns_6ns_7ns_13_4_1_U1571  |mac_muladd_7ns_6ns_7ns_13_4_1  |  i0 * i1 + i2|
+    |mac_muladd_7ns_6ns_7ns_13_4_1_U1567  |mac_muladd_7ns_6ns_7ns_13_4_1  |  i0 * i1 + i2|
     +-------------------------------------+-------------------------------+--------------+
 
     * Memory: 
@@ -162,12 +162,12 @@
     |ap_loop_exit_ready_pp0_iter1_reg  |   9|          2|    1|          2|
     |ap_loop_exit_ready_pp0_iter2_reg  |   9|          2|    1|          2|
     |ap_loop_exit_ready_pp0_iter3_reg  |   9|          2|    1|          2|
+    |feat2_66_address0_local           |  13|          3|   17|         51|
+    |feat2_66_address1_local           |  13|          3|   17|         51|
     |feat2_67_address0_local           |  13|          3|   17|         51|
     |feat2_67_address1_local           |  13|          3|   17|         51|
     |feat2_68_address0_local           |  13|          3|   17|         51|
     |feat2_68_address1_local           |  13|          3|   17|         51|
-    |feat2_69_address0_local           |  13|          3|   17|         51|
-    |feat2_69_address1_local           |  13|          3|   17|         51|
     |feat2_address0_local              |  13|          3|   17|         51|
     |feat2_address1_local              |  13|          3|   17|         51|
     |grp_fu_340_p0                     |  17|          4|   32|        128|
@@ -246,15 +246,19 @@
 |ap_done               |  out|    1|  ap_ctrl_hs|         pool2|  return value|
 |ap_idle               |  out|    1|  ap_ctrl_hs|         pool2|  return value|
 |ap_ready              |  out|    1|  ap_ctrl_hs|         pool2|  return value|
-|grp_fu_9582_p_din0    |  out|   32|  ap_ctrl_hs|         pool2|  return value|
-|grp_fu_9582_p_din1    |  out|   32|  ap_ctrl_hs|         pool2|  return value|
-|grp_fu_9582_p_opcode  |  out|    5|  ap_ctrl_hs|         pool2|  return value|
-|grp_fu_9582_p_dout0   |   in|    1|  ap_ctrl_hs|         pool2|  return value|
-|grp_fu_9582_p_ce      |  out|    1|  ap_ctrl_hs|         pool2|  return value|
+|grp_fu_9568_p_din0    |  out|   32|  ap_ctrl_hs|         pool2|  return value|
+|grp_fu_9568_p_din1    |  out|   32|  ap_ctrl_hs|         pool2|  return value|
+|grp_fu_9568_p_opcode  |  out|    5|  ap_ctrl_hs|         pool2|  return value|
+|grp_fu_9568_p_dout0   |   in|    1|  ap_ctrl_hs|         pool2|  return value|
+|grp_fu_9568_p_ce      |  out|    1|  ap_ctrl_hs|         pool2|  return value|
 |feat2_p_address0      |  out|   15|   ap_memory|       feat2_p|         array|
 |feat2_p_ce0           |  out|    1|   ap_memory|       feat2_p|         array|
 |feat2_p_we0           |  out|    1|   ap_memory|       feat2_p|         array|
 |feat2_p_d0            |  out|   32|   ap_memory|       feat2_p|         array|
+|feat2_p_69_address0   |  out|   15|   ap_memory|    feat2_p_69|         array|
+|feat2_p_69_ce0        |  out|    1|   ap_memory|    feat2_p_69|         array|
+|feat2_p_69_we0        |  out|    1|   ap_memory|    feat2_p_69|         array|
+|feat2_p_69_d0         |  out|   32|   ap_memory|    feat2_p_69|         array|
 |feat2_p_70_address0   |  out|   15|   ap_memory|    feat2_p_70|         array|
 |feat2_p_70_ce0        |  out|    1|   ap_memory|    feat2_p_70|         array|
 |feat2_p_70_we0        |  out|    1|   ap_memory|    feat2_p_70|         array|
@@ -263,16 +267,18 @@
 |feat2_p_71_ce0        |  out|    1|   ap_memory|    feat2_p_71|         array|
 |feat2_p_71_we0        |  out|    1|   ap_memory|    feat2_p_71|         array|
 |feat2_p_71_d0         |  out|   32|   ap_memory|    feat2_p_71|         array|
-|feat2_p_72_address0   |  out|   15|   ap_memory|    feat2_p_72|         array|
-|feat2_p_72_ce0        |  out|    1|   ap_memory|    feat2_p_72|         array|
-|feat2_p_72_we0        |  out|    1|   ap_memory|    feat2_p_72|         array|
-|feat2_p_72_d0         |  out|   32|   ap_memory|    feat2_p_72|         array|
 |feat2_address0        |  out|   17|   ap_memory|         feat2|         array|
 |feat2_ce0             |  out|    1|   ap_memory|         feat2|         array|
 |feat2_q0              |   in|   32|   ap_memory|         feat2|         array|
 |feat2_address1        |  out|   17|   ap_memory|         feat2|         array|
 |feat2_ce1             |  out|    1|   ap_memory|         feat2|         array|
 |feat2_q1              |   in|   32|   ap_memory|         feat2|         array|
+|feat2_66_address0     |  out|   17|   ap_memory|      feat2_66|         array|
+|feat2_66_ce0          |  out|    1|   ap_memory|      feat2_66|         array|
+|feat2_66_q0           |   in|   32|   ap_memory|      feat2_66|         array|
+|feat2_66_address1     |  out|   17|   ap_memory|      feat2_66|         array|
+|feat2_66_ce1          |  out|    1|   ap_memory|      feat2_66|         array|
+|feat2_66_q1           |   in|   32|   ap_memory|      feat2_66|         array|
 |feat2_67_address0     |  out|   17|   ap_memory|      feat2_67|         array|
 |feat2_67_ce0          |  out|    1|   ap_memory|      feat2_67|         array|
 |feat2_67_q0           |   in|   32|   ap_memory|      feat2_67|         array|
@@ -285,11 +291,5 @@
 |feat2_68_address1     |  out|   17|   ap_memory|      feat2_68|         array|
 |feat2_68_ce1          |  out|    1|   ap_memory|      feat2_68|         array|
 |feat2_68_q1           |   in|   32|   ap_memory|      feat2_68|         array|
-|feat2_69_address0     |  out|   17|   ap_memory|      feat2_69|         array|
-|feat2_69_ce0          |  out|    1|   ap_memory|      feat2_69|         array|
-|feat2_69_q0           |   in|   32|   ap_memory|      feat2_69|         array|
-|feat2_69_address1     |  out|   17|   ap_memory|      feat2_69|         array|
-|feat2_69_ce1          |  out|    1|   ap_memory|      feat2_69|         array|
-|feat2_69_q1           |   in|   32|   ap_memory|      feat2_69|         array|
 +----------------------+-----+-----+------------+--------------+--------------+
 

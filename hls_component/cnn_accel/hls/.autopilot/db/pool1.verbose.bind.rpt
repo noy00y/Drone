@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'pool1'
 ================================================================
-* Date:           Tue Jul  8 02:25:37 2025
+* Date:           Wed Jul  9 07:45:21 2025
 
 * Version:        2025.1 (Build 6135595 on May 21 2025)
 * Project:        cnn_accel
@@ -162,20 +162,20 @@ ST_3 : Operation 74 [1/1] (0.00ns)   --->   "%feat1_addr = getelementptr i32 %fe
 ST_3 : Operation 75 [1/1] (0.00ns)   --->   "%tmp_23 = bitconcatenate i18 @_ssdm_op_BitConcatenate.i18.i17.i1, i17 %add_ln245, i1 %trunc_ln241" [../hls_files/conv_pool.cpp:245]   --->   Operation 75 'bitconcatenate' 'tmp_23' <Predicate = (!icmp_ln239)> <Delay = 0.00>
 ST_3 : Operation 76 [1/1] (0.00ns)   --->   "%zext_ln245_1 = zext i18 %tmp_23" [../hls_files/conv_pool.cpp:245]   --->   Operation 76 'zext' 'zext_ln245_1' <Predicate = (!icmp_ln239)> <Delay = 0.00>
 ST_3 : Operation 77 [1/1] (0.00ns)   --->   "%feat1_addr_2 = getelementptr i32 %feat1, i64 0, i64 %zext_ln245_1" [../hls_files/conv_pool.cpp:245]   --->   Operation 77 'getelementptr' 'feat1_addr_2' <Predicate = (!icmp_ln239 & trunc_ln241_3 == 0)> <Delay = 0.00>
-ST_3 : Operation 78 [1/1] (0.00ns)   --->   "%feat1_61_addr = getelementptr i32 %feat1_61, i64 0, i64 %zext_ln243_2" [../hls_files/conv_pool.cpp:243]   --->   Operation 78 'getelementptr' 'feat1_61_addr' <Predicate = (!icmp_ln239 & trunc_ln241_3 == 1)> <Delay = 0.00>
-ST_3 : Operation 79 [1/1] (0.00ns)   --->   "%feat1_61_addr_2 = getelementptr i32 %feat1_61, i64 0, i64 %zext_ln245_1" [../hls_files/conv_pool.cpp:245]   --->   Operation 79 'getelementptr' 'feat1_61_addr_2' <Predicate = (!icmp_ln239 & trunc_ln241_3 == 1)> <Delay = 0.00>
-ST_3 : Operation 80 [1/1] (0.00ns)   --->   "%feat1_62_addr = getelementptr i32 %feat1_62, i64 0, i64 %zext_ln243_2" [../hls_files/conv_pool.cpp:243]   --->   Operation 80 'getelementptr' 'feat1_62_addr' <Predicate = (!icmp_ln239 & trunc_ln241_3 == 2)> <Delay = 0.00>
-ST_3 : Operation 81 [1/1] (0.00ns)   --->   "%feat1_62_addr_2 = getelementptr i32 %feat1_62, i64 0, i64 %zext_ln245_1" [../hls_files/conv_pool.cpp:245]   --->   Operation 81 'getelementptr' 'feat1_62_addr_2' <Predicate = (!icmp_ln239 & trunc_ln241_3 == 2)> <Delay = 0.00>
-ST_3 : Operation 82 [1/1] (0.00ns)   --->   "%feat1_63_addr = getelementptr i32 %feat1_63, i64 0, i64 %zext_ln243_2" [../hls_files/conv_pool.cpp:243]   --->   Operation 82 'getelementptr' 'feat1_63_addr' <Predicate = (!icmp_ln239 & trunc_ln241_3 == 3)> <Delay = 0.00>
-ST_3 : Operation 83 [1/1] (0.00ns)   --->   "%feat1_63_addr_2 = getelementptr i32 %feat1_63, i64 0, i64 %zext_ln245_1" [../hls_files/conv_pool.cpp:245]   --->   Operation 83 'getelementptr' 'feat1_63_addr_2' <Predicate = (!icmp_ln239 & trunc_ln241_3 == 3)> <Delay = 0.00>
+ST_3 : Operation 78 [1/1] (0.00ns)   --->   "%feat1_60_addr = getelementptr i32 %feat1_60, i64 0, i64 %zext_ln243_2" [../hls_files/conv_pool.cpp:243]   --->   Operation 78 'getelementptr' 'feat1_60_addr' <Predicate = (!icmp_ln239 & trunc_ln241_3 == 1)> <Delay = 0.00>
+ST_3 : Operation 79 [1/1] (0.00ns)   --->   "%feat1_60_addr_2 = getelementptr i32 %feat1_60, i64 0, i64 %zext_ln245_1" [../hls_files/conv_pool.cpp:245]   --->   Operation 79 'getelementptr' 'feat1_60_addr_2' <Predicate = (!icmp_ln239 & trunc_ln241_3 == 1)> <Delay = 0.00>
+ST_3 : Operation 80 [1/1] (0.00ns)   --->   "%feat1_61_addr = getelementptr i32 %feat1_61, i64 0, i64 %zext_ln243_2" [../hls_files/conv_pool.cpp:243]   --->   Operation 80 'getelementptr' 'feat1_61_addr' <Predicate = (!icmp_ln239 & trunc_ln241_3 == 2)> <Delay = 0.00>
+ST_3 : Operation 81 [1/1] (0.00ns)   --->   "%feat1_61_addr_2 = getelementptr i32 %feat1_61, i64 0, i64 %zext_ln245_1" [../hls_files/conv_pool.cpp:245]   --->   Operation 81 'getelementptr' 'feat1_61_addr_2' <Predicate = (!icmp_ln239 & trunc_ln241_3 == 2)> <Delay = 0.00>
+ST_3 : Operation 82 [1/1] (0.00ns)   --->   "%feat1_62_addr = getelementptr i32 %feat1_62, i64 0, i64 %zext_ln243_2" [../hls_files/conv_pool.cpp:243]   --->   Operation 82 'getelementptr' 'feat1_62_addr' <Predicate = (!icmp_ln239 & trunc_ln241_3 == 3)> <Delay = 0.00>
+ST_3 : Operation 83 [1/1] (0.00ns)   --->   "%feat1_62_addr_2 = getelementptr i32 %feat1_62, i64 0, i64 %zext_ln245_1" [../hls_files/conv_pool.cpp:245]   --->   Operation 83 'getelementptr' 'feat1_62_addr_2' <Predicate = (!icmp_ln239 & trunc_ln241_3 == 3)> <Delay = 0.00>
 ST_3 : Operation 84 [2/2] (2.77ns)   --->   "%feat1_load = load i18 %feat1_addr" [../hls_files/conv_pool.cpp:243]   --->   Operation 84 'load' 'feat1_load' <Predicate = (!icmp_ln239 & trunc_ln241_3 == 0)> <Delay = 2.77> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 151368> <RAM>
-ST_3 : Operation 85 [2/2] (2.77ns)   --->   "%feat1_61_load = load i18 %feat1_61_addr" [../hls_files/conv_pool.cpp:243]   --->   Operation 85 'load' 'feat1_61_load' <Predicate = (!icmp_ln239 & trunc_ln241_3 == 1)> <Delay = 2.77> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 151368> <RAM>
-ST_3 : Operation 86 [2/2] (2.77ns)   --->   "%feat1_62_load = load i18 %feat1_62_addr" [../hls_files/conv_pool.cpp:243]   --->   Operation 86 'load' 'feat1_62_load' <Predicate = (!icmp_ln239 & trunc_ln241_3 == 2)> <Delay = 2.77> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 151368> <RAM>
-ST_3 : Operation 87 [2/2] (2.77ns)   --->   "%feat1_63_load = load i18 %feat1_63_addr" [../hls_files/conv_pool.cpp:243]   --->   Operation 87 'load' 'feat1_63_load' <Predicate = (!icmp_ln239 & trunc_ln241_3 == 3)> <Delay = 2.77> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 151368> <RAM>
+ST_3 : Operation 85 [2/2] (2.77ns)   --->   "%feat1_60_load = load i18 %feat1_60_addr" [../hls_files/conv_pool.cpp:243]   --->   Operation 85 'load' 'feat1_60_load' <Predicate = (!icmp_ln239 & trunc_ln241_3 == 1)> <Delay = 2.77> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 151368> <RAM>
+ST_3 : Operation 86 [2/2] (2.77ns)   --->   "%feat1_61_load = load i18 %feat1_61_addr" [../hls_files/conv_pool.cpp:243]   --->   Operation 86 'load' 'feat1_61_load' <Predicate = (!icmp_ln239 & trunc_ln241_3 == 2)> <Delay = 2.77> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 151368> <RAM>
+ST_3 : Operation 87 [2/2] (2.77ns)   --->   "%feat1_62_load = load i18 %feat1_62_addr" [../hls_files/conv_pool.cpp:243]   --->   Operation 87 'load' 'feat1_62_load' <Predicate = (!icmp_ln239 & trunc_ln241_3 == 3)> <Delay = 2.77> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 151368> <RAM>
 ST_3 : Operation 88 [2/2] (2.77ns)   --->   "%feat1_load_2 = load i18 %feat1_addr_2" [../hls_files/conv_pool.cpp:245]   --->   Operation 88 'load' 'feat1_load_2' <Predicate = (!icmp_ln239 & trunc_ln241_3 == 0)> <Delay = 2.77> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 151368> <RAM>
-ST_3 : Operation 89 [2/2] (2.77ns)   --->   "%feat1_61_load_2 = load i18 %feat1_61_addr_2" [../hls_files/conv_pool.cpp:245]   --->   Operation 89 'load' 'feat1_61_load_2' <Predicate = (!icmp_ln239 & trunc_ln241_3 == 1)> <Delay = 2.77> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 151368> <RAM>
-ST_3 : Operation 90 [2/2] (2.77ns)   --->   "%feat1_62_load_2 = load i18 %feat1_62_addr_2" [../hls_files/conv_pool.cpp:245]   --->   Operation 90 'load' 'feat1_62_load_2' <Predicate = (!icmp_ln239 & trunc_ln241_3 == 2)> <Delay = 2.77> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 151368> <RAM>
-ST_3 : Operation 91 [2/2] (2.77ns)   --->   "%feat1_63_load_2 = load i18 %feat1_63_addr_2" [../hls_files/conv_pool.cpp:245]   --->   Operation 91 'load' 'feat1_63_load_2' <Predicate = (!icmp_ln239 & trunc_ln241_3 == 3)> <Delay = 2.77> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 151368> <RAM>
+ST_3 : Operation 89 [2/2] (2.77ns)   --->   "%feat1_60_load_2 = load i18 %feat1_60_addr_2" [../hls_files/conv_pool.cpp:245]   --->   Operation 89 'load' 'feat1_60_load_2' <Predicate = (!icmp_ln239 & trunc_ln241_3 == 1)> <Delay = 2.77> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 151368> <RAM>
+ST_3 : Operation 90 [2/2] (2.77ns)   --->   "%feat1_61_load_2 = load i18 %feat1_61_addr_2" [../hls_files/conv_pool.cpp:245]   --->   Operation 90 'load' 'feat1_61_load_2' <Predicate = (!icmp_ln239 & trunc_ln241_3 == 2)> <Delay = 2.77> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 151368> <RAM>
+ST_3 : Operation 91 [2/2] (2.77ns)   --->   "%feat1_62_load_2 = load i18 %feat1_62_addr_2" [../hls_files/conv_pool.cpp:245]   --->   Operation 91 'load' 'feat1_62_load_2' <Predicate = (!icmp_ln239 & trunc_ln241_3 == 3)> <Delay = 2.77> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 151368> <RAM>
 
 State 4 <SV = 3> <Delay = 4.14>
 ST_4 : Operation 92 [1/1] (0.00ns)   --->   "%tmp_22 = bitconcatenate i18 @_ssdm_op_BitConcatenate.i18.i17.i1, i17 %add_ln244, i1 %trunc_ln241" [../hls_files/conv_pool.cpp:244]   --->   Operation 92 'bitconcatenate' 'tmp_22' <Predicate = true> <Delay = 0.00>
@@ -184,42 +184,42 @@ ST_4 : Operation 94 [1/1] (0.00ns)   --->   "%feat1_addr_1 = getelementptr i32 %
 ST_4 : Operation 95 [1/1] (0.00ns)   --->   "%tmp_24 = bitconcatenate i18 @_ssdm_op_BitConcatenate.i18.i17.i1, i17 %add_ln246, i1 %trunc_ln241" [../hls_files/conv_pool.cpp:246]   --->   Operation 95 'bitconcatenate' 'tmp_24' <Predicate = true> <Delay = 0.00>
 ST_4 : Operation 96 [1/1] (0.00ns)   --->   "%zext_ln246 = zext i18 %tmp_24" [../hls_files/conv_pool.cpp:246]   --->   Operation 96 'zext' 'zext_ln246' <Predicate = true> <Delay = 0.00>
 ST_4 : Operation 97 [1/1] (0.00ns)   --->   "%feat1_addr_3 = getelementptr i32 %feat1, i64 0, i64 %zext_ln246" [../hls_files/conv_pool.cpp:246]   --->   Operation 97 'getelementptr' 'feat1_addr_3' <Predicate = (trunc_ln241_3 == 0)> <Delay = 0.00>
-ST_4 : Operation 98 [1/1] (0.00ns)   --->   "%feat1_61_addr_1 = getelementptr i32 %feat1_61, i64 0, i64 %zext_ln244_1" [../hls_files/conv_pool.cpp:244]   --->   Operation 98 'getelementptr' 'feat1_61_addr_1' <Predicate = (trunc_ln241_3 == 1)> <Delay = 0.00>
-ST_4 : Operation 99 [1/1] (0.00ns)   --->   "%feat1_61_addr_3 = getelementptr i32 %feat1_61, i64 0, i64 %zext_ln246" [../hls_files/conv_pool.cpp:246]   --->   Operation 99 'getelementptr' 'feat1_61_addr_3' <Predicate = (trunc_ln241_3 == 1)> <Delay = 0.00>
-ST_4 : Operation 100 [1/1] (0.00ns)   --->   "%feat1_62_addr_1 = getelementptr i32 %feat1_62, i64 0, i64 %zext_ln244_1" [../hls_files/conv_pool.cpp:244]   --->   Operation 100 'getelementptr' 'feat1_62_addr_1' <Predicate = (trunc_ln241_3 == 2)> <Delay = 0.00>
-ST_4 : Operation 101 [1/1] (0.00ns)   --->   "%feat1_62_addr_3 = getelementptr i32 %feat1_62, i64 0, i64 %zext_ln246" [../hls_files/conv_pool.cpp:246]   --->   Operation 101 'getelementptr' 'feat1_62_addr_3' <Predicate = (trunc_ln241_3 == 2)> <Delay = 0.00>
-ST_4 : Operation 102 [1/1] (0.00ns)   --->   "%feat1_63_addr_1 = getelementptr i32 %feat1_63, i64 0, i64 %zext_ln244_1" [../hls_files/conv_pool.cpp:244]   --->   Operation 102 'getelementptr' 'feat1_63_addr_1' <Predicate = (trunc_ln241_3 == 3)> <Delay = 0.00>
-ST_4 : Operation 103 [1/1] (0.00ns)   --->   "%feat1_63_addr_3 = getelementptr i32 %feat1_63, i64 0, i64 %zext_ln246" [../hls_files/conv_pool.cpp:246]   --->   Operation 103 'getelementptr' 'feat1_63_addr_3' <Predicate = (trunc_ln241_3 == 3)> <Delay = 0.00>
+ST_4 : Operation 98 [1/1] (0.00ns)   --->   "%feat1_60_addr_1 = getelementptr i32 %feat1_60, i64 0, i64 %zext_ln244_1" [../hls_files/conv_pool.cpp:244]   --->   Operation 98 'getelementptr' 'feat1_60_addr_1' <Predicate = (trunc_ln241_3 == 1)> <Delay = 0.00>
+ST_4 : Operation 99 [1/1] (0.00ns)   --->   "%feat1_60_addr_3 = getelementptr i32 %feat1_60, i64 0, i64 %zext_ln246" [../hls_files/conv_pool.cpp:246]   --->   Operation 99 'getelementptr' 'feat1_60_addr_3' <Predicate = (trunc_ln241_3 == 1)> <Delay = 0.00>
+ST_4 : Operation 100 [1/1] (0.00ns)   --->   "%feat1_61_addr_1 = getelementptr i32 %feat1_61, i64 0, i64 %zext_ln244_1" [../hls_files/conv_pool.cpp:244]   --->   Operation 100 'getelementptr' 'feat1_61_addr_1' <Predicate = (trunc_ln241_3 == 2)> <Delay = 0.00>
+ST_4 : Operation 101 [1/1] (0.00ns)   --->   "%feat1_61_addr_3 = getelementptr i32 %feat1_61, i64 0, i64 %zext_ln246" [../hls_files/conv_pool.cpp:246]   --->   Operation 101 'getelementptr' 'feat1_61_addr_3' <Predicate = (trunc_ln241_3 == 2)> <Delay = 0.00>
+ST_4 : Operation 102 [1/1] (0.00ns)   --->   "%feat1_62_addr_1 = getelementptr i32 %feat1_62, i64 0, i64 %zext_ln244_1" [../hls_files/conv_pool.cpp:244]   --->   Operation 102 'getelementptr' 'feat1_62_addr_1' <Predicate = (trunc_ln241_3 == 3)> <Delay = 0.00>
+ST_4 : Operation 103 [1/1] (0.00ns)   --->   "%feat1_62_addr_3 = getelementptr i32 %feat1_62, i64 0, i64 %zext_ln246" [../hls_files/conv_pool.cpp:246]   --->   Operation 103 'getelementptr' 'feat1_62_addr_3' <Predicate = (trunc_ln241_3 == 3)> <Delay = 0.00>
 ST_4 : Operation 104 [1/2] ( I:2.77ns O:2.77ns )   --->   "%feat1_load = load i18 %feat1_addr" [../hls_files/conv_pool.cpp:243]   --->   Operation 104 'load' 'feat1_load' <Predicate = (trunc_ln241_3 == 0)> <Delay = 2.77> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 151368> <RAM>
-ST_4 : Operation 105 [1/2] ( I:2.77ns O:2.77ns )   --->   "%feat1_61_load = load i18 %feat1_61_addr" [../hls_files/conv_pool.cpp:243]   --->   Operation 105 'load' 'feat1_61_load' <Predicate = (trunc_ln241_3 == 1)> <Delay = 2.77> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 151368> <RAM>
-ST_4 : Operation 106 [1/2] ( I:2.77ns O:2.77ns )   --->   "%feat1_62_load = load i18 %feat1_62_addr" [../hls_files/conv_pool.cpp:243]   --->   Operation 106 'load' 'feat1_62_load' <Predicate = (trunc_ln241_3 == 2)> <Delay = 2.77> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 151368> <RAM>
-ST_4 : Operation 107 [1/2] ( I:2.77ns O:2.77ns )   --->   "%feat1_63_load = load i18 %feat1_63_addr" [../hls_files/conv_pool.cpp:243]   --->   Operation 107 'load' 'feat1_63_load' <Predicate = (trunc_ln241_3 == 3)> <Delay = 2.77> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 151368> <RAM>
-ST_4 : Operation 108 [1/1] (1.37ns)   --->   "%m0 = sparsemux i32 @_ssdm_op_SparseMux.ap_auto.4float.float.i2, i2 0, i32 %feat1_load, i2 1, i32 %feat1_61_load, i2 2, i32 %feat1_62_load, i2 3, i32 %feat1_63_load, i32 <undef>, i2 %trunc_ln241_3" [../hls_files/conv_pool.cpp:243]   --->   Operation 108 'sparsemux' 'm0' <Predicate = true> <Delay = 1.37> <CoreInst = "BinarySparseMux_DontCare">   --->   Core 137 'BinarySparseMux_DontCare' <Latency = 0> <II = 1> <Delay = 1.37> <FuncUnit> <Opcode : 'sparsemux'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 105 [1/2] ( I:2.77ns O:2.77ns )   --->   "%feat1_60_load = load i18 %feat1_60_addr" [../hls_files/conv_pool.cpp:243]   --->   Operation 105 'load' 'feat1_60_load' <Predicate = (trunc_ln241_3 == 1)> <Delay = 2.77> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 151368> <RAM>
+ST_4 : Operation 106 [1/2] ( I:2.77ns O:2.77ns )   --->   "%feat1_61_load = load i18 %feat1_61_addr" [../hls_files/conv_pool.cpp:243]   --->   Operation 106 'load' 'feat1_61_load' <Predicate = (trunc_ln241_3 == 2)> <Delay = 2.77> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 151368> <RAM>
+ST_4 : Operation 107 [1/2] ( I:2.77ns O:2.77ns )   --->   "%feat1_62_load = load i18 %feat1_62_addr" [../hls_files/conv_pool.cpp:243]   --->   Operation 107 'load' 'feat1_62_load' <Predicate = (trunc_ln241_3 == 3)> <Delay = 2.77> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 151368> <RAM>
+ST_4 : Operation 108 [1/1] (1.37ns)   --->   "%m0 = sparsemux i32 @_ssdm_op_SparseMux.ap_auto.4float.float.i2, i2 0, i32 %feat1_load, i2 1, i32 %feat1_60_load, i2 2, i32 %feat1_61_load, i2 3, i32 %feat1_62_load, i32 <undef>, i2 %trunc_ln241_3" [../hls_files/conv_pool.cpp:243]   --->   Operation 108 'sparsemux' 'm0' <Predicate = true> <Delay = 1.37> <CoreInst = "BinarySparseMux_DontCare">   --->   Core 137 'BinarySparseMux_DontCare' <Latency = 0> <II = 1> <Delay = 1.37> <FuncUnit> <Opcode : 'sparsemux'> <InPorts = 2> <OutPorts = 1>
 ST_4 : Operation 109 [2/2] (2.77ns)   --->   "%feat1_load_1 = load i18 %feat1_addr_1" [../hls_files/conv_pool.cpp:244]   --->   Operation 109 'load' 'feat1_load_1' <Predicate = (trunc_ln241_3 == 0)> <Delay = 2.77> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 151368> <RAM>
-ST_4 : Operation 110 [2/2] (2.77ns)   --->   "%feat1_61_load_1 = load i18 %feat1_61_addr_1" [../hls_files/conv_pool.cpp:244]   --->   Operation 110 'load' 'feat1_61_load_1' <Predicate = (trunc_ln241_3 == 1)> <Delay = 2.77> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 151368> <RAM>
-ST_4 : Operation 111 [2/2] (2.77ns)   --->   "%feat1_62_load_1 = load i18 %feat1_62_addr_1" [../hls_files/conv_pool.cpp:244]   --->   Operation 111 'load' 'feat1_62_load_1' <Predicate = (trunc_ln241_3 == 2)> <Delay = 2.77> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 151368> <RAM>
-ST_4 : Operation 112 [2/2] (2.77ns)   --->   "%feat1_63_load_1 = load i18 %feat1_63_addr_1" [../hls_files/conv_pool.cpp:244]   --->   Operation 112 'load' 'feat1_63_load_1' <Predicate = (trunc_ln241_3 == 3)> <Delay = 2.77> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 151368> <RAM>
+ST_4 : Operation 110 [2/2] (2.77ns)   --->   "%feat1_60_load_1 = load i18 %feat1_60_addr_1" [../hls_files/conv_pool.cpp:244]   --->   Operation 110 'load' 'feat1_60_load_1' <Predicate = (trunc_ln241_3 == 1)> <Delay = 2.77> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 151368> <RAM>
+ST_4 : Operation 111 [2/2] (2.77ns)   --->   "%feat1_61_load_1 = load i18 %feat1_61_addr_1" [../hls_files/conv_pool.cpp:244]   --->   Operation 111 'load' 'feat1_61_load_1' <Predicate = (trunc_ln241_3 == 2)> <Delay = 2.77> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 151368> <RAM>
+ST_4 : Operation 112 [2/2] (2.77ns)   --->   "%feat1_62_load_1 = load i18 %feat1_62_addr_1" [../hls_files/conv_pool.cpp:244]   --->   Operation 112 'load' 'feat1_62_load_1' <Predicate = (trunc_ln241_3 == 3)> <Delay = 2.77> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 151368> <RAM>
 ST_4 : Operation 113 [1/2] ( I:2.77ns O:2.77ns )   --->   "%feat1_load_2 = load i18 %feat1_addr_2" [../hls_files/conv_pool.cpp:245]   --->   Operation 113 'load' 'feat1_load_2' <Predicate = (trunc_ln241_3 == 0)> <Delay = 2.77> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 151368> <RAM>
-ST_4 : Operation 114 [1/2] ( I:2.77ns O:2.77ns )   --->   "%feat1_61_load_2 = load i18 %feat1_61_addr_2" [../hls_files/conv_pool.cpp:245]   --->   Operation 114 'load' 'feat1_61_load_2' <Predicate = (trunc_ln241_3 == 1)> <Delay = 2.77> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 151368> <RAM>
-ST_4 : Operation 115 [1/2] ( I:2.77ns O:2.77ns )   --->   "%feat1_62_load_2 = load i18 %feat1_62_addr_2" [../hls_files/conv_pool.cpp:245]   --->   Operation 115 'load' 'feat1_62_load_2' <Predicate = (trunc_ln241_3 == 2)> <Delay = 2.77> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 151368> <RAM>
-ST_4 : Operation 116 [1/2] ( I:2.77ns O:2.77ns )   --->   "%feat1_63_load_2 = load i18 %feat1_63_addr_2" [../hls_files/conv_pool.cpp:245]   --->   Operation 116 'load' 'feat1_63_load_2' <Predicate = (trunc_ln241_3 == 3)> <Delay = 2.77> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 151368> <RAM>
-ST_4 : Operation 117 [1/1] (1.37ns)   --->   "%m2 = sparsemux i32 @_ssdm_op_SparseMux.ap_auto.4float.float.i2, i2 0, i32 %feat1_load_2, i2 1, i32 %feat1_61_load_2, i2 2, i32 %feat1_62_load_2, i2 3, i32 %feat1_63_load_2, i32 <undef>, i2 %trunc_ln241_3" [../hls_files/conv_pool.cpp:245]   --->   Operation 117 'sparsemux' 'm2' <Predicate = true> <Delay = 1.37> <CoreInst = "BinarySparseMux_DontCare">   --->   Core 137 'BinarySparseMux_DontCare' <Latency = 0> <II = 1> <Delay = 1.37> <FuncUnit> <Opcode : 'sparsemux'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 114 [1/2] ( I:2.77ns O:2.77ns )   --->   "%feat1_60_load_2 = load i18 %feat1_60_addr_2" [../hls_files/conv_pool.cpp:245]   --->   Operation 114 'load' 'feat1_60_load_2' <Predicate = (trunc_ln241_3 == 1)> <Delay = 2.77> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 151368> <RAM>
+ST_4 : Operation 115 [1/2] ( I:2.77ns O:2.77ns )   --->   "%feat1_61_load_2 = load i18 %feat1_61_addr_2" [../hls_files/conv_pool.cpp:245]   --->   Operation 115 'load' 'feat1_61_load_2' <Predicate = (trunc_ln241_3 == 2)> <Delay = 2.77> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 151368> <RAM>
+ST_4 : Operation 116 [1/2] ( I:2.77ns O:2.77ns )   --->   "%feat1_62_load_2 = load i18 %feat1_62_addr_2" [../hls_files/conv_pool.cpp:245]   --->   Operation 116 'load' 'feat1_62_load_2' <Predicate = (trunc_ln241_3 == 3)> <Delay = 2.77> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 151368> <RAM>
+ST_4 : Operation 117 [1/1] (1.37ns)   --->   "%m2 = sparsemux i32 @_ssdm_op_SparseMux.ap_auto.4float.float.i2, i2 0, i32 %feat1_load_2, i2 1, i32 %feat1_60_load_2, i2 2, i32 %feat1_61_load_2, i2 3, i32 %feat1_62_load_2, i32 <undef>, i2 %trunc_ln241_3" [../hls_files/conv_pool.cpp:245]   --->   Operation 117 'sparsemux' 'm2' <Predicate = true> <Delay = 1.37> <CoreInst = "BinarySparseMux_DontCare">   --->   Core 137 'BinarySparseMux_DontCare' <Latency = 0> <II = 1> <Delay = 1.37> <FuncUnit> <Opcode : 'sparsemux'> <InPorts = 2> <OutPorts = 1>
 ST_4 : Operation 118 [2/2] (2.77ns)   --->   "%feat1_load_3 = load i18 %feat1_addr_3" [../hls_files/conv_pool.cpp:246]   --->   Operation 118 'load' 'feat1_load_3' <Predicate = (trunc_ln241_3 == 0)> <Delay = 2.77> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 151368> <RAM>
-ST_4 : Operation 119 [2/2] (2.77ns)   --->   "%feat1_61_load_3 = load i18 %feat1_61_addr_3" [../hls_files/conv_pool.cpp:246]   --->   Operation 119 'load' 'feat1_61_load_3' <Predicate = (trunc_ln241_3 == 1)> <Delay = 2.77> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 151368> <RAM>
-ST_4 : Operation 120 [2/2] (2.77ns)   --->   "%feat1_62_load_3 = load i18 %feat1_62_addr_3" [../hls_files/conv_pool.cpp:246]   --->   Operation 120 'load' 'feat1_62_load_3' <Predicate = (trunc_ln241_3 == 2)> <Delay = 2.77> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 151368> <RAM>
-ST_4 : Operation 121 [2/2] (2.77ns)   --->   "%feat1_63_load_3 = load i18 %feat1_63_addr_3" [../hls_files/conv_pool.cpp:246]   --->   Operation 121 'load' 'feat1_63_load_3' <Predicate = (trunc_ln241_3 == 3)> <Delay = 2.77> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 151368> <RAM>
+ST_4 : Operation 119 [2/2] (2.77ns)   --->   "%feat1_60_load_3 = load i18 %feat1_60_addr_3" [../hls_files/conv_pool.cpp:246]   --->   Operation 119 'load' 'feat1_60_load_3' <Predicate = (trunc_ln241_3 == 1)> <Delay = 2.77> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 151368> <RAM>
+ST_4 : Operation 120 [2/2] (2.77ns)   --->   "%feat1_61_load_3 = load i18 %feat1_61_addr_3" [../hls_files/conv_pool.cpp:246]   --->   Operation 120 'load' 'feat1_61_load_3' <Predicate = (trunc_ln241_3 == 2)> <Delay = 2.77> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 151368> <RAM>
+ST_4 : Operation 121 [2/2] (2.77ns)   --->   "%feat1_62_load_3 = load i18 %feat1_62_addr_3" [../hls_files/conv_pool.cpp:246]   --->   Operation 121 'load' 'feat1_62_load_3' <Predicate = (trunc_ln241_3 == 3)> <Delay = 2.77> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 151368> <RAM>
 
 State 5 <SV = 4> <Delay = 4.14>
 ST_5 : Operation 122 [1/2] ( I:2.77ns O:2.77ns )   --->   "%feat1_load_1 = load i18 %feat1_addr_1" [../hls_files/conv_pool.cpp:244]   --->   Operation 122 'load' 'feat1_load_1' <Predicate = (trunc_ln241_3 == 0)> <Delay = 2.77> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 151368> <RAM>
-ST_5 : Operation 123 [1/2] ( I:2.77ns O:2.77ns )   --->   "%feat1_61_load_1 = load i18 %feat1_61_addr_1" [../hls_files/conv_pool.cpp:244]   --->   Operation 123 'load' 'feat1_61_load_1' <Predicate = (trunc_ln241_3 == 1)> <Delay = 2.77> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 151368> <RAM>
-ST_5 : Operation 124 [1/2] ( I:2.77ns O:2.77ns )   --->   "%feat1_62_load_1 = load i18 %feat1_62_addr_1" [../hls_files/conv_pool.cpp:244]   --->   Operation 124 'load' 'feat1_62_load_1' <Predicate = (trunc_ln241_3 == 2)> <Delay = 2.77> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 151368> <RAM>
-ST_5 : Operation 125 [1/2] ( I:2.77ns O:2.77ns )   --->   "%feat1_63_load_1 = load i18 %feat1_63_addr_1" [../hls_files/conv_pool.cpp:244]   --->   Operation 125 'load' 'feat1_63_load_1' <Predicate = (trunc_ln241_3 == 3)> <Delay = 2.77> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 151368> <RAM>
-ST_5 : Operation 126 [1/1] (1.37ns)   --->   "%m1 = sparsemux i32 @_ssdm_op_SparseMux.ap_auto.4float.float.i2, i2 0, i32 %feat1_load_1, i2 1, i32 %feat1_61_load_1, i2 2, i32 %feat1_62_load_1, i2 3, i32 %feat1_63_load_1, i32 <undef>, i2 %trunc_ln241_3" [../hls_files/conv_pool.cpp:244]   --->   Operation 126 'sparsemux' 'm1' <Predicate = true> <Delay = 1.37> <CoreInst = "BinarySparseMux_DontCare">   --->   Core 137 'BinarySparseMux_DontCare' <Latency = 0> <II = 1> <Delay = 1.37> <FuncUnit> <Opcode : 'sparsemux'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 123 [1/2] ( I:2.77ns O:2.77ns )   --->   "%feat1_60_load_1 = load i18 %feat1_60_addr_1" [../hls_files/conv_pool.cpp:244]   --->   Operation 123 'load' 'feat1_60_load_1' <Predicate = (trunc_ln241_3 == 1)> <Delay = 2.77> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 151368> <RAM>
+ST_5 : Operation 124 [1/2] ( I:2.77ns O:2.77ns )   --->   "%feat1_61_load_1 = load i18 %feat1_61_addr_1" [../hls_files/conv_pool.cpp:244]   --->   Operation 124 'load' 'feat1_61_load_1' <Predicate = (trunc_ln241_3 == 2)> <Delay = 2.77> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 151368> <RAM>
+ST_5 : Operation 125 [1/2] ( I:2.77ns O:2.77ns )   --->   "%feat1_62_load_1 = load i18 %feat1_62_addr_1" [../hls_files/conv_pool.cpp:244]   --->   Operation 125 'load' 'feat1_62_load_1' <Predicate = (trunc_ln241_3 == 3)> <Delay = 2.77> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 151368> <RAM>
+ST_5 : Operation 126 [1/1] (1.37ns)   --->   "%m1 = sparsemux i32 @_ssdm_op_SparseMux.ap_auto.4float.float.i2, i2 0, i32 %feat1_load_1, i2 1, i32 %feat1_60_load_1, i2 2, i32 %feat1_61_load_1, i2 3, i32 %feat1_62_load_1, i32 <undef>, i2 %trunc_ln241_3" [../hls_files/conv_pool.cpp:244]   --->   Operation 126 'sparsemux' 'm1' <Predicate = true> <Delay = 1.37> <CoreInst = "BinarySparseMux_DontCare">   --->   Core 137 'BinarySparseMux_DontCare' <Latency = 0> <II = 1> <Delay = 1.37> <FuncUnit> <Opcode : 'sparsemux'> <InPorts = 2> <OutPorts = 1>
 ST_5 : Operation 127 [1/2] ( I:2.77ns O:2.77ns )   --->   "%feat1_load_3 = load i18 %feat1_addr_3" [../hls_files/conv_pool.cpp:246]   --->   Operation 127 'load' 'feat1_load_3' <Predicate = (trunc_ln241_3 == 0)> <Delay = 2.77> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 151368> <RAM>
-ST_5 : Operation 128 [1/2] ( I:2.77ns O:2.77ns )   --->   "%feat1_61_load_3 = load i18 %feat1_61_addr_3" [../hls_files/conv_pool.cpp:246]   --->   Operation 128 'load' 'feat1_61_load_3' <Predicate = (trunc_ln241_3 == 1)> <Delay = 2.77> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 151368> <RAM>
-ST_5 : Operation 129 [1/2] ( I:2.77ns O:2.77ns )   --->   "%feat1_62_load_3 = load i18 %feat1_62_addr_3" [../hls_files/conv_pool.cpp:246]   --->   Operation 129 'load' 'feat1_62_load_3' <Predicate = (trunc_ln241_3 == 2)> <Delay = 2.77> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 151368> <RAM>
-ST_5 : Operation 130 [1/2] ( I:2.77ns O:2.77ns )   --->   "%feat1_63_load_3 = load i18 %feat1_63_addr_3" [../hls_files/conv_pool.cpp:246]   --->   Operation 130 'load' 'feat1_63_load_3' <Predicate = (trunc_ln241_3 == 3)> <Delay = 2.77> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 151368> <RAM>
-ST_5 : Operation 131 [1/1] (1.37ns)   --->   "%m3 = sparsemux i32 @_ssdm_op_SparseMux.ap_auto.4float.float.i2, i2 0, i32 %feat1_load_3, i2 1, i32 %feat1_61_load_3, i2 2, i32 %feat1_62_load_3, i2 3, i32 %feat1_63_load_3, i32 <undef>, i2 %trunc_ln241_3" [../hls_files/conv_pool.cpp:246]   --->   Operation 131 'sparsemux' 'm3' <Predicate = true> <Delay = 1.37> <CoreInst = "BinarySparseMux_DontCare">   --->   Core 137 'BinarySparseMux_DontCare' <Latency = 0> <II = 1> <Delay = 1.37> <FuncUnit> <Opcode : 'sparsemux'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 128 [1/2] ( I:2.77ns O:2.77ns )   --->   "%feat1_60_load_3 = load i18 %feat1_60_addr_3" [../hls_files/conv_pool.cpp:246]   --->   Operation 128 'load' 'feat1_60_load_3' <Predicate = (trunc_ln241_3 == 1)> <Delay = 2.77> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 151368> <RAM>
+ST_5 : Operation 129 [1/2] ( I:2.77ns O:2.77ns )   --->   "%feat1_61_load_3 = load i18 %feat1_61_addr_3" [../hls_files/conv_pool.cpp:246]   --->   Operation 129 'load' 'feat1_61_load_3' <Predicate = (trunc_ln241_3 == 2)> <Delay = 2.77> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 151368> <RAM>
+ST_5 : Operation 130 [1/2] ( I:2.77ns O:2.77ns )   --->   "%feat1_62_load_3 = load i18 %feat1_62_addr_3" [../hls_files/conv_pool.cpp:246]   --->   Operation 130 'load' 'feat1_62_load_3' <Predicate = (trunc_ln241_3 == 3)> <Delay = 2.77> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 151368> <RAM>
+ST_5 : Operation 131 [1/1] (1.37ns)   --->   "%m3 = sparsemux i32 @_ssdm_op_SparseMux.ap_auto.4float.float.i2, i2 0, i32 %feat1_load_3, i2 1, i32 %feat1_60_load_3, i2 2, i32 %feat1_61_load_3, i2 3, i32 %feat1_62_load_3, i32 <undef>, i2 %trunc_ln241_3" [../hls_files/conv_pool.cpp:246]   --->   Operation 131 'sparsemux' 'm3' <Predicate = true> <Delay = 1.37> <CoreInst = "BinarySparseMux_DontCare">   --->   Core 137 'BinarySparseMux_DontCare' <Latency = 0> <II = 1> <Delay = 1.37> <FuncUnit> <Opcode : 'sparsemux'> <InPorts = 2> <OutPorts = 1>
 
 State 6 <SV = 5> <Delay = 4.24>
 ST_6 : Operation 132 [2/2] (4.24ns)   --->   "%tmp_s = fcmp_ogt  i32 %m0, i32 %m1" [../hls_files/conv_pool.cpp:247]   --->   Operation 132 'fcmp' 'tmp_s' <Predicate = true> <Delay = 4.24> <CoreInst = "FCompare">   --->   Core 19 'FCompare' <Latency = 1> <II = 1> <Delay = 4.24> <FuncUnit> <Opcode : 'fcmp'> <InPorts = 2> <OutPorts = 1>
@@ -297,20 +297,20 @@ State 13 <SV = 12> <Delay = 4.53>
 ST_13 : Operation 189 [1/1] (0.00ns)   --->   "%specloopname_ln0 = specloopname void @_ssdm_op_SpecLoopName, void @POOL1_ROW_POOL1_COL_POOL1_CH_str"   --->   Operation 189 'specloopname' 'specloopname_ln0' <Predicate = true> <Delay = 0.00>
 ST_13 : Operation 190 [1/1] (0.00ns)   --->   "%speclooptripcount_ln0 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 151368, i64 151368, i64 151368"   --->   Operation 190 'speclooptripcount' 'speclooptripcount_ln0' <Predicate = true> <Delay = 0.00>
 ST_13 : Operation 191 [1/2] (1.76ns) (root node of the DSP)   --->   "%add_ln249 = add i15 %mul_ln249, i15 %zext_ln249_1" [../hls_files/conv_pool.cpp:249]   --->   Operation 191 'add' 'add_ln249' <Predicate = true> <Delay = 1.76> <CoreInst = "DSP48">   --->   Core 116 'DSP48' <Latency = 3> <II = 1> <Delay = 1.82> <IPBlock> <Opcode : 'add' 'sub' 'mul' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
-ST_13 : Operation 192 [1/1] (0.00ns)   --->   "%specpipeline_ln242 = specpipeline void @_ssdm_op_SpecPipeline, i32 3, i32 0, i32 0, i32 0, void @empty_38" [../hls_files/conv_pool.cpp:242]   --->   Operation 192 'specpipeline' 'specpipeline_ln242' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 192 [1/1] (0.00ns)   --->   "%specpipeline_ln242 = specpipeline void @_ssdm_op_SpecPipeline, i32 3, i32 0, i32 0, i32 0, void @empty_19" [../hls_files/conv_pool.cpp:242]   --->   Operation 192 'specpipeline' 'specpipeline_ln242' <Predicate = true> <Delay = 0.00>
 ST_13 : Operation 193 [1/1] (0.00ns)   --->   "%tmp_25 = bitconcatenate i16 @_ssdm_op_BitConcatenate.i16.i15.i1, i15 %add_ln249, i1 %trunc_ln241" [../hls_files/conv_pool.cpp:249]   --->   Operation 193 'bitconcatenate' 'tmp_25' <Predicate = true> <Delay = 0.00>
 ST_13 : Operation 194 [1/1] (0.00ns)   --->   "%zext_ln249_2 = zext i16 %tmp_25" [../hls_files/conv_pool.cpp:249]   --->   Operation 194 'zext' 'zext_ln249_2' <Predicate = true> <Delay = 0.00>
 ST_13 : Operation 195 [1/1] (0.00ns)   --->   "%feat1_p_addr = getelementptr i32 %feat1_p, i64 0, i64 %zext_ln249_2" [../hls_files/conv_pool.cpp:249]   --->   Operation 195 'getelementptr' 'feat1_p_addr' <Predicate = true> <Delay = 0.00>
-ST_13 : Operation 196 [1/1] (0.00ns)   --->   "%feat1_p_64_addr = getelementptr i32 %feat1_p_64, i64 0, i64 %zext_ln249_2" [../hls_files/conv_pool.cpp:249]   --->   Operation 196 'getelementptr' 'feat1_p_64_addr' <Predicate = true> <Delay = 0.00>
-ST_13 : Operation 197 [1/1] (0.00ns)   --->   "%feat1_p_65_addr = getelementptr i32 %feat1_p_65, i64 0, i64 %zext_ln249_2" [../hls_files/conv_pool.cpp:249]   --->   Operation 197 'getelementptr' 'feat1_p_65_addr' <Predicate = true> <Delay = 0.00>
-ST_13 : Operation 198 [1/1] (0.00ns)   --->   "%feat1_p_66_addr = getelementptr i32 %feat1_p_66, i64 0, i64 %zext_ln249_2" [../hls_files/conv_pool.cpp:249]   --->   Operation 198 'getelementptr' 'feat1_p_66_addr' <Predicate = true> <Delay = 0.00>
-ST_13 : Operation 199 [1/1] ( I:2.77ns O:2.77ns )   --->   "%store_ln249 = store i32 %select_ln249, i16 %feat1_p_65_addr" [../hls_files/conv_pool.cpp:249]   --->   Operation 199 'store' 'store_ln249' <Predicate = (trunc_ln241_3 == 2)> <Delay = 2.77> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 37842> <RAM>
+ST_13 : Operation 196 [1/1] (0.00ns)   --->   "%feat1_p_63_addr = getelementptr i32 %feat1_p_63, i64 0, i64 %zext_ln249_2" [../hls_files/conv_pool.cpp:249]   --->   Operation 196 'getelementptr' 'feat1_p_63_addr' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 197 [1/1] (0.00ns)   --->   "%feat1_p_64_addr = getelementptr i32 %feat1_p_64, i64 0, i64 %zext_ln249_2" [../hls_files/conv_pool.cpp:249]   --->   Operation 197 'getelementptr' 'feat1_p_64_addr' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 198 [1/1] (0.00ns)   --->   "%feat1_p_65_addr = getelementptr i32 %feat1_p_65, i64 0, i64 %zext_ln249_2" [../hls_files/conv_pool.cpp:249]   --->   Operation 198 'getelementptr' 'feat1_p_65_addr' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 199 [1/1] ( I:2.77ns O:2.77ns )   --->   "%store_ln249 = store i32 %select_ln249, i16 %feat1_p_64_addr" [../hls_files/conv_pool.cpp:249]   --->   Operation 199 'store' 'store_ln249' <Predicate = (trunc_ln241_3 == 2)> <Delay = 2.77> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 37842> <RAM>
 ST_13 : Operation 200 [1/1] (0.00ns)   --->   "%br_ln249 = br void %arrayidx571015.exit.i" [../hls_files/conv_pool.cpp:249]   --->   Operation 200 'br' 'br_ln249' <Predicate = (trunc_ln241_3 == 2)> <Delay = 0.00>
-ST_13 : Operation 201 [1/1] ( I:2.77ns O:2.77ns )   --->   "%store_ln249 = store i32 %select_ln249, i16 %feat1_p_64_addr" [../hls_files/conv_pool.cpp:249]   --->   Operation 201 'store' 'store_ln249' <Predicate = (trunc_ln241_3 == 1)> <Delay = 2.77> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 37842> <RAM>
+ST_13 : Operation 201 [1/1] ( I:2.77ns O:2.77ns )   --->   "%store_ln249 = store i32 %select_ln249, i16 %feat1_p_63_addr" [../hls_files/conv_pool.cpp:249]   --->   Operation 201 'store' 'store_ln249' <Predicate = (trunc_ln241_3 == 1)> <Delay = 2.77> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 37842> <RAM>
 ST_13 : Operation 202 [1/1] (0.00ns)   --->   "%br_ln249 = br void %arrayidx571015.exit.i" [../hls_files/conv_pool.cpp:249]   --->   Operation 202 'br' 'br_ln249' <Predicate = (trunc_ln241_3 == 1)> <Delay = 0.00>
 ST_13 : Operation 203 [1/1] ( I:2.77ns O:2.77ns )   --->   "%store_ln249 = store i32 %select_ln249, i16 %feat1_p_addr" [../hls_files/conv_pool.cpp:249]   --->   Operation 203 'store' 'store_ln249' <Predicate = (trunc_ln241_3 == 0)> <Delay = 2.77> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 37842> <RAM>
 ST_13 : Operation 204 [1/1] (0.00ns)   --->   "%br_ln249 = br void %arrayidx571015.exit.i" [../hls_files/conv_pool.cpp:249]   --->   Operation 204 'br' 'br_ln249' <Predicate = (trunc_ln241_3 == 0)> <Delay = 0.00>
-ST_13 : Operation 205 [1/1] ( I:2.77ns O:2.77ns )   --->   "%store_ln249 = store i32 %select_ln249, i16 %feat1_p_66_addr" [../hls_files/conv_pool.cpp:249]   --->   Operation 205 'store' 'store_ln249' <Predicate = (trunc_ln241_3 == 3)> <Delay = 2.77> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 37842> <RAM>
+ST_13 : Operation 205 [1/1] ( I:2.77ns O:2.77ns )   --->   "%store_ln249 = store i32 %select_ln249, i16 %feat1_p_65_addr" [../hls_files/conv_pool.cpp:249]   --->   Operation 205 'store' 'store_ln249' <Predicate = (trunc_ln241_3 == 3)> <Delay = 2.77> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 37842> <RAM>
 ST_13 : Operation 206 [1/1] (0.00ns)   --->   "%br_ln249 = br void %arrayidx571015.exit.i" [../hls_files/conv_pool.cpp:249]   --->   Operation 206 'br' 'br_ln249' <Predicate = (trunc_ln241_3 == 3)> <Delay = 0.00>
 
 
@@ -326,13 +326,13 @@ STG Binding:
 - Is top level: 0
 Port [ Return ] is wired: 1; IO mode=ap_ctrl_hs:ce=0
 Port [ feat1_p]:  wired=1; compound=1; hidden=0; nouse=0; global=1; static=1; extern=0; dir=1; type=1; pingpong=0; private_global=0; MemPort=[03]; IO mode=ap_memory:ce=0
+Port [ feat1_p_63]:  wired=1; compound=1; hidden=0; nouse=0; global=1; static=1; extern=0; dir=1; type=1; pingpong=0; private_global=0; MemPort=[03]; IO mode=ap_memory:ce=0
 Port [ feat1_p_64]:  wired=1; compound=1; hidden=0; nouse=0; global=1; static=1; extern=0; dir=1; type=1; pingpong=0; private_global=0; MemPort=[03]; IO mode=ap_memory:ce=0
 Port [ feat1_p_65]:  wired=1; compound=1; hidden=0; nouse=0; global=1; static=1; extern=0; dir=1; type=1; pingpong=0; private_global=0; MemPort=[03]; IO mode=ap_memory:ce=0
-Port [ feat1_p_66]:  wired=1; compound=1; hidden=0; nouse=0; global=1; static=1; extern=0; dir=1; type=1; pingpong=0; private_global=0; MemPort=[03]; IO mode=ap_memory:ce=0
 Port [ feat1]:  wired=1; compound=1; hidden=0; nouse=0; global=1; static=1; extern=0; dir=0; type=1; pingpong=0; private_global=0; MemPort=[11]; IO mode=ap_memory:ce=0
+Port [ feat1_60]:  wired=1; compound=1; hidden=0; nouse=0; global=1; static=1; extern=0; dir=0; type=1; pingpong=0; private_global=0; MemPort=[11]; IO mode=ap_memory:ce=0
 Port [ feat1_61]:  wired=1; compound=1; hidden=0; nouse=0; global=1; static=1; extern=0; dir=0; type=1; pingpong=0; private_global=0; MemPort=[11]; IO mode=ap_memory:ce=0
 Port [ feat1_62]:  wired=1; compound=1; hidden=0; nouse=0; global=1; static=1; extern=0; dir=0; type=1; pingpong=0; private_global=0; MemPort=[11]; IO mode=ap_memory:ce=0
-Port [ feat1_63]:  wired=1; compound=1; hidden=0; nouse=0; global=1; static=1; extern=0; dir=0; type=1; pingpong=0; private_global=0; MemPort=[11]; IO mode=ap_memory:ce=0
 ---------------- STG Properties END ------------------
 
 ---------------- Datapath Model BEGIN ----------------
@@ -401,43 +401,43 @@ feat1_addr            (getelementptr    ) [ 01001000000000]
 tmp_23                (bitconcatenate   ) [ 00000000000000]
 zext_ln245_1          (zext             ) [ 00000000000000]
 feat1_addr_2          (getelementptr    ) [ 01001000000000]
+feat1_60_addr         (getelementptr    ) [ 01001000000000]
+feat1_60_addr_2       (getelementptr    ) [ 01001000000000]
 feat1_61_addr         (getelementptr    ) [ 01001000000000]
 feat1_61_addr_2       (getelementptr    ) [ 01001000000000]
 feat1_62_addr         (getelementptr    ) [ 01001000000000]
 feat1_62_addr_2       (getelementptr    ) [ 01001000000000]
-feat1_63_addr         (getelementptr    ) [ 01001000000000]
-feat1_63_addr_2       (getelementptr    ) [ 01001000000000]
 tmp_22                (bitconcatenate   ) [ 00000000000000]
 zext_ln244_1          (zext             ) [ 00000000000000]
 feat1_addr_1          (getelementptr    ) [ 00100100000000]
 tmp_24                (bitconcatenate   ) [ 00000000000000]
 zext_ln246            (zext             ) [ 00000000000000]
 feat1_addr_3          (getelementptr    ) [ 00100100000000]
+feat1_60_addr_1       (getelementptr    ) [ 00100100000000]
+feat1_60_addr_3       (getelementptr    ) [ 00100100000000]
 feat1_61_addr_1       (getelementptr    ) [ 00100100000000]
 feat1_61_addr_3       (getelementptr    ) [ 00100100000000]
 feat1_62_addr_1       (getelementptr    ) [ 00100100000000]
 feat1_62_addr_3       (getelementptr    ) [ 00100100000000]
-feat1_63_addr_1       (getelementptr    ) [ 00100100000000]
-feat1_63_addr_3       (getelementptr    ) [ 00100100000000]
 feat1_load            (load             ) [ 00000000000000]
+feat1_60_load         (load             ) [ 00000000000000]
 feat1_61_load         (load             ) [ 00000000000000]
 feat1_62_load         (load             ) [ 00000000000000]
-feat1_63_load         (load             ) [ 00000000000000]
 m0                    (sparsemux        ) [ 01110111000000]
 feat1_load_2          (load             ) [ 00000000000000]
+feat1_60_load_2       (load             ) [ 00000000000000]
 feat1_61_load_2       (load             ) [ 00000000000000]
 feat1_62_load_2       (load             ) [ 00000000000000]
-feat1_63_load_2       (load             ) [ 00000000000000]
 m2                    (sparsemux        ) [ 01110111100000]
 feat1_load_1          (load             ) [ 00000000000000]
+feat1_60_load_1       (load             ) [ 00000000000000]
 feat1_61_load_1       (load             ) [ 00000000000000]
 feat1_62_load_1       (load             ) [ 00000000000000]
-feat1_63_load_1       (load             ) [ 00000000000000]
 m1                    (sparsemux        ) [ 01010011000000]
 feat1_load_3          (load             ) [ 00000000000000]
+feat1_60_load_3       (load             ) [ 00000000000000]
 feat1_61_load_3       (load             ) [ 00000000000000]
 feat1_62_load_3       (load             ) [ 00000000000000]
-feat1_63_load_3       (load             ) [ 00000000000000]
 m3                    (sparsemux        ) [ 01110011100000]
 bitcast_ln247         (bitcast          ) [ 00000000000000]
 tmp                   (partselect       ) [ 00000000000000]
@@ -497,9 +497,9 @@ specpipeline_ln242    (specpipeline     ) [ 00000000000000]
 tmp_25                (bitconcatenate   ) [ 00000000000000]
 zext_ln249_2          (zext             ) [ 00000000000000]
 feat1_p_addr          (getelementptr    ) [ 00000000000000]
+feat1_p_63_addr       (getelementptr    ) [ 00000000000000]
 feat1_p_64_addr       (getelementptr    ) [ 00000000000000]
 feat1_p_65_addr       (getelementptr    ) [ 00000000000000]
-feat1_p_66_addr       (getelementptr    ) [ 00000000000000]
 store_ln249           (store            ) [ 00000000000000]
 br_ln249              (br               ) [ 00000000000000]
 store_ln249           (store            ) [ 00000000000000]
@@ -524,9 +524,19 @@ ret_ln239             (ret              ) [ 00000000000000]
 </bind>
 </comp>
 
-<comp id="2" class="1000" name="feat1_p_64">
+<comp id="2" class="1000" name="feat1_p_63">
 <pin_list>
 <pin id="3" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="feat1_p_63"/><MemPortTyVec>0 3 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="4" class="1000" name="feat1_p_64">
+<pin_list>
+<pin id="5" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
 <StgValue><ssdm name="feat1_p_64"/><MemPortTyVec>0 3 </MemPortTyVec>
@@ -534,22 +544,12 @@ ret_ln239             (ret              ) [ 00000000000000]
 </bind>
 </comp>
 
-<comp id="4" class="1000" name="feat1_p_65">
-<pin_list>
-<pin id="5" dir="1" index="0" bw="1" slack="0"/>
-</pin_list>
-<bind>
-<StgValue><ssdm name="feat1_p_65"/><MemPortTyVec>0 3 </MemPortTyVec>
-</StgValue>
-</bind>
-</comp>
-
-<comp id="6" class="1000" name="feat1_p_66">
+<comp id="6" class="1000" name="feat1_p_65">
 <pin_list>
 <pin id="7" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="feat1_p_66"/><MemPortTyVec>0 3 </MemPortTyVec>
+<StgValue><ssdm name="feat1_p_65"/><MemPortTyVec>0 3 </MemPortTyVec>
 </StgValue>
 </bind>
 </comp>
@@ -564,9 +564,19 @@ ret_ln239             (ret              ) [ 00000000000000]
 </bind>
 </comp>
 
-<comp id="10" class="1000" name="feat1_61">
+<comp id="10" class="1000" name="feat1_60">
 <pin_list>
 <pin id="11" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="feat1_60"/><MemPortTyVec>1 1 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="12" class="1000" name="feat1_61">
+<pin_list>
+<pin id="13" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
 <StgValue><ssdm name="feat1_61"/><MemPortTyVec>1 1 </MemPortTyVec>
@@ -574,22 +584,12 @@ ret_ln239             (ret              ) [ 00000000000000]
 </bind>
 </comp>
 
-<comp id="12" class="1000" name="feat1_62">
-<pin_list>
-<pin id="13" dir="1" index="0" bw="1" slack="0"/>
-</pin_list>
-<bind>
-<StgValue><ssdm name="feat1_62"/><MemPortTyVec>1 1 </MemPortTyVec>
-</StgValue>
-</bind>
-</comp>
-
-<comp id="14" class="1000" name="feat1_63">
+<comp id="14" class="1000" name="feat1_62">
 <pin_list>
 <pin id="15" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="feat1_63"/><MemPortTyVec>1 1 </MemPortTyVec>
+<StgValue><ssdm name="feat1_62"/><MemPortTyVec>1 1 </MemPortTyVec>
 </StgValue>
 </bind>
 </comp>
@@ -977,7 +977,7 @@ ret_ln239             (ret              ) [ 00000000000000]
 <pin id="101" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_38"/></StgValue>
+<StgValue><ssdm name="empty_19"/></StgValue>
 </bind>
 </comp>
 
@@ -1071,7 +1071,7 @@ ret_ln239             (ret              ) [ 00000000000000]
 </bind>
 </comp>
 
-<comp id="138" class="1004" name="feat1_61_addr_gep_fu_138">
+<comp id="138" class="1004" name="feat1_60_addr_gep_fu_138">
 <pin_list>
 <pin id="139" dir="0" index="0" bw="32" slack="0"/>
 <pin id="140" dir="0" index="1" bw="1" slack="0"/>
@@ -1080,11 +1080,11 @@ ret_ln239             (ret              ) [ 00000000000000]
 </pin_list>
 <bind>
 <opcode="getelementptr(29) " fcode="getelementptr"/>
-<opset="feat1_61_addr/3 "/>
+<opset="feat1_60_addr/3 "/>
 </bind>
 </comp>
 
-<comp id="145" class="1004" name="feat1_61_addr_2_gep_fu_145">
+<comp id="145" class="1004" name="feat1_60_addr_2_gep_fu_145">
 <pin_list>
 <pin id="146" dir="0" index="0" bw="32" slack="0"/>
 <pin id="147" dir="0" index="1" bw="1" slack="0"/>
@@ -1093,11 +1093,11 @@ ret_ln239             (ret              ) [ 00000000000000]
 </pin_list>
 <bind>
 <opcode="getelementptr(29) " fcode="getelementptr"/>
-<opset="feat1_61_addr_2/3 "/>
+<opset="feat1_60_addr_2/3 "/>
 </bind>
 </comp>
 
-<comp id="152" class="1004" name="feat1_62_addr_gep_fu_152">
+<comp id="152" class="1004" name="feat1_61_addr_gep_fu_152">
 <pin_list>
 <pin id="153" dir="0" index="0" bw="32" slack="0"/>
 <pin id="154" dir="0" index="1" bw="1" slack="0"/>
@@ -1106,11 +1106,11 @@ ret_ln239             (ret              ) [ 00000000000000]
 </pin_list>
 <bind>
 <opcode="getelementptr(29) " fcode="getelementptr"/>
-<opset="feat1_62_addr/3 "/>
+<opset="feat1_61_addr/3 "/>
 </bind>
 </comp>
 
-<comp id="159" class="1004" name="feat1_62_addr_2_gep_fu_159">
+<comp id="159" class="1004" name="feat1_61_addr_2_gep_fu_159">
 <pin_list>
 <pin id="160" dir="0" index="0" bw="32" slack="0"/>
 <pin id="161" dir="0" index="1" bw="1" slack="0"/>
@@ -1119,11 +1119,11 @@ ret_ln239             (ret              ) [ 00000000000000]
 </pin_list>
 <bind>
 <opcode="getelementptr(29) " fcode="getelementptr"/>
-<opset="feat1_62_addr_2/3 "/>
+<opset="feat1_61_addr_2/3 "/>
 </bind>
 </comp>
 
-<comp id="166" class="1004" name="feat1_63_addr_gep_fu_166">
+<comp id="166" class="1004" name="feat1_62_addr_gep_fu_166">
 <pin_list>
 <pin id="167" dir="0" index="0" bw="32" slack="0"/>
 <pin id="168" dir="0" index="1" bw="1" slack="0"/>
@@ -1132,11 +1132,11 @@ ret_ln239             (ret              ) [ 00000000000000]
 </pin_list>
 <bind>
 <opcode="getelementptr(29) " fcode="getelementptr"/>
-<opset="feat1_63_addr/3 "/>
+<opset="feat1_62_addr/3 "/>
 </bind>
 </comp>
 
-<comp id="173" class="1004" name="feat1_63_addr_2_gep_fu_173">
+<comp id="173" class="1004" name="feat1_62_addr_2_gep_fu_173">
 <pin_list>
 <pin id="174" dir="0" index="0" bw="32" slack="0"/>
 <pin id="175" dir="0" index="1" bw="1" slack="0"/>
@@ -1145,7 +1145,7 @@ ret_ln239             (ret              ) [ 00000000000000]
 </pin_list>
 <bind>
 <opcode="getelementptr(29) " fcode="getelementptr"/>
-<opset="feat1_63_addr_2/3 "/>
+<opset="feat1_62_addr_2/3 "/>
 </bind>
 </comp>
 
@@ -1179,7 +1179,7 @@ ret_ln239             (ret              ) [ 00000000000000]
 </pin_list>
 <bind>
 <opcode="load(27) " fcode="load"/>
-<opset="feat1_61_load/3 feat1_61_load_2/3 feat1_61_load_1/4 feat1_61_load_3/4 "/>
+<opset="feat1_60_load/3 feat1_60_load_2/3 feat1_60_load_1/4 feat1_60_load_3/4 "/>
 </bind>
 </comp>
 
@@ -1196,7 +1196,7 @@ ret_ln239             (ret              ) [ 00000000000000]
 </pin_list>
 <bind>
 <opcode="load(27) " fcode="load"/>
-<opset="feat1_62_load/3 feat1_62_load_2/3 feat1_62_load_1/4 feat1_62_load_3/4 "/>
+<opset="feat1_61_load/3 feat1_61_load_2/3 feat1_61_load_1/4 feat1_61_load_3/4 "/>
 </bind>
 </comp>
 
@@ -1213,7 +1213,7 @@ ret_ln239             (ret              ) [ 00000000000000]
 </pin_list>
 <bind>
 <opcode="load(27) " fcode="load"/>
-<opset="feat1_63_load/3 feat1_63_load_2/3 feat1_63_load_1/4 feat1_63_load_3/4 "/>
+<opset="feat1_62_load/3 feat1_62_load_2/3 feat1_62_load_1/4 feat1_62_load_3/4 "/>
 </bind>
 </comp>
 
@@ -1243,7 +1243,7 @@ ret_ln239             (ret              ) [ 00000000000000]
 </bind>
 </comp>
 
-<comp id="238" class="1004" name="feat1_61_addr_1_gep_fu_238">
+<comp id="238" class="1004" name="feat1_60_addr_1_gep_fu_238">
 <pin_list>
 <pin id="239" dir="0" index="0" bw="32" slack="0"/>
 <pin id="240" dir="0" index="1" bw="1" slack="0"/>
@@ -1252,11 +1252,11 @@ ret_ln239             (ret              ) [ 00000000000000]
 </pin_list>
 <bind>
 <opcode="getelementptr(29) " fcode="getelementptr"/>
-<opset="feat1_61_addr_1/4 "/>
+<opset="feat1_60_addr_1/4 "/>
 </bind>
 </comp>
 
-<comp id="245" class="1004" name="feat1_61_addr_3_gep_fu_245">
+<comp id="245" class="1004" name="feat1_60_addr_3_gep_fu_245">
 <pin_list>
 <pin id="246" dir="0" index="0" bw="32" slack="0"/>
 <pin id="247" dir="0" index="1" bw="1" slack="0"/>
@@ -1265,11 +1265,11 @@ ret_ln239             (ret              ) [ 00000000000000]
 </pin_list>
 <bind>
 <opcode="getelementptr(29) " fcode="getelementptr"/>
-<opset="feat1_61_addr_3/4 "/>
+<opset="feat1_60_addr_3/4 "/>
 </bind>
 </comp>
 
-<comp id="252" class="1004" name="feat1_62_addr_1_gep_fu_252">
+<comp id="252" class="1004" name="feat1_61_addr_1_gep_fu_252">
 <pin_list>
 <pin id="253" dir="0" index="0" bw="32" slack="0"/>
 <pin id="254" dir="0" index="1" bw="1" slack="0"/>
@@ -1278,11 +1278,11 @@ ret_ln239             (ret              ) [ 00000000000000]
 </pin_list>
 <bind>
 <opcode="getelementptr(29) " fcode="getelementptr"/>
-<opset="feat1_62_addr_1/4 "/>
+<opset="feat1_61_addr_1/4 "/>
 </bind>
 </comp>
 
-<comp id="259" class="1004" name="feat1_62_addr_3_gep_fu_259">
+<comp id="259" class="1004" name="feat1_61_addr_3_gep_fu_259">
 <pin_list>
 <pin id="260" dir="0" index="0" bw="32" slack="0"/>
 <pin id="261" dir="0" index="1" bw="1" slack="0"/>
@@ -1291,11 +1291,11 @@ ret_ln239             (ret              ) [ 00000000000000]
 </pin_list>
 <bind>
 <opcode="getelementptr(29) " fcode="getelementptr"/>
-<opset="feat1_62_addr_3/4 "/>
+<opset="feat1_61_addr_3/4 "/>
 </bind>
 </comp>
 
-<comp id="266" class="1004" name="feat1_63_addr_1_gep_fu_266">
+<comp id="266" class="1004" name="feat1_62_addr_1_gep_fu_266">
 <pin_list>
 <pin id="267" dir="0" index="0" bw="32" slack="0"/>
 <pin id="268" dir="0" index="1" bw="1" slack="0"/>
@@ -1304,11 +1304,11 @@ ret_ln239             (ret              ) [ 00000000000000]
 </pin_list>
 <bind>
 <opcode="getelementptr(29) " fcode="getelementptr"/>
-<opset="feat1_63_addr_1/4 "/>
+<opset="feat1_62_addr_1/4 "/>
 </bind>
 </comp>
 
-<comp id="273" class="1004" name="feat1_63_addr_3_gep_fu_273">
+<comp id="273" class="1004" name="feat1_62_addr_3_gep_fu_273">
 <pin_list>
 <pin id="274" dir="0" index="0" bw="32" slack="0"/>
 <pin id="275" dir="0" index="1" bw="1" slack="0"/>
@@ -1317,7 +1317,7 @@ ret_ln239             (ret              ) [ 00000000000000]
 </pin_list>
 <bind>
 <opcode="getelementptr(29) " fcode="getelementptr"/>
-<opset="feat1_63_addr_3/4 "/>
+<opset="feat1_62_addr_3/4 "/>
 </bind>
 </comp>
 
@@ -1334,7 +1334,7 @@ ret_ln239             (ret              ) [ 00000000000000]
 </bind>
 </comp>
 
-<comp id="295" class="1004" name="feat1_p_64_addr_gep_fu_295">
+<comp id="295" class="1004" name="feat1_p_63_addr_gep_fu_295">
 <pin_list>
 <pin id="296" dir="0" index="0" bw="32" slack="0"/>
 <pin id="297" dir="0" index="1" bw="1" slack="0"/>
@@ -1343,11 +1343,11 @@ ret_ln239             (ret              ) [ 00000000000000]
 </pin_list>
 <bind>
 <opcode="getelementptr(29) " fcode="getelementptr"/>
-<opset="feat1_p_64_addr/13 "/>
+<opset="feat1_p_63_addr/13 "/>
 </bind>
 </comp>
 
-<comp id="302" class="1004" name="feat1_p_65_addr_gep_fu_302">
+<comp id="302" class="1004" name="feat1_p_64_addr_gep_fu_302">
 <pin_list>
 <pin id="303" dir="0" index="0" bw="32" slack="0"/>
 <pin id="304" dir="0" index="1" bw="1" slack="0"/>
@@ -1356,11 +1356,11 @@ ret_ln239             (ret              ) [ 00000000000000]
 </pin_list>
 <bind>
 <opcode="getelementptr(29) " fcode="getelementptr"/>
-<opset="feat1_p_65_addr/13 "/>
+<opset="feat1_p_64_addr/13 "/>
 </bind>
 </comp>
 
-<comp id="309" class="1004" name="feat1_p_66_addr_gep_fu_309">
+<comp id="309" class="1004" name="feat1_p_65_addr_gep_fu_309">
 <pin_list>
 <pin id="310" dir="0" index="0" bw="32" slack="0"/>
 <pin id="311" dir="0" index="1" bw="1" slack="0"/>
@@ -1369,7 +1369,7 @@ ret_ln239             (ret              ) [ 00000000000000]
 </pin_list>
 <bind>
 <opcode="getelementptr(29) " fcode="getelementptr"/>
-<opset="feat1_p_66_addr/13 "/>
+<opset="feat1_p_65_addr/13 "/>
 </bind>
 </comp>
 
@@ -2906,63 +2906,63 @@ ret_ln239             (ret              ) [ 00000000000000]
 </bind>
 </comp>
 
-<comp id="1108" class="1005" name="feat1_61_addr_reg_1108">
+<comp id="1108" class="1005" name="feat1_60_addr_reg_1108">
 <pin_list>
 <pin id="1109" dir="0" index="0" bw="18" slack="1"/>
 <pin id="1110" dir="1" index="1" bw="18" slack="1"/>
+</pin_list>
+<bind>
+<opset="feat1_60_addr "/>
+</bind>
+</comp>
+
+<comp id="1113" class="1005" name="feat1_60_addr_2_reg_1113">
+<pin_list>
+<pin id="1114" dir="0" index="0" bw="18" slack="1"/>
+<pin id="1115" dir="1" index="1" bw="18" slack="1"/>
+</pin_list>
+<bind>
+<opset="feat1_60_addr_2 "/>
+</bind>
+</comp>
+
+<comp id="1118" class="1005" name="feat1_61_addr_reg_1118">
+<pin_list>
+<pin id="1119" dir="0" index="0" bw="18" slack="1"/>
+<pin id="1120" dir="1" index="1" bw="18" slack="1"/>
 </pin_list>
 <bind>
 <opset="feat1_61_addr "/>
 </bind>
 </comp>
 
-<comp id="1113" class="1005" name="feat1_61_addr_2_reg_1113">
+<comp id="1123" class="1005" name="feat1_61_addr_2_reg_1123">
 <pin_list>
-<pin id="1114" dir="0" index="0" bw="18" slack="1"/>
-<pin id="1115" dir="1" index="1" bw="18" slack="1"/>
+<pin id="1124" dir="0" index="0" bw="18" slack="1"/>
+<pin id="1125" dir="1" index="1" bw="18" slack="1"/>
 </pin_list>
 <bind>
 <opset="feat1_61_addr_2 "/>
 </bind>
 </comp>
 
-<comp id="1118" class="1005" name="feat1_62_addr_reg_1118">
+<comp id="1128" class="1005" name="feat1_62_addr_reg_1128">
 <pin_list>
-<pin id="1119" dir="0" index="0" bw="18" slack="1"/>
-<pin id="1120" dir="1" index="1" bw="18" slack="1"/>
+<pin id="1129" dir="0" index="0" bw="18" slack="1"/>
+<pin id="1130" dir="1" index="1" bw="18" slack="1"/>
 </pin_list>
 <bind>
 <opset="feat1_62_addr "/>
 </bind>
 </comp>
 
-<comp id="1123" class="1005" name="feat1_62_addr_2_reg_1123">
-<pin_list>
-<pin id="1124" dir="0" index="0" bw="18" slack="1"/>
-<pin id="1125" dir="1" index="1" bw="18" slack="1"/>
-</pin_list>
-<bind>
-<opset="feat1_62_addr_2 "/>
-</bind>
-</comp>
-
-<comp id="1128" class="1005" name="feat1_63_addr_reg_1128">
-<pin_list>
-<pin id="1129" dir="0" index="0" bw="18" slack="1"/>
-<pin id="1130" dir="1" index="1" bw="18" slack="1"/>
-</pin_list>
-<bind>
-<opset="feat1_63_addr "/>
-</bind>
-</comp>
-
-<comp id="1133" class="1005" name="feat1_63_addr_2_reg_1133">
+<comp id="1133" class="1005" name="feat1_62_addr_2_reg_1133">
 <pin_list>
 <pin id="1134" dir="0" index="0" bw="18" slack="1"/>
 <pin id="1135" dir="1" index="1" bw="18" slack="1"/>
 </pin_list>
 <bind>
-<opset="feat1_63_addr_2 "/>
+<opset="feat1_62_addr_2 "/>
 </bind>
 </comp>
 
@@ -2986,63 +2986,63 @@ ret_ln239             (ret              ) [ 00000000000000]
 </bind>
 </comp>
 
-<comp id="1148" class="1005" name="feat1_61_addr_1_reg_1148">
+<comp id="1148" class="1005" name="feat1_60_addr_1_reg_1148">
 <pin_list>
 <pin id="1149" dir="0" index="0" bw="18" slack="1"/>
 <pin id="1150" dir="1" index="1" bw="18" slack="1"/>
+</pin_list>
+<bind>
+<opset="feat1_60_addr_1 "/>
+</bind>
+</comp>
+
+<comp id="1153" class="1005" name="feat1_60_addr_3_reg_1153">
+<pin_list>
+<pin id="1154" dir="0" index="0" bw="18" slack="1"/>
+<pin id="1155" dir="1" index="1" bw="18" slack="1"/>
+</pin_list>
+<bind>
+<opset="feat1_60_addr_3 "/>
+</bind>
+</comp>
+
+<comp id="1158" class="1005" name="feat1_61_addr_1_reg_1158">
+<pin_list>
+<pin id="1159" dir="0" index="0" bw="18" slack="1"/>
+<pin id="1160" dir="1" index="1" bw="18" slack="1"/>
 </pin_list>
 <bind>
 <opset="feat1_61_addr_1 "/>
 </bind>
 </comp>
 
-<comp id="1153" class="1005" name="feat1_61_addr_3_reg_1153">
+<comp id="1163" class="1005" name="feat1_61_addr_3_reg_1163">
 <pin_list>
-<pin id="1154" dir="0" index="0" bw="18" slack="1"/>
-<pin id="1155" dir="1" index="1" bw="18" slack="1"/>
+<pin id="1164" dir="0" index="0" bw="18" slack="1"/>
+<pin id="1165" dir="1" index="1" bw="18" slack="1"/>
 </pin_list>
 <bind>
 <opset="feat1_61_addr_3 "/>
 </bind>
 </comp>
 
-<comp id="1158" class="1005" name="feat1_62_addr_1_reg_1158">
+<comp id="1168" class="1005" name="feat1_62_addr_1_reg_1168">
 <pin_list>
-<pin id="1159" dir="0" index="0" bw="18" slack="1"/>
-<pin id="1160" dir="1" index="1" bw="18" slack="1"/>
+<pin id="1169" dir="0" index="0" bw="18" slack="1"/>
+<pin id="1170" dir="1" index="1" bw="18" slack="1"/>
 </pin_list>
 <bind>
 <opset="feat1_62_addr_1 "/>
 </bind>
 </comp>
 
-<comp id="1163" class="1005" name="feat1_62_addr_3_reg_1163">
-<pin_list>
-<pin id="1164" dir="0" index="0" bw="18" slack="1"/>
-<pin id="1165" dir="1" index="1" bw="18" slack="1"/>
-</pin_list>
-<bind>
-<opset="feat1_62_addr_3 "/>
-</bind>
-</comp>
-
-<comp id="1168" class="1005" name="feat1_63_addr_1_reg_1168">
-<pin_list>
-<pin id="1169" dir="0" index="0" bw="18" slack="1"/>
-<pin id="1170" dir="1" index="1" bw="18" slack="1"/>
-</pin_list>
-<bind>
-<opset="feat1_63_addr_1 "/>
-</bind>
-</comp>
-
-<comp id="1173" class="1005" name="feat1_63_addr_3_reg_1173">
+<comp id="1173" class="1005" name="feat1_62_addr_3_reg_1173">
 <pin_list>
 <pin id="1174" dir="0" index="0" bw="18" slack="1"/>
 <pin id="1175" dir="1" index="1" bw="18" slack="1"/>
 </pin_list>
 <bind>
-<opset="feat1_63_addr_3 "/>
+<opset="feat1_62_addr_3 "/>
 </bind>
 </comp>
 
@@ -3927,14 +3927,14 @@ ret_ln239             (ret              ) [ 00000000000000]
 * FSMD analyzer results:
   - Output states:
 	Port: feat1_p | {13 }
+	Port: feat1_p_63 | {13 }
 	Port: feat1_p_64 | {13 }
 	Port: feat1_p_65 | {13 }
-	Port: feat1_p_66 | {13 }
  - Input state : 
 	Port: pool1 : feat1 | {3 4 5 }
+	Port: pool1 : feat1_60 | {3 4 5 }
 	Port: pool1 : feat1_61 | {3 4 5 }
 	Port: pool1 : feat1_62 | {3 4 5 }
-	Port: pool1 : feat1_63 | {3 4 5 }
   - Chain level:
 	State 1
 		store_ln0 : 1
@@ -3986,41 +3986,41 @@ ret_ln239             (ret              ) [ 00000000000000]
 		tmp_23 : 3
 		zext_ln245_1 : 4
 		feat1_addr_2 : 5
+		feat1_60_addr : 5
+		feat1_60_addr_2 : 5
 		feat1_61_addr : 5
 		feat1_61_addr_2 : 5
 		feat1_62_addr : 5
 		feat1_62_addr_2 : 5
-		feat1_63_addr : 5
-		feat1_63_addr_2 : 5
 		feat1_load : 6
+		feat1_60_load : 6
 		feat1_61_load : 6
 		feat1_62_load : 6
-		feat1_63_load : 6
 		feat1_load_2 : 6
+		feat1_60_load_2 : 6
 		feat1_61_load_2 : 6
 		feat1_62_load_2 : 6
-		feat1_63_load_2 : 6
 	State 4
 		zext_ln244_1 : 1
 		feat1_addr_1 : 2
 		zext_ln246 : 1
 		feat1_addr_3 : 2
+		feat1_60_addr_1 : 2
+		feat1_60_addr_3 : 2
 		feat1_61_addr_1 : 2
 		feat1_61_addr_3 : 2
 		feat1_62_addr_1 : 2
 		feat1_62_addr_3 : 2
-		feat1_63_addr_1 : 2
-		feat1_63_addr_3 : 2
 		m0 : 1
 		feat1_load_1 : 3
+		feat1_60_load_1 : 3
 		feat1_61_load_1 : 3
 		feat1_62_load_1 : 3
-		feat1_63_load_1 : 3
 		m2 : 1
 		feat1_load_3 : 3
+		feat1_60_load_3 : 3
 		feat1_61_load_3 : 3
 		feat1_62_load_3 : 3
-		feat1_63_load_3 : 3
 	State 5
 		m1 : 1
 		m3 : 1
@@ -4076,9 +4076,9 @@ ret_ln239             (ret              ) [ 00000000000000]
 		tmp_25 : 1
 		zext_ln249_2 : 2
 		feat1_p_addr : 3
+		feat1_p_63_addr : 3
 		feat1_p_64_addr : 3
 		feat1_p_65_addr : 3
-		feat1_p_66_addr : 3
 		store_ln249 : 4
 		store_ln249 : 4
 		store_ln249 : 4
@@ -4208,18 +4208,18 @@ N/A
 +-------------------------+--------+
 |    add_ln244_reg_1088   |   17   |
 |    add_ln246_reg_1093   |   17   |
-| feat1_61_addr_1_reg_1148|   18   |
-| feat1_61_addr_2_reg_1113|   18   |
-| feat1_61_addr_3_reg_1153|   18   |
-|  feat1_61_addr_reg_1108 |   18   |
-| feat1_62_addr_1_reg_1158|   18   |
-| feat1_62_addr_2_reg_1123|   18   |
-| feat1_62_addr_3_reg_1163|   18   |
-|  feat1_62_addr_reg_1118 |   18   |
-| feat1_63_addr_1_reg_1168|   18   |
-| feat1_63_addr_2_reg_1133|   18   |
-| feat1_63_addr_3_reg_1173|   18   |
-|  feat1_63_addr_reg_1128 |   18   |
+| feat1_60_addr_1_reg_1148|   18   |
+| feat1_60_addr_2_reg_1113|   18   |
+| feat1_60_addr_3_reg_1153|   18   |
+|  feat1_60_addr_reg_1108 |   18   |
+| feat1_61_addr_1_reg_1158|   18   |
+| feat1_61_addr_2_reg_1123|   18   |
+| feat1_61_addr_3_reg_1163|   18   |
+|  feat1_61_addr_reg_1118 |   18   |
+| feat1_62_addr_1_reg_1168|   18   |
+| feat1_62_addr_2_reg_1133|   18   |
+| feat1_62_addr_3_reg_1173|   18   |
+|  feat1_62_addr_reg_1128 |   18   |
 |  feat1_addr_1_reg_1138  |   18   |
 |  feat1_addr_2_reg_1103  |   18   |
 |  feat1_addr_3_reg_1143  |   18   |

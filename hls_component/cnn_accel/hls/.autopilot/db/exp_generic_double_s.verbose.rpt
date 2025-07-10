@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'exp_generic_double_s'
 ================================================================
-* Date:           Tue Jul  8 02:26:09 2025
+* Date:           Wed Jul  9 07:45:51 2025
 
 * Version:        2025.1 (Build 6135595 on May 21 2025)
 * Project:        cnn_accel
@@ -68,11 +68,11 @@
     +----------------------------+----------------------+---------+----+-----+-----+-----+
     |          Instance          |        Module        | BRAM_18K| DSP|  FF | LUT | URAM|
     +----------------------------+----------------------+---------+----+-----+-----+-----+
-    |mul_13s_71s_71_5_0_U1588    |mul_13s_71s_71_5_0    |        0|   4|  441|  256|    0|
-    |mul_43ns_36ns_79_2_0_U1589  |mul_43ns_36ns_79_2_0  |        0|   6|  219|  155|    0|
-    |mul_49ns_44ns_93_2_0_U1590  |mul_49ns_44ns_93_2_0  |        0|   9|  233|   85|    0|
-    |mul_50ns_50ns_99_2_0_U1591  |mul_50ns_50ns_99_2_0  |        0|   9|  237|   87|    0|
-    |sparsemux_9_3_64_1_0_U1592  |sparsemux_9_3_64_1_0  |        0|   0|    0|   13|    0|
+    |mul_13s_71s_71_5_0_U1584    |mul_13s_71s_71_5_0    |        0|   4|  441|  256|    0|
+    |mul_43ns_36ns_79_2_0_U1585  |mul_43ns_36ns_79_2_0  |        0|   6|  219|  155|    0|
+    |mul_49ns_44ns_93_2_0_U1586  |mul_49ns_44ns_93_2_0  |        0|   9|  233|   85|    0|
+    |mul_50ns_50ns_99_2_0_U1587  |mul_50ns_50ns_99_2_0  |        0|   9|  237|   87|    0|
+    |sparsemux_9_3_64_1_0_U1588  |sparsemux_9_3_64_1_0  |        0|   0|    0|   13|    0|
     +----------------------------+----------------------+---------+----+-----+-----+-----+
     |Total                       |                      |        0|  28| 1130|  596|    0|
     +----------------------------+----------------------+---------+----+-----+-----+-----+
@@ -81,7 +81,7 @@
     +--------------------------------------+--------------------------------+--------------+
     |               Instance               |             Module             |  Expression  |
     +--------------------------------------+--------------------------------+--------------+
-    |mac_muladd_16s_15ns_19s_31_4_0_U1593  |mac_muladd_16s_15ns_19s_31_4_0  |  i0 * i1 + i2|
+    |mac_muladd_16s_15ns_19s_31_4_0_U1589  |mac_muladd_16s_15ns_19s_31_4_0  |  i0 * i1 + i2|
     +--------------------------------------+--------------------------------+--------------+
 
     * Memory: 
@@ -488,7 +488,7 @@ ST_21 : Operation 153 [1/1] (0.00ns)   --->   "%tmp_8 = partselect i52 @_ssdm_op
 ST_21 : Operation 154 [1/1] (0.75ns)   --->   "%select_ln303 = select i1 %tmp_32, i52 %tmp_s, i52 %tmp_8" [C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h:303]   --->   Operation 154 'select' 'select_ln303' <Predicate = true> <Delay = 0.75> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.75> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
 
 State 22 <SV = 21> <Delay = 3.74>
-ST_22 : Operation 155 [1/1] (0.00ns)   --->   "%specpipeline_ln158 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_38" [C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h:158]   --->   Operation 155 'specpipeline' 'specpipeline_ln158' <Predicate = true> <Delay = 0.00>
+ST_22 : Operation 155 [1/1] (0.00ns)   --->   "%specpipeline_ln158 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_19" [C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h:158]   --->   Operation 155 'specpipeline' 'specpipeline_ln158' <Predicate = true> <Delay = 0.00>
 ST_22 : Operation 156 [1/1] (0.00ns) (grouped into LUT with out node select_ln185_1)   --->   "%xor_ln182 = xor i1 %es_sign, i1 1" [C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h:182]   --->   Operation 156 'xor' 'xor_ln182' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
 ST_22 : Operation 157 [1/1] (0.00ns) (grouped into LUT with out node select_ln185_1)   --->   "%x_is_pinf = and i1 %x_is_inf, i1 %xor_ln182" [C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h:182]   --->   Operation 157 'and' 'x_is_pinf' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
 ST_22 : Operation 158 [1/1] (0.00ns) (grouped into LUT with out node select_ln185_1)   --->   "%or_ln185 = or i1 %x_is_NaN, i1 %x_is_pinf" [C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h:185]   --->   Operation 158 'or' 'or_ln185' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
@@ -1528,7 +1528,7 @@ ret_ln339                                                        (ret           
 <pin id="185" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_38"/></StgValue>
+<StgValue><ssdm name="empty_19"/></StgValue>
 </bind>
 </comp>
 

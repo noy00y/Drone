@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'fc1'" level="0">
-<item name = "Date">Tue Jul  8 02:25:43 2025
+<item name = "Date">Wed Jul  9 07:45:26 2025
 </item>
 <item name = "Version">2025.1 (Build 6135595 on May 21 2025)</item>
 <item name = "Project">cnn_accel</item>

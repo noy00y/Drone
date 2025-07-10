@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'Block_entry_proc_Pipeline_LOAD_FC2W'
 ================================================================
-* Date:           Tue Jul  8 02:25:59 2025
+* Date:           Wed Jul  9 07:45:42 2025
 
 * Version:        2025.1 (Build 6135595 on May 21 2025)
 * Project:        cnn_accel
@@ -88,7 +88,7 @@ State 1 <SV = 0> <Delay = 2.92>
 ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%i = alloca i32 1" [../hls_files/conv_pool.cpp:148->../hls_files/conv_pool.cpp:123]   --->   Operation 5 'alloca' 'i' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%sext_ln148_read = read i62 @_ssdm_op_Read.ap_auto.i62, i62 %sext_ln148"   --->   Operation 6 'read' 'sext_ln148_read' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%sext_ln148_cast = sext i62 %sext_ln148_read"   --->   Operation 7 'sext' 'sext_ln148_cast' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %W4mem, void @empty_37, i32 0, i32 0, void @empty_38, i32 0, i32 32, void @empty_33, void @empty_23, void @empty_38, i32 16, i32 16, i32 16, i32 16, void @empty_38, void @empty_38, i32 4294967295, i32 0, i32 0"   --->   Operation 8 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %W4mem, void @empty_17, i32 0, i32 0, void @empty_19, i32 0, i32 32, void @empty_27, void @empty_20, void @empty_19, i32 16, i32 16, i32 16, i32 16, void @empty_19, void @empty_19, i32 4294967295, i32 0, i32 0"   --->   Operation 8 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 9 [1/1] (1.32ns)   --->   "%store_ln148 = store i6 0, i6 %i" [../hls_files/conv_pool.cpp:148->../hls_files/conv_pool.cpp:123]   --->   Operation 9 'store' 'store_ln148' <Predicate = true> <Delay = 1.32>
 ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%br_ln0 = br void %for.inc73.i"   --->   Operation 10 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%i_4 = load i6 %i" [../hls_files/conv_pool.cpp:148->../hls_files/conv_pool.cpp:123]   --->   Operation 11 'load' 'i_4' <Predicate = true> <Delay = 0.00>
@@ -100,9 +100,9 @@ ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%trunc_ln148 = trunc i6 %i_4" [../h
 ST_1 : Operation 89 [1/1] (1.32ns)   --->   "%ret_ln0 = ret"   --->   Operation 89 'ret' 'ret_ln0' <Predicate = (icmp_ln148)> <Delay = 1.32>
 
 State 2 <SV = 1> <Delay = 7.30>
-ST_2 : Operation 17 [1/1] (0.00ns)   --->   "%specpipeline_ln149 = specpipeline void @_ssdm_op_SpecPipeline, i32 3, i32 0, i32 0, i32 0, void @empty_38" [../hls_files/conv_pool.cpp:149->../hls_files/conv_pool.cpp:123]   --->   Operation 17 'specpipeline' 'specpipeline_ln149' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 17 [1/1] (0.00ns)   --->   "%specpipeline_ln149 = specpipeline void @_ssdm_op_SpecPipeline, i32 3, i32 0, i32 0, i32 0, void @empty_19" [../hls_files/conv_pool.cpp:149->../hls_files/conv_pool.cpp:123]   --->   Operation 17 'specpipeline' 'specpipeline_ln149' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 18 [1/1] (0.00ns)   --->   "%speclooptripcount_ln148 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 32, i64 32, i64 32" [../hls_files/conv_pool.cpp:148->../hls_files/conv_pool.cpp:123]   --->   Operation 18 'speclooptripcount' 'speclooptripcount_ln148' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 19 [1/1] (0.00ns)   --->   "%specloopname_ln148 = specloopname void @_ssdm_op_SpecLoopName, void @empty_27" [../hls_files/conv_pool.cpp:148->../hls_files/conv_pool.cpp:123]   --->   Operation 19 'specloopname' 'specloopname_ln148' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 19 [1/1] (0.00ns)   --->   "%specloopname_ln148 = specloopname void @_ssdm_op_SpecLoopName, void @empty_4" [../hls_files/conv_pool.cpp:148->../hls_files/conv_pool.cpp:123]   --->   Operation 19 'specloopname' 'specloopname_ln148' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 20 [1/1] (7.30ns)   --->   "%W4mem_addr_read = read i32 @_ssdm_op_Read.m_axi.p1i32, i32 %W4mem_addr" [../hls_files/conv_pool.cpp:150->../hls_files/conv_pool.cpp:123]   --->   Operation 20 'read' 'W4mem_addr_read' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 111 'm_axi' <Latency = 3> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 ST_2 : Operation 21 [1/1] (0.00ns)   --->   "%bitcast_ln150 = bitcast i32 %W4mem_addr_read" [../hls_files/conv_pool.cpp:150->../hls_files/conv_pool.cpp:123]   --->   Operation 21 'bitcast' 'bitcast_ln150' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 22 [1/1] (1.54ns)   --->   "%switch_ln150 = switch i5 %trunc_ln148, void %arrayidx72.case.31.i, i5 0, void %arrayidx72.case.0.i, i5 1, void %arrayidx72.case.1.i, i5 2, void %arrayidx72.case.2.i, i5 3, void %arrayidx72.case.3.i, i5 4, void %arrayidx72.case.4.i, i5 5, void %arrayidx72.case.5.i, i5 6, void %arrayidx72.case.6.i, i5 7, void %arrayidx72.case.7.i, i5 8, void %arrayidx72.case.8.i, i5 9, void %arrayidx72.case.9.i, i5 10, void %arrayidx72.case.10.i, i5 11, void %arrayidx72.case.11.i, i5 12, void %arrayidx72.case.12.i, i5 13, void %arrayidx72.case.13.i, i5 14, void %arrayidx72.case.14.i, i5 15, void %arrayidx72.case.15.i, i5 16, void %arrayidx72.case.16.i, i5 17, void %arrayidx72.case.17.i, i5 18, void %arrayidx72.case.18.i, i5 19, void %arrayidx72.case.19.i, i5 20, void %arrayidx72.case.20.i, i5 21, void %arrayidx72.case.21.i, i5 22, void %arrayidx72.case.22.i, i5 23, void %arrayidx72.case.23.i, i5 24, void %arrayidx72.case.24.i, i5 25, void %arrayidx72.case.25.i, i5 26, void %arrayidx72.case.26.i, i5 27, void %arrayidx72.case.27.i, i5 28, void %arrayidx72.case.28.i, i5 29, void %arrayidx72.case.29.i, i5 30, void %arrayidx72.case.30.i" [../hls_files/conv_pool.cpp:150->../hls_files/conv_pool.cpp:123]   --->   Operation 22 'switch' 'switch_ln150' <Predicate = true> <Delay = 1.54>
@@ -188,7 +188,7 @@ The critical path consists of the following:
  <State 2>: 7.300ns
 The critical path consists of the following:
 	bus read operation ('W4mem_addr_read', ../hls_files/conv_pool.cpp:150->../hls_files/conv_pool.cpp:123) on port 'W4mem' (../hls_files/conv_pool.cpp:150->../hls_files/conv_pool.cpp:123) [52]  (7.300 ns)
-	'store' operation 0 bit ('store_ln150', ../hls_files/conv_pool.cpp:150->../hls_files/conv_pool.cpp:123) of variable 'bitcast_ln150', ../hls_files/conv_pool.cpp:150->../hls_files/conv_pool.cpp:123 on static variable 'p_ZZ9cnn_accelE11fc2_w_local_28' [62]  (0.000 ns)
+	'store' operation 0 bit ('store_ln150', ../hls_files/conv_pool.cpp:150->../hls_files/conv_pool.cpp:123) of variable 'bitcast_ln150', ../hls_files/conv_pool.cpp:150->../hls_files/conv_pool.cpp:123 on static variable 'p_ZZ9cnn_accelE11fc2_w_local_30' [56]  (0.000 ns)
 
 
 ============================================================

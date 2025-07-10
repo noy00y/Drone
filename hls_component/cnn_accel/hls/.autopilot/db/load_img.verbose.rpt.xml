@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'load_img'" level="0">
-<item name = "Date">Tue Jul  8 02:26:03 2025
+<item name = "Date">Wed Jul  9 07:45:44 2025
 </item>
 <item name = "Version">2025.1 (Build 6135595 on May 21 2025)</item>
 <item name = "Project">cnn_accel</item>
@@ -31,7 +31,7 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_53">load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH, 691202, 691202, 6.912 ms, 6.912 ms, 691201, 691201, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_51">load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH, 691202, 691202, 6.912 ms, 6.912 ms, 691201, 691201, loop auto-rewind stp (delay=0 clock cycles(s))</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
@@ -50,7 +50,7 @@
 <column name="DSP">-, -, -, -, -</column>
 <column name="Expression">-, -, -, -, -</column>
 <column name="FIFO">-, -, -, -, -</column>
-<column name="Instance">-, -, 134, 314, -</column>
+<column name="Instance">-, -, 120, 350, -</column>
 <column name="Memory">-, -, -, -, -</column>
 <column name="Multiplexer">-, -, 0, 183, -</column>
 <column name="Register">-, -, 73, -, -</column>
@@ -62,7 +62,7 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
-<column name="grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_53">load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH, 0, 0, 134, 314, 0</column>
+<column name="grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_51">load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH, 0, 0, 120, 350, 0</column>
 </table>
 </item>
 <item name = "DSP"><table name="" hasTotal="0">
@@ -103,8 +103,8 @@
 <item name = "Register"><table name="" hasTotal="1">
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
 <column name="ap_CS_fsm">10, 0, 10, 0</column>
-<column name="grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_53_ap_start_reg">1, 0, 1, 0</column>
-<column name="trunc_ln_reg_85">62, 0, 62, 0</column>
+<column name="grp_load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH_fu_51_ap_start_reg">1, 0, 1, 0</column>
+<column name="trunc_ln_reg_81">62, 0, 62, 0</column>
 </table>
 </item>
 </section>
@@ -171,10 +171,6 @@
 <column name="local_img_ce0">out, 1, ap_memory, local_img, array</column>
 <column name="local_img_we0">out, 1, ap_memory, local_img, array</column>
 <column name="local_img_d0">out, 32, ap_memory, local_img, array</column>
-<column name="local_img_60_address0">out, 18, ap_memory, local_img_60, array</column>
-<column name="local_img_60_ce0">out, 1, ap_memory, local_img_60, array</column>
-<column name="local_img_60_we0">out, 1, ap_memory, local_img_60, array</column>
-<column name="local_img_60_d0">out, 32, ap_memory, local_img_60, array</column>
 </table>
 </item>
 </section>

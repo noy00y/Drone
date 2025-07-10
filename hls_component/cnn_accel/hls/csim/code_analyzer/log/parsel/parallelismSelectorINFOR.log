@@ -1,8 +1,3 @@
-parallelismSelector::WARNG: Variable 'FC2_W' C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp:63:0 VariableId 39163 is not part of the design space!--
-                            
-parallelismSelector::WARNG: WARNING: [SIM 211-206] Code Analyzer does not display the impact of the partition pragma for dataflow channels (C:\Users\ozair\Documents\Code_Drive\Drone\hls_files\conv_pool.cpp:122:1)
-parallelismSelector::WARNG: WARNING: [SIM 211-206] Code Analyzer does not display the impact of the partition pragma for dataflow channels (C:\Users\ozair\Documents\Code_Drive\Drone\hls_files\conv_pool.cpp:166:1)
-parallelismSelector::WARNG: WARNING: [HLS 211-200] Code Analyzer will not display the impact of 'pipeline' (C:\Users\ozair\Documents\Code_Drive\Drone\hls_files\conv_pool.cpp:155:7) as the loop has been optimized out
 parallelismSelector::WARNG: WARNING: [HLS 211-200] Code Analyzer will not display the impact of 'unroll' (c:\xilinx\2025.1\win64\tools\vcxx\data\autopilot\etc\hls_exp_apfixed.h:156:17) as the loop has been optimized out
 parallelismSelector::WARNG: WARNING: [HLS 211-200] Code Analyzer will not display the impact of 'unroll' (c:\xilinx\2025.1\win64\tools\vcxx\data\autopilot\etc\hls_exp_apfixed.h:152:17) as the loop has been optimized out
 parallelismSelector::WARNG: WARNING: [HLS 211-200] Code Analyzer will not display the impact of 'unroll' (c:\xilinx\2025.1\win64\tools\vcxx\data\autopilot\etc\hls_exp_apfixed.h:146:13) as the loop has been optimized out
@@ -19,7 +14,7 @@ parallelismSelector::WARNG: WARNING: [HLS 211-200] Code Analyzer will not displa
 parallelismSelector::WARNG: WARNING: [HLS 211-200] Code Analyzer will not display the impact of 'unroll' (c:\xilinx\2025.1\win64\tools\vcxx\data\autopilot\etc\hls_exp_apfixed.h:530:9) as the loop has been optimized out
 parallelismSelector::WARNG: WARNING: [HLS 211-200] Code Analyzer will not display the impact of 'unroll' (c:\xilinx\2025.1\win64\tools\vcxx\data\autopilot\etc\hls_exp_apfixed.h:526:9) as the loop has been optimized out
 parallelismSelector::WARNG: WARNING: [HLS 211-200] Code Analyzer will not display the impact of 'pipeline' (c:\xilinx\2025.1\win64\tools\vcxx\data\autopilot\etc\hls_exp_apfixed.h:15:1) as the pipelined function is not the top-level hardware function
-parallelismSelector::WARNG: WARNING: [HLS 211-200] Invalid pragma detected: Code Analyzer will not display the impact of 'pipeline' (C:\Users\ozair\Documents\Code_Drive\Drone\hls_files\conv_pool.cpp:328:1) as loop pipeline pragma is only valid if:
+parallelismSelector::WARNG: WARNING: [HLS 211-200] Invalid pragma detected: Code Analyzer will not display the impact of 'pipeline' (C:\Users\ozair\Documents\Code_Drive\Drone\hls_files\conv_pool.cpp:224:3) as loop pipeline pragma is only valid if:
                             - All the subloops of the loop to be pipelined can be fully unrolled
                             - All the subloops are perfectly nested in the loop to be pipelined.
-parallelismSelector::WARNG: WARNING: [SIM 211-200] C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp:330:9: the dynamic loop had a trip count of min=72384 max=72384 during C simulation. (#pragma HLS loop_tripcount min=72384 max=72384)
+parallelismSelector::WARNG: WARNING: [SIM 211-200] C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp:226:5: the dynamic loop had a trip count of min=72384 max=72384 during C simulation. (#pragma HLS loop_tripcount min=72384 max=72384)

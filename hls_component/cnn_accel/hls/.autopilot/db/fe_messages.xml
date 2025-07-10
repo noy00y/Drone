@@ -2,52 +2,16 @@
     <msg msg_groups="" msg_id="207-1016" msg_severity="WARNING" msg_loc="C:/Xilinx/2025.1/Vitis/common/technology/autopilot/etc/hls_sqrt_apfixed.h:16:34" msg_body="unknown warning group '-Wmisleading-indentation', ignored">
         <args ClangWarningOption="unknown-warning-option"/>
     </msg>
-    <msg msg_groups="PRAGMA_DATAFLOW" msg_id="214-111" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:93:16" msg_body="Static scalars and arrays declared inside a dataflow region will be treated like local variables"/>
-    <msg msg_groups="PRAGMA_DATAFLOW" msg_id="214-111" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:94:19" msg_body="Static scalars and arrays declared inside a dataflow region will be treated like local variables"/>
-    <msg msg_groups="PRAGMA_DATAFLOW" msg_id="214-111" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:95:19" msg_body="Static scalars and arrays declared inside a dataflow region will be treated like local variables"/>
-    <msg msg_groups="PRAGMA_DATAFLOW" msg_id="214-111" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:96:19" msg_body="Static scalars and arrays declared inside a dataflow region will be treated like local variables"/>
-    <msg msg_groups="PRAGMA_DATAFLOW" msg_id="214-111" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:97:19" msg_body="Static scalars and arrays declared inside a dataflow region will be treated like local variables"/>
-    <msg msg_groups="PRAGMA_DATAFLOW" msg_id="214-111" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:98:19" msg_body="Static scalars and arrays declared inside a dataflow region will be treated like local variables"/>
-    <msg msg_groups="PRAGMA_DATAFLOW" msg_id="214-111" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:99:19" msg_body="Static scalars and arrays declared inside a dataflow region will be treated like local variables"/>
-    <msg msg_groups="PRAGMA_DATAFLOW" msg_id="214-111" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:103:19" msg_body="Static scalars and arrays declared inside a dataflow region will be treated like local variables"/>
-    <msg msg_groups="PRAGMA_DATAFLOW" msg_id="214-111" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:104:19" msg_body="Static scalars and arrays declared inside a dataflow region will be treated like local variables"/>
-    <msg msg_groups="PRAGMA_DATAFLOW" msg_id="214-111" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:105:19" msg_body="Static scalars and arrays declared inside a dataflow region will be treated like local variables"/>
-    <msg msg_groups="PRAGMA_DATAFLOW" msg_id="214-111" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:106:19" msg_body="Static scalars and arrays declared inside a dataflow region will be treated like local variables"/>
-    <msg msg_groups="PRAGMA_DATAFLOW" msg_id="214-111" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:107:19" msg_body="Static scalars and arrays declared inside a dataflow region will be treated like local variables"/>
-    <msg msg_groups="PRAGMA_DATAFLOW" msg_id="214-111" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:108:19" msg_body="Static scalars and arrays declared inside a dataflow region will be treated like local variables"/>
-    <msg msg_groups="PRAGMA_DATAFLOW" msg_id="214-111" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:109:19" msg_body="Static scalars and arrays declared inside a dataflow region will be treated like local variables"/>
-    <msg msg_groups="PRAGMA_DATAFLOW" msg_id="214-111" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:110:19" msg_body="Static scalars and arrays declared inside a dataflow region will be treated like local variables"/>
-    <msg msg_groups="PRAGMA_DATAFLOW" msg_id="214-114" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:165:9" msg_body="Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region"/>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/2025.1/Vitis/common/technology/autopilot\ap_axi_sdata.h:149:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="get_data" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/2025.1/Vitis/common/technology/autopilot\ap_axi_sdata.h:154:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="set_data" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/2025.1/Vitis/common/technology/autopilot\ap_axi_sdata.h:219:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="keep_all" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/2025.1/Vitis/common/technology/autopilot\ap_axi_sdata.h:332:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="empty" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/2025.1/Vitis/common/technology/autopilot\ap_axi_sdata.h:340:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="full" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/2025.1/Vitis/common/technology/autopilot\ap_axi_sdata.h:349:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="read" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/2025.1/Vitis/common/technology/autopilot\ap_axi_sdata.h:360:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="read" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/2025.1/Vitis/common/technology/autopilot\ap_axi_sdata.h:372:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="write" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/2025.1/Vitis/common/technology/autopilot\ap_axi_sdata.h:383:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="read_nb" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/2025.1/Vitis/common/technology/autopilot\ap_axi_sdata.h:400:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="write_nb" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
+    <msg msg_groups="PRAGMA_DATAFLOW" msg_id="214-111" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:281:16" msg_body="Static scalars and arrays declared inside a dataflow region will be treated like local variables"/>
+    <msg msg_groups="PRAGMA_DATAFLOW" msg_id="214-111" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:282:17" msg_body="Static scalars and arrays declared inside a dataflow region will be treated like local variables"/>
+    <msg msg_groups="PRAGMA_DATAFLOW" msg_id="214-111" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:283:17" msg_body="Static scalars and arrays declared inside a dataflow region will be treated like local variables"/>
+    <msg msg_groups="PRAGMA_DATAFLOW" msg_id="214-111" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:284:17" msg_body="Static scalars and arrays declared inside a dataflow region will be treated like local variables"/>
+    <msg msg_groups="PRAGMA_DATAFLOW" msg_id="214-111" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:285:17" msg_body="Static scalars and arrays declared inside a dataflow region will be treated like local variables"/>
+    <msg msg_groups="PRAGMA_DATAFLOW" msg_id="214-111" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:286:17" msg_body="Static scalars and arrays declared inside a dataflow region will be treated like local variables"/>
+    <msg msg_groups="PRAGMA_DATAFLOW" msg_id="214-111" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:287:17" msg_body="Static scalars and arrays declared inside a dataflow region will be treated like local variables"/>
+    <msg msg_groups="PRAGMA_DATAFLOW" msg_id="214-111" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:288:17" msg_body="Static scalars and arrays declared inside a dataflow region will be treated like local variables"/>
+    <msg msg_groups="PRAGMA_DATAFLOW" msg_id="214-111" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:304:17" msg_body="Static scalars and arrays declared inside a dataflow region will be treated like local variables"/>
+    <msg msg_groups="PRAGMA_DATAFLOW" msg_id="214-114" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:307:9" msg_body="Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region"/>
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/2025.1/Vitis/common/technology/autopilot\utils/x_hls_utils.h:224:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="reg" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
@@ -651,320 +615,281 @@
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/2025.1/Vitis/common/technology/autopilot/etc/hls_hypot_apfixed.h:170:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="hypot_fixed" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:36:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="stream_img" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:56:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="conv1_stream" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=4" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:83:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="conv1_stream" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=4" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:111:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="pool1_stream" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=4" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:139:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="conv2_stream" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=4" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:159:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="conv2_stream" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=4" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:185:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="pool2_stream" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=4" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:210:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="flatten_stream" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=4" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:224:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="fc1" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=4" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:244:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="fc2" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=4" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="directive:1:9" msg_body="HLS pragma dump">
         <args ARG_PragmaContext="directive" ARG_PragmaFunction="cnn_accel" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=cnn_accel" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:68:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="cnn_accel" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port=img_in offset=slave bundle=IMGmem depth=240*320*3" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:69:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="cnn_accel" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port=weights1 offset=slave bundle=W1mem depth=8*3*3*3" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:70:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="cnn_accel" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port=bias1 offset=slave bundle=B1mem depth=8" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:71:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="cnn_accel" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port=weights2 offset=slave bundle=W2mem depth=16*8*3*3" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:72:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="cnn_accel" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port=bias2 offset=slave bundle=B2mem depth=16" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:73:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="cnn_accel" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port=FC1_W offset=slave bundle=W3mem depth=32*(16*((((240 -3 +1)/2)-3 +1)/2)*((((320 -3 +1)/2)-3 +1)/2))" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:74:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="cnn_accel" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port=FC1_B offset=slave bundle=B3mem depth=32" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:75:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="cnn_accel" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port=FC2_W offset=slave bundle=W4mem depth=32" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:76:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="cnn_accel" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port=FC2_B offset=slave bundle=B4mem depth=1" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:77:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="cnn_accel" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port=flag_out offset=slave bundle=Foutmem depth=1" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:79:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="cnn_accel" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=img_in bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:80:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="cnn_accel" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=weights1 bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:81:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="cnn_accel" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=bias1 bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:82:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="cnn_accel" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=weights2 bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:83:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="cnn_accel" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=bias2 bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:84:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="cnn_accel" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=FC1_W bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:85:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="cnn_accel" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=FC1_B bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:86:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="cnn_accel" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=FC2_W bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:87:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="cnn_accel" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=FC2_B bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:88:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="cnn_accel" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=flag_out bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:89:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="cnn_accel" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=ctrl bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:90:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="cnn_accel" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=return bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:113:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="cnn_accel" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=w1_local complete dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:114:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="cnn_accel" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=b1_local complete dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:115:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="cnn_accel" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=w2_local complete dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:116:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="cnn_accel" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=b2_local complete dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:117:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="cnn_accel" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=fc1_w_local cyclic factor=8 dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:118:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="cnn_accel" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=fc1_b_local complete dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:119:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="cnn_accel" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=fc2_w_local complete dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:120:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="cnn_accel" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=fc2_b_local complete dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:125:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="cnn_accel" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=3" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:129:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="cnn_accel" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=3" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:133:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="cnn_accel" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=3" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:137:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="cnn_accel" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=3" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:141:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="cnn_accel" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=3" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:145:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="cnn_accel" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=3" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:149:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="cnn_accel" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=3" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:153:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="cnn_accel" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=3" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:160:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="cnn_accel" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=feat1 block factor=4 dim=3" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:161:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="cnn_accel" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=feat1_p block factor=4 dim=3" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:162:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="cnn_accel" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=feat2 block factor=4 dim=3" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:163:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="cnn_accel" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=feat2_p block factor=4 dim=3" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:165:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="cnn_accel" ARG_PragmaIsValid="1" ARG_PragmaType="dataflow" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:199:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="load_img" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=3" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:216:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="conv1" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=3" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:221:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="conv1" ARG_PragmaIsValid="1" ARG_PragmaOptions="factor=2" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:242:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="pool1" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=3" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:264:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="conv2" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=3" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+        <args ARG_PragmaFunction="cnn_accel" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port=img_in bundle=IMGmem depth=240*320*3" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:265:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="cnn_accel" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port=weights1 bundle=W1mem depth=8*3*3*3" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:266:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="cnn_accel" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port=bias1 bundle=B1mem depth=8" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:267:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="cnn_accel" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port=weights2 bundle=W2mem depth=16*8*3*3" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:268:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="cnn_accel" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port=bias2 bundle=B2mem depth=16" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:269:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="conv2" ARG_PragmaIsValid="1" ARG_PragmaOptions="factor=2" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+        <args ARG_PragmaFunction="cnn_accel" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port=FC1_W bundle=W3mem depth=32*(16*((((240 -3 +1)/2)-3 +1)/2)*((((320 -3 +1)/2)-3 +1)/2))" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:289:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="pool2" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=3" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:270:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="cnn_accel" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port=FC1_B bundle=B3mem depth=32" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:311:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="flatten" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=3" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:271:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="cnn_accel" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port=FC2_W bundle=W4mem depth=32" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:325:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="fc1" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=3" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:272:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="cnn_accel" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port=FC2_B bundle=B4mem depth=1" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:328:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="fc1" ARG_PragmaIsValid="1" ARG_PragmaOptions="factor=2" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:273:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="cnn_accel" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port=flag_out bundle=Foutmem depth=1" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:344:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="fc2" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=3" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:275:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="cnn_accel" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=ctrl bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib\hlsmath\src\c++\expfloat.cpp:17:9" msg_body="Inlining function 'exp_reduce_::exp(float)' into 'hls::exp(float)'">
-        <args Callee="exp_reduce_::exp(float)" Callee-DebugLoc="File {C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib\hlsmath\src\common\hls_exp_float.cpp} Line 15 Column 0" Caller="hls::exp(float)" Caller-DebugLoc="File {C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib\hlsmath\src\c++\expfloat.cpp} Line 15 Column 0"/>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:276:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="cnn_accel" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=return bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls_files/conv_pool.cpp:347:34" msg_body="Inlining function 'hls::exp(float)' into 'fc2(float const*, float const*, float const*, unsigned char*)'">
-        <args Callee="hls::exp(float)" Callee-DebugLoc="File {C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib\hlsmath\src\c++\expfloat.cpp} Line 15 Column 0" Caller="fc2(float const*, float const*, float const*, unsigned char*)" Caller-DebugLoc="File ../hls_files/conv_pool.cpp Line 341 Column 0"/>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:307:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="cnn_accel" ARG_PragmaIsValid="1" ARG_PragmaType="dataflow" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../hls_files/conv_pool.cpp:327:27" msg_body="Loop 'VITIS_LOOP_327_1' is marked as complete unroll implied by the pipeline pragma">
-        <args LoopName="VITIS_LOOP_327_1"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="C:/Xilinx/2025.1/Vitis/common/technology/autopilot/etc/hls_exp_apfixed.h:515:36" msg_body="Loop 'VITIS_LOOP_515_16' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_515_16"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../hls_files/conv_pool.cpp:266:27" msg_body="Loop 'CONV2_KR' is marked as complete unroll implied by the pipeline pragma">
-        <args LoopName="CONV2_KR"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="C:/Xilinx/2025.1/Vitis/common/technology/autopilot/etc/hls_exp_apfixed.h:511:36" msg_body="Loop 'VITIS_LOOP_511_15' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_511_15"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../hls_files/conv_pool.cpp:267:31" msg_body="Loop 'CONV2_KC' is marked as complete unroll implied by the pipeline pragma">
-        <args LoopName="CONV2_KC"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="C:/Xilinx/2025.1/Vitis/common/technology/autopilot/etc/hls_exp_apfixed.h:505:32" msg_body="Loop 'VITIS_LOOP_505_14' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_505_14"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../hls_files/conv_pool.cpp:268:35" msg_body="Loop 'CONV2_CH' is marked as complete unroll implied by the pipeline pragma">
-        <args LoopName="CONV2_CH"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="C:/Xilinx/2025.1/Vitis/common/technology/autopilot/etc/hls_exp_apfixed.h:276:36" msg_body="Loop 'VITIS_LOOP_276_13' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_276_13"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../hls_files/conv_pool.cpp:218:27" msg_body="Loop 'CONV1_KR' is marked as complete unroll implied by the pipeline pragma">
-        <args LoopName="CONV1_KR"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="C:/Xilinx/2025.1/Vitis/common/technology/autopilot/etc/hls_exp_apfixed.h:268:28" msg_body="Loop 'VITIS_LOOP_268_12' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_268_12"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../hls_files/conv_pool.cpp:219:31" msg_body="Loop 'CONV1_KC' is marked as complete unroll implied by the pipeline pragma">
-        <args LoopName="CONV1_KC"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../hls_files/conv_pool.cpp:226:23" msg_body="Loop 'VITIS_LOOP_226_2' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_226_2"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../hls_files/conv_pool.cpp:220:35" msg_body="Loop 'CONV1_CH' is marked as complete unroll implied by the pipeline pragma">
-        <args LoopName="CONV1_CH"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="C:/Xilinx/2025.1/Vitis/common/technology/autopilot/etc/hls_cordic_apfixed.h:743:23" msg_body="Loop 'VITIS_LOOP_743_1' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_743_1"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../hls_files/conv_pool.cpp:260:0" msg_body="Unrolling loop 'CONV2_KR' (../hls_files/conv_pool.cpp:266:27) in function 'conv2' completely with a factor of 3">
-        <args Factor="3" LoopLoc="../hls_files/conv_pool.cpp:266:27" LoopName="CONV2_KR"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../hls_files/conv_pool.cpp:141:20" msg_body="Loop 'VITIS_LOOP_141_1' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_141_1"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../hls_files/conv_pool.cpp:260:0" msg_body="Unrolling loop 'CONV2_KC' (../hls_files/conv_pool.cpp:267:31) in function 'conv2' completely with a factor of 3">
-        <args Factor="3" LoopLoc="../hls_files/conv_pool.cpp:267:31" LoopName="CONV2_KC"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../hls_files/conv_pool.cpp:148:27" msg_body="Loop 'VITIS_LOOP_148_2' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_148_2"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../hls_files/conv_pool.cpp:260:0" msg_body="Unrolling loop 'CONV2_CH' (../hls_files/conv_pool.cpp:268:35) in function 'conv2' completely with a factor of 8">
-        <args Factor="8" LoopLoc="../hls_files/conv_pool.cpp:268:35" LoopName="CONV2_CH"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../hls_files/conv_pool.cpp:149:27" msg_body="Loop 'VITIS_LOOP_149_3' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_149_3"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../hls_files/conv_pool.cpp:212:0" msg_body="Unrolling loop 'CONV1_KR' (../hls_files/conv_pool.cpp:218:27) in function 'conv1' completely with a factor of 3">
-        <args Factor="3" LoopLoc="../hls_files/conv_pool.cpp:218:27" LoopName="CONV1_KR"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../hls_files/conv_pool.cpp:161:29" msg_body="Loop 'VITIS_LOOP_161_5' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_161_5"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../hls_files/conv_pool.cpp:212:0" msg_body="Unrolling loop 'CONV1_KC' (../hls_files/conv_pool.cpp:219:31) in function 'conv1' completely with a factor of 3">
-        <args Factor="3" LoopLoc="../hls_files/conv_pool.cpp:219:31" LoopName="CONV1_KC"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../hls_files/conv_pool.cpp:162:29" msg_body="Loop 'VITIS_LOOP_162_6' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_162_6"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../hls_files/conv_pool.cpp:212:0" msg_body="Unrolling loop 'CONV1_CH' (../hls_files/conv_pool.cpp:220:35) in function 'conv1' completely with a factor of 3">
-        <args Factor="3" LoopLoc="../hls_files/conv_pool.cpp:220:35" LoopName="CONV1_CH"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../hls_files/conv_pool.cpp:163:29" msg_body="Loop 'VITIS_LOOP_163_7' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_163_7"/>
     </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h:322:0" msg_body="Inlining function 'fp_struct&lt;float&gt;::data() const (.35.45.54.65)' into 'fp_struct&lt;float&gt;::to_float() const (.32.42.51.62)'">
-        <args Callee="fp_struct&lt;float&gt;::data() const (.35.45.54.65)" Callee-DebugLoc="File {C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h} Line 309 Column 0" Caller="fp_struct&lt;float&gt;::to_float() const (.32.42.51.62)" Caller-DebugLoc="File {C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h} Line 322 Column 0"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../hls_files/conv_pool.cpp:58:19" msg_body="Loop 'VITIS_LOOP_58_1' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_58_1"/>
     </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h:346:0" msg_body="Inlining function 'fp_struct&lt;float&gt;::to_float() const (.32.42.51.62)' into 'fp_struct&lt;float&gt;::to_ieee() const'">
-        <args Callee="fp_struct&lt;float&gt;::to_float() const (.32.42.51.62)" Callee-DebugLoc="File {C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h} Line 322 Column 0" Caller="fp_struct&lt;float&gt;::to_ieee() const" Caller-DebugLoc="File {C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h} Line 346 Column 0"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../hls_files/conv_pool.cpp:66:26" msg_body="Loop 'VITIS_LOOP_66_2' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_66_2"/>
     </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_copysign.h:10:0" msg_body="Inlining function 'fp_struct&lt;float&gt;::fp_struct(float)' into 'float generic_copysign&lt;float&gt;(float, float)'">
-        <args Callee="fp_struct&lt;float&gt;::fp_struct(float)" Callee-DebugLoc="File {C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h} Line 283 Column 0" Caller="float generic_copysign&lt;float&gt;(float, float)" Caller-DebugLoc="File {C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_copysign.h} Line 10 Column 0"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../hls_files/conv_pool.cpp:67:28" msg_body="Loop 'VITIS_LOOP_67_3' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_67_3"/>
     </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_copysign.h:10:0" msg_body="Inlining function 'fp_struct&lt;float&gt;::to_ieee() const' into 'float generic_copysign&lt;float&gt;(float, float)'">
-        <args Callee="fp_struct&lt;float&gt;::to_ieee() const" Callee-DebugLoc="File {C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h} Line 346 Column 0" Caller="float generic_copysign&lt;float&gt;(float, float)" Caller-DebugLoc="File {C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_copysign.h} Line 10 Column 0"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../hls_files/conv_pool.cpp:85:28" msg_body="Loop 'VITIS_LOOP_85_5' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_85_5"/>
     </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_fabs.h:12:0" msg_body="Inlining function 'float generic_copysign&lt;float&gt;(float, float)' into 'float generic_fabs&lt;float&gt;(float)'">
-        <args Callee="float generic_copysign&lt;float&gt;(float, float)" Callee-DebugLoc="File {C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_copysign.h} Line 10 Column 0" Caller="float generic_fabs&lt;float&gt;(float)" Caller-DebugLoc="File {C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_fabs.h} Line 12 Column 0"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../hls_files/conv_pool.cpp:86:28" msg_body="Loop 'VITIS_LOOP_86_6' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_86_6"/>
     </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_nan.h:10:0" msg_body="Inlining function 'fp_struct&lt;float&gt;::to_ieee() const' into 'float generic_nan&lt;float&gt;(char const*)'">
-        <args Callee="fp_struct&lt;float&gt;::to_ieee() const" Callee-DebugLoc="File {C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h} Line 346 Column 0" Caller="float generic_nan&lt;float&gt;(char const*)" Caller-DebugLoc="File {C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_nan.h} Line 10 Column 0"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../hls_files/conv_pool.cpp:87:28" msg_body="Loop 'VITIS_LOOP_87_7' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_87_7"/>
     </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_isnan.h:16:0" msg_body="Inlining function 'fp_struct&lt;double&gt;::fp_struct(double)' into 'int generic_isnan&lt;double&gt;(double)'">
-        <args Callee="fp_struct&lt;double&gt;::fp_struct(double)" Callee-DebugLoc="File {C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h} Line 456 Column 0" Caller="int generic_isnan&lt;double&gt;(double)" Caller-DebugLoc="File {C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_isnan.h} Line 16 Column 0"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="C:/Xilinx/2025.1/Vitis/common/technology/autopilot/etc/hls_exp_apfixed.h:14:0" msg_body="Unrolling loop 'VITIS_LOOP_515_16' (C:/Xilinx/2025.1/Vitis/common/technology/autopilot/etc/hls_exp_apfixed.h:515:36) in function 'exp_reduce::exp&lt;17, 5&gt;' completely with a factor of 27">
+        <args Factor="27" LoopLoc="C:/Xilinx/2025.1/Vitis/common/technology/autopilot/etc/hls_exp_apfixed.h:515:36" LoopName="VITIS_LOOP_515_16"/>
     </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_isinf.h:16:0" msg_body="Inlining function 'fp_struct&lt;double&gt;::fp_struct(double)' into 'int generic_isinf&lt;double&gt;(double)'">
-        <args Callee="fp_struct&lt;double&gt;::fp_struct(double)" Callee-DebugLoc="File {C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h} Line 456 Column 0" Caller="int generic_isinf&lt;double&gt;(double)" Caller-DebugLoc="File {C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_isinf.h} Line 16 Column 0"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="C:/Xilinx/2025.1/Vitis/common/technology/autopilot/etc/hls_exp_apfixed.h:14:0" msg_body="Unrolling loop 'VITIS_LOOP_511_15' (C:/Xilinx/2025.1/Vitis/common/technology/autopilot/etc/hls_exp_apfixed.h:511:36) in function 'exp_reduce::exp&lt;17, 5&gt;' completely with a factor of 19">
+        <args Factor="19" LoopLoc="C:/Xilinx/2025.1/Vitis/common/technology/autopilot/etc/hls_exp_apfixed.h:511:36" LoopName="VITIS_LOOP_511_15"/>
     </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h:494:0" msg_body="Inlining function 'fp_struct&lt;double&gt;::data() const (.96.106.116.134)' into 'fp_struct&lt;double&gt;::to_double() const (.93.103.113.131)'">
-        <args Callee="fp_struct&lt;double&gt;::data() const (.96.106.116.134)" Callee-DebugLoc="File {C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h} Line 475 Column 0" Caller="fp_struct&lt;double&gt;::to_double() const (.93.103.113.131)" Caller-DebugLoc="File {C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h} Line 494 Column 0"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="C:/Xilinx/2025.1/Vitis/common/technology/autopilot/etc/hls_exp_apfixed.h:14:0" msg_body="Unrolling loop 'VITIS_LOOP_505_14' (C:/Xilinx/2025.1/Vitis/common/technology/autopilot/etc/hls_exp_apfixed.h:505:32) in function 'exp_reduce::exp&lt;17, 5&gt;' completely with a factor of 19">
+        <args Factor="19" LoopLoc="C:/Xilinx/2025.1/Vitis/common/technology/autopilot/etc/hls_exp_apfixed.h:505:32" LoopName="VITIS_LOOP_505_14"/>
     </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h:509:0" msg_body="Inlining function 'fp_struct&lt;double&gt;::to_double() const (.93.103.113.131)' into 'fp_struct&lt;double&gt;::to_ieee() const'">
-        <args Callee="fp_struct&lt;double&gt;::to_double() const (.93.103.113.131)" Callee-DebugLoc="File {C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h} Line 494 Column 0" Caller="fp_struct&lt;double&gt;::to_ieee() const" Caller-DebugLoc="File {C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h} Line 509 Column 0"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="C:/Xilinx/2025.1/Vitis/common/technology/autopilot/etc/hls_exp_apfixed.h:14:0" msg_body="Unrolling loop 'VITIS_LOOP_276_13' (C:/Xilinx/2025.1/Vitis/common/technology/autopilot/etc/hls_exp_apfixed.h:276:36) in function 'exp_reduce::exp&lt;17, 5&gt;' completely with a factor of 46">
+        <args Factor="46" LoopLoc="C:/Xilinx/2025.1/Vitis/common/technology/autopilot/etc/hls_exp_apfixed.h:276:36" LoopName="VITIS_LOOP_276_13"/>
     </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h:157:0" msg_body="Inlining function 'fp_struct&lt;double&gt;::fp_struct(double)' into 'double exp_reduce_::exp_generic&lt;double&gt;(double)'">
-        <args Callee="fp_struct&lt;double&gt;::fp_struct(double)" Callee-DebugLoc="File {C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h} Line 456 Column 0" Caller="double exp_reduce_::exp_generic&lt;double&gt;(double)" Caller-DebugLoc="File {C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h} Line 157 Column 0"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="C:/Xilinx/2025.1/Vitis/common/technology/autopilot/etc/hls_exp_apfixed.h:14:0" msg_body="Unrolling loop 'VITIS_LOOP_268_12' (C:/Xilinx/2025.1/Vitis/common/technology/autopilot/etc/hls_exp_apfixed.h:268:28) in function 'exp_reduce::exp&lt;17, 5&gt;' completely with a factor of 19">
+        <args Factor="19" LoopLoc="C:/Xilinx/2025.1/Vitis/common/technology/autopilot/etc/hls_exp_apfixed.h:268:28" LoopName="VITIS_LOOP_268_12"/>
     </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h:157:0" msg_body="Inlining function 'int generic_isnan&lt;double&gt;(double)' into 'double exp_reduce_::exp_generic&lt;double&gt;(double)'">
-        <args Callee="int generic_isnan&lt;double&gt;(double)" Callee-DebugLoc="File {C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_isnan.h} Line 16 Column 0" Caller="double exp_reduce_::exp_generic&lt;double&gt;(double)" Caller-DebugLoc="File {C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h} Line 157 Column 0"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="C:/Xilinx/2025.1/Vitis/common/technology/autopilot/etc/hls_cordic_apfixed.h:735:0" msg_body="Unrolling loop 'VITIS_LOOP_743_1' (C:/Xilinx/2025.1/Vitis/common/technology/autopilot/etc/hls_cordic_apfixed.h:743:23) in function 'cordic_apfixed::cordic_hyperb_apfixed&lt;18, 2, 0&gt;' completely with a factor of 19">
+        <args Factor="19" LoopLoc="C:/Xilinx/2025.1/Vitis/common/technology/autopilot/etc/hls_cordic_apfixed.h:743:23" LoopName="VITIS_LOOP_743_1"/>
     </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h:157:0" msg_body="Inlining function 'int generic_isinf&lt;double&gt;(double)' into 'double exp_reduce_::exp_generic&lt;double&gt;(double)'">
-        <args Callee="int generic_isinf&lt;double&gt;(double)" Callee-DebugLoc="File {C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_isinf.h} Line 16 Column 0" Caller="double exp_reduce_::exp_generic&lt;double&gt;(double)" Caller-DebugLoc="File {C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h} Line 157 Column 0"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../hls_files/conv_pool.cpp:132:0" msg_body="Unrolling loop 'VITIS_LOOP_141_1' (../hls_files/conv_pool.cpp:141:20) in function 'conv2_stream' completely with a factor of 1">
+        <args Factor="1" LoopLoc="../hls_files/conv_pool.cpp:141:20" LoopName="VITIS_LOOP_141_1"/>
     </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h:157:0" msg_body="Inlining function 'fp_struct&lt;double&gt;::to_ieee() const' into 'double exp_reduce_::exp_generic&lt;double&gt;(double)'">
-        <args Callee="fp_struct&lt;double&gt;::to_ieee() const" Callee-DebugLoc="File {C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h} Line 509 Column 0" Caller="double exp_reduce_::exp_generic&lt;double&gt;(double)" Caller-DebugLoc="File {C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h} Line 157 Column 0"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../hls_files/conv_pool.cpp:132:0" msg_body="Unrolling loop 'VITIS_LOOP_148_2' (../hls_files/conv_pool.cpp:148:27) in function 'conv2_stream' completely with a factor of 3">
+        <args Factor="3" LoopLoc="../hls_files/conv_pool.cpp:148:27" LoopName="VITIS_LOOP_148_2"/>
     </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h:157:0" msg_body="Inlining function 'fp_struct&lt;double&gt;::expv() const' into 'double exp_reduce_::exp_generic&lt;double&gt;(double)'">
-        <args Callee="fp_struct&lt;double&gt;::expv() const" Callee-DebugLoc="File {C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h} Line 485 Column 0" Caller="double exp_reduce_::exp_generic&lt;double&gt;(double)" Caller-DebugLoc="File {C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h} Line 157 Column 0"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../hls_files/conv_pool.cpp:132:0" msg_body="Unrolling loop 'VITIS_LOOP_149_3' (../hls_files/conv_pool.cpp:149:27) in function 'conv2_stream' completely with a factor of 3">
+        <args Factor="3" LoopLoc="../hls_files/conv_pool.cpp:149:27" LoopName="VITIS_LOOP_149_3"/>
     </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h:157:0" msg_body="Inlining function 'exp_reduce_::exp_traits&lt;double&gt;::exp_Z1P_m_1(ap_ufixed&lt;51, -8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;)' into 'double exp_reduce_::exp_generic&lt;double&gt;(double)'">
-        <args Callee="exp_reduce_::exp_traits&lt;double&gt;::exp_Z1P_m_1(ap_ufixed&lt;51, -8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;)" Callee-DebugLoc="File {C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h} Line 90 Column 0" Caller="double exp_reduce_::exp_generic&lt;double&gt;(double)" Caller-DebugLoc="File {C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_exp_.h} Line 157 Column 0"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../hls_files/conv_pool.cpp:132:0" msg_body="Unrolling loop 'VITIS_LOOP_161_5' (../hls_files/conv_pool.cpp:161:29) in function 'conv2_stream' completely with a factor of 3">
+        <args Factor="3" LoopLoc="../hls_files/conv_pool.cpp:161:29" LoopName="VITIS_LOOP_161_5"/>
     </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib\hlsmath\src\common\hls_exp_float.cpp:7:0" msg_body="Inlining function 'fp_struct&lt;float&gt;::fp_struct(float)' into 'exp_reduce_::expm1(float)'">
-        <args Callee="fp_struct&lt;float&gt;::fp_struct(float)" Callee-DebugLoc="File {C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h} Line 283 Column 0" Caller="exp_reduce_::expm1(float)" Caller-DebugLoc="File {C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib\hlsmath\src\common\hls_exp_float.cpp} Line 7 Column 0"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../hls_files/conv_pool.cpp:132:0" msg_body="Unrolling loop 'VITIS_LOOP_162_6' (../hls_files/conv_pool.cpp:162:29) in function 'conv2_stream' completely with a factor of 3">
+        <args Factor="3" LoopLoc="../hls_files/conv_pool.cpp:162:29" LoopName="VITIS_LOOP_162_6"/>
     </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h:28:0" msg_body="Inlining function 'fp_struct&lt;float&gt;::fp_struct(float)' into 'float explog_based::generic_tanh&lt;float&gt;(float)'">
-        <args Callee="fp_struct&lt;float&gt;::fp_struct(float)" Callee-DebugLoc="File {C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h} Line 283 Column 0" Caller="float explog_based::generic_tanh&lt;float&gt;(float)" Caller-DebugLoc="File {C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h} Line 28 Column 0"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../hls_files/conv_pool.cpp:132:0" msg_body="Unrolling loop 'VITIS_LOOP_163_7' (../hls_files/conv_pool.cpp:163:29) in function 'conv2_stream' completely with a factor of 8">
+        <args Factor="8" LoopLoc="../hls_files/conv_pool.cpp:163:29" LoopName="VITIS_LOOP_163_7"/>
     </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h:28:0" msg_body="Inlining function 'float generic_fabs&lt;float&gt;(float)' into 'float explog_based::generic_tanh&lt;float&gt;(float)'">
-        <args Callee="float generic_fabs&lt;float&gt;(float)" Callee-DebugLoc="File {C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_fabs.h} Line 12 Column 0" Caller="float explog_based::generic_tanh&lt;float&gt;(float)" Caller-DebugLoc="File {C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h} Line 28 Column 0"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../hls_files/conv_pool.cpp:48:0" msg_body="Unrolling loop 'VITIS_LOOP_58_1' (../hls_files/conv_pool.cpp:58:19) in function 'conv1_stream' completely with a factor of 1">
+        <args Factor="1" LoopLoc="../hls_files/conv_pool.cpp:58:19" LoopName="VITIS_LOOP_58_1"/>
     </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h:28:0" msg_body="Inlining function 'float generic_nan&lt;float&gt;(char const*)' into 'float explog_based::generic_tanh&lt;float&gt;(float)'">
-        <args Callee="float generic_nan&lt;float&gt;(char const*)" Callee-DebugLoc="File {C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_nan.h} Line 10 Column 0" Caller="float explog_based::generic_tanh&lt;float&gt;(float)" Caller-DebugLoc="File {C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h} Line 28 Column 0"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../hls_files/conv_pool.cpp:48:0" msg_body="Unrolling loop 'VITIS_LOOP_66_2' (../hls_files/conv_pool.cpp:66:26) in function 'conv1_stream' completely with a factor of 3">
+        <args Factor="3" LoopLoc="../hls_files/conv_pool.cpp:66:26" LoopName="VITIS_LOOP_66_2"/>
     </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h:28:0" msg_body="Inlining function 'exp_reduce_::expm1(float)' into 'float explog_based::generic_tanh&lt;float&gt;(float)'">
-        <args Callee="exp_reduce_::expm1(float)" Callee-DebugLoc="File {C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib\hlsmath\src\common\hls_exp_float.cpp} Line 7 Column 0" Caller="float explog_based::generic_tanh&lt;float&gt;(float)" Caller-DebugLoc="File {C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_tanh.h} Line 28 Column 0"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../hls_files/conv_pool.cpp:48:0" msg_body="Unrolling loop 'VITIS_LOOP_67_3' (../hls_files/conv_pool.cpp:67:28) in function 'conv1_stream' completely with a factor of 3">
+        <args Factor="3" LoopLoc="../hls_files/conv_pool.cpp:67:28" LoopName="VITIS_LOOP_67_3"/>
     </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../hls_files/conv_pool.cpp:323:0" msg_body="Inlining function 'hls::tanh(float)' into 'fc1(float const*, int, float const*, float const*, float*)'">
-        <args Callee="hls::tanh(float)" Callee-DebugLoc="File {C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib\hlsmath\src\c++\tanhfloat.cpp} Line 6 Column 0" Caller="fc1(float const*, int, float const*, float const*, float*)" Caller-DebugLoc="File ../hls_files/conv_pool.cpp Line 323 Column 0"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../hls_files/conv_pool.cpp:48:0" msg_body="Unrolling loop 'VITIS_LOOP_85_5' (../hls_files/conv_pool.cpp:85:28) in function 'conv1_stream' completely with a factor of 3">
+        <args Factor="3" LoopLoc="../hls_files/conv_pool.cpp:85:28" LoopName="VITIS_LOOP_85_5"/>
     </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../hls_files/conv_pool.cpp:97:0" msg_body="Applying array_partition to '_ZZ9cnn_accelE7feat2_p': Block partitioning with factor 4 on dimension 3.">
-        <args Dim="3" Factor="4" Mode="Block" UOName="_ZZ9cnn_accelE7feat2_p"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../hls_files/conv_pool.cpp:48:0" msg_body="Unrolling loop 'VITIS_LOOP_86_6' (../hls_files/conv_pool.cpp:86:28) in function 'conv1_stream' completely with a factor of 3">
+        <args Factor="3" LoopLoc="../hls_files/conv_pool.cpp:86:28" LoopName="VITIS_LOOP_86_6"/>
     </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../hls_files/conv_pool.cpp:96:0" msg_body="Applying array_partition to '_ZZ9cnn_accelE5feat2': Block partitioning with factor 4 on dimension 3.">
-        <args Dim="3" Factor="4" Mode="Block" UOName="_ZZ9cnn_accelE5feat2"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../hls_files/conv_pool.cpp:48:0" msg_body="Unrolling loop 'VITIS_LOOP_87_7' (../hls_files/conv_pool.cpp:87:28) in function 'conv1_stream' completely with a factor of 3">
+        <args Factor="3" LoopLoc="../hls_files/conv_pool.cpp:87:28" LoopName="VITIS_LOOP_87_7"/>
     </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../hls_files/conv_pool.cpp:95:0" msg_body="Applying array_partition to '_ZZ9cnn_accelE7feat1_p': Block partitioning with factor 4 on dimension 3.">
-        <args Dim="3" Factor="4" Mode="Block" UOName="_ZZ9cnn_accelE7feat1_p"/>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="C:/Xilinx/2025.1/Vitis/common/technology/autopilot/etc/hls_cordic_apfixed.h:870:0" msg_body="Inlining function 'void cordic_apfixed::hyperb_range_redux&lt;16, 4, 16&gt;(ap_ufixed&lt;16, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_uint&lt;(4) + (1)&gt;&amp;, ap_ufixed&lt;16, 0, (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;)' into 'void cordic_apfixed::tanh_range_redux_cordic&lt;16, 4&gt;(ap_fixed&lt;16, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;16, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;)'">
+        <args Callee="void cordic_apfixed::hyperb_range_redux&lt;16, 4, 16&gt;(ap_ufixed&lt;16, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_uint&lt;(4) + (1)&gt;&amp;, ap_ufixed&lt;16, 0, (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;)" Callee-DebugLoc="File C:/Xilinx/2025.1/Vitis/common/technology/autopilot/etc/hls_cordic_apfixed.h Line 717 Column 0" Caller="void cordic_apfixed::tanh_range_redux_cordic&lt;16, 4&gt;(ap_fixed&lt;16, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;16, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;)" Caller-DebugLoc="File C:/Xilinx/2025.1/Vitis/common/technology/autopilot/etc/hls_cordic_apfixed.h Line 870 Column 0"/>
     </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../hls_files/conv_pool.cpp:94:0" msg_body="Applying array_partition to '_ZZ9cnn_accelE5feat1': Block partitioning with factor 4 on dimension 3.">
-        <args Dim="3" Factor="4" Mode="Block" UOName="_ZZ9cnn_accelE5feat1"/>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="C:/Xilinx/2025.1/Vitis/common/technology/autopilot/etc/hls_cordic_apfixed.h:905:0" msg_body="Inlining function 'void cordic_apfixed::tanh_range_redux_cordic&lt;16, 4&gt;(ap_fixed&lt;16, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;16, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;)' into 'ap_fixed&lt;16, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt; cordic_apfixed::generic_tanh&lt;16, 4&gt;(ap_fixed&lt;16, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;)'">
+        <args Callee="void cordic_apfixed::tanh_range_redux_cordic&lt;16, 4&gt;(ap_fixed&lt;16, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;16, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;)" Callee-DebugLoc="File C:/Xilinx/2025.1/Vitis/common/technology/autopilot/etc/hls_cordic_apfixed.h Line 870 Column 0" Caller="ap_fixed&lt;16, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt; cordic_apfixed::generic_tanh&lt;16, 4&gt;(ap_fixed&lt;16, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;)" Caller-DebugLoc="File C:/Xilinx/2025.1/Vitis/common/technology/autopilot/etc/hls_cordic_apfixed.h Line 905 Column 0"/>
     </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../hls_files/conv_pool.cpp:110:0" msg_body="Applying array_partition to '_ZZ9cnn_accelE11fc2_b_local': Complete partitioning on dimension 1.">
-        <args Dim="1" Mode="Complete" UOName="_ZZ9cnn_accelE11fc2_b_local"/>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="C:/Xilinx/2025.1/Vitis/common/technology/autopilot\hls_math.h:1562:0" msg_body="Inlining function 'ap_fixed&lt;16, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt; cordic_apfixed::generic_tanh&lt;16, 4&gt;(ap_fixed&lt;16, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;)' into 'ap_fixed&lt;16, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt; hls::tanh&lt;16, 4&gt;(ap_fixed&lt;16, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;)'">
+        <args Callee="ap_fixed&lt;16, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt; cordic_apfixed::generic_tanh&lt;16, 4&gt;(ap_fixed&lt;16, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;)" Callee-DebugLoc="File C:/Xilinx/2025.1/Vitis/common/technology/autopilot/etc/hls_cordic_apfixed.h Line 905 Column 0" Caller="ap_fixed&lt;16, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt; hls::tanh&lt;16, 4&gt;(ap_fixed&lt;16, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;)" Caller-DebugLoc="File {C:/Xilinx/2025.1/Vitis/common/technology/autopilot\hls_math.h} Line 1562 Column 0"/>
     </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../hls_files/conv_pool.cpp:109:0" msg_body="Applying array_partition to '_ZZ9cnn_accelE11fc2_w_local': Complete partitioning on dimension 1.">
-        <args Dim="1" Mode="Complete" UOName="_ZZ9cnn_accelE11fc2_w_local"/>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../hls_files/conv_pool.cpp:222:0" msg_body="Inlining function 'ap_fixed&lt;16, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt; hls::tanh&lt;16, 4&gt;(ap_fixed&lt;16, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;)' into 'fc1(ap_fixed&lt;16, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, int, ap_fixed&lt;16, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, ap_fixed&lt;16, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, ap_fixed&lt;16, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)'">
+        <args Callee="ap_fixed&lt;16, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt; hls::tanh&lt;16, 4&gt;(ap_fixed&lt;16, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;)" Callee-DebugLoc="File {C:/Xilinx/2025.1/Vitis/common/technology/autopilot\hls_math.h} Line 1562 Column 0" Caller="fc1(ap_fixed&lt;16, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, int, ap_fixed&lt;16, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, ap_fixed&lt;16, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, ap_fixed&lt;16, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)" Caller-DebugLoc="File ../hls_files/conv_pool.cpp Line 222 Column 0"/>
     </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../hls_files/conv_pool.cpp:108:0" msg_body="Applying array_partition to '_ZZ9cnn_accelE11fc1_b_local': Complete partitioning on dimension 1.">
-        <args Dim="1" Mode="Complete" UOName="_ZZ9cnn_accelE11fc1_b_local"/>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../hls_files/conv_pool.cpp:241:0" msg_body="Inlining function 'ap_fixed&lt;17, 5, (ap_q_mode)5, (ap_o_mode)3, 0&gt; hls::exp&lt;17, 5&gt;(ap_fixed&lt;17, 5, (ap_q_mode)5, (ap_o_mode)3, 0&gt;)' into 'fc2(ap_fixed&lt;16, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, ap_fixed&lt;16, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, ap_fixed&lt;16, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, unsigned char*)'">
+        <args Callee="ap_fixed&lt;17, 5, (ap_q_mode)5, (ap_o_mode)3, 0&gt; hls::exp&lt;17, 5&gt;(ap_fixed&lt;17, 5, (ap_q_mode)5, (ap_o_mode)3, 0&gt;)" Callee-DebugLoc="File {C:/Xilinx/2025.1/Vitis/common/technology/autopilot\hls_math.h} Line 1177 Column 0" Caller="fc2(ap_fixed&lt;16, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, ap_fixed&lt;16, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, ap_fixed&lt;16, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, unsigned char*)" Caller-DebugLoc="File ../hls_files/conv_pool.cpp Line 241 Column 0"/>
     </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../hls_files/conv_pool.cpp:107:0" msg_body="Applying array_partition to '_ZZ9cnn_accelE11fc1_w_local': Cyclic partitioning with factor 8 on dimension 1.">
-        <args Dim="1" Factor="8" Mode="Cyclic" UOName="_ZZ9cnn_accelE11fc1_w_local"/>
+    <msg msg_groups="AUTOMATION" msg_id="214-364" msg_severity="INFO" msg_loc="C:/Xilinx/2025.1/Vitis/common/technology/autopilot/etc/hls_cordic_apfixed.h:895:9" msg_body="Automatically inlining function 'void cordic_apfixed::cordic_hyperb_apfixed&lt;18, 2, 0&gt;(ap_fixed&lt;18, 2, (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;, ap_fixed&lt;18, 2, (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;, ap_fixed&lt;18, 2, (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;)' to improve effectiveness of pipeline pragma in function 'fc1(ap_fixed&lt;16, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, int, ap_fixed&lt;16, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, ap_fixed&lt;16, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, ap_fixed&lt;16, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)'">
+        <args Callee="void cordic_apfixed::cordic_hyperb_apfixed&lt;18, 2, 0&gt;(ap_fixed&lt;18, 2, (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;, ap_fixed&lt;18, 2, (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;, ap_fixed&lt;18, 2, (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;)" Callee-DebugLoc="File C:/Xilinx/2025.1/Vitis/common/technology/autopilot/etc/hls_cordic_apfixed.h Line 735 Column 0" Caller="fc1(ap_fixed&lt;16, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, int, ap_fixed&lt;16, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, ap_fixed&lt;16, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, ap_fixed&lt;16, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)" Caller-DebugLoc="File ../hls_files/conv_pool.cpp Line 222 Column 0"/>
     </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../hls_files/conv_pool.cpp:106:0" msg_body="Applying array_partition to '_ZZ9cnn_accelE8b2_local': Complete partitioning on dimension 1.">
-        <args Dim="1" Mode="Complete" UOName="_ZZ9cnn_accelE8b2_local"/>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-437" msg_severity="INFO" msg_loc="../hls_files/conv_pool.cpp:223:21" msg_body="Automatically disabling loop flattening for loop 'VITIS_LOOP_223_1'.">
+        <args LoopName="VITIS_LOOP_223_1"/>
     </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../hls_files/conv_pool.cpp:105:0" msg_body="Applying array_partition to '_ZZ9cnn_accelE8w2_local': Complete partitioning on dimension 1.">
-        <args Dim="1" Mode="Complete" UOName="_ZZ9cnn_accelE8w2_local"/>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="../hls_files/conv_pool.cpp:223:21" msg_body="loop_flatten 0 1 fc1 ../hls_files/conv_pool.cpp:223:21VITIS_LOOP_223_1 ../hls_files/conv_pool.cpp:223:21">
+        <args LoopLoc="../hls_files/conv_pool.cpp:223:21" LoopLoc-DebugLoc="File ../hls_files/conv_pool.cpp Line 223 Column 21" LoopName="VITIS_LOOP_223_1" PragmaFunction="fc1" PragmaIsAuto="1" PragmaOptions="0" PragmaSrcLoc="../hls_files/conv_pool.cpp:223:21" PragmaSrcLoc-DebugLoc="File ../hls_files/conv_pool.cpp Line 223 Column 21" PragmaType="loop_flatten"/>
     </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../hls_files/conv_pool.cpp:104:0" msg_body="Applying array_partition to '_ZZ9cnn_accelE8b1_local': Complete partitioning on dimension 1.">
-        <args Dim="1" Mode="Complete" UOName="_ZZ9cnn_accelE8b1_local"/>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-449" msg_severity="INFO" msg_loc="../hls_files/conv_pool.cpp:50:0" msg_body="Automatically partitioning array '_ZZ12conv1_streamRN3hls6streamI8ap_fixedILi16ELi4EL9ap_q_mode5EL9ap_o_mode3ELi0EELi0EEEPKS4_S8_S6_E7linebuf' dimension 1 completely based on constant index.">
+        <args Dim="1" Value="_ZZ12conv1_streamRN3hls6streamI8ap_fixedILi16ELi4EL9ap_q_mode5EL9ap_o_mode3ELi0EELi0EEEPKS4_S8_S6_E7linebuf"/>
     </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../hls_files/conv_pool.cpp:103:0" msg_body="Applying array_partition to '_ZZ9cnn_accelE8w1_local': Complete partitioning on dimension 1.">
-        <args Dim="1" Mode="Complete" UOName="_ZZ9cnn_accelE8w1_local"/>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-449" msg_severity="INFO" msg_loc="../hls_files/conv_pool.cpp:133:0" msg_body="Automatically partitioning array '_ZZ12conv2_streamRN3hls6streamI8ap_fixedILi16ELi4EL9ap_q_mode5EL9ap_o_mode3ELi0EELi0EEEPKS4_S8_S6_E7linebuf' dimension 1 completely based on constant index.">
+        <args Dim="1" Value="_ZZ12conv2_streamRN3hls6streamI8ap_fixedILi16ELi4EL9ap_q_mode5EL9ap_o_mode3ELi0EELi0EEEPKS4_S8_S6_E7linebuf"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-187" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:327:27" msg_body="Cannot unroll loop 'VITIS_LOOP_327_1' (../hls_files/conv_pool.cpp:327:27) in function 'fc1' as it has a variable trip count">
-        <args LoopLoc="../hls_files/conv_pool.cpp:327:27" LoopName="VITIS_LOOP_327_1"/>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-449" msg_severity="INFO" msg_loc="../hls_files/conv_pool.cpp:51:10" msg_body="Automatically partitioning array 'window' dimension 1 completely based on constant index.">
+        <args Dim="1" Value="window"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-449" msg_severity="INFO" msg_loc="../hls_files/conv_pool.cpp:51:10" msg_body="Automatically partitioning array 'window' dimension 2 completely based on constant index.">
+        <args Dim="2" Value="window"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-449" msg_severity="INFO" msg_loc="../hls_files/conv_pool.cpp:134:10" msg_body="Automatically partitioning array 'window' dimension 1 completely based on constant index.">
+        <args Dim="1" Value="window"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-449" msg_severity="INFO" msg_loc="../hls_files/conv_pool.cpp:134:10" msg_body="Automatically partitioning array 'window' dimension 2 completely based on constant index.">
+        <args Dim="2" Value="window"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="../hls_files/conv_pool.cpp:50:0" msg_body="array_partition dim=1 type=complete  variable=_ZZ12conv1_streamRN3hls6streamI8ap_fixedILi16ELi4EL9ap_q_mode5EL9ap_o_mode3ELi0EELi0EEEPKS4_S8_S6_E7linebuf 1 cnn_accel ../hls_files/conv_pool.cpp:50:0 conv1_stream(hls::stream&lt;ap_fixed&lt;16, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 0&gt;&amp;, ap_fixed&lt;16, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, ap_fixed&lt;16, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, hls::stream&lt;ap_fixed&lt;16, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 0&gt;&amp;)::linebuf">
+        <args PragmaFunction="cnn_accel" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=_ZZ12conv1_streamRN3hls6streamI8ap_fixedILi16ELi4EL9ap_q_mode5EL9ap_o_mode3ELi0EELi0EEEPKS4_S8_S6_E7linebuf" PragmaType="array_partition" VarName="conv1_stream(hls::stream&lt;ap_fixed&lt;16, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 0&gt;&amp;, ap_fixed&lt;16, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, ap_fixed&lt;16, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, hls::stream&lt;ap_fixed&lt;16, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 0&gt;&amp;)::linebuf" varLoc="../hls_files/conv_pool.cpp:50:0"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="../hls_files/conv_pool.cpp:50:0" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'conv1_stream(hls::stream&lt;ap_fixed&lt;16, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 0&gt;&amp;, ap_fixed&lt;16, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, ap_fixed&lt;16, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, hls::stream&lt;ap_fixed&lt;16, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 0&gt;&amp;)::linebuf' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="conv1_stream(hls::stream&lt;ap_fixed&lt;16, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 0&gt;&amp;, ap_fixed&lt;16, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, ap_fixed&lt;16, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, hls::stream&lt;ap_fixed&lt;16, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 0&gt;&amp;)::linebuf" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="../hls_files/conv_pool.cpp:133:0" msg_body="array_partition dim=1 type=complete  variable=_ZZ12conv2_streamRN3hls6streamI8ap_fixedILi16ELi4EL9ap_q_mode5EL9ap_o_mode3ELi0EELi0EEEPKS4_S8_S6_E7linebuf 1 cnn_accel ../hls_files/conv_pool.cpp:133:0 conv2_stream(hls::stream&lt;ap_fixed&lt;16, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 0&gt;&amp;, ap_fixed&lt;16, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, ap_fixed&lt;16, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, hls::stream&lt;ap_fixed&lt;16, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 0&gt;&amp;)::linebuf">
+        <args PragmaFunction="cnn_accel" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=_ZZ12conv2_streamRN3hls6streamI8ap_fixedILi16ELi4EL9ap_q_mode5EL9ap_o_mode3ELi0EELi0EEEPKS4_S8_S6_E7linebuf" PragmaType="array_partition" VarName="conv2_stream(hls::stream&lt;ap_fixed&lt;16, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 0&gt;&amp;, ap_fixed&lt;16, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, ap_fixed&lt;16, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, hls::stream&lt;ap_fixed&lt;16, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 0&gt;&amp;)::linebuf" varLoc="../hls_files/conv_pool.cpp:133:0"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="../hls_files/conv_pool.cpp:133:0" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'conv2_stream(hls::stream&lt;ap_fixed&lt;16, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 0&gt;&amp;, ap_fixed&lt;16, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, ap_fixed&lt;16, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, hls::stream&lt;ap_fixed&lt;16, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 0&gt;&amp;)::linebuf' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="conv2_stream(hls::stream&lt;ap_fixed&lt;16, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 0&gt;&amp;, ap_fixed&lt;16, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, ap_fixed&lt;16, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, hls::stream&lt;ap_fixed&lt;16, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 0&gt;&amp;)::linebuf" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="../hls_files/conv_pool.cpp:51:10" msg_body="array_partition dim=1 type=complete  variable=window 1 conv1_stream ../hls_files/conv_pool.cpp:51:10 window">
+        <args PragmaFunction="conv1_stream" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=window" PragmaType="array_partition" VarName="window" varLoc="../hls_files/conv_pool.cpp:51:10"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="../hls_files/conv_pool.cpp:51:10" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'window' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="window" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="../hls_files/conv_pool.cpp:51:10" msg_body="array_partition dim=2 type=complete  variable=window 1 conv1_stream ../hls_files/conv_pool.cpp:51:10 window">
+        <args PragmaFunction="conv1_stream" PragmaIsAuto="1" PragmaOptions="dim=2 type=complete  variable=window" PragmaType="array_partition" VarName="window" varLoc="../hls_files/conv_pool.cpp:51:10"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="../hls_files/conv_pool.cpp:51:10" msg_body="Inferring pragma 'array_partition type=complete dim=2' for array 'window' due to pipeline pragma">
+        <args Dim="2" Mode="complete" Name="window" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="../hls_files/conv_pool.cpp:134:10" msg_body="array_partition dim=1 type=complete  variable=window 1 conv2_stream ../hls_files/conv_pool.cpp:134:10 window">
+        <args PragmaFunction="conv2_stream" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=window" PragmaType="array_partition" VarName="window" varLoc="../hls_files/conv_pool.cpp:134:10"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="../hls_files/conv_pool.cpp:134:10" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'window' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="window" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="../hls_files/conv_pool.cpp:134:10" msg_body="array_partition dim=2 type=complete  variable=window 1 conv2_stream ../hls_files/conv_pool.cpp:134:10 window">
+        <args PragmaFunction="conv2_stream" PragmaIsAuto="1" PragmaOptions="dim=2 type=complete  variable=window" PragmaType="array_partition" VarName="window" varLoc="../hls_files/conv_pool.cpp:134:10"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="../hls_files/conv_pool.cpp:134:10" msg_body="Inferring pragma 'array_partition type=complete dim=2' for array 'window' due to pipeline pragma">
+        <args Dim="2" Mode="complete" Name="window" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../hls_files/conv_pool.cpp:133:0" msg_body="Applying array_partition to '_ZZ12conv2_streamRN3hls6streamI8ap_fixedILi16ELi4EL9ap_q_mode5EL9ap_o_mode3ELi0EELi0EEEPKS4_S8_S6_E7linebuf': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZZ12conv2_streamRN3hls6streamI8ap_fixedILi16ELi4EL9ap_q_mode5EL9ap_o_mode3ELi0EELi0EEEPKS4_S8_S6_E7linebuf"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../hls_files/conv_pool.cpp:50:0" msg_body="Applying array_partition to '_ZZ12conv1_streamRN3hls6streamI8ap_fixedILi16ELi4EL9ap_q_mode5EL9ap_o_mode3ELi0EELi0EEEPKS4_S8_S6_E7linebuf': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZZ12conv1_streamRN3hls6streamI8ap_fixedILi16ELi4EL9ap_q_mode5EL9ap_o_mode3ELi0EELi0EEEPKS4_S8_S6_E7linebuf"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../hls_files/conv_pool.cpp:51:10" msg_body="Applying array_partition to 'window': Complete partitioning on dimension 1. Complete partitioning on dimension 2.">
+        <args Dim="islist 1 2" Mode="islist Complete Complete" UOName="window"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../hls_files/conv_pool.cpp:134:10" msg_body="Applying array_partition to 'window': Complete partitioning on dimension 1. Complete partitioning on dimension 2.">
+        <args Dim="islist 1 2" Mode="islist Complete Complete" UOName="window"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-187" msg_severity="WARNING" msg_loc="../hls_files/conv_pool.cpp:226:23" msg_body="Cannot unroll loop 'VITIS_LOOP_226_2' (../hls_files/conv_pool.cpp:226:23) in function 'fc1' as it has a variable trip count">
+        <args LoopLoc="../hls_files/conv_pool.cpp:226:23" LoopName="VITIS_LOOP_226_2"/>
     </msg>
 </xilinx:hls_fe_msgs>
 

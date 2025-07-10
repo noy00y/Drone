@@ -216,8 +216,6 @@ C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\csim\code_
   C:/Xilinx/2025.1/Vitis/tps/mingw/10.0.0/win64.o/nt/include/c++/9.5.0/condition_variable \
   C:/Xilinx/2025.1/Vitis/tps/mingw/10.0.0/win64.o/nt/include/c++/9.5.0/cxxabi.h \
   C:/Xilinx/2025.1/Vitis/tps/mingw/10.0.0/win64.o/nt/include/c++/9.5.0/x86_64-w64-mingw32/bits/cxxabi_tweaks.h \
-  c:/xilinx/2025.1/vitis/win64/tools/vcxx/data/autopilot/ap_axi_sdata.h \
-  C:/Xilinx/2025.1/Vitis/tps/mingw/10.0.0/win64.o/nt/include/c++/9.5.0/climits \
   c:/xilinx/2025.1/vitis/win64/tools/vcxx/data/autopilot/hls_math.h \
   c:/xilinx/2025.1/vitis/win64/tools/vcxx/data/autopilot/hls_fpo.h \
   c:/xilinx/2025.1/vitis/win64/tools/vcxx/data/autopilot/../include/floating_point_v7_1_bitacc_cmodel.h \

@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'fc2'" level="0">
-<item name = "Date">Wed Jul  9 07:45:53 2025
+<item name = "Date">Wed Jul  9 22:27:43 2025
 </item>
 <item name = "Version">2025.1 (Build 6135595 on May 21 2025)</item>
 <item name = "Project">cnn_accel</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00 ns, 7.838 ns, 2.70 ns</column>
+<column name="ap_clk">10.00 ns, 7.300 ns, 2.70 ns</column>
 </table>
 </item>
 </section>
@@ -24,14 +24,13 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">170, 170, 1.700 us, 1.700 us, 170, 170, no</column>
+<column name="">6, 6, 60.000 ns, 60.000 ns, 6, 6, no</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_fc2_Pipeline_FC2_LOOP_fu_156">fc2_Pipeline_FC2_LOOP, 135, 135, 1.350 us, 1.350 us, 132, 132, loop auto-rewind stp (delay=0 clock cycles(s))</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
@@ -48,22 +47,20 @@
 <item name = "Summary"><table name="" hasTotal="1">
 <keys size="6">Name, BRAM_18K, DSP, FF, LUT, URAM</keys>
 <column name="DSP">-, -, -, -, -</column>
-<column name="Expression">-, -, 0, 51, -</column>
+<column name="Expression">-, -, -, -, -</column>
 <column name="FIFO">-, -, -, -, -</column>
-<column name="Instance">-, 7, 437, 1181, -</column>
+<column name="Instance">-, -, -, -, -</column>
 <column name="Memory">-, -, -, -, -</column>
-<column name="Multiplexer">-, -, 0, 249, -</column>
-<column name="Register">-, -, 168, -, -</column>
+<column name="Multiplexer">-, -, 0, 60, -</column>
+<column name="Register">-, -, 7, -, -</column>
 <specialColumn name="Available">270, 240, 126800, 63400, 0</specialColumn>
-<specialColumn name="Utilization (%)">0, 2, ~0, 2, 0</specialColumn>
+<specialColumn name="Utilization (%)">0, 0, ~0, ~0, 0</specialColumn>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
-<column name="grp_fc2_Pipeline_FC2_LOOP_fu_156">fc2_Pipeline_FC2_LOOP, 0, 0, 113, 277, 0</column>
-<column name="fexp_32ns_32ns_32_8_full_dsp_1_U1703">fexp_32ns_32ns_32_8_full_dsp_1, 0, 7, 324, 904, 0</column>
 </table>
 </item>
 <item name = "DSP"><table name="" hasTotal="0">
@@ -80,11 +77,6 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="flag_fu_450_p2">and, 0, 0, 2, 1, 1</column>
-<column name="icmp_ln348_1_fu_440_p2">icmp, 0, 0, 30, 23, 1</column>
-<column name="icmp_ln348_fu_434_p2">icmp, 0, 0, 15, 8, 2</column>
-<column name="or_ln348_fu_446_p2">or, 0, 0, 2, 1, 1</column>
-<column name="xor_ln347_fu_396_p2">xor, 0, 0, 2, 1, 2</column>
 </table>
 </item>
 <item name = "Multiplexer"><table name="" hasTotal="1">
@@ -92,26 +84,12 @@
 <column name="Foutmem_blk_n_AW">9, 2, 1, 2</column>
 <column name="Foutmem_blk_n_B">9, 2, 1, 2</column>
 <column name="Foutmem_blk_n_W">9, 2, 1, 2</column>
-<column name="ap_NS_fsm">165, 37, 1, 37</column>
-<column name="grp_fu_196_ce">9, 2, 1, 2</column>
-<column name="grp_fu_196_opcode">13, 3, 2, 6</column>
-<column name="grp_fu_196_p0">13, 3, 32, 96</column>
-<column name="grp_fu_196_p1">13, 3, 32, 96</column>
-<column name="grp_fu_624_ce">9, 2, 1, 2</column>
+<column name="ap_NS_fsm">33, 8, 1, 8</column>
 </table>
 </item>
 <item name = "Register"><table name="" hasTotal="1">
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
-<column name="add4_i_reg_592">32, 0, 32, 0</column>
-<column name="ap_CS_fsm">36, 0, 36, 0</column>
-<column name="flag_reg_613">1, 0, 1, 0</column>
-<column name="grp_fc2_Pipeline_FC2_LOOP_fu_156_ap_start_reg">1, 0, 1, 0</column>
-<column name="icmp_ln348_1_reg_608">1, 0, 1, 0</column>
-<column name="icmp_ln348_reg_603">1, 0, 1, 0</column>
-<column name="prob_reg_597">32, 0, 32, 0</column>
-<column name="tmp_i_reg_587">32, 0, 32, 0</column>
-<column name="trunc_ln347_reg_577">31, 0, 31, 0</column>
-<column name="xor_ln347_reg_572">1, 0, 1, 0</column>
+<column name="ap_CS_fsm">7, 0, 7, 0</column>
 </table>
 </item>
 </section>
@@ -127,24 +105,6 @@
 <column name="ap_done">out, 1, ap_ctrl_hs, fc2, return value</column>
 <column name="ap_idle">out, 1, ap_ctrl_hs, fc2, return value</column>
 <column name="ap_ready">out, 1, ap_ctrl_hs, fc2, return value</column>
-<column name="grp_fu_9552_p_din0">out, 32, ap_ctrl_hs, fc2, return value</column>
-<column name="grp_fu_9552_p_din1">out, 32, ap_ctrl_hs, fc2, return value</column>
-<column name="grp_fu_9552_p_opcode">out, 1, ap_ctrl_hs, fc2, return value</column>
-<column name="grp_fu_9552_p_dout0">in, 32, ap_ctrl_hs, fc2, return value</column>
-<column name="grp_fu_9552_p_ce">out, 1, ap_ctrl_hs, fc2, return value</column>
-<column name="grp_fu_9572_p_din0">out, 32, ap_ctrl_hs, fc2, return value</column>
-<column name="grp_fu_9572_p_din1">out, 32, ap_ctrl_hs, fc2, return value</column>
-<column name="grp_fu_9572_p_dout0">in, 32, ap_ctrl_hs, fc2, return value</column>
-<column name="grp_fu_9572_p_ce">out, 1, ap_ctrl_hs, fc2, return value</column>
-<column name="grp_fu_9568_p_din0">out, 32, ap_ctrl_hs, fc2, return value</column>
-<column name="grp_fu_9568_p_din1">out, 32, ap_ctrl_hs, fc2, return value</column>
-<column name="grp_fu_9568_p_opcode">out, 5, ap_ctrl_hs, fc2, return value</column>
-<column name="grp_fu_9568_p_dout0">in, 1, ap_ctrl_hs, fc2, return value</column>
-<column name="grp_fu_9568_p_ce">out, 1, ap_ctrl_hs, fc2, return value</column>
-<column name="grp_fu_9560_p_din0">out, 32, ap_ctrl_hs, fc2, return value</column>
-<column name="grp_fu_9560_p_din1">out, 32, ap_ctrl_hs, fc2, return value</column>
-<column name="grp_fu_9560_p_dout0">in, 32, ap_ctrl_hs, fc2, return value</column>
-<column name="grp_fu_9560_p_ce">out, 1, ap_ctrl_hs, fc2, return value</column>
 <column name="m_axi_Foutmem_0_AWVALID">out, 1, m_axi, Foutmem, pointer</column>
 <column name="m_axi_Foutmem_0_AWREADY">in, 1, m_axi, Foutmem, pointer</column>
 <column name="m_axi_Foutmem_0_AWADDR">out, 64, m_axi, Foutmem, pointer</column>
@@ -192,42 +152,6 @@
 <column name="m_axi_Foutmem_0_BID">in, 1, m_axi, Foutmem, pointer</column>
 <column name="m_axi_Foutmem_0_BUSER">in, 1, m_axi, Foutmem, pointer</column>
 <column name="flag_out">in, 64, ap_none, flag_out, scalar</column>
-<column name="fc2_b_local">in, 32, ap_none, fc2_b_local, pointer</column>
-<column name="fc2_w_local">in, 32, ap_none, fc2_w_local, pointer</column>
-<column name="fc2_w_local_51">in, 32, ap_none, fc2_w_local_51, pointer</column>
-<column name="fc2_w_local_52">in, 32, ap_none, fc2_w_local_52, pointer</column>
-<column name="fc2_w_local_53">in, 32, ap_none, fc2_w_local_53, pointer</column>
-<column name="fc2_w_local_54">in, 32, ap_none, fc2_w_local_54, pointer</column>
-<column name="fc2_w_local_55">in, 32, ap_none, fc2_w_local_55, pointer</column>
-<column name="fc2_w_local_56">in, 32, ap_none, fc2_w_local_56, pointer</column>
-<column name="fc2_w_local_57">in, 32, ap_none, fc2_w_local_57, pointer</column>
-<column name="fc2_w_local_58">in, 32, ap_none, fc2_w_local_58, pointer</column>
-<column name="fc2_w_local_59">in, 32, ap_none, fc2_w_local_59, pointer</column>
-<column name="p_ZZ9cnn_accelE11fc2_w_local_10">in, 32, ap_none, p_ZZ9cnn_accelE11fc2_w_local_10, pointer</column>
-<column name="p_ZZ9cnn_accelE11fc2_w_local_11">in, 32, ap_none, p_ZZ9cnn_accelE11fc2_w_local_11, pointer</column>
-<column name="p_ZZ9cnn_accelE11fc2_w_local_12">in, 32, ap_none, p_ZZ9cnn_accelE11fc2_w_local_12, pointer</column>
-<column name="p_ZZ9cnn_accelE11fc2_w_local_13">in, 32, ap_none, p_ZZ9cnn_accelE11fc2_w_local_13, pointer</column>
-<column name="p_ZZ9cnn_accelE11fc2_w_local_14">in, 32, ap_none, p_ZZ9cnn_accelE11fc2_w_local_14, pointer</column>
-<column name="p_ZZ9cnn_accelE11fc2_w_local_15">in, 32, ap_none, p_ZZ9cnn_accelE11fc2_w_local_15, pointer</column>
-<column name="p_ZZ9cnn_accelE11fc2_w_local_16">in, 32, ap_none, p_ZZ9cnn_accelE11fc2_w_local_16, pointer</column>
-<column name="p_ZZ9cnn_accelE11fc2_w_local_17">in, 32, ap_none, p_ZZ9cnn_accelE11fc2_w_local_17, pointer</column>
-<column name="p_ZZ9cnn_accelE11fc2_w_local_18">in, 32, ap_none, p_ZZ9cnn_accelE11fc2_w_local_18, pointer</column>
-<column name="p_ZZ9cnn_accelE11fc2_w_local_19">in, 32, ap_none, p_ZZ9cnn_accelE11fc2_w_local_19, pointer</column>
-<column name="p_ZZ9cnn_accelE11fc2_w_local_20">in, 32, ap_none, p_ZZ9cnn_accelE11fc2_w_local_20, pointer</column>
-<column name="p_ZZ9cnn_accelE11fc2_w_local_21">in, 32, ap_none, p_ZZ9cnn_accelE11fc2_w_local_21, pointer</column>
-<column name="p_ZZ9cnn_accelE11fc2_w_local_22">in, 32, ap_none, p_ZZ9cnn_accelE11fc2_w_local_22, pointer</column>
-<column name="p_ZZ9cnn_accelE11fc2_w_local_23">in, 32, ap_none, p_ZZ9cnn_accelE11fc2_w_local_23, pointer</column>
-<column name="p_ZZ9cnn_accelE11fc2_w_local_24">in, 32, ap_none, p_ZZ9cnn_accelE11fc2_w_local_24, pointer</column>
-<column name="p_ZZ9cnn_accelE11fc2_w_local_25">in, 32, ap_none, p_ZZ9cnn_accelE11fc2_w_local_25, pointer</column>
-<column name="p_ZZ9cnn_accelE11fc2_w_local_26">in, 32, ap_none, p_ZZ9cnn_accelE11fc2_w_local_26, pointer</column>
-<column name="p_ZZ9cnn_accelE11fc2_w_local_27">in, 32, ap_none, p_ZZ9cnn_accelE11fc2_w_local_27, pointer</column>
-<column name="p_ZZ9cnn_accelE11fc2_w_local_28">in, 32, ap_none, p_ZZ9cnn_accelE11fc2_w_local_28, pointer</column>
-<column name="p_ZZ9cnn_accelE11fc2_w_local_29">in, 32, ap_none, p_ZZ9cnn_accelE11fc2_w_local_29, pointer</column>
-<column name="p_ZZ9cnn_accelE11fc2_w_local_30">in, 32, ap_none, p_ZZ9cnn_accelE11fc2_w_local_30, pointer</column>
-<column name="p_ZZ9cnn_accelE11fc2_w_local_31">in, 32, ap_none, p_ZZ9cnn_accelE11fc2_w_local_31, pointer</column>
-<column name="vec2_address0">out, 5, ap_memory, vec2, array</column>
-<column name="vec2_ce0">out, 1, ap_memory, vec2, array</column>
-<column name="vec2_q0">in, 32, ap_memory, vec2, array</column>
 </table>
 </item>
 </section>

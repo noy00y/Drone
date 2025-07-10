@@ -41,11 +41,6 @@ INFO: [SIM 211-200] Running executable
 Detection flag = 0
 INFO: [SIM 211-200] Analyzing trace data
 INFO: [SIM 211-208] Running Code Analyzer
-Variable 'FC2_W' C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp:63:0 VariableId 39163 is not part of the design space!--
-
-WARNING: [SIM 211-206] Code Analyzer does not display the impact of the partition pragma for dataflow channels (C:\Users\ozair\Documents\Code_Drive\Drone\hls_files\conv_pool.cpp:122:1)
-WARNING: [SIM 211-206] Code Analyzer does not display the impact of the partition pragma for dataflow channels (C:\Users\ozair\Documents\Code_Drive\Drone\hls_files\conv_pool.cpp:166:1)
-WARNING: [HLS 211-200] Code Analyzer will not display the impact of 'pipeline' (C:\Users\ozair\Documents\Code_Drive\Drone\hls_files\conv_pool.cpp:155:7) as the loop has been optimized out
 WARNING: [HLS 211-200] Code Analyzer will not display the impact of 'unroll' (c:\xilinx\2025.1\win64\tools\vcxx\data\autopilot\etc\hls_exp_apfixed.h:156:17) as the loop has been optimized out
 WARNING: [HLS 211-200] Code Analyzer will not display the impact of 'unroll' (c:\xilinx\2025.1\win64\tools\vcxx\data\autopilot\etc\hls_exp_apfixed.h:152:17) as the loop has been optimized out
 WARNING: [HLS 211-200] Code Analyzer will not display the impact of 'unroll' (c:\xilinx\2025.1\win64\tools\vcxx\data\autopilot\etc\hls_exp_apfixed.h:146:13) as the loop has been optimized out
@@ -62,10 +57,10 @@ WARNING: [HLS 211-200] Code Analyzer will not display the impact of 'unroll' (c:
 WARNING: [HLS 211-200] Code Analyzer will not display the impact of 'unroll' (c:\xilinx\2025.1\win64\tools\vcxx\data\autopilot\etc\hls_exp_apfixed.h:530:9) as the loop has been optimized out
 WARNING: [HLS 211-200] Code Analyzer will not display the impact of 'unroll' (c:\xilinx\2025.1\win64\tools\vcxx\data\autopilot\etc\hls_exp_apfixed.h:526:9) as the loop has been optimized out
 WARNING: [HLS 211-200] Code Analyzer will not display the impact of 'pipeline' (c:\xilinx\2025.1\win64\tools\vcxx\data\autopilot\etc\hls_exp_apfixed.h:15:1) as the pipelined function is not the top-level hardware function
-WARNING: [HLS 211-200] Invalid pragma detected: Code Analyzer will not display the impact of 'pipeline' (C:\Users\ozair\Documents\Code_Drive\Drone\hls_files\conv_pool.cpp:328:1) as loop pipeline pragma is only valid if:
+WARNING: [HLS 211-200] Invalid pragma detected: Code Analyzer will not display the impact of 'pipeline' (C:\Users\ozair\Documents\Code_Drive\Drone\hls_files\conv_pool.cpp:224:3) as loop pipeline pragma is only valid if:
 - All the subloops of the loop to be pipelined can be fully unrolled
 - All the subloops are perfectly nested in the loop to be pipelined.
-WARNING: [SIM 211-200] C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp:330:9: the dynamic loop had a trip count of min=72384 max=72384 during C simulation. (#pragma HLS loop_tripcount min=72384 max=72384)
+WARNING: [SIM 211-200] C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp:226:5: the dynamic loop had a trip count of min=72384 max=72384 during C simulation. (#pragma HLS loop_tripcount min=72384 max=72384)
 INFO: [SIM 211-210] Code Analyzer finished
-INFO: [HLS 200-112] Total CPU user time: 1 seconds. Total CPU system time: 2 seconds. Total elapsed time: 629.765 seconds; peak allocated memory: 145.848 MB.
-INFO: [vitis-run 60-791] Total elapsed time: 0h 10m 34s
+INFO: [HLS 200-112] Total CPU user time: 2 seconds. Total CPU system time: 2 seconds. Total elapsed time: 530.992 seconds; peak allocated memory: 145.797 MB.
+INFO: [vitis-run 60-791] Total elapsed time: 0h 8m 55s

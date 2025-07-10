@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'fc2'
 ================================================================
-* Date:           Wed Jul  9 07:45:28 2025
+* Date:           Wed Jul  9 22:27:37 2025
 
 * Version:        2025.1 (Build 6135595 on May 21 2025)
 * Project:        cnn_accel
@@ -20,17 +20,17 @@
     +--------+----------+----------+------------+
     |  Clock |  Target  | Estimated| Uncertainty|
     +--------+----------+----------+------------+
-    |ap_clk  |  10.00 ns|  7.838 ns|     2.70 ns|
+    |ap_clk  |  10.00 ns|  7.300 ns|     2.70 ns|
     +--------+----------+----------+------------+
 
 + Latency: 
     * Summary: 
-    +---------+---------+----------+----------+-----+-----+---------+
-    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
-    |   min   |   max   |    min   |    max   | min | max |   Type  |
-    +---------+---------+----------+----------+-----+-----+---------+
-    |      170|      170|  1.700 us|  1.700 us|  170|  170|       no|
-    +---------+---------+----------+----------+-----+-----+---------+
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |  Latency (cycles) |   Latency (absolute)  |  Interval | Pipeline|
+    |   min   |   max   |    min    |    max    | min | max |   Type  |
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |        6|        6|  60.000 ns|  60.000 ns|    6|    6|       no|
+    +---------+---------+-----------+-----------+-----+-----+---------+
 
     + Detail: 
         * Instance: 
@@ -65,7 +65,7 @@ IsGatedGlobalClock: 0
 ============================================================
 + Verbose Summary: Schedule
 ============================================================
-* Number of FSM states : 36
+* Number of FSM states : 7
 * Pipeline : 0
 * Dataflow Pipeline: 0
 
@@ -76,199 +76,34 @@ IsGatedGlobalClock: 0
 4 --> 5 
 5 --> 6 
 6 --> 7 
-7 --> 8 
-8 --> 9 
-9 --> 10 
-10 --> 11 
-11 --> 12 
-12 --> 13 
-13 --> 14 
-14 --> 15 
-15 --> 16 
-16 --> 17 
-17 --> 18 
-18 --> 19 
-19 --> 20 
-20 --> 21 
-21 --> 22 
-22 --> 23 
-23 --> 24 
-24 --> 25 
-25 --> 26 
-26 --> 27 
-27 --> 28 
-28 --> 29 
-29 --> 30 
-30 --> 31 
-31 --> 32 
-32 --> 33 
-33 --> 34 
-34 --> 35 
-35 --> 36 
-36 --> 
+7 --> 
 
 * FSM state operations: 
 
-State 1 <SV = 0> <Delay = 2.45>
-ST_1 : Operation 37 [1/1] (0.00ns)   --->   "%acc2_1_loc = alloca i64 1"   --->   Operation 37 'alloca' 'acc2_1_loc' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 38 [1/1] (0.00ns)   --->   "%acc2 = load i32 %fc2_b_local" [../hls_files/conv_pool.cpp:342]   --->   Operation 38 'load' 'acc2' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 39 [1/1] (0.00ns)   --->   "%fc2_w_local_load = load i32 %fc2_w_local"   --->   Operation 39 'load' 'fc2_w_local_load' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 40 [1/1] (0.00ns)   --->   "%fc2_w_local_51_load = load i32 %fc2_w_local_51"   --->   Operation 40 'load' 'fc2_w_local_51_load' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 41 [1/1] (0.00ns)   --->   "%fc2_w_local_52_load = load i32 %fc2_w_local_52"   --->   Operation 41 'load' 'fc2_w_local_52_load' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 42 [1/1] (0.00ns)   --->   "%fc2_w_local_53_load = load i32 %fc2_w_local_53"   --->   Operation 42 'load' 'fc2_w_local_53_load' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 43 [1/1] (0.00ns)   --->   "%fc2_w_local_54_load = load i32 %fc2_w_local_54"   --->   Operation 43 'load' 'fc2_w_local_54_load' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 44 [1/1] (0.00ns)   --->   "%fc2_w_local_55_load = load i32 %fc2_w_local_55"   --->   Operation 44 'load' 'fc2_w_local_55_load' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 45 [1/1] (0.00ns)   --->   "%fc2_w_local_56_load = load i32 %fc2_w_local_56"   --->   Operation 45 'load' 'fc2_w_local_56_load' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 46 [1/1] (0.00ns)   --->   "%fc2_w_local_57_load = load i32 %fc2_w_local_57"   --->   Operation 46 'load' 'fc2_w_local_57_load' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 47 [1/1] (0.00ns)   --->   "%fc2_w_local_58_load = load i32 %fc2_w_local_58"   --->   Operation 47 'load' 'fc2_w_local_58_load' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 48 [1/1] (0.00ns)   --->   "%fc2_w_local_59_load = load i32 %fc2_w_local_59"   --->   Operation 48 'load' 'fc2_w_local_59_load' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 49 [1/1] (0.00ns)   --->   "%p_ZZ9cnn_accelE11fc2_w_local_10_load = load i32 %p_ZZ9cnn_accelE11fc2_w_local_10"   --->   Operation 49 'load' 'p_ZZ9cnn_accelE11fc2_w_local_10_load' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 50 [1/1] (0.00ns)   --->   "%cnn_accel_fc2_w_local = load i32 %p_ZZ9cnn_accelE11fc2_w_local_11"   --->   Operation 50 'load' 'cnn_accel_fc2_w_local' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 51 [1/1] (0.00ns)   --->   "%cnn_accel_fc2_w_local_98 = load i32 %p_ZZ9cnn_accelE11fc2_w_local_12"   --->   Operation 51 'load' 'cnn_accel_fc2_w_local_98' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 52 [1/1] (0.00ns)   --->   "%cnn_accel_fc2_w_local_99 = load i32 %p_ZZ9cnn_accelE11fc2_w_local_13"   --->   Operation 52 'load' 'cnn_accel_fc2_w_local_99' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 53 [1/1] (0.00ns)   --->   "%cnn_accel_fc2_w_local_100 = load i32 %p_ZZ9cnn_accelE11fc2_w_local_14"   --->   Operation 53 'load' 'cnn_accel_fc2_w_local_100' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 54 [1/1] (0.00ns)   --->   "%cnn_accel_fc2_w_local_101 = load i32 %p_ZZ9cnn_accelE11fc2_w_local_15"   --->   Operation 54 'load' 'cnn_accel_fc2_w_local_101' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 55 [1/1] (0.00ns)   --->   "%p_ZZ9cnn_accelE11fc2_w_local_16_load = load i32 %p_ZZ9cnn_accelE11fc2_w_local_16"   --->   Operation 55 'load' 'p_ZZ9cnn_accelE11fc2_w_local_16_load' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 56 [1/1] (0.00ns)   --->   "%p_ZZ9cnn_accelE11fc2_w_local_17_load = load i32 %p_ZZ9cnn_accelE11fc2_w_local_17"   --->   Operation 56 'load' 'p_ZZ9cnn_accelE11fc2_w_local_17_load' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 57 [1/1] (0.00ns)   --->   "%p_ZZ9cnn_accelE11fc2_w_local_18_load = load i32 %p_ZZ9cnn_accelE11fc2_w_local_18"   --->   Operation 57 'load' 'p_ZZ9cnn_accelE11fc2_w_local_18_load' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 58 [1/1] (0.00ns)   --->   "%p_ZZ9cnn_accelE11fc2_w_local_19_load = load i32 %p_ZZ9cnn_accelE11fc2_w_local_19"   --->   Operation 58 'load' 'p_ZZ9cnn_accelE11fc2_w_local_19_load' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 59 [1/1] (0.00ns)   --->   "%p_ZZ9cnn_accelE11fc2_w_local_20_load = load i32 %p_ZZ9cnn_accelE11fc2_w_local_20"   --->   Operation 59 'load' 'p_ZZ9cnn_accelE11fc2_w_local_20_load' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 60 [1/1] (0.00ns)   --->   "%cnn_accel_fc2_w_local_102 = load i32 %p_ZZ9cnn_accelE11fc2_w_local_21"   --->   Operation 60 'load' 'cnn_accel_fc2_w_local_102' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 61 [1/1] (0.00ns)   --->   "%cnn_accel_fc2_w_local_103 = load i32 %p_ZZ9cnn_accelE11fc2_w_local_22"   --->   Operation 61 'load' 'cnn_accel_fc2_w_local_103' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 62 [1/1] (0.00ns)   --->   "%cnn_accel_fc2_w_local_104 = load i32 %p_ZZ9cnn_accelE11fc2_w_local_23"   --->   Operation 62 'load' 'cnn_accel_fc2_w_local_104' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 63 [1/1] (0.00ns)   --->   "%cnn_accel_fc2_w_local_105 = load i32 %p_ZZ9cnn_accelE11fc2_w_local_24"   --->   Operation 63 'load' 'cnn_accel_fc2_w_local_105' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 64 [1/1] (0.00ns)   --->   "%cnn_accel_fc2_w_local_106 = load i32 %p_ZZ9cnn_accelE11fc2_w_local_25"   --->   Operation 64 'load' 'cnn_accel_fc2_w_local_106' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 65 [1/1] (0.00ns)   --->   "%p_ZZ9cnn_accelE11fc2_w_local_26_load = load i32 %p_ZZ9cnn_accelE11fc2_w_local_26"   --->   Operation 65 'load' 'p_ZZ9cnn_accelE11fc2_w_local_26_load' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 66 [1/1] (0.00ns)   --->   "%p_ZZ9cnn_accelE11fc2_w_local_27_load = load i32 %p_ZZ9cnn_accelE11fc2_w_local_27"   --->   Operation 66 'load' 'p_ZZ9cnn_accelE11fc2_w_local_27_load' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 67 [1/1] (0.00ns)   --->   "%p_ZZ9cnn_accelE11fc2_w_local_28_load = load i32 %p_ZZ9cnn_accelE11fc2_w_local_28"   --->   Operation 67 'load' 'p_ZZ9cnn_accelE11fc2_w_local_28_load' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 68 [1/1] (0.00ns)   --->   "%p_ZZ9cnn_accelE11fc2_w_local_29_load = load i32 %p_ZZ9cnn_accelE11fc2_w_local_29"   --->   Operation 68 'load' 'p_ZZ9cnn_accelE11fc2_w_local_29_load' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 69 [1/1] (0.00ns)   --->   "%p_ZZ9cnn_accelE11fc2_w_local_30_load = load i32 %p_ZZ9cnn_accelE11fc2_w_local_30"   --->   Operation 69 'load' 'p_ZZ9cnn_accelE11fc2_w_local_30_load' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 70 [1/1] (0.00ns)   --->   "%cnn_accel_fc2_w_local_107 = load i32 %p_ZZ9cnn_accelE11fc2_w_local_31"   --->   Operation 70 'load' 'cnn_accel_fc2_w_local_107' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 71 [2/2] (2.45ns)   --->   "%call_ln342 = call void @fc2_Pipeline_FC2_LOOP, i32 %acc2, i32 %fc2_w_local_load, i32 %fc2_w_local_51_load, i32 %fc2_w_local_52_load, i32 %fc2_w_local_53_load, i32 %fc2_w_local_54_load, i32 %fc2_w_local_55_load, i32 %fc2_w_local_56_load, i32 %fc2_w_local_57_load, i32 %fc2_w_local_58_load, i32 %fc2_w_local_59_load, i32 %p_ZZ9cnn_accelE11fc2_w_local_10_load, i32 %cnn_accel_fc2_w_local, i32 %cnn_accel_fc2_w_local_98, i32 %cnn_accel_fc2_w_local_99, i32 %cnn_accel_fc2_w_local_100, i32 %cnn_accel_fc2_w_local_101, i32 %p_ZZ9cnn_accelE11fc2_w_local_16_load, i32 %p_ZZ9cnn_accelE11fc2_w_local_17_load, i32 %p_ZZ9cnn_accelE11fc2_w_local_18_load, i32 %p_ZZ9cnn_accelE11fc2_w_local_19_load, i32 %p_ZZ9cnn_accelE11fc2_w_local_20_load, i32 %cnn_accel_fc2_w_local_102, i32 %cnn_accel_fc2_w_local_103, i32 %cnn_accel_fc2_w_local_104, i32 %cnn_accel_fc2_w_local_105, i32 %cnn_accel_fc2_w_local_106, i32 %p_ZZ9cnn_accelE11fc2_w_local_26_load, i32 %p_ZZ9cnn_accelE11fc2_w_local_27_load, i32 %p_ZZ9cnn_accelE11fc2_w_local_28_load, i32 %p_ZZ9cnn_accelE11fc2_w_local_29_load, i32 %p_ZZ9cnn_accelE11fc2_w_local_30_load, i32 %cnn_accel_fc2_w_local_107, i32 %acc2_1_loc, i32 %vec2" [../hls_files/conv_pool.cpp:342]   --->   Operation 71 'call' 'call_ln342' <Predicate = true> <Delay = 2.45> <CoreType = "Generic">   --->   Generic Core
+State 1 <SV = 0> <Delay = 7.30>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%flag_out_read = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %flag_out" [../hls_files/conv_pool.cpp:240]   --->   Operation 8 'read' 'flag_out_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%Foutmem_addr = getelementptr i8 %Foutmem, i64 %flag_out_read" [../hls_files/conv_pool.cpp:248]   --->   Operation 9 'getelementptr' 'Foutmem_addr' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (7.30ns)   --->   "%Foutmem_addr_req = writereq i1 @_ssdm_op_WriteReq.m_axi.i8P1A, i8 %Foutmem_addr, i64 1" [../hls_files/conv_pool.cpp:248]   --->   Operation 10 'writereq' 'Foutmem_addr_req' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 111 'm_axi' <Latency = 9> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
-State 2 <SV = 1> <Delay = 0.00>
-ST_2 : Operation 72 [1/2] (0.00ns)   --->   "%call_ln342 = call void @fc2_Pipeline_FC2_LOOP, i32 %acc2, i32 %fc2_w_local_load, i32 %fc2_w_local_51_load, i32 %fc2_w_local_52_load, i32 %fc2_w_local_53_load, i32 %fc2_w_local_54_load, i32 %fc2_w_local_55_load, i32 %fc2_w_local_56_load, i32 %fc2_w_local_57_load, i32 %fc2_w_local_58_load, i32 %fc2_w_local_59_load, i32 %p_ZZ9cnn_accelE11fc2_w_local_10_load, i32 %cnn_accel_fc2_w_local, i32 %cnn_accel_fc2_w_local_98, i32 %cnn_accel_fc2_w_local_99, i32 %cnn_accel_fc2_w_local_100, i32 %cnn_accel_fc2_w_local_101, i32 %p_ZZ9cnn_accelE11fc2_w_local_16_load, i32 %p_ZZ9cnn_accelE11fc2_w_local_17_load, i32 %p_ZZ9cnn_accelE11fc2_w_local_18_load, i32 %p_ZZ9cnn_accelE11fc2_w_local_19_load, i32 %p_ZZ9cnn_accelE11fc2_w_local_20_load, i32 %cnn_accel_fc2_w_local_102, i32 %cnn_accel_fc2_w_local_103, i32 %cnn_accel_fc2_w_local_104, i32 %cnn_accel_fc2_w_local_105, i32 %cnn_accel_fc2_w_local_106, i32 %p_ZZ9cnn_accelE11fc2_w_local_26_load, i32 %p_ZZ9cnn_accelE11fc2_w_local_27_load, i32 %p_ZZ9cnn_accelE11fc2_w_local_28_load, i32 %p_ZZ9cnn_accelE11fc2_w_local_29_load, i32 %p_ZZ9cnn_accelE11fc2_w_local_30_load, i32 %cnn_accel_fc2_w_local_107, i32 %acc2_1_loc, i32 %vec2" [../hls_files/conv_pool.cpp:342]   --->   Operation 72 'call' 'call_ln342' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+State 2 <SV = 1> <Delay = 7.30>
+ST_2 : Operation 11 [1/1] (7.30ns)   --->   "%write_ln248 = write void @_ssdm_op_Write.m_axi.i8P1A, i8 %Foutmem_addr, i8 0, i1 1" [../hls_files/conv_pool.cpp:248]   --->   Operation 11 'write' 'write_ln248' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 111 'm_axi' <Latency = 5> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
-State 3 <SV = 2> <Delay = 0.80>
-ST_3 : Operation 73 [1/1] (0.00ns)   --->   "%acc2_1_loc_load = load i32 %acc2_1_loc"   --->   Operation 73 'load' 'acc2_1_loc_load' <Predicate = true> <Delay = 0.00>
-ST_3 : Operation 74 [1/1] (0.00ns)   --->   "%bitcast_ln347 = bitcast i32 %acc2_1_loc_load" [../hls_files/conv_pool.cpp:347]   --->   Operation 74 'bitcast' 'bitcast_ln347' <Predicate = true> <Delay = 0.00>
-ST_3 : Operation 75 [1/1] (0.00ns)   --->   "%bit_sel = bitselect i1 @_ssdm_op_BitSelect.i1.i32.i32, i32 %bitcast_ln347, i32 31" [../hls_files/conv_pool.cpp:347]   --->   Operation 75 'bitselect' 'bit_sel' <Predicate = true> <Delay = 0.00>
-ST_3 : Operation 76 [1/1] (0.80ns)   --->   "%xor_ln347 = xor i1 %bit_sel, i1 1" [../hls_files/conv_pool.cpp:347]   --->   Operation 76 'xor' 'xor_ln347' <Predicate = true> <Delay = 0.80> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_3 : Operation 77 [1/1] (0.00ns)   --->   "%trunc_ln347 = trunc i32 %bitcast_ln347" [../hls_files/conv_pool.cpp:347]   --->   Operation 77 'trunc' 'trunc_ln347' <Predicate = true> <Delay = 0.00>
+State 3 <SV = 2> <Delay = 7.30>
+ST_3 : Operation 12 [5/5] (7.30ns)   --->   "%Foutmem_addr_resp = writeresp i1 @_ssdm_op_WriteResp.m_axi.i8P1A, i8 %Foutmem_addr" [../hls_files/conv_pool.cpp:248]   --->   Operation 12 'writeresp' 'Foutmem_addr_resp' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 111 'm_axi' <Latency = 3> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
-State 4 <SV = 3> <Delay = 7.04>
-ST_4 : Operation 78 [1/1] (0.00ns)   --->   "%xor_ln = bitconcatenate i32 @_ssdm_op_BitConcatenate.i32.i1.i31, i1 %xor_ln347, i31 %trunc_ln347" [../hls_files/conv_pool.cpp:347]   --->   Operation 78 'bitconcatenate' 'xor_ln' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 79 [1/1] (0.00ns)   --->   "%bitcast_ln347_1 = bitcast i32 %xor_ln" [../hls_files/conv_pool.cpp:347]   --->   Operation 79 'bitcast' 'bitcast_ln347_1' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 80 [8/8] (7.04ns)   --->   "%tmp_i = fexp i32 @llvm.exp.f32, i32 %bitcast_ln347_1" [C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib\hlsmath\src\common\hls_exp_float.cpp:17->C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib\hlsmath\src\c++\expfloat.cpp:17->../hls_files/conv_pool.cpp:347]   --->   Operation 80 'fexp' 'tmp_i' <Predicate = true> <Delay = 7.04> <CoreInst = "FExp_fulldsp">   --->   Core 23 'FExp_fulldsp' <Latency = 7> <II = 1> <Delay = 7.04> <FuncUnit> <Opcode : 'fexp'> <InPorts = 1> <OutPorts = 1>
+State 4 <SV = 3> <Delay = 7.30>
+ST_4 : Operation 13 [4/5] (7.30ns)   --->   "%Foutmem_addr_resp = writeresp i1 @_ssdm_op_WriteResp.m_axi.i8P1A, i8 %Foutmem_addr" [../hls_files/conv_pool.cpp:248]   --->   Operation 13 'writeresp' 'Foutmem_addr_resp' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 111 'm_axi' <Latency = 3> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
-State 5 <SV = 4> <Delay = 7.04>
-ST_5 : Operation 81 [7/8] (7.04ns)   --->   "%tmp_i = fexp i32 @llvm.exp.f32, i32 %bitcast_ln347_1" [C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib\hlsmath\src\common\hls_exp_float.cpp:17->C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib\hlsmath\src\c++\expfloat.cpp:17->../hls_files/conv_pool.cpp:347]   --->   Operation 81 'fexp' 'tmp_i' <Predicate = true> <Delay = 7.04> <CoreInst = "FExp_fulldsp">   --->   Core 23 'FExp_fulldsp' <Latency = 7> <II = 1> <Delay = 7.04> <FuncUnit> <Opcode : 'fexp'> <InPorts = 1> <OutPorts = 1>
+State 5 <SV = 4> <Delay = 7.30>
+ST_5 : Operation 14 [3/5] (7.30ns)   --->   "%Foutmem_addr_resp = writeresp i1 @_ssdm_op_WriteResp.m_axi.i8P1A, i8 %Foutmem_addr" [../hls_files/conv_pool.cpp:248]   --->   Operation 14 'writeresp' 'Foutmem_addr_resp' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 111 'm_axi' <Latency = 3> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
-State 6 <SV = 5> <Delay = 7.04>
-ST_6 : Operation 82 [6/8] (7.04ns)   --->   "%tmp_i = fexp i32 @llvm.exp.f32, i32 %bitcast_ln347_1" [C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib\hlsmath\src\common\hls_exp_float.cpp:17->C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib\hlsmath\src\c++\expfloat.cpp:17->../hls_files/conv_pool.cpp:347]   --->   Operation 82 'fexp' 'tmp_i' <Predicate = true> <Delay = 7.04> <CoreInst = "FExp_fulldsp">   --->   Core 23 'FExp_fulldsp' <Latency = 7> <II = 1> <Delay = 7.04> <FuncUnit> <Opcode : 'fexp'> <InPorts = 1> <OutPorts = 1>
+State 6 <SV = 5> <Delay = 7.30>
+ST_6 : Operation 15 [2/5] (7.30ns)   --->   "%Foutmem_addr_resp = writeresp i1 @_ssdm_op_WriteResp.m_axi.i8P1A, i8 %Foutmem_addr" [../hls_files/conv_pool.cpp:248]   --->   Operation 15 'writeresp' 'Foutmem_addr_resp' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 111 'm_axi' <Latency = 3> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
-State 7 <SV = 6> <Delay = 7.04>
-ST_7 : Operation 83 [5/8] (7.04ns)   --->   "%tmp_i = fexp i32 @llvm.exp.f32, i32 %bitcast_ln347_1" [C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib\hlsmath\src\common\hls_exp_float.cpp:17->C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib\hlsmath\src\c++\expfloat.cpp:17->../hls_files/conv_pool.cpp:347]   --->   Operation 83 'fexp' 'tmp_i' <Predicate = true> <Delay = 7.04> <CoreInst = "FExp_fulldsp">   --->   Core 23 'FExp_fulldsp' <Latency = 7> <II = 1> <Delay = 7.04> <FuncUnit> <Opcode : 'fexp'> <InPorts = 1> <OutPorts = 1>
-
-State 8 <SV = 7> <Delay = 7.04>
-ST_8 : Operation 84 [4/8] (7.04ns)   --->   "%tmp_i = fexp i32 @llvm.exp.f32, i32 %bitcast_ln347_1" [C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib\hlsmath\src\common\hls_exp_float.cpp:17->C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib\hlsmath\src\c++\expfloat.cpp:17->../hls_files/conv_pool.cpp:347]   --->   Operation 84 'fexp' 'tmp_i' <Predicate = true> <Delay = 7.04> <CoreInst = "FExp_fulldsp">   --->   Core 23 'FExp_fulldsp' <Latency = 7> <II = 1> <Delay = 7.04> <FuncUnit> <Opcode : 'fexp'> <InPorts = 1> <OutPorts = 1>
-
-State 9 <SV = 8> <Delay = 7.04>
-ST_9 : Operation 85 [3/8] (7.04ns)   --->   "%tmp_i = fexp i32 @llvm.exp.f32, i32 %bitcast_ln347_1" [C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib\hlsmath\src\common\hls_exp_float.cpp:17->C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib\hlsmath\src\c++\expfloat.cpp:17->../hls_files/conv_pool.cpp:347]   --->   Operation 85 'fexp' 'tmp_i' <Predicate = true> <Delay = 7.04> <CoreInst = "FExp_fulldsp">   --->   Core 23 'FExp_fulldsp' <Latency = 7> <II = 1> <Delay = 7.04> <FuncUnit> <Opcode : 'fexp'> <InPorts = 1> <OutPorts = 1>
-
-State 10 <SV = 9> <Delay = 7.04>
-ST_10 : Operation 86 [2/8] (7.04ns)   --->   "%tmp_i = fexp i32 @llvm.exp.f32, i32 %bitcast_ln347_1" [C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib\hlsmath\src\common\hls_exp_float.cpp:17->C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib\hlsmath\src\c++\expfloat.cpp:17->../hls_files/conv_pool.cpp:347]   --->   Operation 86 'fexp' 'tmp_i' <Predicate = true> <Delay = 7.04> <CoreInst = "FExp_fulldsp">   --->   Core 23 'FExp_fulldsp' <Latency = 7> <II = 1> <Delay = 7.04> <FuncUnit> <Opcode : 'fexp'> <InPorts = 1> <OutPorts = 1>
-
-State 11 <SV = 10> <Delay = 7.04>
-ST_11 : Operation 87 [1/8] (7.04ns)   --->   "%tmp_i = fexp i32 @llvm.exp.f32, i32 %bitcast_ln347_1" [C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib\hlsmath\src\common\hls_exp_float.cpp:17->C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib\hlsmath\src\c++\expfloat.cpp:17->../hls_files/conv_pool.cpp:347]   --->   Operation 87 'fexp' 'tmp_i' <Predicate = true> <Delay = 7.04> <CoreInst = "FExp_fulldsp">   --->   Core 23 'FExp_fulldsp' <Latency = 7> <II = 1> <Delay = 7.04> <FuncUnit> <Opcode : 'fexp'> <InPorts = 1> <OutPorts = 1>
-
-State 12 <SV = 11> <Delay = 6.51>
-ST_12 : Operation 88 [5/5] (6.51ns)   --->   "%add4_i = fadd i32 %tmp_i, i32 1" [../hls_files/conv_pool.cpp:347]   --->   Operation 88 'fadd' 'add4_i' <Predicate = true> <Delay = 6.51> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 4> <II = 1> <Delay = 6.51> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
-
-State 13 <SV = 12> <Delay = 6.51>
-ST_13 : Operation 89 [4/5] (6.51ns)   --->   "%add4_i = fadd i32 %tmp_i, i32 1" [../hls_files/conv_pool.cpp:347]   --->   Operation 89 'fadd' 'add4_i' <Predicate = true> <Delay = 6.51> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 4> <II = 1> <Delay = 6.51> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
-
-State 14 <SV = 13> <Delay = 6.51>
-ST_14 : Operation 90 [3/5] (6.51ns)   --->   "%add4_i = fadd i32 %tmp_i, i32 1" [../hls_files/conv_pool.cpp:347]   --->   Operation 90 'fadd' 'add4_i' <Predicate = true> <Delay = 6.51> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 4> <II = 1> <Delay = 6.51> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
-
-State 15 <SV = 14> <Delay = 6.51>
-ST_15 : Operation 91 [2/5] (6.51ns)   --->   "%add4_i = fadd i32 %tmp_i, i32 1" [../hls_files/conv_pool.cpp:347]   --->   Operation 91 'fadd' 'add4_i' <Predicate = true> <Delay = 6.51> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 4> <II = 1> <Delay = 6.51> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
-
-State 16 <SV = 15> <Delay = 6.51>
-ST_16 : Operation 92 [1/5] (6.51ns)   --->   "%add4_i = fadd i32 %tmp_i, i32 1" [../hls_files/conv_pool.cpp:347]   --->   Operation 92 'fadd' 'add4_i' <Predicate = true> <Delay = 6.51> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 4> <II = 1> <Delay = 6.51> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
-
-State 17 <SV = 16> <Delay = 7.20>
-ST_17 : Operation 93 [12/12] (7.20ns)   --->   "%prob = fdiv i32 1, i32 %add4_i" [../hls_files/conv_pool.cpp:347]   --->   Operation 93 'fdiv' 'prob' <Predicate = true> <Delay = 7.20> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 11> <II = 1> <Delay = 7.20> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
-
-State 18 <SV = 17> <Delay = 7.20>
-ST_18 : Operation 94 [11/12] (7.20ns)   --->   "%prob = fdiv i32 1, i32 %add4_i" [../hls_files/conv_pool.cpp:347]   --->   Operation 94 'fdiv' 'prob' <Predicate = true> <Delay = 7.20> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 11> <II = 1> <Delay = 7.20> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
-
-State 19 <SV = 18> <Delay = 7.20>
-ST_19 : Operation 95 [10/12] (7.20ns)   --->   "%prob = fdiv i32 1, i32 %add4_i" [../hls_files/conv_pool.cpp:347]   --->   Operation 95 'fdiv' 'prob' <Predicate = true> <Delay = 7.20> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 11> <II = 1> <Delay = 7.20> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
-
-State 20 <SV = 19> <Delay = 7.20>
-ST_20 : Operation 96 [9/12] (7.20ns)   --->   "%prob = fdiv i32 1, i32 %add4_i" [../hls_files/conv_pool.cpp:347]   --->   Operation 96 'fdiv' 'prob' <Predicate = true> <Delay = 7.20> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 11> <II = 1> <Delay = 7.20> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
-
-State 21 <SV = 20> <Delay = 7.20>
-ST_21 : Operation 97 [8/12] (7.20ns)   --->   "%prob = fdiv i32 1, i32 %add4_i" [../hls_files/conv_pool.cpp:347]   --->   Operation 97 'fdiv' 'prob' <Predicate = true> <Delay = 7.20> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 11> <II = 1> <Delay = 7.20> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
-
-State 22 <SV = 21> <Delay = 7.20>
-ST_22 : Operation 98 [7/12] (7.20ns)   --->   "%prob = fdiv i32 1, i32 %add4_i" [../hls_files/conv_pool.cpp:347]   --->   Operation 98 'fdiv' 'prob' <Predicate = true> <Delay = 7.20> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 11> <II = 1> <Delay = 7.20> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
-
-State 23 <SV = 22> <Delay = 7.20>
-ST_23 : Operation 99 [6/12] (7.20ns)   --->   "%prob = fdiv i32 1, i32 %add4_i" [../hls_files/conv_pool.cpp:347]   --->   Operation 99 'fdiv' 'prob' <Predicate = true> <Delay = 7.20> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 11> <II = 1> <Delay = 7.20> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
-
-State 24 <SV = 23> <Delay = 7.20>
-ST_24 : Operation 100 [5/12] (7.20ns)   --->   "%prob = fdiv i32 1, i32 %add4_i" [../hls_files/conv_pool.cpp:347]   --->   Operation 100 'fdiv' 'prob' <Predicate = true> <Delay = 7.20> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 11> <II = 1> <Delay = 7.20> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
-
-State 25 <SV = 24> <Delay = 7.20>
-ST_25 : Operation 101 [4/12] (7.20ns)   --->   "%prob = fdiv i32 1, i32 %add4_i" [../hls_files/conv_pool.cpp:347]   --->   Operation 101 'fdiv' 'prob' <Predicate = true> <Delay = 7.20> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 11> <II = 1> <Delay = 7.20> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
-
-State 26 <SV = 25> <Delay = 7.20>
-ST_26 : Operation 102 [3/12] (7.20ns)   --->   "%prob = fdiv i32 1, i32 %add4_i" [../hls_files/conv_pool.cpp:347]   --->   Operation 102 'fdiv' 'prob' <Predicate = true> <Delay = 7.20> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 11> <II = 1> <Delay = 7.20> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
-
-State 27 <SV = 26> <Delay = 7.20>
-ST_27 : Operation 103 [2/12] (7.20ns)   --->   "%prob = fdiv i32 1, i32 %add4_i" [../hls_files/conv_pool.cpp:347]   --->   Operation 103 'fdiv' 'prob' <Predicate = true> <Delay = 7.20> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 11> <II = 1> <Delay = 7.20> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
-
-State 28 <SV = 27> <Delay = 7.20>
-ST_28 : Operation 104 [1/12] (7.20ns)   --->   "%prob = fdiv i32 1, i32 %add4_i" [../hls_files/conv_pool.cpp:347]   --->   Operation 104 'fdiv' 'prob' <Predicate = true> <Delay = 7.20> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 11> <II = 1> <Delay = 7.20> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
-
-State 29 <SV = 28> <Delay = 4.24>
-ST_29 : Operation 105 [1/1] (0.00ns)   --->   "%bitcast_ln348 = bitcast i32 %prob" [../hls_files/conv_pool.cpp:348]   --->   Operation 105 'bitcast' 'bitcast_ln348' <Predicate = true> <Delay = 0.00>
-ST_29 : Operation 106 [1/1] (0.00ns)   --->   "%tmp = partselect i8 @_ssdm_op_PartSelect.i8.i32.i32.i32, i32 %bitcast_ln348, i32 23, i32 30" [../hls_files/conv_pool.cpp:348]   --->   Operation 106 'partselect' 'tmp' <Predicate = true> <Delay = 0.00>
-ST_29 : Operation 107 [1/1] (0.00ns)   --->   "%trunc_ln348 = trunc i32 %bitcast_ln348" [../hls_files/conv_pool.cpp:348]   --->   Operation 107 'trunc' 'trunc_ln348' <Predicate = true> <Delay = 0.00>
-ST_29 : Operation 108 [1/1] (1.71ns)   --->   "%icmp_ln348 = icmp_ne  i8 %tmp, i8 255" [../hls_files/conv_pool.cpp:348]   --->   Operation 108 'icmp' 'icmp_ln348' <Predicate = true> <Delay = 1.71> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.71> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
-ST_29 : Operation 109 [1/1] (1.98ns)   --->   "%icmp_ln348_1 = icmp_eq  i23 %trunc_ln348, i23 0" [../hls_files/conv_pool.cpp:348]   --->   Operation 109 'icmp' 'icmp_ln348_1' <Predicate = true> <Delay = 1.98> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.98> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
-ST_29 : Operation 110 [2/2] (4.24ns)   --->   "%tmp_s = fcmp_ogt  i32 %prob, i32 0.5" [../hls_files/conv_pool.cpp:348]   --->   Operation 110 'fcmp' 'tmp_s' <Predicate = true> <Delay = 4.24> <CoreInst = "FCompare">   --->   Core 19 'FCompare' <Latency = 1> <II = 1> <Delay = 4.24> <FuncUnit> <Opcode : 'fcmp'> <InPorts = 2> <OutPorts = 1>
-
-State 30 <SV = 29> <Delay = 7.30>
-ST_30 : Operation 111 [1/1] (0.00ns)   --->   "%flag_out_read = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %flag_out"   --->   Operation 111 'read' 'flag_out_read' <Predicate = true> <Delay = 0.00>
-ST_30 : Operation 112 [1/1] (0.00ns) (grouped into LUT with out node flag)   --->   "%or_ln348 = or i1 %icmp_ln348_1, i1 %icmp_ln348" [../hls_files/conv_pool.cpp:348]   --->   Operation 112 'or' 'or_ln348' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_30 : Operation 113 [1/2] (4.24ns)   --->   "%tmp_s = fcmp_ogt  i32 %prob, i32 0.5" [../hls_files/conv_pool.cpp:348]   --->   Operation 113 'fcmp' 'tmp_s' <Predicate = true> <Delay = 4.24> <CoreInst = "FCompare">   --->   Core 19 'FCompare' <Latency = 1> <II = 1> <Delay = 4.24> <FuncUnit> <Opcode : 'fcmp'> <InPorts = 2> <OutPorts = 1>
-ST_30 : Operation 114 [1/1] (0.80ns) (out node of the LUT)   --->   "%flag = and i1 %or_ln348, i1 %tmp_s" [../hls_files/conv_pool.cpp:348]   --->   Operation 114 'and' 'flag' <Predicate = true> <Delay = 0.80> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_30 : Operation 115 [1/1] (0.00ns)   --->   "%Foutmem_addr = getelementptr i8 %Foutmem, i64 %flag_out_read" [../hls_files/conv_pool.cpp:349]   --->   Operation 115 'getelementptr' 'Foutmem_addr' <Predicate = true> <Delay = 0.00>
-ST_30 : Operation 116 [1/1] (7.30ns)   --->   "%Foutmem_addr_req = writereq i1 @_ssdm_op_WriteReq.m_axi.i8P1A, i8 %Foutmem_addr, i64 1" [../hls_files/conv_pool.cpp:349]   --->   Operation 116 'writereq' 'Foutmem_addr_req' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 111 'm_axi' <Latency = 9> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
-
-State 31 <SV = 30> <Delay = 7.30>
-ST_31 : Operation 117 [1/1] (0.00ns)   --->   "%zext_ln348 = zext i1 %flag" [../hls_files/conv_pool.cpp:348]   --->   Operation 117 'zext' 'zext_ln348' <Predicate = true> <Delay = 0.00>
-ST_31 : Operation 118 [1/1] (7.30ns)   --->   "%write_ln349 = write void @_ssdm_op_Write.m_axi.i8P1A, i8 %Foutmem_addr, i8 %zext_ln348, i1 1" [../hls_files/conv_pool.cpp:349]   --->   Operation 118 'write' 'write_ln349' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 111 'm_axi' <Latency = 5> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
-
-State 32 <SV = 31> <Delay = 7.30>
-ST_32 : Operation 119 [5/5] (7.30ns)   --->   "%Foutmem_addr_resp = writeresp i1 @_ssdm_op_WriteResp.m_axi.i8P1A, i8 %Foutmem_addr" [../hls_files/conv_pool.cpp:349]   --->   Operation 119 'writeresp' 'Foutmem_addr_resp' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 111 'm_axi' <Latency = 3> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
-
-State 33 <SV = 32> <Delay = 7.30>
-ST_33 : Operation 120 [4/5] (7.30ns)   --->   "%Foutmem_addr_resp = writeresp i1 @_ssdm_op_WriteResp.m_axi.i8P1A, i8 %Foutmem_addr" [../hls_files/conv_pool.cpp:349]   --->   Operation 120 'writeresp' 'Foutmem_addr_resp' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 111 'm_axi' <Latency = 3> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
-
-State 34 <SV = 33> <Delay = 7.30>
-ST_34 : Operation 121 [3/5] (7.30ns)   --->   "%Foutmem_addr_resp = writeresp i1 @_ssdm_op_WriteResp.m_axi.i8P1A, i8 %Foutmem_addr" [../hls_files/conv_pool.cpp:349]   --->   Operation 121 'writeresp' 'Foutmem_addr_resp' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 111 'm_axi' <Latency = 3> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
-
-State 35 <SV = 34> <Delay = 7.30>
-ST_35 : Operation 122 [2/5] (7.30ns)   --->   "%Foutmem_addr_resp = writeresp i1 @_ssdm_op_WriteResp.m_axi.i8P1A, i8 %Foutmem_addr" [../hls_files/conv_pool.cpp:349]   --->   Operation 122 'writeresp' 'Foutmem_addr_resp' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 111 'm_axi' <Latency = 3> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
-
-State 36 <SV = 35> <Delay = 7.30>
-ST_36 : Operation 123 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %Foutmem, void @empty_17, i32 0, i32 0, void @empty_19, i32 0, i32 1, void @empty_29, void @empty_20, void @empty_19, i32 16, i32 16, i32 16, i32 16, void @empty_19, void @empty_19, i32 4294967295, i32 0, i32 0"   --->   Operation 123 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_36 : Operation 124 [1/5] (7.30ns)   --->   "%Foutmem_addr_resp = writeresp i1 @_ssdm_op_WriteResp.m_axi.i8P1A, i8 %Foutmem_addr" [../hls_files/conv_pool.cpp:349]   --->   Operation 124 'writeresp' 'Foutmem_addr_resp' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 111 'm_axi' <Latency = 3> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
-ST_36 : Operation 125 [1/1] (0.00ns)   --->   "%ret_ln0 = ret"   --->   Operation 125 'ret' 'ret_ln0' <Predicate = true> <Delay = 0.00>
+State 7 <SV = 6> <Delay = 7.30>
+ST_7 : Operation 16 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %Foutmem, void @empty_29, i32 0, i32 0, void @empty_20, i32 0, i32 1, void @empty_38, void @empty_32, void @empty_20, i32 16, i32 16, i32 16, i32 16, void @empty_20, void @empty_20, i32 4294967295, i32 0, i32 0"   --->   Operation 16 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 17 [1/5] (7.30ns)   --->   "%Foutmem_addr_resp = writeresp i1 @_ssdm_op_WriteResp.m_axi.i8P1A, i8 %Foutmem_addr" [../hls_files/conv_pool.cpp:248]   --->   Operation 17 'writeresp' 'Foutmem_addr_resp' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 111 'm_axi' <Latency = 3> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_7 : Operation 18 [1/1] (0.00ns)   --->   "%ret_ln249 = ret" [../hls_files/conv_pool.cpp:249]   --->   Operation 18 'ret' 'ret_ln249' <Predicate = true> <Delay = 0.00>
 
 
 ============================================================
@@ -276,152 +111,35 @@ ST_36 : Operation 125 [1/1] (0.00ns)   --->   "%ret_ln0 = ret"   --->   Operatio
 ============================================================
 Target clock period: 10.000ns, clock uncertainty: 2.700ns.
 
- <State 1>: 2.453ns
+ <State 1>: 7.300ns
 The critical path consists of the following:
-	'alloca' operation 32 bit ('acc2_1_loc') [38]  (0.000 ns)
-	'call' operation 0 bit ('call_ln342', ../hls_files/conv_pool.cpp:342) to 'fc2_Pipeline_FC2_LOOP' [73]  (2.453 ns)
+	wire read operation ('flag_out_read', ../hls_files/conv_pool.cpp:240) on port 'flag_out' (../hls_files/conv_pool.cpp:240) [4]  (0.000 ns)
+	'getelementptr' operation 8 bit ('Foutmem_addr', ../hls_files/conv_pool.cpp:248) [5]  (0.000 ns)
+	bus request operation ('Foutmem_addr_req', ../hls_files/conv_pool.cpp:248) on port 'Foutmem' (../hls_files/conv_pool.cpp:248) [6]  (7.300 ns)
 
- <State 2>: 0.000ns
+ <State 2>: 7.300ns
 The critical path consists of the following:
+	bus write operation ('write_ln248', ../hls_files/conv_pool.cpp:248) on port 'Foutmem' (../hls_files/conv_pool.cpp:248) [7]  (7.300 ns)
 
- <State 3>: 0.800ns
+ <State 3>: 7.300ns
 The critical path consists of the following:
-	'load' operation 32 bit ('acc2_1_loc_load') on local variable 'acc2_1_loc' [74]  (0.000 ns)
-	'xor' operation 1 bit ('xor_ln347', ../hls_files/conv_pool.cpp:347) [77]  (0.800 ns)
+	bus response operation ('Foutmem_addr_resp', ../hls_files/conv_pool.cpp:248) on port 'Foutmem' (../hls_files/conv_pool.cpp:248) [8]  (7.300 ns)
 
- <State 4>: 7.046ns
+ <State 4>: 7.300ns
 The critical path consists of the following:
-	'fexp' operation 32 bit ('tmp_i', C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib\hlsmath\src\common\hls_exp_float.cpp:17->C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib\hlsmath\src\c++\expfloat.cpp:17->../hls_files/conv_pool.cpp:347) [81]  (7.046 ns)
+	bus response operation ('Foutmem_addr_resp', ../hls_files/conv_pool.cpp:248) on port 'Foutmem' (../hls_files/conv_pool.cpp:248) [8]  (7.300 ns)
 
- <State 5>: 7.046ns
+ <State 5>: 7.300ns
 The critical path consists of the following:
-	'fexp' operation 32 bit ('tmp_i', C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib\hlsmath\src\common\hls_exp_float.cpp:17->C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib\hlsmath\src\c++\expfloat.cpp:17->../hls_files/conv_pool.cpp:347) [81]  (7.046 ns)
+	bus response operation ('Foutmem_addr_resp', ../hls_files/conv_pool.cpp:248) on port 'Foutmem' (../hls_files/conv_pool.cpp:248) [8]  (7.300 ns)
 
- <State 6>: 7.046ns
+ <State 6>: 7.300ns
 The critical path consists of the following:
-	'fexp' operation 32 bit ('tmp_i', C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib\hlsmath\src\common\hls_exp_float.cpp:17->C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib\hlsmath\src\c++\expfloat.cpp:17->../hls_files/conv_pool.cpp:347) [81]  (7.046 ns)
+	bus response operation ('Foutmem_addr_resp', ../hls_files/conv_pool.cpp:248) on port 'Foutmem' (../hls_files/conv_pool.cpp:248) [8]  (7.300 ns)
 
- <State 7>: 7.046ns
+ <State 7>: 7.300ns
 The critical path consists of the following:
-	'fexp' operation 32 bit ('tmp_i', C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib\hlsmath\src\common\hls_exp_float.cpp:17->C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib\hlsmath\src\c++\expfloat.cpp:17->../hls_files/conv_pool.cpp:347) [81]  (7.046 ns)
-
- <State 8>: 7.046ns
-The critical path consists of the following:
-	'fexp' operation 32 bit ('tmp_i', C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib\hlsmath\src\common\hls_exp_float.cpp:17->C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib\hlsmath\src\c++\expfloat.cpp:17->../hls_files/conv_pool.cpp:347) [81]  (7.046 ns)
-
- <State 9>: 7.046ns
-The critical path consists of the following:
-	'fexp' operation 32 bit ('tmp_i', C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib\hlsmath\src\common\hls_exp_float.cpp:17->C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib\hlsmath\src\c++\expfloat.cpp:17->../hls_files/conv_pool.cpp:347) [81]  (7.046 ns)
-
- <State 10>: 7.046ns
-The critical path consists of the following:
-	'fexp' operation 32 bit ('tmp_i', C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib\hlsmath\src\common\hls_exp_float.cpp:17->C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib\hlsmath\src\c++\expfloat.cpp:17->../hls_files/conv_pool.cpp:347) [81]  (7.046 ns)
-
- <State 11>: 7.046ns
-The critical path consists of the following:
-	'fexp' operation 32 bit ('tmp_i', C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib\hlsmath\src\common\hls_exp_float.cpp:17->C:\scratch\2025.1\hls_product\640\2025.1\src\shared\hls\clib\hlsmath\src\c++\expfloat.cpp:17->../hls_files/conv_pool.cpp:347) [81]  (7.046 ns)
-
- <State 12>: 6.514ns
-The critical path consists of the following:
-	'fadd' operation 32 bit ('add4_i', ../hls_files/conv_pool.cpp:347) [82]  (6.514 ns)
-
- <State 13>: 6.514ns
-The critical path consists of the following:
-	'fadd' operation 32 bit ('add4_i', ../hls_files/conv_pool.cpp:347) [82]  (6.514 ns)
-
- <State 14>: 6.514ns
-The critical path consists of the following:
-	'fadd' operation 32 bit ('add4_i', ../hls_files/conv_pool.cpp:347) [82]  (6.514 ns)
-
- <State 15>: 6.514ns
-The critical path consists of the following:
-	'fadd' operation 32 bit ('add4_i', ../hls_files/conv_pool.cpp:347) [82]  (6.514 ns)
-
- <State 16>: 6.514ns
-The critical path consists of the following:
-	'fadd' operation 32 bit ('add4_i', ../hls_files/conv_pool.cpp:347) [82]  (6.514 ns)
-
- <State 17>: 7.208ns
-The critical path consists of the following:
-	'fdiv' operation 32 bit ('prob', ../hls_files/conv_pool.cpp:347) [83]  (7.208 ns)
-
- <State 18>: 7.208ns
-The critical path consists of the following:
-	'fdiv' operation 32 bit ('prob', ../hls_files/conv_pool.cpp:347) [83]  (7.208 ns)
-
- <State 19>: 7.208ns
-The critical path consists of the following:
-	'fdiv' operation 32 bit ('prob', ../hls_files/conv_pool.cpp:347) [83]  (7.208 ns)
-
- <State 20>: 7.208ns
-The critical path consists of the following:
-	'fdiv' operation 32 bit ('prob', ../hls_files/conv_pool.cpp:347) [83]  (7.208 ns)
-
- <State 21>: 7.208ns
-The critical path consists of the following:
-	'fdiv' operation 32 bit ('prob', ../hls_files/conv_pool.cpp:347) [83]  (7.208 ns)
-
- <State 22>: 7.208ns
-The critical path consists of the following:
-	'fdiv' operation 32 bit ('prob', ../hls_files/conv_pool.cpp:347) [83]  (7.208 ns)
-
- <State 23>: 7.208ns
-The critical path consists of the following:
-	'fdiv' operation 32 bit ('prob', ../hls_files/conv_pool.cpp:347) [83]  (7.208 ns)
-
- <State 24>: 7.208ns
-The critical path consists of the following:
-	'fdiv' operation 32 bit ('prob', ../hls_files/conv_pool.cpp:347) [83]  (7.208 ns)
-
- <State 25>: 7.208ns
-The critical path consists of the following:
-	'fdiv' operation 32 bit ('prob', ../hls_files/conv_pool.cpp:347) [83]  (7.208 ns)
-
- <State 26>: 7.208ns
-The critical path consists of the following:
-	'fdiv' operation 32 bit ('prob', ../hls_files/conv_pool.cpp:347) [83]  (7.208 ns)
-
- <State 27>: 7.208ns
-The critical path consists of the following:
-	'fdiv' operation 32 bit ('prob', ../hls_files/conv_pool.cpp:347) [83]  (7.208 ns)
-
- <State 28>: 7.208ns
-The critical path consists of the following:
-	'fdiv' operation 32 bit ('prob', ../hls_files/conv_pool.cpp:347) [83]  (7.208 ns)
-
- <State 29>: 4.247ns
-The critical path consists of the following:
-	'fcmp' operation 1 bit ('tmp_s', ../hls_files/conv_pool.cpp:348) [90]  (4.247 ns)
-
- <State 30>: 7.300ns
-The critical path consists of the following:
-	wire read operation ('flag_out') on port 'flag_out' [37]  (0.000 ns)
-	'getelementptr' operation 8 bit ('Foutmem_addr', ../hls_files/conv_pool.cpp:349) [93]  (0.000 ns)
-	bus request operation ('Foutmem_addr_req', ../hls_files/conv_pool.cpp:349) on port 'Foutmem' (../hls_files/conv_pool.cpp:349) [94]  (7.300 ns)
-
- <State 31>: 7.300ns
-The critical path consists of the following:
-	bus write operation ('write_ln349', ../hls_files/conv_pool.cpp:349) on port 'Foutmem' (../hls_files/conv_pool.cpp:349) [95]  (7.300 ns)
-
- <State 32>: 7.300ns
-The critical path consists of the following:
-	bus response operation ('Foutmem_addr_resp', ../hls_files/conv_pool.cpp:349) on port 'Foutmem' (../hls_files/conv_pool.cpp:349) [96]  (7.300 ns)
-
- <State 33>: 7.300ns
-The critical path consists of the following:
-	bus response operation ('Foutmem_addr_resp', ../hls_files/conv_pool.cpp:349) on port 'Foutmem' (../hls_files/conv_pool.cpp:349) [96]  (7.300 ns)
-
- <State 34>: 7.300ns
-The critical path consists of the following:
-	bus response operation ('Foutmem_addr_resp', ../hls_files/conv_pool.cpp:349) on port 'Foutmem' (../hls_files/conv_pool.cpp:349) [96]  (7.300 ns)
-
- <State 35>: 7.300ns
-The critical path consists of the following:
-	bus response operation ('Foutmem_addr_resp', ../hls_files/conv_pool.cpp:349) on port 'Foutmem' (../hls_files/conv_pool.cpp:349) [96]  (7.300 ns)
-
- <State 36>: 7.300ns
-The critical path consists of the following:
-	bus response operation ('Foutmem_addr_resp', ../hls_files/conv_pool.cpp:349) on port 'Foutmem' (../hls_files/conv_pool.cpp:349) [96]  (7.300 ns)
+	bus response operation ('Foutmem_addr_resp', ../hls_files/conv_pool.cpp:248) on port 'Foutmem' (../hls_files/conv_pool.cpp:248) [8]  (7.300 ns)
 
 
 ============================================================
@@ -439,35 +157,6 @@ N/A
 	State 5
 	State 6
 	State 7
-	State 8
-	State 9
-	State 10
-	State 11
-	State 12
-	State 13
-	State 14
-	State 15
-	State 16
-	State 17
-	State 18
-	State 19
-	State 20
-	State 21
-	State 22
-	State 23
-	State 24
-	State 25
-	State 26
-	State 27
-	State 28
-	State 29
-	State 30
-	State 31
-	State 32
-	State 33
-	State 34
-	State 35
-	State 36
 
 
 ============================================================

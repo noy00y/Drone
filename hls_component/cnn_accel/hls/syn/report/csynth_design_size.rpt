@@ -6,78 +6,48 @@
 +---------------+-----------------------------+--------------+----------------------------------------------------------------------------------------+
 | Phase         | Step                        | Instructions | Description                                                                            |
 +---------------+-----------------------------+--------------+----------------------------------------------------------------------------------------+
-| Compile/Link  |                             | 14,935       | After all functions are compiled and linked into a single design                       |
+| Compile/Link  |                             | 59,039       | After all functions are compiled and linked into a single design                       |
 |               |                             |              |                                                                                        |
 | Unroll/Inline |                             |              | After user unroll and inline pragmas are applied                                       |
-|               | (1) unroll                  |  2,724       | user unroll pragmas are applied                                                        |
-|               | (2) simplification          |  1,753       | simplification of applied user unroll pragmas                                          |
-|               | (3) inline                  |  1,555       | user inline pragmas are applied                                                        |
-|               | (4) simplification          |  1,311       | simplification of applied user inline pragmas                                          |
+|               | (1) unroll                  | 10,405       | user unroll pragmas are applied                                                        |
+|               | (2) simplification          |  3,548       | simplification of applied user unroll pragmas                                          |
+|               | (3) inline                  |  3,175       | user inline pragmas are applied                                                        |
+|               | (4) simplification          |  2,855       | simplification of applied user inline pragmas                                          |
 |               |                             |              |                                                                                        |
 | Array/Struct  |                             |              | After user array partition and struct aggregate/disaggregate pragmas are applied       |
-|               | (1) array partition         |  6,354       | user array partition pragmas are applied                                               |
-|               | (2) simplification          |  5,710       | simplification of applied user array partition & struct aggregate/disaggregate pragmas |
-|               | (3) aggregate/disaggregate  |  5,710       | user struct aggregate/disaggregate pragmas are applied                                 |
-|               | (4) array reshape           |  5,710       | apply array reshape pragmas                                                            |
-|               | (5) access patterns         |  5,729       | array access pattern optmizations                                                      |
+|               | (1) array partition         |  2,769       | user array partition pragmas are applied                                               |
+|               | (2) simplification          |  2,769       | simplification of applied user array partition & struct aggregate/disaggregate pragmas |
+|               | (3) aggregate/disaggregate  |  2,769       | user struct aggregate/disaggregate pragmas are applied                                 |
+|               | (4) array reshape           |  2,769       | apply array reshape pragmas                                                            |
+|               | (5) access patterns         |  2,780       | array access pattern optmizations                                                      |
 |               |                             |              |                                                                                        |
 | Performance   |                             |              | After transformations are applied to meet performance pragma targets                   |
-|               | (1) loop simplification     |  5,722       | loop and instruction simplification                                                    |
-|               | (2) parallelization         |  5,720       | loops are unrolled or pipelined to meet performance targets                            |
-|               | (3) array partition         |  5,719       | arrays are partitioned to meet performance targets                                     |
-|               | (4) simplification          |  5,719       | simplification of design after performance transformations                             |
+|               | (1) loop simplification     |  2,780       | loop and instruction simplification                                                    |
+|               | (2) parallelization         |  2,733       | loops are unrolled or pipelined to meet performance targets                            |
+|               | (3) array partition         |  3,717       | arrays are partitioned to meet performance targets                                     |
+|               | (4) simplification          |  2,777       | simplification of design after performance transformations                             |
 |               |                             |              |                                                                                        |
 | HW Transforms |                             |              | After hardware transfomations                                                          |
-|               | (1) lowering                |  5,760       | initial conversion to HW specific instructions                                         |
-|               | (2) optimizations           |  5,846       | high level synthesis optimizations                                                     |
+|               | (1) lowering                |  2,805       | initial conversion to HW specific instructions                                         |
+|               | (2) optimizations           |  2,873       | high level synthesis optimizations                                                     |
 +---------------+-----------------------------+--------------+----------------------------------------------------------------------------------------+
 
 * Instructions per Function for each Compilation Phase
-+--------------------------------+----------------------+-----------------+---------------+--------------+-------------+---------------+
-| Function                       | Location             | Compile/Link    | Unroll/Inline | Array/Struct | Performance | HW Transforms |
-+--------------------------------+----------------------+-----------------+---------------+--------------+-------------+---------------+
-| + cnn_accel                    | conv_pool.cpp:53     | 14,935          | 1,311         | 5,729        | 5,719       | 5,846         |
-|    load_img                    | conv_pool.cpp:195    |    42           |   24          |   26         |   26        |               |
-|    conv1                       | conv_pool.cpp:209    |    93           |  225          |  410         |  410        |               |
-|    pool1                       | conv_pool.cpp:236    |    90           |   36          |   92         |   92        |               |
-|    conv2                       | conv_pool.cpp:257    |    93           |  560          | 1,579        | 1,579       |               |
-|    pool2                       | conv_pool.cpp:283    |    90           |   36          |   92         |   92        |               |
-|    flatten                     | conv_pool.cpp:304    |    42           |   29          |   37         |   37        |               |
-|  + fc1                         | conv_pool.cpp:320    | 14,274          |  263          |  312         |  310        |               |
-|   + tanh                       | tanhfloat.cpp:6      | 14,237          |               |              |             |               |
-|    + generic_tanh<float>       | hls_tanh.h:28        | 14,235          |               |              |             |               |
-|       fp_struct                | x_hls_utils.h:283    |   318           |               |              |             |               |
-|     + generic_fabs<float>      | hls_fabs.h:12        |   959           |               |              |             |               |
-|      + generic_copysign<float> | hls_copysign.h:10    |   957           |               |              |             |               |
-|         fp_struct              | x_hls_utils.h:283    |   636 (2 calls) |               |              |             |               |
-|       + to_ieee                | x_hls_utils.h:346    |   303           |               |              |             |               |
-|        + to_float              | x_hls_utils.h:322    |   301           |               |              |             |               |
-|           data                 | x_hls_utils.h:309    |   279           |               |              |             |               |
-|     + expm1                    | hls_exp_float.cpp:7  | 12,291          |               |              |             |               |
-|        fp_struct               | x_hls_utils.h:283    |   318           |               |              |             |               |
-|      + exp_generic<double>     | hls_exp_.h:156       | 11,898          |               |              |             |               |
-|         fp_struct              | x_hls_utils.h:456    |   319           |               |              |             |               |
-|         fp_struct              | x_hls_utils.h:454    |     4           |               |              |             |               |
-|       + generic_isnan<double>  | hls_isnan.h:16       |   390           |               |              |             |               |
-|          fp_struct             | x_hls_utils.h:456    |   319           |               |              |             |               |
-|       + generic_isinf<double>  | hls_isinf.h:16       |   389           |               |              |             |               |
-|          fp_struct             | x_hls_utils.h:456    |   319           |               |              |             |               |
-|         expv                   | x_hls_utils.h:485    |   109           |               |              |             |               |
-|         exp_Z1P_m_1            | hls_exp_.h:90        | 2,725           |               |              |             |               |
-|       + to_ieee                | x_hls_utils.h:509    | 2,121 (7 calls) |               |              |             |               |
-|        + to_double             | x_hls_utils.h:494    | 2,107 (7 calls) |               |              |             |               |
-|           data                 | x_hls_utils.h:475    | 1,953 (7 calls) |               |              |             |               |
-|     + generic_nan<float>       | hls_nan.h:10         |   393           |               |              |             |               |
-|        fp_struct               | x_hls_utils.h:281    |     4           |               |              |             |               |
-|      + to_ieee                 | x_hls_utils.h:346    |   303           |               |              |             |               |
-|       + to_float               | x_hls_utils.h:322    |   301           |               |              |             |               |
-|          data                  | x_hls_utils.h:309    |   279           |               |              |             |               |
-|   + generic_tanh<float>        | hls_tanh.h:28        |                 |  232          |  232         |  232        |               |
-|      exp_generic<double>       | hls_exp_.h:156       |                 |  178          |  178         |  178        |               |
-|  + fc2                         | conv_pool.cpp:338    |    35           |   21          |   53         |   52        |               |
-|   + exp                        | expfloat.cpp:15      |     4           |               |              |             |               |
-|      exp                       | hls_exp_float.cpp:15 |     2           |               |              |             |               |
-+--------------------------------+----------------------+-----------------+---------------+--------------+-------------+---------------+
++-------------------------------------+--------------------------+--------------+---------------+--------------+-------------+---------------+
+| Function                            | Location                 | Compile/Link | Unroll/Inline | Array/Struct | Performance | HW Transforms |
++-------------------------------------+--------------------------+--------------+---------------+--------------+-------------+---------------+
+| + cnn_accel                         | conv_pool.cpp:255        | 59,039       | 2,855         | 2,780        | 2,777       | 2,873         |
+|    stream_img                       | conv_pool.cpp:31         |    17        |    9          |   11         |   11        |               |
+|    conv1_stream                     | conv_pool.cpp:44         | 1,990        |  462          |  462         |  491        |               |
+|    pool1_stream                     | conv_pool.cpp:102        |   163        |   85          |   43         |   43        |               |
+|    conv2_stream                     | conv_pool.cpp:128        | 1,818        | 1,112         | 1,112        | 1,141       |               |
+|    pool2_stream                     | conv_pool.cpp:177        |   163        |   85          |   43         |   43        |               |
+|    flatten_stream                   | conv_pool.cpp:202        |    30        |   11          |   11         |   11        |               |
+|  + fc1                              | conv_pool.cpp:218        | 4,913        |  770          |  773         |  711        |               |
+|     cordic_hyperb_apfixed<18, 2,... | hls_cordic_apfixed.h:733 |              |  662          |  662         |             |               |
+|  + fc2                              | conv_pool.cpp:237        | 49,879       |  257          |  260         |  257        |               |
+|     exp<17, 5>                      | hls_exp_apfixed.h:13     |              |  207          |  207         |  207        |               |
++-------------------------------------+--------------------------+--------------+---------------+--------------+-------------+---------------+
 
 * Design Size Message Settings
 +---------------------------------------------+--------+------------------------------------------------------------------+

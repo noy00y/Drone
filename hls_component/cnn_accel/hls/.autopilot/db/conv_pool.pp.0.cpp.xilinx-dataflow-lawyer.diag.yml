@@ -3,66 +3,42 @@ MainSourceFile:  'C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/cnn_ac
 Diagnostics:     
   - DiagnosticName:  clang-diagnostic-warning
     Message:         '[xlx-df-check-8] Static scalars and arrays declared inside a dataflow region will be treated like local variables'
-    FileOffset:      '93:16'
+    FileOffset:      '281:16'
     FilePath:        ../hls_files/conv_pool.cpp
   - DiagnosticName:  clang-diagnostic-warning
     Message:         '[xlx-df-check-8] Static scalars and arrays declared inside a dataflow region will be treated like local variables'
-    FileOffset:      '94:19'
+    FileOffset:      '282:17'
     FilePath:        ../hls_files/conv_pool.cpp
   - DiagnosticName:  clang-diagnostic-warning
     Message:         '[xlx-df-check-8] Static scalars and arrays declared inside a dataflow region will be treated like local variables'
-    FileOffset:      '95:19'
+    FileOffset:      '283:17'
     FilePath:        ../hls_files/conv_pool.cpp
   - DiagnosticName:  clang-diagnostic-warning
     Message:         '[xlx-df-check-8] Static scalars and arrays declared inside a dataflow region will be treated like local variables'
-    FileOffset:      '96:19'
+    FileOffset:      '284:17'
     FilePath:        ../hls_files/conv_pool.cpp
   - DiagnosticName:  clang-diagnostic-warning
     Message:         '[xlx-df-check-8] Static scalars and arrays declared inside a dataflow region will be treated like local variables'
-    FileOffset:      '97:19'
+    FileOffset:      '285:17'
     FilePath:        ../hls_files/conv_pool.cpp
   - DiagnosticName:  clang-diagnostic-warning
     Message:         '[xlx-df-check-8] Static scalars and arrays declared inside a dataflow region will be treated like local variables'
-    FileOffset:      '98:19'
+    FileOffset:      '286:17'
     FilePath:        ../hls_files/conv_pool.cpp
   - DiagnosticName:  clang-diagnostic-warning
     Message:         '[xlx-df-check-8] Static scalars and arrays declared inside a dataflow region will be treated like local variables'
-    FileOffset:      '99:19'
+    FileOffset:      '287:17'
     FilePath:        ../hls_files/conv_pool.cpp
   - DiagnosticName:  clang-diagnostic-warning
     Message:         '[xlx-df-check-8] Static scalars and arrays declared inside a dataflow region will be treated like local variables'
-    FileOffset:      '103:19'
+    FileOffset:      '288:17'
     FilePath:        ../hls_files/conv_pool.cpp
   - DiagnosticName:  clang-diagnostic-warning
     Message:         '[xlx-df-check-8] Static scalars and arrays declared inside a dataflow region will be treated like local variables'
-    FileOffset:      '104:19'
-    FilePath:        ../hls_files/conv_pool.cpp
-  - DiagnosticName:  clang-diagnostic-warning
-    Message:         '[xlx-df-check-8] Static scalars and arrays declared inside a dataflow region will be treated like local variables'
-    FileOffset:      '105:19'
-    FilePath:        ../hls_files/conv_pool.cpp
-  - DiagnosticName:  clang-diagnostic-warning
-    Message:         '[xlx-df-check-8] Static scalars and arrays declared inside a dataflow region will be treated like local variables'
-    FileOffset:      '106:19'
-    FilePath:        ../hls_files/conv_pool.cpp
-  - DiagnosticName:  clang-diagnostic-warning
-    Message:         '[xlx-df-check-8] Static scalars and arrays declared inside a dataflow region will be treated like local variables'
-    FileOffset:      '107:19'
-    FilePath:        ../hls_files/conv_pool.cpp
-  - DiagnosticName:  clang-diagnostic-warning
-    Message:         '[xlx-df-check-8] Static scalars and arrays declared inside a dataflow region will be treated like local variables'
-    FileOffset:      '108:19'
-    FilePath:        ../hls_files/conv_pool.cpp
-  - DiagnosticName:  clang-diagnostic-warning
-    Message:         '[xlx-df-check-8] Static scalars and arrays declared inside a dataflow region will be treated like local variables'
-    FileOffset:      '109:19'
-    FilePath:        ../hls_files/conv_pool.cpp
-  - DiagnosticName:  clang-diagnostic-warning
-    Message:         '[xlx-df-check-8] Static scalars and arrays declared inside a dataflow region will be treated like local variables'
-    FileOffset:      '110:19'
+    FileOffset:      '304:17'
     FilePath:        ../hls_files/conv_pool.cpp
   - DiagnosticName:  clang-diagnostic-warning
     Message:         '[xlx-df-check-11] Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region'
-    FileOffset:      '165:9'
+    FileOffset:      '307:9'
     FilePath:        ../hls_files/conv_pool.cpp
 ...

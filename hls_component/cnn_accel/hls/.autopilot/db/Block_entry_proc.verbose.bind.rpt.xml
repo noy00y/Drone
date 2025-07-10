@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'Block_entry_proc'" level="0">
-<item name = "Date">Wed Jul  9 07:45:42 2025
+<item name = "Date">Wed Jul  9 22:27:38 2025
 </item>
 <item name = "Version">2025.1 (Build 6135595 on May 21 2025)</item>
 <item name = "Project">cnn_accel</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00 ns, 7.838 ns, 2.70 ns</column>
+<column name="ap_clk">10.00 ns, 7.300 ns, 2.70 ns</column>
 </table>
 </item>
 </section>
@@ -24,28 +24,20 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">6951794, 38183285, 69.518 ms, 0.382 sec, 6951794, 38183285, no</column>
+<column name="">2, 7337000, 20.000 ns, 73.370 ms, 2, 7337000, no</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_load_img_fu_3251">load_img, 691211, 691211, 6.912 ms, 6.912 ms, 691211, 691211, no</column>
-<column name="grp_conv1_fu_3261">conv1, 8476740, 8476740, 84.767 ms, 84.767 ms, 8476740, 8476740, no</column>
-<column name="grp_pool1_fu_3723">pool1, 454115, 454115, 4.541 ms, 4.541 ms, 454107, 454107, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="grp_conv2_fu_3743">conv2, 2645498, 2645498, 26.455 ms, 26.455 ms, 2645498, 2645498, no</column>
-<column name="grp_pool2_fu_6099">pool2, 217162, 217162, 2.172 ms, 2.172 ms, 217155, 217155, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="grp_flatten_fu_6119">flatten, 217155, 217155, 2.172 ms, 2.172 ms, 217154, 217154, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="grp_fc1_fu_6133">fc1, 25481217, 25481217, 0.255 sec, 0.255 sec, 25481217, 25481217, no</column>
-<column name="grp_fc2_fu_6227">fc2, 170, 170, 1.700 us, 1.700 us, 170, 170, no</column>
-<column name="grp_Block_entry_proc_Pipeline_LOAD_W1_fu_6302">Block_entry_proc_Pipeline_LOAD_W1, 434, 434, 4.340 us, 4.340 us, 433, 433, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="grp_Block_entry_proc_Pipeline_LOAD_B1_fu_6741">Block_entry_proc_Pipeline_LOAD_B1, 18, 18, 0.180 us, 0.180 us, 17, 17, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="grp_Block_entry_proc_Pipeline_LOAD_W2_fu_6764">Block_entry_proc_Pipeline_LOAD_W2, 2306, 2306, 23.060 us, 23.060 us, 2305, 2305, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="grp_Block_entry_proc_Pipeline_LOAD_B2_fu_9075">Block_entry_proc_Pipeline_LOAD_B2, 34, 34, 0.340 us, 0.340 us, 33, 33, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="grp_Block_entry_proc_Pipeline_LOAD_FC1W_fu_9114">Block_entry_proc_Pipeline_LOAD_FC1W, 6948867, 6948867, 69.489 ms, 69.489 ms, 6948866, 6948866, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="grp_Block_entry_proc_Pipeline_LOAD_FC1B_fu_9137">Block_entry_proc_Pipeline_LOAD_FC1B, 66, 66, 0.660 us, 0.660 us, 65, 65, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="grp_Block_entry_proc_Pipeline_LOAD_FC2W_fu_9208">Block_entry_proc_Pipeline_LOAD_FC2W, 66, 66, 0.660 us, 0.660 us, 65, 65, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_stream_img_fu_112">stream_img, 230412, 230412, 2.304 ms, 2.304 ms, 230412, 230412, no</column>
+<column name="grp_fc2_fu_121">fc2, 6, 6, 60.000 ns, 60.000 ns, 6, 6, no</column>
+<column name="grp_conv1_stream_fu_129">conv1_stream, 922081, 2304481, 9.221 ms, 23.045 ms, 922081, 2304481, no</column>
+<column name="grp_pool1_stream_fu_135">pool1_stream, 2421891, 2421891, 24.219 ms, 24.219 ms, 2421890, 2421890, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_conv2_stream_fu_143">conv2_stream, 416501, 1059815, 4.165 ms, 10.598 ms, 416501, 1059815, no</column>
+<column name="grp_pool2_stream_fu_149">pool2_stream, 1175619, 1175619, 11.756 ms, 11.756 ms, 1175618, 1175618, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_flatten_stream_fu_157">flatten_stream, 144770, 144770, 1.448 ms, 1.448 ms, 144769, 144769, loop auto-rewind stp (delay=0 clock cycles(s))</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">

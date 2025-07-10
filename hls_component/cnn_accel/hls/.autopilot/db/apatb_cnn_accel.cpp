@@ -1420,8 +1420,8 @@ void apatb_cnn_accel_hw(void* __xlx_apatb_param_img_in, void* __xlx_apatb_param_
 #else
   static hls::sim::Memory<hls::sim::Reader, hls::sim::Writer> port11 {
 #endif
-    .width = 32,
-    .asize = 4,
+    .width = 16,
+    .asize = 2,
     .hbm = false,
     .name = { "B1mem" },
 #ifdef POST_CHECK
@@ -1438,15 +1438,15 @@ void apatb_cnn_accel_hw(void* __xlx_apatb_param_img_in, void* __xlx_apatb_param_
   };
   port11.param = { __xlx_apatb_param_bias1 };
   port11.mname = { "bias1" };
-  port11.nbytes = { 32 };
+  port11.nbytes = { 16 };
 
 #ifdef USE_BINARY_TV_FILE
   static hls::sim::Memory<hls::sim::Input, hls::sim::Output> port12 {
 #else
   static hls::sim::Memory<hls::sim::Reader, hls::sim::Writer> port12 {
 #endif
-    .width = 32,
-    .asize = 4,
+    .width = 16,
+    .asize = 2,
     .hbm = false,
     .name = { "B2mem" },
 #ifdef POST_CHECK
@@ -1463,15 +1463,15 @@ void apatb_cnn_accel_hw(void* __xlx_apatb_param_img_in, void* __xlx_apatb_param_
   };
   port12.param = { __xlx_apatb_param_bias2 };
   port12.mname = { "bias2" };
-  port12.nbytes = { 64 };
+  port12.nbytes = { 32 };
 
 #ifdef USE_BINARY_TV_FILE
   static hls::sim::Memory<hls::sim::Input, hls::sim::Output> port13 {
 #else
   static hls::sim::Memory<hls::sim::Reader, hls::sim::Writer> port13 {
 #endif
-    .width = 32,
-    .asize = 4,
+    .width = 16,
+    .asize = 2,
     .hbm = false,
     .name = { "B3mem" },
 #ifdef POST_CHECK
@@ -1488,15 +1488,15 @@ void apatb_cnn_accel_hw(void* __xlx_apatb_param_img_in, void* __xlx_apatb_param_
   };
   port13.param = { __xlx_apatb_param_FC1_B };
   port13.mname = { "FC1_B" };
-  port13.nbytes = { 128 };
+  port13.nbytes = { 64 };
 
 #ifdef USE_BINARY_TV_FILE
   static hls::sim::Memory<hls::sim::Reader, hls::sim::Writer> port14 {
 #else
   static hls::sim::Memory<hls::sim::Reader, hls::sim::Writer> port14 {
 #endif
-    .width = 32,
-    .asize = 4,
+    .width = 16,
+    .asize = 2,
     .hbm = false,
     .name = { "B4mem" },
 #ifdef POST_CHECK
@@ -1513,7 +1513,7 @@ void apatb_cnn_accel_hw(void* __xlx_apatb_param_img_in, void* __xlx_apatb_param_
   };
   port14.param = { __xlx_apatb_param_FC2_B };
   port14.mname = { "FC2_B" };
-  port14.nbytes = { 4 };
+  port14.nbytes = { 2 };
 
 #ifdef USE_BINARY_TV_FILE
   static hls::sim::Memory<hls::sim::Reader, hls::sim::Writer> port15 {
@@ -1554,8 +1554,8 @@ void apatb_cnn_accel_hw(void* __xlx_apatb_param_img_in, void* __xlx_apatb_param_
 #else
   static hls::sim::Memory<hls::sim::Reader, hls::sim::Writer> port16 {
 #endif
-    .width = 32,
-    .asize = 4,
+    .width = 16,
+    .asize = 2,
     .hbm = false,
     .name = { "IMGmem" },
 #ifdef POST_CHECK
@@ -1572,15 +1572,15 @@ void apatb_cnn_accel_hw(void* __xlx_apatb_param_img_in, void* __xlx_apatb_param_
   };
   port16.param = { __xlx_apatb_param_img_in };
   port16.mname = { "img_in" };
-  port16.nbytes = { 921600 };
+  port16.nbytes = { 460800 };
 
 #ifdef USE_BINARY_TV_FILE
   static hls::sim::Memory<hls::sim::Input, hls::sim::Output> port17 {
 #else
   static hls::sim::Memory<hls::sim::Reader, hls::sim::Writer> port17 {
 #endif
-    .width = 32,
-    .asize = 4,
+    .width = 16,
+    .asize = 2,
     .hbm = false,
     .name = { "W1mem" },
 #ifdef POST_CHECK
@@ -1597,15 +1597,15 @@ void apatb_cnn_accel_hw(void* __xlx_apatb_param_img_in, void* __xlx_apatb_param_
   };
   port17.param = { __xlx_apatb_param_weights1 };
   port17.mname = { "weights1" };
-  port17.nbytes = { 864 };
+  port17.nbytes = { 432 };
 
 #ifdef USE_BINARY_TV_FILE
   static hls::sim::Memory<hls::sim::Input, hls::sim::Output> port18 {
 #else
   static hls::sim::Memory<hls::sim::Reader, hls::sim::Writer> port18 {
 #endif
-    .width = 32,
-    .asize = 4,
+    .width = 16,
+    .asize = 2,
     .hbm = false,
     .name = { "W2mem" },
 #ifdef POST_CHECK
@@ -1622,15 +1622,15 @@ void apatb_cnn_accel_hw(void* __xlx_apatb_param_img_in, void* __xlx_apatb_param_
   };
   port18.param = { __xlx_apatb_param_weights2 };
   port18.mname = { "weights2" };
-  port18.nbytes = { 4608 };
+  port18.nbytes = { 2304 };
 
 #ifdef USE_BINARY_TV_FILE
   static hls::sim::Memory<hls::sim::Input, hls::sim::Output> port19 {
 #else
   static hls::sim::Memory<hls::sim::Reader, hls::sim::Writer> port19 {
 #endif
-    .width = 32,
-    .asize = 4,
+    .width = 16,
+    .asize = 2,
     .hbm = false,
     .name = { "W3mem" },
 #ifdef POST_CHECK
@@ -1647,15 +1647,15 @@ void apatb_cnn_accel_hw(void* __xlx_apatb_param_img_in, void* __xlx_apatb_param_
   };
   port19.param = { __xlx_apatb_param_FC1_W };
   port19.mname = { "FC1_W" };
-  port19.nbytes = { 9265152 };
+  port19.nbytes = { 4632576 };
 
 #ifdef USE_BINARY_TV_FILE
   static hls::sim::Memory<hls::sim::Input, hls::sim::Output> port20 {
 #else
   static hls::sim::Memory<hls::sim::Reader, hls::sim::Writer> port20 {
 #endif
-    .width = 32,
-    .asize = 4,
+    .width = 16,
+    .asize = 2,
     .hbm = false,
     .name = { "W4mem" },
 #ifdef POST_CHECK
@@ -1672,7 +1672,7 @@ void apatb_cnn_accel_hw(void* __xlx_apatb_param_img_in, void* __xlx_apatb_param_
   };
   port20.param = { __xlx_apatb_param_FC2_W };
   port20.mname = { "FC2_W" };
-  port20.nbytes = { 128 };
+  port20.nbytes = { 64 };
 
   try {
 #ifdef POST_CHECK

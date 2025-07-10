@@ -1,20 +1,19 @@
 {
     "1": {
-        "name": "Block_entry_proc_Pipeline_LOAD_FC1B",
+        "name": "conv1_stream_Pipeline_PIX_CH",
         "file": "..\/hls_files\/conv_pool.cpp",
-        "fileloc": "123",
-        "instructions": "85",
-        "total_instructions": "85",
+        "fileloc": "55",
+        "instructions": "15",
+        "total_instructions": "15",
         "calls": "",
-        "basicblocks": "37",
-        "memory_accesses": "35",
-        "control_depth": "2",
+        "basicblocks": "4",
+        "memory_accesses": "3",
+        "control_depth": "1",
         "def_use_depth": "1",
         "loads": {
             "L": "1"
         },
         "stores": {
-            "G": "32",
             "L": "2"
         },
         "loops": {
@@ -22,34 +21,44 @@
         }
     },
     "2": {
-        "name": "load_img",
-        "file": "..\/hls_files\/conv_pool.cpp",
-        "fileloc": "195",
-        "instructions": "8",
-        "total_instructions": "73",
-        "calls": "10",
-        "basicblocks": "1",
+        "name": "conv2_stream",
+        "file": "conv_pool.cpp",
+        "fileloc": "128",
+        "instructions": "33",
+        "total_instructions": "63",
+        "calls": "13 9",
+        "basicblocks": "9",
         "memory_accesses": "0",
         "control_depth": "0",
-        "def_use_depth": "2"
+        "def_use_depth": "1",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "2"
+        },
+        "loops": {
+            "L": "1",
+            "N": "1"
+        }
     },
     "3": {
-        "name": "conv2",
-        "file": "..\/hls_files\/conv_pool.cpp",
-        "fileloc": "261",
-        "instructions": "1663",
-        "total_instructions": "1663",
+        "name": "pool1_stream",
+        "file": "conv_pool.cpp",
+        "fileloc": "102",
+        "instructions": "83",
+        "total_instructions": "83",
         "calls": "",
-        "basicblocks": "9",
-        "memory_accesses": "86",
+        "basicblocks": "6",
+        "memory_accesses": "17",
         "control_depth": "2",
         "def_use_depth": "2",
         "loads": {
-            "G": "1240",
+            "G": "4",
             "L": "5"
         },
         "stores": {
-            "G": "4",
+            "G": "1",
             "L": "10"
         },
         "loops": {
@@ -57,108 +66,101 @@
         }
     },
     "4": {
-        "name": "exp_generic<double>",
-        "file": "hls_exp_.h",
-        "fileloc": "156",
-        "instructions": "147",
-        "total_instructions": "147",
+        "name": "pool2_stream",
+        "file": "conv_pool.cpp",
+        "fileloc": "177",
+        "instructions": "83",
+        "total_instructions": "83",
         "calls": "",
-        "basicblocks": "1",
-        "memory_accesses": "5",
-        "control_depth": "0",
-        "def_use_depth": "43",
-        "loads": {
-            "G": "4"
-        }
-    },
-    "5": {
-        "name": "Block_entry_proc_Pipeline_LOAD_B2",
-        "file": "..\/hls_files\/conv_pool.cpp",
-        "fileloc": "123",
-        "instructions": "53",
-        "total_instructions": "53",
-        "calls": "",
-        "basicblocks": "21",
-        "memory_accesses": "19",
+        "basicblocks": "6",
+        "memory_accesses": "17",
         "control_depth": "2",
-        "def_use_depth": "1",
+        "def_use_depth": "2",
         "loads": {
-            "L": "1"
+            "G": "4",
+            "L": "5"
         },
         "stores": {
-            "G": "16",
-            "L": "2"
+            "G": "1",
+            "L": "10"
         },
         "loops": {
-            "L": "1"
-        }
-    },
-    "6": {
-        "name": "Block_entry_proc_Pipeline_LOAD_W1",
-        "file": "..\/hls_files\/conv_pool.cpp",
-        "fileloc": "123",
-        "instructions": "452",
-        "total_instructions": "452",
-        "calls": "",
-        "basicblocks": "221",
-        "memory_accesses": "219",
-        "control_depth": "2",
-        "def_use_depth": "1",
-        "loads": {
-            "L": "1"
-        },
-        "stores": {
-            "G": "216",
-            "L": "2"
-        },
-        "loops": {
-            "L": "1"
-        }
-    },
-    "7": {
-        "name": "fc2",
-        "file": "..\/hls_files\/conv_pool.cpp",
-        "fileloc": "340",
-        "instructions": "61",
-        "total_instructions": "120",
-        "calls": "9",
-        "basicblocks": "1",
-        "memory_accesses": "0",
-        "control_depth": "0",
-        "def_use_depth": "12",
-        "loads": {
-            "G": "33",
             "L": "1"
         }
     },
     "0": {
         "name": "cnn_accel",
         "file": "conv_pool.cpp",
-        "fileloc": "53",
-        "instructions": "59",
-        "total_instructions": "6359",
-        "calls": "11",
+        "fileloc": "255",
+        "instructions": "51",
+        "total_instructions": "425",
+        "calls": "5",
         "basicblocks": "1",
         "memory_accesses": "0",
         "control_depth": "0",
         "def_use_depth": "1"
     },
-    "8": {
-        "name": "Block_entry_proc_Pipeline_LOAD_FC2W",
-        "file": "..\/hls_files\/conv_pool.cpp",
-        "fileloc": "123",
-        "instructions": "85",
-        "total_instructions": "85",
-        "calls": "",
-        "basicblocks": "37",
-        "memory_accesses": "35",
-        "control_depth": "2",
+    "5": {
+        "name": "cnn_accel_",
+        "file": "conv_pool.cpp",
+        "fileloc": "0",
+        "instructions": "31",
+        "total_instructions": "374",
+        "calls": "6 7 3 2 4 11 10",
+        "basicblocks": "3",
+        "memory_accesses": "0",
+        "control_depth": "0",
+        "def_use_depth": "2"
+    },
+    "6": {
+        "name": "stream_img",
+        "file": "conv_pool.cpp",
+        "fileloc": "31",
+        "instructions": "9",
+        "total_instructions": "29",
+        "calls": "12",
+        "basicblocks": "1",
+        "memory_accesses": "0",
+        "control_depth": "0",
+        "def_use_depth": "2"
+    },
+    "7": {
+        "name": "conv1_stream",
+        "file": "conv_pool.cpp",
+        "fileloc": "44",
+        "instructions": "33",
+        "total_instructions": "63",
+        "calls": "1 8",
+        "basicblocks": "9",
+        "memory_accesses": "0",
+        "control_depth": "0",
         "def_use_depth": "1",
         "loads": {
             "L": "1"
         },
         "stores": {
-            "G": "32",
+            "L": "2"
+        },
+        "loops": {
+            "L": "1",
+            "N": "1"
+        }
+    },
+    "8": {
+        "name": "conv1_stream_Pipeline_VITIS_LOOP_82_4",
+        "file": "..\/hls_files\/conv_pool.cpp",
+        "fileloc": "82",
+        "instructions": "15",
+        "total_instructions": "15",
+        "calls": "",
+        "basicblocks": "4",
+        "memory_accesses": "3",
+        "control_depth": "1",
+        "def_use_depth": "1",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
             "L": "2"
         },
         "loops": {
@@ -166,252 +168,95 @@
         }
     },
     "9": {
-        "name": "fc2_Pipeline_FC2_LOOP",
+        "name": "conv2_stream_Pipeline_VITIS_LOOP_158_4",
         "file": "..\/hls_files\/conv_pool.cpp",
-        "fileloc": "342",
-        "instructions": "59",
-        "total_instructions": "59",
+        "fileloc": "158",
+        "instructions": "15",
+        "total_instructions": "15",
         "calls": "",
         "basicblocks": "4",
-        "memory_accesses": "5",
+        "memory_accesses": "3",
         "control_depth": "1",
         "def_use_depth": "1",
         "loads": {
-            "G": "1",
-            "L": "3"
+            "L": "1"
         },
         "stores": {
-            "L": "4"
+            "L": "2"
         },
         "loops": {
             "L": "1"
         }
     },
     "10": {
-        "name": "load_img_Pipeline_LOAD_IMG_ROWS_LOAD_IMG_COLS_LOAD_IMG_CH",
+        "name": "fc2",
+        "file": "conv_pool.cpp",
+        "fileloc": "237",
+        "instructions": "7",
+        "total_instructions": "7",
+        "calls": "",
+        "basicblocks": "1",
+        "memory_accesses": "0",
+        "control_depth": "0",
+        "def_use_depth": "1"
+    },
+    "11": {
+        "name": "flatten_stream",
         "file": "..\/hls_files\/conv_pool.cpp",
-        "fileloc": "196",
-        "instructions": "65",
-        "total_instructions": "65",
+        "fileloc": "203",
+        "instructions": "15",
+        "total_instructions": "15",
         "calls": "",
         "basicblocks": "4",
-        "memory_accesses": "12",
+        "memory_accesses": "3",
         "control_depth": "1",
         "def_use_depth": "1",
         "loads": {
-            "L": "5"
+            "L": "1"
         },
         "stores": {
-            "G": "1",
-            "L": "10"
+            "L": "2"
         },
         "loops": {
             "L": "1"
         }
     },
-    "11": {
-        "name": "cnn_accel_",
-        "file": "conv_pool.cpp",
-        "fileloc": "0",
-        "instructions": "76",
-        "total_instructions": "6300",
-        "calls": "2 15 19 3 13 12 16 7 6 17 14 5 20 1 8",
-        "basicblocks": "4",
-        "memory_accesses": "0",
-        "control_depth": "0",
-        "def_use_depth": "2",
-        "stores": {
-            "G": "1"
-        }
-    },
     "12": {
-        "name": "flatten",
+        "name": "stream_img_Pipeline_VITIS_LOOP_35_1",
         "file": "..\/hls_files\/conv_pool.cpp",
-        "fileloc": "308",
-        "instructions": "89",
-        "total_instructions": "89",
+        "fileloc": "35",
+        "instructions": "20",
+        "total_instructions": "20",
         "calls": "",
         "basicblocks": "4",
-        "memory_accesses": "25",
+        "memory_accesses": "4",
         "control_depth": "1",
         "def_use_depth": "1",
         "loads": {
-            "G": "4",
-            "L": "10"
+            "L": "1"
         },
         "stores": {
-            "G": "1",
-            "L": "18"
+            "L": "2"
         },
         "loops": {
             "L": "1"
         }
     },
     "13": {
-        "name": "pool2",
+        "name": "conv2_stream_Pipeline_CH2",
         "file": "..\/hls_files\/conv_pool.cpp",
-        "fileloc": "286",
-        "instructions": "170",
-        "total_instructions": "170",
+        "fileloc": "138",
+        "instructions": "15",
+        "total_instructions": "15",
         "calls": "",
-        "basicblocks": "9",
-        "memory_accesses": "30",
-        "control_depth": "2",
-        "def_use_depth": "2",
-        "loads": {
-            "G": "16",
-            "L": "5"
-        },
-        "stores": {
-            "G": "4",
-            "L": "10"
-        },
-        "loops": {
-            "L": "1"
-        }
-    },
-    "14": {
-        "name": "Block_entry_proc_Pipeline_LOAD_W2",
-        "file": "..\/hls_files\/conv_pool.cpp",
-        "fileloc": "123",
-        "instructions": "2324",
-        "total_instructions": "2324",
-        "calls": "",
-        "basicblocks": "1157",
-        "memory_accesses": "1155",
-        "control_depth": "2",
+        "basicblocks": "4",
+        "memory_accesses": "3",
+        "control_depth": "1",
         "def_use_depth": "1",
         "loads": {
             "L": "1"
         },
         "stores": {
-            "G": "1152",
-            "L": "2"
-        },
-        "loops": {
-            "L": "1"
-        }
-    },
-    "15": {
-        "name": "conv1",
-        "file": "..\/hls_files\/conv_pool.cpp",
-        "fileloc": "213",
-        "instructions": "549",
-        "total_instructions": "549",
-        "calls": "",
-        "basicblocks": "9",
-        "memory_accesses": "41",
-        "control_depth": "2",
-        "def_use_depth": "2",
-        "loads": {
-            "G": "251",
-            "L": "5"
-        },
-        "stores": {
-            "G": "4",
-            "L": "10"
-        },
-        "loops": {
-            "L": "1"
-        }
-    },
-    "16": {
-        "name": "fc1",
-        "file": "..\/hls_files\/conv_pool.cpp",
-        "fileloc": "324",
-        "instructions": "92",
-        "total_instructions": "307",
-        "calls": "18",
-        "basicblocks": "7",
-        "memory_accesses": "0",
-        "control_depth": "0",
-        "def_use_depth": "1",
-        "loads": {
-            "G": "41",
-            "L": "2"
-        },
-        "stores": {
-            "G": "1",
-            "L": "4"
-        },
-        "loops": {
-            "L": "1",
-            "N": "1"
-        }
-    },
-    "17": {
-        "name": "Block_entry_proc_Pipeline_LOAD_B1",
-        "file": "..\/hls_files\/conv_pool.cpp",
-        "fileloc": "123",
-        "instructions": "37",
-        "total_instructions": "37",
-        "calls": "",
-        "basicblocks": "13",
-        "memory_accesses": "11",
-        "control_depth": "2",
-        "def_use_depth": "1",
-        "loads": {
-            "L": "1"
-        },
-        "stores": {
-            "G": "8",
-            "L": "2"
-        },
-        "loops": {
-            "L": "1"
-        }
-    },
-    "18": {
-        "name": "generic_tanh<float>",
-        "file": "hls_tanh.h",
-        "fileloc": "28",
-        "instructions": "68",
-        "total_instructions": "215",
-        "calls": "4",
-        "basicblocks": "13",
-        "memory_accesses": "0",
-        "control_depth": "0",
-        "def_use_depth": "5"
-    },
-    "19": {
-        "name": "pool1",
-        "file": "..\/hls_files\/conv_pool.cpp",
-        "fileloc": "239",
-        "instructions": "170",
-        "total_instructions": "170",
-        "calls": "",
-        "basicblocks": "9",
-        "memory_accesses": "30",
-        "control_depth": "2",
-        "def_use_depth": "2",
-        "loads": {
-            "G": "16",
-            "L": "5"
-        },
-        "stores": {
-            "G": "4",
-            "L": "10"
-        },
-        "loops": {
-            "L": "1"
-        }
-    },
-    "20": {
-        "name": "Block_entry_proc_Pipeline_LOAD_FC1W",
-        "file": "..\/hls_files\/conv_pool.cpp",
-        "fileloc": "123",
-        "instructions": "47",
-        "total_instructions": "47",
-        "calls": "",
-        "basicblocks": "13",
-        "memory_accesses": "11",
-        "control_depth": "2",
-        "def_use_depth": "1",
-        "loads": {
-            "L": "1"
-        },
-        "stores": {
-            "G": "8",
             "L": "2"
         },
         "loops": {

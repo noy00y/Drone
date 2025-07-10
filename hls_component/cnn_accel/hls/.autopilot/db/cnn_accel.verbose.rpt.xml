@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'cnn_accel'" level="0">
-<item name = "Date">Wed Jul  9 07:46:39 2025
+<item name = "Date">Wed Jul  9 22:27:57 2025
 </item>
 <item name = "Version">2025.1 (Build 6135595 on May 21 2025)</item>
 <item name = "Project">cnn_accel</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00 ns, 7.838 ns, 2.70 ns</column>
+<column name="ap_clk">10.00 ns, 7.300 ns, 2.70 ns</column>
 </table>
 </item>
 </section>
@@ -24,14 +24,14 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">6951794, 38183285, 69.518 ms, 0.382 sec, 6951795, 38183286, dataflow</column>
+<column name="">2, 7337000, 20.000 ns, 73.370 ms, 3, 7337001, dataflow</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="Block_entry_proc_U0">Block_entry_proc, 6951794, 38183285, 69.518 ms, 0.382 sec, 6951794, 38183285, no</column>
+<column name="Block_entry_proc_U0">Block_entry_proc, 2, 7337000, 20.000 ns, 73.370 ms, 2, 7337000, no</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
@@ -50,29 +50,21 @@
 <column name="DSP">-, -, -, -, -</column>
 <column name="Expression">-, -, -, -, -</column>
 <column name="FIFO">-, -, -, -, -</column>
-<column name="Instance">12824, 84, 81018, 37963, 0</column>
+<column name="Instance">3, -, 3344, 5483, 0</column>
 <column name="Memory">-, -, -, -, -</column>
 <column name="Multiplexer">-, -, -, -, -</column>
 <column name="Register">-, -, -, -, -</column>
 <specialColumn name="Available">270, 240, 126800, 63400, 0</specialColumn>
-<specialColumn name="Utilization (%)">4749, 35, 63, 59, 0</specialColumn>
+<specialColumn name="Utilization (%)">1, 0, 2, 8, 0</specialColumn>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
-<column name="B1mem_m_axi_U">B1mem_m_axi, 2, 0, 671, 657, 0</column>
-<column name="B2mem_m_axi_U">B2mem_m_axi, 2, 0, 671, 657, 0</column>
-<column name="B3mem_m_axi_U">B3mem_m_axi, 2, 0, 671, 657, 0</column>
-<column name="B4mem_m_axi_U">B4mem_m_axi, 2, 0, 671, 657, 0</column>
-<column name="Block_entry_proc_U0">Block_entry_proc, 12806, 84, 73558, 29899, 0</column>
+<column name="Block_entry_proc_U0">Block_entry_proc, 1, 0, 1227, 2578, 0</column>
 <column name="Foutmem_m_axi_U">Foutmem_m_axi, 0, 0, 647, 767, 0</column>
-<column name="IMGmem_m_axi_U">IMGmem_m_axi, 2, 0, 671, 657, 0</column>
-<column name="W1mem_m_axi_U">W1mem_m_axi, 2, 0, 671, 657, 0</column>
-<column name="W2mem_m_axi_U">W2mem_m_axi, 2, 0, 671, 657, 0</column>
-<column name="W3mem_m_axi_U">W3mem_m_axi, 2, 0, 671, 657, 0</column>
-<column name="W4mem_m_axi_U">W4mem_m_axi, 2, 0, 671, 657, 0</column>
+<column name="IMGmem_m_axi_U">IMGmem_m_axi, 2, 0, 696, 754, 0</column>
 <column name="control_s_axi_U">control_s_axi, 0, 0, 774, 1384, 0</column>
 </table>
 </item>

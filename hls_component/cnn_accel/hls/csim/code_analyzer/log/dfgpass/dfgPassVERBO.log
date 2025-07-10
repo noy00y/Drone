@@ -105,57 +105,69 @@ dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +1 is not an innermost loop
-dfgPass::VERBO:     +2 is not an innermost loop
 dfgPass::VERBO:       - BEFORE BREAK
-dfgPass::VERBO:       - for.cond4
-dfgPass::VERBO:         - memlocal of :c:0
+dfgPass::VERBO:       - for.cond
+dfgPass::VERBO:         - memlocal of :idx:0
 dfgPass::VERBO:         - LCV conditional branch 6:48
 dfgPass::VERBO:       - AFTER BREAK
-dfgPass::VERBO:       - for.body6
-dfgPass::VERBO:         - memlocal of :i:0
-dfgPass::VERBO:         - memlocal of :j:0
-dfgPass::VERBO:         - memlocal of :c:0
-dfgPass::VERBO:         - memlocal of :idx:1
+dfgPass::VERBO:       - for.body
+dfgPass::VERBO:         - memlocal of :img_strm:0
 dfgPass::VERBO:         - memlocal of :img_in:0
 dfgPass::VERBO:         - memlocal of :idx:0
-dfgPass::VERBO:         - memlocal of :local_img:0
-dfgPass::VERBO:         - memlocal of :i:0
-dfgPass::VERBO:         - memlocal of :j:0
-dfgPass::VERBO:         - memlocal of :c:0
 dfgPass::VERBO:         - invalid TR:4:0
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +1 is not an innermost loop
 dfgPass::VERBO:     +2 is not an innermost loop
 dfgPass::VERBO:     +3 is not an innermost loop
-dfgPass::VERBO:     +4 is not an innermost loop
-dfgPass::VERBO:     +5 is not an innermost loop
 dfgPass::VERBO:       - BEFORE BREAK
-dfgPass::VERBO:       - for.cond13
+dfgPass::VERBO:       - for.cond12
+dfgPass::VERBO:         - memlocal of :m:0
+dfgPass::VERBO:         - LCV conditional branch 6:48
+dfgPass::VERBO:       - AFTER BREAK
+dfgPass::VERBO:       - for.body14
+dfgPass::VERBO:         - memlocal of :m:0
+dfgPass::VERBO:         - memlocal of :j:0
+dfgPass::VERBO:         - memlocal of :c:0
+dfgPass::VERBO:         - memlocal of :m:0
+dfgPass::VERBO:         - memlocal of :j:0
+dfgPass::VERBO:         - memlocal of :c:0
+dfgPass::VERBO:         - invalid TR:4:0
+dfgPass::VERBO:     +5 is not an innermost loop
+dfgPass::VERBO:     +6 fails R.hasBlockSchema
+dfgPass::VERBO:     +7 is not an innermost loop
+dfgPass::VERBO:     +8 is not an innermost loop
+dfgPass::VERBO:     +9 is not an innermost loop
+dfgPass::VERBO:       - BEFORE BREAK
+dfgPass::VERBO:       - for.cond95
 dfgPass::VERBO:         - memlocal of :c:0
 dfgPass::VERBO:         - LCV conditional branch 6:48
 dfgPass::VERBO:       - AFTER BREAK
-dfgPass::VERBO:       - for.body15
+dfgPass::VERBO:       - for.body97
 dfgPass::VERBO:         - memlocal of :m:0
 dfgPass::VERBO:         - memlocal of :c:0
 dfgPass::VERBO:         - memlocal of :p:0
 dfgPass::VERBO:         - memlocal of :q:0
 dfgPass::VERBO:         - memlocal of :widx:1
-dfgPass::VERBO:         - memlocal of :local_img:0
-dfgPass::VERBO:         - memlocal of :i:0
 dfgPass::VERBO:         - memlocal of :p:0
-dfgPass::VERBO:         - memlocal of :j:0
 dfgPass::VERBO:         - memlocal of :q:0
 dfgPass::VERBO:         - memlocal of :c:0
-dfgPass::VERBO:         - memlocal of :weights1:0
+dfgPass::VERBO:         - memlocal of :w1:0
 dfgPass::VERBO:         - memlocal of :widx:0
 dfgPass::VERBO:         - invalid TR:4:0
+dfgPass::VERBO:       - BEFORE BREAK
+dfgPass::VERBO:       - arrayctor.loop1
+dfgPass::VERBO:         - invalid TR:4:0
+dfgPass::VERBO:     +12 fails R.hasBlockSchema
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +0 is not a loop
@@ -176,6 +188,7 @@ dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     _Z15doubleToRawBitsd is skipped for analysis (only accesses local vars)
 dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +0 is not a loop
@@ -189,9 +202,26 @@ dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     _ZN10ap_privateILi32ELb1ELb1EE10set_canaryEv is skipped for analysis (only accesses local vars)
 dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     _ZN10ap_privateILi32ELb1ELb1EE12check_canaryEv is skipped for analysis (only accesses local vars)
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     _ZN13ap_fixed_baseILi16ELi4ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EE6reportEv is skipped for analysis (only accesses local vars)
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     _ZN10ap_privateILi16ELb1ELb1EE10set_canaryEv is skipped for analysis (only accesses local vars)
 dfgPass::VERBO:     _ZN10ap_privateILi16ELb1ELb1EE12check_canaryEv is skipped for analysis (only accesses local vars)
@@ -199,6 +229,236 @@ dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     _ZN10ap_privateILi54ELb1ELb1EE10set_canaryEv is skipped for analysis (only accesses local vars)
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     _ZN10ap_privateILi54ELb1ELb1EE12check_canaryEv is skipped for analysis (only accesses local vars)
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     _ZN10ap_privateILi33ELb1ELb1EE10set_canaryEv is skipped for analysis (only accesses local vars)
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     _ZN10ap_privateILi33ELb1ELb1EE12check_canaryEv is skipped for analysis (only accesses local vars)
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     _ZN10ap_privateILi32ELb1ELb1EE10set_canaryEv is skipped for analysis (only accesses local vars)
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     _ZN10ap_privateILi32ELb1ELb1EE12check_canaryEv is skipped for analysis (only accesses local vars)
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +1 fails R.hasBlockSchema
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     _ZN10ap_privateILi65ELb0ELb0EE8get_pValEi is skipped for analysis (only accesses local vars)
+dfgPass::VERBO:     _ZN10ap_privateILi65ELb0ELb0EE9whichWordEj is skipped for analysis (only accesses local vars)
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +1 fails R.hasBlockSchema
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:       - BEFORE BREAK
+dfgPass::VERBO:       - for.cond
+dfgPass::VERBO:         - memlocal of :i:0
+dfgPass::VERBO:         - LCV conditional branch 6:48
+dfgPass::VERBO:       - AFTER BREAK
+dfgPass::VERBO:       - for.body
+dfgPass::VERBO:         - memlocal of :i:0
+dfgPass::VERBO:       - AFTER BREAK
+dfgPass::VERBO:       - for.inc
+dfgPass::VERBO:         - memlocal of :i:0
+dfgPass::VERBO:         - memlocal of :i:1
+dfgPass::VERBO:       - AFTER BREAK
+dfgPass::VERBO:       - BEFORE BREAK
+dfgPass::VERBO:       - for.cond11
+dfgPass::VERBO:         - memlocal of :i:0
+dfgPass::VERBO:         - LCV conditional branch 6:48
+dfgPass::VERBO:       - AFTER BREAK
+dfgPass::VERBO:       - for.body13
+dfgPass::VERBO:         - memlocal of :i:0
+dfgPass::VERBO:       - AFTER BREAK
+dfgPass::VERBO:       - for.inc17
+dfgPass::VERBO:         - memlocal of :i:0
+dfgPass::VERBO:         - memlocal of :i:1
+dfgPass::VERBO:       - AFTER BREAK
+dfgPass::VERBO:     _ZN10ap_privateILi65ELb0ELb0EE10set_canaryEv is skipped for analysis (only accesses local vars)
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     _ZN10ap_privateILi65ELb0ELb0EE12check_canaryEv is skipped for analysis (only accesses local vars)
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:       - BEFORE BREAK
+dfgPass::VERBO:       - for.cond
+dfgPass::VERBO:         - memlocal of :i:0
+dfgPass::VERBO:         - LCV conditional branch 6:48
+dfgPass::VERBO:       - AFTER BREAK
+dfgPass::VERBO:       - for.body
+dfgPass::VERBO:         - memlocal of :that:0
+dfgPass::VERBO:         - memlocal of :i:0
+dfgPass::VERBO:         - invalid TR:4:0
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:       - BEFORE BREAK
+dfgPass::VERBO:       - for.cond7
+dfgPass::VERBO:         - memlocal of :i:0
+dfgPass::VERBO:         - memlocal of :max_N:0
+dfgPass::VERBO:       - AFTER BREAK
+dfgPass::VERBO:       - for.body9
+dfgPass::VERBO:         - memlocal of :i:0
+dfgPass::VERBO:         - memlocal of :i:0
+dfgPass::VERBO:         - memlocal of :ext:0
+dfgPass::VERBO:         - invalid TR:4:0
+dfgPass::VERBO:       - BEFORE BREAK
+dfgPass::VERBO:       - for.cond
+dfgPass::VERBO:         - memlocal of :i:0
+dfgPass::VERBO:         - memlocal of :min_N:0
+dfgPass::VERBO:       - AFTER BREAK
+dfgPass::VERBO:       - for.body
+dfgPass::VERBO:         - memlocal of :i:0
+dfgPass::VERBO:         - memlocal of :i:0
+dfgPass::VERBO:         - memlocal of :RHS:0
+dfgPass::VERBO:         - memlocal of :i:0
+dfgPass::VERBO:         - invalid TR:4:0
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:       - BEFORE BREAK
+dfgPass::VERBO:       - for.cond
+dfgPass::VERBO:         - memlocal of :i:0
+dfgPass::VERBO:         - LCV conditional branch 6:48
+dfgPass::VERBO:       - AFTER BREAK
+dfgPass::VERBO:       - for.body
+dfgPass::VERBO:         - memlocal of :i:0
+dfgPass::VERBO:       - AFTER BREAK
+dfgPass::VERBO:       - for.inc
+dfgPass::VERBO:         - memlocal of :i:0
+dfgPass::VERBO:         - memlocal of :i:1
+dfgPass::VERBO:       - AFTER BREAK
+dfgPass::VERBO:       - BEFORE BREAK
+dfgPass::VERBO:       - for.cond9
+dfgPass::VERBO:         - memlocal of :i:0
+dfgPass::VERBO:         - LCV conditional branch 6:48
+dfgPass::VERBO:       - AFTER BREAK
+dfgPass::VERBO:       - for.body11
+dfgPass::VERBO:         - memlocal of :i:0
+dfgPass::VERBO:       - AFTER BREAK
+dfgPass::VERBO:       - for.inc15
+dfgPass::VERBO:         - memlocal of :i:0
+dfgPass::VERBO:         - memlocal of :i:1
+dfgPass::VERBO:       - AFTER BREAK
+dfgPass::VERBO:     _ZN10ap_privateILi65ELb1ELb0EE10set_canaryEv is skipped for analysis (only accesses local vars)
+dfgPass::VERBO:     _ZN10ap_privateILi65ELb1ELb0EE12check_canaryEv is skipped for analysis (only accesses local vars)
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:       - BEFORE BREAK
+dfgPass::VERBO:       - for.cond
+dfgPass::VERBO:         - memlocal of :i:0
+dfgPass::VERBO:         - LCV conditional branch 6:48
+dfgPass::VERBO:       - AFTER BREAK
+dfgPass::VERBO:       - for.body
+dfgPass::VERBO:         - memlocal of :i:0
+dfgPass::VERBO:       - AFTER BREAK
+dfgPass::VERBO:       - for.inc
+dfgPass::VERBO:         - memlocal of :i:0
+dfgPass::VERBO:         - memlocal of :i:1
+dfgPass::VERBO:       - AFTER BREAK
+dfgPass::VERBO:       - BEFORE BREAK
+dfgPass::VERBO:       - for.cond10
+dfgPass::VERBO:         - memlocal of :i:0
+dfgPass::VERBO:         - LCV conditional branch 6:48
+dfgPass::VERBO:       - AFTER BREAK
+dfgPass::VERBO:       - for.body12
+dfgPass::VERBO:         - memlocal of :i:0
+dfgPass::VERBO:       - AFTER BREAK
+dfgPass::VERBO:       - for.inc16
+dfgPass::VERBO:         - memlocal of :i:0
+dfgPass::VERBO:         - memlocal of :i:1
+dfgPass::VERBO:       - AFTER BREAK
+dfgPass::VERBO:     _ZNK10ap_privateILi64ELb0ELb1EE10isNegativeEv is skipped for analysis (only accesses local vars)
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     _ZN10ap_privateILi64ELb1ELb1EE10set_canaryEv is skipped for analysis (only accesses local vars)
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     _ZN10ap_privateILi64ELb1ELb1EE12check_canaryEv is skipped for analysis (only accesses local vars)
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     _ZN10ap_privateILi56ELb1ELb1EE10set_canaryEv is skipped for analysis (only accesses local vars)
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     _ZN10ap_privateILi56ELb1ELb1EE12check_canaryEv is skipped for analysis (only accesses local vars)
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     _ZN10ap_privateILi55ELb1ELb1EE10set_canaryEv is skipped for analysis (only accesses local vars)
+dfgPass::VERBO:     _ZN10ap_privateILi55ELb1ELb1EE12check_canaryEv is skipped for analysis (only accesses local vars)
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     _ZN10ap_privateILi1ELb0ELb1EE10set_canaryEv is skipped for analysis (only accesses local vars)
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     _ZN10ap_privateILi1ELb0ELb1EE12check_canaryEv is skipped for analysis (only accesses local vars)
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     _ZN10ap_privateILi54ELb0ELb1EE7get_VALEv is skipped for analysis (only accesses local vars)
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     _ZN10ap_privateILi54ELb0ELb1EE10set_canaryEv is skipped for analysis (only accesses local vars)
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     _ZN10ap_privateILi54ELb0ELb1EE12check_canaryEv is skipped for analysis (only accesses local vars)
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     _ZN10ap_privateILi32ELb0ELb1EE7get_VALEv is skipped for analysis (only accesses local vars)
 dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     _ZN10ap_privateILi32ELb0ELb1EE10set_canaryEv is skipped for analysis (only accesses local vars)
 dfgPass::VERBO:     +0 is not a loop
@@ -213,6 +473,11 @@ dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +1 fails R.hasBlockSchema
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     _ZN10ap_privateILi64ELb0ELb1EE10set_canaryEv is skipped for analysis (only accesses local vars)
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     _ZN10ap_privateILi64ELb0ELb1EE12check_canaryEv is skipped for analysis (only accesses local vars)
 dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +0 is not a loop
@@ -221,9 +486,88 @@ dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     _ZN10ap_privateILi33ELb1ELb1EE10set_canaryEv is skipped for analysis (only accesses local vars)
 dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     _ZN10ap_privateILi33ELb1ELb1EE12check_canaryEv is skipped for analysis (only accesses local vars)
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     _ZN10ap_privateILi14ELb1ELb1EE10set_canaryEv is skipped for analysis (only accesses local vars)
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     _ZN10ap_privateILi14ELb1ELb1EE12check_canaryEv is skipped for analysis (only accesses local vars)
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     _ZN10ap_privateILi13ELb1ELb1EE10set_canaryEv is skipped for analysis (only accesses local vars)
+dfgPass::VERBO:     _ZN10ap_privateILi13ELb1ELb1EE12check_canaryEv is skipped for analysis (only accesses local vars)
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     _ZN10ap_privateILi11ELb0ELb1EE10set_canaryEv is skipped for analysis (only accesses local vars)
+dfgPass::VERBO:     _ZN10ap_privateILi11ELb0ELb1EE12check_canaryEv is skipped for analysis (only accesses local vars)
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     _ZN10ap_privateILi12ELb1ELb1EE10set_canaryEv is skipped for analysis (only accesses local vars)
+dfgPass::VERBO:     _ZN10ap_privateILi12ELb1ELb1EE12check_canaryEv is skipped for analysis (only accesses local vars)
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +0 is not a loop
@@ -235,6 +579,7 @@ dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     _ZN10ap_privateILi33ELb0ELb1EE10set_canaryEv is skipped for analysis (only accesses local vars)
 dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     _ZN10ap_privateILi33ELb0ELb1EE12check_canaryEv is skipped for analysis (only accesses local vars)
+dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +0 is not a loop
@@ -276,7 +621,84 @@ dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     _ZN10ap_privateILi32ELb0ELb1EE7get_VALEv is skipped for analysis (only accesses local vars)
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     _ZN10ap_privateILi45ELb1ELb1EE10set_canaryEv is skipped for analysis (only accesses local vars)
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     _ZN10ap_privateILi45ELb1ELb1EE12check_canaryEv is skipped for analysis (only accesses local vars)
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     _ZN13ap_fixed_baseILi44ELi32ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EE6reportEv is skipped for analysis (only accesses local vars)
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     _ZN10ap_privateILi44ELb1ELb1EE10set_canaryEv is skipped for analysis (only accesses local vars)
+dfgPass::VERBO:     _ZN10ap_privateILi44ELb1ELb1EE12check_canaryEv is skipped for analysis (only accesses local vars)
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +0 is not a loop
@@ -297,51 +719,63 @@ dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +1 is not an innermost loop
 dfgPass::VERBO:     +2 is not an innermost loop
 dfgPass::VERBO:     +3 fails R.hasBlockSchema
+dfgPass::VERBO:     +4 fails R.hasBlockSchema
 dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +1 is not an innermost loop
 dfgPass::VERBO:     +2 is not an innermost loop
 dfgPass::VERBO:     +3 is not an innermost loop
-dfgPass::VERBO:     +4 is not an innermost loop
-dfgPass::VERBO:     +5 is not an innermost loop
 dfgPass::VERBO:       - BEFORE BREAK
-dfgPass::VERBO:       - for.cond13
+dfgPass::VERBO:       - for.cond12
+dfgPass::VERBO:         - memlocal of :m:0
+dfgPass::VERBO:         - LCV conditional branch 6:48
+dfgPass::VERBO:       - AFTER BREAK
+dfgPass::VERBO:       - for.body14
+dfgPass::VERBO:         - memlocal of :m:0
+dfgPass::VERBO:         - memlocal of :j:0
+dfgPass::VERBO:         - memlocal of :c:0
+dfgPass::VERBO:         - memlocal of :m:0
+dfgPass::VERBO:         - memlocal of :j:0
+dfgPass::VERBO:         - memlocal of :c:0
+dfgPass::VERBO:         - invalid TR:4:0
+dfgPass::VERBO:     +5 is not an innermost loop
+dfgPass::VERBO:     +6 fails R.hasBlockSchema
+dfgPass::VERBO:     +7 is not an innermost loop
+dfgPass::VERBO:     +8 is not an innermost loop
+dfgPass::VERBO:     +9 is not an innermost loop
+dfgPass::VERBO:       - BEFORE BREAK
+dfgPass::VERBO:       - for.cond86
 dfgPass::VERBO:         - memlocal of :c:0
 dfgPass::VERBO:         - LCV conditional branch 6:48
 dfgPass::VERBO:       - AFTER BREAK
-dfgPass::VERBO:       - for.body15
+dfgPass::VERBO:       - for.body88
 dfgPass::VERBO:         - memlocal of :m:0
 dfgPass::VERBO:         - memlocal of :c:0
 dfgPass::VERBO:         - memlocal of :p:0
 dfgPass::VERBO:         - memlocal of :q:0
 dfgPass::VERBO:         - memlocal of :widx:1
-dfgPass::VERBO:         - memlocal of :feat1_p:0
-dfgPass::VERBO:         - memlocal of :i:0
 dfgPass::VERBO:         - memlocal of :p:0
-dfgPass::VERBO:         - memlocal of :j:0
 dfgPass::VERBO:         - memlocal of :q:0
 dfgPass::VERBO:         - memlocal of :c:0
-dfgPass::VERBO:         - memlocal of :weights2:0
+dfgPass::VERBO:         - memlocal of :w2:0
 dfgPass::VERBO:         - memlocal of :widx:0
 dfgPass::VERBO:         - invalid TR:4:0
+dfgPass::VERBO:       - BEFORE BREAK
+dfgPass::VERBO:       - arrayctor.loop1
+dfgPass::VERBO:         - invalid TR:4:0
+dfgPass::VERBO:     +12 fails R.hasBlockSchema
 dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +1 is not an innermost loop
 dfgPass::VERBO:     +2 is not an innermost loop
 dfgPass::VERBO:     +3 fails R.hasBlockSchema
+dfgPass::VERBO:     +4 fails R.hasBlockSchema
 dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +1 is not an innermost loop
-dfgPass::VERBO:     +2 is not an innermost loop
 dfgPass::VERBO:       - BEFORE BREAK
-dfgPass::VERBO:       - for.cond4
-dfgPass::VERBO:         - memlocal of :m:0
+dfgPass::VERBO:       - for.cond
+dfgPass::VERBO:         - memlocal of :i:0
 dfgPass::VERBO:         - LCV conditional branch 6:48
 dfgPass::VERBO:       - AFTER BREAK
-dfgPass::VERBO:       - for.body6
-dfgPass::VERBO:         - memlocal of :feat2_p:0
-dfgPass::VERBO:         - memlocal of :i:0
-dfgPass::VERBO:         - memlocal of :j:0
-dfgPass::VERBO:         - memlocal of :m:0
-dfgPass::VERBO:         - memlocal of :vec1:0
-dfgPass::VERBO:         - memlocal of :cnt:0
+dfgPass::VERBO:       - for.body
+dfgPass::VERBO:         - memlocal of :feat2_p_strm:0
 dfgPass::VERBO:         - invalid TR:4:0
 dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +1 is not an innermost loop
@@ -358,7 +792,6 @@ dfgPass::VERBO:         - memlocal of :o:0
 dfgPass::VERBO:         - memlocal of :cnt:0
 dfgPass::VERBO:         - memlocal of :i:0
 dfgPass::VERBO:         - invalid TR:4:0
-dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +0 is not a loop
@@ -396,7 +829,6 @@ dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     _ZN13ap_fixed_baseILi16ELi4ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EE6reportEv is skipped for analysis (only accesses local vars)
 dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +0 is not a loop
@@ -499,7 +931,6 @@ dfgPass::VERBO:     _ZN10ap_privateILi72ELb0ELb0EE9whichWordEj is skipped for an
 dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +1 fails R.hasBlockSchema
 dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:       - BEFORE BREAK
 dfgPass::VERBO:       - for.cond
 dfgPass::VERBO:         - memlocal of :i:0
@@ -539,7 +970,6 @@ dfgPass::VERBO:       - for.body
 dfgPass::VERBO:         - memlocal of :that:0
 dfgPass::VERBO:         - memlocal of :i:0
 dfgPass::VERBO:         - invalid TR:4:0
-dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +0 is not a loop
@@ -894,9 +1324,6 @@ dfgPass::VERBO:       - for.body
 dfgPass::VERBO:         - memlocal of :that:0
 dfgPass::VERBO:         - memlocal of :i:0
 dfgPass::VERBO:         - invalid TR:4:0
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +0 is not a loop
@@ -1394,7 +1821,6 @@ dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     _ZNK10ap_privateILi128ELb0ELb0EE10isNegativeEv is skipped for analysis (only accesses local vars)
 dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +0 is not a loop
@@ -1577,15 +2003,6 @@ dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     _ZN10ap_privateILi1ELb0ELb1EE10set_canaryEv is skipped for analysis (only accesses local vars)
-dfgPass::VERBO:     _ZN10ap_privateILi1ELb0ELb1EE12check_canaryEv is skipped for analysis (only accesses local vars)
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +0 is not a loop
@@ -1686,11 +2103,9 @@ dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     _ZN10ap_privateILi31ELb1ELb1EE10set_canaryEv is skipped for analysis (only accesses local vars)
 dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     _ZN10ap_privateILi31ELb1ELb1EE12check_canaryEv is skipped for analysis (only accesses local vars)
-dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +0 is not a loop
@@ -1800,7 +2215,6 @@ dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     _ZN10ap_privateILi8ELb0ELb1EE10set_canaryEv is skipped for analysis (only accesses local vars)
 dfgPass::VERBO:     _ZN10ap_privateILi8ELb0ELb1EE12check_canaryEv is skipped for analysis (only accesses local vars)
 dfgPass::VERBO:     +0 is not a loop
@@ -1838,9 +2252,6 @@ dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     _ZN10ap_privateILi54ELb0ELb1EE10set_canaryEv is skipped for analysis (only accesses local vars)
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     _ZN10ap_privateILi54ELb0ELb1EE12check_canaryEv is skipped for analysis (only accesses local vars)
 dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +0 is not a loop
@@ -2328,34 +2739,11 @@ dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     _ZN10ap_privateILi44ELb0ELb1EE7get_VALEv is skipped for analysis (only accesses local vars)
-dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     _ZN10ap_privateILi44ELb0ELb1EE10set_canaryEv is skipped for analysis (only accesses local vars)
 dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     _ZN10ap_privateILi44ELb0ELb1EE12check_canaryEv is skipped for analysis (only accesses local vars)
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     _ZN13ap_fixed_baseILi44ELi32ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EE6reportEv is skipped for analysis (only accesses local vars)
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     _ZN10ap_privateILi44ELb1ELb1EE10set_canaryEv is skipped for analysis (only accesses local vars)
-dfgPass::VERBO:     _ZN10ap_privateILi44ELb1ELb1EE12check_canaryEv is skipped for analysis (only accesses local vars)
-dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +0 is not a loop
@@ -2399,15 +2787,6 @@ dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:       - BEFORE BREAK
 dfgPass::VERBO:       - for.cond
 dfgPass::VERBO:         - memlocal of :i:0
@@ -2419,7 +2798,6 @@ dfgPass::VERBO:         - memlocal of :i:0
 dfgPass::VERBO:         - memlocal of :FC2_W:0
 dfgPass::VERBO:         - memlocal of :i:0
 dfgPass::VERBO:         - invalid TR:4:0
-dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +0 is not a loop
@@ -2972,21 +3350,8 @@ dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     _ZNK10ap_privateILi64ELb0ELb1EE10isNegativeEv is skipped for analysis (only accesses local vars)
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     _ZN10ap_privateILi64ELb0ELb1EE10set_canaryEv is skipped for analysis (only accesses local vars)
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     _ZN10ap_privateILi64ELb0ELb1EE12check_canaryEv is skipped for analysis (only accesses local vars)
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     _ZN10ap_privateILi64ELb0ELb1EE7get_VALEv is skipped for analysis (only accesses local vars)
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +0 is not a loop
@@ -6334,27 +6699,6 @@ dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +1 fails R.hasBlockSchema
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +1 fails R.hasBlockSchema
 dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +0 is not a loop
@@ -8372,7 +8716,6 @@ dfgPass::VERBO:         - memlocal of :i:0
 dfgPass::VERBO:         - invalid TR:4:0
 dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:       - BEFORE BREAK
 dfgPass::VERBO:       - for.cond
 dfgPass::VERBO:         - memlocal of :i:0
@@ -8397,8 +8740,6 @@ dfgPass::VERBO:       - for.inc16
 dfgPass::VERBO:         - memlocal of :i:0
 dfgPass::VERBO:         - memlocal of :i:1
 dfgPass::VERBO:       - AFTER BREAK
-dfgPass::VERBO:     _ZN10ap_privateILi65ELb0ELb0EE10set_canaryEv is skipped for analysis (only accesses local vars)
-dfgPass::VERBO:     _ZN10ap_privateILi65ELb0ELb0EE12check_canaryEv is skipped for analysis (only accesses local vars)
 dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +0 is not a loop
@@ -10788,7 +11129,6 @@ dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:       - BEFORE BREAK
 dfgPass::VERBO:       - for.cond
 dfgPass::VERBO:         - memlocal of :i:0
@@ -10880,18 +11220,6 @@ dfgPass::VERBO:         - memlocal of :i:1
 dfgPass::VERBO:       - AFTER BREAK
 dfgPass::VERBO:     _ZN10ap_privateILi65ELb0ELb0EE8get_pValEv is skipped for analysis (only accesses local vars)
 dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:       - BEFORE BREAK
-dfgPass::VERBO:       - for.cond
-dfgPass::VERBO:         - memlocal of :i:0
-dfgPass::VERBO:         - LCV conditional branch 6:48
-dfgPass::VERBO:       - AFTER BREAK
-dfgPass::VERBO:       - for.body
-dfgPass::VERBO:         - memlocal of :that:0
-dfgPass::VERBO:         - memlocal of :i:0
-dfgPass::VERBO:         - invalid TR:4:0
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     _ZN10ap_privateILi65ELb0ELb0EE9whichWordEj is skipped for analysis (only accesses local vars)
 dfgPass::VERBO:     _ZN10ap_privateILi65ELb0ELb0EE8whichBitEj is skipped for analysis (only accesses local vars)
 dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +0 is not a loop
@@ -12775,14 +13103,6 @@ dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +1 fails R.hasBlockSchema
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     _ZN10ap_privateILi65ELb0ELb0EE8get_pValEi is skipped for analysis (only accesses local vars)
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +1 fails R.hasBlockSchema
-dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:       - BEFORE BREAK
 dfgPass::VERBO:       - for.cond
 dfgPass::VERBO:         - memlocal of :i:0
@@ -12814,10 +13134,7 @@ dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     _ZN13ap_fixed_baseILi8ELin18ELb0EL9ap_q_mode5EL9ap_o_mode3ELi0EE6reportEv is skipped for analysis (only accesses local vars)
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +0 is not a loop
@@ -12871,33 +13188,6 @@ dfgPass::VERBO:         - memlocal of :i:0
 dfgPass::VERBO:         - memlocal of :i:1
 dfgPass::VERBO:       - AFTER BREAK
 dfgPass::VERBO:     _ZN10ap_privateILi65ELb1ELb0EE8get_pValEv is skipped for analysis (only accesses local vars)
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:       - BEFORE BREAK
-dfgPass::VERBO:       - for.cond
-dfgPass::VERBO:         - memlocal of :i:0
-dfgPass::VERBO:         - LCV conditional branch 6:48
-dfgPass::VERBO:       - AFTER BREAK
-dfgPass::VERBO:       - for.body
-dfgPass::VERBO:         - memlocal of :i:0
-dfgPass::VERBO:       - AFTER BREAK
-dfgPass::VERBO:       - for.inc
-dfgPass::VERBO:         - memlocal of :i:0
-dfgPass::VERBO:         - memlocal of :i:1
-dfgPass::VERBO:       - AFTER BREAK
-dfgPass::VERBO:       - BEFORE BREAK
-dfgPass::VERBO:       - for.cond9
-dfgPass::VERBO:         - memlocal of :i:0
-dfgPass::VERBO:         - LCV conditional branch 6:48
-dfgPass::VERBO:       - AFTER BREAK
-dfgPass::VERBO:       - for.body11
-dfgPass::VERBO:         - memlocal of :i:0
-dfgPass::VERBO:       - AFTER BREAK
-dfgPass::VERBO:       - for.inc15
-dfgPass::VERBO:         - memlocal of :i:0
-dfgPass::VERBO:         - memlocal of :i:1
-dfgPass::VERBO:       - AFTER BREAK
-dfgPass::VERBO:     _ZN10ap_privateILi65ELb1ELb0EE10set_canaryEv is skipped for analysis (only accesses local vars)
-dfgPass::VERBO:     _ZN10ap_privateILi65ELb1ELb0EE12check_canaryEv is skipped for analysis (only accesses local vars)
 dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +0 is not a loop
@@ -16964,15 +17254,7 @@ dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     _ZN13ap_fixed_baseILi11ELin31ELb0EL9ap_q_mode5EL9ap_o_mode3ELi0EE6reportEv is skipped for analysis (only accesses local vars)
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     _ZN10ap_privateILi11ELb0ELb1EE10set_canaryEv is skipped for analysis (only accesses local vars)
-dfgPass::VERBO:     _ZN10ap_privateILi11ELb0ELb1EE12check_canaryEv is skipped for analysis (only accesses local vars)
 dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +0 is not a loop
@@ -18973,12 +19255,6 @@ dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     _ZN10ap_privateILi54ELb1ELb1EE10set_canaryEv is skipped for analysis (only accesses local vars)
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     _ZN10ap_privateILi54ELb1ELb1EE12check_canaryEv is skipped for analysis (only accesses local vars)
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     _ZN13ap_fixed_baseILi53ELi10ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EE6reportEv is skipped for analysis (only accesses local vars)
 dfgPass::VERBO:     +0 is not a loop
@@ -20179,7 +20455,6 @@ dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +1 fails R.hasBlockSchema
 dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +0 is not a loop
@@ -20190,7 +20465,6 @@ dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     _ZNK10ap_privateILi11ELb0ELb1EE10isNegativeEv is skipped for analysis (only accesses local vars)
-dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +0 is not a loop
@@ -20544,7 +20818,6 @@ dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +1 fails R.hasBlockSchema
-dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +0 is not a loop
@@ -21346,9 +21619,6 @@ dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     _ZN13ap_fixed_baseILi16ELi10ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EE6reportEv is skipped for analysis (only accesses local vars)
 dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +0 is not a loop
@@ -21726,404 +21996,92 @@ dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     _Z15doubleToRawBitsd is skipped for analysis (only accesses local vars)
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:       - BEFORE BREAK
 dfgPass::VERBO:       - for.cond
-dfgPass::VERBO:         - memlocal of :i:0
+dfgPass::VERBO:         - memlocal of :idx:0
 dfgPass::VERBO:         - LCV conditional branch 6:48
 dfgPass::VERBO:       - AFTER BREAK
 dfgPass::VERBO:       - for.body
-dfgPass::VERBO:         - memlocal of :i:0
-dfgPass::VERBO:       - AFTER BREAK
-dfgPass::VERBO:       - for.inc
-dfgPass::VERBO:         - memlocal of :i:0
-dfgPass::VERBO:         - memlocal of :i:1
-dfgPass::VERBO:       - AFTER BREAK
-dfgPass::VERBO:       - BEFORE BREAK
-dfgPass::VERBO:       - for.cond11
-dfgPass::VERBO:         - memlocal of :i:0
-dfgPass::VERBO:         - LCV conditional branch 6:48
-dfgPass::VERBO:       - AFTER BREAK
-dfgPass::VERBO:       - for.body13
-dfgPass::VERBO:         - memlocal of :i:0
-dfgPass::VERBO:       - AFTER BREAK
-dfgPass::VERBO:       - for.inc17
-dfgPass::VERBO:         - memlocal of :i:0
-dfgPass::VERBO:         - memlocal of :i:1
-dfgPass::VERBO:       - AFTER BREAK
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:       - BEFORE BREAK
-dfgPass::VERBO:       - for.cond7
-dfgPass::VERBO:         - memlocal of :i:0
-dfgPass::VERBO:         - memlocal of :max_N:0
-dfgPass::VERBO:       - AFTER BREAK
-dfgPass::VERBO:       - for.body9
-dfgPass::VERBO:         - memlocal of :i:0
-dfgPass::VERBO:         - memlocal of :i:0
-dfgPass::VERBO:         - memlocal of :ext:0
-dfgPass::VERBO:         - invalid TR:4:0
-dfgPass::VERBO:       - BEFORE BREAK
-dfgPass::VERBO:       - for.cond
-dfgPass::VERBO:         - memlocal of :i:0
-dfgPass::VERBO:         - memlocal of :min_N:0
-dfgPass::VERBO:       - AFTER BREAK
-dfgPass::VERBO:       - for.body
-dfgPass::VERBO:         - memlocal of :i:0
-dfgPass::VERBO:         - memlocal of :i:0
-dfgPass::VERBO:         - memlocal of :RHS:0
-dfgPass::VERBO:         - memlocal of :i:0
-dfgPass::VERBO:         - invalid TR:4:0
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:       - BEFORE BREAK
-dfgPass::VERBO:       - for.cond
-dfgPass::VERBO:         - memlocal of :i:0
-dfgPass::VERBO:         - LCV conditional branch 6:48
-dfgPass::VERBO:       - AFTER BREAK
-dfgPass::VERBO:       - for.body
-dfgPass::VERBO:         - memlocal of :i:0
-dfgPass::VERBO:       - AFTER BREAK
-dfgPass::VERBO:       - for.inc
-dfgPass::VERBO:         - memlocal of :i:0
-dfgPass::VERBO:         - memlocal of :i:1
-dfgPass::VERBO:       - AFTER BREAK
-dfgPass::VERBO:       - BEFORE BREAK
-dfgPass::VERBO:       - for.cond10
-dfgPass::VERBO:         - memlocal of :i:0
-dfgPass::VERBO:         - LCV conditional branch 6:48
-dfgPass::VERBO:       - AFTER BREAK
-dfgPass::VERBO:       - for.body12
-dfgPass::VERBO:         - memlocal of :i:0
-dfgPass::VERBO:       - AFTER BREAK
-dfgPass::VERBO:       - for.inc16
-dfgPass::VERBO:         - memlocal of :i:0
-dfgPass::VERBO:         - memlocal of :i:1
-dfgPass::VERBO:       - AFTER BREAK
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     _ZN10ap_privateILi64ELb1ELb1EE10set_canaryEv is skipped for analysis (only accesses local vars)
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     _ZN10ap_privateILi64ELb1ELb1EE12check_canaryEv is skipped for analysis (only accesses local vars)
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     _ZN10ap_privateILi56ELb1ELb1EE10set_canaryEv is skipped for analysis (only accesses local vars)
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     _ZN10ap_privateILi56ELb1ELb1EE12check_canaryEv is skipped for analysis (only accesses local vars)
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     _ZN10ap_privateILi55ELb1ELb1EE10set_canaryEv is skipped for analysis (only accesses local vars)
-dfgPass::VERBO:     _ZN10ap_privateILi55ELb1ELb1EE12check_canaryEv is skipped for analysis (only accesses local vars)
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     _ZN10ap_privateILi54ELb0ELb1EE7get_VALEv is skipped for analysis (only accesses local vars)
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     _ZN10ap_privateILi14ELb1ELb1EE10set_canaryEv is skipped for analysis (only accesses local vars)
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     _ZN10ap_privateILi14ELb1ELb1EE12check_canaryEv is skipped for analysis (only accesses local vars)
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     _ZN10ap_privateILi13ELb1ELb1EE10set_canaryEv is skipped for analysis (only accesses local vars)
-dfgPass::VERBO:     _ZN10ap_privateILi13ELb1ELb1EE12check_canaryEv is skipped for analysis (only accesses local vars)
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     _ZN10ap_privateILi12ELb1ELb1EE10set_canaryEv is skipped for analysis (only accesses local vars)
-dfgPass::VERBO:     _ZN10ap_privateILi12ELb1ELb1EE12check_canaryEv is skipped for analysis (only accesses local vars)
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:       - BEFORE BREAK
-dfgPass::VERBO:       - for.cond71
-dfgPass::VERBO:         - memlocal of :i:0
-dfgPass::VERBO:         - LCV conditional branch 6:48
-dfgPass::VERBO:       - AFTER BREAK
-dfgPass::VERBO:       - for.body73
-dfgPass::VERBO:         - memlocal of :FC2_B:0
-dfgPass::VERBO:         - memlocal of :i:0
-dfgPass::VERBO:         - memlocal of :i:0
-dfgPass::VERBO:       - AFTER BREAK
-dfgPass::VERBO:       - for.inc78
-dfgPass::VERBO:         - memlocal of :i:0
-dfgPass::VERBO:         - memlocal of :i:1
-dfgPass::VERBO:       - AFTER BREAK
-dfgPass::VERBO:       - BEFORE BREAK
-dfgPass::VERBO:       - for.cond60
-dfgPass::VERBO:         - memlocal of :i:0
-dfgPass::VERBO:         - LCV conditional branch 6:48
-dfgPass::VERBO:       - AFTER BREAK
-dfgPass::VERBO:       - for.body62
-dfgPass::VERBO:         - memlocal of :FC2_W:0
-dfgPass::VERBO:         - memlocal of :i:0
-dfgPass::VERBO:         - memlocal of :i:0
-dfgPass::VERBO:       - AFTER BREAK
-dfgPass::VERBO:       - for.inc67
-dfgPass::VERBO:         - memlocal of :i:0
-dfgPass::VERBO:         - memlocal of :i:1
-dfgPass::VERBO:       - AFTER BREAK
-dfgPass::VERBO:       - BEFORE BREAK
-dfgPass::VERBO:       - for.cond49
-dfgPass::VERBO:         - memlocal of :i:0
-dfgPass::VERBO:         - LCV conditional branch 6:48
-dfgPass::VERBO:       - AFTER BREAK
-dfgPass::VERBO:       - for.body51
-dfgPass::VERBO:         - memlocal of :FC1_B:0
-dfgPass::VERBO:         - memlocal of :i:0
-dfgPass::VERBO:         - memlocal of :i:0
-dfgPass::VERBO:       - AFTER BREAK
-dfgPass::VERBO:       - for.inc56
-dfgPass::VERBO:         - memlocal of :i:0
-dfgPass::VERBO:         - memlocal of :i:1
-dfgPass::VERBO:       - AFTER BREAK
-dfgPass::VERBO:       - BEFORE BREAK
-dfgPass::VERBO:       - for.cond38
-dfgPass::VERBO:         - memlocal of :i:0
-dfgPass::VERBO:         - LCV conditional branch 6:48
-dfgPass::VERBO:       - AFTER BREAK
-dfgPass::VERBO:       - for.body40
-dfgPass::VERBO:         - memlocal of :FC1_W:0
-dfgPass::VERBO:         - memlocal of :i:0
-dfgPass::VERBO:         - memlocal of :i:0
-dfgPass::VERBO:       - AFTER BREAK
-dfgPass::VERBO:       - for.inc45
-dfgPass::VERBO:         - memlocal of :i:0
-dfgPass::VERBO:         - memlocal of :i:1
-dfgPass::VERBO:       - AFTER BREAK
-dfgPass::VERBO:       - BEFORE BREAK
-dfgPass::VERBO:       - for.cond27
-dfgPass::VERBO:         - memlocal of :i:0
-dfgPass::VERBO:         - LCV conditional branch 6:48
-dfgPass::VERBO:       - AFTER BREAK
-dfgPass::VERBO:       - for.body29
-dfgPass::VERBO:         - memlocal of :bias2:0
-dfgPass::VERBO:         - memlocal of :i:0
-dfgPass::VERBO:         - memlocal of :i:0
-dfgPass::VERBO:       - AFTER BREAK
-dfgPass::VERBO:       - for.inc34
-dfgPass::VERBO:         - memlocal of :i:0
-dfgPass::VERBO:         - memlocal of :i:1
-dfgPass::VERBO:       - AFTER BREAK
-dfgPass::VERBO:       - BEFORE BREAK
-dfgPass::VERBO:       - for.cond16
-dfgPass::VERBO:         - memlocal of :i:0
-dfgPass::VERBO:         - LCV conditional branch 6:48
-dfgPass::VERBO:       - AFTER BREAK
-dfgPass::VERBO:       - for.body18
-dfgPass::VERBO:         - memlocal of :weights2:0
-dfgPass::VERBO:         - memlocal of :i:0
-dfgPass::VERBO:         - memlocal of :i:0
-dfgPass::VERBO:       - AFTER BREAK
-dfgPass::VERBO:       - for.inc23
-dfgPass::VERBO:         - memlocal of :i:0
-dfgPass::VERBO:         - memlocal of :i:1
-dfgPass::VERBO:       - AFTER BREAK
-dfgPass::VERBO:       - BEFORE BREAK
-dfgPass::VERBO:       - for.cond5
-dfgPass::VERBO:         - memlocal of :i:0
-dfgPass::VERBO:         - LCV conditional branch 6:48
-dfgPass::VERBO:       - AFTER BREAK
-dfgPass::VERBO:       - for.body7
-dfgPass::VERBO:         - memlocal of :bias1:0
-dfgPass::VERBO:         - memlocal of :i:0
-dfgPass::VERBO:         - memlocal of :i:0
-dfgPass::VERBO:       - AFTER BREAK
-dfgPass::VERBO:       - for.inc12
-dfgPass::VERBO:         - memlocal of :i:0
-dfgPass::VERBO:         - memlocal of :i:1
-dfgPass::VERBO:       - AFTER BREAK
-dfgPass::VERBO:       - BEFORE BREAK
-dfgPass::VERBO:       - for.cond
-dfgPass::VERBO:         - memlocal of :i:0
-dfgPass::VERBO:         - LCV conditional branch 6:48
-dfgPass::VERBO:       - AFTER BREAK
-dfgPass::VERBO:       - for.body
-dfgPass::VERBO:         - memlocal of :weights1:0
-dfgPass::VERBO:         - memlocal of :i:0
-dfgPass::VERBO:         - memlocal of :i:0
-dfgPass::VERBO:       - AFTER BREAK
-dfgPass::VERBO:       - for.inc
-dfgPass::VERBO:         - memlocal of :i:0
-dfgPass::VERBO:         - memlocal of :i:1
-dfgPass::VERBO:       - AFTER BREAK
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +1 is not an innermost loop
-dfgPass::VERBO:     +2 is not an innermost loop
-dfgPass::VERBO:       - BEFORE BREAK
-dfgPass::VERBO:       - for.cond4
-dfgPass::VERBO:         - memlocal of :c:0
-dfgPass::VERBO:         - LCV conditional branch 6:48
-dfgPass::VERBO:       - AFTER BREAK
-dfgPass::VERBO:       - for.body6
-dfgPass::VERBO:         - memlocal of :i:0
-dfgPass::VERBO:         - memlocal of :j:0
-dfgPass::VERBO:         - memlocal of :c:0
-dfgPass::VERBO:         - memlocal of :idx:1
+dfgPass::VERBO:         - memlocal of :img_strm:0
 dfgPass::VERBO:         - memlocal of :img_in:0
 dfgPass::VERBO:         - memlocal of :idx:0
-dfgPass::VERBO:         - memlocal of :local_img:0
-dfgPass::VERBO:         - memlocal of :i:0
-dfgPass::VERBO:         - memlocal of :j:0
-dfgPass::VERBO:         - memlocal of :c:0
-dfgPass::VERBO:       - AFTER BREAK
-dfgPass::VERBO:       - for.inc
-dfgPass::VERBO:         - memlocal of :c:0
-dfgPass::VERBO:         - memlocal of :c:1
-dfgPass::VERBO:       - AFTER BREAK
+dfgPass::VERBO:         - memlocal of :unnamed:1
+dfgPass::VERBO:         - memlocal of :unnamed:0
+dfgPass::VERBO:         - invalid TR:4:0
 dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +1 is not an innermost loop
 dfgPass::VERBO:     +2 is not an innermost loop
 dfgPass::VERBO:     +3 is not an innermost loop
-dfgPass::VERBO:     +4 is not an innermost loop
-dfgPass::VERBO:     +5 is not an innermost loop
-dfgPass::VERBO:     +6 fails R.hasBlockSchema
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +1 is not an innermost loop
-dfgPass::VERBO:     +2 is not an innermost loop
-dfgPass::VERBO:     +3 fails R.hasBlockSchema
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +1 is not an innermost loop
-dfgPass::VERBO:     +2 is not an innermost loop
-dfgPass::VERBO:     +3 is not an innermost loop
-dfgPass::VERBO:     +4 is not an innermost loop
-dfgPass::VERBO:     +5 is not an innermost loop
-dfgPass::VERBO:     +6 fails R.hasBlockSchema
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +1 is not an innermost loop
-dfgPass::VERBO:     +2 is not an innermost loop
-dfgPass::VERBO:     +3 fails R.hasBlockSchema
-dfgPass::VERBO:     +0 is not a loop
-dfgPass::VERBO:     +1 is not an innermost loop
-dfgPass::VERBO:     +2 is not an innermost loop
 dfgPass::VERBO:       - BEFORE BREAK
-dfgPass::VERBO:       - for.cond4
+dfgPass::VERBO:       - for.cond7
 dfgPass::VERBO:         - memlocal of :m:0
 dfgPass::VERBO:         - LCV conditional branch 6:48
 dfgPass::VERBO:       - AFTER BREAK
-dfgPass::VERBO:       - for.body6
-dfgPass::VERBO:         - memlocal of :feat2_p:0
-dfgPass::VERBO:         - memlocal of :i:0
-dfgPass::VERBO:         - memlocal of :j:0
+dfgPass::VERBO:       - for.body9
 dfgPass::VERBO:         - memlocal of :m:0
-dfgPass::VERBO:         - memlocal of :vec1:0
-dfgPass::VERBO:         - memlocal of :cnt:0
+dfgPass::VERBO:         - memlocal of :j:0
+dfgPass::VERBO:         - memlocal of :c:0
+dfgPass::VERBO:         - memlocal of :m:0
+dfgPass::VERBO:         - memlocal of :j:0
+dfgPass::VERBO:         - memlocal of :c:0
 dfgPass::VERBO:       - AFTER BREAK
 dfgPass::VERBO:       - for.inc
 dfgPass::VERBO:         - memlocal of :m:0
 dfgPass::VERBO:         - memlocal of :m:1
 dfgPass::VERBO:       - AFTER BREAK
+dfgPass::VERBO:     +5 is not an innermost loop
+dfgPass::VERBO:     +6 fails R.hasBlockSchema
+dfgPass::VERBO:     +7 is not an innermost loop
+dfgPass::VERBO:     +8 is not an innermost loop
+dfgPass::VERBO:     +9 is not an innermost loop
+dfgPass::VERBO:     +10 fails R.hasBlockSchema
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +1 is not an innermost loop
+dfgPass::VERBO:     +2 is not an innermost loop
+dfgPass::VERBO:     +3 fails R.hasBlockSchema
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +1 is not an innermost loop
+dfgPass::VERBO:     +2 is not an innermost loop
+dfgPass::VERBO:     +3 is not an innermost loop
+dfgPass::VERBO:       - BEFORE BREAK
+dfgPass::VERBO:       - for.cond7
+dfgPass::VERBO:         - memlocal of :m:0
+dfgPass::VERBO:         - LCV conditional branch 6:48
+dfgPass::VERBO:       - AFTER BREAK
+dfgPass::VERBO:       - for.body9
+dfgPass::VERBO:         - memlocal of :m:0
+dfgPass::VERBO:         - memlocal of :j:0
+dfgPass::VERBO:         - memlocal of :c:0
+dfgPass::VERBO:         - memlocal of :m:0
+dfgPass::VERBO:         - memlocal of :j:0
+dfgPass::VERBO:         - memlocal of :c:0
+dfgPass::VERBO:       - AFTER BREAK
+dfgPass::VERBO:       - for.inc
+dfgPass::VERBO:         - memlocal of :m:0
+dfgPass::VERBO:         - memlocal of :m:1
+dfgPass::VERBO:       - AFTER BREAK
+dfgPass::VERBO:     +5 is not an innermost loop
+dfgPass::VERBO:     +6 fails R.hasBlockSchema
+dfgPass::VERBO:     +7 is not an innermost loop
+dfgPass::VERBO:     +8 is not an innermost loop
+dfgPass::VERBO:     +9 is not an innermost loop
+dfgPass::VERBO:     +10 fails R.hasBlockSchema
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +1 is not an innermost loop
+dfgPass::VERBO:     +2 is not an innermost loop
+dfgPass::VERBO:     +3 fails R.hasBlockSchema
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:       - BEFORE BREAK
+dfgPass::VERBO:       - for.cond
+dfgPass::VERBO:         - memlocal of :i:0
+dfgPass::VERBO:         - LCV conditional branch 6:48
+dfgPass::VERBO:       - AFTER BREAK
+dfgPass::VERBO:       - for.body
+dfgPass::VERBO:         - memlocal of :feat2_p_strm:0
+dfgPass::VERBO:         - invalid TR:4:0
 dfgPass::VERBO:     +0 is not a loop
 dfgPass::VERBO:     +1 is not an innermost loop
 dfgPass::VERBO:     +2 fails R.hasBlockSchema

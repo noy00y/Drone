@@ -78,15 +78,17 @@ void conv1_stream(
 
       // once full window is available, emit M1 outputs
       if (i >= K-1 && j >= K-1) {
-        int oi = i - (K-1), oj = j - (K-1);
         for (int m = 0; m < M1; m++) {
         #pragma HLS PIPELINE II=4
           data_t acc = b1[m];
           for (int p = 0; p < K; p++)
           for (int q = 0; q < K; q++)
           for (int c = 0; c < C0; c++) {
-            int widx = ((m*C0 + c)*K + p)*K + q;
-            acc += window[p][q][c] * w1[widx];
+            data_t prod = window[p][q][c] * w1[((m*C0 + c) * K + p)*K + q];
+            #pragma HLS RESOURCE variable=prod core=MUL_DSP
+
+            // int widx = ((m*C0 + c)*K + p)*K + q;
+            acc += prod;
           }
           // ReLU
           feat1_strm.write(acc > (data_t)0.0 ? acc : (data_t)0.0);
@@ -161,8 +163,9 @@ void conv2_stream(
           for (int p = 0; p < K; p++)
           for (int q = 0; q < K; q++)
           for (int c = 0; c < M1; c++) {
-            int widx = ((m*M1 + c)*K + p)*K + q;
-            acc += window[p][q][c] * w2[widx];
+            data_t prod = window[p][q][c] * w2[((m*C0 + c) * K + p)*K + q];
+            #pragma HLS RESOURCE variable=prod core=MUL_DSP
+            acc += prod;
           }
           feat2_strm.write(acc > (data_t)0.0 ? acc : (data_t)0.0);
         }
@@ -225,7 +228,9 @@ void fc1(
     data_t acc = FC1_B[o];
     for (int i = 0; i < cnt; i++) {
     // #pragma HLS UNROLL factor=2
-      acc += vec1[i] * FC1_W[o * cnt + i];
+      data_t prod = vec1[i] * FC1_W[o * cnt + i];
+      #pragma HLS RESOURCE variable=prod core=MUL_DSP
+      acc += prod;
     }
     vec2[o] = hls::tanh(acc);
   }
@@ -242,7 +247,9 @@ void fc2(
   data_t acc = FC2_B[0];
   for (int i = 0; i < N2; i++) {
   #pragma HLS PIPELINE II=4
-    acc += vec2[i] * FC2_W[i];
+    data_t prod = vec2[i] * FC2_W[i];
+    #pragma HLS RESOURCE variable=prod core=MUL_DSP
+    acc += prod;
   }
   data_t p = (data_t)1.0 / ((data_t)1.0 + hls::exp(-acc));
   *flag_out = (p > (data_t)0.5) ? (data_t)1 : (data_t)0;

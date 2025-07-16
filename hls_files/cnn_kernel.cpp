@@ -6,9 +6,9 @@
 // Network Params:
 #define H 240
 #define W 320
-#define M0 3 // input channels
-#define K 3 // kernel dimensions
-#define M1 8 // output channels in conv1
+#define M0 3  // input channels
+#define K 3   // kernel dimensions
+#define M1 8  // output channels in conv1
 #define M2 16 // output channels in conv2
 #define H1 (H - K + 1)
 #define W1 (W - K + 1)
@@ -23,3 +23,17 @@
 typedef ap_fixed<16, 4> data_t;
 typedef unsigned char flag_t;
 
+// Stage 0: Stream Input Frame Pixel by pixel
+void stream_img(const data_t *img_in, hls::stream<data_t> &img_strm)
+{
+    for (int idx = 0; idx < H * W * C0; idx++)
+    {
+#pragma HLS PIPELINE II = 1
+        img_strm.write(img_in[idx]);
+    }
+}
+
+void conv1_kernel(hls::stream<data_t> &img_strm, const data_t *w1, const data_t *b1, )
+{
+    
+}

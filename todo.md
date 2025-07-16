@@ -113,7 +113,7 @@ and our line buffers continously get updated as well so we still have our rows
 
 ok now moving on into the mac operations
 
-- we get full windows starting at cycle 17 and thus begin MAC ops
+- we get full windows starting at cycle 17 and thus begin MAC ops. Each can be represented in 1 clk cycle using a DSP48E1
     - stage 1 (MULT) - 9 DSPs each do 1 pixel * weight → 9 partial products
     - stage 2 (Acc) - adder tree sums those 9 products into 1
     - stage 3 (acc) - add the per filter bias term
@@ -148,3 +148,8 @@ MAC Operation High Level Clock Cycle
 | N+5 | 1 | Win(r,c+1) | Engines 0–3 → accumulate | Engines 0–3 mult | Engines 0–3 add | Engines 0–3 acc |
 | N+6 | 1 | Win(r,c+2) | Engines 0–3 → add_bias | Engines 0–3 acc | Engines 0–3 mult | Engines 0–3 add_bias |
 | N+7 | 1 | Win(r,c+3) | Engines 0–3 → reg_output4–7 | Engines 0–3 add | Engines 0–3 acc | Engines 0–3 mult |
+
+90% sure this thing is wrong btw but ok moving on:
+
+Questions while coding:
+- do we take r, g, b as 3 seperate streams or are these color values pulled from 1 single img stream if thus is possible?

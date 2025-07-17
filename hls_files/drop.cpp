@@ -45,7 +45,7 @@ void stream_img(
     hls::stream<data_t> &img_strm)
 {
   for (int idx = 0; idx < H*W*C0; idx++) {
-  #pragma HLS PIPELINE II=1
+  #pragma HLS PIPELINE II=4
     img_strm.write(img_in[idx]);
   }
 }
@@ -90,7 +90,7 @@ void conv1_stream(
       // once full window is available, emit M1 outputs
       if (i >= K-1 && j >= K-1) {
         for (int m = 0; m < M1; m++) {
-        #pragma HLS PIPELINE II=1
+        #pragma HLS PIPELINE II=4
           // ensure this multiply-accumulate uses DSPs
         #pragma HLS RESOURCE variable=window core=Ram_2P_BRAM
         #pragma HLS RESOURCE variable=w1 core=Ram_2P_BRAM
@@ -169,7 +169,7 @@ void conv2_stream(
 
       if (i >= K-1 && j >= K-1) {
         for (int m = 0; m < M2; m++) {
-        #pragma HLS PIPELINE II=1
+        #pragma HLS PIPELINE II=4
           data_t acc = b2[m];
           for (int p = 0; p < K; p++)
             for (int q = 0; q < K; q++)
@@ -220,7 +220,7 @@ void flatten_stream(
   cnt = 0;
   const int TOTAL = M2 * H4 * W4;
   for (int i = 0; i < TOTAL; i++) {
-  #pragma HLS PIPELINE II=1
+  #pragma HLS PIPELINE II=4
     vec1[cnt++] = feat2_p_strm.read();
   }
 }
@@ -234,7 +234,7 @@ void fc1(
     data_t vec2[N2])
 {
   for (int o = 0; o < N2; o++) {
-  #pragma HLS PIPELINE II=1
+  #pragma HLS PIPELINE II=4
     data_t acc = FC1_B[o];
     for (int i = 0; i < cnt; i++) {
       acc += vec1[i] * FC1_W[o * cnt + i];
@@ -253,7 +253,7 @@ void fc2(
 {
   data_t acc = FC2_B[0];
   for (int i = 0; i < N2; i++) {
-  #pragma HLS PIPELINE II=1
+  #pragma HLS PIPELINE II=4
     acc += vec2[i] * FC2_W[i];
   }
   data_t p = (data_t)1.0 / ((data_t)1.0 + hls::exp(-acc));
@@ -272,35 +272,35 @@ void load_weights(
 #pragma HLS INLINE off
   // Weight loading loops (copy from DDR arrays into BRAM-resident buffers)
   LOAD_W1: for (int i = 0; i < M1*C0*K*K; i++) {
-  #pragma HLS PIPELINE II=1
+  #pragma HLS PIPELINE II=4
     w1_local[i] = weights1[i];
   }
   LOAD_B1: for (int i = 0; i < M1; i++) {
-  #pragma HLS PIPELINE II=1
+  #pragma HLS PIPELINE II=4
     b1_local[i] = bias1[i];
   }
   LOAD_W2: for (int i = 0; i < M2*M1*K*K; i++) {
-  #pragma HLS PIPELINE II=1
+  #pragma HLS PIPELINE II=4
     w2_local[i] = weights2[i];
   }
   LOAD_B2: for (int i = 0; i < M2; i++) {
-  #pragma HLS PIPELINE II=1
+  #pragma HLS PIPELINE II=4
     b2_local[i] = bias2[i];
   }
   LOAD_FC1_W: for (int i = 0; i < N2*(M2*H4*W4); i++) {
-  #pragma HLS PIPELINE II=1
+  #pragma HLS PIPELINE II=4
     fc1_w_local[i] = FC1_W[i];
   }
   LOAD_FC1_B: for (int i = 0; i < N2; i++) {
-  #pragma HLS PIPELINE II=1
+  #pragma HLS PIPELINE II=4
     fc1_b_local[i] = FC1_B[i];
   }
   LOAD_FC2_W: for (int i = 0; i < N2; i++) {
-  #pragma HLS PIPELINE II=1
+  #pragma HLS PIPELINE II=4
     fc2_w_local[i] = FC2_W[i];
   }
   LOAD_FC2_B: for (int i = 0; i < 1; i++) {
-  #pragma HLS PIPELINE II=1
+  #pragma HLS PIPELINE II=4
     fc2_b_local[i] = FC2_B[i];
   }
 }

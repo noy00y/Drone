@@ -1,4 +1,3 @@
-2 warnings and 26 errors generated.
+3 errors generated.
 Error while processing C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\.autopilot\db\conv_pool.pp.0.cpp.
-clang-tidy applied 155 of 155 suggested fixes.
-Suppressed 2 warnings (2 with check filters).
+clang-tidy applied 15 of 15 suggested fixes.

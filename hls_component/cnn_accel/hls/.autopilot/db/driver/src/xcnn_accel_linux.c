@@ -125,9 +125,9 @@ int XCnn_accel_Initialize(XCnn_accel *InstancePtr, const char* InstanceName) {
         return XST_OPEN_DEVICE_FAILED;
     }
 
-    // NOTE: slave interface 'Control' should be mapped to uioX/map0
-    InstancePtr->Control_BaseAddress = (u64)mmap(NULL, InfoPtr->maps[0].size, PROT_READ|PROT_WRITE, MAP_SHARED, InfoPtr->uio_fd, 0 * getpagesize());
-    assert(InstancePtr->Control_BaseAddress);
+    // NOTE: slave interface 'Ctrl' should be mapped to uioX/map0
+    InstancePtr->Ctrl_BaseAddress = (u64)mmap(NULL, InfoPtr->maps[0].size, PROT_READ|PROT_WRITE, MAP_SHARED, InfoPtr->uio_fd, 0 * getpagesize());
+    assert(InstancePtr->Ctrl_BaseAddress);
 
     InstancePtr->IsReady = XIL_COMPONENT_IS_READY;
 
@@ -140,7 +140,7 @@ int XCnn_accel_Release(XCnn_accel *InstancePtr) {
     assert(InstancePtr != NULL);
     assert(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
 
-    munmap((void*)InstancePtr->Control_BaseAddress, InfoPtr->maps[0].size);
+    munmap((void*)InstancePtr->Ctrl_BaseAddress, InfoPtr->maps[0].size);
 
     close(InfoPtr->uio_fd);
 

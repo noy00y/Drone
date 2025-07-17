@@ -20,7 +20,7 @@
                 "-o",
                 "C:\\Users\\ozair\\Documents\\Code_Drive\\Drone\\hls_component\\cnn_accel\\hls\\csim\\code_analyzer\\.internal\\build\\conv_pool.cpp.0.bc"
             ],
-            "exectime": 17.175175189971924,
+            "exectime": 2.1437435150146484,
             "cwd": "C:\\Users\\ozair\\Documents\\Code_Drive\\Drone\\hls_component"
         },
         "['C:\\\\Users\\\\ozair\\\\Documents\\\\Code_Drive\\\\Drone\\\\hls_component\\\\cnn_accel\\\\hls\\\\csim\\\\code_analyzer\\\\.internal\\\\build\\\\testbench.cpp.0.o', 'C:\\\\Users\\\\ozair\\\\Documents\\\\Code_Drive\\\\Drone\\\\hls_component\\\\cnn_accel\\\\hls\\\\csim\\\\code_analyzer\\\\.internal\\\\build\\\\testbench.cpp.0.o.d']": {
@@ -42,7 +42,7 @@
                 "-o",
                 "C:\\Users\\ozair\\Documents\\Code_Drive\\Drone\\hls_component\\cnn_accel\\hls\\csim\\code_analyzer\\.internal\\build\\testbench.cpp.0.o"
             ],
-            "exectime": 2.0960042476654053,
+            "exectime": 4.093931198120117,
             "cwd": "C:\\Users\\ozair\\Documents\\Code_Drive\\Drone\\hls_component"
         },
         "['C:\\\\Users\\\\ozair\\\\Documents\\\\Code_Drive\\\\Drone\\\\hls_component\\\\cnn_accel\\\\hls\\\\csim\\\\code_analyzer\\\\.internal\\\\build\\\\conv_pool.cpp.0.o', 'C:\\\\Users\\\\ozair\\\\Documents\\\\Code_Drive\\\\Drone\\\\hls_component\\\\cnn_accel\\\\hls\\\\csim\\\\code_analyzer\\\\.internal\\\\build\\\\conv_pool.cpp.0.o.d']": {
@@ -64,7 +64,7 @@
                 "-o",
                 "C:\\Users\\ozair\\Documents\\Code_Drive\\Drone\\hls_component\\cnn_accel\\hls\\csim\\code_analyzer\\.internal\\build\\conv_pool.cpp.0.o"
             ],
-            "exectime": 35.932811975479126,
+            "exectime": 2.9324281215667725,
             "cwd": "C:\\Users\\ozair\\Documents\\Code_Drive\\Drone\\hls_component"
         },
         "['C:\\\\Users\\\\ozair\\\\Documents\\\\Code_Drive\\\\Drone\\\\hls_component\\\\cnn_accel\\\\hls\\\\csim\\\\code_analyzer\\\\.internal\\\\build\\\\syn_srcs.bc']": {
@@ -74,7 +74,7 @@
                 "-o",
                 "C:\\Users\\ozair\\Documents\\Code_Drive\\Drone\\hls_component\\cnn_accel\\hls\\csim\\code_analyzer\\.internal\\build\\syn_srcs.bc"
             ],
-            "exectime": 0.7115340232849121,
+            "exectime": 0.06571483612060547,
             "cwd": "C:\\Users\\ozair\\Documents\\Code_Drive\\Drone\\hls_component"
         },
         "['C:\\\\Users\\\\ozair\\\\Documents\\\\Code_Drive\\\\Drone\\\\hls_component\\\\cnn_accel\\\\hls\\\\csim\\\\code_analyzer\\\\.internal\\\\build\\\\syn_srcs.opt.bc']": {
@@ -86,7 +86,7 @@
                 "-o",
                 "C:\\Users\\ozair\\Documents\\Code_Drive\\Drone\\hls_component\\cnn_accel\\hls\\csim\\code_analyzer\\.internal\\build\\syn_srcs.opt.bc"
             ],
-            "exectime": 0.6674301624298096,
+            "exectime": 0.06423425674438477,
             "cwd": "C:\\Users\\ozair\\Documents\\Code_Drive\\Drone\\hls_component"
         },
         "['C:\\\\Users\\\\ozair\\\\Documents\\\\Code_Drive\\\\Drone\\\\hls_component\\\\cnn_accel\\\\hls\\\\csim\\\\code_analyzer\\\\.internal\\\\build\\\\app.exe']": {
@@ -125,7 +125,7 @@
                 "-fslxpthreads",
                 "-lpthread"
             ],
-            "exectime": 419.9691879749298,
+            "exectime": 3.4905190467834473,
             "cwd": "C:\\Users\\ozair\\Documents\\Code_Drive\\Drone\\hls_component"
         },
         "['C:\\\\Users\\\\ozair\\\\Documents\\\\Code_Drive\\\\Drone\\\\hls_component\\\\cnn_accel\\\\hls\\\\csim\\\\code_analyzer\\\\.internal\\\\instrument\\\\app_0\\\\hls_ir_info.json']": {
@@ -138,7 +138,7 @@
                 "--hw-function",
                 "cnn_accel"
             ],
-            "exectime": 2.697561025619507,
+            "exectime": 0.14868378639221191,
             "cwd": "C:\\Users\\ozair\\Documents\\Code_Drive\\Drone\\hls_component"
         },
         "['C:\\\\Users\\\\ozair\\\\Documents\\\\Code_Drive\\\\Drone\\\\hls_component\\\\cnn_accel\\\\hls\\\\csim\\\\code_analyzer\\\\.internal\\\\instrument\\\\app_0\\\\binary_dependencies.json']": {
@@ -149,14 +149,14 @@
                 "--reuse-filemanager=false",
                 "--output=C:\\Users\\ozair\\Documents\\Code_Drive\\Drone\\hls_component\\cnn_accel\\hls\\csim\\code_analyzer\\.internal\\instrument\\app_0\\binary_dependencies.json"
             ],
-            "exectime": 0.1610410213470459,
+            "exectime": 0.1548447608947754,
             "cwd": "C:\\Users\\ozair\\Documents\\Code_Drive\\Drone\\hls_component"
         },
         "['C:\\\\Users\\\\ozair\\\\Documents\\\\Code_Drive\\\\Drone\\\\hls_component\\\\cnn_accel\\\\hls\\\\csim\\\\code_analyzer\\\\bin\\\\.tracing_stdout.txt', 'C:\\\\Users\\\\ozair\\\\Documents\\\\Code_Drive\\\\Drone\\\\hls_component\\\\cnn_accel\\\\hls\\\\csim\\\\code_analyzer\\\\bin\\\\.tracing_stderr.txt']": {
             "command": [
                 "C:\\Users\\ozair\\Documents\\Code_Drive\\Drone\\hls_component\\cnn_accel\\hls\\csim\\code_analyzer\\.internal\\build\\app.exe"
             ],
-            "exectime": 7.49899959564209,
+            "exectime": 7.511343240737915,
             "cwd": "C:\\Users\\ozair\\Documents\\Code_Drive\\Drone\\hls_component\\cnn_accel\\hls\\csim\\code_analyzer\\tracing\\csim\\build"
         },
         "['C:\\\\Users\\\\ozair\\\\Documents\\\\Code_Drive\\\\Drone\\\\hls_component\\\\cnn_accel\\\\hls\\\\csim\\\\code_analyzer\\\\.internal\\\\instrument\\\\app_0\\\\annotated.bc']": {
@@ -171,11 +171,11 @@
                 "-staticFile",
                 "C:\\Users\\ozair\\Documents\\Code_Drive\\Drone\\hls_component\\cnn_accel\\hls\\csim\\code_analyzer\\.internal\\instrument\\app_0\\static.xml",
                 "-traceFile",
-                "C:\\Users\\ozair\\Documents\\Code_Drive\\Drone\\hls_component\\cnn_accel\\hls\\csim\\code_analyzer\\.internal\\profiler\\0\\app_0_6\\thread0000-trace.txt",
+                "C:\\Users\\ozair\\Documents\\Code_Drive\\Drone\\hls_component\\cnn_accel\\hls\\csim\\code_analyzer\\.internal\\profiler\\0\\app_0_9\\thread0000-trace.txt",
                 "-o",
                 "C:\\Users\\ozair\\Documents\\Code_Drive\\Drone\\hls_component\\cnn_accel\\hls\\csim\\code_analyzer\\.internal\\instrument\\app_0\\annotated.bc"
             ],
-            "exectime": 32.34272646903992,
+            "exectime": 26.864096641540527,
             "cwd": "C:\\Users\\ozair\\Documents\\Code_Drive\\Drone\\hls_component"
         },
         "['C:\\\\Users\\\\ozair\\\\Documents\\\\Code_Drive\\\\Drone\\\\hls_component\\\\cnn_accel\\\\hls\\\\csim\\\\code_analyzer\\\\.internal\\\\dataflow\\\\0\\\\taskgraph.json']": {
@@ -364,6 +364,100 @@
                 "%F9926"
             ],
             "exectime": 8.01658010482788,
+            "cwd": "C:\\Users\\ozair\\Documents\\Code_Drive\\Drone\\hls_component"
+        },
+        "['C:\\\\Users\\\\ozair\\\\Documents\\\\Code_Drive\\\\Drone\\\\hls_component\\\\cnn_accel\\\\hls\\\\csim\\\\code_analyzer\\\\.internal\\\\dataflow\\\\4\\\\taskgraph.json']": {
+            "command": [
+                "c:\\xilinx\\2025.1\\vitis\\win64\\tools\\vcxx\\/libexec/parallelismSelector.exe",
+                "--basepath",
+                "C:\\Users\\ozair\\Documents\\Code_Drive\\Drone\\hls_component",
+                "--fpga-part",
+                "xc7a100t-fgg484-2L",
+                "--device-totals",
+                "c:\\xilinx\\2025.1\\vitis\\win64\\tools\\vcxx\\data\\platform\\logic\\fpga.devicetotals",
+                "--clock-frequency",
+                "100.0",
+                "--out-dir",
+                "C:\\Users\\ozair\\Documents\\Code_Drive\\Drone\\hls_component\\cnn_accel\\hls\\csim\\code_analyzer\\output",
+                "--log-dir",
+                "C:\\Users\\ozair\\Documents\\Code_Drive\\Drone\\hls_component\\cnn_accel\\hls\\csim\\code_analyzer\\log",
+                "--objective",
+                "none",
+                "--performance-target",
+                "target_both",
+                "--max-array-optimization-factor",
+                "1024",
+                "--complete-partition-limit",
+                "0",
+                "--lut-constraint",
+                "100.0",
+                "--ff-constraint",
+                "100.0",
+                "--dsp-constraint",
+                "100.0",
+                "--bram-constraint",
+                "100.0",
+                "--uram-constraint",
+                "100.0",
+                "--max-iterations",
+                "1000",
+                "--max-iterations-branch-full-log",
+                "20",
+                "--ir-module",
+                "C:\\Users\\ozair\\Documents\\Code_Drive\\Drone\\hls_component\\cnn_accel\\hls\\csim\\code_analyzer\\.internal\\instrument\\app_0\\annotated.bc",
+                "--df-id",
+                "4",
+                "--df-target",
+                "%F9945"
+            ],
+            "exectime": 8.379144430160522,
+            "cwd": "C:\\Users\\ozair\\Documents\\Code_Drive\\Drone\\hls_component"
+        },
+        "['C:\\\\Users\\\\ozair\\\\Documents\\\\Code_Drive\\\\Drone\\\\hls_component\\\\cnn_accel\\\\hls\\\\csim\\\\code_analyzer\\\\.internal\\\\dataflow\\\\5\\\\taskgraph.json']": {
+            "command": [
+                "c:\\xilinx\\2025.1\\vitis\\win64\\tools\\vcxx\\/libexec/parallelismSelector.exe",
+                "--basepath",
+                "C:\\Users\\ozair\\Documents\\Code_Drive\\Drone\\hls_component",
+                "--fpga-part",
+                "xc7a100t-fgg484-2L",
+                "--device-totals",
+                "c:\\xilinx\\2025.1\\vitis\\win64\\tools\\vcxx\\data\\platform\\logic\\fpga.devicetotals",
+                "--clock-frequency",
+                "100.0",
+                "--out-dir",
+                "C:\\Users\\ozair\\Documents\\Code_Drive\\Drone\\hls_component\\cnn_accel\\hls\\csim\\code_analyzer\\output",
+                "--log-dir",
+                "C:\\Users\\ozair\\Documents\\Code_Drive\\Drone\\hls_component\\cnn_accel\\hls\\csim\\code_analyzer\\log",
+                "--objective",
+                "none",
+                "--performance-target",
+                "target_both",
+                "--max-array-optimization-factor",
+                "1024",
+                "--complete-partition-limit",
+                "4",
+                "--lut-constraint",
+                "100.0",
+                "--ff-constraint",
+                "100.0",
+                "--dsp-constraint",
+                "100.0",
+                "--bram-constraint",
+                "100.0",
+                "--uram-constraint",
+                "100.0",
+                "--max-iterations",
+                "1000",
+                "--max-iterations-branch-full-log",
+                "20",
+                "--ir-module",
+                "C:\\Users\\ozair\\Documents\\Code_Drive\\Drone\\hls_component\\cnn_accel\\hls\\csim\\code_analyzer\\.internal\\instrument\\app_0\\annotated.bc",
+                "--df-id",
+                "5",
+                "--df-target",
+                "%F770"
+            ],
+            "exectime": 1.7575783729553223,
             "cwd": "C:\\Users\\ozair\\Documents\\Code_Drive\\Drone\\hls_component"
         }
     }

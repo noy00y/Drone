@@ -130,6 +130,13 @@ C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\csim\code_
   C:/Xilinx/2025.1/Vitis/tps/mingw/10.0.0/win64.o/nt/include/c++/9.5.0/bits/ostream.tcc \
   C:/Xilinx/2025.1/Vitis/tps/mingw/10.0.0/win64.o/nt/include/c++/9.5.0/istream \
   C:/Xilinx/2025.1/Vitis/tps/mingw/10.0.0/win64.o/nt/include/c++/9.5.0/bits/istream.tcc \
+  C:/Xilinx/2025.1/Vitis/tps/mingw/10.0.0/win64.o/nt/include/c++/9.5.0/vector \
+  C:/Xilinx/2025.1/Vitis/tps/mingw/10.0.0/win64.o/nt/include/c++/9.5.0/bits/stl_construct.h \
+  C:/Xilinx/2025.1/Vitis/tps/mingw/10.0.0/win64.o/nt/include/c++/9.5.0/bits/stl_uninitialized.h \
+  C:/Xilinx/2025.1/Vitis/tps/mingw/10.0.0/win64.o/nt/include/c++/9.5.0/bits/stl_vector.h \
+  C:/Xilinx/2025.1/Vitis/tps/mingw/10.0.0/win64.o/nt/include/c++/9.5.0/bits/stl_bvector.h \
+  C:/Xilinx/2025.1/Vitis/tps/mingw/10.0.0/win64.o/nt/include/c++/9.5.0/bits/vector.tcc \
+  C:/Users/ozair/Documents/Code_Drive/Drone/hls_files/conv_pool.cpp \
   c:/xilinx/2025.1/vitis/win64/tools/vcxx/data/include/ap_int.h \
   c:/xilinx/2025.1/vitis/win64/tools/vcxx/data/include/etc/ap_common.h \
   c:/xilinx/2025.1/vitis/win64/tools/vcxx/data/include/etc/ap_decl.h \
@@ -183,4 +190,40 @@ C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\csim\code_
   C:/Xilinx/2025.1/Vitis/tps/mingw/10.0.0/win64.o/nt/include/c++/9.5.0/fenv.h \
   C:/Xilinx/2025.1/Vitis/tps/mingw/10.0.0/win64.o/nt/x86_64-w64-mingw32/include/fenv.h \
   c:/xilinx/2025.1/vitis/win64/tools/vcxx/data/include/etc/ap_fixed_ref.h \
-  c:/xilinx/2025.1/vitis/win64/tools/vcxx/data/include/etc/ap_fixed_special.h
+  c:/xilinx/2025.1/vitis/win64/tools/vcxx/data/include/etc/ap_fixed_special.h \
+  c:/xilinx/2025.1/vitis/win64/tools/vcxx/data/include/hls_stream.h \
+  C:/Xilinx/2025.1/Vitis/tps/mingw/10.0.0/win64.o/nt/include/c++/9.5.0/queue \
+  C:/Xilinx/2025.1/Vitis/tps/mingw/10.0.0/win64.o/nt/include/c++/9.5.0/deque \
+  C:/Xilinx/2025.1/Vitis/tps/mingw/10.0.0/win64.o/nt/include/c++/9.5.0/bits/stl_deque.h \
+  C:/Xilinx/2025.1/Vitis/tps/mingw/10.0.0/win64.o/nt/include/c++/9.5.0/bits/deque.tcc \
+  C:/Xilinx/2025.1/Vitis/tps/mingw/10.0.0/win64.o/nt/include/c++/9.5.0/bits/stl_heap.h \
+  C:/Xilinx/2025.1/Vitis/tps/mingw/10.0.0/win64.o/nt/include/c++/9.5.0/bits/stl_queue.h \
+  C:/Xilinx/2025.1/Vitis/tps/mingw/10.0.0/win64.o/nt/include/c++/9.5.0/unordered_map \
+  C:/Xilinx/2025.1/Vitis/tps/mingw/10.0.0/win64.o/nt/include/c++/9.5.0/ext/aligned_buffer.h \
+  C:/Xilinx/2025.1/Vitis/tps/mingw/10.0.0/win64.o/nt/include/c++/9.5.0/bits/hashtable.h \
+  C:/Xilinx/2025.1/Vitis/tps/mingw/10.0.0/win64.o/nt/include/c++/9.5.0/bits/hashtable_policy.h \
+  C:/Xilinx/2025.1/Vitis/tps/mingw/10.0.0/win64.o/nt/include/c++/9.5.0/bits/unordered_map.h \
+  C:/Xilinx/2025.1/Vitis/tps/mingw/10.0.0/win64.o/nt/include/c++/9.5.0/bits/erase_if.h \
+  C:/Xilinx/2025.1/Vitis/tps/mingw/10.0.0/win64.o/nt/include/c++/9.5.0/thread \
+  C:/Xilinx/2025.1/Vitis/tps/mingw/10.0.0/win64.o/nt/include/c++/9.5.0/chrono \
+  C:/Xilinx/2025.1/Vitis/tps/mingw/10.0.0/win64.o/nt/include/c++/9.5.0/ratio \
+  C:/Xilinx/2025.1/Vitis/tps/mingw/10.0.0/win64.o/nt/include/c++/9.5.0/bits/parse_numbers.h \
+  C:/Xilinx/2025.1/Vitis/tps/mingw/10.0.0/win64.o/nt/include/c++/9.5.0/memory \
+  C:/Xilinx/2025.1/Vitis/tps/mingw/10.0.0/win64.o/nt/include/c++/9.5.0/bits/stl_tempbuf.h \
+  C:/Xilinx/2025.1/Vitis/tps/mingw/10.0.0/win64.o/nt/include/c++/9.5.0/bits/stl_raw_storage_iter.h \
+  C:/Xilinx/2025.1/Vitis/tps/mingw/10.0.0/win64.o/nt/include/c++/9.5.0/ext/concurrence.h \
+  C:/Xilinx/2025.1/Vitis/tps/mingw/10.0.0/win64.o/nt/include/c++/9.5.0/bits/shared_ptr.h \
+  C:/Xilinx/2025.1/Vitis/tps/mingw/10.0.0/win64.o/nt/include/c++/9.5.0/bits/shared_ptr_base.h \
+  C:/Xilinx/2025.1/Vitis/tps/mingw/10.0.0/win64.o/nt/include/c++/9.5.0/bits/allocated_ptr.h \
+  C:/Xilinx/2025.1/Vitis/tps/mingw/10.0.0/win64.o/nt/include/c++/9.5.0/bits/refwrap.h \
+  C:/Xilinx/2025.1/Vitis/tps/mingw/10.0.0/win64.o/nt/include/c++/9.5.0/bits/shared_ptr_atomic.h \
+  C:/Xilinx/2025.1/Vitis/tps/mingw/10.0.0/win64.o/nt/include/c++/9.5.0/bits/atomic_base.h \
+  C:/Xilinx/2025.1/Vitis/tps/mingw/10.0.0/win64.o/nt/include/c++/9.5.0/bits/atomic_lockfree_defines.h \
+  C:/Xilinx/2025.1/Vitis/tps/mingw/10.0.0/win64.o/nt/include/c++/9.5.0/backward/auto_ptr.h \
+  C:/Xilinx/2025.1/Vitis/tps/mingw/10.0.0/win64.o/nt/include/c++/9.5.0/mutex \
+  C:/Xilinx/2025.1/Vitis/tps/mingw/10.0.0/win64.o/nt/include/c++/9.5.0/bits/std_mutex.h \
+  C:/Xilinx/2025.1/Vitis/tps/mingw/10.0.0/win64.o/nt/include/c++/9.5.0/bits/unique_lock.h \
+  C:/Xilinx/2025.1/Vitis/tps/mingw/10.0.0/win64.o/nt/include/c++/9.5.0/atomic \
+  C:/Xilinx/2025.1/Vitis/tps/mingw/10.0.0/win64.o/nt/include/c++/9.5.0/condition_variable \
+  C:/Xilinx/2025.1/Vitis/tps/mingw/10.0.0/win64.o/nt/include/c++/9.5.0/cxxabi.h \
+  C:/Xilinx/2025.1/Vitis/tps/mingw/10.0.0/win64.o/nt/include/c++/9.5.0/x86_64-w64-mingw32/bits/cxxabi_tweaks.h

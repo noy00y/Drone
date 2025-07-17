@@ -225,33 +225,4 @@ C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\csim\code_
   C:/Xilinx/2025.1/Vitis/tps/mingw/10.0.0/win64.o/nt/include/c++/9.5.0/atomic \
   C:/Xilinx/2025.1/Vitis/tps/mingw/10.0.0/win64.o/nt/include/c++/9.5.0/condition_variable \
   C:/Xilinx/2025.1/Vitis/tps/mingw/10.0.0/win64.o/nt/include/c++/9.5.0/cxxabi.h \
-  C:/Xilinx/2025.1/Vitis/tps/mingw/10.0.0/win64.o/nt/include/c++/9.5.0/x86_64-w64-mingw32/bits/cxxabi_tweaks.h \
-  c:/xilinx/2025.1/vitis/win64/tools/vcxx/data/include/hls_math.h \
-  c:/xilinx/2025.1/vitis/win64/tools/vcxx/data/include/etc/hls_hotbm_apfixed.h \
-  c:/xilinx/2025.1/vitis/win64/tools/vcxx/data/include/utils/x_hls_defines.h \
-  c:/xilinx/2025.1/vitis/win64/tools/vcxx/data/include/utils/hls_version.h \
-  c:/xilinx/2025.1/vitis/win64/tools/vcxx/data/include/utils/x_hls_utils.h \
-  c:/xilinx/2025.1/vitis/win64/tools/vcxx/data/include/etc/hls_cordic_apfixed.h \
-  c:/xilinx/2025.1/vitis/win64/tools/vcxx/data/include/etc/hls_exp_apfixed.h \
-  c:/xilinx/2025.1/vitis/win64/tools/vcxx/data/include/etc/hls_log_apfixed.h \
-  c:/xilinx/2025.1/vitis/win64/tools/vcxx/data/include/etc/hls_sqrt_apfixed.h \
-  c:/xilinx/2025.1/vitis/win64/tools/vcxx/data/include/etc/hls_round_copysign_apfixed.h \
-  c:/xilinx/2025.1/vitis/win64/tools/vcxx/data/include/etc/hls_pow_apfixed.h \
-  c:/xilinx/2025.1/vitis/win64/tools/vcxx/data/include/etc/hls_diff_apfixed.h \
-  c:/xilinx/2025.1/vitis/win64/tools/vcxx/data/include/etc/hls_comparison_apfixed.h \
-  c:/xilinx/2025.1/vitis/win64/tools/vcxx/data/include/etc/hls_frexp_apfixed.h \
-  c:/xilinx/2025.1/vitis/win64/tools/vcxx/data/include/etc/hls_modf_apfixed.h \
-  c:/xilinx/2025.1/vitis/win64/tools/vcxx/data/include/etc/hls_isequal_isnotequal_apfixed.h \
-  c:/xilinx/2025.1/vitis/win64/tools/vcxx/data/include/etc/hls_all_any_apfixed.h \
-  c:/xilinx/2025.1/vitis/win64/tools/vcxx/data/include/etc/hls_select_bitselect_apfixed.h \
-  c:/xilinx/2025.1/vitis/win64/tools/vcxx/data/include/etc/hls_erf_apfixed.h \
-  c:/xilinx/2025.1/vitis/win64/tools/vcxx/data/include/etc/hls_fmod_rem_quo_remainder_divide_apfixed.h \
-  c:/xilinx/2025.1/vitis/win64/tools/vcxx/data/include/etc/hls_lgamma_apfixed.h \
-  c:/xilinx/2025.1/vitis/win64/tools/vcxx/data/include/utils/x_hls_traits.h \
-  c:/xilinx/2025.1/vitis/win64/tools/vcxx/data/include/hls_x_complex.h \
-  c:/xilinx/2025.1/vitis/win64/tools/vcxx/data/include/etc/hls_tgamma_apfixed.h \
-  c:/xilinx/2025.1/vitis/win64/tools/vcxx/data/include/etc/hls_fract_apfixed.h \
-  c:/xilinx/2025.1/vitis/win64/tools/vcxx/data/include/etc/hls_mad_apfixed.h \
-  c:/xilinx/2025.1/vitis/win64/tools/vcxx/data/include/etc/hls_cbrt_apfixed.h \
-  c:/xilinx/2025.1/vitis/win64/tools/vcxx/data/include/etc/hls_hypot_apfixed.h \
-  c:/xilinx/2025.1/vitis/win64/tools/vcxx/data/include/etc/hls_ldexp_apfixed.h
+  C:/Xilinx/2025.1/Vitis/tps/mingw/10.0.0/win64.o/nt/include/c++/9.5.0/x86_64-w64-mingw32/bits/cxxabi_tweaks.h

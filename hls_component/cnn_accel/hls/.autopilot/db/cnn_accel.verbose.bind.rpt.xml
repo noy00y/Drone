@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'cnn_accel'" level="0">
-<item name = "Date">Wed Jul  9 22:27:38 2025
+<item name = "Date">Thu Jul 17 06:00:26 2025
 </item>
 <item name = "Version">2025.1 (Build 6135595 on May 21 2025)</item>
 <item name = "Project">cnn_accel</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00 ns, 7.300 ns, 2.70 ns</column>
+<column name="ap_clk">10.00 ns, 7.090 ns, 2.70 ns</column>
 </table>
 </item>
 </section>
@@ -24,14 +24,14 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">2, 7337000, 20.000 ns, 73.370 ms, 3, 7337001, dataflow</column>
+<column name="">200720, 200720, 2.007 ms, 2.007 ms, 200721, 200721, no</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_Block_entry_proc_fu_158">Block_entry_proc, 2, 7337000, 20.000 ns, 73.370 ms, 2, 7337000, no</column>
+<column name="grp_cnn_accel_Pipeline_RowLoop_ColLoop_fu_2340">cnn_accel_Pipeline_RowLoop_ColLoop, 200709, 200709, 2.007 ms, 2.007 ms, 200704, 200704, loop auto-rewind stp (delay=0 clock cycles(s))</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">

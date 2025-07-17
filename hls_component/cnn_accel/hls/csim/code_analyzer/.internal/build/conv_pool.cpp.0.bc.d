@@ -215,39 +215,4 @@ C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\cnn_accel\hls\csim\code_
   C:/Xilinx/2025.1/Vitis/tps/mingw/10.0.0/win64.o/nt/include/c++/9.5.0/atomic \
   C:/Xilinx/2025.1/Vitis/tps/mingw/10.0.0/win64.o/nt/include/c++/9.5.0/condition_variable \
   C:/Xilinx/2025.1/Vitis/tps/mingw/10.0.0/win64.o/nt/include/c++/9.5.0/cxxabi.h \
-  C:/Xilinx/2025.1/Vitis/tps/mingw/10.0.0/win64.o/nt/include/c++/9.5.0/x86_64-w64-mingw32/bits/cxxabi_tweaks.h \
-  c:/xilinx/2025.1/vitis/win64/tools/vcxx/data/autopilot/hls_math.h \
-  c:/xilinx/2025.1/vitis/win64/tools/vcxx/data/autopilot/hls_fpo.h \
-  c:/xilinx/2025.1/vitis/win64/tools/vcxx/data/autopilot/../include/floating_point_v7_1_bitacc_cmodel.h \
-  c:/xilinx/2025.1/vitis/win64/tools/vcxx/lib/clang/14.0.6/include/stdbool.h \
-  c:/xilinx/2025.1/vitis/win64/tools/vcxx/data/autopilot/../include/gmp.h \
-  C:/Xilinx/2025.1/Vitis/tps/mingw/10.0.0/win64.o/nt/include/c++/9.5.0/cstddef \
-  c:/xilinx/2025.1/vitis/win64/tools/vcxx/data/autopilot/../include/mpfr.h \
-  c:/xilinx/2025.1/vitis/win64/tools/vcxx/data/autopilot/etc/hls_hotbm_apfixed.h \
-  c:/xilinx/2025.1/vitis/win64/tools/vcxx/data/autopilot/utils/x_hls_defines.h \
-  c:/xilinx/2025.1/vitis/win64/tools/vcxx/data/autopilot/utils/hls_version.h \
-  c:/xilinx/2025.1/vitis/win64/tools/vcxx/data/autopilot/utils/x_hls_utils.h \
-  c:/xilinx/2025.1/vitis/win64/tools/vcxx/data/autopilot/etc/hls_cordic_apfixed.h \
-  c:/xilinx/2025.1/vitis/win64/tools/vcxx/data/autopilot/etc/hls_exp_apfixed.h \
-  c:/xilinx/2025.1/vitis/win64/tools/vcxx/data/autopilot/etc/hls_log_apfixed.h \
-  c:/xilinx/2025.1/vitis/win64/tools/vcxx/data/autopilot/etc/hls_sqrt_apfixed.h \
-  c:/xilinx/2025.1/vitis/win64/tools/vcxx/data/autopilot/etc/hls_round_copysign_apfixed.h \
-  c:/xilinx/2025.1/vitis/win64/tools/vcxx/data/autopilot/etc/hls_pow_apfixed.h \
-  c:/xilinx/2025.1/vitis/win64/tools/vcxx/data/autopilot/etc/hls_diff_apfixed.h \
-  c:/xilinx/2025.1/vitis/win64/tools/vcxx/data/autopilot/etc/hls_comparison_apfixed.h \
-  c:/xilinx/2025.1/vitis/win64/tools/vcxx/data/autopilot/etc/hls_frexp_apfixed.h \
-  c:/xilinx/2025.1/vitis/win64/tools/vcxx/data/autopilot/etc/hls_modf_apfixed.h \
-  c:/xilinx/2025.1/vitis/win64/tools/vcxx/data/autopilot/etc/hls_isequal_isnotequal_apfixed.h \
-  c:/xilinx/2025.1/vitis/win64/tools/vcxx/data/autopilot/etc/hls_all_any_apfixed.h \
-  c:/xilinx/2025.1/vitis/win64/tools/vcxx/data/autopilot/etc/hls_select_bitselect_apfixed.h \
-  c:/xilinx/2025.1/vitis/win64/tools/vcxx/data/autopilot/etc/hls_erf_apfixed.h \
-  c:/xilinx/2025.1/vitis/win64/tools/vcxx/data/autopilot/etc/hls_fmod_rem_quo_remainder_divide_apfixed.h \
-  c:/xilinx/2025.1/vitis/win64/tools/vcxx/data/autopilot/etc/hls_lgamma_apfixed.h \
-  c:/xilinx/2025.1/vitis/win64/tools/vcxx/data/autopilot/utils/x_hls_traits.h \
-  c:/xilinx/2025.1/vitis/win64/tools/vcxx/data/autopilot/hls_x_complex.h \
-  c:/xilinx/2025.1/vitis/win64/tools/vcxx/data/autopilot/etc/hls_tgamma_apfixed.h \
-  c:/xilinx/2025.1/vitis/win64/tools/vcxx/data/autopilot/etc/hls_fract_apfixed.h \
-  c:/xilinx/2025.1/vitis/win64/tools/vcxx/data/autopilot/etc/hls_mad_apfixed.h \
-  c:/xilinx/2025.1/vitis/win64/tools/vcxx/data/autopilot/etc/hls_cbrt_apfixed.h \
-  c:/xilinx/2025.1/vitis/win64/tools/vcxx/data/autopilot/etc/hls_hypot_apfixed.h \
-  c:/xilinx/2025.1/vitis/win64/tools/vcxx/data/autopilot/etc/hls_ldexp_apfixed.h
+  C:/Xilinx/2025.1/Vitis/tps/mingw/10.0.0/win64.o/nt/include/c++/9.5.0/x86_64-w64-mingw32/bits/cxxabi_tweaks.h

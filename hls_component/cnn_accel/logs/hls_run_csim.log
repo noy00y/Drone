@@ -5,7 +5,7 @@ INFO: [HLS 200-10] Creating and opening component 'C:/Users/ozair/Documents/Code
 INFO: [HLS 200-1505] Using default flow_target 'vivado'
 Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
 INFO: [HLS 200-2174] Applying component config ini file C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/hls_config.cfg
-INFO: [HLS 200-1465] Applying config ini 'syn.file=../hls_files/conv_pool.cpp' from C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/hls_config.cfg(18)
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../hls_files/conv_pool.cpp' from C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/hls_config.cfg(12)
 INFO: [HLS 200-10] Adding design file 'C:/Users/ozair/Documents/Code_Drive/Drone/hls_files/conv_pool.cpp' to the project
 INFO: [HLS 200-1465] Applying config ini 'tb.file=../hls_files/testbench.cpp' from C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/hls_config.cfg(8)
 INFO: [HLS 200-10] Adding test bench file 'C:/Users/ozair/Documents/Code_Drive/Drone/hls_files/testbench.cpp' to the project
@@ -19,48 +19,38 @@ INFO: [HLS 200-1465] Applying config ini 'clock=10ns' from C:/Users/ozair/Docume
 INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
 INFO: [HLS 200-1465] Applying config ini 'csim.code_analyzer=1' from C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/hls_config.cfg(10)
 INFO: [HLS 200-1465] Applying config ini 'package.output.format=ip_catalog' from C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/hls_config.cfg(5)
-INFO: [HLS 200-1465] Applying config ini 'syn.array_partition.complete_threshold=0' from C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/hls_config.cfg(12)
-INFO: [XFORM 203-102] Size-based automatic array partition disabled.
-INFO: [HLS 200-1465] Applying config ini 'syn.array_partition.throughput_driven=off' from C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/hls_config.cfg(13)
-INFO: [XFORM 203-102] Size-based automatic array partition disabled.
-INFO: [HLS 200-1465] Applying config ini 'syn.compile.performance_budgeter=disable' from C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/hls_config.cfg(14)
-INFO: [HLS 200-1465] Applying config ini 'syn.compile.pipeline_flush_in_task=ii1' from C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/hls_config.cfg(11)
-INFO: [HLS 200-1465] Applying config ini 'syn.compile.pipeline_style=stp' from C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/hls_config.cfg(15)
-INFO: [HLS 200-1465] Applying config ini 'syn.dataflow.disable_fifo_sizing_opt=1' from C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/hls_config.cfg(16)
-INFO: [HLS 200-1465] Applying config ini 'syn.dataflow.enable_canonicalization=0' from C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/hls_config.cfg(17)
+INFO: [HLS 200-1465] Applying config ini 'syn.dataflow.enable_canonicalization=1' from C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/hls_config.cfg(11)
 INFO: [HLS 200-2176] Writing Vitis IDE component file C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/cnn_accel/vitis-comp.json
 INFO: [SIM 211-200] Executing Code Analyzer instead of classic HLS C simulation
-INFO: [HLS 211-200] Compiling source code ../hls_files/conv_pool.cpp as hardware code with instrumentation
-INFO: [HLS 211-200] Compiling source code ../hls_files/conv_pool.cpp as test bench code with instrumentation
+INFO: [HLS 211-200] Compiling source code C:/Users/ozair/Documents/Code_Drive/Drone/hls_files/testbench.cpp as test bench code with instrumentation
 INFO: [HLS 211-200] Linking hardware code
 INFO: [HLS 211-200] Transforming hardware bitcode
 INFO: [HLS 211-200] Linking executable
+ld.lld: warning: ../hls_files/conv_pool.cpp:52:5: loop not unrolled: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering
+ld.lld: warning: ../hls_files/conv_pool.cpp:57:9: loop not unrolled: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering
 INFO: [HLS 211-200] Computing HLS IR Information
 INFO: [HLS 211-200] Determining source code dependencies
 INFO: [SIM 211-200] Running executable
-Detection flag = 0
+  fmap_out0 count: 394272
+out0[0] = 0
+out0[1] = 0
+out0[2] = 0
+out0[3] = 0
+out0[4] = 0
+out0[5] = 0
+out0[6] = 0
+out0[7] = 0
+out0[8] = 0
+out0[9] = 0
 INFO: [SIM 211-200] Analyzing trace data
 INFO: [SIM 211-208] Running Code Analyzer
-WARNING: [HLS 211-200] Code Analyzer will not display the impact of 'unroll' (c:\xilinx\2025.1\win64\tools\vcxx\data\autopilot\etc\hls_exp_apfixed.h:156:17) as the loop has been optimized out
-WARNING: [HLS 211-200] Code Analyzer will not display the impact of 'unroll' (c:\xilinx\2025.1\win64\tools\vcxx\data\autopilot\etc\hls_exp_apfixed.h:152:17) as the loop has been optimized out
-WARNING: [HLS 211-200] Code Analyzer will not display the impact of 'unroll' (c:\xilinx\2025.1\win64\tools\vcxx\data\autopilot\etc\hls_exp_apfixed.h:146:13) as the loop has been optimized out
-WARNING: [HLS 211-200] Code Analyzer will not display the impact of 'unroll' (c:\xilinx\2025.1\win64\tools\vcxx\data\autopilot\etc\hls_exp_apfixed.h:254:17) as the loop has been optimized out
-WARNING: [HLS 211-200] Code Analyzer will not display the impact of 'unroll' (c:\xilinx\2025.1\win64\tools\vcxx\data\autopilot\etc\hls_exp_apfixed.h:250:17) as the loop has been optimized out
-WARNING: [HLS 211-200] Code Analyzer will not display the impact of 'unroll' (c:\xilinx\2025.1\win64\tools\vcxx\data\autopilot\etc\hls_exp_apfixed.h:244:13) as the loop has been optimized out
-WARNING: [HLS 211-200] Code Analyzer will not display the impact of 'unroll' (c:\xilinx\2025.1\win64\tools\vcxx\data\autopilot\etc\hls_exp_apfixed.h:179:17) as the loop has been optimized out
-WARNING: [HLS 211-200] Code Analyzer will not display the impact of 'unroll' (c:\xilinx\2025.1\win64\tools\vcxx\data\autopilot\etc\hls_exp_apfixed.h:171:9) as the loop has been optimized out
-WARNING: [HLS 211-200] Code Analyzer will not display the impact of 'unroll' (c:\xilinx\2025.1\win64\tools\vcxx\data\autopilot\etc\hls_exp_apfixed.h:919:17) as the loop has been optimized out
-WARNING: [HLS 211-200] Code Analyzer will not display the impact of 'unroll' (c:\xilinx\2025.1\win64\tools\vcxx\data\autopilot\etc\hls_exp_apfixed.h:915:17) as the loop has been optimized out
-WARNING: [HLS 211-200] Code Analyzer will not display the impact of 'unroll' (c:\xilinx\2025.1\win64\tools\vcxx\data\autopilot\etc\hls_exp_apfixed.h:909:13) as the loop has been optimized out
-WARNING: [HLS 211-200] Code Analyzer will not display the impact of 'unroll' (c:\xilinx\2025.1\win64\tools\vcxx\data\autopilot\etc\hls_exp_apfixed.h:548:17) as the loop has been optimized out
-WARNING: [HLS 211-200] Code Analyzer will not display the impact of 'unroll' (c:\xilinx\2025.1\win64\tools\vcxx\data\autopilot\etc\hls_exp_apfixed.h:540:9) as the loop has been optimized out
-WARNING: [HLS 211-200] Code Analyzer will not display the impact of 'unroll' (c:\xilinx\2025.1\win64\tools\vcxx\data\autopilot\etc\hls_exp_apfixed.h:530:9) as the loop has been optimized out
-WARNING: [HLS 211-200] Code Analyzer will not display the impact of 'unroll' (c:\xilinx\2025.1\win64\tools\vcxx\data\autopilot\etc\hls_exp_apfixed.h:526:9) as the loop has been optimized out
-WARNING: [HLS 211-200] Code Analyzer will not display the impact of 'pipeline' (c:\xilinx\2025.1\win64\tools\vcxx\data\autopilot\etc\hls_exp_apfixed.h:15:1) as the pipelined function is not the top-level hardware function
-WARNING: [HLS 211-200] Invalid pragma detected: Code Analyzer will not display the impact of 'pipeline' (C:\Users\ozair\Documents\Code_Drive\Drone\hls_files\conv_pool.cpp:224:3) as loop pipeline pragma is only valid if:
+Variable 'win' C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp:150:0 VariableId 1802 is not part of the design space!--
+
+WARNING: [SIM 211-206] Code Analyzer does not display the impact of the partition pragma for dataflow channels (C:\Users\ozair\Documents\Code_Drive\Drone\hls_files\conv_pool.cpp:48:1)
+WARNING: [HLS 211-200] Invalid pragma detected: Code Analyzer will not display the impact of 'pipeline' (C:\Users\ozair\Documents\Code_Drive\Drone\hls_files\conv_pool.cpp:108:5) as loop pipeline pragma is only valid if:
 - All the subloops of the loop to be pipelined can be fully unrolled
 - All the subloops are perfectly nested in the loop to be pipelined.
-WARNING: [SIM 211-200] C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp:226:5: the dynamic loop had a trip count of min=72384 max=72384 during C simulation. (#pragma HLS loop_tripcount min=72384 max=72384)
+WARNING: [HLS 211-200] Code Analyzer will not display the impact of 'array_partition' (C:\Users\ozair\Documents\Code_Drive\Drone\hls_files\conv_pool.cpp:151:5) as it applies to incomplete arrays or arrays declared as members of a struct or class (variable win)
 INFO: [SIM 211-210] Code Analyzer finished
-INFO: [HLS 200-112] Total CPU user time: 2 seconds. Total CPU system time: 2 seconds. Total elapsed time: 530.992 seconds; peak allocated memory: 145.797 MB.
-INFO: [vitis-run 60-791] Total elapsed time: 0h 8m 55s
+INFO: [HLS 200-112] Total CPU user time: 2 seconds. Total CPU system time: 1 seconds. Total elapsed time: 49.67 seconds; peak allocated memory: 145.211 MB.
+INFO: [vitis-run 60-791] Total elapsed time: 0h 0m 54s

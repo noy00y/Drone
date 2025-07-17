@@ -138,18 +138,39 @@ ok now moving on into the mac operations
 
 MAC Operation High Level Clock Cycle
 
-| Clock | FSM State | Window In | Stage 1 Work | Stage 2 | Stage 3 | Stage 4 (Output) |
+| Clock | FSM State | Window In | Stage 1 | Stage 2 | Stage 3 | Stage 4 |
 | --- | --- | --- | --- | --- | --- | --- |
-| N | 0 | Win(r,c) | Engines 0–3 use W0–W3 → mult | — | — | — |
-| N+1 | 0 | Win(r,c+1) | Engines 0–3 → accumulate | Engines 0–3 mult | — | — |
-| N+2 | 0 | Win(r,c+2) | Engines 0–3 → add_bias | Engines 0–3 acc | Engines 0–3 mult | — |
-| N+3 | 0 | Win(r,c+3) | Engines 0–3 → reg_output0–3 | Engines 0–3 add | Engines 0–3 acc | Engines 0–3 mult |
-| N+4 | **1** | Win(r,c) | Engines 0–3 use W4–W7 → mult | Engines 0–3 add | Engines 0–3 acc | Engines 0–3 add_bias |
-| N+5 | 1 | Win(r,c+1) | Engines 0–3 → accumulate | Engines 0–3 mult | Engines 0–3 add | Engines 0–3 acc |
-| N+6 | 1 | Win(r,c+2) | Engines 0–3 → add_bias | Engines 0–3 acc | Engines 0–3 mult | Engines 0–3 add_bias |
-| N+7 | 1 | Win(r,c+3) | Engines 0–3 → reg_output4–7 | Engines 0–3 add | Engines 0–3 acc | Engines 0–3 mult |
+| 1 | Mult w₀–₃ | W₀ | MULT w₀–₃ on W₀ | — | — | — |
+| 2 | Mult w₄–₇ | W₀ | MULT w₄–₇ on W₀ | ACC (w₀–₃) for W₀ | — | — |
+| 3 | Mult w₀–₃ | W₁ | MULT w₀–₃ on W₁ | ACC (w₄–₇) for W₀ | BIAS w₀–₃ on W₀ | — |
+| 4 | Mult w₄–₇ | W₁ | MULT w₄–₇ on W₁ | ACC (w₀–₃) for W₁ | BIAS w₄–₇ on W₀ | REG   out₀–₃ for W₀ |
+| 5 | Mult w₀–₃ | W₂ | MULT w₀–₃ on W₂ | ACC (w₄–₇) for W₁ | BIAS w₀–₃ on W₁ | REG   out₄–₇ for W₀ |
+| 6 | Mult w₄–₇ | W₂ | MULT w₄–₇ on W₂ | ACC (w₀–₃) for W₂ | BIAS w₄–₇ on W₁ | REG   out₀–₃ for W₁ |
+| 7 | Mult w₀–₃ | W₃ | MULT w₀–₃ on W₃ | ACC (w₄–₇) for W₂ | BIAS w₀–₃ on W₂ | REG   out₄–₇ for W₁ |
+| 8 | Mult w₄–₇ | W₃ | MULT w₄–₇ on W₃ | ACC (w₀–₃) for W₃ | BIAS w₄–₇ on W₂ | REG   out₀–₃ for W₂ |
 
-90% sure this thing is wrong btw but ok moving on:
+Here’s how the three channels get summed and how the pipeline will look, cycle-by-cycle, for one stream of windows W0,W1,W2,…W_0, W_1, W_2,\dots processed through your 4-stage MAC pipeline with time-multiplexing of the 8 output filters in two groups of 4:
 
-Questions while coding:
-- do we take r, g, b as 3 seperate streams or are these color values pulled from 1 single img stream if thus is possible?
+1. **Summing across R, G, B**
+    - **Stage 1 (MULT):** 27 DSPs → 9 multiplies on R, 9 on G, 9 on B for one 3×3 window.
+    - **Stage 2 (Acc):** A single adder-tree that takes all 27 partial products and reduces them to one dot-product sum:
+        
+        ∑c∈{R,G,B}  ∑i=02∑j=02(pixc(r+i,c+j)×wout(c,i,j))  \sum_{c\in\{R,G,B\}}\;\sum_{i=0}^{2}\sum_{j=0}^{2}
+          \bigl(\text{pix}_{c}(r+i,c+j)\times w_{\text{out}}(c,i,j)\bigr)
+        
+    - **Stage 3 (Bias):** Add the per-filter bias.
+    - **Stage 4 (Reg):** Register the result so it’s ready for ReLU (or write-back).
+2. **Time-Multiplexing 8 Filters on 4 Engines**
+    
+    You have 4 identical “conv engines” (one per output channel), each doing a full 3-channel 3×3 MAC in 4 stages.
+    
+    - **Cycle 1:** Engines load weights for output 0–3 and do Stage 1 on window W₀.
+    - **Cycle 2:** Engines switch to weights for output 4–7, do Stage 1 on W₀; meanwhile Stage 2 fires for output 0–3 on W₀.
+    - And so on…
+
+- **Notation**
+    - **w₀–₃** = filter 0–3 weights on all three channels
+    - **out₀–₃ for W₀** = outputs for filters 0–3, window W₀, registered and ready for ReLU.
+- **Throughput**
+    - After cycle 4, you already have your first 4 outputs (0–3 for W₀).
+    - After cycle 5, you get outputs 4–7 for W₀, and so on — one new registered result per cycle per group.

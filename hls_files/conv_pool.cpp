@@ -1,324 +1,232 @@
-#include "ap_int.h"
-#include "hls_stream.h"
-#include "ap_fixed.h"
-#include "hls_math.h"
+/********************************************************************
+ * conv1.hpp  –  3-channel 3×3 convolution, 8 output channels
+ *              First engine for your CNN.  Vitis HLS template.
+ *******************************************************************/
+#include <ap_int.h>
+#include <ap_fixed.h>
+#include <hls_stream.h>
 
-// -----------------------------------------------------------------------------
-// Network parameters
-// -----------------------------------------------------------------------------
-#define H    240
-#define W    320
-#define C0     3
-#define K      3
-#define M1     8
-#define M2    16
-#define H1  (H-K+1)
-#define W1  (W-K+1)
-#define H2  (H1/2)
-#define W2  (W1/2)
-#define H3  (H2-K+1)
-#define W3  (W2-K+1)
-#define H4  (H3/2)
-#define W4  (W3/2)
-#define N2    32
+//------------------------------------------------------------
+// Compile-time knobs (adapt to your design)
+//------------------------------------------------------------
+#define IMG_W        224        // full input width
+#define IMG_H        224        // full input height
+#define OUT_CH       8          // output feature maps
+#define K            3          // kernel size
+#define C_IN         3          // input channels
+#define ENG_PAR      4          // conv engines running in parallel
+#define PIX_PER_CLK  1          // pixel input per clock (keep =1 here)
 
-typedef ap_fixed<16, 4> data_t;
-typedef unsigned char flag_t;
+//------------------------------------------------------------
+// Fixed-point & stream typedefs
+//------------------------------------------------------------
+typedef ap_uint<48>      pixel48_t;                 // packed RGB
+typedef ap_fixed<16,4>   pix_t;                     // R,G,B   & weights
+typedef ap_fixed<16,4>   data_t;                    // var place holder
+typedef ap_fixed<32,6>   acc_t;                     // accumulator
+typedef hls::stream<pixel48_t>  pix_in_stream_t;
+typedef hls::stream<pix_t>      fmap_out_stream_t;
 
-// -----------------------------------------------------------------------------
-// Stage 0: Stream input frame into an HLS stream (pixel by pixel)
-// -----------------------------------------------------------------------------
-void stream_img(
-    const data_t *img_in,
-    hls::stream<data_t> &img_strm)
+//------------------------------------------------------------
+// 3×3×3 window container
+//------------------------------------------------------------
+struct window3d_t {
+    pix_t dat[C_IN][K][K];
+};
+
+//------------------------------------------------------------
+// Four-filter conv engine  (MULT → ACC → BIAS → RELU)
+//------------------------------------------------------------
+static void conv4_engine(
+        const window3d_t               &win,
+        const pix_t                    w[ENG_PAR][C_IN][K][K],
+        const pix_t                    b[ENG_PAR],
+        pix_t                          out[ENG_PAR])
 {
-  for (int idx = 0; idx < H*W*C0; idx++) {
-  #pragma HLS PIPELINE II=1
-    img_strm.write(img_in[idx]);
-  }
-}
+    #pragma HLS INLINE
+    acc_t partial[ENG_PAR] = {0};
+    #pragma HLS ARRAY_PARTITION variable=partial complete dim=0
+    #pragma HLS ARRAY_PARTITION variable=w complete dim=0
+    #pragma HLS ARRAY_PARTITION variable=partial complete dim=0
+    #pragma HLS allocation operation instances=mul limit=108
 
-// -----------------------------------------------------------------------------
-// Stage 1: Conv1 + ReLU (3×3 kernel, M1 outputs), using a 2-line sliding buffer
-// -----------------------------------------------------------------------------
-void conv1_stream(
-    hls::stream<data_t> &img_strm,
-    const data_t *w1, const data_t *b1,
-    hls::stream<data_t> &feat1_strm)
-{
-  // line buffer for K-1 rows × W cols × C0 channels
-  static data_t linebuf[K-1][W][C0];
-  data_t window[K][K][C0];
-
-  ROW_LOOP: for (int i = 0; i < H; i++) {
-    COL_LOOP: for (int j = 0; j < W; j++) {
-      PIX_CH: for (int c = 0; c < C0; c++) {
-      #pragma HLS PIPELINE II=4
-        // shift older lines up
-        for (int m = 0; m < K-2; m++) {
-          linebuf[m][j][c] = linebuf[m+1][j][c];
+// MULT + ACC tree (fully unrolled inside each engine)
+    Engine_Loop:
+    for (int f=0; f<ENG_PAR; ++f) {
+    #pragma HLS UNROLL
+        acc_t sum = 0;
+        for (int c=0; c<C_IN; ++c)
+        for (int i=0; i<K;    ++i)
+        for (int j=0; j<K;    ++j) {
+#pragma HLS UNROLL
+            data_t prod = win.dat[c][i][j] * w[f][c][i][j];
+            #pragma HLS BIND_OP variable=prod op=mul impl=dsp latency=-1 // binding MAC ops to DSP
+            sum += prod;
         }
-        // read new pixel
-        data_t px = img_strm.read();
-        linebuf[K-2][j][c] = px;
-
-        // construct 3×3 window
-        for (int m = 0; m < K; m++) {
-          for (int n = 0; n < K; n++) {
-            if (i + m < K-1 || j + n < K-1) {
-              window[m][n][c] = 0.0f;
-            } else {
-              window[m][n][c] = ((data_t)m < K-1)
-                ? linebuf[m][j + n - (K-1)]
-                : px;
-            }
-          }
-        }
-      }
-
-      // once full window is available, emit M1 outputs
-      if (i >= K-1 && j >= K-1) {
-        for (int m = 0; m < M1; m++) {
-        #pragma HLS PIPELINE II=4
-          data_t acc = b1[m];
-          for (int p = 0; p < K; p++)
-          for (int q = 0; q < K; q++)
-          for (int c = 0; c < C0; c++) {
-            data_t prod = window[p][q][c] * w1[((m*C0 + c) * K + p)*K + q];
-            #pragma HLS RESOURCE variable=prod core=MUL_DSP
-
-            // int widx = ((m*C0 + c)*K + p)*K + q;
-            acc += prod;
-          }
-          // ReLU
-          feat1_strm.write(acc > (data_t)0.0 ? acc : (data_t)0.0);
-        }
-      }
+        partial[f] = sum;
     }
-  }
-}
 
-// -----------------------------------------------------------------------------
-// Stage 2: 2×2 Max-Pooling on stream of feat1
-// -----------------------------------------------------------------------------
-void pool1_stream(
-    hls::stream<data_t> &feat1_strm,
-    hls::stream<data_t> &feat1_p_strm)
-{
-  // simple 2×2 buffer toggling per row/col
-  static data_t buf[2][2][M1];
-  for (int r = 0; r < H1; r++) {
-    for (int c = 0; c < W1; c++) {
-      for (int m = 0; m < M1; m++) {
-      #pragma HLS PIPELINE II=4
-        data_t v = feat1_strm.read();
-        buf[r%2][c%2][m] = v;
-        if ((r%2==1) && (c%2==1)) {
-          data_t m0 = buf[0][0][m], m1 = buf[0][1][m];
-          data_t m2 = buf[1][0][m], m3 = buf[1][1][m];
-          data_t mx = (m0>m1?m0:m1), my = (m2>m3?m2:m3);
-          feat1_p_strm.write(mx>my?mx:my);
-        }
-      }
+// Bias + ReLU + Register (stage 3 & 4)
+    for (int f=0; f<ENG_PAR; ++f) {
+#pragma HLS UNROLL
+        acc_t tmp  = partial[f] + b[f];
+        out[f]     = (tmp < (pix_t)0) ? (pix_t)0 : (pix_t)tmp;  // ReLU
     }
-  }
 }
 
-// -----------------------------------------------------------------------------
-// Stage 3: Conv2 + ReLU (3×3 kernel, M2 outputs) on stream of feat1_p
-// -----------------------------------------------------------------------------
-void conv2_stream(
-    hls::stream<data_t> &feat1_p_strm,
-    const data_t *w2, const data_t *b2,
-    hls::stream<data_t> &feat2_strm)
-{
-  static data_t linebuf[K-1][W2][M1];
-  data_t window[K][K][M1];
-
-  ROW2: for (int i = 0; i < H2; i++) {
-    COL2: for (int j = 0; j < W2; j++) {
-      CH2: for (int c = 0; c < M1; c++) {
-      #pragma HLS PIPELINE II=4
-        // shift lines
-        for (int m = 0; m < K-2; m++) {
-          linebuf[m][j][c] = linebuf[m+1][j][c];
-        }
-        data_t px = feat1_p_strm.read();
-        linebuf[K-2][j][c] = px;
-
-        // build window
-        for (int m = 0; m < K; m++)
-        for (int n = 0; n < K; n++)
-          window[m][n][c] = (i+m < K-1 || j+n < K-1)
-            ? (data_t)0.0
-            : ((m < K-1)
-               ? linebuf[m][j + n - (K-1)]
-               : px);
-      }
-
-      if (i >= K-1 && j >= K-1) {
-        for (int m = 0; m < M2; m++) {
-        #pragma HLS PIPELINE II=4
-          data_t acc = b2[m];
-          for (int p = 0; p < K; p++)
-          for (int q = 0; q < K; q++)
-          for (int c = 0; c < M1; c++) {
-            data_t prod = window[p][q][c] * w2[((m*C0 + c) * K + p)*K + q];
-            #pragma HLS RESOURCE variable=prod core=MUL_DSP
-            acc += prod;
-          }
-          feat2_strm.write(acc > (data_t)0.0 ? acc : (data_t)0.0);
-        }
-      }
-    }
-  }
-}
-
-// -----------------------------------------------------------------------------
-// Stage 4: Pool2 (2×2 max) on stream of feat2
-// -----------------------------------------------------------------------------
-void pool2_stream(
-    hls::stream<data_t> &feat2_strm,
-    hls::stream<data_t> &feat2_p_strm)
-{
-  static data_t buf[2][2][M2];
-  for (int r = 0; r < H3; r++) {
-    for (int c = 0; c < W3; c++) {
-      for (int m = 0; m < M2; m++) {
-      #pragma HLS PIPELINE II=4
-        data_t v = feat2_strm.read();
-        buf[r%2][c%2][m] = v;
-        if ((r%2==1) && (c%2==1)) {
-          data_t m0 = buf[0][0][m], m1 = buf[0][1][m];
-          data_t m2 = buf[1][0][m], m3 = buf[1][1][m];
-          data_t mx = (m0>m1?m0:m1), my = (m2>m3?m2:m3);
-          feat2_p_strm.write(mx>my?mx:my);
-        }
-      }
-    }
-  }
-}
-
-// -----------------------------------------------------------------------------
-// Stage 5: Flatten pooled features into a vector (static BRAM buffer)
-// -----------------------------------------------------------------------------
-void flatten_stream(
-    hls::stream<data_t> &feat2_p_strm,
-    data_t vec1[M2*H4*W4],
-    int &cnt)
-{
-  cnt = 0;
-  const int TOTAL = M2 * H4 * W4;
-  for (int i = 0; i < TOTAL; i++) {
-  #pragma HLS PIPELINE II=4
-    vec1[cnt++] = feat2_p_strm.read();
-  }
-}
-
-// -----------------------------------------------------------------------------
-// Stage 6: FC1 + Tanh (unchanged)
-// -----------------------------------------------------------------------------
-void fc1(
-    const data_t vec1[M2*H4*W4], int cnt,
-    const data_t *FC1_W, const data_t *FC1_B,
-    data_t vec2[N2])
-{
-  for (int o = 0; o < N2; o++) {
-  #pragma HLS PIPELINE II=4
-    data_t acc = FC1_B[o];
-    for (int i = 0; i < cnt; i++) {
-    // #pragma HLS UNROLL factor=2
-      data_t prod = vec1[i] * FC1_W[o * cnt + i];
-      #pragma HLS RESOURCE variable=prod core=MUL_DSP
-      acc += prod;
-    }
-    vec2[o] = hls::tanh(acc);
-  }
-}
-
-// -----------------------------------------------------------------------------
-// Stage 7: FC2 + Sigmoid + Threshold
-// -----------------------------------------------------------------------------
-void fc2(
-    const data_t vec2[N2],
-    const data_t *FC2_W, const data_t *FC2_B,
-    flag_t *flag_out)
-{
-  data_t acc = FC2_B[0];
-  for (int i = 0; i < N2; i++) {
-  #pragma HLS PIPELINE II=4
-    data_t prod = vec2[i] * FC2_W[i];
-    #pragma HLS RESOURCE variable=prod core=MUL_DSP
-    acc += prod;
-  }
-  data_t p = (data_t)1.0 / ((data_t)1.0 + hls::exp(-acc));
-  *flag_out = (p > (data_t)0.5) ? (data_t)1 : (data_t)0;
-}
-
-// -----------------------------------------------------------------------------
-// Top-Level Kernel
-// -----------------------------------------------------------------------------
+//------------------------------------------------------------
+// Top-level kernel  (pixel stream in → fmap stream out)
+//------------------------------------------------------------
 extern "C" {
 void cnn_accel(
-    const data_t *img_in,
-    const data_t *weights1, const data_t *bias1,
-    const data_t *weights2, const data_t *bias2,
-    const data_t *FC1_W,    const data_t *FC1_B,
-    const data_t *FC2_W,    const data_t *FC2_B,
-    flag_t *flag_out,
-    int ctrl)
+        pix_in_stream_t    &pix_in,               //  RGB pixel stream
+        fmap_out_stream_t  &fmap_out0,            // 8-channel output (0…3)
+        fmap_out_stream_t  &fmap_out1,            //                    (4…7)
+        const pix_t        weights[OUT_CH][C_IN][K][K],
+        const pix_t        bias   [OUT_CH])
 {
-#pragma HLS INTERFACE m_axi port=img_in     bundle=IMGmem   depth=H*W*C0
-#pragma HLS INTERFACE m_axi port=weights1   bundle=W1mem    depth=M1*C0*K*K
-#pragma HLS INTERFACE m_axi port=bias1      bundle=B1mem    depth=M1
-#pragma HLS INTERFACE m_axi port=weights2   bundle=W2mem    depth=M2*M1*K*K
-#pragma HLS INTERFACE m_axi port=bias2      bundle=B2mem    depth=M2
-#pragma HLS INTERFACE m_axi port=FC1_W      bundle=W3mem    depth=N2*(M2*H4*W4)
-#pragma HLS INTERFACE m_axi port=FC1_B      bundle=B3mem    depth=N2
-#pragma HLS INTERFACE m_axi port=FC2_W      bundle=W4mem    depth=N2
-#pragma HLS INTERFACE m_axi port=FC2_B      bundle=B4mem    depth=1
-#pragma HLS INTERFACE m_axi port=flag_out   bundle=Foutmem  depth=1
+#pragma HLS INTERFACE axis       port=pix_in
+#pragma HLS INTERFACE axis       port=fmap_out0
+#pragma HLS INTERFACE axis       port=fmap_out1
+#pragma HLS INTERFACE s_axilite  port=weights  bundle=CTRL
+#pragma HLS INTERFACE s_axilite  port=bias     bundle=CTRL
+#pragma HLS INTERFACE s_axilite  port=return   bundle=CTRL
+// #pragma HLS DATAFLOW
+#pragma HLS STREAM variable=fmap_out0 type=fifo depth=32
+#pragma HLS STREAM variable=fmap_out1 type=fifo depth=32
 
-#pragma HLS INTERFACE s_axilite port=ctrl   bundle=control
-#pragma HLS INTERFACE s_axilite port=return bundle=control
 
-  // ---------------------------------------------------------------------------
-  // Weight & bias BRAM buffers (small)
-  // ---------------------------------------------------------------------------
-  static data_t w1_local[M1*C0*K*K];
-  static data_t b1_local[M1];
-  static data_t w2_local[M2*M1*K*K];
-  static data_t b2_local[M2];
-  static data_t fc1_w_local[N2*(M2*H4*W4)];
-  static data_t fc1_b_local[N2];
-  static data_t fc2_w_local[N2];
-  static data_t fc2_b_local[1];
+//--------------------------------------------------------
+// Local line-buffers  (two rows per input channel)
+//--------------------------------------------------------
+    static pix_t LB0[C_IN][IMG_W];
+    static pix_t LB1[C_IN][IMG_W];
+#pragma HLS bind_storage variable=LB0 type=RAM_2P impl=BRAM latency=-1
+#pragma HLS bind_storage variable=LB1 type=RAM_2P impl=BRAM latency=-1
+#pragma HLS ARRAY_PARTITION variable=LB0 complete dim=1
+#pragma HLS ARRAY_PARTITION variable=LB1 complete dim=1
 
-  // Prefetch / load weights into BRAM on ctrl==1
-  if (ctrl == 1) {
-    // (same PL load loops as before, omitted for brevity)
-    return;
-  }
+//--------------------------------------------------------
+// Shift registers for current column (A,B,C chains)
+// Each chain = 3 rows deep
+//--------------------------------------------------------
+    pix_t A[C_IN][K];   // col-2
+    pix_t B[C_IN][K];   // col-1
+    pix_t C[C_IN][K];   // col
+#pragma HLS ARRAY_PARTITION variable=A complete dim=0
+#pragma HLS ARRAY_PARTITION variable=B complete dim=0
+#pragma HLS ARRAY_PARTITION variable=C complete dim=0
 
-  // Streams for dataflow
-  hls::stream<data_t> img_strm("img_strm");
-  hls::stream<data_t> feat1_strm("feat1_strm");
-  hls::stream<data_t> feat1_p_strm("feat1_p_strm");
-  hls::stream<data_t> feat2_strm("feat2_strm");
-  hls::stream<data_t> feat2_p_strm("feat2_p_strm");
+//--------------------------------------------------------
+// Main raster-scan loops  (II = 1)
+//--------------------------------------------------------
+    RowLoop:
+    for (int r=0; r<IMG_H; ++r) {
+        ColLoop:
+        for (int c=0; c<IMG_W; ++c) {
+#pragma HLS PIPELINE II=1
 
-  // Static vector for FC1 input
-  static data_t vec1_local[M2*H4*W4];
-  int cnt;
+// ---------------------------------------------------
+// 1.  Unpack incoming RGB pixel ---------------------
+// ---------------------------------------------------
+            pixel48_t p_in = pix_in.read();
+            pix_t pix_r    = (pix_t)p_in.range(15,  0);
+            pix_t pix_g    = (pix_t)p_in.range(31, 16);
+            pix_t pix_b    = (pix_t)p_in.range(47, 32);
 
-#pragma HLS DATAFLOW
-  stream_img       (img_in,        img_strm);
-  conv1_stream     (img_strm,      w1_local,  b1_local,  feat1_strm);
-  pool1_stream     (feat1_strm,    feat1_p_strm);
-  conv2_stream     (feat1_p_strm,  w2_local,  b2_local,  feat2_strm);
-  pool2_stream     (feat2_strm,    feat2_p_strm);
-  flatten_stream   (feat2_p_strm,  vec1_local, cnt);
-  fc1              (vec1_local,    cnt,       fc1_w_local, fc1_b_local, vec1_local); // reuse vec1_local as vec2
-  fc2              (vec1_local,    fc2_w_local, fc2_b_local, flag_out);
+            //------------------------------------------------
+            // 2. Update line-buffers  (write new row, read old)
+            //------------------------------------------------
+            pix_t lb_out[C_IN];
+#pragma HLS ARRAY_PARTITION complete variable=lb_out
+            for (int ch=0; ch<C_IN; ++ch) {
+#pragma HLS UNROLL
+                // Channel selector
+                pix_t new_pix =
+                        (ch==0) ? pix_r :
+                        (ch==1) ? pix_g :
+                                  pix_b;
+
+                // read current entry (LB0 -> lb_out)
+                pix_t tmp0    = LB0[ch][c];
+                pix_t tmp1    = LB1[ch][c];
+
+                LB1[ch][c] = tmp0;   // shift down
+                LB0[ch][c] = new_pix;
+
+                lb_out[ch]  = tmp1;  // P(r-2,c)
+            }
+
+            //------------------------------------------------
+            // 3. Shift-register chains  (A ← B ← C ← new col)
+            //------------------------------------------------
+            for (int ch=0; ch<C_IN; ++ch) {
+#pragma HLS UNROLL
+                // move chains left
+                for (int k=K-1; k>0; --k) {
+#pragma HLS UNROLL
+                    A[ch][k] = A[ch][k-1];
+                    B[ch][k] = B[ch][k-1];
+                    C[ch][k] = C[ch][k-1];
+                }
+                // insert new head
+                A[ch][0] = B[ch][0];
+                B[ch][0] = C[ch][0];
+                C[ch][0] = pix_t();  // filled below
+
+                // fill current column chain from new pixel + LB
+                C[ch][0] = (ch==0) ? pix_r :
+                           (ch==1) ? pix_g :
+                                     pix_b;
+                C[ch][1] = LB0[ch][c]; // P(r-1,c)
+                C[ch][2] = LB1[ch][c]; // P(r-2,c)
+            }
+
+            //------------------------------------------------
+            // 4. Once r≥2 & c≥2 we have a valid 3×3 window
+            //------------------------------------------------
+            if (r >= 2 && c >= 2) {
+                // Build window object
+                window3d_t win;
+#pragma HLS ARRAY_PARTITION variable=win.dat complete dim=0
+                for (int ch=0; ch<C_IN; ++ch)
+                for (int i=0;  i<K;   ++i) {
+#pragma HLS UNROLL
+                    win.dat[ch][2][i] = A[ch][i];
+                    win.dat[ch][1][i] = B[ch][i];
+                    win.dat[ch][0][i] = C[ch][i];
+                }
+
+                //------------------------------------------------
+                // 5.  Time-multiplex weights: group 0 vs group 1
+                //------------------------------------------------
+                static bool toggle = false;
+                toggle ^= 1;
+
+                pix_t out_grp[ENG_PAR];
+#pragma HLS ARRAY_PARTITION complete variable=out_grp
+
+                if (!toggle) {
+                    conv4_engine(win,
+                                 (const pix_t (*)[C_IN][K][K])&(weights[0]),
+                                 &(bias[0]),
+                                 out_grp);
+                    for (int f=0; f<ENG_PAR; ++f) {
+#pragma HLS UNROLL
+                        fmap_out0.write(out_grp[f]);   // channels 0-3
+                    }
+                } else {
+                    conv4_engine(win,
+                                 (const pix_t (*)[C_IN][K][K])&(weights[ENG_PAR]),
+                                 &(bias[ENG_PAR]),
+                                 out_grp);
+                    for (int f=0; f<ENG_PAR; ++f) {
+#pragma HLS UNROLL
+                        fmap_out1.write(out_grp[f]);   // channels 4-7
+                    }
+                }
+            } // valid window
+        } // col
+    } // row
 }
-} // extern "C"
+}

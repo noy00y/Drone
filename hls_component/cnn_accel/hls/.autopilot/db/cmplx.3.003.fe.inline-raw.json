@@ -1,203 +1,23 @@
 {
   "0": {
-    "basicblocks": 3,
-    "calls": "10 7 2 5 1 4 8 3",
-    "control_depth": 0,
-    "def_use_depth": 1,
-    "file": "conv_pool.cpp",
-    "fileloc": 255,
-    "instructions": 64,
-    "loads": {
-      "L": 1
-    },
-    "memory_accesses": 0,
-    "name": "cnn_accel",
-    "total_instructions": 3175
-  },
-  "1": {
-    "basicblocks": 9,
-    "calls": "",
-    "control_depth": 2,
-    "def_use_depth": 8,
-    "file": "conv_pool.cpp",
-    "fileloc": 177,
-    "instructions": 85,
-    "loads": {
-      "G": 4,
-      "L": 3
-    },
-    "memory_accesses": 16,
-    "name": "pool2_stream",
-    "stores": {
-      "G": 1,
-      "L": 6
-    },
-    "total_instructions": 85
-  },
-  "10": {
-    "basicblocks": 3,
-    "calls": "",
-    "control_depth": 0,
-    "def_use_depth": 3,
-    "file": "conv_pool.cpp",
-    "fileloc": 31,
-    "instructions": 9,
-    "loads": {
-      "L": 1
-    },
-    "memory_accesses": 2,
-    "name": "stream_img",
-    "total_instructions": 9
-  },
-  "2": {
-    "basicblocks": 9,
-    "calls": "",
-    "control_depth": 2,
-    "def_use_depth": 8,
-    "file": "conv_pool.cpp",
-    "fileloc": 102,
-    "instructions": 85,
-    "loads": {
-      "G": 4,
-      "L": 3
-    },
-    "memory_accesses": 16,
-    "name": "pool1_stream",
-    "stores": {
-      "G": 1,
-      "L": 6
-    },
-    "total_instructions": 85
-  },
-  "3": {
-    "basicblocks": 5,
-    "calls": "6",
-    "control_depth": 0,
-    "def_use_depth": 6,
-    "file": "conv_pool.cpp",
-    "fileloc": 237,
-    "instructions": 50,
-    "loads": {
-      "G": 2,
-      "L": 1
-    },
-    "memory_accesses": 2,
-    "name": "fc2",
-    "stores": {
-      "L": 1
-    },
-    "total_instructions": 257
-  },
-  "4": {
-    "basicblocks": 3,
-    "calls": "",
-    "control_depth": 0,
-    "def_use_depth": 3,
-    "file": "conv_pool.cpp",
-    "fileloc": 202,
-    "instructions": 11,
-    "memory_accesses": 2,
-    "name": "flatten_stream",
-    "stores": {
-      "G": 1,
-      "L": 2
-    },
-    "total_instructions": 11
-  },
-  "5": {
-    "basicblocks": 38,
-    "calls": "",
-    "control_depth": 4,
-    "def_use_depth": 222,
-    "file": "conv_pool.cpp",
-    "fileloc": 128,
-    "instructions": 1181,
-    "loads": {
-      "G": 74,
-      "L": 81
-    },
-    "memory_accesses": 114,
-    "name": "conv2_stream",
-    "stores": {
-      "G": 2,
-      "L": 27
-    },
-    "total_instructions": 1181
-  },
-  "6": {
-    "basicblocks": 5,
-    "calls": "",
-    "control_depth": 2,
-    "def_use_depth": 46,
-    "file": "hls_exp_apfixed.h",
-    "fileloc": 13,
-    "instructions": 207,
-    "loads": {
-      "G": 6
-    },
-    "memory_accesses": 7,
-    "name": "exp<17, 5>",
-    "stores": {
-      "L": 1
-    },
-    "total_instructions": 207
-  },
-  "7": {
-    "basicblocks": 38,
-    "calls": "",
-    "control_depth": 4,
-    "def_use_depth": 87,
-    "file": "conv_pool.cpp",
-    "fileloc": 44,
-    "instructions": 503,
-    "loads": {
-      "G": 29,
-      "L": 28
-    },
-    "memory_accesses": 53,
-    "name": "conv1_stream",
-    "stores": {
-      "G": 2,
-      "L": 19
-    },
-    "total_instructions": 503
-  },
-  "8": {
     "basicblocks": 10,
-    "calls": "9",
-    "control_depth": 0,
-    "def_use_depth": 8,
-    "file": "conv_pool.cpp",
-    "fileloc": 218,
-    "instructions": 127,
-    "loads": {
-      "G": 3,
-      "L": 5
-    },
-    "memory_accesses": 2,
-    "name": "fc1",
-    "stores": {
-      "G": 1,
-      "L": 7
-    },
-    "total_instructions": 980
-  },
-  "9": {
-    "basicblocks": 58,
     "calls": "",
-    "control_depth": 0,
-    "def_use_depth": 2,
-    "file": "hls_cordic_apfixed.h",
-    "fileloc": 733,
-    "instructions": 853,
+    "control_depth": 2,
+    "def_use_depth": 35,
+    "file": "conv_pool.cpp",
+    "fileloc": 81,
+    "instructions": 2935,
     "loads": {
-      "L": 3
+      "G": 7,
+      "L": 24,
+      "T": 224
     },
-    "memory_accesses": 0,
-    "name": "cordic_hyperb_apfixed<18, 2, 0>",
+    "memory_accesses": 741,
+    "name": "cnn_accel",
     "stores": {
-      "L": 3
+      "G": 7,
+      "L": 38
     },
-    "total_instructions": 853
+    "total_instructions": 2935
   }
 }

@@ -1,93 +1,65 @@
 // conv1_tb.cpp
-#include <iostream>
-#include <vector>
-#include "conv_pool.cpp"
-
-#include <ap_int.h>
-#include <ap_fixed.h>
 #include <hls_stream.h>
+#include "ap_int.h"
+#include <cstdlib>
+#include <iostream>
 
-//------------------------------------------------------------
-// Compile-time knobs (adapt to your design)
-//------------------------------------------------------------
-#define IMG_W        224        // full input width
-#define IMG_H        224        // full input height
-#define OUT_CH       8          // output feature maps
-#define K            3          // kernel size
-#define C_IN         3          // input channels
-#define ENG_PAR      4          // conv engines running in parallel
-#define PIX_PER_CLK  1          // pixel input per clock (keep =1 here)
-
-//------------------------------------------------------------
-// Fixed-point & stream typedefs
-//------------------------------------------------------------
-typedef ap_uint<48>      pixel48_t;                 // packed RGB
-typedef ap_fixed<16,4>   pix_t;                     // R,G,B   & weights
-typedef ap_fixed<16,4>   data_t;                    // var place holder
-typedef ap_fixed<32,6>   acc_t;                     // accumulator
-typedef hls::stream<pixel48_t>  pix_in_stream_t;
-typedef hls::stream<pix_t>      fmap_out_stream_t;
-
-//------------------------------------------------------------------------------
-// A small helper to pack three pix_t into a 48-bit word
-//------------------------------------------------------------------------------
-static inline pixel48_t pack_pixel(int row, int col) {
-    // simple ramp in each channel
-    pix_t v = (pix_t)(row * IMG_W + col);
-    ap_uint<48> tmp = 0;
-    tmp.range(15,  0) = *(ap_uint<16>*)(&v);
-    tmp.range(31, 16) = *(ap_uint<16>*)(&v);
-    tmp.range(47, 32) = *(ap_uint<16>*)(&v);
-    return tmp;
+// Helper: pack an ap_fixed<16,4> into its 16-bit unsigned representation
+static uint16_t pack_fixed16(pix_t v) {
+    union { pix_t f; uint16_t u; } conv;
+    conv.f = v;
+    return conv.u;
 }
 
 int main() {
-    // 1) Streams
-    pix_in_stream_t   pix_in;
-    fmap_out_stream_t fmap_out0;
-    fmap_out_stream_t fmap_out1;
+    // --- 1) Instantiate streams & weight/bias arrays
+    pix_in_stream_t   pix_in("pix_in");
+    fmap_out_stream_t fmap0("fmap0"), fmap1("fmap1");
 
-    // 2) Weights & bias
     static pix_t weights[OUT_CH][C_IN][K][K];
     static pix_t bias   [OUT_CH];
-    // init to all-ones / zero-bias
-    for (int f = 0; f < OUT_CH; ++f) {
-        bias[f] = 0;
-        for (int c = 0; c < C_IN; ++c)
-        for (int i = 0; i < K;    ++i)
-        for (int j = 0; j < K;    ++j)
-            weights[f][c][i][j] = 1;
+
+    // Initialize all weights=1, bias=0
+    for(int oc=0; oc<OUT_CH; ++oc) {
+        bias[oc] = (pix_t)0;
+        for(int ic=0; ic<C_IN; ++ic)
+        for(int i=0; i<K; ++i)
+        for(int j=0; j<K; ++j)
+            weights[oc][ic][i][j] = (pix_t)1;
     }
 
-    // 3) Push input image (ramp pattern)
-    for (int r = 0; r < IMG_H; ++r) {
-      for (int c = 0; c < IMG_W; ++c) {
-        pix_in.write(pack_pixel(r, c));
-      }
+    // --- 2) Stream in a constant but small RGB pattern
+    pix_t r_val = (pix_t)0.1;
+    pix_t g_val = (pix_t)0.2;
+    pix_t b_val = (pix_t)0.3;
+    uint16_t r_raw = pack_fixed16(r_val);
+    uint16_t g_raw = pack_fixed16(g_val);
+    uint16_t b_raw = pack_fixed16(b_val);
+
+    for(int r=0; r<IMG_H; ++r) {
+        for(int c=0; c<IMG_W; ++c) {
+            pixel48_t pix =
+                ((pixel48_t)b_raw << 32) |
+                ((pixel48_t)g_raw << 16) |
+                ( pixel48_t)r_raw;
+            pix_in.write(pix);
+        }
     }
 
-    // 4) Call the HLS kernel
-    cnn_accel(pix_in, fmap_out0, fmap_out1, weights, bias);
+    // --- 3) Run the hardware function
+    cnn_accel(pix_in, fmap0, fmap1, weights, bias);
 
-    // 5) Drain outputs
-    std::vector<pix_t> out0, out1;
-    while (!fmap_out0.empty()) {
-        out0.push_back(fmap_out0.read());
-    }
-    while (!fmap_out1.empty()) {
-        out1.push_back(fmap_out1.read());
+    // --- 4) Drain and print outputs
+    std::cout << "=== fmap_out0 (channels 0–3) ===\n";
+    while (!fmap0.empty()) {
+        pix_t v = fmap0.read();
+        std::cout << v.to_double() << "\n";
     }
 
-    // 6) Report
-    std::cout << "  fmap_out0 count: " << out0.size() << "\n";
-    std::cout << "  fmap_out1 count: " << out1.size() << "\n\n";
-
-    // Print first 10 from each
-    for (size_t i = 0; i < out0.size() && i < 10; ++i) {
-        std::cout << "out0[" << i << "] = " << out0[i] << "\n";
-    }
-    for (size_t i = 0; i < out1.size() && i < 10; ++i) {
-        std::cout << "out1[" << i << "] = " << out1[i] << "\n";
+    std::cout << "=== fmap_out1 (channels 4–7) ===\n";
+    while (!fmap1.empty()) {
+        pix_t v = fmap1.read();
+        std::cout << v.to_double() << "\n";
     }
 
     return 0;

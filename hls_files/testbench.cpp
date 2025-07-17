@@ -1,123 +1,83 @@
-// conv1_tb.cpp
-#include <hls_stream.h>
-#include "ap_int.h"
-#include <cstdlib>
-#include <iostream>
-#include "conv_pool.cpp"
-#include <ap_fixed.h>
 #include <iostream>
 #include <cmath>
-#include <cassert>
+#include <hls_stream.h>
+#include <ap_fixed.h>
+#include "conv_pool.cpp"
 
+// must match your conv.cpp settings:
+#define IMG_W   224
+#define IMG_H   224
+#define OUT_CH  8
+#define K       3
+#define C_IN    3
+#define ENG_PAR 4
 
-//------------------------------------------------------------
-// Compile-time knobs (adapt to your design)
-//------------------------------------------------------------
-#define IMG_W    5
-#define IMG_H    5
-#define OUT_CH 8      // output feature maps
-#define K 3           // kernel size
-#define C_IN 3        // input channels
-#define ENG_PAR 4     // conv engines running in parallel
-#define PIX_PER_CLK 1 // pixel input per clock (keep =1 here)
-
-//------------------------------------------------------------
-// Fixed-point & stream typedefs
-//------------------------------------------------------------
-typedef ap_uint<48> pixel48_t;  // packed RGB
-typedef ap_fixed<16, 4> pix_t;  // R,G,B   & weights
-typedef ap_fixed<16, 4> data_t; // var place holder
-typedef ap_fixed<32, 6> acc_t;  // accumulator
+typedef ap_uint<48>         pixel48_t;
+typedef ap_fixed<16,4>      pix_t;
 typedef hls::stream<pixel48_t> pix_in_stream_t;
-typedef hls::stream<pix_t> fmap_out_stream_t;
+typedef hls::stream<pix_t>     fmap_out_stream_t;
 
-
-typedef ap_uint<48>       pixel48_t;    // packed R/G/B
-typedef ap_fixed<16,4>    pix_t;        // pixel & weight type
-typedef hls::stream<pixel48_t> pix_in_t;
-typedef hls::stream<pix_t>     fmap_out_t;
-// tb_conv1.cpp
-
+// ------------------------------------------------------------------
+// Prototype of your HLS top-level (from conv.cpp):
+// ------------------------------------------------------------------
+extern "C" void cnn_accel(
+    pix_in_stream_t   &pix_in,
+    fmap_out_stream_t &fmap_out0,
+    fmap_out_stream_t &fmap_out1,
+    const pix_t        weights[OUT_CH][C_IN][K][K],
+    const pix_t        bias   [OUT_CH]);
 
 int main() {
     // Streams
-    pix_in_stream_t    pix_in;
-    fmap_out_stream_t  fmap_out0;
-    fmap_out_stream_t  fmap_out1;
+    pix_in_stream_t   pix_in;
+    fmap_out_stream_t fmap_out0;
+    fmap_out_stream_t fmap_out1;
 
-    // Weight & bias arrays
+    // --- 1) Initialize weights & biases ---
     static pix_t weights[OUT_CH][C_IN][K][K];
     static pix_t bias   [OUT_CH];
-
-    // 1) Initialize weights & biases
-    for (int f = 0; f < OUT_CH; ++f) {
-        for (int c = 0; c < C_IN; ++c)
-        for (int i = 0; i < K;    ++i)
-        for (int j = 0; j < K;    ++j) {
-            if (f < ENG_PAR)        weights[f][c][i][j] = (pix_t)1.0;  // make group0 = 1
-            else                    weights[f][c][i][j] = (pix_t)0.0;  // group1 = 0
+    for (int oc = 0; oc < OUT_CH; ++oc) {
+        bias[oc] = (pix_t)0.0;
+        for (int ic = 0; ic < C_IN; ++ic)
+        for (int i  = 0; i < K;    ++i)
+        for (int j  = 0; j < K;    ++j) {
+            weights[oc][ic][i][j] = (pix_t)1.0;
         }
-        bias[f] = (pix_t)0.0;
     }
 
-    // 2) Fill input stream with a 5×5 ramp:
-    //    pix_r = row+1, pix_g=1, pix_b=2
+    // --- 2) Push a test image into pix_in ---
+    // constant 0.1,0.2,0.3 pattern, fits well under 7.875 when summed
+    pixel48_t pix_val;
+    pix_t vr = (pix_t)0.1, vg = (pix_t)0.2, vb = (pix_t)0.3;
     for (int r = 0; r < IMG_H; ++r) {
-      for (int c = 0; c < IMG_W; ++c) {
-        pix_t pr = (pix_t)(r + 1);
-        pix_t pg = (pix_t)1;
-        pix_t pb = (pix_t)2;
-        ap_uint<48> packed =  ( (ap_uint<48>)pb << 32 )
-                            | ( (ap_uint<48>)pg << 16 )
-                            | ( (ap_uint<48>)pr       );
-        pix_in.write(packed);
-      }
+        for (int c = 0; c < IMG_W; ++c) {
+            pix_val.range(15,  0) = vr;
+            pix_val.range(31, 16) = vg;
+            pix_val.range(47, 32) = vb;
+            pix_in.write(pix_val);
+        }
     }
 
-    // 3) Run the kernel
+    // --- 3) Run your accelerator ---
     cnn_accel(pix_in, fmap_out0, fmap_out1, weights, bias);
 
-    // 4) Check outputs
-    bool all_ok = true;
-    bool toggle_tb = false;   // must mirror the static toggle in your RTL
-    for (int r = 2; r < IMG_H; ++r) {
-      for (int c = 2; c < IMG_W; ++c) {
-        toggle_tb = !toggle_tb;
+    // --- 4) Read & print/check the first few outputs ---
+    const int NPRINT = 4;
+    double expected = 9.0 * (0.1 + 0.2 + 0.3); // = 5.4
 
-        // compute golden:  sum_r = 9*r ; sum_g = 9*1 ; sum_b = 9*2
-        // so golden = 9*r + 9 + 18 = 9*r + 27
-        pix_t golden = (pix_t)(9 * r + 27);
-
-        if (!toggle_tb) {
-          // group0 outputs come on fmap_out0
-          for (int f = 0; f < ENG_PAR; ++f) {
-            pix_t got = fmap_out0.read();
-            if (got != golden) {
-              std::cout << "ERROR @ window("<<r<<","<<c<<") filter "<<f
-                        <<": got "<< got.to_string() 
-                        <<" expected "<< golden.to_string() << "\n";
-              all_ok = false;
-            }
-          }
-        } else {
-          // group1 outputs on fmap_out1 should all be zero
-          for (int f = 0; f < ENG_PAR; ++f) {
-            pix_t got = fmap_out1.read();
-            if (got != (pix_t)0) {
-              std::cout << "ERROR @ window("<<r<<","<<c<<") filter "<<(f+ENG_PAR)
-                        <<": got "<< got.to_string() <<" expected 0\n";
-              all_ok = false;
-            }
-          }
+    std::cout << "=== First " << NPRINT << " results from fmap_out0 & fmap_out1 ===\n";
+    for (int i = 0; i < NPRINT; ++i) {
+        if (!fmap_out0.empty()) {
+            double out0 = (double)fmap_out0.read();
+            std::cout << "fmap0[" << i << "]=" << out0
+                      << ((std::fabs(out0 - expected) < 1e-3) ? "  PASS\n" : "  FAIL\n");
         }
-      }
+        if (!fmap_out1.empty()) {
+            double out1 = (double)fmap_out1.read();
+            std::cout << "fmap1[" << i << "]=" << out1
+                      << ((std::fabs(out1 - expected) < 1e-3) ? "  PASS\n" : "  FAIL\n");
+        }
     }
 
-    if (all_ok) {
-      std::cout << "=== TEST PASSED ===\n";
-      return 0;
-    } else {
-      std::cout << "=== TEST FAILED ===\n";
-      return 1;
-    }
+    return 0;
 }

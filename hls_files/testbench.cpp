@@ -7,6 +7,8 @@
 #include <ap_fixed.h>
 #include <iostream>
 #include <cmath>
+#include <cassert>
+
 
 //------------------------------------------------------------
 // Compile-time knobs (adapt to your design)
@@ -34,99 +36,88 @@ typedef ap_uint<48>       pixel48_t;    // packed R/G/B
 typedef ap_fixed<16,4>    pix_t;        // pixel & weight type
 typedef hls::stream<pixel48_t> pix_in_t;
 typedef hls::stream<pix_t>     fmap_out_t;
+// tb_conv1.cpp
 
-// Prototype of your HLS block (must match exactly)
-extern "C" void cnn_accel(
-    pix_in_t   &pix_in,
-    fmap_out_t &fmap_out0,
-    fmap_out_t &fmap_out1,
-    const pix_t weights[OUT_CH][C_IN][K][K],
-    const pix_t bias   [OUT_CH]
-);
 
 int main() {
-    // --- Streams
-    pix_in_t   pix_in;
-    fmap_out_t fmap_out0;
-    fmap_out_t fmap_out1;
+    // Streams
+    pix_in_stream_t    pix_in;
+    fmap_out_stream_t  fmap_out0;
+    fmap_out_stream_t  fmap_out1;
 
-    // --- Weight & bias arrays
-    pix_t weights[OUT_CH][C_IN][K][K];
-    pix_t bias   [OUT_CH];
+    // Weight & bias arrays
+    static pix_t weights[OUT_CH][C_IN][K][K];
+    static pix_t bias   [OUT_CH];
 
-    // Initialize weights=1, bias=0
-    for (int oc = 0; oc < OUT_CH; ++oc) {
-        bias[oc] = 0;
-        for (int ic = 0; ic < C_IN; ++ic)
-        for (int i  = 0; i  < K;    ++i)
-        for (int j  = 0; j  < K;    ++j) {
-            weights[oc][ic][i][j] = (pix_t)1;
+    // 1) Initialize weights & biases
+    for (int f = 0; f < OUT_CH; ++f) {
+        for (int c = 0; c < C_IN; ++c)
+        for (int i = 0; i < K;    ++i)
+        for (int j = 0; j < K;    ++j) {
+            if (f < ENG_PAR)        weights[f][c][i][j] = (pix_t)1.0;  // make group0 = 1
+            else                    weights[f][c][i][j] = (pix_t)0.0;  // group1 = 0
         }
+        bias[f] = (pix_t)0.0;
     }
 
-    // --- Fill input stream with constant 0.125 pixels
-    //    3 channels all the same = 0.125
-    pix_t  pval = (pix_t)0.125;
-    ap_uint<16> ru = *reinterpret_cast<ap_uint<16>*>(&pval);
-    ap_uint<16> gu = ru;
-    ap_uint<16> bu = ru;
+    // 2) Fill input stream with a 5×5 ramp:
+    //    pix_r = row+1, pix_g=1, pix_b=2
     for (int r = 0; r < IMG_H; ++r) {
-        for (int c = 0; c < IMG_W; ++c) {
-            pixel48_t packed = 
-                ((pixel48_t)bu << 32) |
-                ((pixel48_t)gu << 16) |
-                (pixel48_t)ru;
-            pix_in.write(packed);
-        }
+      for (int c = 0; c < IMG_W; ++c) {
+        pix_t pr = (pix_t)(r + 1);
+        pix_t pg = (pix_t)1;
+        pix_t pb = (pix_t)2;
+        ap_uint<48> packed =  ( (ap_uint<48>)pb << 32 )
+                            | ( (ap_uint<48>)pg << 16 )
+                            | ( (ap_uint<48>)pr       );
+        pix_in.write(packed);
+      }
     }
 
-    // --- Invoke the HLS block
+    // 3) Run the kernel
     cnn_accel(pix_in, fmap_out0, fmap_out1, weights, bias);
 
-    // --- Check outputs
-    // Number of valid windows = (IMG_H-2)*(IMG_W-2)
-    int windows = (IMG_H - 2) * (IMG_W - 2);
-    // Each window produces ENG_PAR outputs on *one* of the two streams
-    int expected_vals = windows * ENG_PAR;
-    int read_vals = 0;
+    // 4) Check outputs
+    bool all_ok = true;
+    bool toggle_tb = false;   // must mirror the static toggle in your RTL
+    for (int r = 2; r < IMG_H; ++r) {
+      for (int c = 2; c < IMG_W; ++c) {
+        toggle_tb = !toggle_tb;
 
-    const double expected = double(27) * 0.125;  // 27 pixels * 0.125
+        // compute golden:  sum_r = 9*r ; sum_g = 9*1 ; sum_b = 9*2
+        // so golden = 9*r + 9 + 18 = 9*r + 27
+        pix_t golden = (pix_t)(9 * r + 27);
 
-    std::cout << "Stream0 values:\n";
-    while (!fmap_out0.empty()) {
-        pix_t v = fmap_out0.read();
-        double dv = double(v);
-        std::cout << dv << "  ";
-        if (std::fabs(dv - expected) > 1e-6) {
-            std::cerr << "\nERROR: got " << dv 
-                      << " expected " << expected << "\n";
-            return 1;
+        if (!toggle_tb) {
+          // group0 outputs come on fmap_out0
+          for (int f = 0; f < ENG_PAR; ++f) {
+            pix_t got = fmap_out0.read();
+            if (got != golden) {
+              std::cout << "ERROR @ window("<<r<<","<<c<<") filter "<<f
+                        <<": got "<< got.to_string() 
+                        <<" expected "<< golden.to_string() << "\n";
+              all_ok = false;
+            }
+          }
+        } else {
+          // group1 outputs on fmap_out1 should all be zero
+          for (int f = 0; f < ENG_PAR; ++f) {
+            pix_t got = fmap_out1.read();
+            if (got != (pix_t)0) {
+              std::cout << "ERROR @ window("<<r<<","<<c<<") filter "<<(f+ENG_PAR)
+                        <<": got "<< got.to_string() <<" expected 0\n";
+              all_ok = false;
+            }
+          }
         }
-        ++read_vals;
+      }
     }
 
-    std::cout << "\nStream1 values:\n";
-    while (!fmap_out1.empty()) {
-        pix_t v = fmap_out1.read();
-        double dv = double(v);
-        std::cout << dv << "  ";
-        if (std::fabs(dv - expected) > 1e-6) {
-            std::cerr << "\nERROR: got " << dv 
-                      << " expected " << expected << "\n";
-            return 1;
-        }
-        ++read_vals;
+    if (all_ok) {
+      std::cout << "=== TEST PASSED ===\n";
+      return 0;
+    } else {
+      std::cout << "=== TEST FAILED ===\n";
+      return 1;
     }
-
-    std::cout << "\n\nTotal outputs read: " << read_vals 
-              << "  (expected " << expected_vals << ")\n";
-
-    if (read_vals != expected_vals) {
-        std::cerr << "ERROR: unexpected output count\n";
-        return 1;
-    }
-
-    std::cout << ">>> TEST PASSED!  All outputs = " 
-              << expected << "\n";
-    return 0;
 }

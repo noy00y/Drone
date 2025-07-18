@@ -174,3 +174,7 @@ Here’s how the three channels get summed and how the pipeline will look, cycle
 - **Throughput**
     - After cycle 4, you already have your first 4 outputs (0–3 for W₀).
     - After cycle 5, you get outputs 4–7 for W₀, and so on — one new registered result per cycle per group.
+
+
+Questions for Prof:
+* are we allowed to use high level synthesis tools --> ie get the synthezier to determine the best utilziation of resources and then just work off of that or do I hvae to do the floor planning myself

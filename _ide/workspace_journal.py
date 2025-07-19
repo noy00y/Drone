@@ -19,3 +19,13 @@ comp.run(operation="SYNTHESIS")
 
 comp.run(operation="SYNTHESIS")
 
+comp.run(operation="SYNTHESIS")
+
+comp.run(operation="SYNTHESIS")
+
+comp.run(operation="C_SIMULATION")
+
+client.sync_git_example_repo(name="vitis_libraries")
+
+vitis.dispose()
+

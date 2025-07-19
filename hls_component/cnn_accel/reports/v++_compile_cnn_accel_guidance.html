@@ -3407,7 +3407,7 @@ window.onload = function () { addSorting(); }
 <center><h1>Design Guidance Report</h1></center><center><table class="header" border="0">
 <tr><td><b>Copyright</b></td><td>Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.</td></tr>
 <tr><td><b>Tool Version</b></td><td>xcd v.2025.1 (win64) Build 0 </td></tr>
-<tr><td><b>Date</b></td><td>Thu Jul 17 06:00:33 2025</td></tr>
+<tr><td><b>Date</b></td><td>Thu Jul 17 06:12:45 2025</td></tr>
 <tr><td><b>Host</b></td><td>DESKTOP-H5HAFIG running 64-bit major release  (build 9200)</td></tr>
 <tr><td><b>Command</b></td><td>C:/Xilinx/2025.1/Vitis/bin/unwrapped/win64.o/v++.exe  -c --mode hls --config C:\Users\ozair\Documents\Code_Drive\Drone\hls_component\hls_config.cfg --work_dir cnn_accel </td></tr>
 </table></center><br>
@@ -3434,17 +3434,6 @@ window.onload = function () { addSorting(); }
 <th align="left" width="380">Resolution</th>
 </tr>
 <tr>
-<td align="left">4</td>
-<td align="left">Throughput</td>
-<td align="left">ADVISORY</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Throughput Related</td>
-<td align="left">Accelerator.cnn_accel.Throughput</td>
-<td align="left">Pipelining result : Target II = 1, Final II = 4, Depth = 8, loop 'RowLoop_ColLoop'
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
 <td align="left">6</td>
 <td align="left">Kernel</td>
 <td align="left">ADVISORY</td>
@@ -3452,28 +3441,6 @@ window.onload = function () { addSorting(); }
 <td align="left">HLS Kernel Related</td>
 <td align="left">Accelerator.cnn_accel.Kernel</td>
 <td align="left">**** Estimated Fmax: 141.04 MHz
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">1</td>
-<td align="left">Throughput</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Throughput Related</td>
-<td align="left">Accelerator.cnn_accel.Throughput</td>
-<td align="left">The II Violation in module 'cnn_accel_Pipeline_RowLoop_ColLoop' (loop 'RowLoop_ColLoop'): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1) between axis write operation ('fmap_out1_write_ln225', <a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=225">conv_pool.cpp</a>) on port 'fmap_out1' (<a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=225">conv_pool.cpp</a>) and axis write operation ('fmap_out1_write_ln225', <a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=225">conv_pool.cpp</a>) on port 'fmap_out1' (<a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=225">conv_pool.cpp</a>).
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">3</td>
-<td align="left">Throughput</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Throughput Related</td>
-<td align="left">Accelerator.cnn_accel.Throughput</td>
-<td align="left">The II Violation in module 'cnn_accel_Pipeline_RowLoop_ColLoop' (loop 'RowLoop_ColLoop'): Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 1) between axis write operation ('fmap_out1_write_ln225', <a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=225">conv_pool.cpp</a>) on port 'fmap_out1' (<a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=225">conv_pool.cpp</a>) and axis write operation ('fmap_out1_write_ln225', <a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=225">conv_pool.cpp</a>) on port 'fmap_out1' (<a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=225">conv_pool.cpp</a>).
 </td>
 <td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
 </tr>
@@ -3496,6 +3463,39 @@ window.onload = function () { addSorting(); }
 <td align="left">HLS Kernel Related</td>
 <td align="left">Accelerator.cnn_accel.Kernel</td>
 <td align="left">**** Loop Constraint Status: All loop constraints were NOT satisfied.
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">4</td>
+<td align="left">Throughput</td>
+<td align="left">ADVISORY</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Throughput Related</td>
+<td align="left">Accelerator.cnn_accel.Throughput</td>
+<td align="left">Pipelining result : Target II = 1, Final II = 4, Depth = 8, loop 'RowLoop_ColLoop'
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">1</td>
+<td align="left">Throughput</td>
+<td align="left">WARNING</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Throughput Related</td>
+<td align="left">Accelerator.cnn_accel.Throughput</td>
+<td align="left">The II Violation in module 'cnn_accel_Pipeline_RowLoop_ColLoop' (loop 'RowLoop_ColLoop'): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1) between axis write operation ('fmap_out1_write_ln225', <a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=225">conv_pool.cpp</a>) on port 'fmap_out1' (<a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=225">conv_pool.cpp</a>) and axis write operation ('fmap_out1_write_ln225', <a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=225">conv_pool.cpp</a>) on port 'fmap_out1' (<a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=225">conv_pool.cpp</a>).
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">3</td>
+<td align="left">Throughput</td>
+<td align="left">WARNING</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Throughput Related</td>
+<td align="left">Accelerator.cnn_accel.Throughput</td>
+<td align="left">The II Violation in module 'cnn_accel_Pipeline_RowLoop_ColLoop' (loop 'RowLoop_ColLoop'): Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 1) between axis write operation ('fmap_out1_write_ln225', <a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=225">conv_pool.cpp</a>) on port 'fmap_out1' (<a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=225">conv_pool.cpp</a>) and axis write operation ('fmap_out1_write_ln225', <a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=225">conv_pool.cpp</a>) on port 'fmap_out1' (<a href="file:///C:/Users/ozair/Documents/Code_Drive/Drone/hls_component\../hls_files/conv_pool.cpp#line=225">conv_pool.cpp</a>).
 </td>
 <td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2025.1%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
 </tr>

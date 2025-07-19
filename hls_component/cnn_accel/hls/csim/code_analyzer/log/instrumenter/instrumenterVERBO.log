@@ -77,9 +77,12 @@ instrumenter::VERBO: [Instrumenter - IRBuilder] Instruction has no debug informa
 instrumenter::VERBO: [Instrumenter - IRBuilder] Instruction has no debug information, defaulting to function/basic block info
 instrumenter::VERBO: [Instrumenter - IRBuilder] Instruction has no debug information, defaulting to function/basic block info
 instrumenter::VERBO: [Instrumenter - IRBuilder] Instruction has no debug information, defaulting to function/basic block info
+instrumenter::VERBO: [Instrumenter - IRBuilder] Instruction has no debug information, defaulting to function/basic block info
 instrumenter::VERBO: spec:0:0: warning: [IRBuilder] Function/Basic Block for the instruction has no debug information, recompile and retry (13)
 instrumenter::VERBO: [Instrumenter - IRBuilder] Instruction has no debug information, defaulting to function/basic block info
 instrumenter::VERBO: spec:0:0: warning: [IRBuilder] Function/Basic Block for the instruction has no debug information, recompile and retry (13)
+instrumenter::VERBO: [Instrumenter - IRBuilder] Instruction has no debug information, defaulting to function/basic block info
+instrumenter::VERBO: [Instrumenter - IRBuilder] Instruction has no debug information, defaulting to function/basic block info
 instrumenter::VERBO: [Instrumenter - IRBuilder] Instruction has no debug information, defaulting to function/basic block info
 instrumenter::VERBO: [Instrumenter - IRBuilder] Instruction has no debug information, defaulting to function/basic block info
 instrumenter::VERBO: [Instrumenter - IRBuilder] Instruction has no debug information, defaulting to function/basic block info
@@ -2534,11 +2537,11 @@ instrumenter::VERBO: [Instrumenter - WARNING] Global value .str.9 is not instrum
 instrumenter::VERBO: [Instrumenter - WARNING] Global value .str.10 is not instrumentable
 instrumenter::VERBO: [Instrumenter - WARNING] Global value .str.11 is not instrumentable
 instrumenter::VERBO: [Instrumenter - WARNING] Global value .str.12 is not instrumentable
-instrumenter::VERBO: [Instrumenter - WARNING] Global value __PRETTY_FUNCTION__._ZN3hls6streamI7ap_uintILi48EELi0EEC2Ev is not instrumentable
-instrumenter::VERBO: [Instrumenter - WARNING] Global value __PRETTY_FUNCTION__._ZN3hls6streamI8ap_fixedILi16ELi4EL9ap_q_mode5EL9ap_o_mode3ELi0EELi0EEC2Ev is not instrumentable
 instrumenter::VERBO: [Instrumenter - WARNING] Global value .str.13 is not instrumentable
 instrumenter::VERBO: [Instrumenter - WARNING] Global value .str.14 is not instrumentable
 instrumenter::VERBO: [Instrumenter - WARNING] Global value .str.15 is not instrumentable
+instrumenter::VERBO: [Instrumenter - WARNING] Global value __PRETTY_FUNCTION__._ZN3hls6streamI7ap_uintILi48EELi0EEC2Ev is not instrumentable
+instrumenter::VERBO: [Instrumenter - WARNING] Global value __PRETTY_FUNCTION__._ZN3hls6streamI8ap_fixedILi16ELi4EL9ap_q_mode5EL9ap_o_mode3ELi0EELi0EEC2Ev is not instrumentable
 instrumenter::VERBO: [Instrumenter - WARNING] Global value .str.16 is not instrumentable
 instrumenter::VERBO: [Instrumenter - WARNING] Global value .str.17 is not instrumentable
 instrumenter::VERBO: [Instrumenter - WARNING] Global value .str.18 is not instrumentable
@@ -2573,6 +2576,9 @@ instrumenter::VERBO: [Instrumenter - WARNING] Global value .str.46 is not instru
 instrumenter::VERBO: [Instrumenter - WARNING] Global value .str.47 is not instrumentable
 instrumenter::VERBO: [Instrumenter - WARNING] Global value .str.48 is not instrumentable
 instrumenter::VERBO: [Instrumenter - WARNING] Global value .str.49 is not instrumentable
+instrumenter::VERBO: [Instrumenter - WARNING] Global value .str.50 is not instrumentable
+instrumenter::VERBO: [Instrumenter - WARNING] Global value .str.51 is not instrumentable
+instrumenter::VERBO: [Instrumenter - WARNING] Global value .str.52 is not instrumentable
 instrumenter::VERBO: spec:0:0: note: [Instrumenter - FN/BB] Function/BasicBlock profiling
 instrumenter::VERBO: [Instrumenter - FN/BB] Inserting profiling calls for function/basic-blocks
 instrumenter::INFOR: [Instrumenter - FN_TRACE] Adding the init function for the trace calls...

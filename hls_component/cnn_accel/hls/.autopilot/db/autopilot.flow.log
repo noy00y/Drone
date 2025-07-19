@@ -251,11 +251,11 @@ Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/websocket/pk
 Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/wip/pkgIndex.tcl 
 Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/yaml/pkgIndex.tcl 
 Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/zip/pkgIndex.tcl 
-Command           ap_source done; 0.15 sec.
+Command           ap_source done; 0.133 sec.
 Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tdom/pkgIndex.tcl 
 Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcl8.6/opt0.4/pkgIndex.tcl 
 Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcl8.6/pkgs/win/thread2.8.7/pkgIndex.tcl 
-Command         ap_source done; 0.305 sec.
+Command         ap_source done; 0.289 sec.
 Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/0compatibility/pkgIndex.tcl 
 Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/amazon-s3/pkgIndex.tcl 
 Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/asn/pkgIndex.tcl 
@@ -507,12 +507,12 @@ Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/websocket/pkgI
 Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/wip/pkgIndex.tcl 
 Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/yaml/pkgIndex.tcl 
 Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/zip/pkgIndex.tcl 
-Command         ap_source done; 0.142 sec.
+Command         ap_source done; 0.139 sec.
 Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tdom/pkgIndex.tcl 
 Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcl8.6/opt0.4/pkgIndex.tcl 
 Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcl8.6/pkgs/win/thread2.8.7/pkgIndex.tcl 
-Command       ap_source done; 0.627 sec.
-INFO-FLOW: Workspace C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/cnn_accel/hls opened at Thu Jul 17 05:59:54 -0700 2025
+Command       ap_source done; 0.593 sec.
+INFO-FLOW: Workspace C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/cnn_accel/hls opened at Thu Jul 17 06:12:03 -0700 2025
 Execute       send_msg_by_id INFO @200-1505@%s%s default  vivado 
 INFO: [HLS 200-1505] Using default flow_target 'vivado'
 Execute       send_msg_by_id INFO @200-2174@%s%s component C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/hls_config.cfg 
@@ -541,7 +541,7 @@ DBG:HLSDevice: Trying to load device library: C:/Xilinx/2025.1/Vitis\lib\win64.o
 DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: C:/Xilinx/2025.1/Vivado/data/parts/arch.xml
 DBG:HLSDevice: init success
 INFO: [HLS 200-1611] Setting target device to 'xc7a100t-fgg484-2L'
-Command           create_platform done; 0.791 sec.
+Command           create_platform done; 0.802 sec.
 Execute           source C:/Xilinx/2025.1/Vitis/common/technology/xilinx/common/xilinx.gen 
 Execute             source C:/Xilinx/2025.1/Vitis/common/technology/xilinx/interface/plb46.gen 
 Execute             source C:/Xilinx/2025.1/Vitis/common/technology/xilinx/interface/axi4.gen 
@@ -557,7 +557,7 @@ Execute             source C:/Xilinx/2025.1/Vitis/common/technology/xilinx/DSP48
 Command           ap_source done; 0.11 sec.
 Execute           ap_part_info -name xc7a100t-fgg484-2L -data info 
 Execute           config_compile -quiet -complex-mul-dsp=0 
-Command         set_part done; 0.916 sec.
+Command         set_part done; 0.928 sec.
 Execute         send_msg_by_id INFO @200-1465@%s 'clock=10ns' from C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/hls_config.cfg(9) 
 INFO: [HLS 200-1465] Applying config ini 'clock=10ns' from C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/hls_config.cfg(9)
 Execute         create_clock -period 10ns 
@@ -572,12 +572,12 @@ Execute         config_export -format=ip_catalog
 Execute         send_msg_by_id INFO @200-1465@%s 'syn.dataflow.enable_canonicalization=1' from C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/hls_config.cfg(11) 
 INFO: [HLS 200-1465] Applying config ini 'syn.dataflow.enable_canonicalization=1' from C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/hls_config.cfg(11)
 Execute         config_dataflow -enable_canonicalization=1 
-Command       apply_ini done; 0.972 sec.
+Command       apply_ini done; 0.994 sec.
 Execute       write_component -config C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/hls_config.cfg 
 Execute         send_msg_by_id INFO @200-2176@%s C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/cnn_accel/vitis-comp.json 
 INFO: [HLS 200-2176] Writing Vitis IDE component file C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/cnn_accel/vitis-comp.json
-Command     open_solution done; 1.641 sec.
-Command   open_component done; 1.645 sec.
+Command     open_solution done; 1.63 sec.
+Command   open_component done; 1.635 sec.
 Execute   apply_ini C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/cnn_accel/hls/config.cmdline -iscmdline 
 Execute   ::AP::init_summary_file csynth 
 Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
@@ -586,7 +586,7 @@ Execute     ap_part_info -name xc7a100t-fgg484-2L -data info
 INFO-FLOW: run_clang exec: C:/Xilinx/2025.1/Vitis/win64/tools/clang-3.9-csynth/bin/xilinx-performance-pragma-detector ../hls_files/conv_pool.cpp -- -fhls -D__VITIS_HLS__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I C:/Xilinx/2025.1/Vitis/common/technology/autopilot -I C:/Xilinx/2025.1/Vitis/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -I /usr/include/x86_64-linux-gnu > C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/cnn_accel/hls/.autopilot/db/conv_pool.cpp.xilinx-performance-pragma-detector.out.log 2> C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/cnn_accel/hls/.autopilot/db/conv_pool.cpp.xilinx-performance-pragma-detector.err.log
 INFO-FLOW: Running SLX 'csynth' proc: ::SLX::run_csynth
 Execute     elaborate -effort=medium -skip_syncheck=0 -keep_printf=0 -skip_cdt=0 -skip_transform=0 -ng=0 -g=0 -from_csynth_design=1 
-INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 3.317 seconds; current allocated memory: 143.434 MB.
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 2 seconds. CPU system time: 1 seconds. Elapsed time: 3.343 seconds; current allocated memory: 144.867 MB.
 Execute       set_directive_top cnn_accel -name=cnn_accel 
 INFO: [HLS 200-10] Analyzing design file '../hls_files/conv_pool.cpp' ... 
 INFO-FLOW: Compiling one TU...
@@ -600,23 +600,23 @@ INFO-FLOW: Source syntax check for synthesis
 INFO-FLOW: run_clang exec: C:/Xilinx/2025.1/Vitis/win64/tools/clang-3.9-csynth/bin/clang -foptimization-record-file=C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/cnn_accel/hls/.autopilot/db/clang.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll|inline -mllvm -pass-remarks=reflow|pasta|unroll|inline -fsyntax-only -fhls -target fpga64-xilinx-linux-gnu C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/cnn_accel/hls/.autopilot/db/conv_pool.pp.0.cpp {-hls-platform-db-name=C:/Xilinx/2025.1/Vitis\common/technology\xilinx/common/platform.db} -hls-platform-name=artix7_medium -device-resource-info=BRAM_270.000000_DSP_240.000000_FF_126800.000000_LUT_63400.000000_SLICE_15850.000000_URAM_0.000000 -device-name-info=xc7a100tfgg484-2L > C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/cnn_accel/hls/.autopilot/db/clang.out.log 2> C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/cnn_accel/hls/.autopilot/db/clang.err.log
 Execute       clang_tidy xilinx-systemc-detector -desc systemc-detector C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/cnn_accel/hls/.autopilot/db/conv_pool.pp.0.cpp  -target fpga  -directive=C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/cnn_accel/hls/.autopilot/db/.systemc_flag 
 INFO-FLOW: exec C:/Xilinx/2025.1/Vitis/win64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-systemc-detector -import-directive=C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/cnn_accel/hls/.autopilot/db/.systemc_flag -fix-errors C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/cnn_accel/hls/.autopilot/db/conv_pool.pp.0.cpp -- - -target fpga -fhls -ferror-limit=0
-Command       clang_tidy done; 0.727 sec.
+Command       clang_tidy done; 0.758 sec.
 INFO-FLOW: Running: clang-tidy CDT preprocess 39
 Execute       clang_tidy xilinx-directive2pragma -desc directive2pragma C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/cnn_accel/hls/.autopilot/db/conv_pool.pp.0.cpp  -target fpga  -directive=C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/cnn_accel/hls/.autopilot/db/all.directive.json 
 INFO-FLOW: exec C:/Xilinx/2025.1/Vitis/win64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-directive2pragma -import-directive=C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/cnn_accel/hls/.autopilot/db/all.directive.json -fix-errors C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/cnn_accel/hls/.autopilot/db/conv_pool.pp.0.cpp -- - -target fpga -fhls -ferror-limit=0
-Command       clang_tidy done; 0.998 sec.
+Command       clang_tidy done; 1.014 sec.
 INFO-FLOW: Done: clang-tidy CDT preprocess 39 time: 1 seconds per iteration
 INFO-FLOW: Calling xilinx-label-all-loops ... 
 INFO-FLOW: Calling xilinx-aggregate-on-hls-vector ... 
 Execute       clang_tidy -errorcheck -desc loop-label xilinx-label-all-loops,xilinx-aggregate-on-hls-vector,,xilinx-warn-mayneed-no-ctor-attribute C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/cnn_accel/hls/.autopilot/db/conv_pool.pp.0.cpp  -target fpga  
 INFO-FLOW: run_clang exec: C:/Xilinx/2025.1/Vitis/win64/tools/clang-3.9-csynth/bin/clang-tidy -export-fixes=C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/cnn_accel/hls/.autopilot/db/conv_pool.pp.0.cpp.clang-tidy.loop-label.diag.yml -header-filter=.* --checks=-*,xilinx-label-all-loops,xilinx-aggregate-on-hls-vector,,xilinx-warn-mayneed-no-ctor-attribute -fix-errors C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/cnn_accel/hls/.autopilot/db/conv_pool.pp.0.cpp -- - -target fpga -fhls -ferror-limit=0 > C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/cnn_accel/hls/.autopilot/db/conv_pool.pp.0.cpp.clang-tidy.loop-label.out.log 2> C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/cnn_accel/hls/.autopilot/db/conv_pool.pp.0.cpp.clang-tidy.loop-label.err.log
 Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/yaml/yaml.tcl 
-Command       clang_tidy done; 1.445 sec.
+Command       clang_tidy done; 1.338 sec.
 INFO-FLOW: run_clang exec: C:/Xilinx/2025.1/Vitis/win64/tools/clang-3.9-csynth/bin/xilinx-dataflow-lawyer -export-fixes=C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/cnn_accel/hls/.autopilot/db/conv_pool.pp.0.cpp.xilinx-dataflow-lawyer.diag.yml C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/cnn_accel/hls/.autopilot/db/conv_pool.pp.0.cpp -- - -target fpga -fhls -ferror-limit=0 -fstrict-dataflow > C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/cnn_accel/hls/.autopilot/db/conv_pool.pp.0.cpp.xilinx-dataflow-lawyer.out.log 2> C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/cnn_accel/hls/.autopilot/db/conv_pool.pp.0.cpp.xilinx-dataflow-lawyer.err.log
 Execute       ap_part_info -name xc7a100t-fgg484-2L -data info 
 INFO-FLOW: compiling source code to llvm bc
 INFO-FLOW: run_clang exec: C:/Xilinx/2025.1/Vitis/win64/tools/clang-3.9-csynth/bin/clang -foptimization-record-file=C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/cnn_accel/hls/.autopilot/db/conv_pool.pp.0.cpp.clang.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll|inline -mllvm -pass-remarks=reflow|pasta|unroll|inline -fno-limit-debug-info -fhls -flto -fno-exceptions -Wno-error=c++11-narrowing -hls-emit-hint-scope C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/cnn_accel/hls/.autopilot/db/conv_pool.pp.0.cpp -fno-math-errno -c -emit-llvm -mllvm -disable-llvm-optzns -Werror=implicit-function-declaration -Werror=implicit-hls-streams -Werror=return-type -Wpragmas -Wunused-parameter -Wdump-hls-pragmas -Wno-error=dump-hls-pragmas -hls-clock-period=10 -fno-threadsafe-statics -fno-use-cxa-atexit -target fpga64-xilinx-linux-gnu -D__VITIS_HLS__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I C:/Xilinx/2025.1/Vitis/common/technology/autopilot -I C:/Xilinx/2025.1/Vitis/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/cnn_accel/hls/.autopilot/db/conv_pool.bc {-hls-platform-db-name=C:/Xilinx/2025.1/Vitis\common/technology\xilinx/common/platform.db} -hls-platform-name=artix7_medium -device-resource-info=BRAM_270.000000_DSP_240.000000_FF_126800.000000_LUT_63400.000000_SLICE_15850.000000_URAM_0.000000 -device-name-info=xc7a100tfgg484-2L > C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/cnn_accel/hls/.autopilot/db/conv_pool.pp.0.cpp.clang.out.log 2> C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/cnn_accel/hls/.autopilot/db/conv_pool.pp.0.cpp.clang.err.log
-INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 6.354 seconds; current allocated memory: 146.430 MB.
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 6.239 seconds; current allocated memory: 147.930 MB.
 INFO-FLOW: Linking Debug ...
 INFO-FLOW: Linking dut bc code.
 Execute       run_link_or_opt -out C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/cnn_accel/hls/.autopilot/db/a.g.ld.0.bc -args  "C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/cnn_accel/hls/.autopilot/db/conv_pool.g.bc"  
@@ -628,12 +628,12 @@ INFO-FLOW: Done: gen_design_size_report post-opt time: 0 seconds per iteration
 INFO-FLOW: Linking math bc lib
 Execute       run_link_or_opt -out C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/cnn_accel/hls/.autopilot/db/a.g.ld.2.m1.bc -args C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/cnn_accel/hls/.autopilot/db/a.g.ld.1.lower.bc -only-needed C:/Xilinx/2025.1/Vitis/win64/lib/libhlsm_39.bc C:/Xilinx/2025.1/Vitis/win64/lib/libhlsmc++_39.bc 
 INFO-FLOW: run_clang exec: C:/Xilinx/2025.1/Vitis/win64/tools/clang-3.9-csynth/bin/llvm-link C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/cnn_accel/hls/.autopilot/db/a.g.ld.1.lower.bc -only-needed C:/Xilinx/2025.1/Vitis/win64/lib/libhlsm_39.bc C:/Xilinx/2025.1/Vitis/win64/lib/libhlsmc++_39.bc -o C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/cnn_accel/hls/.autopilot/db/a.g.ld.2.m1.bc > C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/cnn_accel/hls/.autopilot/db/a.g.ld.2.m1.bc.llvm-link.out.log 2> C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/cnn_accel/hls/.autopilot/db/a.g.ld.2.m1.bc.llvm-link.err.log
-Command       run_link_or_opt done; 2.087 sec.
+Command       run_link_or_opt done; 2.067 sec.
 Execute       run_link_or_opt -opt -out C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/cnn_accel/hls/.autopilot/db/a.g.ld.3.fpc.bc -args C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/cnn_accel/hls/.autopilot/db/a.g.ld.2.m1.bc -reflow-globaldce -hls-top-function-name=cnn_accel -reflow-float-conversion 
 INFO-FLOW: run_clang exec: C:/Xilinx/2025.1/Vitis/win64/tools/clang-3.9-csynth/bin/opt -pass-remarks-missed=reflow|pasta|unroll|inline -pass-remarks=reflow|pasta|unroll|inline -pass-remarks-output=C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/cnn_accel/hls/.autopilot/db/a.g.ld.3.fpc.bc.opt.diag.yml C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/cnn_accel/hls/.autopilot/db/a.g.ld.2.m1.bc -reflow-globaldce -hls-top-function-name=cnn_accel -reflow-float-conversion -o C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/cnn_accel/hls/.autopilot/db/a.g.ld.3.fpc.bc > C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/cnn_accel/hls/.autopilot/db/a.g.ld.3.fpc.bc.opt.out.log 2> C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/cnn_accel/hls/.autopilot/db/a.g.ld.3.fpc.bc.opt.err.log
 INFO-FLOW: Running: gen_design_size_report post-opt
 INFO-FLOW: Done: gen_design_size_report post-opt time: 0 seconds per iteration
-Command       run_link_or_opt done; 1.041 sec.
+Command       run_link_or_opt done; 0.961 sec.
 Execute       run_link_or_opt -out C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/cnn_accel/hls/.autopilot/db/a.g.ld.4.m2.bc -args C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/cnn_accel/hls/.autopilot/db/a.g.ld.3.fpc.bc -only-needed C:/Xilinx/2025.1/Vitis/win64/lib/libfloatconversion_39.bc 
 INFO-FLOW: run_clang exec: C:/Xilinx/2025.1/Vitis/win64/tools/clang-3.9-csynth/bin/llvm-link C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/cnn_accel/hls/.autopilot/db/a.g.ld.3.fpc.bc -only-needed C:/Xilinx/2025.1/Vitis/win64/lib/libfloatconversion_39.bc -o C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/cnn_accel/hls/.autopilot/db/a.g.ld.4.m2.bc > C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/cnn_accel/hls/.autopilot/db/a.g.ld.4.m2.bc.llvm-link.out.log 2> C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/cnn_accel/hls/.autopilot/db/a.g.ld.4.m2.bc.llvm-link.err.log
 Execute       run_link_or_opt -opt -out C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/cnn_accel/hls/.autopilot/db/a.g.ld.5.gdce.bc -args C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/cnn_accel/hls/.autopilot/db/a.g.ld.4.m2.bc -reflow-globaldce -hls-top-function-name=cnn_accel 
@@ -655,8 +655,8 @@ Execute       send_msg_by_id INFO @200-1995@%s%s%s 2,935 Unroll/Inline (step 3) 
 INFO: [HLS 200-1995] There were 2,935 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details (C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/cnn_accel/hls/syn/report/csynth_design_size.rpt:2)
 Execute       send_msg_by_id INFO @200-1995@%s%s%s 2,935 Unroll/Inline (step 4) (C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/cnn_accel/hls/syn/report/csynth_design_size.rpt:2) 
 INFO: [HLS 200-1995] There were 2,935 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details (C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/cnn_accel/hls/syn/report/csynth_design_size.rpt:2)
-Execute       send_msg_by_id INFO @200-1995@%s%s%s 8,664 Array/Struct (step 1) (C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/cnn_accel/hls/syn/report/csynth_design_size.rpt:2) 
-INFO: [HLS 200-1995] There were 8,664 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details (C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/cnn_accel/hls/syn/report/csynth_design_size.rpt:2)
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 8,664 Array/Struct (C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/cnn_accel/hls/syn/report/csynth_design_size.rpt:2) 
+INFO: [HLS 200-1995] There were 8,664 instructions in the design after the 'Array/Struct' phase of compilation. See the Design Size Report for more details (C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/cnn_accel/hls/syn/report/csynth_design_size.rpt:2)
 Execute       send_msg_by_id INFO @200-1995@%s%s%s 2,826 Array/Struct (step 2) (C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/cnn_accel/hls/syn/report/csynth_design_size.rpt:2) 
 INFO: [HLS 200-1995] There were 2,826 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details (C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/cnn_accel/hls/syn/report/csynth_design_size.rpt:2)
 Execute       send_msg_by_id INFO @200-1995@%s%s%s 2,826 Array/Struct (step 3) (C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/cnn_accel/hls/syn/report/csynth_design_size.rpt:2) 
@@ -715,44 +715,44 @@ INFO: [HLS 214-248] Applying array_partition to '_ZZ9cnn_accelE3LB0': Complete p
 INFO: [HLS 214-248] Applying array_partition to 'win': Complete partitioning on dimension 1. Complete partitioning on dimension 2. Complete partitioning on dimension 3. (../hls_files/conv_pool.cpp:190:28)
 INFO: [HLS 214-248] Applying array_partition to 'weights': Complete partitioning on dimension 2. Complete partitioning on dimension 3. Complete partitioning on dimension 4. (../hls_files/conv_pool.cpp:87:0)
 INFO-FLOW: DBG:PUTS: copy_raw_kernel_xml ap_link_39: kernel.xml not generated: C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/cnn_accel/hls/.autopilot/db/kernel.internal.xml
-INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 15.487 seconds; current allocated memory: 149.969 MB.
-INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.005 seconds; current allocated memory: 149.969 MB.
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 15.614 seconds; current allocated memory: 151.523 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.008 seconds; current allocated memory: 151.523 MB.
 Execute       opt_and_import_c a -opt_level=2 -skip_syncheck=0 -ng=0 -keep_printf=0 
 Execute         cleanup_all_models 
 INFO: [HLS 200-10] Starting code transformations ...
 INFO-FLOW: Running Standard Transforms...
 Execute         transform -hls -share-std-xform -demangle-name -inline-byval-memcpy -always-inline -promote-dbg-pointer -interface-preproc -mem2reg -scalarrepl -mem2reg -keep-read-access -instcombine -dce -promote-dbg-pointer -bitop-raise -loop-simplify -indvarspre -indvars -loop-simplify -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -simplifycfg -mem2reg -globalopt -global-constprop -deadargelim -instcombine -simplifycfg -scalarrepl -instcombine -reassociate -licm -simplifycfg -loop-simplify -indvars -instcombine -simplifycfg -mem2reg -loop-simplify -indvars -instcombine -gvn -gvn -instcombine -adce -break-crit-edges -simplifycfg -loop-delete -global-array-opt -dce -dse -adce -find-syn-modules -top cnn_accel -deadargelim -mem2reg -instcombine -dce -presyn-prepare -interface-preproc -syn-check -check-rec-only -find-region -simplifycfg -func-extr -function-inline -globaldce -mem2reg -instcombine -dce -gvn -globaldce -adce -adse -constprop -instcombine -bit-constprop -instcombine -dce -simplifycfg -bitop-raise -simplifycfg -dce -loop-delete -reassociate -globalopt -global-privatize -mem2reg -dce -global-constprop -pointer-simplify -constprop -dce -promote-dbg-pointer -norm-name C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/cnn_accel/hls/.autopilot/db/a.g.0.bc -o C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/cnn_accel/hls/.autopilot/db/a.g.1.bc -f -phase std-opt 
-Command         transform done; 0.204 sec.
-INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.226 seconds; current allocated memory: 159.402 MB.
+Command         transform done; 0.229 sec.
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.253 seconds; current allocated memory: 160.945 MB.
 INFO: [HLS 200-10] Checking synthesizability ...
 INFO-FLOW: Checking Synthesizability 1/2..
 Execute         transform -hls -syn-check -check-rec-only -scalarrepl -norm-name -dce -mem2reg -instcombine -directive-preproc -mem2reg -dse -dce -dce -pag -array-normalize -instcombine -dce -array-seg-normalize -instcombine -dce -data-pack -instcombine -dce -inst-simplify -array-flatten -instcombine -dce -array-burst -dce -deadargelim -promote-global-argument -simplifycfg -mem2reg -globaldce -dce -deadargelim -dce -instcombine -function-inline -globaldce -dce -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -dse -adse -instcombine -ptrLegalization -simplifycfg -dce -instcombine -pointer-simplify -ptrArgReplace -dce -instcombine -resolve-double-ptr -scalarrepl -norm-name -dce -mem2reg -instcombine -ptrLegalization -simplifycfg -deadargelim -instcombine -dce -inst-simplify -directive-preproc -mem2reg -dse -dce -globaldce C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/cnn_accel/hls/.autopilot/db/a.g.1.bc -o C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/cnn_accel/hls/.autopilot/db/a.g.2.prechk.bc -f 
-Command         transform done; 0.334 sec.
+Command         transform done; 0.364 sec.
 INFO-FLOW: Checking Synthesizability 2/2..
 Execute         transform -syn-check C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/cnn_accel/hls/.autopilot/db/a.g.2.prechk.bc -o C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/cnn_accel/hls/.autopilot/db/a.g.2.bc -f -phase syn-check 
-INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.357 seconds; current allocated memory: 160.797 MB.
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.387 seconds; current allocated memory: 162.309 MB.
 INFO-FLOW: Compiler optimizing ...
 INFO-FLOW: Share syncheck's 1.bc for syn flow: copy C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/cnn_accel/hls/.autopilot/db/a.g.1.bc to C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/cnn_accel/hls/.autopilot/db/a.o.1.bc
 INFO-FLOW: Presyn 1...
 Execute         transform -hls -tmp C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/cnn_accel/hls/.autopilot/db -interface-port-rename -directive-preproc -mem2reg -dse -dce -scalarrepl -norm-name -deadargelim -dce -hls-dead-arg-elim -deadargelim -mem2reg -instcombine -dce -simplifycfg -dce -resource-proc -clib-intrinsic-prepare -dce -func-buffer -dce -pag -array-normalize -func-legal -instcombine -gvn -constprop -dce -simplifycfg -mem2reg -globaldce -resolve-double-ptr -dce -deadargelim -dce -instcombine -ptrArgReplace -mem2reg -dce -array-seg-normalize -deadargelim -instcombine -dce -directive-preproc -mem2reg -dse -dce -pointer-simplify -dce -port-alignment -dce -interface-preproc -data-pack -instcombine -dce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -loop-simplify -indvars -instcombine -gvn -loop-simplify -mem2reg -dce -find-region -instcombine -inst-simplify -interface-preproc -cfgopt -instcombine -indvars -loop-simplify -loop-bound -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -clean-region -attach-range -gvn -inst-simplify -constprop -simplifycfg -dce -pointer-simplify -dce -globalopt -constprop -dce -ptrArgReplace -mem2reg -simplifycfg -dce -instcombine -dce -array-transform-check -array-reshape -instcombine -simplifycfg -dce -ptrArgReplace -deadargelim -mem2reg -instcombine -simplifycfg -dce -indvars -loop-simplify -loop-bound -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -duplicate-dataflow-processes -globaldce -instcombine -array-partition -prepare-dynamic-array-partition -instcombine -simplifycfg -dce -ptrArgReplace -global-constprop -deadargelim -mem2reg -func-legal -dce -global-constprop -deadargelim -mem2reg -simplifycfg -dce -merge-param -deadargelim -globalopt -constprop -dce -ptrArgReplace -mem2reg -simplifycfg -dce -mem-intrinsic-preproc -dce -global-internalize -global-privatize -mem2reg -globaldce -lcssa -loop-simplify -phi-select-elim -promote-global-argument -ptrArgReplace -mem2reg -dce -globalopt -mergereturn -simplify-global-access -mem2reg -dce -pointer-simplify -dce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -functionattrs -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -dce -norm-name -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -accesses-merge -function-inline -complex-op-raise -inst-simplify -globaldce -func-legal -dce -loop-bound -arraycheck -bitwidthmin2 -bitwidthmin2 -on-by-dataflow -loop-delete -instcombine -simplifycfg -globaldce -dce -gvn -deadargelim -dce -loop-simplify -clean-region -simplifycfg -propagate-stable-arguments -instcombine -simplifycfg -dce -globaldce -duplicate-dataflow-processes -stream-intrinsic-preproc -dce -check-ap-stream -loop-simplify -eliminate-keepreads -extract-dataflow-in-loop -loop-simplify -dce -gvn -deadargelim -dse -duplicate-dataflow-processes -check-dataflow-syntax -legalize-stream-variable -globaldce -extract-subproc -global-constprop -deadargelim -globaldce -legalize-global -dce -dead-channel-elimination -canonicalize-gep -globaldce -dce -gvn -hls-dead-arg-elim -deadargelim -canonicalize-dataflow -directive-preproc -dce -globaldce -scalar-preprocessing -scalar-propagation2 -scalar-stream -deadargelim -globaldce -mem2reg -check-dataflow-channels -function-stream -dce -globaldce -prop-fifo-spec -internal-stream-gen -canonicalize-gep -globaldce -dce -gvn -deadargelim -mergereturn -indvars -loop-simplify -instcombine -array-stream -array-seg-normalize -array-partition -clean-array-spec -func-legal -instcombine -simplifycfg -dce -bundle-memfifo-ops -deadargelim -directive-preproc -mem2reg -dse -dce -group-axi-access -licm -simplifycfg -dce -loop-delete -hls-display -norm-name C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/cnn_accel/hls/.autopilot/db/a.o.1.bc -o C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/cnn_accel/hls/.autopilot/db/a.o.1.tmp.bc -f 
-Command         transform done; 0.761 sec.
+Command         transform done; 0.826 sec.
 INFO-FLOW: Presyn 2...
 Execute         transform -hls -keep-callgraph -scalarrepl -mem2reg -port-alignment -attach-range -dce -pipe-mux-gen -indvars -loop-bound -inst-simplify -instcombine -dce -merge-array-access -mem2reg -dce -clean-region -mergereturn -if-conv -instcombine -dce -constprop -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -scalarrepl -mem2reg -global-constprop -deadargelim -deadargelim -instcombine -dce -simplifycfg -ptrArgReplace -mem2reg -function-inline -globaldce -mem2reg -instcombine -dce -expr-balance -instcombine -dce -bitwidthmin2 -bitwidthmin2 -interface-preproc -directive-preproc -inst-rectify -instcombine -dce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -functionattrs -constprop -instcombine -bit-constprop -simplify-global-access -globalopt -globaldce -inst-simplify -instcombine -elimdeaddata -dce -loop-delete -simplifycfg -loop-simplify -barrier -norm-name C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/cnn_accel/hls/.autopilot/db/a.o.1.tmp.bc -o C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/cnn_accel/hls/.autopilot/db/a.o.2.bc -f -phase presyn 
 INFO: [XFORM 203-11] Balancing expressions in function 'cnn_accel' (../hls_files/conv_pool.cpp:51:13)...208 expression(s) balanced.
-Command         transform done; 0.284 sec.
-INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.051 seconds; current allocated memory: 188.695 MB.
+Command         transform done; 0.315 sec.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.146 seconds; current allocated memory: 189.816 MB.
 Execute         transform -hls -auto-function-inline -globaldce -ptrArgReplace -mem2reg -dce -reset-lda -loop-simplify -indvars -aggr-aa -licm -loop-dep -loop-bound -licm -loop-simplify -loop-sink-hoist -flattenloopnest -array-flatten -gvn -instcombine -dce -array-map -dce -func-legal -gvn -adce -instcombine -cfgopt -simplifycfg-lite -loop-simplify -array-burst -promote-global-argument -dce -array-seg-normalize -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -gvn -gvn -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -dse -adse -adce -licm -inst-simplify -dce -globaldce -instcombine -array-stream -eliminate-keepreads -instcombine -dce -deadargelim -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -mem2reg -norm-name -mem2reg -instcombine -dse -adse -adce -ptrLegalization -dce -array-flatten -dce -instcombine -check-doubleptr -loop-rot -constprop -inst-simplify -cfgopt -simplifycfg-lite -loop-simplify -indvars -pointer-simplify -dce -loop-bound -loop-simplify -loop-preproc -constprop -global-constprop -gvn -mem2reg -instcombine -dce -loop-bound -loop-merge -dce -deadargelim -dce -canonicalize-dataflow -dce -deadargelim -globaldce -mem2reg -bram-byte-enable -inst-simplify -inst-rectify -instcombine -adce -deadargelim -load-elim -read-loop-dep -loop-simplify -loop-rewind-sink-hoist -loop-outline -hls-dead-arg-elim -directive-preproc -bitwidthmin2 -bitwidthmin2 -read-loop-dep -interface-preproc -directive-preproc -interface-gen -bram-byte-enable-spec-prop -mul2addshift -deadargelim -inst-simplify -dce -mem2reg -instcombine -gvn -dce -adse -loop-bound -instcombine -cfgopt -simplifycfg-lite -loop-simplify -clean-region -io-protocol -find-region -mem2reg -bitop-raise -complex-op-raise -inst-simplify -inst-rectify -instcombine -gvn -adce -deadargelim -float-op-raise -loop-simplify -phi-opt -bitop-raise -cfgopt -simplifycfg-lite -strip-dead-prototypes -interface-lower -bitop-lower -intrinsic-lower -auto-function-inline -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -inst-simplify -simplifycfg-lite -loop-simplify -mergereturn -inst-simplify -inst-rectify -globaldce -dce -load-elim -bitop-lower -float-op-raise -fma-raise -loop-rewind -pointer-simplify -dce -cfgopt -dce -loop-bound -loop-dep -read-loop-dep -dce -dyn-mem-reuse -dce -recurrence-min -dce -share-scalar-alloca -deadargelim -dce -check-stream -norm-name -legalize -inst-clarity -bitwidth -dce -validate-dataflow -dump-loop-dep-to-ir -check-all-ssdm -drop-inferred-ii -dump-complexity-metric C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/cnn_accel/hls/.autopilot/db/a.o.2.bc -o C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/cnn_accel/hls/.autopilot/db/a.o.3.bc -f -phase build-ssdm 
 INFO: [HLS 200-2061] Successfully converted nested loops 'RowLoop'(../hls_files/conv_pool.cpp:124:5) and 'ColLoop'(../hls_files/conv_pool.cpp:126:9) in function 'cnn_accel' into perfectly nested loops.
 INFO: [XFORM 203-541] Flattening a loop nest 'RowLoop' (../hls_files/conv_pool.cpp:124:5) in function 'cnn_accel'.
 Execute           auto_get_db
-Command         transform done; 0.593 sec.
+Command         transform done; 0.676 sec.
 INFO-FLOW: Building ssdm...
 Execute         transform -hls -cdfg-build C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/cnn_accel/hls/.autopilot/db/a.o.3.bc -o C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/cnn_accel/hls/.autopilot/db/a.o.3.bc -f -phase build-ssdm 
-Command         transform done; 0.22 sec.
-INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.815 seconds; current allocated memory: 196.117 MB.
+Command         transform done; 0.253 sec.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.93 seconds; current allocated memory: 197.219 MB.
 INFO-FLOW: Finish building internal data model.
-Command       opt_and_import_c done; 3.856 sec.
-Command     elaborate done; 25.709 sec.
+Command       opt_and_import_c done; 2.719 sec.
+Command     elaborate done; 24.589 sec.
 Execute     ap_eval exec zip -j C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/cnn_accel/hls/.autopilot/db/dut.hcp $dbDir/a.o.3.bc $dbDir/${topname}.rtl_wrap.cfg.tcl $dbDir/apatb_${topname}.cpp $dbDir/apatb_${topname}_util.cpp $dbDir/apatb_${topname}_ir.ll $dbDir/mapper_${topname}.cpp $dbDir/top-io-fe.xml $dbDir/kernel.internal.xml $workdir/../hls.app 
 Execute     autosyn -from_csynth_design=1 
 INFO: [HLS 200-10] Starting hardware synthesis ...
@@ -774,7 +774,7 @@ INFO-FLOW: Model list for preprocess: cnn_accel_Pipeline_RowLoop_ColLoop cnn_acc
 INFO-FLOW: Preprocessing Module: cnn_accel_Pipeline_RowLoop_ColLoop ...
 Execute       set_default_model cnn_accel_Pipeline_RowLoop_ColLoop 
 Execute       cdfg_preprocess -model cnn_accel_Pipeline_RowLoop_ColLoop 
-Command       cdfg_preprocess done; 0.371 sec.
+Command       cdfg_preprocess done; 0.4 sec.
 Execute       rtl_gen_preprocess cnn_accel_Pipeline_RowLoop_ColLoop 
 INFO-FLOW: Preprocessing Module: cnn_accel ...
 Execute       set_default_model cnn_accel 
@@ -793,14 +793,15 @@ WARNING: [HLS 200-880] The II Violation in module 'cnn_accel_Pipeline_RowLoop_Co
 WARNING: [HLS 200-880] The II Violation in module 'cnn_accel_Pipeline_RowLoop_ColLoop' (loop 'RowLoop_ColLoop'): Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 1) between axis write operation ('fmap_out1_write_ln225', ../hls_files/conv_pool.cpp:225) on port 'fmap_out1' (../hls_files/conv_pool.cpp:225) and axis write operation ('fmap_out1_write_ln225', ../hls_files/conv_pool.cpp:225) on port 'fmap_out1' (../hls_files/conv_pool.cpp:225).
 INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 4, Depth = 8, loop 'RowLoop_ColLoop'
 INFO: [SCHED 204-11] Finished scheduling.
-Command       schedule done; 1.279 sec.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 1.788 seconds; current allocated memory: 215.379 MB.
+Command       schedule done; 1.436 sec.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 1.977 seconds; current allocated memory: 216.859 MB.
 Execute       syn_report -verbosereport -o C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/cnn_accel/hls/.autopilot/db/cnn_accel_Pipeline_RowLoop_ColLoop.verbose.sched.rpt 
 Execute         list_part -family xc7a100t-fgg484-2L 
 Execute           ap_family_info -name xc7a100t-fgg484-2L -data names 
 Execute           ap_part_info -quiet -name xc7a100t-fgg484-2L -data family 
+Command       syn_report done; 0.131 sec.
 Execute       db_write -o C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/cnn_accel/hls/.autopilot/db/cnn_accel_Pipeline_RowLoop_ColLoop.sched.adb -f 
-Command       db_write done; 0.3 sec.
+Command       db_write done; 0.378 sec.
 INFO-FLOW: Finish scheduling cnn_accel_Pipeline_RowLoop_ColLoop.
 Execute       set_default_model cnn_accel_Pipeline_RowLoop_ColLoop 
 Execute       bind -model cnn_accel_Pipeline_RowLoop_ColLoop 
@@ -810,15 +811,15 @@ INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Starting global binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-Command       bind done; 0.768 sec.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.152 seconds; current allocated memory: 217.000 MB.
+Command       bind done; 0.79 sec.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.302 seconds; current allocated memory: 218.062 MB.
 Execute       syn_report -verbosereport -o C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/cnn_accel/hls/.autopilot/db/cnn_accel_Pipeline_RowLoop_ColLoop.verbose.bind.rpt 
 Execute         list_part -family xc7a100t-fgg484-2L 
 Execute           ap_family_info -name xc7a100t-fgg484-2L -data names 
 Execute           ap_part_info -quiet -name xc7a100t-fgg484-2L -data family 
-Command       syn_report done; 0.136 sec.
+Command       syn_report done; 0.166 sec.
 Execute       db_write -o C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/cnn_accel/hls/.autopilot/db/cnn_accel_Pipeline_RowLoop_ColLoop.bind.adb -f 
-Command       db_write done; 0.396 sec.
+Command       db_write done; 0.474 sec.
 INFO-FLOW: Finish binding cnn_accel_Pipeline_RowLoop_ColLoop.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'cnn_accel' 
@@ -827,8 +828,8 @@ Execute       set_default_model cnn_accel
 Execute       schedule -model cnn_accel 
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-Command       schedule done; 0.289 sec.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.824 seconds; current allocated memory: 219.496 MB.
+Command       schedule done; 0.262 sec.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.905 seconds; current allocated memory: 220.625 MB.
 Execute       syn_report -verbosereport -o C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/cnn_accel/hls/.autopilot/db/cnn_accel.verbose.sched.rpt 
 Execute         list_part -family xc7a100t-fgg484-2L 
 Execute           ap_family_info -name xc7a100t-fgg484-2L -data names 
@@ -842,13 +843,13 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.168 seconds; current allocated memory: 220.551 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.186 seconds; current allocated memory: 221.633 MB.
 Execute       syn_report -verbosereport -o C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/cnn_accel/hls/.autopilot/db/cnn_accel.verbose.bind.rpt 
 Execute         list_part -family xc7a100t-fgg484-2L 
 Execute           ap_family_info -name xc7a100t-fgg484-2L -data names 
 Execute           ap_part_info -quiet -name xc7a100t-fgg484-2L -data family 
 Execute       db_write -o C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/cnn_accel/hls/.autopilot/db/cnn_accel.bind.adb -f 
-Command       db_write done; 0.121 sec.
+Command       db_write done; 0.15 sec.
 INFO-FLOW: Finish binding cnn_accel.
 Execute       get_model_list cnn_accel -filter all-wo-channel 
 INFO-FLOW: Preprocessing for RTLGen ...
@@ -864,8 +865,8 @@ INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'cnn_accel_Pipelin
 INFO: [RTGEN 206-100] Generating core module 'mul_16s_16s_32_1_1': 141 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'cnn_accel_Pipeline_RowLoop_ColLoop'.
 INFO: [RTMG 210-278] Implementing memory 'cnn_accel_cnn_accel_Pipeline_RowLoop_ColLoop_LB0_RAM_2P_BRAM_1R1W' using block RAMs.
-Command       create_rtl_model done; 0.787 sec.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.993 seconds; current allocated memory: 234.043 MB.
+Command       create_rtl_model done; 0.903 sec.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.145 seconds; current allocated memory: 235.465 MB.
 Execute       source C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/cnn_accel/hls/.autopilot/db/cnn_accel.rtl_wrap.cfg.tcl 
 Execute       gen_rtl cnn_accel_Pipeline_RowLoop_ColLoop -style xilinx -f -lang vhdl -o C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/cnn_accel/hls/syn/vhdl/cnn_accel_cnn_accel_Pipeline_RowLoop_ColLoop 
 Execute       gen_rtl cnn_accel_Pipeline_RowLoop_ColLoop -style xilinx -f -lang vlog -o C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/cnn_accel/hls/syn/verilog/cnn_accel_cnn_accel_Pipeline_RowLoop_ColLoop 
@@ -873,6 +874,7 @@ Execute       syn_report -csynth -model cnn_accel_Pipeline_RowLoop_ColLoop -o C:
 Execute         list_part -family xc7a100t-fgg484-2L 
 Execute           ap_family_info -name xc7a100t-fgg484-2L -data names 
 Execute           ap_part_info -quiet -name xc7a100t-fgg484-2L -data family 
+Command       syn_report done; 0.115 sec.
 Execute       syn_report -rtlxml -model cnn_accel_Pipeline_RowLoop_ColLoop -o C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/cnn_accel/hls/syn/report/cnn_accel_Pipeline_RowLoop_ColLoop_csynth.xml 
 Execute         list_part -family xc7a100t-fgg484-2L 
 Execute           ap_family_info -name xc7a100t-fgg484-2L -data names 
@@ -881,9 +883,9 @@ Execute       syn_report -verbosereport -model cnn_accel_Pipeline_RowLoop_ColLoo
 Execute         list_part -family xc7a100t-fgg484-2L 
 Execute           ap_family_info -name xc7a100t-fgg484-2L -data names 
 Execute           ap_part_info -quiet -name xc7a100t-fgg484-2L -data family 
-Command       syn_report done; 0.182 sec.
+Command       syn_report done; 0.26 sec.
 Execute       db_write -model cnn_accel_Pipeline_RowLoop_ColLoop -f -o C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/cnn_accel/hls/.autopilot/db/cnn_accel_Pipeline_RowLoop_ColLoop.adb 
-Command       db_write done; 0.474 sec.
+Command       db_write done; 0.604 sec.
 Execute       db_write -model cnn_accel_Pipeline_RowLoop_ColLoop -bindview -o C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/cnn_accel/hls/.autopilot/db/design.bindinfo.xml 
 Execute       gen_tb_info cnn_accel_Pipeline_RowLoop_ColLoop -p C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/cnn_accel/hls/.autopilot/db -o C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/cnn_accel/hls/.autopilot/db/cnn_accel_Pipeline_RowLoop_ColLoop 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -925,8 +927,8 @@ INFO: [RTGEN 206-500] Setting interface mode on port 'cnn_accel/bias' to 's_axil
 INFO: [RTGEN 206-500] Setting interface mode on function 'cnn_accel' to 's_axilite & ap_ctrl_hs'.
 INFO: [RTGEN 206-100] Bundling port 'weights_0_0_0', 'weights_0_0_1', 'weights_0_0_2', 'weights_0_1_0', 'weights_0_1_1', 'weights_0_1_2', 'weights_0_2_0', 'weights_0_2_1', 'weights_0_2_2', 'weights_1_0_0', 'weights_1_0_1', 'weights_1_0_2', 'weights_1_1_0', 'weights_1_1_1', 'weights_1_1_2', 'weights_1_2_0', 'weights_1_2_1', 'weights_1_2_2', 'weights_2_0_0', 'weights_2_0_1', 'weights_2_0_2', 'weights_2_1_0', 'weights_2_1_1', 'weights_2_1_2', 'weights_2_2_0', 'weights_2_2_1', 'weights_2_2_2', 'bias' and 'return' to AXI-Lite port CTRL.
 INFO: [RTGEN 206-100] Finished creating RTL model for 'cnn_accel'.
-Command       create_rtl_model done; 0.191 sec.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 2 seconds. Elapsed time: 3.394 seconds; current allocated memory: 270.469 MB.
+Command       create_rtl_model done; 2.123 sec.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 2 seconds. CPU system time: 2 seconds. Elapsed time: 5.938 seconds; current allocated memory: 271.715 MB.
 Execute       source C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/cnn_accel/hls/.autopilot/db/cnn_accel.rtl_wrap.cfg.tcl 
 Execute       gen_rtl cnn_accel -istop -style xilinx -f -lang vhdl -o C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/cnn_accel/hls/syn/vhdl/cnn_accel 
 Execute       gen_rtl cnn_accel -istop -style xilinx -f -lang vlog -o C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/cnn_accel/hls/syn/verilog/cnn_accel 
@@ -943,7 +945,7 @@ Execute         list_part -family xc7a100t-fgg484-2L
 Execute           ap_family_info -name xc7a100t-fgg484-2L -data names 
 Execute           ap_part_info -quiet -name xc7a100t-fgg484-2L -data family 
 Execute       db_write -model cnn_accel -f -o C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/cnn_accel/hls/.autopilot/db/cnn_accel.adb 
-Command       db_write done; 0.156 sec.
+Command       db_write done; 0.169 sec.
 Execute       db_write -model cnn_accel -bindview -o C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/cnn_accel/hls/.autopilot/db/design.bindinfo.xml 
 Execute       gen_tb_info cnn_accel -p C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/cnn_accel/hls/.autopilot/db -o C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/cnn_accel/hls/.autopilot/db/cnn_accel 
 Execute       export_constraint_db -f -tool general -o C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/cnn_accel/hls/.autopilot/db/cnn_accel.constraint.tcl 
@@ -1018,7 +1020,7 @@ Execute         source C:/Xilinx/2025.1/Vitis/common/technology/xilinx/ip/util.g
 Execute         source C:/Xilinx/2025.1/Vitis/common/technology/xilinx/ip/xfft.gen 
 Execute         source C:/Xilinx/2025.1/Vitis/common/technology/xilinx/ip/xfir.gen 
 Execute         source C:/Xilinx/2025.1/Vitis/common/technology/xilinx/DSP48/dsp48.gen 
-Command       ap_source done; 0.104 sec.
+Command       ap_source done; 0.116 sec.
 INFO-FLOW: DBG:PUTS:   using AESL_AUTOCG::g_clock_period=10.000 (was NA)
 INFO-FLOW: DBG:PROC: ::AESL_AUTOMG::generate_ip_cores gen_sim_model='1' gen_fp_models='0' gen_for_export='0' dstSCDir='' dstVhdlDir='C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/cnn_accel/hls/.autopilot/db/vhdl' dstVlogDir='C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/cnn_accel/hls/.autopilot/db/vlog' tclDir='C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/cnn_accel/hls/.autopilot/db' modelList='cnn_accel_mul_16s_16s_32_1_1
 cnn_accel_cnn_accel_Pipeline_RowLoop_ColLoop_LB0_RAM_2P_BRAM_1R1W
@@ -1038,14 +1040,14 @@ Execute       source C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/cnn
 Execute       source C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/cnn_accel/hls/.autopilot/db/cnn_accel_Pipeline_RowLoop_ColLoop.compgen.tcl 
 Execute       source C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/cnn_accel/hls/.autopilot/db/cnn_accel.compgen.tcl 
 Execute         source ./CTRL.slave.tcl 
-Command       ap_source done; 0.118 sec.
-INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.045 seconds; current allocated memory: 272.000 MB.
+Command       ap_source done; 0.15 sec.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.182 seconds; current allocated memory: 272.574 MB.
 INFO-FLOW: DBG:PROC: ::HLSREPORTS::create_csynth_xml bind_info_var='bind_info' RtlSubPrefix='cnn_accel_' outfile=''
 INFO-FLOW: Running: create_csynth_xml read xml data
 INFO-FLOW: Done: create_csynth_xml read xml data time: 0 seconds per iteration
 INFO-FLOW: Running: create_csynth_xml bind info
 INFO-FLOW: No bind nodes found for module_name cnn_accel
-INFO-FLOW: Done: create_csynth_xml bind info time: 0 seconds per iteration
+INFO-FLOW: Done: create_csynth_xml bind info time: 0.1 seconds per iteration
 INFO-FLOW: Running: create_csynth_xml config info
 INFO-FLOW: Done: create_csynth_xml config info time: 0.6 seconds per iteration
 INFO-FLOW: Running: create_csynth_xml write xml
@@ -1083,14 +1085,605 @@ INFO-FLOW: Running: gen_csynth_sec_pragma
 INFO-FLOW: Done: gen_csynth_sec_pragma time: 0.1 seconds per iteration
 INFO-FLOW: DBG:PUTS:      update_csynth_reports wrote xml
 INFO-FLOW: DBG:PUTS:      update_csynth_reports appended to csynth rpt file
-INFO: [HLS 200-111] Finished Updating report files: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.625 seconds; current allocated memory: 281.355 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 1.732 seconds; current allocated memory: 282.395 MB.
 INFO: [VHDL 208-304] Generating VHDL RTL for cnn_accel.
 INFO: [VLOG 209-307] Generating Verilog RTL for cnn_accel.
 Execute       syn_report -model cnn_accel -printsummary 
 INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were NOT satisfied.
 INFO: [HLS 200-789] **** Estimated Fmax: 141.04 MHz
-Command     autosyn done; 10.895 sec.
-Command   csynth_design done; 37.267 sec.
+Command     autosyn done; 14.276 sec.
+Command   csynth_design done; 39.538 sec.
+Execute   close_project 
+Execute     close_solution 
+Execute       cleanup_all 
+Execute       cleanup_all 
+Execute       source -notrace -encoding utf-8 C:/Xilinx/2025.1/Vitis/tps/tcl/tcl8.6/clock.tcl 
+Execute         source -encoding utf-8 C:/Xilinx/2025.1/Vitis/tps/tcl/tcl8/8.5/msgcat-1.6.1.tm 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/0compatibility/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/amazon-s3/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/asn/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/base32/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/base64/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/bee/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/bench/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/bibtex/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/cache/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/clay/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/clock/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/cmdline/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/comm/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/control/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/coroutine/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/counter/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/crc/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/cron/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/csv/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/debug/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/defer/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/dicttool/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/dns/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/docstrip/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/doctools/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/doctools2base/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/doctools2idx/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/doctools2toc/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/dtplite/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/fileutil/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/ftp/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/ftpd/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/fumagic/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/generator/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/gpx/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/grammar_aycock/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/grammar_fa/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/grammar_me/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/grammar_peg/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/hook/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/html/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/htmlparse/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/http/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/httpd/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/httpwget/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/ident/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/imap4/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/inifile/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/interp/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/irc/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/javascript/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/jpeg/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/json/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/lambda/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/lazyset/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/ldap/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/log/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/map/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/mapproj/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/markdown/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/math/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/md4/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/md5/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/md5crypt/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/mime/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/mkdoc/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/multiplexer/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/namespacex/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/ncgi/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/nettool/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/nmea/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/nns/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/nntp/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/ntp/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/oauth/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/oodialect/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/oometa/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/ooutil/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/otp/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/page/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/pluginmgr/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/png/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/pop3/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/pop3d/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/practcl/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/processman/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/profiler/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/pt/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/rcs/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/report/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/rest/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/ripemd/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/sasl/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/sha1/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/simulation/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/smtpd/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/snit/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/soundex/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/stooop/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/string/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/stringprep/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/struct/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/tar/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/tepam/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/term/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/textutil/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/tie/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/tiff/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/tool/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/transfer/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/treeql/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/try/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/udpcluster/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/uev/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/units/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/uri/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/uuid/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/valtype/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/virtchannel_base/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/virtchannel_core/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/virtchannel_transform/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/websocket/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/wip/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/yaml/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/zip/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/0compatibility/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/amazon-s3/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/asn/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/base32/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/base64/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/bee/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/bench/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/bibtex/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/cache/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/clay/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/clock/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/cmdline/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/comm/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/control/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/coroutine/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/counter/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/crc/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/cron/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/csv/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/debug/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/defer/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/dicttool/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/dns/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/docstrip/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/doctools/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/doctools2base/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/doctools2idx/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/doctools2toc/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/dtplite/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/fileutil/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/ftp/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/ftpd/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/fumagic/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/generator/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/gpx/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/grammar_aycock/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/grammar_fa/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/grammar_me/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/grammar_peg/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/hook/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/html/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/htmlparse/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/http/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/httpd/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/httpwget/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/ident/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/imap4/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/inifile/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/interp/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/irc/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/javascript/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/jpeg/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/json/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/lambda/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/lazyset/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/ldap/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/log/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/map/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/mapproj/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/markdown/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/math/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/md4/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/md5/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/md5crypt/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/mime/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/mkdoc/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/multiplexer/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/namespacex/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/ncgi/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/nettool/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/nmea/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/nns/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/nntp/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/ntp/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/oauth/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/oodialect/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/oometa/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/ooutil/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/otp/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/page/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/pluginmgr/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/png/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/pop3/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/pop3d/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/practcl/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/processman/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/profiler/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/pt/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/rcs/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/report/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/rest/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/ripemd/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/sasl/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/sha1/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/simulation/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/smtpd/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/snit/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/soundex/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/stooop/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/string/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/stringprep/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/struct/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/tar/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/tepam/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/term/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/textutil/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/tie/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/tiff/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/tool/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/transfer/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/treeql/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/try/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/udpcluster/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/uev/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/units/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/uri/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/uuid/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/valtype/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/virtchannel_base/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/virtchannel_core/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/virtchannel_transform/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/websocket/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/wip/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/yaml/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/zip/pkgIndex.tcl 
+Command           ap_source done; 0.132 sec.
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tdom/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcl8.6/opt0.4/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcl8.6/pkgs/win/thread2.8.7/pkgIndex.tcl 
+Command         ap_source done; 0.29 sec.
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/0compatibility/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/amazon-s3/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/asn/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/base32/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/base64/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/bee/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/bench/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/bibtex/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/cache/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/clay/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/clock/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/cmdline/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/comm/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/control/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/coroutine/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/counter/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/crc/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/cron/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/csv/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/debug/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/defer/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/dicttool/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/dns/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/docstrip/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/doctools/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/doctools2base/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/doctools2idx/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/doctools2toc/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/dtplite/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/fileutil/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/ftp/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/ftpd/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/fumagic/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/generator/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/gpx/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/grammar_aycock/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/grammar_fa/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/grammar_me/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/grammar_peg/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/hook/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/html/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/htmlparse/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/http/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/httpd/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/httpwget/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/ident/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/imap4/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/inifile/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/interp/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/irc/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/javascript/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/jpeg/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/json/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/lambda/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/lazyset/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/ldap/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/log/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/map/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/mapproj/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/markdown/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/math/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/md4/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/md5/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/md5crypt/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/mime/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/mkdoc/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/multiplexer/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/namespacex/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/ncgi/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/nettool/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/nmea/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/nns/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/nntp/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/ntp/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/oauth/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/oodialect/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/oometa/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/ooutil/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/otp/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/page/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/pluginmgr/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/png/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/pop3/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/pop3d/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/practcl/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/processman/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/profiler/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/pt/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/rcs/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/report/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/rest/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/ripemd/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/sasl/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/sha1/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/simulation/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/smtpd/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/snit/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/soundex/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/stooop/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/string/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/stringprep/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/struct/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/tar/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/tepam/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/term/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/textutil/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/tie/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/tiff/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/tool/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/transfer/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/treeql/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/try/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/udpcluster/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/uev/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/units/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/uri/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/uuid/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/valtype/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/virtchannel_base/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/virtchannel_core/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/virtchannel_transform/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/websocket/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/wip/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/yaml/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/zip/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/0compatibility/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/amazon-s3/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/asn/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/base32/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/base64/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/bee/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/bench/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/bibtex/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/cache/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/clay/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/clock/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/cmdline/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/comm/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/control/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/coroutine/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/counter/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/crc/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/cron/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/csv/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/debug/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/defer/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/dicttool/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/dns/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/docstrip/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/doctools/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/doctools2base/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/doctools2idx/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/doctools2toc/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/dtplite/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/fileutil/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/ftp/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/ftpd/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/fumagic/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/generator/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/gpx/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/grammar_aycock/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/grammar_fa/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/grammar_me/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/grammar_peg/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/hook/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/html/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/htmlparse/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/http/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/httpd/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/httpwget/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/ident/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/imap4/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/inifile/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/interp/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/irc/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/javascript/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/jpeg/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/json/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/lambda/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/lazyset/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/ldap/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/log/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/map/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/mapproj/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/markdown/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/math/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/md4/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/md5/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/md5crypt/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/mime/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/mkdoc/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/multiplexer/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/namespacex/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/ncgi/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/nettool/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/nmea/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/nns/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/nntp/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/ntp/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/oauth/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/oodialect/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/oometa/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/ooutil/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/otp/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/page/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/pluginmgr/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/png/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/pop3/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/pop3d/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/practcl/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/processman/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/profiler/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/pt/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/rcs/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/report/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/rest/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/ripemd/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/sasl/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/sha1/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/simulation/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/smtpd/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/snit/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/soundex/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/stooop/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/string/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/stringprep/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/struct/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/tar/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/tepam/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/term/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/textutil/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/tie/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/tiff/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/tool/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/transfer/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/treeql/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/try/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/udpcluster/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/uev/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/units/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/uri/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/uuid/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/valtype/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/virtchannel_base/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/virtchannel_core/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/virtchannel_transform/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/websocket/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/wip/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/yaml/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/zip/pkgIndex.tcl 
+Command         ap_source done; 0.129 sec.
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tdom/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcl8.6/opt0.4/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcl8.6/pkgs/win/thread2.8.7/pkgIndex.tcl 
+Command       ap_source done; 0.577 sec.
+INFO-FLOW: Workspace C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/cnn_accel/hls opened at Thu Jul 17 06:14:23 -0700 2025
+Execute       send_msg_by_id INFO @200-1505@%s%s default  vivado 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Execute       send_msg_by_id INFO @200-2174@%s%s component C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/hls_config.cfg 
+INFO: [HLS 200-2174] Applying component config ini file C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/hls_config.cfg
+Execute       apply_ini C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/hls_config.cfg 
+Execute         send_msg_by_id INFO @200-1465@%s 'syn.file=../hls_files/conv_pool.cpp' from C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/hls_config.cfg(12) 
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../hls_files/conv_pool.cpp' from C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/hls_config.cfg(12)
+Execute         add_files C:/Users/ozair/Documents/Code_Drive/Drone/hls_files/conv_pool.cpp 
+INFO: [HLS 200-10] Adding design file 'C:/Users/ozair/Documents/Code_Drive/Drone/hls_files/conv_pool.cpp' to the project
+Execute         send_msg_by_id INFO @200-1465@%s 'tb.file=../hls_files/testbench.cpp' from C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/hls_config.cfg(8) 
+INFO: [HLS 200-1465] Applying config ini 'tb.file=../hls_files/testbench.cpp' from C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/hls_config.cfg(8)
+Execute         add_files -tb C:/Users/ozair/Documents/Code_Drive/Drone/hls_files/testbench.cpp 
+INFO: [HLS 200-10] Adding test bench file 'C:/Users/ozair/Documents/Code_Drive/Drone/hls_files/testbench.cpp' to the project
+Execute         send_msg_by_id INFO @200-1465@%s 'syn.top=cnn_accel' from C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/hls_config.cfg(7) 
+INFO: [HLS 200-1465] Applying config ini 'syn.top=cnn_accel' from C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/hls_config.cfg(7)
+Execute         set_top cnn_accel 
+Execute         send_msg_by_id INFO @200-1465@%s 'flow_target=vivado' from C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/hls_config.cfg(4) 
+INFO: [HLS 200-1465] Applying config ini 'flow_target=vivado' from C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/hls_config.cfg(4)
+Execute         send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute         send_msg_by_id INFO @200-1465@%s 'part=xc7a100tfgg484-2L' from C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/hls_config.cfg(1) 
+INFO: [HLS 200-1465] Applying config ini 'part=xc7a100tfgg484-2L' from C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/hls_config.cfg(1)
+Execute         set_part xc7a100tfgg484-2L 
+Execute           create_platform xc7a100tfgg484-2L -board  
+DBG:HLSDevice: Trying to load device library: C:/Xilinx/2025.1/Vitis\lib\win64.o\xv_hlsvwrap.dll
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: C:/Xilinx/2025.1/Vivado/data/parts/arch.xml
+DBG:HLSDevice: init success
+INFO: [HLS 200-1611] Setting target device to 'xc7a100t-fgg484-2L'
+Command           create_platform done; 0.807 sec.
+Execute           source C:/Xilinx/2025.1/Vitis/common/technology/xilinx/common/xilinx.gen 
+Execute             source C:/Xilinx/2025.1/Vitis/common/technology/xilinx/interface/plb46.gen 
+Execute             source C:/Xilinx/2025.1/Vitis/common/technology/xilinx/interface/axi4.gen 
+Execute             source C:/Xilinx/2025.1/Vitis/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute               source C:/Xilinx/2025.1/Vitis/common/technology/xilinx/interface/saxilite.gen 
+Execute             source C:/Xilinx/2025.1/Vitis/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute             source C:/Xilinx/2025.1/Vitis/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute             source C:/Xilinx/2025.1/Vitis/common/technology/xilinx/ip/dds_compiler.gen 
+Execute             source C:/Xilinx/2025.1/Vitis/common/technology/xilinx/ip/util.gen 
+Execute             source C:/Xilinx/2025.1/Vitis/common/technology/xilinx/ip/xfft.gen 
+Execute             source C:/Xilinx/2025.1/Vitis/common/technology/xilinx/ip/xfir.gen 
+Execute             source C:/Xilinx/2025.1/Vitis/common/technology/xilinx/DSP48/dsp48.gen 
+Command           ap_source done; 0.11 sec.
+Execute           ap_part_info -name xc7a100t-fgg484-2L -data info 
+Execute           config_compile -quiet -complex-mul-dsp=0 
+Command         set_part done; 0.931 sec.
+Execute         send_msg_by_id INFO @200-1465@%s 'clock=10ns' from C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/hls_config.cfg(9) 
+INFO: [HLS 200-1465] Applying config ini 'clock=10ns' from C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/hls_config.cfg(9)
+Execute         create_clock -period 10ns 
+Execute           ap_set_clock -name default -period 10 -unit ns -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute         send_msg_by_id INFO @200-1465@%s 'csim.code_analyzer=1' from C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/hls_config.cfg(10) 
+INFO: [HLS 200-1465] Applying config ini 'csim.code_analyzer=1' from C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/hls_config.cfg(10)
+Execute         config_csim -code_analyzer=1 
+Execute         send_msg_by_id INFO @200-1465@%s 'package.output.format=ip_catalog' from C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/hls_config.cfg(5) 
+INFO: [HLS 200-1465] Applying config ini 'package.output.format=ip_catalog' from C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/hls_config.cfg(5)
+Execute         config_export -format=ip_catalog 
+Execute         send_msg_by_id INFO @200-1465@%s 'syn.dataflow.enable_canonicalization=1' from C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/hls_config.cfg(11) 
+INFO: [HLS 200-1465] Applying config ini 'syn.dataflow.enable_canonicalization=1' from C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/hls_config.cfg(11)
+Execute         config_dataflow -enable_canonicalization=1 
+Command       apply_ini done; 0.99 sec.
+Execute       write_component -config C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/hls_config.cfg 
+Execute         send_msg_by_id INFO @200-2176@%s C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/cnn_accel/vitis-comp.json 
+INFO: [HLS 200-2176] Writing Vitis IDE component file C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/cnn_accel/vitis-comp.json
+Command     open_solution done; 1.605 sec.
+Command   open_component done; 1.61 sec.
+Execute   apply_ini C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/cnn_accel/hls/config.cmdline -iscmdline 
+Execute   ::AP::init_summary_file csim 
+Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
+Execute   csim_design 
+INFO-FLOW: Running SLX 'csim' proc: ::SLX::run_csim
+INFO-FLOW: SLX proc replaces csim
+Command   csim_design done; 40.793 sec.
 Execute   close_project 
 Execute     close_solution 
 Execute       cleanup_all 

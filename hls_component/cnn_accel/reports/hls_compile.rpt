@@ -4,7 +4,7 @@
 == Synthesis Summary Report of 'cnn_accel'
 ================================================================
 + General Information: 
-    * Date:           Thu Jul 17 06:00:31 2025
+    * Date:           Thu Jul 17 06:12:42 2025
     * Version:        2025.1 (Build 6135595 on May 21 2025)
     * Project:        cnn_accel
     * Solution:       hls (Vivado IP Flow Target)

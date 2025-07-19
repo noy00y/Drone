@@ -97,3 +97,20 @@
 04:53:25 INFO  : Terminating Vitis C++ Server
 04:53:25 INFO  : Vitis C++ Server terminated
 04:53:48 INFO  : updated workspace path: C:\Users\ozair\Documents\Code_Drive\Drone
+17:19:58 INFO  : created .gitignore file for the project C:\Users\ozair\Documents\Code_Drive\Drone
+17:19:58 INFO  : updated workspace path: C:\Users\ozair\Documents\Code_Drive\Drone
+19:20:14 INFO  : Syncing Repo id:vitis_libraries type:LIBRARY
+19:20:14 INFO  : Running C:\Xilinx\2025.1\Vivado\tps\win64\git-2.46.0\bin\git clone --filter=blob:none --no-checkout https://github.com/Xilinx/Vitis_Libraries.git . into C:\Users\ozair\.Xilinx\Vitis\2025.1\vitis_libraries
+19:20:16 INFO  : Command output: Cloning into '.'...
+
+19:20:16 INFO  : Running C:\Xilinx\2025.1\Vivado\tps\win64\git-2.46.0\bin\git sparse-checkout set blas codec data_analytics data_compression data_mover database dsp graph hpc motor_control quantitative_finance security solver sparse ultrasound utils vision into C:\Users\ozair\.Xilinx\Vitis\2025.1\vitis_libraries
+19:20:16 INFO  : Command output: 
+19:20:16 INFO  : Running C:\Xilinx\2025.1\Vivado\tps\win64\git-2.46.0\bin\git checkout 2025.1 into C:\Users\ozair\.Xilinx\Vitis\2025.1\vitis_libraries
+19:20:54 INFO  : Command output: branch '2025.1' set up to track 'origin/2025.1'.
+Switched to a new branch '2025.1'
+
+19:26:43 INFO  : connection terminated
+19:26:43 INFO  : connection terminated
+19:26:43 INFO  : scheduling shutdown timer for 2 seconds ...
+19:26:45 INFO  : Terminating Vitis C++ Server
+19:26:46 INFO  : Vitis C++ Server terminated

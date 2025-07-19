@@ -1,4 +1,6 @@
-  fmap_out0 count: 394272
+  fmap_out0 count: 98568
+  fmap_out1 count: 98568
+
 out0[0] = 0
 out0[1] = 0
 out0[2] = 0
@@ -9,3 +11,13 @@ out0[6] = 0
 out0[7] = 0
 out0[8] = 0
 out0[9] = 0
+out1[0] = 0
+out1[1] = 0
+out1[2] = 0
+out1[3] = 0
+out1[4] = 0
+out1[5] = 0
+out1[6] = 0
+out1[7] = 0
+out1[8] = 0
+out1[9] = 0

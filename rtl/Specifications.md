@@ -92,3 +92,152 @@
     - Control: AXI-Lite for register configuration (weights, biases, frame size)
 - **Scalability**:
     - Design must support parameterizable kernel size (K), channels, and feature map counts via generics
+
+## Additional Specification Analysis
+
+# Dev Log
+
+# Specification Analysis:
+
+[GPT Prompt](https://www.notion.so/GPT-Prompt-239d247691ed8081a1c1c3fbf6112dc7?pvs=21)
+
+### Qm.n Data Format for Conv Engine
+
+| Signal | Format | Bit‐width | Range | Notes |
+| --- | --- | --- | --- | --- |
+| **Pixels** | unsigned Q8.0 | 8-bits | [0, 255] | Splitting into R, G, B doesn’t change this—you still treat each as 8-bit unsigned. |
+| **Weights / Bias** | signed Q1.15 | 16-bits | [–2.0, +1.99997] | **Pros:** very fine fractional resolution (≈3×10⁻⁵), ideal for small weights. **Cons:** tiny integer range—if any trained weight/bias exceeds ±2 you’ll saturate. You may need Q2.14 or Q3.13 if your model has larger-magnitude filters. |
+| **DSP product** | Q9.15 | 24-bits | sign + 9 integer bits + 15 fraction bits | 8-bit Q8.0 × 16-bit Q1.15 ⇒ 9 integer bits, 15 frac → 24 bits total (including sign). |
+| **Accumulator** | signed Q14.15* | 29 bits† | sign + 13 integer bits + 15 fraction bits | Summing 27 products: worst case ~27 × 255 ≈ 6 885 → needs 13 integer bits. You’ve budgeted 32 bits, so you get 3 guard bits—good safety margin for headroom and rounding. |
+
+### Pipeline stage breakdown & latency of a single Conv Unit
+
+If you register between each major step of this MAC, your pipeline depth (latency) is roughly:
+
+1. **DSP multiply** → 1 cycle (27 DSPs)
+2. **Adder tree** → 5 pipeline registers (one per level)
+3. **Bias add** → 1 cycle
+4. **Final output register** → 1 cycle
+
+> Total latency ≃ 1 + 5 + 1 + 1 = 8 cycles from when the 3×3 window pixels enter the MAC until Y(r,c) appears.
+> 
+- Because it’s fully pipelined, once filled you get one (or one group of) result every cycle.
+- for now —> a single pipeline register per stage is acceptable, but we may need to increase this
+
+**Multi Engine Scheduling of MAC:**
+
+- we gonna run 4 conv engines in parallel and toggle this with a state bit
+
+**Adder Tree Depth**
+
+- 27 products to sum together per output channel
+- For 27 inputs you need 5 levels (27→14→7→4→2→1).
+
+### Calculating latency & throughput
+
+- **Latency** (first Y appears) = pipeline_depth = ~8 cycles.
+- **Throughput** (engines = E, OC = 8):
+    - You issue one new window every cycle → that window is tagged with a channel-group ID (0…⌈OC/E⌉–1).
+    - Each engine produces E outputs per cycle → you finish all OC outputs in ⌈OC/E⌉ cycles.
+    - **E=4 → ⌈8/4⌉=2 cycles** per pixel to get its full 8-channel vector.
+
+### Additional Notes:
+
+- weights and biases hard coded in rtl
+
+# Symbol Creation
+
+```verilog
+                         ┌────────────────────────────────────┐
+    clk ────────────────▶│                                    │
+    rst_n ──────────────▶│                                    │
+                         │          conv_engine               │
+ pixel_valid ──────────▶│                                    │
+ pixel_ready ◀─────────┤                                    │
+   pixel_in[23:0] ─────▶│       (R,G,B packed as 3×8-bit)   │
+                        │                                    │
+     conv_valid ◀───────┤                                    │
+     conv_ready ───────▶│                                    │
+  conv_data_out[127:0]─▶│   (4 × 32-bit Q14.15 outputs)      │
+                        └────────────────────────────────────┘
+```
+
+Handshake b/w sink (consumer) and source (producer)
+
+- valid - source
+- ready - sink
+
+```verilog
+module conv_engine #(
+  parameter PIXEL_WIDTH   = 8,
+  parameter IC            = 3,
+  parameter OC            = 8,
+  parameter K             = 3,
+  parameter WEIGHT_WIDTH  = 16,
+  parameter ACC_WIDTH     = 32,
+  parameter FRAC_BITS     = 15,
+  parameter PARALLEL      = 4       // engines per pixel
+)(
+  input  wire                     clk,
+  input  wire                     rst_n,
+
+  // input pixel stream
+  input  wire                     pixel_valid, // producer ready to send into our module
+  output wire                     pixel_ready, // conv ready to consume
+  input  wire [IC*PIXEL_WIDTH-1:0] pixel_in, // 24 bits (r, g, b)
+
+  // conv outputs (4 channels per cycle)
+  output wire                     conv_valid, // output ready
+  input  wire                     conv_ready, // downstream ready to recieve
+  output wire [PARALLEL*ACC_WIDTH-1:0] conv_data_out // 128 bit output bus for the current weight batch
+);
+  // … internal instantiations go here …
+endmodule
+
+```
+
+```verilog
+                              ┌──────────────┐
+                              │  state FSM   │◀─(toggles 0↔1 each pixel)
+                              └──────────────┘
+                                       │
+                                       ▼
+┌───────────┐     ┌───────────────┐    ┌─────────────────────────────┐
+│ pixel_in  │────▶ demux to R,G,B ──▶│ line buffers                 │
+│ [23:0]    │     └───────────────┘    │ (2 rows each)x 3 channels   │
+└───────────┘                          └─────────────────────────────┘
+                                            │
+                                            ▼
+                                  ┌────────────────────┐
+                                  │ window_gen × 3     │  
+                                  │ (3×3 window per    │
+                                  │   channel)         │
+                                  └────────────────────┘
+                                            │
+                                            ▼
+                                  ┌────────────────────┐
+                                  │ weight/bias ROM    │
+                                  │  (8×27 weights +   │
+                                  │   8×bias)          │
+                                  └────────────────────┘
+                                            │
+                                            ▼
+                          ┌───────────────────────────────┐
+                          │ 4× conv_PE instances (DSPs)   │
+                          │  • 27 multiplies (3×3×3)      │
+                          │  • adder tree → sum           │
+                          │  • + bias                      │
+                          │  • ReLU (0 if sum<0)          │
+                          └───────────────────────────────┘
+                                            │
+                                            ▼
+                                  ┌────────────────────┐
+                                  │ output registers   │
+                                  │ pack 4×32-bit words│
+                                  └────────────────────┘
+                                            │
+                                            ▼
+                                  conv_data_out[127:0]
+                                      conv_valid
+
+```

@@ -63,8 +63,82 @@ module conv_engine #(
   };
 
   // Weight & bias ROM (hard-coded)
-  // weights_mem[0..7][0..26], bias_mem[0..7]
-  // (Define as localparam arrays or load from an init file)
+  //  weights_mem[channel][kernel_index] = 16-bit signed Q1.15
+  localparam signed [WEIGHT_W-1:0] weights_mem [0:OC-1][0:IC*K*K-1] = '{
+    // Channel 0
+    '{ 16'h0001, 16'h0002, 16'h0003, 16'h0004, 16'h0005, 16'h0006, 16'h0007,
+       16'h0008, 16'h0009, 16'h000A, 16'h000B, 16'h000C, 16'h000D, 16'h000E,
+       16'h000F, 16'h0010, 16'h0011, 16'h0012, 16'h0013, 16'h0014, 16'h0015,
+       16'h0016, 16'h0017, 16'h0018, 16'h0019, 16'h001A, 16'h001B },
+    // Channel 1
+    '{ 16'h0001, 16'h0002, 16'h0003, 16'h0004, 16'h0005, 16'h0006, 16'h0007,
+       16'h0008, 16'h0009, 16'h000A, 16'h000B, 16'h000C, 16'h000D, 16'h000E,
+       16'h000F, 16'h0010, 16'h0011, 16'h0012, 16'h0013, 16'h0014, 16'h0015,
+       16'h0016, 16'h0017, 16'h0018, 16'h0019, 16'h001A, 16'h001B },
+    // Channel 2
+    '{ 16'h0001, 16'h0002, 16'h0003, 16'h0004, 16'h0005, 16'h0006, 16'h0007,
+       16'h0008, 16'h0009, 16'h000A, 16'h000B, 16'h000C, 16'h000D, 16'h000E,
+       16'h000F, 16'h0010, 16'h0011, 16'h0012, 16'h0013, 16'h0014, 16'h0015,
+       16'h0016, 16'h0017, 16'h0018, 16'h0019, 16'h001A, 16'h001B },
+    // Channel 3
+    '{ 16'h0001, 16'h0002, 16'h0003, 16'h0004, 16'h0005, 16'h0006, 16'h0007,
+       16'h0008, 16'h0009, 16'h000A, 16'h000B, 16'h000C, 16'h000D, 16'h000E,
+       16'h000F, 16'h0010, 16'h0011, 16'h0012, 16'h0013, 16'h0014, 16'h0015,
+       16'h0016, 16'h0017, 16'h0018, 16'h0019, 16'h001A, 16'h001B },
+    // Channel 4
+    '{ 16'h0001, 16'h0002, 16'h0003, 16'h0004, 16'h0005, 16'h0006, 16'h0007,
+       16'h0008, 16'h0009, 16'h000A, 16'h000B, 16'h000C, 16'h000D, 16'h000E,
+       16'h000F, 16'h0010, 16'h0011, 16'h0012, 16'h0013, 16'h0014, 16'h0015,
+       16'h0016, 16'h0017, 16'h0018, 16'h0019, 16'h001A, 16'h001B },
+    // Channel 5
+    '{ 16'h0001, 16'h0002, 16'h0003, 16'h0004, 16'h0005, 16'h0006, 16'h0007,
+       16'h0008, 16'h0009, 16'h000A, 16'h000B, 16'h000C, 16'h000D, 16'h000E,
+       16'h000F, 16'h0010, 16'h0011, 16'h0012, 16'h0013, 16'h0014, 16'h0015,
+       16'h0016, 16'h0017, 16'h0018, 16'h0019, 16'h001A, 16'h001B },
+    // Channel 6
+    '{ 16'h0001, 16'h0002, 16'h0003, 16'h0004, 16'h0005, 16'h0006, 16'h0007,
+       16'h0008, 16'h0009, 16'h000A, 16'h000B, 16'h000C, 16'h000D, 16'h000E,
+       16'h000F, 16'h0010, 16'h0011, 16'h0012, 16'h0013, 16'h0014, 16'h0015,
+       16'h0016, 16'h0017, 16'h0018, 16'h0019, 16'h001A, 16'h001B },
+    // Channel 7
+    '{ 16'h0001, 16'h0002, 16'h0003, 16'h0004, 16'h0005, 16'h0006, 16'h0007,
+       16'h0008, 16'h0009, 16'h000A, 16'h000B, 16'h000C, 16'h000D, 16'h000E,
+       16'h000F, 16'h0010, 16'h0011, 16'h0012, 16'h0013, 16'h0014, 16'h0015,
+       16'h0016, 16'h0017, 16'h0018, 16'h0019, 16'h001A, 16'h001B }
+  };
+
+  //  biases (one per output channel), signed Q1.15
+  localparam signed [WEIGHT_W-1:0] bias_mem [0:OC-1] = '{
+    16'h0001,  // bias  for channel 0
+    16'h0002,  // bias  for channel 1
+    16'h0003,  // bias  for channel 2
+    16'h0004,  // bias  for channel 3
+    16'h0005,  // bias  for channel 4
+    16'h0006,  // bias  for channel 5
+    16'h0007,  // bias  for channel 6
+    16'h0008   // bias  for channel 7
+  };
+
+  // --------------------------------------------
+  // 2) Select the 4 weights & biases for this cycle
+  // --------------------------------------------
+  wire [WEIGHT_W*IC*K*K-1:0]  pe_weight [0:PARALLEL-1];
+  wire signed [WEIGHT_W-1:0]  pe_bias   [0:PARALLEL-1];
+
+  genvar j;
+  generate
+    for (j = 0; j < PARALLEL; j = j + 1) begin
+      // if state=0 → channels [0..3], if state=1 → channels [4..7]
+      localparam integer base = (j + PARALLEL*0);
+      localparam integer off  = (j + PARALLEL*1);
+      assign pe_weight[j] = state 
+                           ? { weights_mem[off][0],  weights_mem[off][1],  /*…*/ weights_mem[off][26] }
+                           : { weights_mem[base][0], weights_mem[base][1], /*…*/ weights_mem[base][26] };
+      assign pe_bias[j]   = state 
+                           ? bias_mem[off]
+                           : bias_mem[base];
+    end
+  endgenerate
 
   // Instantiate PARALLEL conv_PEs
   wire [PARALLEL-1:0] pe_valid;
@@ -85,8 +159,8 @@ module conv_engine #(
         .valid_in(all_win_valid),
         .valid_out(pe_valid[i]),
         .window(flat_window),
-        .weight(weights_mem[{state, i}]),  // select weight set
-        .bias(bias_mem[{state, i}]),
+        .weight(pe_weight[i]),  // select weight set
+        .bias(pe_bias[i]),
         .data_out(pe_data[i*ACC_W +: ACC_W])
       );
     end

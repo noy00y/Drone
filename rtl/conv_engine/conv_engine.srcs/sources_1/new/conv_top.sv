@@ -30,7 +30,7 @@ module conv_engine #(
   always @(posedge clk) if (!rst_n) state <= 0; else if (pixel_valid) state <= ~state;
 
   // Instantiate 3× line_buffers + window_gens, one per channel
-  wire [PIXEL_W-1:0] row0    [0:IC-1], row1    [0:IC-1], pixel   [0:IC-1];
+  wire [PIXEL_W-1:0] row2    [0:IC-1], row1    [0:IC-1], row0   [0:IC-1];
   wire [IC-1:0]      win_valid;
   wire [PIXEL_W*9-1:0] window  [0:IC-1];
 
@@ -42,13 +42,13 @@ module conv_engine #(
           .clk(clk), .rst_n(rst_n),
           .din(pixel_in[PIXEL_W*ch +: PIXEL_W]),
           .din_valid(pixel_valid),
-          .row0(row0[ch]), .row1(row1[ch]), .pixel(pixel[ch])
+          .row2(row2[ch]), .row1(row1[ch]), .row0(row0[ch])
         );
 
       window_gen #(.DW(PIXEL_W))
         wg (
           .clk(clk), .rst_n(rst_n),
-          .row0(row0[ch]), .row1(row1[ch]), .pixel(pixel[ch]),
+          .row2(row2[ch]), .row1(row1[ch]), .row0(row0[ch]),
           .valid_in(pixel_valid),
           .window_out(window[ch]),
           .valid_out(win_valid[ch])

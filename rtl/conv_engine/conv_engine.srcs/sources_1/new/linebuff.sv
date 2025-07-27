@@ -10,9 +10,9 @@ module line_buffer #(
   input  wire           rst_n,
   input  wire [DW-1:0]  din,
   input  wire           din_valid,
-  output wire [DW-1:0]  row1,      // oldest line (r-2)
-  output wire [DW-1:0]  row0,      // middle line (r-1)
-  output wire [DW-1:0]  pixel      // newest line/pixel
+  output wire [DW-1:0]  row2,      // oldest line (r-2)
+  output wire [DW-1:0]  row1,      // middle line (r-1)
+  output wire [DW-1:0]  row0      // newest line/pixel
 );
 
   // Index 0 --> Img Width - 1 
@@ -56,8 +56,8 @@ module line_buffer #(
 
   // Outputs --> current cycle taps + current pixel
   // use these 3 pixels to build 1 col in window
-  assign row1 = tap2;
-  assign row0 = tap1;
-  assign pixel = din;
+  assign row2 = tap2;
+  assign row1 = tap1;
+  assign row0 = din;
 
 endmodule

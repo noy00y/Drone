@@ -31,7 +31,7 @@ module conv_engine #(
 
   // Instantiate 3× line_buffers + window_gens, one per channel
   wire [PIXEL_W-1:0] row0    [0:IC-1], row1    [0:IC-1], pixel   [0:IC-1];
-  wire               win_valid[0:IC-1];
+  wire [IC-1:0]      win_valid;
   wire [PIXEL_W*9-1:0] window  [0:IC-1];
 
   genvar ch;

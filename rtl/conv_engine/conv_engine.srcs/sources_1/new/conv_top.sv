@@ -57,7 +57,8 @@ module conv_engine #(
   endgenerate
 
   // Flatten all IC windows into one bus when all valid
-  wire all_win_valid = &win_valid;
+  // wire all_win_valid = &win_valid;
+  wire all_win_valid = win_valid[0] & win_valid[1] & win_valid[2];
   wire [IC*9*PIXEL_W-1:0] flat_window = {
     window[0], window[1], window[2]
   };

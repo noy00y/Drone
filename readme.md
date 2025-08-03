@@ -10,9 +10,8 @@ Self Built Drone Project including the following components
     - Lightweight CNN
 
 ## Currently Working On:
-- Sensor Fushion Algo to mesh together sensor data and estimate the drone’s orientation (roll, pitch, yaw) and position
-- CNN Implementation
+- CNN Implementation for simple target detection (humans, vehicles)
+    - Convolution Processing Block
 
 ## Flight Controller Schematic (Updated Aug 23th):
 ![alt text](save.png)
-

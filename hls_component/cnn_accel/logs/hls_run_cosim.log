@@ -1,4 +1,0 @@
-  **** HLS Build v2025.1 6135595
-INFO: [HLS 200-2005] Using work_dir C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/cnn_accel 
-ERROR: Must run -vppflow 'syn' before 'cosim' (missing file C:/Users/ozair/Documents/Code_Drive/Drone/hls_component/cnn_accel/hls/.autopilot/db/global.setting.tcl)
-INFO: [HLS 200-112] Total CPU user time: 1 seconds. Total CPU system time: 0 seconds. Total elapsed time: 2.992 seconds; peak allocated memory: 32.523 MB.

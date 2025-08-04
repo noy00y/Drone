@@ -1,85 +1,108 @@
 `timescale 1ns / 1ps
-// conv_PE: computes one output channel for a single 3×3×3 window
+// -----------------------------------------------------------------------------
+// Module : conv_PE
+// Purpose: Compute one output feature value for a 3×3×3 convolution window
+//          (single output channel) in two pipeline stages.
+//
+// Author : Ozair Khan
+// -----------------------------------------------------------------------------
+
 module conv_PE #(
-  parameter K             = 3,
-  parameter IC            = 3,
-  parameter PIXEL_W       = 8,    // Q8.0 pixel
-  parameter WEIGHT_W      = 16,   // Q1.15 weight
-  parameter ACC_W         = 32    // Q14.15 accumulator
+  // ---------------------------------------------------------------------------
+  // Parameter definitions
+  // ---------------------------------------------------------------------------
+  parameter int K        = 3,   // Kernel height/width (3×3)
+  parameter int IC       = 3,   // Number of input channels (RGB)
+  parameter int PIXEL_W  = 8,   // Q8.0  unsigned
+  parameter int WEIGHT_W = 16,  // Q1.15 signed
+  parameter int ACC_W    = 32   // Q14.15 accumulator
 )(
-  input  wire                          clk,
-  input  wire                          rst_n,
-  input  wire                          valid_in,
-  output reg                           valid_out,
-  // flat buses for window pixels & weights
-  input  wire [IC*K*K*PIXEL_W-1:0]     window,    // 27×8 = 216 bits
-  input  wire [IC*K*K*WEIGHT_W-1:0]    weight,    // 27×16 = 432 bits
-  input  wire [WEIGHT_W-1:0]           bias,      // 16 bits
-  output reg signed [ACC_W-1:0]        data_out   // 32 bits Q14.15
+  // ---------------------------------------------------------------------------
+  // Port definitions
+  // ---------------------------------------------------------------------------
+  input  logic                           clk,
+  input  logic                           rst_n,      // Active‑low asynchronous reset
+
+  input  logic                           valid_in,   // High for a *single* window
+  input  logic  [IC*K*K*PIXEL_W-1:0]     window,     // Flattened (K×K×IC) pixel window
+  input  logic  [IC*K*K*WEIGHT_W-1:0]    weight,     // Flattened weights for *one* filter
+  input  logic  [WEIGHT_W-1:0]           bias,       // Per‑filter bias (Q1.15)
+
+  output logic                           valid_out,  // Asserted one cycle after valid_in
+  output logic                           busy,       // High while the PE holds data
+  output logic signed [ACC_W-1:0]        data_out    // Convolution result (Q14.15)
 );
 
-  //---- Stage 1 registers: unpack & multiply ----
-  // Use generate to unpack and multiply each of the 27 products
-  reg signed [PIXEL_W-1:0]    pix   [0:IC*K*K-1];
-  reg signed [WEIGHT_W-1:0]   wght  [0:IC*K*K-1];
-  reg signed [PIXEL_W+WEIGHT_W-1:0] prod [0:IC*K*K-1];
+  // ---------------------------------------------------------------------------
+  // Local constants & typedefs
+  // ---------------------------------------------------------------------------
+  localparam int N = IC*K*K;                     // Total MAC operations (27)
+  localparam int MUL_W = PIXEL_W + WEIGHT_W;     // Result width of each multiplication
 
-  integer i;
-  always @(posedge clk) begin
+  // ---------------------------------------------------------------------------
+  // Stage‑0 : combinational multiply‑accumulate (27 MACs + adder tree)
+  // ---------------------------------------------------------------------------
+  // Split flattened buses into arrays for readability
+  logic signed [PIXEL_W-1:0]   pixel    [N-1:0];
+  logic signed [WEIGHT_W-1:0]  weight_s [N-1:0];
+  logic signed [MUL_W-1:0]     prod     [N-1:0];
+
+  // Unpack pixels & weights ----------------------------------------------------
+  genvar g;
+  generate
+    for (g = 0; g < N; g = g + 1) begin : UNPACK
+      assign pixel   [g] = $signed(window [g*PIXEL_W   +: PIXEL_W ]);
+      assign weight_s[g] = $signed(weight [g*WEIGHT_W +: WEIGHT_W]);
+      (* use_dsp = "yes" *) assign prod[g] = pixel[g] * weight_s[g];
+    end
+  endgenerate
+
+  // Tree‑add all partial products (combinational)
+  logic signed [ACC_W-1:0] mac_sum;
+  always_comb begin : MAC_REDUCE
+    mac_sum = '0;
+    for (int i = 0; i < N; i++) begin
+      mac_sum += prod[i];
+    end
+  end
+
+  // Sign‑extend bias to accumulator width
+  logic signed [ACC_W-1:0] bias_ext;
+  assign bias_ext = {{(ACC_W-WEIGHT_W){bias[WEIGHT_W-1]}}, bias};
+
+  // ---------------------------------------------------------------------------
+  // Stage‑1 : register result + handshake logic
+  // ---------------------------------------------------------------------------
+  logic        vld_s0;        // pipeline valid flag (stage‑0) - we have a fresh final conv sum
+  logic signed [ACC_W-1:0] acc_s0; // stage‑0 MAC+bias result
+
+  // Capture MAC result when a new window is accepted --------------------------
+  always_ff @(posedge clk) begin
+    if (!rst_n) begin
+      vld_s0  <= 1'b0;
+      acc_s0  <= '0;
+    end else begin
+      vld_s0  <= valid_in;
+      if (valid_in)
+        acc_s0 <= mac_sum + bias_ext;  // Add bias once per window
+    end
+  end
+
+  // Output stage: one‑cycle latency after vld_s0 ------------------------------
+  always_ff @(posedge clk) begin
     if (!rst_n) begin
       valid_out <= 1'b0;
+      data_out  <= '0;
     end else begin
-      if (valid_in) begin
-        // unpack pixels & weights
-        for (i = 0; i < IC*K*K; i = i + 1) begin
-          pix[i]  <= window[PIXEL_W*i +: PIXEL_W];
-          wght[i] <= weight[WEIGHT_W*i +: WEIGHT_W];
-          prod[i] <= $signed(pix[i]) * $signed(wght[i]);
-        end
-      end
+      valid_out <= vld_s0;
+      if (vld_s0)
+        data_out <= acc_s0;
     end
   end
 
-  //---- Stage 2: balanced adder-tree ----
-  // We'll do a two-level tree: sum pairs, then sum results
-  reg signed [ACC_W-1:0] sum_lvl1 [0:(IC*K*K)/2-1];
-  reg signed [ACC_W-1:0] sum_lvl2;
-  always @(posedge clk) begin
-    if (!rst_n) begin
-      sum_lvl2    <= 0;
-      sum_lvl1[0] <= 0;
-    end else if (valid_in) begin
-      // level-1: sum pairs of prod[]
-      for (i = 0; i < (IC*K*K)/2; i = i + 1) begin
-        sum_lvl1[i] <= prod[2*i] + prod[2*i+1];
-      end
-      // level-2: sum all sum_lvl1[]
-      sum_lvl2 = 0;
-      for (i = 0; i < (IC*K*K)/2; i = i + 1) begin
-        sum_lvl2 = sum_lvl2 + sum_lvl1[i];
-      end
-    end
-  end
-
-  //---- Stage 3: add bias & ReLU, register output ----
-  always @(posedge clk) begin
-    if (!rst_n) begin
-      valid_out <= 1'b0;
-      data_out  <= 0;
-    end else begin
-      if (valid_in) begin
-        // bias is Q1.15; extend to Q14.15
-        // sum_lvl2 is Q9.15+log₂27→Q14.15
-        // so can just add
-        data_out  <= (sum_lvl2 + $signed({{(ACC_W-WEIGHT_W){bias[WEIGHT_W-1]}}, bias})) < 0
-                     ? 0
-                     : sum_lvl2 + $signed({{(ACC_W-WEIGHT_W){bias[WEIGHT_W-1]}}, bias});
-        valid_out <= 1'b1;
-      end else begin
-        valid_out <= 1'b0;
-      end
-    end
-  end
+  // ---------------------------------------------------------------------------
+  // Busy flag – asserted while any stage of the pipeline is active
+  // ---------------------------------------------------------------------------
+  assign busy = valid_in | vld_s0 | valid_out;
 
 endmodule
-

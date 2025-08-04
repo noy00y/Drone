@@ -1,6 +1,0 @@
-Time resolution is 1 ps
-[45000]     ALL_ONES : result = 27 (0x1b)
-[75000]  RAMP_PIXELS : result = 378 (0x17a)
-[105000]    BIAS_ONLY : result = 16384 (0x4000)
-[160000] All tests completed.
-$finish called at time : 160 ns : File "C:/Users/ozair/Documents/Code_Drive/Drone/rtl/conv_engine/conv_engine.srcs/sim_1/new/tb_conv_PE.sv" Line 119

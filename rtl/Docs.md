@@ -241,3 +241,6 @@ endmodule
                                       conv_valid
 
 ```
+
+
+![simulation.png](simulation.png)

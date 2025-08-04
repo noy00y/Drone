@@ -51,18 +51,18 @@ module conv_PE_tb;
     input logic [WEIGHT_W-1:0]      b
   );
     begin
-      @(negedge clk);
+      @(posedge clk);
       window   <= win;
       weight   <= wgt;
       bias     <= b;
       valid_in <= 1'b1;
-      @(negedge clk);
+      @(posedge clk);
       valid_in <= 1'b0;
       // Wait for output
       wait (valid_out);
       $display("[%0t] %-12s : result = %0d (0x%0h)", $time, name, data_out, data_out);
       // Wait one more cycle to clear pipeline
-      @(negedge clk);
+      @(posedge clk);
     end
   endtask
 
@@ -75,7 +75,7 @@ module conv_PE_tb;
     bias     = '0;
 
     // Hold reset for two cycles
-    repeat (2) @(negedge clk);
+    repeat (2) @(posedge clk);
     rst_n = 1;
 
     // ---------------------------------------------------------

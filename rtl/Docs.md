@@ -63,7 +63,6 @@
 - **Target Clock Frequency**: 100 MHz
 - **Throughput**: One output pixel per cycle after pipeline fill
     - 100 million pixels/sec → For 224×224 frame (50 176 pixels), max ≈ 1 993 frames/sec
-    - If valid padding (222×222 output), 49 284 pixels → ≈ 2 029 fps
 - **Pipeline Latency**:
     - Line buffer fill latency = 2 rows = 2×224 = 448 cycles
     - Window register pipeline = ~2 cycles
@@ -73,33 +72,6 @@
     - DSP48E: 27 (multipliers) + 8 (accumulate/bias) = 35 total
     - BRAM_18K: 8 (weights) + 3×2 (line buffers) + 8 (output FIFOs) = 22 blocks
     - LUT/FF: Sliding windows ~3×3×3 channels × 224 regs; additional logic
-
-### Constraints
-
-- **FPGA Resources**:
-    - Xilinx Artix‑7 XC7A100T: 240 DSPs, 270 BRAM_18K, 63 400 LUTs, 126 800 FFs
-    - Must keep DSP usage ≤ 80% (≤ 192 DSPs) for margin
-    - BRAM usage ≤ 75% (≤ 202 blocks)
-- **Timing**:
-    - Meet setup/hold at 100 MHz across DSP and BRAM interfaces
-    - Provide <10 ns hold margin for interconnect
-- **Data Precision**:
-    - Fixed-point Q2.14 (16-bit) to balance dynamic range vs resource usage
-- **Power/Area**:
-    - Estimated dynamic power ≤ 2 W for MAC unit at 100 MHz
-- **Interface Protocols**:
-    - Input: AXI4-Stream (TVALID/TREADY handshake)
-    - Control: AXI-Lite for register configuration (weights, biases, frame size)
-- **Scalability**:
-    - Design must support parameterizable kernel size (K), channels, and feature map counts via generics
-
-## Additional Specification Analysis
-
-# Dev Log
-
-# Specification Analysis:
-
-[GPT Prompt](https://www.notion.so/GPT-Prompt-239d247691ed8081a1c1c3fbf6112dc7?pvs=21)
 
 ### Qm.n Data Format for Conv Engine
 
@@ -242,5 +214,6 @@ endmodule
 
 ```
 
-
+# Simulation and Synthesis
 ![simulation.png](simulation.png)
+![resource](resource_util.png)

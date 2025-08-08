@@ -10,7 +10,7 @@ module conv_PE_tb;
   localparam int PIXEL_W  = 8;
   localparam int WEIGHT_W = 16;
   localparam int ACC_W    = 32;
-  localparam int N        = IC*K*K;
+  localparam int N        = IC*K*K; // 27 pixels
 
   // === Clock / reset generation ===
   logic clk = 0;
@@ -66,6 +66,7 @@ module conv_PE_tb;
     end
   endtask
 
+
   // === Initial sequence ===
   initial begin
     // Initial values
@@ -112,6 +113,7 @@ module conv_PE_tb;
              {N{16'sd0}},
              16'sh4000               // 0.5
     );
+
 
     // Finish simulation
     #50;

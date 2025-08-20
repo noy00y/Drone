@@ -119,12 +119,12 @@ run_test("MIXED_SIGNS_ROUND",
   { 8'd5,8'd12,8'd0,8'd255,8'd128,8'd127,8'd64,8'd33,8'd1,
      8'd9,8'd2,8'd3,8'd4,8'd5,8'd6,8'd7,8'd8,8'd9,
      8'd10,8'd11,8'd12,8'd13,8'd14,8'd15,8'd16,8'd17,8'd18 },
-  // Weights in Q1.15 ~ {+1.0, -1.0, +0.5, -0.5, +0.25, -0.25, ...}
-  {16'sh7FFF,16'sh8000,16'sh4000,16'shC000,16'sh2000,16'shE000,
-    16'sh1000,16'shF000,16'sh0800,16'shF800,16'sh0400,16'shFC00,
-    16'sh0200,16'shFE00,16'sh0100,16'shFF00,16'sh0080,16'shFF80,
-    16'sh0040,16'shFFC0,16'sh0020,16'shFFE0,16'sh0010,16'shFFF0,
-    16'sh0008,16'shFFF8,16'sh0004},
+  // Weights in Q2.14 ~ {+1.0, -1.0, +0.5, -0.5, +0.25, -0.25, ...}
+  {16'sh4000,16'shC000,16'sh2000,16'shE000,16'sh1000,16'shF000,
+  16'sh0800,16'shF800,16'sh0400,16'shFC00,16'sh0200,16'shFE00,
+  16'sh0100,16'shFF00,16'sh0080,16'shFF80,16'sh0040,16'shFFC0,
+  16'sh0020,16'shFFE0,16'sh0010,16'shFFF0,16'sh0008,16'shFFF8,
+  16'sh0004,16'shFFFC,16'sh0002},
   16'sh0001 // tiny bias
 //16'sd0
 );
@@ -132,17 +132,16 @@ run_test("MIXED_SIGNS_ROUND",
 // All pixels at 255, weights near +1.0 forces large positive sum
 run_test("SAT_MAX",
   {N{8'd255}},
-  {N{16'sh7FFF}},
-  16'sh7FFF
+  {N{16'sh4000}},
+  16'sh4000
 );
 
 // All pixels at 255, weights near -1.0 forces large negative sum
 run_test("SAT_MIN",
   {N{8'd255}},
-  {N{16'sh8000}},
-  16'sh8000
+  {N{16'shBFFF}},
+  16'shBFFF
 );
-
 
     // Finish simulation
     #50;

@@ -14,7 +14,7 @@ module conv_PE #(
   parameter int K        = 3,   // Kernel height/width (3×3)
   parameter int IC       = 3,   // Number of input channels (RGB)
   parameter int PIXEL_W  = 8,   // Q8.0  unsigned
-  parameter int WEIGHT_W = 16,  // Q1.15 signed
+  parameter int WEIGHT_W = 16,  // Q2.14 signed
   parameter int ACC_W    = 32   // Q14.15 accumulator
 )(
   // ---------------------------------------------------------------------------

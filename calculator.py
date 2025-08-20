@@ -1,7 +1,7 @@
 # fxp_conv.py
 from typing import List, Literal
 
-Frac = 15  # Q1.15
+Frac = 14  # Q1.15
 
 def sat_signed(value: int, bits: int) -> int:
     lo = -(1 << (bits - 1))
@@ -61,11 +61,11 @@ if __name__ == "__main__":
     pixels = [5,12,0,255,128,127,64,33,1,
               9,2,3,4,5,6,7,8,9,
               10,11,12,13,14,15,16,17,18]
-    weights_hex = ["7FFF","8000","4000","C000","2000","E000",
-                   "1000","F000","0800","F800","0400","FC00",
-                   "0200","FE00","0100","FF00","0080","FF80",
-                   "0040","FFC0","0020","FFE0","0010","FFF0",
-                   "0008","FFF8","0004"]
+    weights_hex = ["4000","C000","2000","E000","1000","F000",
+        "0800","F800","0400","FC00","0200","FE00",
+        "0100","FF00","0080","FF80","0040","FFC0",
+        "0020","FFE0","0010","FFF0","0008","FFF8",
+        "0004","FFFC","0002"]
     weights = [int(h,16) if int(h,16) < 0x8000 else int(h,16)-0x10000 for h in weights_hex]
     bias = 0x0001  # tiny bias
 
@@ -81,6 +81,6 @@ if __name__ == "__main__":
     print(f">>15 nearest±: {y_rns}")
     print(f">>15 nearestE: {y_rne}")
 
-    # If your module outputs 16-bit Q1.15, apply saturation at 16 bits:
+    # Saturation at 16 bits:
     q15_packed = pack_q15_with_saturation(acc_q15_raw)
     print(f"Saturated Q1.15 (16b): 0x{(q15_packed & 0xFFFF):04X}")

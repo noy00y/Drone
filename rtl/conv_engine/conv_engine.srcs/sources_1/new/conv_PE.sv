@@ -14,7 +14,7 @@ module conv_PE #(
   parameter int K        = 3,   // Kernel height/width (3×3)
   parameter int IC       = 3,   // Number of input channels (RGB)
   parameter int PIXEL_W  = 8,   // Q8.0  unsigned
-  parameter int WEIGHT_W = 16,  // Q1.15 signed
+  parameter int WEIGHT_W = 16,  // Q2.14 signed
   parameter int ACC_W    = 32   // Q14.15 accumulator
 )(
   // ---------------------------------------------------------------------------
@@ -37,13 +37,14 @@ module conv_PE #(
   // Local constants & typedefs
   // ---------------------------------------------------------------------------
   localparam int N = IC*K*K;                     // Total MAC operations (27)
-  localparam int MUL_W = PIXEL_W + WEIGHT_W;     // Result width of each multiplication
+  localparam int MUL_W = 1 + PIXEL_W + WEIGHT_W;     // Result width of each multiplication 
+                                                 // note: pixel is 0 extended
 
   // ---------------------------------------------------------------------------
   // Stage‑0 : combinational multiply‑accumulate (27 MACs + adder tree)
   // ---------------------------------------------------------------------------
   // Split flattened buses into arrays for readability
-  logic signed [PIXEL_W-1:0]   pixel    [N-1:0];
+  logic [PIXEL_W-1:0]   pixel    [N-1:0];
   logic signed [WEIGHT_W-1:0]  weight_s [N-1:0];
   logic signed [MUL_W-1:0]     prod     [N-1:0];
 
@@ -51,9 +52,10 @@ module conv_PE #(
   genvar g;
   generate
     for (g = 0; g < N; g = g + 1) begin : UNPACK
-      assign pixel   [g] = $signed(window [g*PIXEL_W   +: PIXEL_W ]);
+      assign pixel   [g] = window [g*PIXEL_W   +: PIXEL_W ];
       assign weight_s[g] = $signed(weight [g*WEIGHT_W +: WEIGHT_W]);
-      (* use_dsp = "yes" *) assign prod[g] = pixel[g] * weight_s[g];
+      // (* use_dsp = "yes" *) assign prod[g] = pixel[g] * weight_s[g];
+      (* use_dsp = "yes" *) assign prod[g] = $signed({1'b0, pixel[g]}) * weight_s[g];
     end
   endgenerate
 

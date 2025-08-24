@@ -37,7 +37,8 @@ always_ff @(posedge clk) begin
     if (!rst_n) begin
         // Reset signals
         busy <= 1'b0;
-       
+        valid_ch <= 1'b0;
+
         pix_r <= '0;
         pix_b <= '0;
         pix_g <= '0;
@@ -45,8 +46,8 @@ always_ff @(posedge clk) begin
         pix_r <= pixel_in[23:16];
         pix_g <= pixel_in[15:8];
         pix_b <= pixel_in[7:0];
-        valid_ch <= valid_in;
     end
+    valid_ch <= valid_in;
 end
 
 // Window Module Instantiation for each single channel pixel:

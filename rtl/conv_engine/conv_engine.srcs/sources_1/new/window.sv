@@ -23,7 +23,7 @@ module window #(
   input  logic                           clk,
   input  logic                           rst_n,      // Active‑low asynchronous reset
   input  logic                           valid_in,   // High for a pixel
-  input  logic [F_PIXEL_W-1:0]           pixel_in, // 24-bit RGB pixel
+  input  logic [PIXEL_W-1:0]             pixel_in,   // 8-bit single channel pixel
 
   output logic                           valid_out,  
   output logic                           busy,       // High while module is processing??

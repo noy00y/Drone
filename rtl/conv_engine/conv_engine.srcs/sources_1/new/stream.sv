@@ -22,27 +22,24 @@ module stream #(
   // ---------------------------------------------------------------------------
   input  logic                           clk,
   input  logic                           rst_n,      // Active‑low asynchronous reset
-  input  logic                           valid_in,   // High for a pixel
+  input  logic                           valid_in,   // High for a 24 bit pixel
   input  logic [F_PIXEL_W-1:0]           pixel_in,
 
-  output logic                           valid_out,  
-  output logic                           busy,
+  output logic                           busy
 );
 
-// Unpacked Pixel Streams:
+// Unpacked Pixel Streams and sync signals:
 logic [PIXEL_W-1:0] pix_r, pix_g, pix_b;
 
 // sequentially stream in pixels and send downstream to form each window 
 always_ff @(posedge clk) begin
     if (!rst_n) begin
         // Reset signals
+        busy <= 1'b0;
+       
         pix_r <= '0;
         pix_b <= '0;
         pix_g <= '0;
-
-        valid_out <= 1'b0;
-        busy <= 1'b0;
-        data_out <= '0;
     end else if (valid_in) begin
         pix_r <= pixel_in[23:16];
         pix_g <= pixel_in[15:8];
@@ -53,23 +50,46 @@ end
 // Window Module Instantiation for each single channel pixel:
 // R channel
 window #(
-
+    .K (K),
+    .IC (IC),
+    .F_PIXEL_W (F_PIXEL_W),
+    .PIXEL_W (PIXEL_W),
+    .IMG_H (IMG_H),
+    .IMG_W (IMG_W)
 ) i_win_r (
-
+    .clk (clk),
+    .rst_n (rst_n),
+    .valid_in (valid_in),
+    .pixel_in (pix_r)
 );
 
 // G channel
 window #(
-
+    .K (K),
+    .IC (IC),
+    .F_PIXEL_W (F_PIXEL_W),
+    .PIXEL_W (PIXEL_W),
+    .IMG_H (IMG_H),
+    .IMG_W (IMG_W)
 ) i_win_g (
-
+    .clk (clk),
+    .rst_n (rst_n),
+    .valid_in (valid_in),
+    .pixel_in (pix_g)
 );
 
 // B channel
 window #(
-
+    .K (K),
+    .IC (IC),
+    .F_PIXEL_W (F_PIXEL_W),
+    .PIXEL_W (PIXEL_W),
+    .IMG_H (IMG_H),
+    .IMG_W (IMG_W)
 ) i_win_b (
-
+    .clk (clk),
+    .rst_n (rst_n),
+    .valid_in (valid_in),
+    .pixel_in (pix_b)
 );
-
 endmodule

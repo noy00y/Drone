@@ -21,7 +21,7 @@ module conv_PE #(
   // Port definitions
   // ---------------------------------------------------------------------------
   input  logic                           clk,
-  input  logic                           rst_n,      // Active‑low asynchronous reset
+  input  logic                           rst_n,      // Active‑low sync reset
 
   input  logic                           valid_in,   // High for a *single* window
   input  logic  [IC*K*K*PIXEL_W-1:0]     window,     // Flattened (K×K×IC) pixel window

@@ -21,7 +21,7 @@ module stream #(
   // Port definitions
   // ---------------------------------------------------------------------------
   input  logic                           clk,
-  input  logic                           rst_n,      // Active‑low asynchronous reset
+  input  logic                           rst_n,      // Active‑low sync reset
   input  logic                           valid_in,   // High for a 24 bit pixel
   input  logic [F_PIXEL_W-1:0]           pixel_in,
 
@@ -30,6 +30,7 @@ module stream #(
 
 // Unpacked Pixel Streams and sync signals:
 logic [PIXEL_W-1:0] pix_r, pix_g, pix_b;
+logic valid_ch;
 
 // sequentially stream in pixels and send downstream to form each window 
 always_ff @(posedge clk) begin
@@ -44,6 +45,7 @@ always_ff @(posedge clk) begin
         pix_r <= pixel_in[23:16];
         pix_g <= pixel_in[15:8];
         pix_b <= pixel_in[7:0];
+        valid_ch <= valid_in;
     end
 end
 
@@ -59,7 +61,7 @@ window #(
 ) i_win_r (
     .clk (clk),
     .rst_n (rst_n),
-    .valid_in (valid_in),
+    .valid_in (valid_ch),
     .pixel_in (pix_r)
 );
 
@@ -74,7 +76,7 @@ window #(
 ) i_win_g (
     .clk (clk),
     .rst_n (rst_n),
-    .valid_in (valid_in),
+    .valid_in (valid_ch),
     .pixel_in (pix_g)
 );
 
@@ -89,7 +91,7 @@ window #(
 ) i_win_b (
     .clk (clk),
     .rst_n (rst_n),
-    .valid_in (valid_in),
+    .valid_in (valid_ch),
     .pixel_in (pix_b)
 );
 endmodule

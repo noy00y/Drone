@@ -21,7 +21,7 @@ module window #(
   // Port definitions
   // ---------------------------------------------------------------------------
   input  logic                           clk,
-  input  logic                           rst_n,      // Active‑low asynchronous reset
+  input  logic                           rst_n,      // Active‑low sync reset
   input  logic                           valid_in,   // High for a pixel
   input  logic [PIXEL_W-1:0]             pixel_in,   // 8-bit single channel pixel
 

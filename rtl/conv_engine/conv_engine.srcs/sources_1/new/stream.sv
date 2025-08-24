@@ -1,7 +1,7 @@
 `timescale 1ns / 1ps
 // -----------------------------------------------------------------------------
 // Module : stream
-// Purpose: Stream input pixels and output 3x3x3 output windows (27 pixels)
+// Purpose: stream rgb pixel in, unpack it and send single channel pixels downstream
 //
 // Author : Ozair Khan
 // -----------------------------------------------------------------------------
@@ -49,4 +49,27 @@ always_ff @(posedge clk) begin
         pix_b <= pixel_in[7:0];
     end
 end
+
+// Window Module Instantiation for each single channel pixel:
+// R channel
+window #(
+
+) i_win_r (
+
+);
+
+// G channel
+window #(
+
+) i_win_g (
+
+);
+
+// B channel
+window #(
+
+) i_win_b (
+
+);
+
 endmodule

@@ -1,12 +1,12 @@
 `timescale 1ns / 1ps
 // -----------------------------------------------------------------------------
-// Module : stream
-// Purpose: stream rgb pixel in, unpack it and send single channel pixels downstream
+// Module : Conv1 processing block top module
+// Purpose: Top module for conv1
 //
 // Author : Ozair Khan
 // -----------------------------------------------------------------------------
 
-module stream #(
+module conv1_top #(
   // ---------------------------------------------------------------------------
   // Parameter definitions
   // ---------------------------------------------------------------------------
@@ -26,7 +26,16 @@ module stream #(
   input  logic [F_PIXEL_W-1:0]           pixel_in,
 
   output logic                           busy
+  output logic                           valid_out
 );
+
+// ---------------------------------------------------------------------------
+// Declarations
+// ---------------------------------------------------------------------------
+// Typedefs:
+typedef logic [K*K*PIXEL_W-1:0] win_t; // single channel 3x3 window type
+// localparam int O_IMG_H = IMG_H - K + 1;
+// localparam int O_IMG_W = IMG_W - K + 1;
 
 // Unpacked Pixel Streams and sync signals:
 logic [PIXEL_W-1:0] pix_r, pix_g, pix_b;
@@ -38,7 +47,6 @@ always_ff @(posedge clk) begin
         // Reset signals
         busy <= 1'b0;
         valid_ch <= 1'b0;
-
         pix_r <= '0;
         pix_b <= '0;
         pix_g <= '0;
@@ -50,7 +58,10 @@ always_ff @(posedge clk) begin
     valid_ch <= valid_in;
 end
 
-// Window Module Instantiation for each single channel pixel:
+// Window Module Instantiation for each single channel pixel
+win_t win_r, win_g, win_b;
+logic valid_r, valid_g, valid_b, valid_rgb; // sync signals
+
 // R channel
 window #(
     .K (K),
@@ -63,7 +74,9 @@ window #(
     .clk (clk),
     .rst_n (rst_n),
     .valid_in (valid_ch),
-    .pixel_in (pix_r)
+    .pixel_in (pix_r),
+    .valid_out (valid_r),
+    .data_out (win_r)
 );
 
 // G channel
@@ -78,7 +91,9 @@ window #(
     .clk (clk),
     .rst_n (rst_n),
     .valid_in (valid_ch),
-    .pixel_in (pix_g)
+    .pixel_in (pix_g),
+    .valid_out (valid_g),
+    .data_out (win_g)
 );
 
 // B channel
@@ -93,6 +108,8 @@ window #(
     .clk (clk),
     .rst_n (rst_n),
     .valid_in (valid_ch),
-    .pixel_in (pix_b)
+    .pixel_in (pix_b),
+    .valid_out (valid_b),
+    .data_out (win_b)
 );
 endmodule

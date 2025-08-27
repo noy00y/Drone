@@ -54,9 +54,18 @@ module window #(
       busy <= 1'b0;
       data_out <= '0;
     end else if (valid_in) begin
-    // on each valid pixel P(r,c)
-    // LB0[0] <= P(r, c), LB0[1] <= LB0[0], ..., LB0[n] <= LB0[n-1]
-    // LB1[0] <= LB0[n], LB1[1] <= LB1[0], ..., LB1[n] <= LB1[n-1]
+    /* 
+    on each valid pixel P(r,c) we update our linebufs and shift regs as follows
+    Line Buffers:
+      - LB0[0] <= P(r, c), LB0[1] <= LB0[0], ..., LB0[n] <= LB0[n-1]
+      - LB1[0] <= LB0[n], LB1[1] <= LB1[0], ..., LB1[n] <= LB1[n-1] 
+    Shift Regs:
+      - SRC[0] <= P(r, c), SRC[1] <= LB0[n], SRC[2] <= LB1[n]
+      - SRB[0] <= SRC[0], SRB[1] <= SRC[1], SRB[2] <= SRC[2]
+      - SRA[0] <= SRB[0], SRA[1] <= SRB[1], SRA[2] <= SRB[2]
+      - * old SRA gets dumped I think *
+    */
+    
 
     end
   end

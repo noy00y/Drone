@@ -32,8 +32,9 @@ module window #(
 
   // Line Buffers:
   // Current pixel: P(r, c)
-  logic [PIXEL_W-1:0] LB0 [IMG_W-1:0]; // LB0 - 1 row above P(r-1, _)
-  logic [PIXEL_W-1:0] LB1 [IMG_W-1:0]; // LB1 - 2 rows above P(r-2, _)
+  logic [PIXEL_W-1:0] LB0 [IMG_W-1:0]; // LB0 - current row P(r, _)
+  logic [PIXEL_W-1:0] LB1 [IMG_W-1:0]; // LB1 - 1 row above P(r-1, _)
+  logic [PIXEL_W-1:0] LB2 [IMG_W-1:0]; // LB2 - 2 rows above P(r-2, _)
 
   // Shift Regs:
   // Current pixel: P(r, c)
@@ -41,32 +42,55 @@ module window #(
   logic [PIXEL_W-1:0] SRB [K-1:0]; // SRB - 1 col to left P(_, c-1)
   logic [PIXEL_W-1:0] SRC [K-1:0]; // SRC - current col P(_, c)
 
-  // Sequentially populating the line buffers and shift registers:
+  // Counters:
+  logic [$clog2(IMG_W):0] col_cnt; 
+  logic [$clog2(IMG_W):0] row_cnt;
+
+  // Reset Signals and Regs
   always_ff @(posedge clk) begin
     if (!rst_n) begin
-      // Zero out shift regs:
       SRA <= '{default: '0};
       SRB <= '{default: '0};
       SRC <= '{default: '0};
 
-      // Reset signals
+      col_cnt <= 0;
+      row_cnt <= 0;
+
       valid_out <= 1'b0;
       busy <= 1'b0;
       data_out <= '0;
-    end else if (valid_in) begin
-    /* 
-    on each valid pixel P(r,c) we update our linebufs and shift regs as follows
-    Line Buffers:
-      - LB0[0] <= P(r, c), LB0[1] <= LB0[0], ..., LB0[n] <= LB0[n-1]
-      - LB1[0] <= LB0[n], LB1[1] <= LB1[0], ..., LB1[n] <= LB1[n-1] 
-    Shift Regs:
-      - SRC[0] <= P(r, c), SRC[1] <= LB0[n], SRC[2] <= LB1[n]
-      - SRB[0] <= SRC[0], SRB[1] <= SRC[1], SRB[2] <= SRC[2]
-      - SRA[0] <= SRB[0], SRA[1] <= SRB[1], SRA[2] <= SRB[2]
-      - * old SRA gets dumped I think *
-    */
+    end 
     
-
+    // Update Counters
+    else if (valid_in) begin
+      if (col_cnt == IMG_W-1) begin
+        col_cnt <= 0;
+        row_cnt <= row_cnt + 1;
+      end else begin
+        col_cnt <= col_cnt + 1;
+      end
     end
   end
+
+/* 
+on each valid pixel P(r,c) we update our linebufs and shift regs as follows
+Line Buffers:
+  - LB0[0] <= P(r, c), LB0[1] <= LB0[0], ..., LB0[n] <= LB0[n-1]
+  - LB1[0] <= LB0[n], LB1[1] <= LB1[0], ..., LB1[n] <= LB1[n-1] 
+Shift Regs:
+  - SRC[0] <= P(r, c), SRC[1] <= LB0[n], SRC[2] <= LB1[n]
+  - SRB[0] <= SRC[0], SRB[1] <= SRC[1], SRB[2] <= SRC[2]
+  - SRA[0] <= SRB[0], SRA[1] <= SRB[1], SRA[2] <= SRB[2]
+  - * old SRA gets dumped I think *
+*/
+  // Line Buffering
+  always_ff @(posedge clk) begin
+    if (valid_in) begin
+      // Write curr pixel into line buf 0 and update curr col of shift regs
+      LB0[col_cnt] <= pixel_in; 
+      SRC[0] <= pixel_in;
+      SRC[1] <= LB
+    end
+  end
+
 endmodule

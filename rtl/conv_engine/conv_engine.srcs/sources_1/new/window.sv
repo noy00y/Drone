@@ -106,40 +106,36 @@ module window #(
   end else begin
     valid_out <= 1'b1; // default: no output
     if (valid_in) begin
-      // Read
+      // Read from rows and write to bank
       logic [PIXEL_W-1:0] pix_r1, pix_r2; // P(r-1, c), P(r-2, c)
       pix_r1 = lb_read(b_p1, col_idx);
       pix_r2 = lb_read(b_p2, col_idx);
+      lb_write(b_curr, col_idx, pixel_in);
 
-      /
+      // Shift Cols:
+      SRA[2] <= SRB[2]; SRB[2] <= SRC[2]; SRC[2] <= pix_p2;
+      SRA[1] <= SRB[1]; SRB[1] <= SRC[1]; SRC[1] <= pix_p1;
+      SRA[0] <= SRB[0]; SRB[0] <= SRC[0]; SRC[0] <= pixel_in;
 
-      // Update Line buff 0 and shift regs
-      LB0[col_idx] <= pixel_in; 
+      // Produce output once ≥2 rows/cols
+      if ((row_idx >= 2) && (col_idx >= 2)) begin
+        data_out <= curr_window;
+        valid_out <= 1'b1;
+      end
 
-      SRA[2] <= SRB[2];
-      SRA[1] <= SRB[1];
-      SRA[0] <= SRB[0];
-
-      SRB[2] <= SRC[2];
-      SRB[1] <= SRC[1];
-      SRB[0] <= SRC[0];
-
-      SRC[0] <= pixel_in;
-      SRC[1] <= LB1[col_idx];
-      SRC[2] <= LB2[col_idx];
-
-      // increment row and copy line_bufs
+      // If EOL -> rotate linebufs and increment rows
       if (col_idx == IMG_W-1) begin
-        col_idx <= 0;
-        row_idx <= row_idx + 1;
+        col_idx <= '0;
+        {b_curr, b_p1, b_p1} <= {b_p2, b_curr, b_p1};
 
-        // Moving Line Bufs down
-        LB2 <= LB1;
-        LB1 <= LB0;
+        if (row_idx != IMG_H-1) begin
+          row_idx <= row_idx + 1;
+        end
       end else begin
         col_idx <= col_idx + 1;
       end
     end
   end
-
+  // Busy while valid_in and no data_out
+  assign busy = valid_in && !data_out
 endmodule

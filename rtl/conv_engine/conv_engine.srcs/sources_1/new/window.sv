@@ -43,8 +43,8 @@ module window #(
   logic [PIXEL_W-1:0] SRC [K-1:0]; // SRC - current col P(_, c)
 
   // Counters:
-  logic [$clog2(IMG_W):0] col_cnt; 
-  logic [$clog2(IMG_W):0] row_cnt;
+  logic [$clog2(IMG_W):0] col_idx; 
+  logic [$clog2(IMG_W):0] row_idx;
 
   // Reset Signals and Regs
   always_ff @(posedge clk) begin
@@ -53,8 +53,8 @@ module window #(
       SRB <= '{default: '0};
       SRC <= '{default: '0};
 
-      col_cnt <= 0;
-      row_cnt <= 0;
+      col_idx <= 0;
+      row_idx <= 0;
 
       valid_out <= 1'b0;
       busy <= 1'b0;
@@ -63,33 +63,37 @@ module window #(
     
     // Update Counters
     else if (valid_in) begin
+      // increment row and copy line_bufs
       if (col_cnt == IMG_W-1) begin
-        col_cnt <= 0;
-        row_cnt <= row_cnt + 1;
+        col_idx <= 0;
+        row_idx <= row_idx + 1;
+
+        // Moving Line Bufs down
+        LB2 <= LB1;
+        LB1 <= LB0;
       end else begin
-        col_cnt <= col_cnt + 1;
+        col_idx <= col_idx + 1;
       end
     end
   end
 
-/* 
-on each valid pixel P(r,c) we update our linebufs and shift regs as follows
-Line Buffers:
-  - LB0[0] <= P(r, c), LB0[1] <= LB0[0], ..., LB0[n] <= LB0[n-1]
-  - LB1[0] <= LB0[n], LB1[1] <= LB1[0], ..., LB1[n] <= LB1[n-1] 
-Shift Regs:
-  - SRC[0] <= P(r, c), SRC[1] <= LB0[n], SRC[2] <= LB1[n]
-  - SRB[0] <= SRC[0], SRB[1] <= SRC[1], SRB[2] <= SRC[2]
-  - SRA[0] <= SRB[0], SRA[1] <= SRB[1], SRA[2] <= SRB[2]
-  - * old SRA gets dumped I think *
-*/
   // Line Buffering
   always_ff @(posedge clk) begin
     if (valid_in) begin
-      // Write curr pixel into line buf 0 and update curr col of shift regs
-      LB0[col_cnt] <= pixel_in; 
+      // Update Line buff 0 and shift regs
+      LB0[col_idx] <= pixel_in; 
+
+      SRA[2] <= SRB[2];
+      SRA[1] <= SRB[1];
+      SRA[0] <= SRB[0];
+
+      SRB[2] <= SRC[2];
+      SRB[1] <= SRC[1];
+      SRB[0] <= SRC[0];
+
       SRC[0] <= pixel_in;
-      SRC[1] <= LB
+      SRC[1] <= LB1[col_idx];
+      SRC[2] <= LB2[col_idx];
     end
   end
 

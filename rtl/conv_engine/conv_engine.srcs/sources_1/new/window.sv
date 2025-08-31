@@ -1,7 +1,7 @@
 `timescale 1ns / 1ps
 // -----------------------------------------------------------------------------
 // Module : window
-// Purpose: Stream input pixels and output 3x3 output windows (9 pixels)
+// Purpose: Stream 8 bit pixels and output 3x3 output windows
 //
 // Author : Ozair Khan
 // -----------------------------------------------------------------------------
@@ -30,11 +30,11 @@ module window #(
   output logic [K*K*PIXEL_W-1:0]         data_out    // Flattened (K×K) pixel window
 );
 
-  // Line Buffers:
+  // Line Buffers (BRAM):
   // Current pixel: P(r, c)
-  logic [PIXEL_W-1:0] LB0 [IMG_W-1:0]; // LB0 - current row P(r, _)
-  logic [PIXEL_W-1:0] LB1 [IMG_W-1:0]; // LB1 - 1 row above P(r-1, _)
-  logic [PIXEL_W-1:0] LB2 [IMG_W-1:0]; // LB2 - 2 rows above P(r-2, _)
+  (* ram_style="block"*) logic [PIXEL_W-1:0] LB0 [IMG_W-1:0]; // LB0 - current row P(r, _)
+  (* ram_style="block"*) logic [PIXEL_W-1:0] LB1 [IMG_W-1:0]; // LB1 - 1 row above P(r-1, _)
+  (* ram_style="block"*) logic [PIXEL_W-1:0] LB2 [IMG_W-1:0]; // LB2 - 2 rows above P(r-2, _)
 
   // Shift Regs:
   // Current pixel: P(r, c)
@@ -42,9 +42,48 @@ module window #(
   logic [PIXEL_W-1:0] SRB [K-1:0]; // SRB - 1 col to left P(_, c-1)
   logic [PIXEL_W-1:0] SRC [K-1:0]; // SRC - current col P(_, c)
 
+  // Current Banks 
+    // b_curr - write
+    // b_p1 - (r-1)
+    // b_p2 - (r-2)
+  logic [1:0] b_curr, b_p1, b_p2;
+
   // Counters:
   logic [$clog2(IMG_W):0] col_idx; 
   logic [$clog2(IMG_W):0] row_idx;
+
+  // Reading and Writing to Banks
+  // - cheaper to this then to copy whole BRAM rows
+  function automatic logic [PIXEL_W-1:0] lb_read(input logic [1:0] bank, input logic [IMG_W-1:0] addr);
+    case (bank)
+      2'd0: lb_read = lb0[addr];
+      2'd1: lb_read = lb1[addr];
+      2'd2: lb_read = lb2[addr];
+      default: lb_read = '0;
+    endcase
+  endfunction
+
+  task automatic lb_write(input logic [1:0] bank, input logic [IMG_W-1:0] addr, input logic [PIXEL_W-1:0] din);
+    begin
+      case (bank)
+        2'd0: lb0[addr] <= din;
+        2'd1: lb1[addr] <= din;
+        2'd2: lb2[addr] <= din;
+        default:; // no op
+      endcase
+    end 
+  endtask
+
+  // Combinationally Assemble Window:
+  logic [K*K*PIXEL_W-1:0] curr_window;
+
+  always_comb begin
+    curr_window = {
+      SRA[2], SRB[2], SRC[2],
+      SRA[1], SRB[1], SRC[1],
+      SRA[0], SRB[0], SRC[0],
+    };
+  end
 
   // Reset Signals and Regs
   always_ff @(posedge clk) begin
@@ -64,7 +103,7 @@ module window #(
     // Update Counters
     else if (valid_in) begin
       // increment row and copy line_bufs
-      if (col_cnt == IMG_W-1) begin
+      if (col_idx == IMG_W-1) begin
         col_idx <= 0;
         row_idx <= row_idx + 1;
 

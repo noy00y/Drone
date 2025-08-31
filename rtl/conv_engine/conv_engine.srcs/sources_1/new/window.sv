@@ -94,7 +94,7 @@ module window #(
 
       col_idx <= 0;
       row_idx <= 0;
-      b_cur <= 2'd0;
+      b_curr <= 2'd0;
       b_p1 <= 2'd1;
       b_p2 <= 2'd2;
 
@@ -113,8 +113,8 @@ module window #(
       lb_write(b_curr, col_idx, pixel_in);
 
       // Shift Cols:
-      SRA[2] <= SRB[2]; SRB[2] <= SRC[2]; SRC[2] <= pix_p2;
-      SRA[1] <= SRB[1]; SRB[1] <= SRC[1]; SRC[1] <= pix_p1;
+      SRA[2] <= SRB[2]; SRB[2] <= SRC[2]; SRC[2] <= pix_r2;
+      SRA[1] <= SRB[1]; SRB[1] <= SRC[1]; SRC[1] <= pix_r1;
       SRA[0] <= SRB[0]; SRB[0] <= SRC[0]; SRC[0] <= pixel_in;
 
       // Produce output once ≥2 rows/cols

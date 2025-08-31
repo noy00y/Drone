@@ -76,7 +76,6 @@ module window #(
 
   // Combinationally Assemble Window:
   logic [K*K*PIXEL_W-1:0] curr_window;
-
   always_comb begin
     curr_window = {
       SRA[2], SRB[2], SRC[2],
@@ -85,8 +84,9 @@ module window #(
     };
   end
 
-  // Reset Signals and Regs
+  // Main Sequential Block
   always_ff @(posedge clk) begin
+    // Reset Signals and Regs
     if (!rst_n) begin
       SRA <= '{default: '0};
       SRB <= '{default: '0};
@@ -94,31 +94,25 @@ module window #(
 
       col_idx <= 0;
       row_idx <= 0;
+      b_cur <= 2'd0;
+      b_p1 <= 2'd1;
+      b_p2 <= 2'd2;
 
       valid_out <= 1'b0;
       busy <= 1'b0;
       data_out <= '0;
-    end 
-    
-    // Update Counters
-    else if (valid_in) begin
-      // increment row and copy line_bufs
-      if (col_idx == IMG_W-1) begin
-        col_idx <= 0;
-        row_idx <= row_idx + 1;
-
-        // Moving Line Bufs down
-        LB2 <= LB1;
-        LB1 <= LB0;
-      end else begin
-        col_idx <= col_idx + 1;
-      end
     end
-  end
 
-  // Line Buffering
-  always_ff @(posedge clk) begin
+  end else begin
+    valid_out <= 1'b1; // default: no output
     if (valid_in) begin
+      // Read
+      logic [PIXEL_W-1:0] pix_r1, pix_r2; // P(r-1, c), P(r-2, c)
+      pix_r1 = lb_read(b_p1, col_idx);
+      pix_r2 = lb_read(b_p2, col_idx);
+
+      /
+
       // Update Line buff 0 and shift regs
       LB0[col_idx] <= pixel_in; 
 
@@ -133,6 +127,18 @@ module window #(
       SRC[0] <= pixel_in;
       SRC[1] <= LB1[col_idx];
       SRC[2] <= LB2[col_idx];
+
+      // increment row and copy line_bufs
+      if (col_idx == IMG_W-1) begin
+        col_idx <= 0;
+        row_idx <= row_idx + 1;
+
+        // Moving Line Bufs down
+        LB2 <= LB1;
+        LB1 <= LB0;
+      end else begin
+        col_idx <= col_idx + 1;
+      end
     end
   end
 

@@ -49,8 +49,9 @@ module window #(
   logic [1:0] b_curr, b_p1, b_p2;
 
   // Counters:
-  logic [$clog2(IMG_W):0] col_idx; 
-  logic [$clog2(IMG_H):0] row_idx;
+  // $clog2(224) = 8 bit wide signal width for counter
+  logic [$clog2(IMG_W)-1:0] col_idx; 
+  logic [$clog2(IMG_H)-1:0] row_idx;
 
   // Reading and Writing to Banks
   // - cheaper to this then to copy whole BRAM rows

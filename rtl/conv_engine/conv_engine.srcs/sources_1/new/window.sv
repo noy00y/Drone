@@ -29,7 +29,9 @@ module window #(
   output logic                           busy,       
   output logic [K*K*PIXEL_W-1:0]         data_out    // Flattened (K×K) pixel window
 );
-
+// ---------------------------------------------------------------------------
+// Signals, Registers and Logic
+// ---------------------------------------------------------------------------
   // Line Buffers (BRAM):
   // Current pixel: P(r, c)
   (* ram_style="block"*) logic [PIXEL_W-1:0] LB0 [IMG_W-1:0]; // LB0 - current row P(r, _)
@@ -43,9 +45,9 @@ module window #(
   logic [PIXEL_W-1:0] SRC [K-1:0]; // SRC - current col P(_, c)
 
   // Current Banks 
-    // b_curr - write
-    // b_p1 - (r-1)
-    // b_p2 - (r-2)
+    // b_curr - write (r)
+    // b_p1 - read (r-1)
+    // b_p2 - read (r-2)
   logic [1:0] b_curr, b_p1, b_p2;
 
   // Counters:
@@ -55,7 +57,10 @@ module window #(
 
   // Reading and Writing to Banks
   // - cheaper to this then to copy whole BRAM rows
-  function automatic logic [PIXEL_W-1:0] lb_read(input logic [1:0] bank, input logic [IMG_W-1:0] addr);
+  function automatic logic [PIXEL_W-1:0] lb_read(
+    input logic [1:0] bank, 
+    input logic [$clog2(IMG_W)-1:0] addr
+  );
     case (bank)
       2'd0: lb_read = LB1[addr];
       2'd1: lb_read = LB1[addr];
@@ -64,7 +69,11 @@ module window #(
     endcase
   endfunction
 
-  task automatic lb_write(input logic [1:0] bank, input logic [IMG_W-1:0] addr, input logic [PIXEL_W-1:0] din);
+  task automatic lb_write(
+    input logic [1:0] bank, 
+    input logic [$clog2(IMG_W)-1:0] addr, 
+    input logic [PIXEL_W-1:0] din
+  );
     begin
       case (bank)
         2'd0: LB0[addr] <= din;
@@ -74,6 +83,15 @@ module window #(
       endcase
     end 
   endtask
+
+  // Declarations for Sync BRAM Reads:
+  logic [$clog2(IMG_W)-1:0] raddr;
+  logic [PIXEL_W-1:0] LB1_q, LB1_q, LB2_q; // registered data outputs (1 cycle after raddr)
+  // Control for data
+  logic [1:0] b_p1_d, b_p2_d;
+  logic window_ready, window_ready_d;
+  logic eol, eol_d;
+  logic [PIXEL_W-1:0] pixel_in_d;
 
   // Combinationally Assemble Window:
   logic [K*K*PIXEL_W-1:0] curr_window;

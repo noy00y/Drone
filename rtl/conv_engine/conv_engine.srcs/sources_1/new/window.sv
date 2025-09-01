@@ -49,16 +49,17 @@ module window #(
   logic [1:0] b_curr, b_p1, b_p2;
 
   // Counters:
-  logic [$clog2(IMG_W):0] col_idx; 
-  logic [$clog2(IMG_W):0] row_idx;
+  // $clog2(224) = 8 bit wide signal width for counter
+  logic [$clog2(IMG_W)-1:0] col_idx; 
+  logic [$clog2(IMG_H)-1:0] row_idx;
 
   // Reading and Writing to Banks
   // - cheaper to this then to copy whole BRAM rows
   function automatic logic [PIXEL_W-1:0] lb_read(input logic [1:0] bank, input logic [IMG_W-1:0] addr);
     case (bank)
-      2'd0: lb_read = lb0[addr];
-      2'd1: lb_read = lb1[addr];
-      2'd2: lb_read = lb2[addr];
+      2'd0: lb_read = LB1[addr];
+      2'd1: lb_read = LB1[addr];
+      2'd2: lb_read = LB2[addr];
       default: lb_read = '0;
     endcase
   endfunction
@@ -66,9 +67,9 @@ module window #(
   task automatic lb_write(input logic [1:0] bank, input logic [IMG_W-1:0] addr, input logic [PIXEL_W-1:0] din);
     begin
       case (bank)
-        2'd0: lb0[addr] <= din;
-        2'd1: lb1[addr] <= din;
-        2'd2: lb2[addr] <= din;
+        2'd0: LB0[addr] <= din;
+        2'd1: LB1[addr] <= din;
+        2'd2: LB2[addr] <= din;
         default:; // no op
       endcase
     end 
@@ -80,9 +81,12 @@ module window #(
     curr_window = {
       SRA[2], SRB[2], SRC[2],
       SRA[1], SRB[1], SRC[1],
-      SRA[0], SRB[0], SRC[0],
+      SRA[0], SRB[0], SRC[0]
     };
   end
+
+  // First window ready
+  wire first_window = (row_idx >= 2) && (col_idz >= 2);
 
   // Main Sequential Block
   always_ff @(posedge clk) begin
@@ -99,12 +103,10 @@ module window #(
       b_p2 <= 2'd2;
 
       valid_out <= 1'b0;
-      busy <= 1'b0;
       data_out <= '0;
-    end
+    end else begin
 
-  end else begin
-    valid_out <= 1'b1; // default: no output
+    valid_out <= 1'b0; // default: no output
     if (valid_in) begin
       // Read from rows and write to bank
       logic [PIXEL_W-1:0] pix_r1, pix_r2; // P(r-1, c), P(r-2, c)
@@ -118,7 +120,7 @@ module window #(
       SRA[0] <= SRB[0]; SRB[0] <= SRC[0]; SRC[0] <= pixel_in;
 
       // Produce output once ≥2 rows/cols
-      if ((row_idx >= 2) && (col_idx >= 2)) begin
+      if (first_window) begin
         data_out <= curr_window;
         valid_out <= 1'b1;
       end
@@ -126,7 +128,7 @@ module window #(
       // If EOL -> rotate linebufs and increment rows
       if (col_idx == IMG_W-1) begin
         col_idx <= '0;
-        {b_curr, b_p1, b_p1} <= {b_p2, b_curr, b_p1};
+        {b_curr, b_p1, b_p2} <= {b_p2, b_curr, b_p1};
 
         if (row_idx != IMG_H-1) begin
           row_idx <= row_idx + 1;
@@ -136,6 +138,8 @@ module window #(
       end
     end
   end
-  // Busy while valid_in and no data_out
-  assign busy = valid_in && !data_out
+  end
+
+  // Busy while valid_in and still generating the first window
+  assign busy = valid_in && !first_window;
 endmodule

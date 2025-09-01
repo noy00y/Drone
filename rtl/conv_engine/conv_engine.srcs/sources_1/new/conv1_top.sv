@@ -25,7 +25,7 @@ module conv1_top #(
   input  logic                           valid_in,   // High for a 24 bit pixel
   input  logic [F_PIXEL_W-1:0]           pixel_in,
 
-  output logic                           busy
+  output logic                           busy,
   output logic                           valid_out
 );
 

@@ -57,7 +57,7 @@ module window #(
 
   // Declarations for Sync BRAM Reads:
   logic [$clog2(IMG_W)-1:0] raddr;
-  logic [PIXEL_W-1:0] LB1_q, LB1_q, LB2_q; // registered data outputs (1 cycle after raddr)
+  logic [PIXEL_W-1:0] LB0_q, LB1_q, LB2_q; // registered data outputs (1 cycle after raddr)
   // Control for data
   logic [1:0] b_p1_d, b_p2_d;
   logic eol, eol_d;
@@ -90,7 +90,7 @@ module window #(
   end
 
   // Compute flags for current cycle:
-  assign first_window = (row_idx >= 2) && (col_idz >= 2); 
+  assign first_window = (row_idx >= 2) && (col_idx >= 2); 
   assign eol = valid_in && (col_idx == IMG_W-1);
 
   // Main Sequential Block

@@ -12,7 +12,6 @@ module window #(
   // ---------------------------------------------------------------------------
   parameter int K         = 3,   // Kernel height/width (3×3)
   parameter int IC        = 3,   // Number of input channels (RGB)
-  parameter int F_PIXEL_W = 24,  // Fully packed pixel (24 bit containing rgb)
   parameter int PIXEL_W   = 8,   // Q8.0  unsigned
   parameter int IMG_H     = 224,
   parameter int IMG_W     = 224
@@ -26,7 +25,7 @@ module window #(
   input  logic [PIXEL_W-1:0]             pixel_in,   // 8-bit single channel pixel
 
   output logic                           valid_out,  
-  output logic                           busy,       
+  output logic                           busy,       // !busy - ready to consume another pixel from upstream
   output logic [K*K*PIXEL_W-1:0]         data_out    // Flattened (K×K) pixel window
 );
   // ---------------------------------------------------------------------------
@@ -40,7 +39,7 @@ module window #(
 
   // Shift Regs:
   // Current pixel: P(r, c)
-  logic [PIXEL_W-1:0] SRA [K-1:0]; // SRB - 1 col to left P(_, c-1)// SRA - 2 col to left P(_, c-2)
+  logic [PIXEL_W-1:0] SRA [K-1:0]; // SRA - 2 col to left P(_, c-2)
   logic [PIXEL_W-1:0] SRB [K-1:0]; // SRB - 1 col to left P(_, c-1)
   logic [PIXEL_W-1:0] SRC [K-1:0]; // SRC - current col P(_, c)
 

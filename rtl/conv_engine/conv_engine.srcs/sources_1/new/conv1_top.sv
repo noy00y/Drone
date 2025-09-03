@@ -41,6 +41,13 @@ typedef logic [K*K*PIXEL_W-1:0] win_t; // single channel 3x3 window type
 logic [PIXEL_W-1:0] pix_r, pix_g, pix_b;
 logic valid_ch;
 
+// Handshaking Signals:
+logic ready_r, ready_g, ready_b, ready_rgb; // send pixels to windows only when the window packer is ready to accept
+assign ready_rgb = ready_r & ready_g & ready_b;
+
+logic [PIXEL_W-1:0] reg_r, reg_g, reg_b; // register pixels while waiting
+logic valid_win;
+
 // sequentially stream in pixels and send downstream to form each window 
 always_ff @(posedge clk) begin
     if (!rst_n) begin

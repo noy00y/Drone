@@ -37,16 +37,12 @@ typedef logic [K*K*PIXEL_W-1:0] win_t; // single channel 3x3 window type
 // localparam int O_IMG_H = IMG_H - K + 1;
 // localparam int O_IMG_W = IMG_W - K + 1;
 
-// Unpacked Pixel Streams and sync signals:
-logic [PIXEL_W-1:0] pix_r, pix_g, pix_b;
-logic valid_ch;
+// Window Packing Sync Signals (for handshaking):
+logic [PIXEL_W-1:0] pix_r, pix_g, pix_b; // register pixels while waiting
+logic valid_ch; // lets packer know pixels ready on upstream
 
-// Handshaking Signals:
-logic ready_r, ready_g, ready_b, ready_rgb; // send pixels to windows only when the window packer is ready to accept
-assign ready_rgb = ready_r & ready_g & ready_b;
-
-logic [PIXEL_W-1:0] reg_r, reg_g, reg_b; // register pixels while waiting
-logic valid_win;
+logic busy_r, busy_g, busy_b, ready_rgb; // send pixels to windows only when the window packer is ready to accept
+assign ready_rgb = !busy_r & !busy_g & !busy_b;
 
 // sequentially stream in pixels and send downstream to form each window 
 always_ff @(posedge clk) begin
@@ -57,12 +53,14 @@ always_ff @(posedge clk) begin
         pix_r <= '0;
         pix_b <= '0;
         pix_g <= '0;
-    end else if (valid_in) begin
+    end else if (valid_in && ready_rgb) begin
+        valid_ch <= 1'b1;
         pix_r <= pixel_in[23:16];
         pix_g <= pixel_in[15:8];
         pix_b <= pixel_in[7:0];
+    end else begin
+        valid_ch <= 1'b0;
     end
-    valid_ch <= valid_in;
 end
 
 // Window Module Instantiation for each single channel pixel
@@ -83,6 +81,7 @@ window #(
     .valid_in (valid_ch),
     .pixel_in (pix_r),
     .valid_out (valid_r),
+    .busy (busy_r),
     .data_out (win_r)
 );
 
@@ -100,6 +99,7 @@ window #(
     .valid_in (valid_ch),
     .pixel_in (pix_g),
     .valid_out (valid_g),
+    .busy (busy_g),
     .data_out (win_g)
 );
 
@@ -117,6 +117,7 @@ window #(
     .valid_in (valid_ch),
     .pixel_in (pix_b),
     .valid_out (valid_b),
+    .busy (busy_b),
     .data_out (win_b)
 );
 endmodule

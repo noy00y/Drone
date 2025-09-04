@@ -142,6 +142,7 @@ window #(
     .rst_n (rst_n),
     .valid_in (valid_ch_pix),
     .pixel_in (pix_b),
+
     .valid_out (valid_b),
     .busy (busy_b),
     .data_out (win_b)
@@ -150,6 +151,7 @@ window #(
 // ---------------------------------------------------------------------------
 // Module Instanstiation - PE Units
 // ---------------------------------------------------------------------------
+// PE 1
 conv_PE # (
     .K (K),
     .IC (IC),
@@ -159,8 +161,17 @@ conv_PE # (
 ) i_PE_1 (
     .clk (clk),
     .rst_n (rst_n),
+    .valid_in (valid_window),
+    .window (),
+    .weight (),
+    .bias (),
+
+    .valid_out (valid_PE1),
+    .busy (),
+    .data_out (sum_PE1)
 );
 
+// PE 2
 conv_PE # (
     .K (K),
     .IC (IC),
@@ -170,8 +181,17 @@ conv_PE # (
 ) i_PE_2 (
     .clk (clk),
     .rst_n (rst_n),
+    .valid_in (valid_window),
+    .window (),
+    .weight (),
+    .bias (),
+
+    .valid_out (valid_PE2),
+    .busy (),
+    .data_out (sum_PE2)
 );
 
+// PE 3
 conv_PE # (
     .K (K),
     .IC (IC),
@@ -181,8 +201,17 @@ conv_PE # (
 ) i_PE_3 (
     .clk (clk),
     .rst_n (rst_n),
+    .valid_in (valid_window),
+    .window (),
+    .weight (),
+    .bias (),
+
+    .valid_out (valid_PE3),
+    .busy (),
+    .data_out (sum_PE3)
 );
 
+// PE 4
 conv_PE # (
     .K (K),
     .IC (IC),
@@ -192,6 +221,14 @@ conv_PE # (
 ) i_PE_4 (
     .clk (clk),
     .rst_n (rst_n),
+    .valid_in (valid_window),
+    .window (),
+    .weight (),
+    .bias (),
+
+    .valid_out (valid_PE4),
+    .busy (),
+    .data_out (sum_PE4)
 );
 
 endmodule

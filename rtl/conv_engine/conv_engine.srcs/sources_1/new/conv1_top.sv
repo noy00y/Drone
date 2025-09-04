@@ -10,13 +10,13 @@ module conv1_top #(
   // ---------------------------------------------------------------------------
   // Parameter definitions
   // ---------------------------------------------------------------------------
-  parameter int K        = 3,   // Kernel height/width (3×3)
-  parameter int IC       = 3,   // Number of input channels (RGB)
+  parameter int K         = 3,   // Kernel height/width (3×3)
+  parameter int IC        = 3,   // Number of input channels (RGB)
   parameter int F_PIXEL_W = 24,  // Fully packed pixel (24 bit containing rgb)
-  parameter int PIXEL_W  = 8,   // Q8.0  unsigned
-  parameter int IMG_H    = 224,
-  parameter int IMG_W    = 224
-  parameter int ACC_W    = 32   // Q14.15 accumulator
+  parameter int PIXEL_W   = 8,   // Q8.0  unsigned
+  parameter int IMG_H     = 224,
+  parameter int IMG_W     = 224
+  parameter int ACC_W     = 32   // Q14.15 accumulator
 )(
   // ---------------------------------------------------------------------------
   // Port definitions
@@ -59,7 +59,7 @@ logic [IC*K*K*PIXEL_W-1:0] window_rgb = {win_r, win_g, win_b};
 logic busy_PE1, busy_PE2, busy_PE3, busy_PE4; // !busy_ = PE ready for more windows
 logic ready_PE;
 assign ready_PE = !busy_PE1 && !busy_PE2 && !busy_PE3 && !busy_PE4;
-logic stage_PE; // 0 - channels[0-3], channels[4-7]
+logic stage_PE; // 0 - channels[0-3], 1 - channels[4-7]
 
 logic valid_PE1, valid_PE2, valid_PE3, valid_PE4; // valid_out from the PEs
 

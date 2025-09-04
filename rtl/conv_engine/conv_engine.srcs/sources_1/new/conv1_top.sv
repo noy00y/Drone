@@ -54,6 +54,7 @@ assign valid_rgb = valid_r & valid_g & valid_g // 3x3x3 window ready for conv_su
 typedef logic signed [ACC_W-1:0] sum_t; // data_out from convPE
 sum_t sum_PE1, sum_PE2, sum_PE3, sum_PE4; // 4 x conv_PE engines = 108 DSPs
 logic valid_window; // let PE know window x 3 ready on upstream side
+logic [IC*K*K*PIXEL_W-1:0] window_rgb = {win_r, win_g, win_b};
 
 logic busy_PE1, busy_PE2, busy_PE3, busy_PE4; // !busy_ = PE ready for more windows
 logic ready_PE;
@@ -86,7 +87,6 @@ always_ff @(posedge clk) begin
         // Ready to send 3x3x3 window for conv sum
         if (valid_rgb) begin
             valid_window <= 1'b1;
-
         end
     end 
 end
@@ -162,7 +162,7 @@ conv_PE # (
     .clk (clk),
     .rst_n (rst_n),
     .valid_in (valid_window),
-    .window (),
+    .window (window_rgb),
     .weight (),
     .bias (),
 
@@ -182,7 +182,7 @@ conv_PE # (
     .clk (clk),
     .rst_n (rst_n),
     .valid_in (valid_window),
-    .window (),
+    .window (window_rgb),
     .weight (),
     .bias (),
 
@@ -202,7 +202,7 @@ conv_PE # (
     .clk (clk),
     .rst_n (rst_n),
     .valid_in (valid_window),
-    .window (),
+    .window (window_rgb),
     .weight (),
     .bias (),
 
@@ -222,7 +222,7 @@ conv_PE # (
     .clk (clk),
     .rst_n (rst_n),
     .valid_in (valid_window),
-    .window (),
+    .window (window_rgb)
     .weight (),
     .bias (),
 

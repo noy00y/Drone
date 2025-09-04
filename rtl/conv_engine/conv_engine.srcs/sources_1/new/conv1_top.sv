@@ -85,12 +85,15 @@ always_ff @(posedge clk) begin
 
         // Ready to send 3x3x3 window for conv sum
         if (valid_rgb) begin
-            
+            valid_window <= 1'b1;
+
         end
     end 
 end
 
-// R channel
+// ---------------------------------------------------------------------------
+// Module Instanstiation - Windows
+// ---------------------------------------------------------------------------
 window #(
     .K (K),
     .IC (IC),
@@ -142,6 +145,53 @@ window #(
     .valid_out (valid_b),
     .busy (busy_b),
     .data_out (win_b)
+);
+
+// ---------------------------------------------------------------------------
+// Module Instanstiation - PE Units
+// ---------------------------------------------------------------------------
+conv_PE # (
+    .K (K),
+    .IC (IC),
+    .PIXEL_W (PIXEL_W),
+    .WEIGHT_W (WEIGHT_W),
+    .ACC_W (ACC_W)
+) i_PE_1 (
+    .clk (clk),
+    .rst_n (rst_n),
+);
+
+conv_PE # (
+    .K (K),
+    .IC (IC),
+    .PIXEL_W (PIXEL_W),
+    .WEIGHT_W (WEIGHT_W),
+    .ACC_W (ACC_W)
+) i_PE_2 (
+    .clk (clk),
+    .rst_n (rst_n),
+);
+
+conv_PE # (
+    .K (K),
+    .IC (IC),
+    .PIXEL_W (PIXEL_W),
+    .WEIGHT_W (WEIGHT_W),
+    .ACC_W (ACC_W)
+) i_PE_3 (
+    .clk (clk),
+    .rst_n (rst_n),
+);
+
+conv_PE # (
+    .K (K),
+    .IC (IC),
+    .PIXEL_W (PIXEL_W),
+    .WEIGHT_W (WEIGHT_W),
+    .ACC_W (ACC_W)
+) i_PE_4 (
+    .clk (clk),
+    .rst_n (rst_n),
 );
 
 endmodule

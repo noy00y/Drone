@@ -12,6 +12,7 @@ module bus #(
   // ---------------------------------------------------------------------------
   parameter int K         = 3,   // Kernel height/width (3×3)
   parameter int IC        = 3,   // Number of input channels (RGB)
+  parameter int OC        = 8,
   parameter int F_PIXEL_W = 24,  // Fully packed pixel (24 bit containing rgb)
   parameter int PIXEL_W   = 8,   // Q8.0  unsigned
   parameter int IMG_H     = 224,
@@ -23,17 +24,25 @@ module bus #(
   // ---------------------------------------------------------------------------
   input  logic                           clk,
   input  logic                           rst_n,      // Active‑low sync reset
-  input  logic                           valid_in,   // High for a 24 bit pixel
-  input  logic [F_PIXEL_W-1:0]           pixel_in,
+  input  logic                           load_en,    
+  input  logic [$clog2(OC)-1:0]          oc_req [PE_CNT],
+  input  logic [IC*K*K*WEIGHT_W-1:0]     w_in   [PE_CNT],
+  input  logic [WEIGHT_W-1:0]            b_in   [PE_CNT],
 
-  output logic                           busy,
-  output logic                           valid_out
+  output logic [IC*K*K*WEIGHT_W-1:0]     w_out  [PE_CNT],
+  output logic [WEIGHT_W-1:0]            b_out  [PE_CNT]
 );
 
 // ---------------------------------------------------------------------------
-// 
+// Compute OC Index for current stage
 // ---------------------------------------------------------------------------
-
+logic [$clog2(OC)-1:0] base;
+always_comb begin
+  base = stage_PE ? PE_CNT[$clog2(OC)-1:0] : '0;
+  for (int i = 0; i < PE_CNT; i++) begin
+    oc_req[i] = base + i[$clog(OC)-1:0];
+  end
+end
 
 // ---------------------------------------------------------------------------
 // Main Sequential Block

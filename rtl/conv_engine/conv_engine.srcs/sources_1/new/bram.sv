@@ -26,17 +26,18 @@ module bram #(
   input logic                              clk,
   input logic [$clog2(OC)-1:0] oc_idx [PE_CNT],
 
-  // Read Data: weight + bias to each PE
-  output logic [IC*K*K*WEIGHT_W-1:0] w_arr [PE_CNT],
-  output logic [WEIGHT_W-1:0]        b_arr [PE_CNT]
+  // Arrays for the 4 output channels of size 27
+  output logic [IC*K*K*WEIGHT_W-1:0] w_arr [PE_CNT], 
+  output logic [WEIGHT_W-1:0]        b_arr [PE_CNT] 
 );
 
 // ---------------------------------------------------------------------------
-// ROM Declarations
+// Statically Inferred ROM
 // ---------------------------------------------------------------------------
 (* rom_style = "block" *) logic [IC*K*K*WEIGHT_W-1:0] w_rom [OC];
 (* rom_style = "block" *) logic [WEIGHT_W-1:0]        b_rom [OC];
 
+// read at config time
 initial begin
   $readmemh(W_INIT_FILE, w_rom);
   $readmemh(B_INIT_FILE, b_rom);

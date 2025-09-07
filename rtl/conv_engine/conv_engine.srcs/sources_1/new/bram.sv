@@ -23,11 +23,10 @@ module bram #(
   // ---------------------------------------------------------------------------
   // Port definitions
   // ---------------------------------------------------------------------------
-  input logic                              clk,
-  input logic [$clog2(OC)-1:0] oc_idx [PE_CNT],
+  input logic                        clk,
+  input logic  [$clog2(OC)-1:0]      oc_idx [PE_CNT],
 
-  // Arrays for the 4 output channels of size 27
-  output logic [IC*K*K*WEIGHT_W-1:0] w_arr [PE_CNT], 
+  output logic [IC*K*K*WEIGHT_W-1:0] w_arr [PE_CNT], // 4 output channels of size 27
   output logic [WEIGHT_W-1:0]        b_arr [PE_CNT] 
 );
 

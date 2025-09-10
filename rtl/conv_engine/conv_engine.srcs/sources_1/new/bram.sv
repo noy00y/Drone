@@ -22,10 +22,10 @@ module bram #(
   // Port definitions
   // ---------------------------------------------------------------------------
   input logic                        clk,
-  input logic  [$clog2(OC)-1:0]      oc_idx [PE_CNT],
+  input logic  [$clog2(OC)-1:0]      bram_idx [PE_CNT],
 
-  output logic [IC*K*K*WEIGHT_W-1:0] w_arr [PE_CNT], // 4 output channels of size 27
-  output logic [WEIGHT_W-1:0]        b_arr [PE_CNT] 
+  output logic [IC*K*K*WEIGHT_W-1:0] bram_w [PE_CNT], // 4 output channels of size 27
+  output logic [WEIGHT_W-1:0]        bram_b [PE_CNT] 
 );
 
 // ---------------------------------------------------------------------------
@@ -43,8 +43,8 @@ end
 // Combinationally pass to PEs
 always_comb begin
   for (int i = 0; i < PE_CNT; i++) begin
-    w_arr[i] = w_rom[oc_idx[i]];
-    b_arr[i] = b_rom[oc_idx[i]];
+    bram_w[i] = w_rom[bram_idx[i]];
+    bram_b[i] = b_rom[bram_idx[i]];
   end
 end
 endmodule

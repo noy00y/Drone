@@ -251,7 +251,24 @@ conv_PE # (
 // ---------------------------------------------------------------------------
 // Module Instanstiation - Bram and Bus
 // ---------------------------------------------------------------------------
+bram #(
+    .K (K),
+    .IC (IC),
+    .OC (OC),
+    .WEIGHT_W (WEIGHT_W),
+    .PE_CNT (PE_CNT)
+) i_bram (
+    .clk (clk),
+    .bram_idx (bus_idx),
+    .w_arr (bram_out_w),
+    .b_arr (bram_out_b)
+);
 
+bus #(
+
+) i_bus (
+
+);
 
 
 endmodule

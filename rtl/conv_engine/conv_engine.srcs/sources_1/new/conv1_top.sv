@@ -260,15 +260,30 @@ bram #(
 ) i_bram (
     .clk (clk),
     .bram_idx (bus_idx),
-    .w_arr (bram_out_w),
-    .b_arr (bram_out_b)
+    .bram_w (bram_out_w),
+    .bram_b (bram_out_b)
 );
 
 bus #(
-
+    .K (K),
+    .IC (IC),
+    .OC (OC),
+    .WEIGHT_W (WEIGHT_W),
+    .PE_CNT (PE_CNT)
 ) i_bus (
+    .clk (clk),
+    .rst_n (rst_n),
+    .stage_PE (stage_PE),
+    .load_en (load_en), // on pulse --> copy bram into bus regs
+    .bus_idx (bus_idx),
 
+    // BRAM --> BUS
+    .w_in (bram_out_w),
+    .b_in (bram_out_b),
+
+    // BUS --> PEs
+    .w_out (bus_w),
+    .b_out (bus_b)
 );
-
 
 endmodule

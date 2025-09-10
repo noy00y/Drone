@@ -18,7 +18,7 @@ module conv1_top #(
   parameter int WEIGHT_W  = 16,  // Q2.14 signed
   parameter int PE_CNT    = 4,
   parameter int IMG_H     = 224,
-  parameter int IMG_W     = 224
+  parameter int IMG_W     = 224,
   parameter int ACC_W     = 32   // Q14.15 accumulator
 )(
   // ---------------------------------------------------------------------------
@@ -43,13 +43,13 @@ logic [PIXEL_W-1:0] pix_r, pix_g, pix_b; // register pixels while waiting
 logic valid_ch_pix; // lets packer know pixels ready on upstream side
 
 // send pixels to windows only when all packers ready
-logic busy_r, busy_g, busy_b // !busy_ = ready for more pixels
+logic busy_r, busy_g, busy_b; // !busy_ = ready for more pixels
 logic ready_rgb; 
 assign ready_rgb = !busy_r & !busy_g & !busy_b;
 
 // Packed Windows sent back to TOP
 logic valid_r, valid_g, valid_b, valid_rgb; // valid_out from window packer
-assign valid_rgb = valid_r & valid_g & valid_g // 3x3x3 window ready for conv_sum
+assign valid_rgb = valid_r & valid_g & valid_g; // 3x3x3 window ready for conv_sum
 
 // ---------------------------------------------------------------------------
 // CONV Handling: Instanstiation & Handshaking

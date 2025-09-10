@@ -12,8 +12,11 @@ module conv1_top #(
   // ---------------------------------------------------------------------------
   parameter int K         = 3,   // Kernel height/width (3×3)
   parameter int IC        = 3,   // Number of input channels (RGB)
+  parameter int OC        = 8,
   parameter int F_PIXEL_W = 24,  // Fully packed pixel (24 bit containing rgb)
   parameter int PIXEL_W   = 8,   // Q8.0  unsigned
+  parameter int WEIGHT_W  = 16,  // Q2.14 signed
+  parameter int PE_CNT    = 4,
   parameter int IMG_H     = 224,
   parameter int IMG_W     = 224
   parameter int ACC_W     = 32   // Q14.15 accumulator
@@ -62,6 +65,20 @@ assign ready_PE = !busy_PE1 && !busy_PE2 && !busy_PE3 && !busy_PE4;
 logic stage_PE; // 0 - channels[0-3], 1 - channels[4-7]
 
 logic valid_PE1, valid_PE2, valid_PE3, valid_PE4; // valid_out from the PEs
+
+// ---------------------------------------------------------------------------
+// BRAM and Bus Handling: Instantiation & Handshaking
+// ---------------------------------------------------------------------------
+// BRAM - output regs
+logic [IC*K*K*WEIGHT_W-1:0] bram_out_w [PE_CNT];
+logic [WEIGHT_W-1:0]        bram_out_b [PE_CNT];
+
+// Bus - comm b/w bram and processing blocks
+logic [IC*K*K*WEIGHT_W-1:0] bus_w      [PE_CNT];
+logic [WEIGHT_W-1:0]        bus_b      [PE_CNT];
+logic [$clog2(OC)-1:0]      bus_idx    [PE_CNT]; // log(OC)/log(2) = 3 bits for idx
+
+logic                       load_en; // update PEs with new w/b only when processing current set done
 
 // ---------------------------------------------------------------------------
 // Main Sequential Block
@@ -163,11 +180,11 @@ conv_PE # (
     .rst_n (rst_n),
     .valid_in (valid_window),
     .window (window_rgb),
-    .weight (),
-    .bias (),
+    .weight (bus_w[0]),
+    .bias (bus_b[0]),
 
     .valid_out (valid_PE1),
-    .busy (),
+    .busy (busy_PE1),
     .data_out (sum_PE1)
 );
 
@@ -183,11 +200,11 @@ conv_PE # (
     .rst_n (rst_n),
     .valid_in (valid_window),
     .window (window_rgb),
-    .weight (),
-    .bias (),
+    .weight (bus_w[1]),
+    .bias (bus_b[1]),
 
     .valid_out (valid_PE2),
-    .busy (),
+    .busy (busy_PE2),
     .data_out (sum_PE2)
 );
 
@@ -203,11 +220,11 @@ conv_PE # (
     .rst_n (rst_n),
     .valid_in (valid_window),
     .window (window_rgb),
-    .weight (),
-    .bias (),
+    .weight (bus_w[2]),
+    .bias (bus_b[2]),
 
     .valid_out (valid_PE3),
-    .busy (),
+    .busy (busy_PE3),
     .data_out (sum_PE3)
 );
 
@@ -223,12 +240,50 @@ conv_PE # (
     .rst_n (rst_n),
     .valid_in (valid_window),
     .window (window_rgb)
-    .weight (),
-    .bias (),
+    .weight (bus_w[3]),
+    .bias (bus_b[3]),
 
     .valid_out (valid_PE4),
-    .busy (),
+    .busy (busy_P4),
     .data_out (sum_PE4)
+);
+
+// ---------------------------------------------------------------------------
+// Module Instanstiation - Bram and Bus
+// ---------------------------------------------------------------------------
+bram #(
+    .K (K),
+    .IC (IC),
+    .OC (OC),
+    .WEIGHT_W (WEIGHT_W),
+    .PE_CNT (PE_CNT)
+) i_bram (
+    .clk (clk),
+    .bram_idx (bus_idx),
+    .bram_w (bram_out_w),
+    .bram_b (bram_out_b)
+);
+
+bus #(
+    .K (K),
+    .IC (IC),
+    .OC (OC),
+    .WEIGHT_W (WEIGHT_W),
+    .PE_CNT (PE_CNT)
+) i_bus (
+    .clk (clk),
+    .rst_n (rst_n),
+    .stage_PE (stage_PE),
+    .load_en (load_en), // on pulse --> copy bram into bus regs
+    .bus_idx (bus_idx),
+
+    // BRAM --> BUS
+    .w_in (bram_out_w),
+    .b_in (bram_out_b),
+
+    // BUS --> PEs
+    .w_out (bus_w),
+    .b_out (bus_b)
 );
 
 endmodule

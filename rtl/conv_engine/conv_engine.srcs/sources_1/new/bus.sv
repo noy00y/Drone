@@ -13,11 +13,6 @@ module bus #(
   parameter int K         = 3,   // Kernel height/width (3×3)
   parameter int IC        = 3,   // Number of input channels (RGB)
   parameter int OC        = 8,
-  parameter int F_PIXEL_W = 24,  // Fully packed pixel (24 bit containing rgb)
-  parameter int PIXEL_W   = 8,   // Q8.0  unsigned
-  parameter int IMG_H     = 224,
-  parameter int IMG_W     = 224
-  parameter int ACC_W     = 32   // Q14.15 accumulator
 )(
   // ---------------------------------------------------------------------------
   // Port definitions

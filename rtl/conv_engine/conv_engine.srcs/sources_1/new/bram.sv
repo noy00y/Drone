@@ -13,8 +13,6 @@ module bram #(
   parameter int K         = 3,   // Kernel height/width (3×3)
   parameter int IC        = 3,   // Number of input channels (RGB)
   parameter int OC        = 8,
-  parameter int F_PIXEL_W = 24,  // Fully packed pixel (24 bit containing rgb)
-  parameter int PIXEL_W   = 8,   // Q8.0  unsigned
   parameter int WEIGHT_W  = 16   // Q2.14
   parameter int PE_CNT    = 4,
   parameter string W_INIT_FILE = "conv1_w.memh",

@@ -239,7 +239,7 @@ conv_PE # (
     .clk (clk),
     .rst_n (rst_n),
     .valid_in (valid_window),
-    .window (window_rgb)
+    .window (window_rgb),
     .weight (bus_w[3]),
     .bias (bus_b[3]),
 

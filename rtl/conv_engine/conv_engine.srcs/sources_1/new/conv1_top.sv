@@ -180,11 +180,11 @@ conv_PE # (
     .rst_n (rst_n),
     .valid_in (valid_window),
     .window (window_rgb),
-    .weight (),
-    .bias (),
+    .weight (bus_w[0]),
+    .bias (bus_b[0]),
 
     .valid_out (valid_PE1),
-    .busy (),
+    .busy (busy_PE1),
     .data_out (sum_PE1)
 );
 
@@ -200,11 +200,11 @@ conv_PE # (
     .rst_n (rst_n),
     .valid_in (valid_window),
     .window (window_rgb),
-    .weight (),
-    .bias (),
+    .weight (bus_w[1]),
+    .bias (bus_b[1]),
 
     .valid_out (valid_PE2),
-    .busy (),
+    .busy (busy_PE2),
     .data_out (sum_PE2)
 );
 
@@ -220,11 +220,11 @@ conv_PE # (
     .rst_n (rst_n),
     .valid_in (valid_window),
     .window (window_rgb),
-    .weight (),
-    .bias (),
+    .weight (bus_w[2]),
+    .bias (bus_b[2]),
 
     .valid_out (valid_PE3),
-    .busy (),
+    .busy (busy_PE3),
     .data_out (sum_PE3)
 );
 
@@ -240,12 +240,18 @@ conv_PE # (
     .rst_n (rst_n),
     .valid_in (valid_window),
     .window (window_rgb)
-    .weight (),
-    .bias (),
+    .weight (bus_w[3]),
+    .bias (bus_b[3]),
 
     .valid_out (valid_PE4),
-    .busy (),
+    .busy (busy_P4),
     .data_out (sum_PE4)
 );
+
+// ---------------------------------------------------------------------------
+// Module Instanstiation - Bram and Bus
+// ---------------------------------------------------------------------------
+
+
 
 endmodule

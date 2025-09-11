@@ -13,7 +13,7 @@ module bram #(
   parameter int K         = 3,   // Kernel height/width (3×3)
   parameter int IC        = 3,   // Number of input channels (RGB)
   parameter int OC        = 8,
-  parameter int WEIGHT_W  = 16   // Q2.14
+  parameter int WEIGHT_W  = 16,   // Q2.14
   parameter int PE_CNT    = 4,
   parameter string W_INIT_FILE = "conv1_w.memh",
   parameter string B_INIT_FILE = "conv1_b.memh"

@@ -11,7 +11,6 @@ module window #(
   // Parameter definitions
   // ---------------------------------------------------------------------------
   parameter int K         = 3,   // Kernel height/width (3×3)
-  parameter int IC        = 3,   // Number of input channels (RGB)
   parameter int PIXEL_W   = 8,   // Q8.0  unsigned
   parameter int IMG_H     = 224,
   parameter int IMG_W     = 224

@@ -43,4 +43,5 @@ A lightweight, first-layer CNN accelerator aimed at **edge AI in aviation system
 ### Waveforms:
 #### Convolution Processing Block (conv_PE.sv):
 ![simulation](images/simulation.png)
+![schematic](images/conv_PE_schematic.png)
 ![resource](images/resource_util.png)

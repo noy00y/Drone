@@ -11,7 +11,6 @@ module window #(
   // Parameter definitions
   // ---------------------------------------------------------------------------
   parameter int K         = 3,   // Kernel height/width (3×3)
-  parameter int IC        = 3,   // Number of input channels (RGB)
   parameter int PIXEL_W   = 8,   // Q8.0  unsigned
   parameter int IMG_H     = 224,
   parameter int IMG_W     = 224
@@ -57,10 +56,15 @@ module window #(
   // Declarations for Sync BRAM Reads:
   logic [$clog2(IMG_W)-1:0] raddr;
   logic [PIXEL_W-1:0] LB0_q, LB1_q, LB2_q; // registered data outputs (1 cycle after raddr)
-  // Control for data
-  logic [1:0] b_p1_d, b_p2_d;
+  
+  // Control for sync:
+  // -----------------
+  logic [1:0] b_p1_d, b_p2_d; // banks
   logic eol, eol_d;
   logic [PIXEL_W-1:0] pixel_in_d;
+  // extra pipeline to sync b/w control and data
+  logic fw_q1, fw_q2, fw_q3; 
+  logic [K*K*PIXEL_W-1:0] window_q;
 
   // Combinationally Assemble Window:
   logic [K*K*PIXEL_W-1:0] curr_window;
@@ -99,8 +103,10 @@ module window #(
       raddr <= '0;
       LB0_q <= '0; LB1_q <= '0; LB2_q <= '0;
       b_p1_d <= '0; b_p2_d <= '0;
+      fw_q1 <= 1'b0; fw_q2 <= 1'b0; fw_q3 <= 1'b0;
       pixel_in_d <= '0;
       first_window_d <= 1'b0;
+      window_q <= '0;
       eol_d <= 1'b0;
 
       SRA <= '{default: '0};
@@ -136,8 +142,14 @@ module window #(
         pixel_in_d <= pixel_in;
         b_p1_d <= b_p1;
         b_p2_d <= b_p2;
+        window_q <= curr_window; // window from prev cc --> w_q
         first_window_d <= first_window; 
         eol_d <= eol;
+
+        // Delay control by 2 cc to match data latency (BRAM read + pixel_in_d):
+        fw_q1 <= first_window_d;
+        fw_q2 <= fw_q1;
+        fw_q3 <= fw_q2;
 
         // Shift Cols:
         SRA[2] <= SRB[2]; SRB[2] <= SRC[2]; SRC[2] <= pix_r2;
@@ -145,8 +157,8 @@ module window #(
         SRA[0] <= SRB[0]; SRB[0] <= SRC[0]; SRC[0] <= pixel_in_d;
 
         // Produce output once ≥2 rows/cols
-        if (first_window_d) begin
-          data_out <= curr_window;
+        if (fw_q3) begin
+          data_out <= window_q;
           valid_out <= 1'b1;
         end
 

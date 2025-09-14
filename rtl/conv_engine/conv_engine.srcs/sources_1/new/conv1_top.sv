@@ -113,8 +113,6 @@ end
 // ---------------------------------------------------------------------------
 window #(
     .K (K),
-    .IC (IC),
-    .F_PIXEL_W (F_PIXEL_W),
     .PIXEL_W (PIXEL_W),
     .IMG_H (IMG_H),
     .IMG_W (IMG_W)
@@ -131,8 +129,6 @@ window #(
 // G channel
 window #(
     .K (K),
-    .IC (IC),
-    .F_PIXEL_W (F_PIXEL_W),
     .PIXEL_W (PIXEL_W),
     .IMG_H (IMG_H),
     .IMG_W (IMG_W)
@@ -149,8 +145,6 @@ window #(
 // B channel
 window #(
     .K (K),
-    .IC (IC),
-    .F_PIXEL_W (F_PIXEL_W),
     .PIXEL_W (PIXEL_W),
     .IMG_H (IMG_H),
     .IMG_W (IMG_W)

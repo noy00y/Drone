@@ -59,27 +59,29 @@ module window #(
   
   // Control for sync:
   // -----------------
-  logic [1:0] b_p1_d, b_p2_d; // banks
-  logic eol, eol_d;
-  logic [PIXEL_W-1:0] pixel_in_d;
+  // logic [1:0] b_p1_d, b_p2_d; // banks
+  logic eol; //, eol_d;
+  // logic [PIXEL_W-1:0] pixel_in_d;
   // extra pipeline to sync b/w control and data
-  logic fw_q1, fw_q2, fw_q3; 
-  logic [K*K*PIXEL_W-1:0] window_q;
+  // logic fw_q1, fw_q2, fw_q3; 
+  // logic [K*K*PIXEL_W-1:0] window_q;
 
   // Combinationally Assemble Window:
   logic [K*K*PIXEL_W-1:0] curr_window;
   logic [PIXEL_W-1:0] pix_r1, pix_r2;
-  logic first_window, first_window_d; // First window ready 
+  logic first_window;//, first_window_d; // First window ready 
 
   always_comb begin
     // Generating the two prev row pixels from the registered bram reads
-    unique case (b_p1_d)
+    // unique case (b_p1_d)
+    unique case (b_p1)
       2'd0: pix_r1 = LB0_q;
       2'd1: pix_r1 = LB1_q;
       default: pix_r1 = LB2_q;
     endcase
 
-    unique case (b_p2_d)
+    // unique case (b_p2_d)
+    unique case (b_p2)
       2'd0: pix_r2 = LB0_q;
       2'd1: pix_r2 = LB1_q;
       default: pix_r2 = LB2_q;
@@ -102,12 +104,12 @@ module window #(
     if (!rst_n) begin
       raddr <= '0;
       LB0_q <= '0; LB1_q <= '0; LB2_q <= '0;
-      b_p1_d <= '0; b_p2_d <= '0;
-      fw_q1 <= 1'b0; fw_q2 <= 1'b0; fw_q3 <= 1'b0;
-      pixel_in_d <= '0;
-      first_window_d <= 1'b0;
-      window_q <= '0;
-      eol_d <= 1'b0;
+      // b_p1_d <= '0; b_p2_d <= '0;
+      // fw_q1 <= 1'b0; fw_q2 <= 1'b0; fw_q3 <= 1'b0;
+      // pixel_in_d <= '0;
+      // first_window_d <= 1'b0;
+      // window_q <= '0;
+      // eol_d <= 1'b0;
 
       SRA <= '{default: '0};
       SRB <= '{default: '0};
@@ -125,39 +127,46 @@ module window #(
     end else begin
       valid_out <= 1'b0; // default: no output
       if (valid_in) begin
-        // Stage 1 - Issue addresses and write (current row)
+
+        // Synced BRAM writes
+        // Stage 1 - Issue addresses
         raddr <= col_idx;                 // address for read next cycle 
+
+        // Stage 2 - Sync reads and registering the linebuffer data
+        // (1cc) raddr <= col_idx // register addy
+        // (1cc) LB#_q <= LB#[raddr] // read data at addy
+        LB0_q <= LB0[raddr];
+        LB1_q <= LB1[raddr];
+        LB2_q <= LB2[raddr];
+
+        // Write to current row bank
         unique case(b_curr)               // sync write to current bank
           2'd0: LB0[col_idx] <= pixel_in;
           2'd1: LB1[col_idx] <= pixel_in;
           2'd2: LB2[col_idx] <= pixel_in;
         endcase
 
-        // Stage 2 - Sync reads and registering the outputs
-        LB0_q <= LB0[raddr];
-        LB1_q <= LB1[raddr];
-        LB2_q <= LB2[raddr];
-
         // Control Alignment
-        pixel_in_d <= pixel_in;
-        b_p1_d <= b_p1;
-        b_p2_d <= b_p2;
-        window_q <= curr_window; // window from prev cc --> w_q
-        first_window_d <= first_window; 
-        eol_d <= eol;
+        // pixel_in_d <= pixel_in;
+        // b_p1_d <= b_p1;
+        // b_p2_d <= b_p2;
+        // window_q <= curr_window; // window from prev cc --> w_q
+        // first_window_d <= first_window; 
+        // eol_d <= eol;
 
         // Delay control by 2 cc to match data latency (BRAM read + pixel_in_d):
-        fw_q1 <= first_window_d;
-        fw_q2 <= fw_q1;
-        fw_q3 <= fw_q2;
+        // fw_q1 <= first_window_d;
+        // fw_q2 <= fw_q1;
+        // fw_q3 <= fw_q2;
 
         // Shift Cols:
         SRA[2] <= SRB[2]; SRB[2] <= SRC[2]; SRC[2] <= pix_r2;
         SRA[1] <= SRB[1]; SRB[1] <= SRC[1]; SRC[1] <= pix_r1;
-        SRA[0] <= SRB[0]; SRB[0] <= SRC[0]; SRC[0] <= pixel_in_d;
+        SRA[0] <= SRB[0]; SRB[0] <= SRC[0]; SRC[0] <= pixel_in; //pixel_in_d;
 
         // Produce output once ≥2 rows/cols
-        if (fw_q3) begin
+        // if (fw_q3) begin
+        if (first_window) begin
           data_out <= window_q;
           valid_out <= 1'b1;
         end
@@ -165,19 +174,21 @@ module window #(
         // If EOL -> reset col else keep incrementing
         if (eol) begin
           col_idx <= '0;
+          {b_curr, b_p1, b_p2} <= {b_p2, b_curr, b_p1};
+          if (row_idx != IMG_H-1) row_idx <= row_idx + 1;          
         end else begin
           col_idx <= col_idx + 1;
         end
 
         // Rotate banks when last col of data has emerged (1 cycle later)
-        if (eol_d) begin
-          {b_curr, b_p1, b_p2} <= {b_p2, b_curr, b_p1};
-          if (row_idx != IMG_H-1) row_idx <= row_idx + 1;
-        end
+        // if (eol_d) begin
+        //   {b_curr, b_p1, b_p2} <= {b_p2, b_curr, b_p1};
+        //   if (row_idx != IMG_H-1) row_idx <= row_idx + 1;
+        // end
       end
     end
   end
 
-  // Busy while valid_in and still generating the first window
-  assign busy = valid_in && !first_window_d;
+  // Busy while valid_in (ie processing a pixel)
+  assign busy = valid_in;// && !first_window_d;
 endmodule

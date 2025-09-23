@@ -30,11 +30,14 @@ module window #(
   // ---------------------------------------------------------------------------
   // Signals, Registers and Logic
   // ---------------------------------------------------------------------------
-  // Line Buffers (BRAM):
-  // Current pixel: P(r, c)
+  // Line Buffers (BRAM):                                     // Current pixel: P(r, c)
   (* ram_style="block"*) logic [PIXEL_W-1:0] LB0 [IMG_W-1:0]; // LB0 - current row P(r, _)
   (* ram_style="block"*) logic [PIXEL_W-1:0] LB1 [IMG_W-1:0]; // LB1 - 1 row above P(r-1, _)
   (* ram_style="block"*) logic [PIXEL_W-1:0] LB2 [IMG_W-1:0]; // LB2 - 2 rows above P(r-2, _)
+
+  // Sync BRAM Reads (2 cc)
+  logic [$clog2(IMG_W)-1:0] raddr; 
+  logic [PIXEL_W-1:0] LB0_q, LB1_q, LB2_q; // registered data outputs (1 cycle after raddr)
 
   // Shift Regs:
   // Current pixel: P(r, c)
@@ -42,51 +45,48 @@ module window #(
   logic [PIXEL_W-1:0] SRB [K-1:0]; // SRB - 1 col to left P(_, c-1)
   logic [PIXEL_W-1:0] SRC [K-1:0]; // SRC - current col P(_, c)
 
-  // Current Banks 
-    // b_curr - write (r)
-    // b_p1 - read (r-1)
-    // b_p2 - read (r-2)
-  logic [1:0] b_curr, b_p1, b_p2;
+  // Controls for choosing which LB# banks to read from and write too
+    // b_curr - write (curr row)
+    // b_p1 - read (curr row - 1)
+    // b_p2 - read (curr row - 2)
+  logic [1:0] b_curr;
+  logic [1:0] b_p1_s0, b_p2_s0; // stage 0
+  logic [1:0] b_p1_s1, p_p2_s1; // stage 1
 
   // Counters:
   // $clog2(224) = 8 bit wide signal width for counter
   logic [$clog2(IMG_W)-1:0] col_idx; 
   logic [$clog2(IMG_H)-1:0] row_idx;
 
-  // Declarations for Sync BRAM Reads:
-  logic [$clog2(IMG_W)-1:0] raddr;
-  logic [PIXEL_W-1:0] LB0_q, LB1_q, LB2_q; // registered data outputs (1 cycle after raddr)
   
-  // Control for sync:
-  // -----------------
-  // logic [1:0] b_p1_d, b_p2_d; // banks
-  logic eol; //, eol_d;
-  // logic [PIXEL_W-1:0] pixel_in_d;
-  // extra pipeline to sync b/w control and data
-  // logic fw_q1, fw_q2, fw_q3; 
-  // logic [K*K*PIXEL_W-1:0] window_q;
+  // Additional Sync Controls:
+  logic eol_s0, eol_s1;
+  logic [PIXEL_W-1:0] pixel_in_s1;
+  logic first_window_s0, first_window_s1; // First window ready 
 
   // Combinationally Assemble Window:
   logic [K*K*PIXEL_W-1:0] curr_window;
-  logic [PIXEL_W-1:0] pix_r1, pix_r2;
-  logic first_window;//, first_window_d; // First window ready 
+  logic [PIXEL_W-1:0] pix_r1, pix_r2; // holds the prev row reads from the line bufs
 
+  // ---------------------------------------------------------------------------
+  // Combinational Block - Window Gen:
+  // - LUT logic (~0 cc)
+  // - 3 to 1 Mux for P(r-1,_) and P(r-2,_)
+  // ---------------------------------------------------------------------------
   always_comb begin
-    // Generating the two prev row pixels from the registered bram reads
-    // unique case (b_p1_d)
     unique case (b_p1)
       2'd0: pix_r1 = LB0_q;
       2'd1: pix_r1 = LB1_q;
       default: pix_r1 = LB2_q;
     endcase
 
-    // unique case (b_p2_d)
     unique case (b_p2)
       2'd0: pix_r2 = LB0_q;
       2'd1: pix_r2 = LB1_q;
       default: pix_r2 = LB2_q;
     endcase
 
+    // Current Window
     curr_window = {
       SRA[2], SRB[2], SRC[2],
       SRA[1], SRB[1], SRC[1],

@@ -51,18 +51,18 @@ module window #(
     // b_p2 - read (curr row - 2)
   logic [1:0] b_curr;
   logic [1:0] b_p1_s0, b_p2_s0; // stage 0
-  logic [1:0] b_p1_s1, p_p2_s1; // stage 1
+  logic [1:0] b_p1_s1, b_p2_s1; // stage 1
 
   // Counters:
   // $clog2(224) = 8 bit wide signal width for counter
   logic [$clog2(IMG_W)-1:0] col_idx; 
   logic [$clog2(IMG_H)-1:0] row_idx;
-
   
   // Additional Sync Controls:
   logic eol_s0, eol_s1;
   logic [PIXEL_W-1:0] pixel_in_s1;
   logic first_window_s0, first_window_s1; // First window ready 
+  logic v0, v1; // valid pipeline stages
 
   // Combinationally Assemble Window:
   logic [K*K*PIXEL_W-1:0] curr_window;
@@ -107,7 +107,7 @@ module window #(
       LB0_q <= '0; LB1_q <= '0; LB2_q <= '0;
       b_curr <= 2'd0;
       b_p1_s0 <= 2'd1; b_p2_s0 <= 2'd2;
-      b_p1_s1 <= '0; b_p2_s1 <= '0';
+      b_p1_s1 <= '0; b_p2_s1 <= '0;
 
       SRA <= '{default: '0};
       SRB <= '{default: '0};
@@ -124,7 +124,7 @@ module window #(
 
     end else begin
       // Default assignments:
-      valid_out <= 1'b0; // default: no output
+      // valid_out <= 1'b0; // default: no output
       v0 <= valid_in;
       v1 <= v0;
 
@@ -183,4 +183,4 @@ module window #(
 
   // Busy while valid_in (ie processing a pixel)
   assign busy = valid_in;// && !first_window_s1;
-endmodule
+endmodule 

@@ -57,7 +57,7 @@ module window_tb;
 
     // Feed piels into DUT:
     initial begin
-        // @(posedge rst_n);
+        @(posedge rst_n);
         for (int r = 0; r < IMG_H; r++) begin
             for (int c = 0; c < IMG_W; c++) begin
                 @(posedge clk);

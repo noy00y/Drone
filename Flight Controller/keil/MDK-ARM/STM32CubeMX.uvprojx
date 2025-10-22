@@ -552,6 +552,12 @@
           <targetInfo name="STM32CubeMX"/>
         </targetInfos>
       </api>
+      <api Capiversion="2.3.0" Cclass="CMSIS" Cgroup="RTOS2" exclusive="1">
+        <package name="CMSIS" schemaVersion="1.7.40" url="https://www.keil.com/pack/" vendor="ARM" version="6.2.0"/>
+        <targetInfos>
+          <targetInfo name="STM32CubeMX"/>
+        </targetInfos>
+      </api>
     </apis>
     <components>
       <component Cclass="CMSIS" Cgroup="CORE" Cvendor="ARM" Cversion="6.1.1" condition="ARMv6_7_8-M Device" ymlID="CMSIS:CORE">
@@ -572,19 +578,29 @@
           <targetInfo name="STM32CubeMX"/>
         </targetInfos>
       </component>
+      <component Capiversion="2.3.0" Cclass="CMSIS" Cgroup="RTOS2" Csub="Keil RTX5" Cvariant="Source" Cvendor="ARM" Cversion="5.9.0" condition="RTX5" ymlID="CMSIS:RTOS2:Keil RTX5&amp;Source">
+        <package name="CMSIS-RTX" schemaVersion="1.7.36" url="https://www.keil.com/pack/" vendor="ARM" version="5.9.0"/>
+        <targetInfos>
+          <targetInfo name="STM32CubeMX"/>
+        </targetInfos>
+      </component>
     </components>
     <files>
       <file attr="config" category="source" name="Config\RTX_Config.c" version="5.2.0">
-        <instance index="0" removed="1">RTE\CMSIS\RTX_Config.c</instance>
+        <instance index="0">RTE\CMSIS\RTX_Config.c</instance>
         <component Capiversion="2.3.0" Cclass="CMSIS" Cgroup="RTOS2" Csub="Keil RTX5" Cvariant="Source" Cvendor="ARM" Cversion="5.9.0" condition="RTX5"/>
         <package name="CMSIS-RTX" schemaVersion="1.7.36" url="https://www.keil.com/pack/" vendor="ARM" version="5.9.0"/>
-        <targetInfos/>
+        <targetInfos>
+          <targetInfo name="STM32CubeMX"/>
+        </targetInfos>
       </file>
       <file attr="config" category="header" name="Config\RTX_Config.h" version="5.6.0">
-        <instance index="0" removed="1">RTE\CMSIS\RTX_Config.h</instance>
+        <instance index="0">RTE\CMSIS\RTX_Config.h</instance>
         <component Capiversion="2.3.0" Cclass="CMSIS" Cgroup="RTOS2" Csub="Keil RTX5" Cvariant="Source" Cvendor="ARM" Cversion="5.9.0" condition="RTX5"/>
         <package name="CMSIS-RTX" schemaVersion="1.7.36" url="https://www.keil.com/pack/" vendor="ARM" version="5.9.0"/>
-        <targetInfos/>
+        <targetInfos>
+          <targetInfo name="STM32CubeMX"/>
+        </targetInfos>
       </file>
     </files>
   </RTE>

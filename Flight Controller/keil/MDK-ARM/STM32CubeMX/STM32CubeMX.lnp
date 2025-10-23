@@ -4,6 +4,7 @@
 "stm32cubemx\gpio.o"
 "stm32cubemx\dma.o"
 "stm32cubemx\spi.o"
+"stm32cubemx\tim.o"
 "stm32cubemx\usart.o"
 "stm32cubemx\stm32f4xx_it.o"
 "stm32cubemx\stm32f4xx_hal_msp.o"
@@ -55,7 +56,6 @@
 "stm32cubemx\transformfunctions.o"
 "stm32cubemx\transformfunctionsf16.o"
 "stm32cubemx\windowfunctions.o"
-"stm32cubemx\os_systick.o"
 "stm32cubemx\irq_armv7m.o"
 "stm32cubemx\rtx_delay.o"
 "stm32cubemx\rtx_evflags.o"
@@ -70,6 +70,7 @@
 "stm32cubemx\rtx_system.o"
 "stm32cubemx\rtx_thread.o"
 "stm32cubemx\rtx_timer.o"
+"stm32cubemx\os_systick.o"
 "stm32cubemx\rtx_config.o"
 --strict --scatter "STM32CubeMX\STM32CubeMX.sct"
 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols

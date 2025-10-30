@@ -3,7 +3,7 @@
 <title>Static Call Graph - [STM32CubeMX\STM32CubeMX.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image STM32CubeMX\STM32CubeMX.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 6240002: Last Updated: Thu Oct 23 16:10:11 2025
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 6240002: Last Updated: Wed Oct 29 20:54:05 2025
 <BR><P>
 <H3>Maximum Stack Usage =        192 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -872,14 +872,14 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[e4]"></a>EvrRtxMutexError</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, rtx_evr.o(.text.EvrRtxMutexError))
-<BR><BR>[Called By]<UL><LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;svcRtxMutexNew
-<LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osMutexDelete
+<BR><BR>[Called By]<UL><LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osMutexDelete
 <LI><a href="#[d1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osMutexRelease
 <LI><a href="#[ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osMutexAcquire
 <LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osMutexNew
 <LI><a href="#[68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;svcRtxMutexDelete
 <LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;svcRtxMutexRelease
 <LI><a href="#[67]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;svcRtxMutexAcquire
+<LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;svcRtxMutexNew
 </UL>
 
 <P><STRONG><a name="[e6]"></a>EvrRtxMutexNew</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, rtx_evr.o(.text.EvrRtxMutexNew), UNUSED, KEPT)
@@ -1547,8 +1547,8 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[eb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EvrRtxMemoryAlloc
 </UL>
-<BR>[Called By]<UL><LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;svcRtxMutexNew
-<LI><a href="#[fa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;svcRtxMessageQueueNew
+<BR>[Called By]<UL><LI><a href="#[fa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;svcRtxMessageQueueNew
+<LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;svcRtxMutexNew
 </UL>
 
 <P><STRONG><a name="[ec]"></a>osRtxMemoryFree</STRONG> (Thumb, 140 bytes, Stack size 8 bytes, rtx_memory.o(.text.osRtxMemoryFree))
@@ -1573,12 +1573,12 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EvrRtxMemoryBlockAlloc
 </UL>
-<BR>[Called By]<UL><LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;svcRtxMutexNew
-<LI><a href="#[de]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osMessageQueuePut
+<BR>[Called By]<UL><LI><a href="#[de]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osMessageQueuePut
 <LI><a href="#[65]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;svcRtxMessageQueueGet
 <LI><a href="#[66]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;svcRtxMessageQueuePut
 <LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osRtxMessageQueuePostProcess
 <LI><a href="#[fa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;svcRtxMessageQueueNew
+<LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;svcRtxMutexNew
 </UL>
 
 <P><STRONG><a name="[f1]"></a>osRtxMemoryPoolFree</STRONG> (Thumb, 92 bytes, Stack size 16 bytes, rtx_mempool.o(.text.osRtxMemoryPoolFree))

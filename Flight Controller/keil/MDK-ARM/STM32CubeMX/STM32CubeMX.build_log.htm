@@ -22,12 +22,20 @@ Dialog DLL:      TCM.DLL V1.56.6.0
  
 <h2>Project:</h2>
 C:\Users\ozair\Documents\Code_Drive\Drone\Flight Controller\keil\MDK-ARM\STM32CubeMX.uvprojx
-Project File Date:  10/23/2025
+Project File Date:  10/29/2025
 
 <h2>Output:</h2>
 *** Using Compiler 'V6.24', folder: 'C:\Users\ozair\AppData\Local\Keil_v5\ARM\ARMCLANG\Bin'
 Build target 'STM32CubeMX'
+compiling usart.c...
+compiling spi.c...
+compiling main.c...
+compiling gpio.c...
 compiling stm32f4xx_it.c...
+compiling tim.c...
+compiling dma.c...
+compiling timing.c...
+compiling stm32f4xx_hal_msp.c...
 linking...
 Program Size: Code=19316 RO-data=796 RW-data=176 ZI-data=36456  
 FromELF: creating hex file...
@@ -75,79 +83,79 @@ Package Vendor: Keil
    * Component: ARM::CMSIS:CORE@6.1.1
 
    * Component: ARM::CMSIS:DSP&Source@1.16.2
-      Source file:   Source/ControllerFunctions/ControllerFunctions.c
+      Source file:   Source/SupportFunctions/SupportFunctionsF16.c
+      Source file:   Source/FastMathFunctions/FastMathFunctionsF16.c
+      Source file:   Source/FilteringFunctions/FilteringFunctionsF16.c
+      Source file:   Source/TransformFunctions/TransformFunctionsF16.c
+      Source file:   Source/MatrixFunctions/MatrixFunctionsF16.c
+      Source file:   Source/StatisticsFunctions/StatisticsFunctionsF16.c
+      Source file:   Source/SVMFunctions/SVMFunctionsF16.c
+      Source file:   Source/InterpolationFunctions/InterpolationFunctionsF16.c
+      Source file:   Source/CommonTables/CommonTablesF16.c
+      Source file:   Source/DistanceFunctions/DistanceFunctionsF16.c
+      Source file:   Source/BayesFunctions/BayesFunctionsF16.c
+      Source file:   Source/ComplexMathFunctions/ComplexMathFunctionsF16.c
+      Source file:   Source/DistanceFunctions/DistanceFunctions.c
+      Source file:   Source/FilteringFunctions/FilteringFunctions.c
+      Include file:  Include/arm_const_structs.h
       Include file:  Include/arm_common_tables_f16.h
+      Include file:  Include/arm_const_structs_f16.h
+      Source file:   Source/BasicMathFunctions/BasicMathFunctions.c
+      Source file:   Source/FastMathFunctions/FastMathFunctions.c
+      Include file:  Include/arm_math.h
+      Source file:   Source/BayesFunctions/BayesFunctions.c
       Include file:  Include/arm_math_f16.h
       Source file:   Source/QuaternionMathFunctions/QuaternionMathFunctions.c
-      Source file:   Source/DistanceFunctions/DistanceFunctions.c
-      Include file:  Include/arm_common_tables.h
-      Source file:   Source/FastMathFunctions/FastMathFunctions.c
-      Source file:   Source/FilteringFunctions/FilteringFunctions.c
-      Source file:   Source/MatrixFunctions/MatrixFunctions.c
-      Source file:   Source/StatisticsFunctions/StatisticsFunctions.c
-      Source file:   Source/BasicMathFunctions/BasicMathFunctions.c
-      Source file:   Source/ComplexMathFunctions/ComplexMathFunctions.c
-      Include file:  Include/arm_const_structs.h
-      Source file:   Source/BayesFunctions/BayesFunctions.c
-      Include file:  Include/arm_const_structs_f16.h
       Source file:   Source/CommonTables/CommonTables.c
-      Include file:  Include/arm_math.h
+      Source file:   Source/ControllerFunctions/ControllerFunctions.c
+      Include file:  Include/arm_common_tables.h
+      Source file:   Source/ComplexMathFunctions/ComplexMathFunctions.c
       Source file:   Source/SVMFunctions/SVMFunctions.c
-      Source file:   Source/InterpolationFunctions/InterpolationFunctions.c
-      Source file:   Source/CommonTables/CommonTablesF16.c
-      Source file:   Source/TransformFunctions/TransformFunctionsF16.c
-      Source file:   Source/BayesFunctions/BayesFunctionsF16.c
-      Source file:   Source/WindowFunctions/WindowFunctions.c
-      Source file:   Source/FastMathFunctions/FastMathFunctionsF16.c
-      Source file:   Source/StatisticsFunctions/StatisticsFunctionsF16.c
-      Source file:   Source/BasicMathFunctions/BasicMathFunctionsF16.c
-      Source file:   Source/MatrixFunctions/MatrixFunctionsF16.c
-      Source file:   Source/SVMFunctions/SVMFunctionsF16.c
-      Source file:   Source/DistanceFunctions/DistanceFunctionsF16.c
-      Source file:   Source/SupportFunctions/SupportFunctionsF16.c
+      Source file:   Source/MatrixFunctions/MatrixFunctions.c
       Source file:   Source/TransformFunctions/TransformFunctions.c
+      Source file:   Source/StatisticsFunctions/StatisticsFunctions.c
       Source file:   Source/SupportFunctions/SupportFunctions.c
-      Source file:   Source/ComplexMathFunctions/ComplexMathFunctionsF16.c
-      Source file:   Source/FilteringFunctions/FilteringFunctionsF16.c
-      Source file:   Source/InterpolationFunctions/InterpolationFunctionsF16.c
+      Source file:   Source/InterpolationFunctions/InterpolationFunctions.c
+      Source file:   Source/WindowFunctions/WindowFunctions.c
+      Source file:   Source/BasicMathFunctions/BasicMathFunctionsF16.c
 
    * Component: ARM::CMSIS:OS Tick:SysTick@1.0.5
       Source file:   CMSIS/RTOS2/Source/os_systick.c
 
    * Component: ARM::CMSIS:RTOS2:Keil RTX5&Source@5.9.0
-      Source file:   Template/main.c
-      Source file:   Template/Events.c
       Source file:   Template/MemPool.c
-      Source file:   Template/MsgQueue.c
-      Source file:   Config/RTX_Config.c
-      Include file:  Include/rtx_os.h
-      Include file:  Config/RTX_Config.h
       Source file:   Source/rtx_delay.c
-      Source file:   Source/rtx_memory.c
-      Source file:   Template/Timer.c
-      Source file:   Template/svc_user.c
-      Source file:   Source/GCC/irq_armv7m.S
-      Source file:   Source/rtx_msgqueue.c
-      Source file:   Source/rtx_evr.c
-      Source file:   Source/rtx_kernel.c
-      Source file:   Source/rtx_timer.c
-      Source file:   Source/rtx_mempool.c
-      Source file:   Source/rtx_mutex.c
-      Source file:   Template/Thread.c
-      Source file:   Source/rtx_thread.c
+      Source file:   Source/rtx_evflags.c
+      Source file:   Template/Events.c
       Source file:   Template/Semaphore.c
       Source file:   Source/rtx_semaphore.c
-      Source file:   Source/rtx_lib.c
+      Source file:   Source/rtx_memory.c
+      Source file:   Source/rtx_mempool.c
+      Include file:  Config/RTX_Config.h
+      Source file:   Config/RTX_Config.c
+      Source file:   Template/MsgQueue.c
       Source file:   Template/Mutex.c
-      Source file:   Source/rtx_evflags.c
+      Source file:   Template/svc_user.c
+      Source file:   Template/main.c
+      Source file:   Source/rtx_thread.c
+      Include file:  Include/rtx_os.h
+      Source file:   Source/rtx_kernel.c
+      Source file:   Template/Thread.c
+      Source file:   Source/rtx_timer.c
+      Source file:   Source/rtx_mutex.c
+      Source file:   Template/Timer.c
+      Source file:   Source/rtx_evr.c
+      Source file:   Source/rtx_msgqueue.c
+      Source file:   Source/rtx_lib.c
       Source file:   Source/rtx_system.c
+      Source file:   Source/GCC/irq_armv7m.S
 
    * Component: CMSIS:OS Tick(API)@1.0.1
       Include file:  CMSIS/RTOS2/Include/os_tick.h
 
    * Component: CMSIS:RTOS2(API)@2.3.0
       Include file:  CMSIS/RTOS2/Include/cmsis_os2.h
-Build Time Elapsed:  00:00:01
+Build Time Elapsed:  00:00:11
 </pre>
 </body>
 </html>

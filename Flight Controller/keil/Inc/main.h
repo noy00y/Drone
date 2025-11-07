@@ -59,6 +59,8 @@ void Error_Handler(void);
 /* Private defines -----------------------------------------------------------*/
 #define led_Pin GPIO_PIN_5
 #define led_GPIO_Port GPIOA
+#define IMU_DRDY_Pin GPIO_PIN_4
+#define IMU_DRDY_GPIO_Port GPIOC
 #define CS_Pin GPIO_PIN_6
 #define CS_GPIO_Port GPIOB
 

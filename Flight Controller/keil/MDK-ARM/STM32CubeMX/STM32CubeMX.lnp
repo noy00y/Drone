@@ -10,6 +10,8 @@
 "stm32cubemx\stm32f4xx_it.o"
 "stm32cubemx\stm32f4xx_hal_msp.o"
 "stm32cubemx\stm32f4xx_hal_timebase_tim.o"
+"stm32cubemx\imu.o"
+"stm32cubemx\pwm.o"
 "stm32cubemx\stm32f4xx_hal_tim.o"
 "stm32cubemx\stm32f4xx_hal_tim_ex.o"
 "stm32cubemx\stm32f4xx_hal_spi.o"

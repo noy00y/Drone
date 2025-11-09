@@ -496,6 +496,16 @@
               <FileType>1</FileType>
               <FilePath>../Src/stm32f4xx_hal_timebase_tim.c</FilePath>
             </File>
+            <File>
+              <FileName>imu.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Src\imu.c</FilePath>
+            </File>
+            <File>
+              <FileName>pwm.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Src\pwm.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>

@@ -10,7 +10,7 @@ static void imu_cs_high(void) {HAL_GPIO_WritePin(IMU_CS_PORT, IMU_CS_PIN, GPIO_P
 // Mode 0 or 3, MSB first. Max 10 MHz. (Configure in CubeMX)
 static HAL_StatusTypeDef spi_write(uint8_t reg, uint8_t val) 
 {
-    uint8_t
+    uint8_t tx[2]
 }
 
 // High Level read/write to regs 

@@ -1,42 +1,29 @@
 #include "imu.h"
+#include <string.h>
 
 // Local Util
-static void imu_cs_low(void) 
+static void imu_cs_low(void) {HAL_GPIO_WritePin(IMU_CS_PORT, IMU_CS_PIN, GPIO_PIN_RESET);}
+static void imu_cs_high(void) {HAL_GPIO_WritePin(IMU_CS_PORT, IMU_CS_PIN, GPIO_PIN_SET);}
+
+// Low Level SPI read/writes to regs
+// IMU SPI: first byte = [R/W(1=read) | 7-bit address], then data bytes.
+// Mode 0 or 3, MSB first. Max 10 MHz. (Configure in CubeMX)
+static HAL_StatusTypeDef spi_write(uint8_t reg, uint8_t val) 
 {
-    HAL_GPIO_WritePin(IMU_CS_PORT, IMU_CS_PIN, GPIO_PIN_RESET);
+    uint8_t
 }
 
-static void imu_cs_high(void)
-{
-    HAL_GPIO_WritePin(IMU_CS_PORT, IMU_CS_PIN, GPIO_PIN_SET);
-}
-
+// High Level read/write to regs 
 uint8_t IMU_ReadReg(uint8_t reg)
 {
-    uint8_t tx[2];
-    uint8_t rx[2];
-
-    // SPI - set MSB to 1
-    tx[0] = reg | 0x80;
-    tx[1] = 0x01;
-
-    imu_cs_low();
-    HAL_SPI_TransmitReceive(&hspi1, tx, rx, 2, HAL_MAX_DELAY);
-    imu_cs_high();
-
-    // NTS: rx[0] is garb 
-    return rx[1];
+    uint8_t v = 0xFF;
+    (void)spi_read_bytes(reg, &v, 1);
+    return v;
 }
 
 void IMU_WriteReg(uint8_t reg, uint8_t value)
 {
-    uint8_t tx[2]; // MSB=0 for writes
-    tx[0] = reg & 0x7F;
-    tx[1] = value; 
-
-    imu_cs_low();
-    HAL_SPI_Transmit(&hspi1, tx, 2, HAL_MAX_DELAY);
-    imu_cs_high();
+    (void)spi_write(reg, val);
 }
 
 HAL_StatusTypeDef IMU_Init(void)

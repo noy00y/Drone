@@ -115,16 +115,26 @@ int main(void)
   /* USER CODE BEGIN 2 */
   // Start CS high:
   HAL_GPIO_WritePin(IMU_CS_PORT, IMU_CS_PIN, GPIO_PIN_SET);
+  HAL_Delay(2);
   printf("Starting IMU\r\n");
 
   if (IMU_Init() != HAL_OK) {printf("IMU failed\r\n");}
   else {printf("IMU init ok! WAI: 0x%02X\r\n", IMU_WAI_VAL);}
 
-  while (1)
-  {
-    uint8_t wai = IMU_ReadReg(IMU_REG_WAI);
-    printf("WAI: 0x%02X\r\n", wai);
-		HAL_DELAY(200);
+  uint32_t t0 = HAL_GetTick();
+  for (;;) {
+    if ((HAL_GetTick() - t0) >= 10) {
+      t0 += 10;
+      imu_raw_t raw;
+      imu_scaled_t sc;
+      if (IMU_ReadRaw(&raw) == HAL_OK) {
+        IMU_Scale(&raw, &sc);
+        printf("A[g]=[%0.3f,%0.3f,%0.3f]  G[dps]=[%6.1f,%6.1f,%6.1f]\r\n",
+               sc.ax_g, sc.ay_g, sc.az_g, sc.gx_dps, sc.gy_dps, sc.gz_dps);
+      } else {
+        printf("IMU read error\r\n");
+      }
+    }
   }  
 
   /* USER CODE END 2 */

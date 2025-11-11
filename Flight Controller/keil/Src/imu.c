@@ -2,8 +2,8 @@
 #include <string.h>
 
 // Local Util
-static void imu_cs_low(void) {HAL_GPIO_WritePin(IMU_CS_PORT, IMU_CS_PIN, GPIO_PIN_RESET);}
-static void imu_cs_high(void) {HAL_GPIO_WritePin(IMU_CS_PORT, IMU_CS_PIN, GPIO_PIN_SET);}
+static void cs_low(void) {HAL_GPIO_WritePin(IMU_CS_PORT, IMU_CS_PIN, GPIO_PIN_RESET);}
+static void cs_high(void) {HAL_GPIO_WritePin(IMU_CS_PORT, IMU_CS_PIN, GPIO_PIN_SET);}
 
 // Low Level SPI read/writes to regs
 // IMU SPI: first byte = [R/W(1=read) | 7-bit address], then data bytes.

@@ -1,4 +1,4 @@
-stm32cubemx/main.o: ..\Src\main.c ..\Inc\imu.h \
+stm32cubemx/imu.o: ..\Src\imu.c ..\Inc\imu.h \
   ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h \
   ..\Inc\stm32f4xx_hal_conf.h \
   ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rcc.h \
@@ -23,6 +23,4 @@ stm32cubemx/main.o: ..\Src\main.c ..\Inc\imu.h \
   ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_spi.h \
   ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h \
   ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim_ex.h \
-  ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h \
-  ..\Inc\usart.h ..\Inc\main.h ..\Inc\dma.h ..\Inc\spi.h ..\Inc\tim.h \
-  ..\Inc\gpio.h
+  ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h

@@ -1,4 +1,11 @@
 /* USER CODE BEGIN Header */
+#include "imu.h"
+#include "usart.h"
+#include <stdio.h>
+#include <stdint.h>
+extern UART_HandleTypeDef huart2;
+extern SPI_HandleTypeDef hspi1;
+
 /**
   ******************************************************************************
   * @file           : main.c
@@ -54,6 +61,15 @@
 void SystemClock_Config(void);
 /* USER CODE BEGIN PFP */
 
+// Simple uart printf support
+int fputc(int ch, FILE *f)
+{
+    (void)f; // unused
+    uint8_t c = (uint8_t)ch;
+    HAL_UART_Transmit(&huart2, &c, 1, HAL_MAX_DELAY);
+    return ch;
+}
+
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
@@ -95,18 +111,42 @@ int main(void)
   MX_USART2_UART_Init();
   MX_TIM1_Init();
   MX_TIM2_Init();
+
   /* USER CODE BEGIN 2 */
+  // Start CS high:
+  HAL_GPIO_WritePin(IMU_CS_PORT, IMU_CS_PIN, GPIO_PIN_SET);
+  HAL_Delay(2);
+  printf("Starting IMU\r\n");
+
+  if (IMU_Init() != HAL_OK) {printf("IMU failed\r\n");}
+  else {printf("IMU init ok! WAI: 0x%02X\r\n", IMU_WAI_VAL);}
+
+  uint32_t t0 = HAL_GetTick();
+  for (;;) {
+    if ((HAL_GetTick() - t0) >= 10) {
+      t0 += 10;
+      imu_raw_t raw;
+      imu_scaled_t sc;
+      if (IMU_ReadRaw(&raw) == HAL_OK) {
+        IMU_Scale(&raw, &sc);
+        printf("A[g]=[%0.3f,%0.3f,%0.3f]  G[dps]=[%6.1f,%6.1f,%6.1f]\r\n",
+               sc.ax_g, sc.ay_g, sc.az_g, sc.gx_dps, sc.gy_dps, sc.gz_dps);
+      } else {
+        printf("IMU read error\r\n");
+      }
+    }
+  }  
 
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-  while (1)
-  {
-    /* USER CODE END WHILE */
+  // while (1)
+  // {
+  //   /* USER CODE END WHILE */
 
-    /* USER CODE BEGIN 3 */
-  }
+  //   /* USER CODE BEGIN 3 */
+  // }
   /* USER CODE END 3 */
 }
 

@@ -23,4 +23,5 @@ stm32cubemx/imu.o: ..\Src\imu.c ..\Inc\imu.h \
   ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_spi.h \
   ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h \
   ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim_ex.h \
-  ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h
+  ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h \
+  C:\Users\ozair\AppData\Local\Arm\Packs\ARM\CMSIS\6.2.0\CMSIS\RTOS2\Include\cmsis_os2.h

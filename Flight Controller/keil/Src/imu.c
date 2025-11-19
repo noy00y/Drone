@@ -105,5 +105,5 @@ void IMU_Scale(const imu_raw_t *raw, imu_scaled_t *s)
     s->gy_dps = ((float)raw->gy) / IMU_GYRO_SENS_2000DPS;
     s->gz_dps = ((float)raw->gz) / IMU_GYRO_SENS_2000DPS;
 
-    s->temp_c = (float)raw->temp;
+    s->temp_c = ((float)raw->temp / 326.8f) + 25.0f; // temp scaling factor
 }

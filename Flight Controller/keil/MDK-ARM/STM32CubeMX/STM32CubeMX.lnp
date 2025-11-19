@@ -1,6 +1,5 @@
 --cpu=Cortex-M4.fp.sp
 "stm32cubemx\startup_stm32f446xx.o"
-"stm32cubemx\timing.o"
 "stm32cubemx\main.o"
 "stm32cubemx\gpio.o"
 "stm32cubemx\dma.o"
@@ -12,6 +11,8 @@
 "stm32cubemx\stm32f4xx_hal_timebase_tim.o"
 "stm32cubemx\imu.o"
 "stm32cubemx\pwm.o"
+"stm32cubemx\imu_task.o"
+"stm32cubemx\log_task.o"
 "stm32cubemx\stm32f4xx_hal_tim.o"
 "stm32cubemx\stm32f4xx_hal_tim_ex.o"
 "stm32cubemx\stm32f4xx_hal_spi.o"

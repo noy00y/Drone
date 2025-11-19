@@ -396,11 +396,6 @@
           <GroupName>Application/User</GroupName>
           <Files>
             <File>
-              <FileName>timing.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\Src\timing.c</FilePath>
-            </File>
-            <File>
               <FileName>main.c</FileName>
               <FileType>1</FileType>
               <FilePath>../Src/main.c</FilePath>
@@ -505,6 +500,16 @@
               <FileName>pwm.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\Src\pwm.c</FilePath>
+            </File>
+            <File>
+              <FileName>imu_task.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Src\imu_task.c</FilePath>
+            </File>
+            <File>
+              <FileName>log_task.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Src\log_task.c</FilePath>
             </File>
           </Files>
         </Group>

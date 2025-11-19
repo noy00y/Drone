@@ -3,6 +3,7 @@
 #include "stm32f4xx_hal.h"
 #include <stdint.h>
 #include <stdbool.h> 
+#include "cmsis_os2.h"
 
 // WAI - Who Am I
 #define IMU_REG_WAI            0x75 
@@ -37,14 +38,14 @@ extern SPI_HandleTypeDef hspi1; // spi handler
 #define IMU_GYRO_SENS_2000DPS   16.4f
 #define IMU_ACCEL_SENS_16G      2048.0f
 
-// Defining Types for raw and scaled imu values
+// Structs
 typedef struct 
 {
     int16_t ax, ay, az;
     int16_t gx, gy, gz;
     int16_t temp;
 } 
-imu_raw_t; 
+imu_raw_t; // raw imu
 
 typedef struct
 {
@@ -52,7 +53,7 @@ typedef struct
     float gx_dps, gy_dps, gz_dps; // deg / s
     float temp_c; // raw temp
 } 
-imu_scaled_t;
+imu_scaled_t; // scaled
 
 // API
 HAL_StatusTypeDef IMU_Init(void); 

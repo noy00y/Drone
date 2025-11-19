@@ -1,4 +1,6 @@
-stm32cubemx/main.o: ..\Src\main.c ..\Inc\imu.h \
+stm32cubemx/log_task.o: ..\Src\log_task.c ..\Inc\log_task.h \
+  C:\Users\ozair\AppData\Local\Arm\Packs\ARM\CMSIS\6.2.0\CMSIS\RTOS2\Include\cmsis_os2.h \
+  ..\Inc\imu_task.h ..\Inc\imu.h \
   ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h \
   ..\Inc\stm32f4xx_hal_conf.h \
   ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rcc.h \
@@ -23,7 +25,4 @@ stm32cubemx/main.o: ..\Src\main.c ..\Inc\imu.h \
   ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_spi.h \
   ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h \
   ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim_ex.h \
-  ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h \
-  C:\Users\ozair\AppData\Local\Arm\Packs\ARM\CMSIS\6.2.0\CMSIS\RTOS2\Include\cmsis_os2.h \
-  ..\Inc\imu_task.h ..\Inc\log_task.h ..\Inc\main.h ..\Inc\dma.h \
-  ..\Inc\spi.h ..\Inc\tim.h ..\Inc\usart.h ..\Inc\gpio.h
+  ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h

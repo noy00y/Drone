@@ -1,0 +1,9 @@
+C:/Users/ozair/Documents/Code_Drive/Drone/fc-cubeide/Src/imu.c:5:13:cs_low	8	static
+C:/Users/ozair/Documents/Code_Drive/Drone/fc-cubeide/Src/imu.c:6:13:cs_high	8	static
+C:/Users/ozair/Documents/Code_Drive/Drone/fc-cubeide/Src/imu.c:11:26:spi_write	24	static
+C:/Users/ozair/Documents/Code_Drive/Drone/fc-cubeide/Src/imu.c:20:26:spi_read_bytes	24	static
+C:/Users/ozair/Documents/Code_Drive/Drone/fc-cubeide/Src/imu.c:31:9:IMU_ReadReg	24	static
+C:/Users/ozair/Documents/Code_Drive/Drone/fc-cubeide/Src/imu.c:38:6:IMU_WriteReg	16	static
+C:/Users/ozair/Documents/Code_Drive/Drone/fc-cubeide/Src/imu.c:43:19:IMU_Init	16	static
+C:/Users/ozair/Documents/Code_Drive/Drone/fc-cubeide/Src/imu.c:76:19:IMU_ReadRaw	32	static
+C:/Users/ozair/Documents/Code_Drive/Drone/fc-cubeide/Src/imu.c:98:6:IMU_Scale	16	static

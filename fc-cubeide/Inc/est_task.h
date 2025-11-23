@@ -11,3 +11,6 @@ typedef struct {
     float yaw;
     uint32_t timestamp_us;
 } attitude_state_t;
+
+void EST_Task_Init(void);
+void get_attitude(attitude_state_t *out);

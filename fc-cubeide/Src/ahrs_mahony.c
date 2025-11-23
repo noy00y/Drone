@@ -1,5 +1,6 @@
 #include "ahrs_mahony.h"
 #include <math.h>
+#define M_PI 3.14159265358979323846f
 
 void AHRS_Init(ahrs_t *s, float kp, float ki)
 {

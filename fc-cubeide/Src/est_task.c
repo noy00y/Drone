@@ -3,7 +3,7 @@
 #include "ahrs_mahony.h"
 #include "est_task.h"
 
-extern osMessageQueueId_t imu_q; // queue
+// extern osMessageQueueId_t imu_q = NULL; // queue
 
 // internal estimator states:
 static ahrs_t AHRS_state;
@@ -71,8 +71,8 @@ void est_task(void *arguement)
 
         // Run AHRS
         const float dt = (float)period_ms * 1e-3f; // 2ms
-        AHRS_Update(&AHRS_state, latest_sample.gx, latest_sample.gy, latest_sample.gz,
-                                 latest_sample.ax, latest_sample.ay, latest_sample.az, dt);
+        AHRS_Update(&AHRS_state, latest_sample.raw.gx, latest_sample.raw.gy, latest_sample.raw.gz,
+                                 latest_sample.raw.ax, latest_sample.raw.ay, latest_sample.raw.az, dt);
 
         float roll, pitch, yaw;
         AHRS_QuatToEuler(&AHRS_state, &roll, &pitch, &yaw);

@@ -1,11 +1,90 @@
 #include "cmsis_os2.h"
 #include "imu_task.h"
+#include "ahrs_mahony.h"
 #include "est_task.h"
 
 extern osMessageQueueId_t imu_q; // queue
+
+// internal estimator states:
+static ahrs_t AHRS_state;
 static attitude_state_t g_attitude_state;
 
-void get_attitude(attitude_state_t *out)
+// Declarations:
+void get_attitude(attitude_state_t *out);
+extern void est_task(void *arguement);
+
+void EST_Task_Init(void)
 {
-    *out = g_attitude_state;
+    AHRS_Init(&AHRS_state, 4.0f, 0.05f); // initial sample gain
+    g_attitude_state.q0 = 1.0f;
+    g_attitude_state.q1 = 0.0f;
+    g_attitude_state.q2 = 0.0f;
+    g_attitude_state.q3 = 0.0f;
+    g_attitude_state.roll  = 0.0f;
+    g_attitude_state.pitch = 0.0f;
+    g_attitude_state.yaw   = 0.0f;
+    g_attitude_state.timestamp_us = 0;
+
+    // Task init
+    const osThreadAttr_t est_task_attr = 
+    {
+        .name = "est_task",
+        .priority = osPriorityHigh3,
+        .stack_size = 1024
+    };
+    osThreadNew(est_task, NULL, &est_task_attr);
 }
+
+void get_attitude(attitude_state_t *out){*out = g_attitude_state;}
+
+void est_task(void *arguement)
+{
+    (void)arguement;
+    const uint32_t period_ms = ESTIMATION_TASK_PERIOD_MS;
+    imu_sample_t sample;
+    imu_sample_t latest_sample; 
+    uint8_t have_sample = 0;
+
+    uint32_t last_wake = osKernelGetTickCount();
+
+    while (1)
+    {
+        // 500 hz tick
+        uint32_t now = osKernelGetTickCount();
+        uint32_t elapsed = now - last_wake;
+        if (elapsed < period_ms){osDelay(period_ms - elapsed);}
+        last_wake = osKernelGetTickCount();
+
+        // Drain queue and keep latest sample
+        have_sample = 0;
+        osStatus_t status;
+        do 
+        {
+            status = osMessageQueueGet(imu_q, &sample, NULL, 0);
+            if (status == osOK)
+            {
+                latest_sample = sample;
+                have_sample = 1;
+            }
+        } while (status == osOK);
+        if (!have_sample) {continue;} // NTS: if no new sample, we can reuse the old one
+
+        // Run AHRS
+        const float dt = (float)period_ms * 1e-3f; // 2ms
+        AHRS_Update(&AHRS_state, latest_sample.gx, latest_sample.gy, latest_sample.gz,
+                                 latest_sample.ax, latest_sample.ay, latest_sample.az, dt);
+
+        float roll, pitch, yaw;
+        AHRS_QuatToEuler(&AHRS_state, &roll, &pitch, &yaw);
+        
+        g_attitude_state.q0 = AHRS_state.q0;
+        g_attitude_state.q1 = AHRS_state.q1;
+        g_attitude_state.q2 = AHRS_state.q2;
+        g_attitude_state.q3 = AHRS_state.q3;
+        g_attitude_state.roll  = roll;
+        g_attitude_state.pitch = pitch;
+        g_attitude_state.yaw   = yaw;
+        g_attitude_state.timestamp_us = latest_sample.timestamp_us;
+    }
+}
+

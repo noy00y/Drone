@@ -105,5 +105,6 @@ void AHRS_QuatToEuler(const ahrs_t *s, float *roll, float *pitch, float *yaw)
         *pitch = asinf(sinp);
 
     // Yaw
-    
+    *yaw = atan2f(2.0f * (q0*q3 + q1*q2),
+                  1.0f - 2.0f * (q2*q2 + q3*q3));
 }

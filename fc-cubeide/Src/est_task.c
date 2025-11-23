@@ -1,5 +1,6 @@
 #include "cmsis_os2.h"
 #include "imu_task.h"
+#include "imu.h"
 #include "ahrs_mahony.h"
 #include "est_task.h"
 
@@ -8,6 +9,7 @@
 // internal estimator states:
 static ahrs_t AHRS_state;
 static attitude_state_t g_attitude_state;
+static uint32_t last_sample_tick = 0; // track latest imu dt 
 
 // Declarations:
 void get_attitude(attitude_state_t *out);
@@ -67,12 +69,43 @@ void est_task(void *arguement)
                 have_sample = 1;
             }
         } while (status == osOK);
-        if (!have_sample) {continue;} // NTS: if no new sample, we can reuse the old one
+        if (!have_sample) {continue;} // NTS: if no new sample --> skip the cycle
 
-        // Run AHRS
-        const float dt = (float)period_ms * 1e-3f; // 2ms
-        AHRS_Update(&AHRS_state, latest_sample.raw.gx, latest_sample.raw.gy, latest_sample.raw.gz,
-                                 latest_sample.raw.ax, latest_sample.raw.ay, latest_sample.raw.az, dt);
+        // Corrected dt
+        float dt;
+        uint32_t now_tick = latest_sample.timestamp_us;   // this is actually in TICKS
+
+        // First sample tick
+        if (last_sample_tick == 0U) { dt = (float)period_ms * 1e-3f; } 
+        else 
+        {
+            uint32_t dt_ticks = now_tick - last_sample_tick;  // unsigned handles wrap
+            dt = (float)dt_ticks * 1e-3f;                     // 1 tick = 1 ms --> seconds
+
+            // Clamp dt to avoid filter blowups
+            if (dt < 0.0005f) dt = 0.0005f;   
+            if (dt > 0.0200f) dt = 0.0200f;   
+        }
+        last_sample_tick = now_tick;
+
+        // scale raw imu to usable units
+        imu_scaled_t sc;
+        IMU_Scale(&latest_sample.raw, &sc);
+
+        // accel: convert g --> m/s^2
+        const float g = 9.80665f;
+        float ax = sc.ax_g * g;
+        float ay = sc.ay_g * g;
+        float az = sc.az_g * g;
+
+        // gyro: deg/s --> rad/s
+        const float DEG2RAD = 3.14159265358979323846f / 180.0f;
+        float gx = sc.gx_dps * DEG2RAD;
+        float gy = sc.gy_dps * DEG2RAD;
+        float gz = sc.gz_dps * DEG2RAD;
+
+        // Run AHRS with CORRECT units + dt
+        AHRS_Update(&AHRS_state, gx, gy, gz, ax, ay, az, dt);
 
         float roll, pitch, yaw;
         AHRS_QuatToEuler(&AHRS_state, &roll, &pitch, &yaw);
@@ -84,7 +117,7 @@ void est_task(void *arguement)
         g_attitude_state.roll  = roll;
         g_attitude_state.pitch = pitch;
         g_attitude_state.yaw   = yaw;
-        g_attitude_state.timestamp_us = latest_sample.timestamp_us;
+        g_attitude_state.timestamp_us = latest_sample.timestamp_us; // still in ticks (ms)
     }
 }
 

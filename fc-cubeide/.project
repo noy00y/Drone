@@ -30,6 +30,16 @@
 	</natures>
 	<linkedResources>
 		<link>
+			<name>Inc/ahrs_mahony.h</name>
+			<type>1</type>
+			<location>C:/Users/ozair/Documents/Code_Drive/Drone/fc-cubeide/Inc/ahrs_mahony.h</location>
+		</link>
+		<link>
+			<name>Inc/est_task.h</name>
+			<type>1</type>
+			<location>C:/Users/ozair/Documents/Code_Drive/Drone/fc-cubeide/Inc/est_task.h</location>
+		</link>
+		<link>
 			<name>Inc/imu.h</name>
 			<type>1</type>
 			<location>C:/Users/ozair/Documents/Code_Drive/Drone/fc-cubeide/Inc/imu.h</location>
@@ -43,6 +53,16 @@
 			<name>Inc/log_task.h</name>
 			<type>1</type>
 			<location>C:/Users/ozair/Documents/Code_Drive/Drone/fc-cubeide/Inc/log_task.h</location>
+		</link>
+		<link>
+			<name>Src/ahrs_mahony.c</name>
+			<type>1</type>
+			<location>C:/Users/ozair/Documents/Code_Drive/Drone/fc-cubeide/Src/ahrs_mahony.c</location>
+		</link>
+		<link>
+			<name>Src/est_task.c</name>
+			<type>1</type>
+			<location>C:/Users/ozair/Documents/Code_Drive/Drone/fc-cubeide/Src/est_task.c</location>
 		</link>
 		<link>
 			<name>Src/imu.c</name>

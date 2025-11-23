@@ -2,6 +2,7 @@
 #include "imu.h"
 #include "imu_task.h"
 #include "log_task.h"
+#include "est_task.h"
 #include <stdio.h>
 #include "FreeRTOS.h"
 #include "task.h"
@@ -133,7 +134,7 @@ int main(void)
   osKernelInitialize();  // RTOS Bring up
   IMU_Task_Init(); // start up imu queue + 1 khz sampler task
   Log_Task_Init(); // 100 hz telemetry
-  Test_Task_Init();
+  EST_Task_Init();
   osKernelStart(); // start scheduler
   /* USER CODE END 2 */
 

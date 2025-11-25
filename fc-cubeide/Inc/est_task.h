@@ -1,7 +1,6 @@
 #include <stdint.h>
 
 #define ESTIMATION_TASK_PERIOD_MS   (2U)      // 500 Hz
-#define ESTIMATION_TASK_STACK      (512U)    
 #define ESTIMATION_TASK_PRIO       osPriorityHigh3 
 
 typedef struct {
@@ -9,7 +8,7 @@ typedef struct {
     float roll;
     float pitch;
     float yaw;
-    uint32_t timestamp_us;
+    uint32_t timestamp_ms;
 } attitude_state_t;
 
 void EST_Task_Init(void);

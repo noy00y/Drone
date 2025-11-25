@@ -71,7 +71,7 @@ static void log_task(void *argument)
         printf("[EST %lu ms] "
             "RPY[deg]=[%.2f %.2f %.2f] "
             "q=[%.3f %.3f %.3f %.3f]\r\n",
-            (unsigned long)(att.timestamp_us / 1000U),
+            (unsigned long)(att.timestamp_ms / 1000U),
             roll_deg, pitch_deg, yaw_deg,
             att.q0, att.q1, att.q2, att.q3);
     }

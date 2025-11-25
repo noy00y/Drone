@@ -31,7 +31,7 @@ static void imu_task(void *arguement)
 
 
         imu_sample_t sample; // timestamp as close as possible to actual sampling instant
-        sample.timestamp_us = osKernelGetTickCount();
+        sample.timestamp_ms = osKernelGetTickCount();
 
         // SPI read from IMU (blocking)
         if (IMU_ReadRaw(&sample.raw) == HAL_OK)

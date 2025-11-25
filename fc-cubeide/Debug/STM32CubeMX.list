@@ -35,17 +35,17 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, READONLY, DEBUGGING, OCTETS
  15 .debug_rnglists 0000137f  00000000  00000000  00034b10  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 16 .debug_macro  000271f8  00000000  00000000  00035e8f  2**0
+ 16 .debug_macro  000271e2  00000000  00000000  00035e8f  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 17 .debug_line   0001fe02  00000000  00000000  0005d087  2**0
+ 17 .debug_line   0001fe08  00000000  00000000  0005d071  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 18 .debug_str    000e095e  00000000  00000000  0007ce89  2**0
+ 18 .debug_str    000e0940  00000000  00000000  0007ce79  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 19 .comment      00000043  00000000  00000000  0015d7e7  2**0
+ 19 .comment      00000043  00000000  00000000  0015d7b9  2**0
                   CONTENTS, READONLY
- 20 .debug_frame  00007a3c  00000000  00000000  0015d82c  2**2
+ 20 .debug_frame  00007a3c  00000000  00000000  0015d7fc  2**2
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 21 .debug_line_str 0000005e  00000000  00000000  00165268  2**0
+ 21 .debug_line_str 0000005e  00000000  00000000  00165238  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
 
 Disassembly of section .text:
@@ -22419,7 +22419,7 @@ void EST_Task_Init(void)
  8008938:	4b10      	ldr	r3, [pc, #64]	@ (800897c <EST_Task_Init+0x88>)
  800893a:	f04f 0200 	mov.w	r2, #0
  800893e:	619a      	str	r2, [r3, #24]
-    g_attitude_state.timestamp_us = 0;
+    g_attitude_state.timestamp_ms = 0;
  8008940:	4b0e      	ldr	r3, [pc, #56]	@ (800897c <EST_Task_Init+0x88>)
  8008942:	2200      	movs	r2, #0
  8008944:	61da      	str	r2, [r3, #28]
@@ -22564,24 +22564,23 @@ void est_task(void *arguement)
  8008a42:	f8d7 3084 	ldr.w	r3, [r7, #132]	@ 0x84
  8008a46:	2b00      	cmp	r3, #0
  8008a48:	d0e2      	beq.n	8008a10 <est_task+0x5c>
-        if (!have_sample) {continue;} // NTS: if no new sample, we can reuse the old one
+        if (!have_sample) {continue;} // NTS: if no new sample --> skip the cycle
  8008a4a:	f897 309f 	ldrb.w	r3, [r7, #159]	@ 0x9f
  8008a4e:	2b00      	cmp	r3, #0
  8008a50:	f000 80b5 	beq.w	8008bbe <est_task+0x20a>
 
         // Corrected dt
         float dt;
-        uint32_t now_tick = latest_sample.timestamp_us;   // this is actually in TICKS
+        uint32_t now_tick = latest_sample.timestamp_ms;   // this is actually in TICKS ms
  8008a54:	6b7b      	ldr	r3, [r7, #52]	@ 0x34
  8008a56:	f8c7 3080 	str.w	r3, [r7, #128]	@ 0x80
 
-        if (last_sample_ts_us == 0U) {
+        // First sample tick
+        if (last_sample_tick == 0U) { dt = (float)period_ms * 1e-3f; } 
  8008a5a:	4b5b      	ldr	r3, [pc, #364]	@ (8008bc8 <est_task+0x214>)
  8008a5c:	681b      	ldr	r3, [r3, #0]
  8008a5e:	2b00      	cmp	r3, #0
  8008a60:	d10c      	bne.n	8008a7c <est_task+0xc8>
-            // First sample: assume nominal period (e.g. 2 ms)
-            dt = (float)period_ms * 1e-3f;
  8008a62:	f8d7 3090 	ldr.w	r3, [r7, #144]	@ 0x90
  8008a66:	ee07 3a90 	vmov	s15, r3
  8008a6a:	eef8 7a67 	vcvt.f32.u32	s15, s15
@@ -22589,14 +22588,15 @@ void est_task(void *arguement)
  8008a72:	ee67 7a87 	vmul.f32	s15, s15, s14
  8008a76:	edc7 7a25 	vstr	s15, [r7, #148]	@ 0x94
  8008a7a:	e028      	b.n	8008ace <est_task+0x11a>
-        } else {
-            uint32_t dt_ticks = now_tick - last_sample_ts_us;  // unsigned handles wrap
+        else 
+        {
+            uint32_t dt_ticks = now_tick - last_sample_tick;  // unsigned handles wrap
  8008a7c:	4b52      	ldr	r3, [pc, #328]	@ (8008bc8 <est_task+0x214>)
  8008a7e:	681b      	ldr	r3, [r3, #0]
  8008a80:	f8d7 2080 	ldr.w	r2, [r7, #128]	@ 0x80
  8008a84:	1ad3      	subs	r3, r2, r3
  8008a86:	67fb      	str	r3, [r7, #124]	@ 0x7c
-            dt = (float)dt_ticks * 1e-3f;                     // 1 tick = 1 ms → seconds
+            dt = (float)dt_ticks * 1e-3f;                     // 1 tick = 1 ms --> seconds
  8008a88:	6ffb      	ldr	r3, [r7, #124]	@ 0x7c
  8008a8a:	ee07 3a90 	vmov	s15, r3
  8008a8e:	eef8 7a67 	vcvt.f32.u32	s15, s15
@@ -22604,8 +22604,8 @@ void est_task(void *arguement)
  8008a96:	ee67 7a87 	vmul.f32	s15, s15, s14
  8008a9a:	edc7 7a25 	vstr	s15, [r7, #148]	@ 0x94
 
-            // Clamp dt to avoid filter blow-ups from occasional stalls
-            if (dt < 0.0005f) dt = 0.0005f;   // min 0.5 ms
+            // Clamp dt to avoid filter blowups
+            if (dt < 0.0005f) dt = 0.0005f;   
  8008a9e:	edd7 7a25 	vldr	s15, [r7, #148]	@ 0x94
  8008aa2:	ed9f 7a4b 	vldr	s14, [pc, #300]	@ 8008bd0 <est_task+0x21c>
  8008aa6:	eef4 7ac7 	vcmpe.f32	s15, s14
@@ -22613,7 +22613,7 @@ void est_task(void *arguement)
  8008aae:	d502      	bpl.n	8008ab6 <est_task+0x102>
  8008ab0:	4b48      	ldr	r3, [pc, #288]	@ (8008bd4 <est_task+0x220>)
  8008ab2:	f8c7 3094 	str.w	r3, [r7, #148]	@ 0x94
-            if (dt > 0.0200f) dt = 0.0200f;   // max 20 ms
+            if (dt > 0.0200f) dt = 0.0200f;   
  8008ab6:	edd7 7a25 	vldr	s15, [r7, #148]	@ 0x94
  8008aba:	ed9f 7a47 	vldr	s14, [pc, #284]	@ 8008bd8 <est_task+0x224>
  8008abe:	eef4 7ac7 	vcmpe.f32	s15, s14
@@ -22622,12 +22622,12 @@ void est_task(void *arguement)
  8008ac8:	4b44      	ldr	r3, [pc, #272]	@ (8008bdc <est_task+0x228>)
  8008aca:	f8c7 3094 	str.w	r3, [r7, #148]	@ 0x94
         }
-        last_sample_ts_us = now_tick;
+        last_sample_tick = now_tick;
  8008ace:	4a3e      	ldr	r2, [pc, #248]	@ (8008bc8 <est_task+0x214>)
  8008ad0:	f8d7 3080 	ldr.w	r3, [r7, #128]	@ 0x80
  8008ad4:	6013      	str	r3, [r2, #0]
 
-        // --- Scale raw IMU to physical units ---
+        // scale raw imu to usable units
         imu_scaled_t sc;
         IMU_Scale(&latest_sample.raw, &sc);
  8008ad6:	f107 0218 	add.w	r2, r7, #24
@@ -22637,7 +22637,7 @@ void est_task(void *arguement)
  8008ae2:	4618      	mov	r0, r3
  8008ae4:	f000 fa18 	bl	8008f18 <IMU_Scale>
 
-        // accel: convert g → m/s^2 (optional but nice)
+        // accel: convert g --> m/s^2
         const float g = 9.80665f;
  8008ae8:	4b3d      	ldr	r3, [pc, #244]	@ (8008be0 <est_task+0x22c>)
  8008aea:	67bb      	str	r3, [r7, #120]	@ 0x78
@@ -22657,7 +22657,7 @@ void est_task(void *arguement)
  8008b14:	ee67 7a27 	vmul.f32	s15, s14, s15
  8008b18:	edc7 7a1b 	vstr	s15, [r7, #108]	@ 0x6c
 
-        // gyro: deg/s → rad/s (MANDATORY for correct Mahony behaviour)
+        // gyro: deg/s --> rad/s
         const float DEG2RAD = 3.14159265358979323846f / 180.0f;
  8008b1c:	4b31      	ldr	r3, [pc, #196]	@ (8008be4 <est_task+0x230>)
  8008b1e:	66bb      	str	r3, [r7, #104]	@ 0x68
@@ -22676,7 +22676,6 @@ void est_task(void *arguement)
  8008b44:	ed97 7a1a 	vldr	s14, [r7, #104]	@ 0x68
  8008b48:	ee67 7a27 	vmul.f32	s15, s14, s15
  8008b4c:	edc7 7a17 	vstr	s15, [r7, #92]	@ 0x5c
-        // ----------------------------------------
 
         // Run AHRS with CORRECT units + dt
         AHRS_Update(&AHRS_state, gx, gy, gz, ax, ay, az, dt);
@@ -22730,12 +22729,12 @@ void est_task(void *arguement)
  8008bb0:	68fb      	ldr	r3, [r7, #12]
  8008bb2:	4a0e      	ldr	r2, [pc, #56]	@ (8008bec <est_task+0x238>)
  8008bb4:	6193      	str	r3, [r2, #24]
-        g_attitude_state.timestamp_us = latest_sample.timestamp_us; // still in ticks (ms)
+        g_attitude_state.timestamp_ms = latest_sample.timestamp_ms; // still in ticks (ms)
  8008bb6:	6b7b      	ldr	r3, [r7, #52]	@ 0x34
  8008bb8:	4a0c      	ldr	r2, [pc, #48]	@ (8008bec <est_task+0x238>)
  8008bba:	61d3      	str	r3, [r2, #28]
  8008bbc:	e708      	b.n	80089d0 <est_task+0x1c>
-        if (!have_sample) {continue;} // NTS: if no new sample, we can reuse the old one
+        if (!have_sample) {continue;} // NTS: if no new sample --> skip the cycle
  8008bbe:	bf00      	nop
     {
  8008bc0:	e706      	b.n	80089d0 <est_task+0x1c>
@@ -23398,7 +23397,7 @@ static void imu_task(void *arguement)
 
 
         imu_sample_t sample; // timestamp as close as possible to actual sampling instant
-        sample.timestamp_us = osKernelGetTickCount();
+        sample.timestamp_ms = osKernelGetTickCount();
  8009056:	f7fc f969 	bl	800532c <osKernelGetTickCount>
  800905a:	4603      	mov	r3, r0
  800905c:	61fb      	str	r3, [r7, #28]
@@ -23667,7 +23666,7 @@ static void log_task(void *argument)
         printf("[EST %lu ms] "
             "RPY[deg]=[%.2f %.2f %.2f] "
             "q=[%.3f %.3f %.3f %.3f]\r\n",
-            (unsigned long)(att.timestamp_us / 1000U),
+            (unsigned long)(att.timestamp_ms / 1000U),
  80091fe:	6c3b      	ldr	r3, [r7, #64]	@ 0x40
         printf("[EST %lu ms] "
  8009200:	4a22      	ldr	r2, [pc, #136]	@ (800928c <log_task+0x13c>)

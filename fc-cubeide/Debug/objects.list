@@ -26,6 +26,7 @@
 "./Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.o"
 "./Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.o"
 "./Src/ahrs_mahony.o"
+"./Src/ctrl_task.o"
 "./Src/dma.o"
 "./Src/est_task.o"
 "./Src/gpio.o"

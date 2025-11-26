@@ -4,8 +4,6 @@
 #include "ahrs_mahony.h"
 #include "est_task.h"
 
-// extern osMessageQueueId_t imu_q = NULL; // queue
-
 // internal estimator states:
 static ahrs_t AHRS_state;
 static attitude_state_t g_attitude_state;
@@ -25,13 +23,13 @@ void EST_Task_Init(void)
     g_attitude_state.roll  = 0.0f;
     g_attitude_state.pitch = 0.0f;
     g_attitude_state.yaw   = 0.0f;
-    g_attitude_state.timestamp_us = 0;
+    g_attitude_state.timestamp_ms = 0;
 
     // Task init
     const osThreadAttr_t est_task_attr = 
     {
         .name = "est_task",
-        .priority = osPriorityHigh3,
+        .priority = osPriorityHigh,
         .stack_size = 1024
     };
     osThreadNew(est_task, NULL, &est_task_attr);
@@ -73,7 +71,7 @@ void est_task(void *arguement)
 
         // Corrected dt
         float dt;
-        uint32_t now_tick = latest_sample.timestamp_us;   // this is actually in TICKS
+        uint32_t now_tick = latest_sample.timestamp_ms;   // this is actually in TICKS ms
 
         // First sample tick
         if (last_sample_tick == 0U) { dt = (float)period_ms * 1e-3f; } 
@@ -117,7 +115,7 @@ void est_task(void *arguement)
         g_attitude_state.roll  = roll;
         g_attitude_state.pitch = pitch;
         g_attitude_state.yaw   = yaw;
-        g_attitude_state.timestamp_us = latest_sample.timestamp_us; // still in ticks (ms)
+        g_attitude_state.timestamp_ms = latest_sample.timestamp_ms; // still in ticks (ms)
     }
 }
 

@@ -7,7 +7,7 @@
 
 typedef struct
 {
-    uint32_t   timestamp_us;  // RTOS tick timestamp
+    uint32_t   timestamp_ms;  // RTOS tick timestamp
     imu_raw_t  raw;           // raw accel/gyro/temp
 } imu_sample_t;
 
@@ -22,4 +22,4 @@ void IMU_Task_Init(void);
 // timeout_ms - how long to block for in ms
 // return true - sample received
 //        false - timeout/error
-bool IMU_GetNextSample(imu_sample_t *out, uint32_t timeout_us);
+bool IMU_GetNextSample(imu_sample_t *out, uint32_t timeout_ms);

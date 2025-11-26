@@ -31,7 +31,7 @@ static void imu_task(void *arguement)
 
 
         imu_sample_t sample; // timestamp as close as possible to actual sampling instant
-        sample.timestamp_us = osKernelGetTickCount();
+        sample.timestamp_ms = osKernelGetTickCount();
 
         // SPI read from IMU (blocking)
         if (IMU_ReadRaw(&sample.raw) == HAL_OK)
@@ -63,8 +63,8 @@ void IMU_Task_Init(void)
     const osThreadAttr_t imu_task_attr = 
     {
         .name = "imu_task",
-        .priority = osPriorityHigh, // highest priority normal task
-        .stack_size = 1024 // 512 bytes enough for SPI driver functions
+        .priority = osPriorityHigh3,
+        .stack_size = 1024 
     };
     (void)osThreadNew(imu_task, NULL, &imu_task_attr);
 }

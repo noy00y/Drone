@@ -3,6 +3,7 @@
 #include "imu_task.h"
 #include "log_task.h"
 #include "est_task.h"
+#include "ctrl_task.h"
 #include <stdio.h>
 #include "FreeRTOS.h"
 #include "task.h"
@@ -135,6 +136,7 @@ int main(void)
   IMU_Task_Init(); // start up imu queue + 1 khz sampler task
   Log_Task_Init(); // 100 hz telemetry
   EST_Task_Init();
+  CTRL_Task_Init();
   osKernelStart(); // start scheduler
   /* USER CODE END 2 */
 

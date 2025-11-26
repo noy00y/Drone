@@ -2,6 +2,7 @@
 #include "log_task.h"
 #include "imu_task.h"
 #include "est_task.h"
+#include "ctrl_task.h"
 #include "imu.h"
 #include <stdio.h>
 #include <stdint.h>
@@ -44,36 +45,33 @@ static void log_task(void *argument)
         if (!got)
             continue; // No fresh IMU sample this cycle
 
-        // Block until there is at least one IMU sample in the queue
-        // if (IMU_GetNextSample(&sample, osWaitForever))
-        // {
-        //     IMU_Scale(&sample.raw, &sc);
-
-        //     printf("[IMU %lu ms] "
-        //            "A[g]=[%.3f %.3f %.3f]  "
-        //            "G[dps]=[%6.1f %6.1f %6.1f]\r\n",
-        //            (unsigned long)sample.timestamp_ms,
-        //            sc.ax_g, sc.ay_g, sc.az_g,
-        //            sc.gx_dps, sc.gy_dps, sc.gz_dps);
-        // }
-
-        // 2) New estimator print
+        // ----- 3) Get latest attitude & controller debug -----
         attitude_state_t att;
         get_attitude(&att);
 
-        // radians → degrees:
-        // deg = rad * (180 / π)
-        const float rad2deg = 180.0f / (float)M_PI;
-        float roll_deg  = att.roll  * rad2deg;
-        float pitch_deg = att.pitch * rad2deg;
-        float yaw_deg   = att.yaw   * rad2deg;
+        ctrl_debug_t dbg;
+        CTRL_GetDebug(&dbg);
 
-        printf("[EST %lu ms] "
-            "RPY[deg]=[%.2f %.2f %.2f] "
-            "q=[%.3f %.3f %.3f %.3f]\r\n",
-            (unsigned long)(att.timestamp_ms / 1000U),
-            roll_deg, pitch_deg, yaw_deg,
-            att.q0, att.q1, att.q2, att.q3);
+        const float rad2deg = 180.0f / (float)M_PI;
+
+        float roll_deg_meas  = dbg.roll_meas  * rad2deg;
+        float pitch_deg_meas = dbg.pitch_meas * rad2deg;
+        float yaw_deg_meas   = dbg.yaw_meas   * rad2deg;
+
+        float roll_deg_sp  = dbg.roll_sp  * rad2deg;
+        float pitch_deg_sp = dbg.pitch_sp * rad2deg;
+        float yaw_deg_sp   = dbg.yaw_sp   * rad2deg;
+
+        // ----- 4) CSV-style line for Python plotting -----
+        // Format:
+        // CTRL,timestamp_ms,roll_deg_meas,pitch_deg_meas,yaw_deg_meas,
+        //      roll_deg_sp,pitch_deg_sp,yaw_deg_sp,
+        //      u_roll,u_pitch,u_yaw,collective
+        printf("CTRL,%lu,%.2f,%.2f,%.2f,%.2f,%.2f,%.2f,%.3f,%.3f,%.3f,%.3f\r\n",
+               (unsigned long)dbg.timestamp_ms,
+               roll_deg_meas, pitch_deg_meas, yaw_deg_meas,
+               roll_deg_sp,   pitch_deg_sp,   yaw_deg_sp,
+               dbg.u_roll, dbg.u_pitch, dbg.u_yaw, dbg.collective);
     }
 }
 

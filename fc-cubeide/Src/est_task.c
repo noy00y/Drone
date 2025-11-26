@@ -29,7 +29,7 @@ void EST_Task_Init(void)
     const osThreadAttr_t est_task_attr = 
     {
         .name = "est_task",
-        .priority = osPriorityHigh3,
+        .priority = osPriorityHigh,
         .stack_size = 1024
     };
     osThreadNew(est_task, NULL, &est_task_attr);

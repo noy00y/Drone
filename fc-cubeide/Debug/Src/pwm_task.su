@@ -1,0 +1,8 @@
+C:/Users/ozair/Documents/Code_Drive/Drone/fc-cubeide/Src/pwm_task.c:18:21:clampf	24	static
+C:/Users/ozair/Documents/Code_Drive/Drone/fc-cubeide/Src/pwm_task.c:25:24:norm_to_us	24	static
+C:/Users/ozair/Documents/Code_Drive/Drone/fc-cubeide/Src/pwm_task.c:36:13:read_latest_cmd	40	static,ignoring_inline_asm
+C:/Users/ozair/Documents/Code_Drive/Drone/fc-cubeide/Src/pwm_task.c:47:6:PWM_SetCommand	72	static,ignoring_inline_asm
+C:/Users/ozair/Documents/Code_Drive/Drone/fc-cubeide/Src/pwm_task.c:62:6:PWM_SetArmed	16	static
+C:/Users/ozair/Documents/Code_Drive/Drone/fc-cubeide/Src/pwm_task.c:67:6:PWM_GetDebug	32	static
+C:/Users/ozair/Documents/Code_Drive/Drone/fc-cubeide/Src/pwm_task.c:74:13:pwm_task	104	static
+C:/Users/ozair/Documents/Code_Drive/Drone/fc-cubeide/Src/pwm_task.c:161:6:PWM_Task_Init	48	static

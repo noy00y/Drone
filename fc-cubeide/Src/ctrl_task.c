@@ -1,5 +1,6 @@
 #include "ctrl_task.h"
 #include "est_task.h"
+#include "pwm_task.h"
 
 // Simple gains
 // KP - scaling factor for how strongly to react to being away from target setpoint (dist)
@@ -66,7 +67,7 @@ static void ctrl_task(void *arguement)
 
         float collective = 0.2f; // 20% throttle;
 
-        // Mixer_Update(collective, u_roll, u_pitch, u_yaw); // feed into pwm mixer
+        PWM_SetCommand(collective, u_roll, u_pitch, u_yaw, att.timestamp_ms); // feed into pwm mixer
         ctrl_debug_t dbg;
         dbg.roll_sp      = ROLL_SP;
         dbg.pitch_sp     = PITCH_SP;

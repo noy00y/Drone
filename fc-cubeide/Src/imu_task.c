@@ -63,7 +63,7 @@ void IMU_Task_Init(void)
     const osThreadAttr_t imu_task_attr = 
     {
         .name = "imu_task",
-        .priority = osPriorityHigh3,
+        .priority = osPriorityHigh,
         .stack_size = 1024 
     };
     (void)osThreadNew(imu_task, NULL, &imu_task_attr);

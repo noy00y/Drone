@@ -34,6 +34,7 @@
 "./Src/imu_task.o"
 "./Src/log_task.o"
 "./Src/main.o"
+"./Src/pwm_task.o"
 "./Src/spi.o"
 "./Src/stm32f4xx_hal_msp.o"
 "./Src/stm32f4xx_hal_timebase_tim.o"

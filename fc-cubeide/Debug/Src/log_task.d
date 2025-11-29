@@ -32,7 +32,7 @@ Src/log_task.o: \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
- ../Inc/est_task.h ../Inc/ctrl_task.h ../Inc/imu.h
+ ../Inc/est_task.h ../Inc/ctrl_task.h ../Inc/pwm_task.h ../Inc/imu.h
 ../Inc/log_task.h:
 ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h:
 ../Inc/imu_task.h:
@@ -68,4 +68,5 @@ Src/log_task.o: \
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h:
 ../Inc/est_task.h:
 ../Inc/ctrl_task.h:
+../Inc/pwm_task.h:
 ../Inc/imu.h:

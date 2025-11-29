@@ -4,6 +4,7 @@
 #include "log_task.h"
 #include "est_task.h"
 #include "ctrl_task.h"
+#include "pwm_task.h"
 #include <stdio.h>
 #include "FreeRTOS.h"
 #include "task.h"
@@ -137,6 +138,7 @@ int main(void)
   Log_Task_Init(); // 100 hz telemetry
   EST_Task_Init();
   CTRL_Task_Init();
+  PWM_Task_Init();
   osKernelStart(); // start scheduler
   /* USER CODE END 2 */
 

@@ -60,6 +60,11 @@
 			<location>C:/Users/ozair/Documents/Code_Drive/Drone/fc-cubeide/Inc/log_task.h</location>
 		</link>
 		<link>
+			<name>Inc/pwm_task.h</name>
+			<type>1</type>
+			<location>C:/Users/ozair/Documents/Code_Drive/Drone/fc-cubeide/Inc/pwm_task.h</location>
+		</link>
+		<link>
 			<name>Src/ahrs_mahony.c</name>
 			<type>1</type>
 			<location>C:/Users/ozair/Documents/Code_Drive/Drone/fc-cubeide/Src/ahrs_mahony.c</location>
@@ -88,6 +93,11 @@
 			<name>Src/log_task.c</name>
 			<type>1</type>
 			<location>C:/Users/ozair/Documents/Code_Drive/Drone/fc-cubeide/Src/log_task.c</location>
+		</link>
+		<link>
+			<name>Src/pwm_task.c</name>
+			<type>1</type>
+			<location>C:/Users/ozair/Documents/Code_Drive/Drone/fc-cubeide/Src/pwm_task.c</location>
 		</link>
 	</linkedResources>
 </projectDescription>

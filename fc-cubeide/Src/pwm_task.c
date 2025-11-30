@@ -180,7 +180,8 @@ void PWM_Task_Init(void)
     const osThreadAttr_t pwm_attr = {
         .name       = "pwm_task",
         .stack_size = 512,
-        .priority   = osPriorityHigh2,   // same tier as ctrl, or one notch below if needed
+        // .priority   = osPriorityHigh2,   // same tier as ctrl, or one notch below if needed
+        .priority   = osPriorityHigh,
     };
     osThreadNew(pwm_task, NULL, &pwm_attr);
 }

@@ -95,7 +95,8 @@ void CTRL_Task_Init(void)
     const osThreadAttr_t ctrl_task_attr = {
         .name       = "ctrl_task",
         .stack_size = 1024,
-        .priority   = osPriorityHigh2,
+        // .priority   = osPriorityHigh2,
+        .priority   = osPriorityHigh,
     };
     osThreadNew(ctrl_task, NULL, &ctrl_task_attr);
 }

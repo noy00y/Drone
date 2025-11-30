@@ -27,7 +27,12 @@ static void imu_task(void *arguement)
             osDelay((uint32_t)diff);
             last_wake = next;
         }
-        else {last_wake = now;} // skip sleeping and resync schedule to now
+        else 
+        {
+            // last_wake = osKernelGetTickCount();
+            // osDelay(1U);
+            last_wake = now;
+        } // skip sleeping and resync schedule to now
 
 
         imu_sample_t sample; // timestamp as close as possible to actual sampling instant
@@ -63,7 +68,8 @@ void IMU_Task_Init(void)
     const osThreadAttr_t imu_task_attr = 
     {
         .name = "imu_task",
-        .priority = osPriorityHigh,
+        // .priority = osPriorityHigh,
+        .priority = osPriorityHigh2,
         .stack_size = 1024 
     };
     (void)osThreadNew(imu_task, NULL, &imu_task_attr);
